@@ -6,14 +6,15 @@
 
 <p align="center">
   <b>AI აგენტების, დეველოპერ ინსტრუმენტებისა და ავტომატიზაციის კურირებული კოლექცია</b><br/>
-  შერჩეული <a href="https://aipulsegeorgia2025.app.n8n.cloud">AI Pulse Georgia</a>-ს მიერ
+  შერჩეული <a href="https://aipulsegeorgia.ge">AI Pulse Georgia</a>-ს მიერ
 </p>
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-28-blue?style=flat-square" alt="Repos"/>
-  <img src="https://img.shields.io/badge/categories-8-orange?style=flat-square" alt="Categories"/>
-  <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-red?style=flat-square" alt="Made in Georgia"/>
+  <img src="https://img.shields.io/badge/repos-28-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/categories-8-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
+  <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
+  <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
 </p>
 
 ---
@@ -104,10 +105,12 @@
 ## ჩვენს შესახებ
 
 <p align="center">
-  <img src="https://img.shields.io/badge/AI_Pulse_Georgia-2025-ff512f?style=for-the-badge&labelColor=302b63" alt="AI Pulse Georgia 2025"/>
+  <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/AI_Pulse_Georgia-2025-00D0FF?style=for-the-badge&labelColor=111827" alt="AI Pulse Georgia 2025"/></a>
 </p>
 
-ეს სია იმართება **AI Pulse Georgia**-ს მიერ — საზოგადოება, რომელიც ფოკუსირებულია AI აგენტებზე, ავტომატიზაციაზე და ავტონომიური სისტემების მომავალზე.
+ეს სია იმართება **[AI Pulse Georgia](https://aipulsegeorgia.ge)**-ს მიერ — საზოგადოება, რომელიც ფოკუსირებულია AI აგენტებზე, ავტომატიზაციაზე და ავტონომიური სისტემების მომავალზე.
+
+> *„Exploring Georgia's AI Future"*
 
 თუ ეს სია გამოგადგებათ, მიეცით ვარსკვლავი და გაუზიარეთ სხვებს, ვინც AI აგენტებით აშენებს.
 

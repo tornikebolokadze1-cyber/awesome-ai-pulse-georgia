@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-28-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-30-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-8-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -40,6 +40,7 @@
 | [MiroFish](https://github.com/666ghj/MiroFish) | მულტი-აგენტური swarm intelligence ძრავი, რომელიც ქმნის მაღალი სიზუსტის ციფრულ ტყუპს რეალური სამყაროს მონაცემებიდან (ახალი ამბები, პოლიტიკა, ფინანსური სიგნალები) და ასრულებს ათასობით აგენტის სიმულაციას პროგნოზისთვის. აგენტებს აქვთ ინდივიდუალური პიროვნებები, გრძელვადიანი მეხსიერება და ქცევითი ლოგიკა. მუშაობს მაკრო (პოლიტიკის ტესტირება) და მიკრო (სიუჟეტის დასასრული) დონეზე. |
 | [Hermes](https://github.com/nousresearch/hermes-agent) | თვითგაუმჯობესებადი AI აგენტი Nous Research-ისგან, ერთადერთი ჩაშენებული learning loop-ით. ქმნის უნარებს გამოცდილებიდან, აუმჯობესებს მათ, ინახავს მეხსიერებას, ეძებს საკუთარ წარსულ საუბრებს და ქმნის მომხმარებლის პროფილს სესიებს შორის. მხარს უჭერს ნებისმიერ LLM-ს, მრავალ პლატფორმას (Telegram, Discord, Slack, WhatsApp, Signal), cron ავტომატიზაციას და sub-აგენტებს. |
 | [OpenClaw](https://github.com/openclaw/openclaw) | პერსონალური AI ასისტენტი, რომელიც მუშაობს ნებისმიერ OS-სა და პლატფორმაზე („the lobster way"). აერთიანებს 20+ მესიჯინგ არხს (WhatsApp, Telegram, Slack, Discord, Signal, iMessage), ხმასა და Canvas-ს macOS/iOS/Android-ზე. მხარს უჭერს მულტი-აგენტ routing-ს, ინსტრუმენტებს (ბრაუზერი, cron, სესიები), voice wake mode-ს და local-first დიზაინს. |
+| [OpenSpace](https://github.com/HKUDS/OpenSpace) | თვითგანვითარებადი AI აგენტების ფრეიმვორკი, რომელიც აგენტებს საშუალებას აძლევს ავტომატურად ისწავლონ, გაუმჯობესდნენ და გაუზიარონ უნარები ერთმანეთს შესრულებებს შორის. ამცირებს ტოკენის ხარჯს 46%-ით და ზრდის ამოცანების ხარისხს თვითევოლუციის მექანიზმებით. მუშაობს Claude Code-ს, OpenClaw-ს, Cursor-სა და სხვა ავტონომიურ აგენტებთან. |
 
 ## Claude Code გაფართოებები და უნარები
 
@@ -61,6 +62,7 @@
 | [Playwright MCP](https://github.com/microsoft/playwright-mcp) | Microsoft-ის ოფიციალური Playwright MCP სერვერი ბრაუზერის ავტომატიზაციისთვის AI აგენტებიდან — ტესტირება, სკრეიპინგი და ვებ ინტერაქცია პირდაპირ Claude Code-დან. |
 | [Prism MCP](https://github.com/dcostenco/prism-mcp) | აქტიური კოგნიტური არქიტექტურის MCP სერვერი, რომელიც AI აგენტებს აძლევს მდგრად მეხსიერებას, თვითორგანიზებად ცოდნის გრაფს, მულტი-აგენტურ სინქრონიზაციას და Obsidian vault-ის ექსპორტს სტრუქტურირებული ცოდნის მართვისთვის. |
 | [LightRAG](https://github.com/hkuds/lightrag) | მსუბუქი Retrieval-Augmented Generation ფრეიმვორკი გრაფზე დაფუძნებული ცოდნის ინდექსაციით. ინტეგრირდება როგორც MCP სერვერი AI აგენტებისთვის, რომლებსაც სჭირდებათ სწრაფი და ზუსტი ძიება დიდი დოკუმენტების კოლექციებიდან. |
+| [Claude Peers MCP](https://github.com/louislva/claude-peers-mcp) | MCP სერვერი, რომელიც ერთ მანქანაზე გაშვებულ მრავალ Claude Code ინსტანციას საშუალებას აძლევს აღმოაჩინონ ერთმანეთი და რეალურ დროში დაუკავშირდნენ. შექმნილია დეველოპერებისთვის, რომლებიც პარალელურად მუშაობენ რამდენიმე Claude სესიაზე სხვადასხვა პროექტში და სჭირდებათ მათი თანამშრომლობა მყისიერი შეტყობინებებით. |
 
 ## ბრაუზერის ავტომატიზაცია
 

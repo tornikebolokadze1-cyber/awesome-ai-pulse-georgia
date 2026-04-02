@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-30-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-33-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-8-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -63,6 +63,9 @@
 | [Prism MCP](https://github.com/dcostenco/prism-mcp) | აქტიური კოგნიტური არქიტექტურის MCP სერვერი, რომელიც AI აგენტებს აძლევს მდგრად მეხსიერებას, თვითორგანიზებად ცოდნის გრაფს, მულტი-აგენტურ სინქრონიზაციას და Obsidian vault-ის ექსპორტს სტრუქტურირებული ცოდნის მართვისთვის. |
 | [LightRAG](https://github.com/hkuds/lightrag) | მსუბუქი Retrieval-Augmented Generation ფრეიმვორკი გრაფზე დაფუძნებული ცოდნის ინდექსაციით. ინტეგრირდება როგორც MCP სერვერი AI აგენტებისთვის, რომლებსაც სჭირდებათ სწრაფი და ზუსტი ძიება დიდი დოკუმენტების კოლექციებიდან. |
 | [Claude Peers MCP](https://github.com/louislva/claude-peers-mcp) | MCP სერვერი, რომელიც ერთ მანქანაზე გაშვებულ მრავალ Claude Code ინსტანციას საშუალებას აძლევს აღმოაჩინონ ერთმანეთი და რეალურ დროში დაუკავშირდნენ. შექმნილია დეველოპერებისთვის, რომლებიც პარალელურად მუშაობენ რამდენიმე Claude სესიაზე სხვადასხვა პროექტში და სჭირდებათ მათი თანამშრომლობა მყისიერი შეტყობინებებით. |
+| [GitHub MCP Server](https://github.com/github/github-mcp-server) | GitHub-ის ოფიციალური MCP სერვერი, რომელიც AI ინსტრუმენტებს პირდაპირ აკავშირებს GitHub-ის პლატფორმასთან. საშუალებას აძლევს AI აგენტებს შეასრულონ GitHub-ის ოპერაციები ბუნებრივი ენით — რეპოზიტორიების მართვა, issue-ების თვალყურის დევნება და workflow ავტომატიზაცია. |
+| [Context7](https://github.com/upstash/context7) | პლატფორმა, რომელიც განახლებულ, ვერსია-სპეციფიკურ დოკუმენტაციას აწვდის პირდაპირ LLM-ის prompt-ებში, რაც აღმოფხვრის ჰალუცინირებულ API-ებსა და მოძველებულ კოდის მაგალითებს. შექმნილია დეველოპერებისთვის, რომლებიც იყენებენ AI კოდინგ ასისტენტებს (Cursor, Claude Code) და სჭირდებათ ზუსტი, აქტუალური ბიბლიოთეკის დოკუმენტაცია. |
+| [MCP Builder](https://github.com/anthropics/claude-code) | Anthropic-ის ოფიციალური უნარი Claude Code-სთვის, რომელიც გიდავთ მაღალი ხარისხის MCP სერვერების შექმნის პროცესში. აწვდის საუკეთესო პრაქტიკებს, შაბლონებსა და ვალიდაციას ახალი MCP სერვერების აშენებისთვის Claude Code-ის ეკოსისტემაში. |
 
 ## ბრაუზერის ავტომატიზაცია
 

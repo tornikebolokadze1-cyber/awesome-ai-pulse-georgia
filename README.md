@@ -1,104 +1,120 @@
-# Awesome AI Pulse Georgia
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome AI Pulse Georgia" width="100%"/>
+</p>
 
-> A curated collection of cutting-edge AI agent frameworks, developer tools, and automation resources — handpicked by [AI Pulse Georgia](https://aipulsegeorgia2025.app.n8n.cloud).
+<h1 align="center">Awesome AI Pulse Georgia</h1>
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<p align="center">
+  <b>AI აგენტების, დეველოპერ ინსტრუმენტებისა და ავტომატიზაციის კურირებული კოლექცია</b><br/>
+  შერჩეული <a href="https://aipulsegeorgia2025.app.n8n.cloud">AI Pulse Georgia</a>-ს მიერ
+</p>
 
----
-
-## Contents
-
-- [AI Agents & Orchestration](#ai-agents--orchestration)
-- [Claude Code Extensions & Skills](#claude-code-extensions--skills)
-- [MCP Servers & Integrations](#mcp-servers--integrations)
-- [Browser Automation](#browser-automation)
-- [AI Research & Development](#ai-research--development)
-- [Memory & Knowledge Management](#memory--knowledge-management)
-- [Productivity & Automation](#productivity--automation)
-- [Resources & References](#resources--references)
-
----
-
-## AI Agents & Orchestration
-
-| Repository | Description |
-|---|---|
-| [Paperclip](https://github.com/paperclipai/paperclip) | Node.js server + React UI that orchestrates a team of AI agents to run a business autonomously (zero-human companies). Users configure their own agents (OpenClaw, Claude Code, Codex, Cursor, Bash, HTTP), define company goals, and monitor everything from a dashboard with org chart, budget, governance, and audit log. As the README says: "If OpenClaw is an employee, Paperclip is the company." |
-| [MiroFish](https://github.com/666ghj/MiroFish) | Multi-agent swarm intelligence engine that creates high-fidelity digital twins from real-world data (news, politics, financial signals) and runs thousands of agent simulations for forecasting. Each agent has an individual personality, long-term memory, and behavioral logic. Works at both macro (policy testing) and micro (narrative outcomes) levels. |
-| [Hermes](https://github.com/nousresearch/hermes-agent) | Self-improving AI agent from Nous Research with a built-in learning loop. Creates skills from experience, refines them over time, stores persistent memory, searches its own past conversations, and builds user profiles across sessions. Supports any LLM, multiple platforms (Telegram, Discord, Slack, WhatsApp, Signal), cron automation, sub-agents, and migration from OpenClaw. |
-| [OpenClaw](https://github.com/openclaw/openclaw) | Personal AI assistant that works across any OS and platform ("the lobster way"). Connects 20+ messaging channels (WhatsApp, Telegram, Slack, Discord, Signal, iMessage, and more), with voice and Canvas support on macOS/iOS/Android. Features multi-agent routing, tools (browser, cron, sessions), voice wake mode, and local-first design. |
-
-## Claude Code Extensions & Skills
-
-| Repository | Description |
-|---|---|
-| [Oh My ClaudeCode](https://github.com/yeachan-heo/oh-my-claudecode) | Multi-agent orchestration plugin for Claude Code with autonomous pipeline modes: autopilot (5-phase pipeline), team (parallel agents on shared task list), ralph (persistent mode that runs until everything is verified), and ultrawork (maximum parallelism for burst fixes). |
-| [Superpowers](https://github.com/obra/superpowers) | Skill collection that supercharges Claude Code with structured workflows for debugging, test-driven development, brainstorming, code review, plan execution, and parallel agent dispatch. Enforces disciplined development practices through reusable skill templates. |
-| [Everything Claude Code](https://github.com/affaan-m/everything-claude-code) | All-in-one reference repository covering every aspect of Claude Code — configuration, tips, tricks, advanced usage patterns, and community best practices compiled in a single place. |
-| [Claude How-To](https://github.com/luongnv89/claude-howto) | Visual, example-driven guide to Claude Code covering basics through advanced agents, with copy-paste templates for developers who want to get productive with Claude Code quickly. |
-| [Claude Code Setup](https://github.com/tornikebolokadze1-cyber/claude-code-setup) | Ready-to-use Claude Code configuration with pre-configured rules, skills, agents, hooks, and MCP server integrations for a professional development environment out of the box. |
-| [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | UI/UX design automation skill for Claude Code. Provides 50 design styles, 21 color palettes, 50 font pairings, and structured design system generation for building polished interfaces with AI assistance. |
-| [Codex Plugin for Claude Code](https://github.com/openai/codex-plugin-cc) | Official OpenAI plugin that lets you delegate code review and development tasks to OpenAI's Codex agent directly from within Claude Code, enabling both AI coding assistants to work together. |
-
-## MCP Servers & Integrations
-
-| Repository | Description |
-|---|---|
-| [n8n-MCP](https://github.com/czlonkowski/n8n-mcp) | MCP server that connects Claude Code to n8n workflow automation platform. Build, validate, and manage n8n workflows programmatically using natural language. Companion project: [n8n-skills](https://github.com/czlonkowski/n8n-skills) ([n8n-mcp.com](https://www.n8n-mcp.com/) / [n8n-skills.com](https://www.n8n-skills.com/)). |
-| [Playwright MCP](https://github.com/microsoft/playwright-mcp) | Microsoft's official Playwright MCP server for browser automation from AI agents — testing, scraping, and web interaction directly from Claude Code. |
-| [Prism MCP](https://github.com/dcostenco/prism-mcp) | Active cognitive architecture MCP server providing AI agents with persistent memory, a self-organizing knowledge graph, multi-agent sync, and Obsidian vault export for structured long-term knowledge management. |
-| [LightRAG](https://github.com/hkuds/lightrag) | Lightweight Retrieval-Augmented Generation framework with graph-based knowledge indexing. Integrates as an MCP server for AI agents that need fast, accurate retrieval from large document collections. |
-
-## Browser Automation
-
-| Repository | Description |
-|---|---|
-| [Playwright CLI](https://github.com/microsoft/playwright-cli) | Token-efficient CLI interface for Playwright browser automation designed as skills for coding agents. Lightweight browser control without the overhead of MCP, optimized for Claude Code, Copilot, and other AI coding assistants. |
-| [Browser Use](https://github.com/browser-use/browser-use) | Python library that makes websites accessible to AI agents for automating online tasks like form filling, navigation, and data extraction. Built for developers creating browser-based AI automation pipelines. |
-
-## AI Research & Development
-
-| Repository | Description |
-|---|---|
-| [AutoResearch](https://github.com/karpathy/autoresearch) | Autonomous AI agent framework by Andrej Karpathy that iteratively modifies and trains a small LLM on a single GPU, running experiments overnight and keeping only improvements. Automates hyperparameter and architecture search for ML researchers. |
-| [Pretext](https://github.com/chenglou/pretext) | Pure JavaScript/TypeScript library for multiline text measurement and layout without DOM reflow. Supports Canvas, SVG, and DOM rendering with fast, accurate text layout across multiple languages. |
-| [Hindsight](https://github.com/vectorize-io/hindsight) | Agent memory system that goes beyond conversation recall to help AI agents learn and improve over time. Delivers state-of-the-art long-term memory performance for building smarter autonomous agents. |
-
-## Memory & Knowledge Management
-
-| Repository | Description |
-|---|---|
-| [Claude Mem](https://github.com/thedotmack/claude-mem) | Memory management system for Claude Code that provides persistent, structured memory across sessions. Enables Claude Code to remember context, preferences, and project state between conversations. |
-| [Obsidian Skills](https://github.com/kepano/obsidian-skills) | Obsidian integration skills for Claude Code. Read, write, search, and manage Obsidian vault notes directly from Claude Code, bridging AI assistance with personal knowledge management. |
-| [NotebookLM Python](https://github.com/teng-lin/notebooklm-py) | Unofficial Python API and CLI for Google NotebookLM with full programmatic access to NotebookLM features, including capabilities the web UI does not expose. Built for developers and AI agents automating notebook operations. |
-
-## Productivity & Automation
-
-| Repository | Description |
-|---|---|
-| [GSD (Get Shit Done)](https://github.com/gsd-build/get-shit-done) | Productivity-focused development tool that streamlines task execution and project management. Designed for developers who want less overhead and more shipping. |
-| [Google Workspace CLI](https://github.com/googleworkspace/cli) | Unified command-line tool for managing Google Workspace services — Drive, Gmail, Calendar, Sheets, Docs, Chat, and Admin. Dynamically built from Google Discovery Service, with CLI and AI agent access to the full Google Workspace ecosystem. |
-
-## Resources & References
-
-| Repository | Description |
-|---|---|
-| [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code) | Curated list of Claude Code resources, plugins, skills, MCP servers, and community tools — the definitive directory for the Claude Code ecosystem. |
-| [Free LLM API Resources](https://github.com/cheahjs/free-llm-api-resources) | Curated list of free LLM inference APIs and resources for developers and hobbyists who want to experiment with language models without paying for API access. |
-| [Public APIs](https://github.com/public-apis/public-apis) | Massive collective list of free APIs organized by category — the go-to reference for developers looking for public data sources and services to integrate into their projects. |
+<p align="center">
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
+  <img src="https://img.shields.io/badge/repos-28-blue?style=flat-square" alt="Repos"/>
+  <img src="https://img.shields.io/badge/categories-8-orange?style=flat-square" alt="Categories"/>
+  <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-red?style=flat-square" alt="Made in Georgia"/>
+</p>
 
 ---
 
-## About
+## სარჩევი
 
-This list is maintained by **AI Pulse Georgia** — a community focused on AI agents, automation, and the future of autonomous systems.
+- [AI აგენტები და ორკესტრაცია](#ai-აგენტები-და-ორკესტრაცია)
+- [Claude Code გაფართოებები და უნარები](#claude-code-გაფართოებები-და-უნარები)
+- [MCP სერვერები და ინტეგრაციები](#mcp-სერვერები-და-ინტეგრაციები)
+- [ბრაუზერის ავტომატიზაცია](#ბრაუზერის-ავტომატიზაცია)
+- [AI კვლევა და განვითარება](#ai-კვლევა-და-განვითარება)
+- [მეხსიერება და ცოდნის მართვა](#მეხსიერება-და-ცოდნის-მართვა)
+- [პროდუქტიულობა და ავტომატიზაცია](#პროდუქტიულობა-და-ავტომატიზაცია)
+- [რესურსები და რეფერენსები](#რესურსები-და-რეფერენსები)
 
-If you find this useful, give it a star and share it with others who are building with AI agents.
+---
 
-## Contributing
+## AI აგენტები და ორკესტრაცია
 
-Found a great repo that fits this list? Open an issue or submit a pull request.
+| რეპოზიტორია | აღწერა |
+|---|---|
+| [Paperclip](https://github.com/paperclipai/paperclip) | Node.js სერვერი + React UI, რომელიც ორკესტრირებს AI აგენტების გუნდს ბიზნესის ავტონომიურად წარმართვისთვის (zero-human companies). მომხმარებელი აწვდის საკუთარ აგენტებს (OpenClaw, Claude Code, Codex, Cursor, Bash, HTTP), ასახელებს კომპანიის მიზნებს, ხედავს დაფას — org chart, ბიუჯეტი, governance და audit log. როგორც README ამბობს: „If OpenClaw is an employee, Paperclip is the company." |
+| [MiroFish](https://github.com/666ghj/MiroFish) | მულტი-აგენტური swarm intelligence ძრავი, რომელიც ქმნის მაღალი სიზუსტის ციფრულ ტყუპს რეალური სამყაროს მონაცემებიდან (ახალი ამბები, პოლიტიკა, ფინანსური სიგნალები) და ასრულებს ათასობით აგენტის სიმულაციას პროგნოზისთვის. აგენტებს აქვთ ინდივიდუალური პიროვნებები, გრძელვადიანი მეხსიერება და ქცევითი ლოგიკა. მუშაობს მაკრო (პოლიტიკის ტესტირება) და მიკრო (სიუჟეტის დასასრული) დონეზე. |
+| [Hermes](https://github.com/nousresearch/hermes-agent) | თვითგაუმჯობესებადი AI აგენტი Nous Research-ისგან, ერთადერთი ჩაშენებული learning loop-ით. ქმნის უნარებს გამოცდილებიდან, აუმჯობესებს მათ, ინახავს მეხსიერებას, ეძებს საკუთარ წარსულ საუბრებს და ქმნის მომხმარებლის პროფილს სესიებს შორის. მხარს უჭერს ნებისმიერ LLM-ს, მრავალ პლატფორმას (Telegram, Discord, Slack, WhatsApp, Signal), cron ავტომატიზაციას და sub-აგენტებს. |
+| [OpenClaw](https://github.com/openclaw/openclaw) | პერსონალური AI ასისტენტი, რომელიც მუშაობს ნებისმიერ OS-სა და პლატფორმაზე („the lobster way"). აერთიანებს 20+ მესიჯინგ არხს (WhatsApp, Telegram, Slack, Discord, Signal, iMessage), ხმასა და Canvas-ს macOS/iOS/Android-ზე. მხარს უჭერს მულტი-აგენტ routing-ს, ინსტრუმენტებს (ბრაუზერი, cron, სესიები), voice wake mode-ს და local-first დიზაინს. |
 
-## License
+## Claude Code გაფართოებები და უნარები
+
+| რეპოზიტორია | აღწერა |
+|---|---|
+| [Oh My ClaudeCode](https://github.com/yeachan-heo/oh-my-claudecode) | მულტი-აგენტური ორკესტრაციის პლაგინი Claude Code-სთვის ავტონომიური რეჟიმებით: autopilot (5-ფაზიანი pipeline), team (პარალელური აგენტები საერთო დავალებების სიაზე), ralph (მუშაობს სანამ ყველაფერი არ იქნება ვერიფიცირებული) და ultrawork (მაქსიმალური პარალელიზმი სწრაფი გასწორებისთვის). |
+| [Superpowers](https://github.com/obra/superpowers) | უნარების კოლექცია, რომელიც აძლიერებს Claude Code-ს სტრუქტურირებული სამუშაო პროცესებით — debugging, ტესტზე-ორიენტირებული განვითარება, brainstorming, კოდის მიმოხილვა, გეგმის შესრულება და პარალელური აგენტების დისპეტჩერიზაცია. |
+| [Everything Claude Code](https://github.com/affaan-m/everything-claude-code) | ყოვლისმომცველი რეფერენს რეპო Claude Code-ს შესახებ — კონფიგურაცია, რჩევები, ხრიკები, მოწინავე გამოყენების პატერნები და საზოგადოების საუკეთესო პრაქტიკები ერთ ადგილას. |
+| [Claude How-To](https://github.com/luongnv89/claude-howto) | ვიზუალური, მაგალითებზე დაფუძნებული სახელმძღვანელო Claude Code-სთვის — საბაზისო კონცეფციებიდან მოწინავე აგენტებამდე, copy-paste შაბლონებით სწრაფი დაწყებისთვის. |
+| [Claude Code Setup](https://github.com/tornikebolokadze1-cyber/claude-code-setup) | მზა Claude Code კონფიგურაცია წინასწარ დაყენებული წესებით, უნარებით, აგენტებით, hooks-ებით და MCP სერვერის ინტეგრაციებით — პროფესიონალური სამუშაო გარემო ერთი ნაბიჯით. |
+| [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | UI/UX დიზაინის ავტომატიზაციის უნარი Claude Code-სთვის. 50 დიზაინის სტილი, 21 ფერთა პალიტრა, 50 შრიფტების წყვილი და სტრუქტურირებული დიზაინ-სისტემის გენერაცია AI ასისტენტის დახმარებით. |
+| [Codex Plugin for Claude Code](https://github.com/openai/codex-plugin-cc) | OpenAI-ს ოფიციალური პლაგინი, რომელიც საშუალებას გაძლევთ კოდის მიმოხილვა და დეველოპმენტის ამოცანები გადასცეთ OpenAI-ს Codex აგენტს პირდაპირ Claude Code-დან — ორი AI კოდინგ ასისტენტის ერთობლივი მუშაობა. |
+
+## MCP სერვერები და ინტეგრაციები
+
+| რეპოზიტორია | აღწერა |
+|---|---|
+| [n8n-MCP](https://github.com/czlonkowski/n8n-mcp) | MCP სერვერი, რომელიც აკავშირებს Claude Code-ს n8n სამუშაო ავტომატიზაციის პლატფორმასთან. აშენებს, ვალიდაციას უკეთებს და მართავს n8n workflow-ებს ბუნებრივი ენით. თანმხლები პროექტი: [n8n-skills](https://github.com/czlonkowski/n8n-skills) ([n8n-mcp.com](https://www.n8n-mcp.com/) / [n8n-skills.com](https://www.n8n-skills.com/)). |
+| [Playwright MCP](https://github.com/microsoft/playwright-mcp) | Microsoft-ის ოფიციალური Playwright MCP სერვერი ბრაუზერის ავტომატიზაციისთვის AI აგენტებიდან — ტესტირება, სკრეიპინგი და ვებ ინტერაქცია პირდაპირ Claude Code-დან. |
+| [Prism MCP](https://github.com/dcostenco/prism-mcp) | აქტიური კოგნიტური არქიტექტურის MCP სერვერი, რომელიც AI აგენტებს აძლევს მდგრად მეხსიერებას, თვითორგანიზებად ცოდნის გრაფს, მულტი-აგენტურ სინქრონიზაციას და Obsidian vault-ის ექსპორტს სტრუქტურირებული ცოდნის მართვისთვის. |
+| [LightRAG](https://github.com/hkuds/lightrag) | მსუბუქი Retrieval-Augmented Generation ფრეიმვორკი გრაფზე დაფუძნებული ცოდნის ინდექსაციით. ინტეგრირდება როგორც MCP სერვერი AI აგენტებისთვის, რომლებსაც სჭირდებათ სწრაფი და ზუსტი ძიება დიდი დოკუმენტების კოლექციებიდან. |
+
+## ბრაუზერის ავტომატიზაცია
+
+| რეპოზიტორია | აღწერა |
+|---|---|
+| [Playwright CLI](https://github.com/microsoft/playwright-cli) | ტოკენ-ეფექტური CLI ინტერფეისი Playwright ბრაუზერის ავტომატიზაციისთვის, შექმნილი როგორც უნარები კოდინგ აგენტებისთვის. მსუბუქი ბრაუზერის კონტროლი MCP-ს overhead-ის გარეშე, ოპტიმიზირებული Claude Code-ს, Copilot-ისა და სხვა AI კოდინგ ასისტენტებისთვის. |
+| [Browser Use](https://github.com/browser-use/browser-use) | Python ბიბლიოთეკა, რომელიც ვებსაიტებს ხელმისაწვდომს ხდის AI აგენტებისთვის — ფორმების შევსება, ნავიგაცია და მონაცემთა ამოღება ავტომატურად. შექმნილია ბრაუზერზე დაფუძნებული AI ავტომატიზაციის pipeline-ებისთვის. |
+
+## AI კვლევა და განვითარება
+
+| რეპოზიტორია | აღწერა |
+|---|---|
+| [AutoResearch](https://github.com/karpathy/autoresearch) | ავტონომიური AI აგენტის ფრეიმვორკი ანდრეი კარპატისგან, რომელიც იტერაციულად ცვლის და ატრენინგებს მცირე LLM-ს ერთ GPU-ზე, ღამით ასრულებს ექსპერიმენტებს და ინახავს მხოლოდ გაუმჯობესებებს. ავტომატიზირებს ჰიპერპარამეტრებისა და არქიტექტურის ძიებას ML მკვლევარებისთვის. |
+| [Pretext](https://github.com/chenglou/pretext) | სუფთა JavaScript/TypeScript ბიბლიოთეკა მრავალხაზოვანი ტექსტის გაზომვისა და განლაგებისთვის DOM reflow-ის გარეშე. მხარს უჭერს Canvas, SVG და DOM რენდერინგს სწრაფი, ზუსტი ტექსტის განლაგებით მრავალ ენაზე. |
+| [Hindsight](https://github.com/vectorize-io/hindsight) | აგენტის მეხსიერების სისტემა, რომელიც სცილდება საუბრის recall-ს და ეხმარება AI აგენტებს დროთა განმავლობაში ისწავლონ და გაუმჯობესდნენ. უზრუნველყოფს state-of-the-art გრძელვადიანი მეხსიერების შესრულებას უფრო ჭკვიანი ავტონომიური აგენტების შესაქმნელად. |
+
+## მეხსიერება და ცოდნის მართვა
+
+| რეპოზიტორია | აღწერა |
+|---|---|
+| [Claude Mem](https://github.com/thedotmack/claude-mem) | მეხსიერების მართვის სისტემა Claude Code-სთვის, რომელიც უზრუნველყოფს მდგრად, სტრუქტურირებულ მეხსიერებას სესიებს შორის. საშუალებას აძლევს Claude Code-ს დაიმახსოვროს კონტექსტი, პრეფერენციები და პროექტის მდგომარეობა საუბრებს შორის. |
+| [Obsidian Skills](https://github.com/kepano/obsidian-skills) | Obsidian-ის ინტეგრაციის უნარები Claude Code-სთვის. წაიკითხეთ, ჩაწერეთ, მოძებნეთ და მართეთ Obsidian vault-ის ჩანაწერები პირდაპირ Claude Code-დან — AI ასისტენტისა და პერსონალური ცოდნის მართვის გაერთიანება. |
+| [NotebookLM Python](https://github.com/teng-lin/notebooklm-py) | არაოფიციალური Python API და CLI Google NotebookLM-სთვის სრული პროგრამული წვდომით NotebookLM-ის ფუნქციებზე, მათ შორის ისეთებზე, რომლებიც ვებ ინტერფეისში არ არის ხელმისაწვდომი. შექმნილია დეველოპერებისა და AI აგენტებისთვის notebook ოპერაციების ავტომატიზაციისთვის. |
+
+## პროდუქტიულობა და ავტომატიზაცია
+
+| რეპოზიტორია | აღწერა |
+|---|---|
+| [GSD (Get Shit Done)](https://github.com/gsd-build/get-shit-done) | პროდუქტიულობაზე ორიენტირებული დეველოპმენტის ინსტრუმენტი, რომელიც ამარტივებს ამოცანების შესრულებას და პროექტის მართვას. შექმნილია დეველოპერებისთვის, რომლებსაც სურთ ნაკლები overhead და მეტი shipping. |
+| [Google Workspace CLI](https://github.com/googleworkspace/cli) | ერთიანი ბრძანების ხაზის ინსტრუმენტი Google Workspace სერვისების მართვისთვის — Drive, Gmail, Calendar, Sheets, Docs, Chat და Admin. დინამიურად აშენებული Google Discovery Service-იდან, CLI და AI აგენტის წვდომით Google Workspace-ის სრულ ეკოსისტემაზე. |
+
+## რესურსები და რეფერენსები
+
+| რეპოზიტორია | აღწერა |
+|---|---|
+| [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code) | Claude Code-ის რესურსების, პლაგინების, უნარების, MCP სერვერებისა და საზოგადოების ინსტრუმენტების კურირებული სია — Claude Code ეკოსისტემის დეფინიტური კატალოგი. |
+| [Free LLM API Resources](https://github.com/cheahjs/free-llm-api-resources) | უფასო LLM inference API-ებისა და რესურსების კურირებული სია დეველოპერებისა და ჰობისტებისთვის, რომლებსაც სურთ ენობრივ მოდელებთან ექსპერიმენტი API-ის საფასურის გარეშე. |
+| [Public APIs](https://github.com/public-apis/public-apis) | უფასო API-ების მასიური კოლექტიური სია კატეგორიების მიხედვით — მთავარი რეფერენსი დეველოპერებისთვის, რომლებიც ეძებენ საჯარო მონაცემთა წყაროებსა და სერვისებს ინტეგრაციისთვის. |
+
+---
+
+## ჩვენს შესახებ
+
+<p align="center">
+  <img src="https://img.shields.io/badge/AI_Pulse_Georgia-2025-ff512f?style=for-the-badge&labelColor=302b63" alt="AI Pulse Georgia 2025"/>
+</p>
+
+ეს სია იმართება **AI Pulse Georgia**-ს მიერ — საზოგადოება, რომელიც ფოკუსირებულია AI აგენტებზე, ავტომატიზაციაზე და ავტონომიური სისტემების მომავალზე.
+
+თუ ეს სია გამოგადგებათ, მიეცით ვარსკვლავი და გაუზიარეთ სხვებს, ვინც AI აგენტებით აშენებს.
+
+## წვლილის შეტანა
+
+იპოვეთ შესანიშნავი რეპოზიტორია, რომელიც ამ სიაში ჯდება? გახსენით issue ან გამოაგზავნეთ pull request.
+
+## ლიცენზია
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)

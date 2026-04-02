@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c29"/>
+      <stop offset="50%" style="stop-color:#302b63"/>
+      <stop offset="100%" style="stop-color:#24243e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff512f"/>
+      <stop offset="100%" style="stop-color:#dd2476"/>
+    </linearGradient>
+    <linearGradient id="flag1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f0f0f0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="320" fill="url(#bg)" rx="16"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.05">
+    <line x1="0" y1="40" x2="900" y2="40" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="80" x2="900" y2="80" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="120" x2="900" y2="120" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="160" x2="900" y2="160" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="900" y2="200" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="240" x2="900" y2="240" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="280" x2="900" y2="280" stroke="white" stroke-width="0.5"/>
+    <line x1="100" y1="0" x2="100" y2="320" stroke="white" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="320" stroke="white" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="320" stroke="white" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="320" stroke="white" stroke-width="0.5"/>
+    <line x1="500" y1="0" x2="500" y2="320" stroke="white" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="320" stroke="white" stroke-width="0.5"/>
+    <line x1="700" y1="0" x2="700" y2="320" stroke="white" stroke-width="0.5"/>
+    <line x1="800" y1="0" x2="800" y2="320" stroke="white" stroke-width="0.5"/>
+  </g>
+
+  <!-- Decorative circles -->
+  <circle cx="780" cy="60" r="80" fill="none" stroke="#ff512f" stroke-width="1" opacity="0.15"/>
+  <circle cx="780" cy="60" r="120" fill="none" stroke="#dd2476" stroke-width="0.5" opacity="0.1"/>
+  <circle cx="120" cy="260" r="60" fill="none" stroke="#ff512f" stroke-width="1" opacity="0.1"/>
+
+  <!-- Neural network nodes -->
+  <g opacity="0.12">
+    <circle cx="700" cy="80" r="4" fill="#ff512f"/>
+    <circle cx="750" cy="50" r="3" fill="#dd2476"/>
+    <circle cx="800" cy="90" r="5" fill="#ff512f"/>
+    <circle cx="760" cy="120" r="3" fill="#dd2476"/>
+    <circle cx="830" cy="60" r="4" fill="#ff512f"/>
+    <line x1="700" y1="80" x2="750" y2="50" stroke="#ff512f" stroke-width="0.5"/>
+    <line x1="750" y1="50" x2="800" y2="90" stroke="#dd2476" stroke-width="0.5"/>
+    <line x1="800" y1="90" x2="760" y2="120" stroke="#ff512f" stroke-width="0.5"/>
+    <line x1="750" y1="50" x2="830" y2="60" stroke="#dd2476" stroke-width="0.5"/>
+    <line x1="700" y1="80" x2="760" y2="120" stroke="#ff512f" stroke-width="0.5"/>
+  </g>
+
+  <!-- Pulse icon -->
+  <g transform="translate(60, 90)" filter="glow">
+    <polyline points="0,40 20,40 30,10 40,70 50,30 60,50 80,40 100,40" fill="none" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Georgian flag cross (small, subtle) -->
+  <g transform="translate(60, 195)" opacity="0.6">
+    <rect x="0" y="7" width="30" height="6" fill="white" rx="1"/>
+    <rect x="12" y="0" width="6" height="20" fill="white" rx="1"/>
+    <rect x="0" y="8.5" width="30" height="3" fill="#FF0000" rx="0.5"/>
+    <rect x="13.5" y="0" width="3" height="20" fill="#FF0000" rx="0.5"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="170" y="120" font-family="'Segoe UI', Arial, sans-serif" font-size="46" font-weight="800" fill="white" filter="shadow">
+    Awesome AI Pulse
+  </text>
+  <text x="170" y="170" font-family="'Segoe UI', Arial, sans-serif" font-size="46" font-weight="800" fill="url(#accent)" filter="shadow">
+    Georgia
+  </text>
+
+  <!-- Subtitle -->
+  <text x="170" y="210" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#a0a0b8" letter-spacing="1">
+    AI აგენტების, ინსტრუმენტებისა და ავტომატიზაციის კურირებული კოლექცია
+  </text>
+
+  <!-- Bottom stats bar -->
+  <rect x="0" y="260" width="900" height="60" fill="black" fill-opacity="0.3" rx="0 0 16 16"/>
+
+  <!-- Stats -->
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#a0a0b8">
+    <text x="80" y="296" text-anchor="middle">
+      <tspan fill="white" font-weight="700" font-size="18">28</tspan>
+      <tspan dx="6">რეპო</tspan>
+    </text>
+    <text x="230" y="296" text-anchor="middle">
+      <tspan fill="white" font-weight="700" font-size="18">8</tspan>
+      <tspan dx="6">კატეგორია</tspan>
+    </text>
+    <text x="410" y="296" text-anchor="middle">
+      <tspan fill="#ff512f" font-weight="700" font-size="18">AI Agents</tspan>
+      <tspan dx="6">&#x2022;</tspan>
+      <tspan dx="6" fill="#dd2476" font-weight="700">MCP</tspan>
+      <tspan dx="6">&#x2022;</tspan>
+      <tspan dx="6" fill="#ff512f" font-weight="700">Claude Code</tspan>
+    </text>
+    <text x="680" y="296" text-anchor="middle">
+      <tspan fill="#ff512f">&#9733;</tspan>
+      <tspan dx="4" fill="white">AI Pulse Georgia 2025</tspan>
+    </text>
+  </g>
+</svg>

@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-43-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-48-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-8-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -77,6 +77,11 @@
 | [Notion MCP](https://github.com/makenotion/notion-mcp-server) | Notion-ის ოფიციალური MCP სერვერი — AI ასისტენტებს საშუალებას აძლევს Notion-ის გვერდებთან, მონაცემთა ბაზებთან და კონტენტთან იმუშაონ. OAuth ავტორიზაცია და Markdown რედაქტირება ტოკენ-ეფექტური ინტეგრაციისთვის. 4.2K ⭐. |
 | [Supabase MCP](https://github.com/supabase-community/supabase-mcp) | Supabase-ის MCP სერვერი — AI ასისტენტებს პირდაპირ აკავშირებს Supabase-ის პროექტებთან ცხრილების მართვის, კონფიგურაციის და მონაცემთა მოთხოვნებისთვის. OAuth ავტორიზაცია, Cursor, Claude და Windsurf მხარდაჭერა. 2.6K ⭐. |
 | [Perplexity MCP](https://github.com/perplexityai/modelcontextprotocol) | Perplexity-ის ოფიციალური MCP სერვერი — რეალურ დროში ვებ-ძიება, საუბრისმაგვარი AI (sonar-pro), ღრმა კვლევა (sonar-deep-research) და რთული მსჯელობა (sonar-reasoning-pro). 4 ინსტრუმენტი ერთ სერვერში. 2.1K ⭐. |
+| [Cloudflare MCP](https://github.com/cloudflare/mcp-server-cloudflare) | Cloudflare-ის ოფიციალური MCP სერვერი — Workers, KV, R2, D1 და Cloudflare-ის სრული პლატფორმის მართვა AI ასისტენტებიდან. Browser Rendering API ვებ სქრეიფინგისთვის. 3.6K ⭐. |
+| [Bright Data MCP](https://github.com/brightdata/brightdata-mcp) | Bright Data-ს ოფიციალური MCP სერვერი — ყველაფერი-ერთში ვებ სქრეიფინგი anti-bot bypass-ით, proxy ქსელით და სტრუქტურირებული მონაცემების ამოღებით ნებისმიერი ვებსაიტიდან. 2.3K ⭐. |
+| [Crawl4AI RAG](https://github.com/coleam00/mcp-crawl4ai-rag) | ვებ Crawling + RAG შესაძლებლობები AI აგენტებისთვის — ვებსაიტების crawling, კონტენტის ინდექსაცია და ცოდნაზე დაფუძნებული კითხვა-პასუხი ერთიან pipeline-ში. 2.1K ⭐. |
+| [Apify MCP](https://github.com/apify/apify-mcp-server) | Apify-ს ოფიციალური MCP სერვერი — 1000+ მზა სქრეიფერი Instagram-ის, TikTok-ის, Amazon-ის, Google Maps-ის და ნებისმიერი ვებსაიტის მონაცემების ამოსაღებად AI ასისტენტებიდან. 1K ⭐. |
+| [LinkedIn MCP](https://github.com/stickerdaniel/linkedin-mcp-server) | LinkedIn-ის MCP სერვერი — პროფილების, კომპანიების, ვაკანსიების სქრეიფინგი და inbox-ის მართვა AI ასისტენტებიდან. 1.3K ⭐. |
 
 ## ბრაუზერის ავტომატიზაცია
 

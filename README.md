@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-32-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-33-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-8-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -57,6 +57,7 @@
 | [GSD (Get Shit Done)](https://github.com/gsd-build/get-shit-done) | Meta-prompting-ისა და სპეციფიკაციაზე დაფუძნებული განვითარების სისტემა Claude Code-სთვის (და Codex, Cursor, Gemini CLI-სთვის), რომელიც გადაჭრის context rot-ის პრობლემას — ხარისხის გაუარესებას, რომელიც ხდება როცა AI აგენტი კონტექსტს ავსებს. |
 | [Obsidian Skills](https://github.com/kepano/obsidian-skills) | აგენტის უნარები Obsidian vault-ებთან სამუშაოდ. წაიკითხეთ, ჩაწერეთ, მოძებნეთ და მართეთ Markdown, Bases და JSON Canvas ფაილები პირდაპირ Claude Code-დან, Codex CLI-დან ან ნებისმიერი AgentSkills-თავსებადი აგენტიდან. |
 | [n8n Skills](https://github.com/czlonkowski/n8n-skills) | n8n workflow ავტომატიზაციის უნარების კოლექცია Claude Code-სთვის — მზა შაბლონები, პატერნები და საუკეთესო პრაქტიკები n8n workflow-ების აშენებისთვის AI ასისტენტის დახმარებით. თანმხლები პროექტი: [n8n-MCP](https://github.com/czlonkowski/n8n-mcp) ([n8n-skills.com](https://www.n8n-skills.com/)). |
+| [Georgian Payments Skills](https://github.com/erekle1/georgian-payments-skills) | AI აგენტის უნარები ქართული ბანკების API-ებისთვის — TBC Bank (Checkout, TPay, XML Billing) და Bank of Georgia (iPay, Installments, Open Banking PSD2). Drop-in skills, რომლებიც AI კოდინგ ასისტენტს (Claude Code, Cursor, Windsurf, Codex) აძლევს ექსპერტ-დონის ცოდნას ქართული საგადახდო ინტეგრაციების შესახებ. Made in Georgia 🇬🇪. |
 
 ## MCP სერვერები და ინტეგრაციები
 

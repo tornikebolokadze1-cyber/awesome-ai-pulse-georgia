@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-42-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-43-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-8-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -107,6 +107,7 @@
 | რეპოზიტორია | აღწერა |
 |---|---|
 | [Google Workspace CLI](https://github.com/googleworkspace/cli) | ერთიანი ბრძანების ხაზის ინსტრუმენტი Google Workspace სერვისების მართვისთვის — Drive, Gmail, Calendar, Sheets, Docs, Chat და Admin. დინამიურად აშენებული Google Discovery Service-იდან, CLI და AI აგენტის წვდომით Google Workspace-ის სრულ ეკოსისტემაზე. |
+| [Metricool MCP](https://github.com/metricool/mcp-metricool) | Metricool-ის ოფიციალური MCP სერვერი სოციალური მედიის მეტრიკების ანალიზისა და პოსტების დაგეგმვისთვის AI ასისტენტებიდან. საშუალებას აძლევს AI აგენტებს მიიღონ Instagram, Facebook, Twitter/X, TikTok, LinkedIn სტატისტიკა და დაგეგმონ პუბლიკაციები პირდაპირ Claude-დან ან Cursor-იდან. |
 
 ## რესურსები და რეფერენსები
 

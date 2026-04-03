@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-33-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-34-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-8-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -69,6 +69,7 @@
 | [Claude Peers MCP](https://github.com/louislva/claude-peers-mcp) | MCP სერვერი, რომელიც ერთ მანქანაზე გაშვებულ მრავალ Claude Code ინსტანციას საშუალებას აძლევს აღმოაჩინონ ერთმანეთი და რეალურ დროში დაუკავშირდნენ. შექმნილია დეველოპერებისთვის, რომლებიც პარალელურად მუშაობენ რამდენიმე Claude სესიაზე სხვადასხვა პროექტში და სჭირდებათ მათი თანამშრომლობა მყისიერი შეტყობინებებით. |
 | [GitHub MCP Server](https://github.com/github/github-mcp-server) | GitHub-ის ოფიციალური MCP სერვერი, რომელიც AI ინსტრუმენტებს პირდაპირ აკავშირებს GitHub-ის პლატფორმასთან. საშუალებას აძლევს AI აგენტებს შეასრულონ GitHub-ის ოპერაციები ბუნებრივი ენით — რეპოზიტორიების მართვა, issue-ების თვალყურის დევნება და workflow ავტომატიზაცია. |
 | [Context7](https://github.com/upstash/context7) | MCP სერვერი, რომელიც განახლებულ, ვერსია-სპეციფიკურ დოკუმენტაციას აწვდის პირდაპირ LLM-ის prompt-ებში, რაც აღმოფხვრის ჰალუცინირებულ API-ებსა და მოძველებულ კოდის მაგალითებს. შექმნილია დეველოპერებისთვის, რომლებიც იყენებენ AI კოდინგ ასისტენტებს (Cursor, Claude Code) და სჭირდებათ ზუსტი, აქტუალური ბიბლიოთეკის დოკუმენტაცია. |
+| [Draw.io MCP](https://github.com/jgraph/drawio-mcp) | draw.io-ს ოფიციალური MCP სერვერი, რომელიც AI ასისტენტებს საშუალებას აძლევს შექმნან და გახსნან დიაგრამები draw.io რედაქტორში. 4 ინტეგრაციის მეთოდი: MCP App Server (inline preview ჩატში), MCP Tool Server (ბრაუზერში გახსნა), Skill + CLI (ლოკალური ფაილები) და Project Instructions. მხარს უჭერს XML, CSV და Mermaid ფორმატებს. |
 
 ## ბრაუზერის ავტომატიზაცია
 

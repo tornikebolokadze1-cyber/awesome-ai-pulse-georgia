@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-35-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-42-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-8-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -70,6 +70,13 @@
 | [GitHub MCP Server](https://github.com/github/github-mcp-server) | GitHub-ის ოფიციალური MCP სერვერი, რომელიც AI ინსტრუმენტებს პირდაპირ აკავშირებს GitHub-ის პლატფორმასთან. საშუალებას აძლევს AI აგენტებს შეასრულონ GitHub-ის ოპერაციები ბუნებრივი ენით — რეპოზიტორიების მართვა, issue-ების თვალყურის დევნება და workflow ავტომატიზაცია. |
 | [Context7](https://github.com/upstash/context7) | MCP სერვერი, რომელიც განახლებულ, ვერსია-სპეციფიკურ დოკუმენტაციას აწვდის პირდაპირ LLM-ის prompt-ებში, რაც აღმოფხვრის ჰალუცინირებულ API-ებსა და მოძველებულ კოდის მაგალითებს. შექმნილია დეველოპერებისთვის, რომლებიც იყენებენ AI კოდინგ ასისტენტებს (Cursor, Claude Code) და სჭირდებათ ზუსტი, აქტუალური ბიბლიოთეკის დოკუმენტაცია. |
 | [Draw.io MCP](https://github.com/jgraph/drawio-mcp) | draw.io-ს ოფიციალური MCP სერვერი, რომელიც AI ასისტენტებს საშუალებას აძლევს შექმნან და გახსნან დიაგრამები draw.io რედაქტორში. 4 ინტეგრაციის მეთოდი: MCP App Server (inline preview ჩატში), MCP Tool Server (ბრაუზერში გახსნა), Skill + CLI (ლოკალური ფაილები) და Project Instructions. მხარს უჭერს XML, CSV და Mermaid ფორმატებს. |
+| [MCP Servers](https://github.com/modelcontextprotocol/servers) | Model Context Protocol-ის ოფიციალური საცნობარო სერვერების კოლექცია — Filesystem, Git, Memory, Fetch, Sequential Thinking და სხვა. მოიცავს 10 პროგრამირების ენის SDK-ს (TypeScript, Python, Go, Rust, Java, Kotlin, C#, Ruby, Swift, PHP). MCP ეკოსისტემის ფუნდამენტი. 83K ⭐. |
+| [Figma Context MCP](https://github.com/GLips/Figma-Context-MCP) | Framelink MCP სერვერი, რომელიც Figma-ს დიზაინის მონაცემებს აწვდის AI კოდინგ ასისტენტებს (Cursor, Claude Code). სკრინშოტებთან შედარებით, Figma-ს სტრუქტურირებული მონაცემების გამოყენება გაცილებით ზუსტ კოდს აწარმოებს — დიზაინიდან კოდში ერთი მცდელობით. 14K ⭐. |
+| [Firecrawl MCP](https://github.com/firecrawl/firecrawl-mcp-server) | Firecrawl-ის ოფიციალური MCP სერვერი — ვებ სქრეიფინგი, crawling, ძიება, ღრმა კვლევა და ბრაუზერის სესიები AI ასისტენტებისთვის. ავტომატური retry, rate limiting და SSE მხარდაჭერით. 5.9K ⭐. |
+| [Exa MCP](https://github.com/exa-labs/exa-mcp-server) | Exa-ს MCP სერვერი AI ასისტენტებისთვის — ვებ-ძიება, კოდის ძიება და კომპანიების კვლევა. ხელმისაწვდომია როგორც ჰოსტირებული სერვისი ერთი დაწკაპუნებით Cursor-სა და VS Code-ში ინტეგრაციით. 4.1K ⭐. |
+| [Notion MCP](https://github.com/makenotion/notion-mcp-server) | Notion-ის ოფიციალური MCP სერვერი — AI ასისტენტებს საშუალებას აძლევს Notion-ის გვერდებთან, მონაცემთა ბაზებთან და კონტენტთან იმუშაონ. OAuth ავტორიზაცია და Markdown რედაქტირება ტოკენ-ეფექტური ინტეგრაციისთვის. 4.2K ⭐. |
+| [Supabase MCP](https://github.com/supabase-community/supabase-mcp) | Supabase-ის MCP სერვერი — AI ასისტენტებს პირდაპირ აკავშირებს Supabase-ის პროექტებთან ცხრილების მართვის, კონფიგურაციის და მონაცემთა მოთხოვნებისთვის. OAuth ავტორიზაცია, Cursor, Claude და Windsurf მხარდაჭერა. 2.6K ⭐. |
+| [Perplexity MCP](https://github.com/perplexityai/modelcontextprotocol) | Perplexity-ის ოფიციალური MCP სერვერი — რეალურ დროში ვებ-ძიება, საუბრისმაგვარი AI (sonar-pro), ღრმა კვლევა (sonar-deep-research) და რთული მსჯელობა (sonar-reasoning-pro). 4 ინსტრუმენტი ერთ სერვერში. 2.1K ⭐. |
 
 ## ბრაუზერის ავტომატიზაცია
 

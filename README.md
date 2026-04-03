@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-34-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-35-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-8-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -84,6 +84,7 @@
 |---|---|
 | [AutoResearch](https://github.com/karpathy/autoresearch) | მინიმალური ავტონომიური ML ექსპერიმენტის setup ანდრეი კარპატისგან — იტერაციულად ცვლის და ატრენინგებს მცირე LLM-ს ერთ GPU-ზე, ღამით ასრულებს ექსპერიმენტებს და ინახავს მხოლოდ გაუმჯობესებებს. ავტომატიზირებს ჰიპერპარამეტრებისა და არქიტექტურის ძიებას ML მკვლევარებისთვის. |
 | [LightRAG](https://github.com/hkuds/lightrag) | მსუბუქი Retrieval-Augmented Generation ფრეიმვორკი გრაფზე დაფუძნებული ცოდნის ინდექსაციით (EMNLP 2025). უზრუნველყოფს სწრაფ და ზუსტ ძიებას დიდი დოკუმენტების კოლექციებიდან AI აგენტებისთვის. |
+| [RAG-Anything](https://github.com/HKUDS/RAG-Anything) | All-in-One RAG ფრეიმვორკი, რომელიც ამუშავებს ნებისმიერ ტიპის დოკუმენტს — ტექსტს, ცხრილებს, სურათებს, გრაფიკებს და დიაგრამებს ერთიან pipeline-ში. გრაფზე დაფუძნებული მულტიმოდალური ცოდნის ინდექსაცია. იმავე გუნდისგან, ვინც LightRAG შექმნა (HKUDS). 15K ⭐. |
 | [Pretext](https://github.com/chenglou/pretext) | სუფთა JavaScript/TypeScript ბიბლიოთეკა მრავალხაზოვანი ტექსტის გაზომვისა და განლაგებისთვის DOM reflow-ის გარეშე. მხარს უჭერს Canvas, SVG და DOM რენდერინგს სწრაფი, ზუსტი ტექსტის განლაგებით მრავალ ენაზე. სასარგებლოა ვირტუალიზაციისა და masonry განლაგებისთვის. |
 
 ## მეხსიერება და ცოდნის მართვა

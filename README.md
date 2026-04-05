@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-47-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-51-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -59,6 +59,7 @@
 | [n8n Skills](https://github.com/czlonkowski/n8n-skills) | 4K | 7 ურთიერთშემავსებელი უნარი n8n workflow-ების ასაწყობად. ასწავლის AI ასისტენტებს MCP ინსტრუმენტების სწორ გამოყენებას და workflow პატერნების შერჩევას. თანმხლები: [n8n-MCP](https://github.com/czlonkowski/n8n-mcp). |
 | [Claude Code Setup](https://github.com/tornikebolokadze1-cyber/claude-code-setup) | 9 | Claude Code-ის პროდაქშენ-დონის კონფიგურაციის სისტემა — უსაფრთხოების წესები, ავტომატური hooks და /setup ბრძანება ახალი პროექტებისთვის. Made in Georgia 🇬🇪. |
 | [Georgian Payments Skills](https://github.com/erekle1/georgian-payments-skills) | 2 | ქართული ბანკების API უნარები — TBC Bank (Checkout, TPay, XML Billing) და Bank of Georgia (iPay, Installments, Open Banking PSD2). AI კოდის ასისტენტებისთვის ექსპერტ-დონის ცოდნა. Made in Georgia 🇬🇪. |
+| [Taskmaster](https://github.com/eyaltoledano/claude-task-master) | 26K | AI-ზე დაფუძნებული ამოცანების მართვის სისტემა — პროექტის დაგეგმვა, ამოცანების ავტომატური დაშლა ქვე-ამოცანებად, პრიორიტეტების მართვა და დამოკიდებულებების თვალყურის დევნება. მუშაობს Cursor-ში, Windsurf-ში, Claude Code-ში და სხვა AI ჩატებში. MCP სერვერითაც და CLI-ითაც ხელმისაწვდომია. |
 
 ## MCP — პლატფორმები და ინტეგრაციები
 
@@ -94,6 +95,7 @@
 |---|---|---|
 | [Exa MCP](https://github.com/exa-labs/exa-mcp-server) | 4.1K | Exa-ს ძიების სერვერი — ვებ ძიება, კოდის ძიება და კომპანიების კვლევა. ჰოსტირებული სერვისი ერთი დაწკაპუნებით Cursor-სა და VS Code-ში ინტეგრაციით. |
 | [Perplexity MCP](https://github.com/perplexityai/modelcontextprotocol) | 2.1K | Perplexity-ის ოფიციალური სერვერი — რეალურ დროში ვებ ძიება (perplexity_search), საუბრისმაგვარი AI (sonar-pro), ღრმა კვლევა (sonar-deep-research) და მსჯელობა (sonar-reasoning-pro). |
+| [Tavily MCP](https://github.com/tavily-ai/tavily-mcp) | 1.6K | რეალურ დროში ვებ ძიება, კონტენტის ამოღება (extract), საიტის რუკის შედგენა (map) და crawling — ოთხივე ინსტრუმენტი ერთ MCP სერვერში. ჰოსტირებული ვერსია (mcp.tavily.com) ლოკალური ინსტალაციის გარეშე მუშაობს. |
 
 ## მეხსიერება და RAG
 
@@ -111,6 +113,7 @@
 |---|---|---|
 | [Google Workspace CLI](https://github.com/googleworkspace/cli) | 24K | ერთი CLI მთელი Google Workspace-ისთვის — Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin. Google Discovery Service-იდან დინამიურად აგებს ბრძანებებს. 40+ აგენტის უნარი. |
 | [NotebookLM Python](https://github.com/teng-lin/notebooklm-py) | 8.9K | Google NotebookLM-ის არაოფიციალური Python API და CLI. სრული პროგრამული წვდომა ფუნქციებზე, მათ შორის ვებ ინტერფეისში მიუწვდომელ ფუნქციებზე. |
+| [Markdownify MCP](https://github.com/zcaceres/markdownify-mcp) | 2.5K | ნებისმიერი ფაილის Markdown-ად გარდაქმნა — PDF, სურათები, აუდიო (ტრანსკრიფციით), DOCX, XLSX, PPTX, YouTube ვიდეოს სუბტიტრები და ვებ გვერდები. AI ასისტენტებისთვის კონტენტის უნივერსალური კონვერტორი. |
 | [Metricool MCP](https://github.com/metricool/mcp-metricool) | 33 | Metricool-ის ოფიციალური სერვერი — სოციალური მედიის მეტრიკების ანალიზი და პოსტების დაგეგმვა AI ასისტენტებიდან. Instagram, Facebook, Twitter/X, TikTok, LinkedIn სტატისტიკა. |
 
 ## AI კვლევა

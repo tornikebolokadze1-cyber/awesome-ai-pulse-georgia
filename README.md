@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-51-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-52-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -130,6 +130,7 @@
 | [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code) | 36K | Claude Code-ის საუკეთესო რესურსების კურირებული სია — უნარები, hooks, slash-ბრძანებები, აგენტების ორკესტრატორები და პლაგინები. |
 | [Free LLM API Resources](https://github.com/cheahjs/free-llm-api-resources) | 18K | უფასო LLM API რესურსების სია — OpenRouter, Google AI Studio, NVIDIA NIM, Mistral, Groq, Cerebras, Cohere, GitHub Models და სხვა პროვაიდერები. |
 | [Claude How-To](https://github.com/luongnv89/claude-howto) | 18K | ვიზუალური სახელმძღვანელო Claude Code-სთვის — საწყისი კონცეფციებიდან მოწინავე აგენტებამდე, copy-paste შაბლონებით. |
+| [Awesome DESIGN.md](https://github.com/VoltAgent/awesome-design-md) | 17K | DESIGN.md ფაილების კოლექცია პოპულარული ვებსაიტების დიზაინ-სისტემებიდან. ჩააგდე პროექტში, უთხარი AI აგენტს "ააგე ასეთი UI" და მიიღე pixel-perfect კოდი. Google Stitch-ის კონცეფცია — Markdown ფორმატში დიზაინის სისტემა, რომელსაც LLM-ები საუკეთესოდ კითხულობენ. 55+ მზა DESIGN.md. |
 
 ---
 

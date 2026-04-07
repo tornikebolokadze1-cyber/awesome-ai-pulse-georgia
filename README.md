@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-68-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-70-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -75,6 +75,7 @@
 | [cmux](https://github.com/manaflow-ai/cmux) | 13K | Ghostty-ზე დაფუძნებული macOS ტერმინალი ვერტიკალური ტაბებითა და ნოტიფიკაციებით — სპეციალურად AI კოდინგ აგენტებისთვის შექმნილი. პარალელური სესიების მართვა გამარტივებულია. |
 | [OpenSandbox](https://github.com/alibaba/OpenSandbox) | 10K | Alibaba-ს უსაფრთხო, სწრაფი და გაფართოვებადი sandbox runtime AI აგენტების კოდის ექსეკუციისთვის. იზოლირებული გარემო — აგენტი კოდს ასრულებს თქვენი სისტემის რისკის გარეშე. |
 | [toon](https://github.com/toon-format/toon) | 24K | Token-Oriented Object Notation — JSON-ის ალტერნატივა LLM prompt-ებისთვის. Schema-aware, კომპაქტური ფორმატი, რომელიც ტოკენების მოხმარებას მნიშვნელოვნად ამცირებს და LLM-ისთვის უფრო წასაკითხია. |
+| [Career-Ops](https://github.com/santifer/career-ops) | 13K | Claude Code-ზე დაფუძნებული AI სამუშაოს ძიების pipeline. შეფასებს ვაკანსიებს A-F სკალით (10 კრიტერიუმი), წერს ATS-ოპტიმიზებულ CV-ებს თითო პოზიციაზე მორგებულად, ავტომატურად სკანირებს Greenhouse, Ashby, Lever-ს და თვალს ადევნებს ყველაფერს. 14 skill mode + Go dashboard. |
 
 ## MCP — პლატფორმები და ინტეგრაციები
 
@@ -148,6 +149,7 @@
 | [Free LLM API Resources](https://github.com/cheahjs/free-llm-api-resources) | 18K | უფასო LLM API რესურსების სია — OpenRouter, Google AI Studio, NVIDIA NIM, Mistral, Groq, Cerebras, Cohere, GitHub Models და სხვა პროვაიდერები. |
 | [Claude How-To](https://github.com/luongnv89/claude-howto) | 18K | ვიზუალური სახელმძღვანელო Claude Code-სთვის — საწყისი კონცეფციებიდან მოწინავე აგენტებამდე, copy-paste შაბლონებით. |
 | [Awesome DESIGN.md](https://github.com/VoltAgent/awesome-design-md) | 17K | DESIGN.md ფაილების კოლექცია პოპულარული ვებსაიტების დიზაინ-სისტემებიდან. ჩააგდე პროექტში, უთხარი AI აგენტს "ააგე ასეთი UI" და მიიღე pixel-perfect კოდი. Google Stitch-ის კონცეფცია — Markdown ფორმატში დიზაინის სისტემა, რომელსაც LLM-ები საუკეთესოდ კითხულობენ. 55+ მზა DESIGN.md. |
+| [LLM-Maintained Wiki (Karpathy)](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) | Gist | Andrej Karpathy-ის ბრწყინვალე კონცეფცია პერსონალური ცოდნის ბაზის აშენებისთვის LLM-ით. ნაცვლად RAG-ით ყოველ ჯერზე ძიებისა, LLM ინკრემენტულად აშენებს და ანახლებს დაკავშირებულ Markdown wiki-ს — კითხულობს ახალ წყაროებს, ცვლის ძველ გვერდებს, ანახლებს cross-reference-ებს. „LLM არ იღლება" — Karpathy. ცოდნის მართვის ახალი პარადიგმა. |
 
 ---
 

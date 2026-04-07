@@ -11,8 +11,8 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-70-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
-  <img src="https://img.shields.io/badge/categories-8-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
+  <img src="https://img.shields.io/badge/repos-71-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
 </p>
@@ -28,7 +28,7 @@
 | ვინ ხარ? | რას გირჩევთ | სად ნახო |
 |---|---|---|
 | 💻 **დეველოპერი ვარ** | Claw Code, Claude Code + Superpowers, Context7 | [კოდინგ აგენტები](#-კოდინგ-აგენტები) + [Claude Code პლაგინები](#-claude-code-პლაგინები-და-უნარები) |
-| 💼 **ბიზნესს ვაავტომატებ** | Paperclip, n8n-MCP, Make, Goose | [აგენტების ფრეიმვორკები](#-ai-აგენტების-ფრეიმვორკები) + [MCP ინტეგრაციები](#-mcp-ინტეგრაციები) |
+| 💼 **ბიზნესს ვაავტომატებ** | OpenClaw, Paperclip, n8n-MCP, Make | [მზა AI აგენტები](#-მზა-ai-აგენტები-ბიზნესისთვის) + [MCP ინტეგრაციები](#-mcp-ინტეგრაციები) |
 | 📊 **მონაცემებს ვაგროვებ** | Browser Use, Firecrawl MCP, Apify MCP | [ვებ სკრეიპინგი და ბრაუზერი](#-ვებ-სკრეიპინგი-და-ბრაუზერი) |
 | 🔍 **AI-ს ვცდი/ვსწავლობ** | Awesome Claude Code, Free LLM APIs, Claude How-To | [სასწავლო რესურსები](#-რესურსები-და-სასწავლო-მასალები) |
 | 🧠 **AI მკვლევარი ვარ** | mem0, LightRAG, RAG-Anything, AutoResearch | [მეხსიერება და RAG](#-მეხსიერება-და-rag) + [აგენტების ფრეიმვორკები](#-ai-აგენტების-ფრეიმვორკები) |
@@ -51,6 +51,7 @@
 - [🔌 MCP ინტეგრაციები](#-mcp-ინტეგრაციები)
 - [🕷️ ვებ სკრეიპინგი და ბრაუზერი](#-ვებ-სკრეიპინგი-და-ბრაუზერი)
 - [🧬 AI აგენტების ფრეიმვორკები](#-ai-აგენტების-ფრეიმვორკები)
+- [💼 მზა AI აგენტები ბიზნესისთვის](#-მზა-ai-აგენტები-ბიზნესისთვის)
 - [🧠 მეხსიერება და RAG](#-მეხსიერება-და-rag)
 - [⚙️ პროდუქტიულობა](#-პროდუქტიულობა)
 - [📚 რესურსები და სასწავლო მასალები](#-რესურსები-და-სასწავლო-მასალები)
@@ -68,7 +69,7 @@
 | [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | 49K | „omo" — უნივერსალური agent harness სხვადასხვა AI კოდინგ აგენტებისთვის. ადრე ცნობილი იყო „oh-my-opencode"-ის სახელით (არ აერიოს Oh My ClaudeCode-ში — სრულიად განსხვავებული პროექტია). |
 | [Goose](https://github.com/block/goose) | 38K | Block-ის (Square და Cash App-ის შემქმნელი) extensible AI კოდის აგენტი. სცდება შემოთავაზებებს — ინსტალირებს, ასრულებს, არედაქტირებს და ტესტავს. მუშაობს ნებისმიერ LLM-თან. |
 | [Taskmaster](https://github.com/eyaltoledano/claude-task-master) | 26K | AI-ზე დაფუძნებული ამოცანების მართვის სისტემა — პროექტის დაგეგმვა, ამოცანების ავტომატური დაშლა ქვე-ამოცანებად, პრიორიტეტების მართვა და დამოკიდებულებების თვალყურის დევნება. მუშაობს Cursor-ში, Windsurf-ში, Claude Code-ში და სხვა AI ჩატებში. MCP სერვერითაც და CLI-ითაც ხელმისაწვდომია. |
-| [OpenClaude](https://github.com/Gitlawb/openclaude) | 18K | ღია კოდის coding-agent CLI — OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models და 200+ მოდელი ერთ ტერმინალში. OpenAI-თავსებადი API-ებით მუშაობს, აქვს slash ბრძანებები, MCP მხარდაჭერა, streaming output და VS Code გაფართოება. |
+| [OpenClaude](https://github.com/Gitlawb/openclaude) | 18K | ღია კოდის coding-agent CLI — OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models და 200+ მოდელი ერთ ტერმინალში. OpenAI-თავსებადი API-ებით მუშაობს, აქვს slash ბრძანებები, MCP მხარდაჭერა, streaming output და VS Code გაფართოება. (არ აერიოს OpenClaw-ში — სრულიად სხვა პროექტია). |
 | [Kilocode](https://github.com/kilo-org/kilocode) | 18K | All-in-one agentic engineering პლატფორმა და VS Code extension. #1 coding agent OpenRouter-ზე, 1.5M+ მომხმარებელი, 25T+ tokens დამუშავებული. ბუნებრივი ენით კოდი, თვით-ვერიფიკაცია, ტერმინალის ბრძანებები, ბრაუზერის ავტომატიზაცია, inline autocomplete და 500+ მოდელის მხარდაჭერა (Gemini, Claude, GPT). |
 | [cmux](https://github.com/manaflow-ai/cmux) | 13K | Ghostty-ზე დაფუძნებული macOS ტერმინალი ვერტიკალური ტაბებითა და ნოტიფიკაციებით — სპეციალურად AI კოდინგ აგენტებისთვის შექმნილი. პარალელური სესიების მართვა გამარტივებულია. |
 | [Codex Plugin](https://github.com/openai/codex-plugin-cc) | 11K | OpenAI-ს ოფიციალური პლაგინი Claude Code-ისთვის — Codex აგენტს კოდის მიმოხილვისა და დავალებების დელეგირების საშუალებას აძლევს. /codex:review, /codex:rescue ბრძანებები. |
@@ -164,13 +165,23 @@
 |---|---|---|
 | [AutoResearch](https://github.com/karpathy/autoresearch) | 68K | Andrej Karpathy-ს ავტონომიური ML კვლევის სისტემა — ავტომატურად ატარებს ექსპერიმენტებს ერთ GPU-ზე, ცვლის ჰიპერპარამეტრებს და ინახავს მხოლოდ გაუმჯობესებებს. |
 | [MiroFish](https://github.com/666ghj/MiroFish) | 51K | Swarm Intelligence ძრავი — ათასობით AI აგენტის სიმულაცია რეალური მონაცემებით პროგნოზირებისთვის. აგენტებს აქვთ ინდივიდუალური პიროვნებები და გრძელვადიანი მეხსიერება. Docker-ით განლაგება. |
-| [Paperclip](https://github.com/paperclipai/paperclip) | 49K | AI აგენტების პლატფორმა ბიზნესის ავტონომიურად წარმართვისთვის. აგენტების გუნდს ორკესტრირებს — org chart, ბიუჯეტი, governance და audit log ერთიან დაფაზე. იდეალურია "AI-first კომპანიების" ასაშენებლად. |
 | [nanobot](https://github.com/HKUDS/nanobot) | 38K | HKUDS-ის ულტრა-მსუბუქი პერსონალური AI აგენტი — მინიმალური რესურსები, მაქსიმალური შესაძლებლობები. სწრაფად იზრდება 2026 წელს. |
 | [Hermes](https://github.com/nousresearch/hermes-agent) | 29K | Nous Research-ის თვითგანვითარებადი AI აგენტი ჩაშენებული სწავლის ციკლით. ქმნის უნარებს გამოცდილებიდან, ინახავს მეხსიერებას სესიებს შორის. მხარს უჭერს Telegram, Discord, Slack, WhatsApp და cron ავტომატიზაციას. |
 | [toon](https://github.com/toon-format/toon) | 24K | Token-Oriented Object Notation — JSON-ის ალტერნატივა LLM prompt-ებისთვის. Schema-aware, კომპაქტური ფორმატი, რომელიც ტოკენების მოხმარებას მნიშვნელოვნად ამცირებს და LLM-ისთვის უფრო წასაკითხია. |
 | [Mastra](https://github.com/mastra-ai/mastra) | 23K | TypeScript ფრეიმვორკი AI აპლიკაციებისა და აგენტებისთვის (Gatsby-ის გუნდისგან). ჩაშენებული workflows, RAG, evals და agent primitives — სრული toolkit თანამედროვე TypeScript stack-ში. |
 | [OpenSandbox](https://github.com/alibaba/OpenSandbox) | 10K | Alibaba-ს უსაფრთხო, სწრაფი და გაფართოებადი sandbox runtime AI აგენტების კოდის ექსეკუციისთვის. იზოლირებული გარემო — აგენტი კოდს ასრულებს თქვენი სისტემის რისკის გარეშე. |
-| [OpenSpace](https://github.com/HKUDS/OpenSpace) | 3.9K | აგენტების თვითგანვითარების ფრეიმვორკი — AUTO-FIX, AUTO-IMPROVE, AUTO-LEARN. აგენტები ერთმანეთს უზიარებენ ნასწავლ უნარებს. მუშაობს Claude Code-თან, Codex-თან და სხვა AI კოდინგ აგენტებთან. |
+| [OpenSpace](https://github.com/HKUDS/OpenSpace) | 3.9K | აგენტების თვითგანვითარების ფრეიმვორკი — AUTO-FIX, AUTO-IMPROVE, AUTO-LEARN. აგენტები ერთმანეთს უზიარებენ ნასწავლ უნარებს. მუშაობს Claude Code-თან, Codex-თან, OpenClaw-თან. |
+
+---
+
+## 💼 მზა AI აგენტები ბიზნესისთვის
+
+> **Ready-Made AI Agents** — გამზადებული AI აგენტები, რომლებსაც ნებისმიერი მომხმარებელი (არც-დეველოპერი) ადვილად დანერგავს.
+
+| რეპოზიტორია | ⭐ | აღწერა |
+|---|---|---|
+| [OpenClaw](https://github.com/openclaw/openclaw) | 350K | პირადი AI ასისტენტი ნებისმიერ მოწყობილობაზე. 20+ არხზე პასუხობს (WhatsApp, Telegram, Slack, Discord, iMessage), აქვს ხმოვანი ინტერფეისი და ცოცხალი Canvas. Local-first დიზაინი და მულტი-აგენტ routing. |
+| [Paperclip](https://github.com/paperclipai/paperclip) | 49K | AI აგენტების პლატფორმა ბიზნესის ავტონომიურად წარმართვისთვის. აგენტების გუნდს ორკესტრირებს — org chart, ბიუჯეტი, governance და audit log ერთიან დაფაზე. |
 
 ---
 

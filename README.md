@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-56-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-68-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -44,6 +44,10 @@
 | [Paperclip](https://github.com/paperclipai/paperclip) | 46K | AI აგენტების პლატფორმა ბიზნესის ავტონომიურად წარმართვისთვის. აგენტების გუნდს ორკესტრირებს — org chart, ბიუჯეტი, governance და audit log ერთიან დაფაზე. |
 | [Hermes](https://github.com/nousresearch/hermes-agent) | 24K | Nous Research-ის თვითგანვითარებადი AI აგენტი ჩაშენებული სწავლის ციკლით. ქმნის უნარებს გამოცდილებიდან, ინახავს მეხსიერებას სესიებს შორის. მხარს უჭერს Telegram, Discord, Slack, WhatsApp და cron ავტომატიზაციას. |
 | [OpenSpace](https://github.com/HKUDS/OpenSpace) | 3.9K | აგენტების თვითგანვითარების ფრეიმვორკი — AUTO-FIX, AUTO-IMPROVE, AUTO-LEARN. აგენტები ერთმანეთს უზიარებენ ნასწავლ უნარებს. მუშაობს Claude Code-თან, Codex-თან, OpenClaw-თან. |
+| [nanobot](https://github.com/HKUDS/nanobot) | 38K | HKUDS-ის ულტრა-მსუბუქი პერსონალური AI აგენტი. მინიმალური resources, მაქსიმალური შესაძლებლობები — 38K ვარსკვლავი ერთ კვარტალში. ერთ-ერთი ყველაზე სწრაფად მზარდი აგენტი 2026 წელს. |
+| [Goose](https://github.com/block/goose) | 38K | Block-ის (Square და Cash App-ის შემქმნელი) extensible AI აგენტი. სცდება კოდის შემოთავაზებებს — ინსტალირებს, ასრულებს, არედაქტირებს და ტესტავს. მუშაობს ნებისმიერ LLM-თან. |
+| [Mastra](https://github.com/mastra-ai/mastra) | 23K | TypeScript ფრეიმვორკი AI აპლიკაციებისა და აგენტებისთვის (Gatsby-ის გუნდისგან). ჩაშენებული workflows, RAG, evals და agent primitives — სრული toolkit თანამედროვე TypeScript stack-ში. |
+| [Agent-Reach](https://github.com/Panniantong/Agent-Reach) | 16K | AI აგენტს „თვალებს" აძლევს ინტერნეტში — Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu და სხვა პლატფორმების წაკითხვა და ძიება ერთიანი ინტერფეისით. |
 
 ## Claude Code ეკოსისტემა
 
@@ -64,6 +68,13 @@
 | [opencode](https://github.com/anomalyco/opencode) | 138K | ღია კოდის coding agent — Claude Code-ის და Cursor-ის ალტერნატივა CLI ფორმატში. 15K+ fork, ერთ-ერთი ყველაზე პოპულარული ღია AI კოდინგ ხელსაწყო GitHub-ზე. |
 | [OpenClaude](https://github.com/Gitlawb/openclaude) | 18K | ღია კოდის coding-agent CLI — OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models და 200+ მოდელი ერთ ტერმინალში. OpenAI-თავსებადი API-ებით მუშაობს, აქვს slash ბრძანებები, MCP მხარდაჭერა, streaming output და VS Code გაფართოება. (არ აერიოს OpenClaw-ში — სრულიად სხვა პროექტია). |
 | [Kilocode](https://github.com/kilo-org/kilocode) | 18K | All-in-one agentic engineering პლატფორმა და VS Code extension. #1 coding agent OpenRouter-ზე, 1.5M+ მომხმარებელი, 25T+ tokens დამუშავებული. ბუნებრივი ენით კოდი, თვით-ვერიფიკაცია, ტერმინალის ბრძანებები, ბრაუზერის ავტომატიზაცია, inline autocomplete და 500+ მოდელის მხარდაჭერა (Gemini, Claude, GPT). |
+| [Claw Code](https://github.com/ultraworkers/claw-code) | 174K | 🔥 ღია კოდის Claude Code clone Rust-ში — GitHub-ის ისტორიაში ყველაზე სწრაფად 100K ვარსკვლავის მიმღწევი რეპო (50K-ს 2 საათში მიაღწია). 2026-ის უმთავრესი ვირუსული მომენტი AI კოდინგ ხელსაწყოებში. |
+| [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | 49K | „omo" — საუკეთესო agent harness. Oh My ClaudeCode-ის გაფართოებული, უფრო უნივერსალური ვერსია სხვადასხვა AI კოდინგ აგენტებისთვის. |
+| [Claude Plugins Official](https://github.com/anthropics/claude-plugins-official) | 16K | Anthropic-ის ოფიციალური Claude Code პლაგინების დირექტორია. ხარისხიანი, ვერიფიცირებული პლაგინების კატალოგი პირდაპირ Claude-ის შემქმნელებისგან. |
+| [opencli](https://github.com/jackwener/opencli) | 14K | უნივერსალური CLI hub — ნებისმიერ ვებსაიტს, Electron აპლიკაციას ან ლოკალურ ხელსაწყოს CLI-ად აქცევს AI აგენტებისთვის. AI-native runtime გრაფიკული აპლიკაციების ავტომატიზაციისთვის. |
+| [cmux](https://github.com/manaflow-ai/cmux) | 13K | Ghostty-ზე დაფუძნებული macOS ტერმინალი ვერტიკალური ტაბებითა და ნოტიფიკაციებით — სპეციალურად AI კოდინგ აგენტებისთვის შექმნილი. პარალელური სესიების მართვა გამარტივებულია. |
+| [OpenSandbox](https://github.com/alibaba/OpenSandbox) | 10K | Alibaba-ს უსაფრთხო, სწრაფი და გაფართოვებადი sandbox runtime AI აგენტების კოდის ექსეკუციისთვის. იზოლირებული გარემო — აგენტი კოდს ასრულებს თქვენი სისტემის რისკის გარეშე. |
+| [toon](https://github.com/toon-format/toon) | 24K | Token-Oriented Object Notation — JSON-ის ალტერნატივა LLM prompt-ებისთვის. Schema-aware, კომპაქტური ფორმატი, რომელიც ტოკენების მოხმარებას მნიშვნელოვნად ამცირებს და LLM-ისთვის უფრო წასაკითხია. |
 
 ## MCP — პლატფორმები და ინტეგრაციები
 
@@ -85,6 +96,7 @@
 | რეპოზიტორია | ⭐ | აღწერა |
 |---|---|---|
 | [Browser Use](https://github.com/browser-use/browser-use) | 86K | Python ბიბლიოთეკა, რომელიც ვებსაიტებს AI აგენტებისთვის ხელმისაწვდომს ხდის — კლიკი, ტექსტის შეყვანა, ნავიგაცია და მონაცემთა ამოღება ავტომატურად. |
+| [Agent Browser](https://github.com/vercel-labs/agent-browser) | 28K | Vercel Labs-ის ბრაუზერის ავტომატიზაციის CLI, შექმნილი სპეციალურად AI აგენტებისთვის. ღრმა ინტეგრაცია Vercel ეკოსისტემასთან და ოპტიმიზებული agent workflow-ებისთვის. |
 | [Playwright CLI](https://github.com/microsoft/playwright-cli) | 6.9K | Playwright-ის CLI ინტერფეისი — ბრაუზერის ჩაწერა, კოდის გენერაცია და სელექტორების ინსპექტირება. MCP-ს overhead-ის გარეშე მსუბუქი ბრაუზერის კონტროლი. |
 | [Firecrawl MCP](https://github.com/firecrawl/firecrawl-mcp-server) | 5.9K | Firecrawl-ის ოფიციალური სერვერი — ვებ სკრეიპინგი, crawling, ძიება, ღრმა კვლევა და Cloud browser სესიები. ავტომატური retry და rate limiting. |
 | [Cloudflare MCP](https://github.com/cloudflare/mcp-server-cloudflare) | 3.6K | Cloudflare-ის 13+ MCP სერვერი — Workers, KV, R2, D1, Browser Rendering, DNS ანალიტიკა და დოკუმენტაცია. სრული პლატფორმის მართვა AI-დან. |
@@ -105,6 +117,7 @@
 
 | რეპოზიტორია | ⭐ | აღწერა |
 |---|---|---|
+| [mem0](https://github.com/mem0ai/mem0) | 52K | უნივერსალური მეხსიერების ფენა AI აგენტებისთვის — აერთიანებს ვექტორულ ძიებას, გრაფ-რელაციებს და key-value საცავს ერთ სისტემაში. ყველაზე ფართოდ გავრცელებული standalone agent memory framework 2026 წელს. |
 | [Claude Mem](https://github.com/thedotmack/claude-mem) | 45K | Claude Code-ის მეხსიერების პლაგინი — ავტომატურად იჭერს სესიის კონტექსტს, AI-ით ახდენს კომპრესიას და მომავალ სესიებში რელევანტურ კონტექსტს აბრუნებს. |
 | [LightRAG](https://github.com/hkuds/lightrag) | 32K | მარტივი და სწრაფი RAG სისტემა ცოდნის გრაფზე დაფუძნებული ინდექსაციით. EMNLP 2025 აკადემიური პუბლიკაცია. |
 | [RAG-Anything](https://github.com/HKUDS/RAG-Anything) | 15K | All-in-One მულტიმოდალური RAG ფრეიმვორკი — ტექსტი, სურათი, ცხრილი, დიაგრამა ერთიან pipeline-ში. LightRAG-ის გუნდისგან (HKUDS). აკადემიური ნაშრომით გამყარებული. |

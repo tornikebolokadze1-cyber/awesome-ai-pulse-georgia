@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-71-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-72-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -31,7 +31,7 @@
 | 💼 **ბიზნესს ვაავტომატებ** | OpenClaw, Paperclip, n8n-MCP, Make | [მზა AI აგენტები](#-მზა-ai-აგენტები-ბიზნესისთვის) + [MCP ინტეგრაციები](#-mcp-ინტეგრაციები) |
 | 📊 **მონაცემებს ვაგროვებ** | Browser Use, Firecrawl MCP, Apify MCP | [ვებ სკრეიპინგი და ბრაუზერი](#-ვებ-სკრეიპინგი-და-ბრაუზერი) |
 | 🔍 **AI-ს ვცდი/ვსწავლობ** | Awesome Claude Code, Free LLM APIs, Claude How-To | [სასწავლო რესურსები](#-რესურსები-და-სასწავლო-მასალები) |
-| 🧠 **AI მკვლევარი ვარ** | mem0, LightRAG, RAG-Anything, AutoResearch | [მეხსიერება და RAG](#-მეხსიერება-და-rag) + [აგენტების ფრეიმვორკები](#-ai-აგენტების-ფრეიმვორკები) |
+| 🧠 **AI მკვლევარი ვარ** | mem0, MemPalace, LightRAG, RAG-Anything, AutoResearch | [მეხსიერება და RAG](#-მეხსიერება-და-rag) + [აგენტების ფრეიმვორკები](#-ai-აგენტების-ფრეიმვორკები) |
 
 ---
 
@@ -194,8 +194,9 @@
 | [mem0](https://github.com/mem0ai/mem0) | 52K | უნივერსალური მეხსიერების ფენა AI აგენტებისთვის — აერთიანებს ვექტორულ ძიებას, გრაფ-რელაციებს და key-value საცავს ერთ სისტემაში. ერთ-ერთი ყველაზე პოპულარული standalone agent memory framework. |
 | [LightRAG](https://github.com/hkuds/lightrag) | 32K | მარტივი და სწრაფი RAG სისტემა ცოდნის გრაფზე დაფუძნებული ინდექსაციით. EMNLP 2025 აკადემიური პუბლიკაცია. |
 | [GitNexus](https://github.com/abhigyanpatwari/GitNexus) | 23K | კოდის ინტელექტის ძრავა ნულოვანი სერვერით — GitHub რეპო ან ZIP ფაილი ჩააგდე ბრაუზერში და მიიღე ინტერაქტიული ცოდნის გრაფი ყველა დამოკიდებულებით, გამოძახების ჯაჭვითა და ექსეკუციის ნაკადით. ჩაშენებული Graph RAG აგენტი AI ასისტენტებს კოდის სრულ კონტექსტს აწვდის. |
+| [MemPalace](https://github.com/milla-jovovich/mempalace) | 23K | AI მეხსიერების სისტემა, რომელმაც LongMemEval benchmark-ზე უმაღლესი ქულა (96.6%) მიიღო. "მეხსიერების სასახლის" ძველბერძნული კონცეფციით ინახავს ყველაფერს verbatim, არა AI-ს არჩევით — საუბრები ორგანიზებულია wings → halls → rooms სტრუქტურაში. Raw verbatim storage ChromaDB-ში, სრულად ლოკალური, უფასო და ღია კოდი. |
 | [RAG-Anything](https://github.com/HKUDS/RAG-Anything) | 15K | All-in-One მულტიმოდალური RAG ფრეიმვორკი — ტექსტი, სურათი, ცხრილი, დიაგრამა ერთიან pipeline-ში. LightRAG-ის გუნდისგან (HKUDS). აკადემიური ნაშრომით გამყარებული. |
-| [Hindsight](https://github.com/vectorize-io/hindsight) | 7.1K | აგენტის მეხსიერების სისტემა, რომელიც recall-ს სცილდება — აგენტები დროთა განმავლობაში სწავლობენ და უმჯობესდებიან. State-of-the-art შედეგი LongMemEval benchmark-ზე. |
+| [Hindsight](https://github.com/vectorize-io/hindsight) | 7.1K | აგენტის მეხსიერების სისტემა, რომელიც recall-ს სცილდება — აგენტები დროთა განმავლობაში სწავლობენ და უმჯობესდებიან. აკადემიური ნაშრომით გამყარებული (arXiv). |
 | [Crawl4AI RAG](https://github.com/coleam00/mcp-crawl4ai-rag) | 2.1K | ვებ crawling + RAG ერთიან pipeline-ში — სკრეიპი, ვექტორულ ბაზაში შენახვა და ცოდნაზე დაფუძნებული კითხვა-პასუხი. Supabase-ზე დაფუძნებული. |
 | [Prism MCP](https://github.com/dcostenco/prism-mcp) | 108 | კოგნიტური არქიტექტურის MCP სერვერი — მდგრადი მეხსიერება, თვითორგანიზებადი ცოდნის გრაფი, მულტი-აგენტური სინქრონიზაცია და ვიზუალური dashboard. |
 

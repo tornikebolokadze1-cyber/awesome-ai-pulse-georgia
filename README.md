@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-100-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-100-00D0FF?style=flat-square&labelColor=111827&v=2" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>

@@ -21,86 +21,49 @@
 
 ---
 
-## 🚀 დაიწყე აქედან
-
-**ახალი ხარ AI ხელსაწყოებში?** აირჩიე შენი როლი — გაჩვენებთ საიდან დაიწყო:
-
-| ვინ ხარ? | რას გირჩევთ | სად ნახო |
-|---|---|---|
-| 💻 **დეველოპერი ვარ** | Claw Code, Claude Code + Superpowers, Context7 | [კოდინგ აგენტები](#-კოდინგ-აგენტები) + [Claude Code პლაგინები](#-claude-code-პლაგინები-და-უნარები) |
-| 💼 **ბიზნესს ვაავტომატებ** | OpenClaw, Paperclip, n8n-MCP, Make | [მზა AI აგენტები](#-მზა-ai-აგენტები-ბიზნესისთვის) + [MCP ინტეგრაციები](#-mcp-ინტეგრაციები) |
-| 📊 **მონაცემებს ვაგროვებ** | Browser Use, Firecrawl MCP, Apify MCP | [ვებ სკრეიპინგი და ბრაუზერი](#-ვებ-სკრეიპინგი-და-ბრაუზერი) |
-| 🔍 **AI-ს ვცდი/ვსწავლობ** | Awesome Claude Code, Free LLM APIs, Claude How-To | [სასწავლო რესურსები](#-რესურსები-და-სასწავლო-მასალები) |
-| 🧠 **AI მკვლევარი ვარ** | mem0, MemPalace, LightRAG, RAG-Anything, AutoResearch | [მეხსიერება და RAG](#-მეხსიერება-და-rag) + [აგენტების ფრეიმვორკები](#-ai-აგენტების-ფრეიმვორკები) |
-
----
-
-## 🇬🇪 Made in Georgia
-
-ეს პროექტები საქართველოში შეიქმნა — დააჭირე ვარსკვლავი ლოკალური AI კომუნიტის გასაძლიერებლად:
-
-- **[Claude Code Setup](https://github.com/tornikebolokadze1-cyber/claude-code-setup)** — Claude Code-ის პროდაქშენ-დონის კონფიგურაცია
-- **[Georgian Payments Skills](https://github.com/erekle1/georgian-payments-skills)** — TBC და BOG ბანკების API უნარები AI-სთვის
-
----
-
-## სარჩევი
-
-- [🤖 კოდინგ აგენტები](#-კოდინგ-აგენტები)
-- [⚡ Claude Code პლაგინები და უნარები](#-claude-code-პლაგინები-და-უნარები)
-- [🔌 MCP ინტეგრაციები](#-mcp-ინტეგრაციები)
-- [🕷️ ვებ სკრეიპინგი და ბრაუზერი](#-ვებ-სკრეიპინგი-და-ბრაუზერი)
-- [🧬 AI აგენტების ფრეიმვორკები](#-ai-აგენტების-ფრეიმვორკები)
-- [💼 მზა AI აგენტები ბიზნესისთვის](#-მზა-ai-აგენტები-ბიზნესისთვის)
-- [🧠 მეხსიერება და RAG](#-მეხსიერება-და-rag)
-- [⚙️ AI ინფრასტრუქტურა და ხელსაწყოები](#-ai-ინფრასტრუქტურა-და-ხელსაწყოები)
-- [📚 რესურსები და სასწავლო მასალები](#-რესურსები-და-სასწავლო-მასალები)
-
----
-
 ## 🤖 კოდინგ აგენტები
 
-> **Coding Agents & CLI IDEs** — სტენდ-ალონ AI კოდის წერის ხელსაწყოები. Claude Code-ის და Cursor-ის ალტერნატივები.
+> **Coding Agents & CLI IDEs** — დამოუკიდებელი AI კოდის წერის ხელსაწყოები ტერმინალში და რედაქტორში. თუ პროგრამისტი ხარ და გინდა AI-მ დაგეხმაროს კოდის წერაში, ტესტირებაში ან გამართვაში — ეს სექცია შენთვისაა.
 
 | რეპოზიტორია | ⭐ | აღწერა |
 |---|---|---|
-| [Claw Code](https://github.com/ultraworkers/claw-code) | 175K | 🔥 ღია კოდის Claude Code clone Rust-ში — GitHub-ის ისტორიაში ყველაზე სწრაფად 100K ვარსკვლავის მიმღწევი რეპო. 2026-ის უმთავრესი ვირუსული მომენტი AI კოდინგ ხელსაწყოებში. |
-| [opencode](https://github.com/anomalyco/opencode) | 138K | ღია კოდის coding agent — Claude Code-ის და Cursor-ის ალტერნატივა CLI ფორმატში. ერთ-ერთი ყველაზე პოპულარული ღია AI კოდინგ ხელსაწყო GitHub-ზე. |
-| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | 89.8K | Google-ს ღია კოდის ტერმინალის AI აგენტი — Gemini მოდელი პირდაპირ CLI-ში. 1M ტოკენის კონტექსტი, MCP მხარდაჭერა, Apache 2.0 ლიცენზია. Claude Code-ს მთავარი კონკურენტი. |
-| [Cline](https://github.com/cline/cline) | 58K | ავტონომიური კოდინგ აგენტი VS Code-ში — human-in-the-loop ყოველ ცვლილებაზე. 5M+ ინსტალაცია, მუშაობს Cursor-ში, JetBrains-ში, Zed-ში და Neovim-ში. |
-| [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | 49K | „omo" — უნივერსალური agent harness სხვადასხვა AI კოდინგ აგენტებისთვის. ადრე ცნობილი იყო „oh-my-opencode"-ის სახელით (არ აერიოს Oh My ClaudeCode-ში — სრულიად განსხვავებული პროექტია). |
-| [Aider](https://github.com/Aider-AI/aider) | 42K | ტერმინალის AI pair programming — 4.1M ინსტალაცია, ღია კოდი. ტერმინალში AI-თან ერთად კოდის წერის პიონერი. |
-| [Goose](https://github.com/block/goose) | 38K | Block-ის (Square და Cash App-ის შემქმნელი) extensible AI კოდის აგენტი. სცდება შემოთავაზებებს — ინსტალირებს, ასრულებს, არედაქტირებს და ტესტავს. მუშაობს ნებისმიერ LLM-თან. |
-| [Tabby](https://github.com/TabbyML/tabby) | 32K | Self-hosted AI კოდის ასისტენტი — on-premises კოდის დასრულება და ჩატი. Enterprise SSO, GPU/CPU inference, მრავალ IDE-ს მხარდაჭერა. |
-| [Continue.dev](https://github.com/continuedev/continue) | 30K | სრულად ღია კოდის IDE extension — VS Code, JetBrains. ნებისმიერ მოდელთან მუშაობს, კორპორატიული გამოწერები არ სჭირდება. |
-| [Taskmaster](https://github.com/eyaltoledano/claude-task-master) | 26K | AI-ზე დაფუძნებული ამოცანების მართვის სისტემა — პროექტის დაგეგმვა, ამოცანების ავტომატური დაშლა ქვე-ამოცანებად, პრიორიტეტების მართვა და დამოკიდებულებების თვალყურის დევნება. მუშაობს Cursor-ში, Windsurf-ში, Claude Code-ში და სხვა AI ჩატებში. MCP სერვერითაც და CLI-ითაც ხელმისაწვდომია. |
-| [OpenClaude](https://github.com/Gitlawb/openclaude) | 18K | ღია კოდის coding-agent CLI — OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models და 200+ მოდელი ერთ ტერმინალში. OpenAI-თავსებადი API-ებით მუშაობს, აქვს slash ბრძანებები, MCP მხარდაჭერა, streaming output და VS Code გაფართოება. (არ აერიოს OpenClaw-ში — სრულიად სხვა პროექტია). |
-| [Kilocode](https://github.com/kilo-org/kilocode) | 18K | All-in-one agentic engineering პლატფორმა და VS Code extension. #1 coding agent OpenRouter-ზე, 1.5M+ მომხმარებელი, 25T+ tokens დამუშავებული. ბუნებრივი ენით კოდი, თვით-ვერიფიკაცია, ტერმინალის ბრძანებები, ბრაუზერის ავტომატიზაცია, inline autocomplete და 500+ მოდელის მხარდაჭერა (Gemini, Claude, GPT). |
-| [cmux](https://github.com/manaflow-ai/cmux) | 13K | Ghostty-ზე დაფუძნებული macOS ტერმინალი ვერტიკალური ტაბებითა და ნოტიფიკაციებით — სპეციალურად AI კოდინგ აგენტებისთვის შექმნილი. პარალელური სესიების მართვა გამარტივებულია. |
-| [Codex Plugin](https://github.com/openai/codex-plugin-cc) | 11K | OpenAI-ს ოფიციალური პლაგინი Claude Code-ისთვის — Codex აგენტს კოდის მიმოხილვისა და დავალებების დელეგირების საშუალებას აძლევს. /codex:review, /codex:rescue ბრძანებები. |
+| [Claw Code](https://github.com/ultraworkers/claw-code) | 175K | Claude Code-ის ღია კოდის ალტერნატივა, დაწერილი Rust-ში მაქსიმალური სიჩქარისთვის. GitHub-ის ისტორიაში ყველაზე სწრაფად მზარდი რეპო — პირველი 100,000 ვარსკვლავი რეკორდულ დროში მოაგროვა. მუშაობს Claude-თან, OpenAI-თან, Grok-თან და ნებისმიერ OpenAI-თავსებად მოდელთან. |
+| [opencode](https://github.com/anomalyco/opencode) | 138K | სრულად ღია კოდის კოდირების აგენტი ტერმინალში, რომელიც Claude Code-ისა და Cursor-ის უფასო ალტერნატივაა. ლამაზი ტერმინალის ინტერფეისი აქვს და ნებისმიერი AI მოდელით მუშაობს — შეგიძლია თავად აირჩიო რომელ AI-ს ენდობი. |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | 89.8K | Google-ს ოფიციალური AI კოდირების აგენტი ტერმინალში — Gemini 2.5 Pro მოდელი პირდაპირ შენს ბრძანებათა სტრიქონში. 1 მილიონი ტოკენის კონტექსტი აქვს (ანუ ძალიან დიდ პროექტებსაც ერთიანად ხედავს), Apache 2.0 ლიცენზიით უფასოა და MCP-ს უჭერს მხარს. |
+| [Cline](https://github.com/cline/cline) | 58K | VS Code-ში ჩაშენებული AI კოდირების აგენტი, რომელიც ყოველ ცვლილებაზე შენს ნებართვას ითხოვს — ანუ არაფერს გააფუჭებს შენი თანხმობის გარეშე. 5 მილიონზე მეტი ინსტალაცია აქვს და მუშაობს VS Code-ში, Cursor-ში, JetBrains-ში და Neovim-ში. |
+| [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | 49K | უნივერსალური ორკესტრატორი, რომელიც ერთ AI აგენტს სრულ გუნდად აქცევს — რამდენიმე სპეციალიზებული AI პარალელურად მუშაობს შენს კოდზე. ადრე „oh-my-opencode" ერქვა (არ აერიოს Oh My ClaudeCode-ში — სრულიად სხვა პროექტია). |
+| [Aider](https://github.com/Aider-AI/aider) | 42K | ტერმინალში AI-თან ერთად კოდის წერის პიონერი — 4 მილიონზე მეტი ინსტალაცია აქვს. უბრალოდ უთხარი რა გინდა შეცვალო და Aider თავად გახსნის საჭირო ფაილებს, შეცვლის კოდს და git-ში შეინახავს. ღია კოდის და უფასოა. |
+| [Goose](https://github.com/block/goose) | 38K | Block-ის (Square-ისა და Cash App-ის შემქმნელი კომპანია) AI კოდირების აგენტი. 15+ AI პროვაიდერთან მუშაობს (Anthropic, OpenAI, Google, Ollama) და 70+ MCP გაფართოება აქვს. Rust-ში დაწერილია სიჩქარისთვის და კოდირების მიღმაც ბევრ რამეს აკეთებს — კვლევა, მონაცემთა ანალიზი, ავტომატიზაცია. |
+| [Tabby](https://github.com/TabbyML/tabby) | 32K | AI კოდირების ასისტენტი, რომელიც შენს საკუთარ სერვერზე ეშვება — GitHub Copilot-ის უფასო, ღია ალტერნატივა. კოდის ავტოდასრულება და ჩატი აქვს, მუშაობს VS Code-ში, JetBrains-ში და სხვა რედაქტორებში. კომპანიებისთვის იდეალურია, რადგან მონაცემები შენს სერვერზე რჩება. |
+| [Continue.dev](https://github.com/continuedev/continue) | 30K | სრულად ღია კოდის AI გაფართოება VS Code-ისა და JetBrains-ისთვის. ნებისმიერი AI მოდელით მუშაობს — Claude, GPT, Mistral, ლოკალური მოდელებიც კი. კორპორატიული გამოწერა არ სჭირდება, ანუ სრულიად უფასოა. |
+| [Taskmaster](https://github.com/eyaltoledano/claude-task-master) | 26K | AI-ზე დაფუძნებული პროექტის მართვის სისტემა — უთხარი რა გინდა ააწყო და თავად დაშლის ამოცანებად, გაწერს პრიორიტეტებს და თვალს ადევნებს პროგრესს. მუშაობს Cursor-ში, Windsurf-ში, Claude Code-ში და სხვა AI ჩატებში. MCP სერვერითაც და ტერმინალიდანაც შეგიძლია გამოყენება. |
+| [OpenClaude](https://github.com/Gitlawb/openclaude) | 18K | ტერმინალის AI კოდირების აგენტი, რომელიც 200+ AI მოდელს ერთ ადგილას აერთიანებს — OpenAI, Gemini, DeepSeek, Ollama, GitHub Models. გინდა რომელი მოდელით მუშაობ — ყველა ერთი ინტერფეისიდან. აქვს VS Code გაფართოებაც. (არ აერიოს OpenClaw-ში — სრულიად სხვა პროექტია). |
+| [Kilocode](https://github.com/kilo-org/kilocode) | 18K | VS Code-ის AI გაფართოება, რომელიც OpenRouter-ზე #1 კოდირების აგენტია. 1.5 მილიონზე მეტმა დეველოპერმა გამოიყენა, 500+ AI მოდელს უჭერს მხარს (Gemini, Claude, GPT). ბუნებრივი ენით ეუბნები რა გინდა, ის კოდს წერს, ტესტავს და თავადვე ამოწმებს. |
+| [cmux](https://github.com/manaflow-ai/cmux) | 13K | macOS ტერმინალი, რომელიც სპეციალურად AI კოდირების აგენტებისთვის შეიქმნა. ვერტიკალური ტაბები, ნოტიფიკაციები და პარალელური სესიების მარტივი მართვა — თუ რამდენიმე AI აგენტს ერთდროულად ამუშავებ, ეს ტერმინალი გამოგადგება. |
+| [Codex Plugin](https://github.com/openai/codex-plugin-cc) | 11K | OpenAI-ს ოფიციალური პლაგინი Claude Code-ისთვის — Codex აგენტს პირდაპირ Claude Code-ის შიგნიდან იძახებ კოდის შემოწმებისა და ამოცანების გადანაწილებისთვის. ორი მძლავრი AI ერთ გარემოში. |
 
 ---
 
 ## ⚡ Claude Code პლაგინები და უნარები
 
-> **Claude Code Plugins & Skills** — Claude Code-ში ჩასართავი გაფართოებები: skills, plugins, hooks, configs.
+> **Claude Code Plugins & Skills** — Claude Code-ში ჩასართავი გაფართოებები, რომლებიც AI ასისტენტს ახალ შესაძლებლობებს მატებს. თუ Claude Code-ს იყენებ, ეს პლაგინები გაგიძლიერებს მუშაობას.
 
 | რეპოზიტორია | ⭐ | აღწერა |
 |---|---|---|
-| [Everything Claude Code](https://github.com/affaan-m/everything-claude-code) | 144K | Claude Code-ის ყოვლისმომცველი რესურსებისა და ოპტიმიზაციის სისტემა — უნარები, ინსტინქტები, მეხსიერების ოპტიმიზაცია, უსაფრთხოების სკანირება. npm პაკეტები და GitHub აპლიკაცია. |
-| [Superpowers](https://github.com/obra/superpowers) | 134K | კომპოზირებადი workflow ფრეიმვორკი AI კოდის აგენტებისთვის. სპეციფიკაციაზე დაფუძნებული დეველოპმენტი, TDD, debugging, brainstorming და პარალელური ქვე-აგენტების დისპეტჩერიზაცია. |
-| [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 60K | UI/UX დიზაინის ინტელექტი AI კოდის აგენტებისთვის — 50 დიზაინის სტილი, 21 ფერთა პალიტრა და მრავალი ფრეიმვორკის მხარდაჭერა. |
-| [GSD (Get Shit Done)](https://github.com/gsd-build/get-shit-done) | 47K | მეტა-პრომპტინგის და კონტექსტის ინჟინერიის სისტემა. აგვარებს „context rot"-ს — ხარისხის გაუარესებას კონტექსტის ფანჯრის შევსებისას. მუშაობს Claude Code, Codex, Cursor, Gemini CLI-სთან. |
-| [Claude Mem](https://github.com/thedotmack/claude-mem) | 45K | Claude Code-ის მეხსიერების პლაგინი — ავტომატურად იჭერს სესიის კონტექსტს, AI-ით ახდენს კომპრესიას და მომავალ სესიებში რელევანტურ კონტექსტს აბრუნებს. |
-| [Oh My ClaudeCode](https://github.com/yeachan-heo/oh-my-claudecode) | 23K | მრავალაგენტური ორკესტრაციის პლაგინი — autopilot (5-ფაზიანი pipeline), team (პარალელური აგენტები), ralph (ვერიფიკაციამდე მუშაობს) და ultrawork (მაქსიმალური პარალელიზმი) რეჟიმები. |
-| [Obsidian Skills](https://github.com/kepano/obsidian-skills) | 19K | Obsidian vault-ებთან მუშაობის უნარები — Markdown, Bases და JSON Canvas ფაილების წაკითხვა, ჩაწერა და ძიება. Claude Code-თან და Codex CLI-თან თავსებადი. |
-| [Claude Plugins Official](https://github.com/anthropics/claude-plugins-official) | 16K | Anthropic-ის ოფიციალური Claude Code პლაგინების დირექტორია. ხარისხიანი, ვერიფიცირებული პლაგინების კატალოგი პირდაპირ Claude-ის შემქმნელებისგან. |
-| [Career-Ops](https://github.com/santifer/career-ops) | 13K | Claude Code-ზე დაფუძნებული AI სამუშაოს ძიების pipeline. შეფასებს ვაკანსიებს A-F სკალით (10 კრიტერიუმი), წერს ATS-ოპტიმიზებულ CV-ებს თითო პოზიციაზე მორგებულად, ავტომატურად სკანირებს Greenhouse, Ashby, Lever-ს და თვალს ადევნებს ყველაფერს. 14 skill mode + Go dashboard. |
-| [n8n Skills](https://github.com/czlonkowski/n8n-skills) | 4K | 7 ურთიერთშემავსებელი უნარი n8n workflow-ების ასაწყობად. ასწავლის AI ასისტენტებს MCP ინსტრუმენტების სწორ გამოყენებას და workflow პატერნების შერჩევას. თანმხლები: [n8n-MCP](https://github.com/czlonkowski/n8n-mcp). |
-| [Claude Peers MCP](https://github.com/louislva/claude-peers-mcp) | 1.7K | რამდენიმე Claude Code ინსტანცია ერთმანეთს აღმოაჩენს და რეალურ დროში კომუნიკაციას ამყარებს. სხვადასხვა პროექტზე პარალელური მუშაობისთვის. |
-| [Claude Code Setup](https://github.com/tornikebolokadze1-cyber/claude-code-setup) | 9 | Claude Code-ის პროდაქშენ-დონის კონფიგურაციის სისტემა — უსაფრთხოების წესები, ავტომატური hooks და /setup ბრძანება ახალი პროექტებისთვის. Made in Georgia 🇬🇪. |
-| [Graphify](https://github.com/safishamsi/graphify) | 1.9K | კოდბეისს queryable knowledge graph-ად აქცევს — 71.5x ნაკლები ტოკენი ვიდრე raw ფაილების კითხვა. მხარს უჭერს კოდს, PDF-ებს, Markdown-ს, სქრინშოტებს და დიაგრამებს. მუშაობს Claude Code-თან, Cursor-თან, Gemini CLI-თან და Codex-თან. |
-| [Georgian Payments Skills](https://github.com/erekle1/georgian-payments-skills) | 2 | ქართული ბანკების API უნარები — TBC Bank (Checkout, TPay, XML Billing) და Bank of Georgia (iPay, Installments, Open Banking PSD2). AI კოდის ასისტენტებისთვის ექსპერტ-დონის ცოდნა. Made in Georgia 🇬🇪. |
+| [Everything Claude Code](https://github.com/affaan-m/everything-claude-code) | 144K | Claude Code-ის ყოვლისმომცველი გაფართოების სისტემა — 38 აგენტი, 156 უნარი, მეხსიერების ოპტიმიზაცია და უსაფრთხოების სკანირება ერთ პაკეტში. ეს ყველაზე პოპულარული Claude Code დანამატია, რომელიც AI-ს ბევრად უფრო ეფექტურს ხდის. |
+| [Superpowers](https://github.com/obra/superpowers) | 134K | AI კოდირების აგენტებს ასწავლის „ჯერ დაფიქრდი, მერე დაწერე" მიდგომას — სანამ კოდს დაწერს, ჯერ გეგმას შეიმუშავებს, დიზაინის დოკუმენტს შექმნის და მხოლოდ მერე შეუდგება კოდირებას. მუშაობს Claude Code-თან, Codex-თან და Gemini-თან. 134K ვარსკვლავით ერთ-ერთი ყველაზე სწრაფად მზარდი AI ხელსაწყოა. |
+| [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 60K | AI კოდირების აგენტს ლამაზი ვებსაიტებისა და აპლიკაციების დიზაინის ცოდნას აძლევს — 50 დიზაინის სტილი, 161 ფერთა პალიტრა და 25 ტიპის დიაგრამა. მხარს უჭერს React, Vue, Flutter, SwiftUI-ს და სხვა ტექნოლოგიებს. |
+| [GSD (Get Shit Done)](https://github.com/gsd-build/get-shit-done) | 47K | აგვარებს AI-ის ხშირ პრობლემას — რაც უფრო მეტს ესაუბრები, მით უფრო „იღლება" და ხარისხი ეცემა. GSD ამ პრობლემას აღმოფხვრის სპეციალური სპეციფიკაციების ფაილებით. მუშაობს Claude Code-თან, Codex-თან, Cursor-თან და Gemini CLI-თან. |
+| [Claude Mem](https://github.com/thedotmack/claude-mem) | 45K | Claude Code-ის მეხსიერების პლაგინი — ავტომატურად იმახსოვრებს რას აკეთებდით წინა სესიებში და მომავალში შესაბამის კონტექსტს აბრუნებს. ანუ აღარ გიწევს ყოველ ჯერზე ხელახლა აუხსნა რაზე მუშაობ. |
+| [Oh My ClaudeCode](https://github.com/yeachan-heo/oh-my-claudecode) | 23K | Claude Code-ს მრავალაგენტურ ორკესტრატორად აქცევს — autopilot რეჟიმში 5 ფაზით ავტონომიურად მუშაობს, team რეჟიმში რამდენიმე აგენტი პარალელურად ასრულებს ამოცანებს. 19 სპეციალიზებული აგენტი და 36 უნარი ერთ პლაგინში. |
+| [Obsidian Skills](https://github.com/kepano/obsidian-skills) | 19K | Obsidian-ის (პოპულარული ჩანიშვნების აპი) შემქმნელის მიერ გაკეთებული — AI ასისტენტს შენს Obsidian ჩანიშვნებთან მუშაობის უნარს აძლევს. შეუძლია ფაილების წაკითხვა, შექმნა, ძიება და რედაქტირება შენს ცოდნის ბაზაში. |
+| [Claude Plugins Official](https://github.com/anthropics/claude-plugins-official) | 16K | Anthropic-ის (Claude-ის შემქმნელი კომპანია) ოფიციალური პლაგინების კატალოგი. აქ მხოლოდ შემოწმებული და ხარისხიანი პლაგინებია — საიმედო წყარო Claude Code-ის გასაფართოებლად. |
+| [Career-Ops](https://github.com/santifer/career-ops) | 13K | AI-ზე დაფუძნებული სამუშაოს ძიების სისტემა — ავტომატურად პოულობს ვაკანსიებს, აფასებს A-F სკალით, წერს CV-ს თითო პოზიციაზე მორგებულად და ადევნებს თვალს განაცხადებს. 740+ ვაკანსია შეფასდა მისი ბეტა ტესტირების დროს. |
+| [n8n Skills](https://github.com/czlonkowski/n8n-skills) | 4K | 7 ურთიერთშემავსებელი უნარი, რომელიც AI ასისტენტს ასწავლის n8n-ში (ავტომატიზაციის პლატფორმა) სამუშაო ნაკადების აწყობას. 525+ n8n მოდელის ცოდნა და 2,653 კონფიგურაციის მაგალითი. თანმხლები: [n8n-MCP](https://github.com/czlonkowski/n8n-mcp). |
+| [Claude Peers MCP](https://github.com/louislva/claude-peers-mcp) | 1.7K | რამდენიმე Claude Code სესია ერთმანეთს აღმოაჩენს და რეალურ დროში ინფორმაციას ცვლის — თუ სხვადასხვა პროექტზე პარალელურად მუშაობ, აგენტები ერთმანეთს დაეხმარებიან. |
+| [Claude Code Setup](https://github.com/tornikebolokadze1-cyber/claude-code-setup) | 9 | Claude Code-ის პროდაქშენ-დონის კონფიგურაცია — უსაფრთხოების წესები, ავტომატური ფორმატირება, საიდუმლოებების დაცვა და /setup ბრძანება ახალი პროექტებისთვის. საქართველოში შექმნილი 🇬🇪. |
+| [Graphify](https://github.com/safishamsi/graphify) | 1.9K | კოდის პროექტს ინტერაქტიულ ცოდნის რუკად აქცევს — AI 71-ჯერ ნაკლებ რესურსს ხარჯავს, ვიდრე ფაილების პირდაპირ კითხვისას. მუშაობს კოდთან, PDF-ებთან, სურათებთან და დიაგრამებთან. თავსებადია Claude Code-თან, Cursor-თან და Gemini CLI-თან. |
+| [Georgian Payments Skills](https://github.com/erekle1/georgian-payments-skills) | 2 | ქართული ბანკების API-ების ცოდნა AI ასისტენტებისთვის — TBC Bank (Checkout, TPay) და Bank of Georgia (iPay, Installments, Open Banking). თუ ქართულ საგადახდო სისტემას აშენებ, ეს უნარი AI-ს ექსპერტ-დონის ცოდნას აძლევს. საქართველოში შექმნილი 🇬🇪. |
 
 ---
 

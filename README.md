@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-73-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-100-00D0FF?style=flat-square&labelColor=111827" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -53,7 +53,7 @@
 - [🧬 AI აგენტების ფრეიმვორკები](#-ai-აგენტების-ფრეიმვორკები)
 - [💼 მზა AI აგენტები ბიზნესისთვის](#-მზა-ai-აგენტები-ბიზნესისთვის)
 - [🧠 მეხსიერება და RAG](#-მეხსიერება-და-rag)
-- [⚙️ პროდუქტიულობა](#-პროდუქტიულობა)
+- [⚙️ AI ინფრასტრუქტურა და ხელსაწყოები](#-ai-ინფრასტრუქტურა-და-ხელსაწყოები)
 - [📚 რესურსები და სასწავლო მასალები](#-რესურსები-და-სასწავლო-მასალები)
 
 ---
@@ -66,8 +66,13 @@
 |---|---|---|
 | [Claw Code](https://github.com/ultraworkers/claw-code) | 175K | 🔥 ღია კოდის Claude Code clone Rust-ში — GitHub-ის ისტორიაში ყველაზე სწრაფად 100K ვარსკვლავის მიმღწევი რეპო. 2026-ის უმთავრესი ვირუსული მომენტი AI კოდინგ ხელსაწყოებში. |
 | [opencode](https://github.com/anomalyco/opencode) | 138K | ღია კოდის coding agent — Claude Code-ის და Cursor-ის ალტერნატივა CLI ფორმატში. ერთ-ერთი ყველაზე პოპულარული ღია AI კოდინგ ხელსაწყო GitHub-ზე. |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | 89.8K | Google-ს ღია კოდის ტერმინალის AI აგენტი — Gemini მოდელი პირდაპირ CLI-ში. 1M ტოკენის კონტექსტი, MCP მხარდაჭერა, Apache 2.0 ლიცენზია. Claude Code-ს მთავარი კონკურენტი. |
+| [Cline](https://github.com/cline/cline) | 58K | ავტონომიური კოდინგ აგენტი VS Code-ში — human-in-the-loop ყოველ ცვლილებაზე. 5M+ ინსტალაცია, მუშაობს Cursor-ში, JetBrains-ში, Zed-ში და Neovim-ში. |
 | [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | 49K | „omo" — უნივერსალური agent harness სხვადასხვა AI კოდინგ აგენტებისთვის. ადრე ცნობილი იყო „oh-my-opencode"-ის სახელით (არ აერიოს Oh My ClaudeCode-ში — სრულიად განსხვავებული პროექტია). |
+| [Aider](https://github.com/Aider-AI/aider) | 42K | ტერმინალის AI pair programming — 4.1M ინსტალაცია, ღია კოდი. ტერმინალში AI-თან ერთად კოდის წერის პიონერი. |
 | [Goose](https://github.com/block/goose) | 38K | Block-ის (Square და Cash App-ის შემქმნელი) extensible AI კოდის აგენტი. სცდება შემოთავაზებებს — ინსტალირებს, ასრულებს, არედაქტირებს და ტესტავს. მუშაობს ნებისმიერ LLM-თან. |
+| [Tabby](https://github.com/TabbyML/tabby) | 32K | Self-hosted AI კოდის ასისტენტი — on-premises კოდის დასრულება და ჩატი. Enterprise SSO, GPU/CPU inference, მრავალ IDE-ს მხარდაჭერა. |
+| [Continue.dev](https://github.com/continuedev/continue) | 30K | სრულად ღია კოდის IDE extension — VS Code, JetBrains. ნებისმიერ მოდელთან მუშაობს, კორპორატიული გამოწერები არ სჭირდება. |
 | [Taskmaster](https://github.com/eyaltoledano/claude-task-master) | 26K | AI-ზე დაფუძნებული ამოცანების მართვის სისტემა — პროექტის დაგეგმვა, ამოცანების ავტომატური დაშლა ქვე-ამოცანებად, პრიორიტეტების მართვა და დამოკიდებულებების თვალყურის დევნება. მუშაობს Cursor-ში, Windsurf-ში, Claude Code-ში და სხვა AI ჩატებში. MCP სერვერითაც და CLI-ითაც ხელმისაწვდომია. |
 | [OpenClaude](https://github.com/Gitlawb/openclaude) | 18K | ღია კოდის coding-agent CLI — OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models და 200+ მოდელი ერთ ტერმინალში. OpenAI-თავსებადი API-ებით მუშაობს, აქვს slash ბრძანებები, MCP მხარდაჭერა, streaming output და VS Code გაფართოება. (არ აერიოს OpenClaw-ში — სრულიად სხვა პროექტია). |
 | [Kilocode](https://github.com/kilo-org/kilocode) | 18K | All-in-one agentic engineering პლატფორმა და VS Code extension. #1 coding agent OpenRouter-ზე, 1.5M+ მომხმარებელი, 25T+ tokens დამუშავებული. ბუნებრივი ენით კოდი, თვით-ვერიფიკაცია, ტერმინალის ბრძანებები, ბრაუზერის ავტომატიზაცია, inline autocomplete და 500+ მოდელის მხარდაჭერა (Gemini, Claude, GPT). |
@@ -149,6 +154,7 @@
 | [Browser Use](https://github.com/browser-use/browser-use) | 86K | Python ბიბლიოთეკა, რომელიც ვებსაიტებს AI აგენტებისთვის ხელმისაწვდომს ხდის — კლიკი, ტექსტის შეყვანა, ნავიგაცია და მონაცემთა ამოღება ავტომატურად. |
 | [Playwright MCP](https://github.com/microsoft/playwright-mcp) | 30K | Microsoft-ის ოფიციალური MCP სერვერი ბრაუზერის ავტომატიზაციისთვის. Accessibility snapshot-ებით მუშაობს — სკრინშოტები არ არის საჭირო. LLM-ისთვის ოპტიმიზებული. |
 | [Agent Browser](https://github.com/vercel-labs/agent-browser) | 28K | Vercel Labs-ის ბრაუზერის ავტომატიზაციის CLI, შექმნილი სპეციალურად AI აგენტებისთვის. ღრმა ინტეგრაცია Vercel ეკოსისტემასთან და ოპტიმიზებული agent workflow-ებისთვის. |
+| [Lightpanda](https://github.com/lightpanda-io/browser) | 23K | Zig-ში ნულიდან აშენებული headless ბრაუზერი AI-სა და ავტომატიზაციისთვის — Chrome-ზე 11x სწრაფი, 9x ნაკლები მეხსიერება. Puppeteer/Playwright-თავსებადი. |
 | [Agent-Reach](https://github.com/Panniantong/Agent-Reach) | 16K | AI აგენტს „თვალებს" აძლევს ინტერნეტში — Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu და სხვა პლატფორმების წაკითხვა და ძიება ერთიანი ინტერფეისით. |
 | [opencli](https://github.com/jackwener/opencli) | 14K | უნივერსალური CLI hub — ნებისმიერ ვებსაიტს, Electron აპლიკაციას ან ლოკალურ ხელსაწყოს CLI-ად აქცევს AI აგენტებისთვის. AI-native runtime გრაფიკული აპლიკაციების ავტომატიზაციისთვის. |
 | [Playwright CLI](https://github.com/microsoft/playwright-cli) | 6.9K | Playwright-ის CLI ინტერფეისი — ბრაუზერის ჩაწერა, კოდის გენერაცია და სელექტორების ინსპექტირება. MCP-ს overhead-ის გარეშე მსუბუქი ბრაუზერის კონტროლი. |
@@ -164,12 +170,18 @@
 
 | რეპოზიტორია | ⭐ | აღწერა |
 |---|---|---|
+| [AutoGen](https://github.com/microsoft/autogen) | 54.7K | Microsoft Research-ის მულტი-აგენტ ფრეიმვორკი რთული workflow-ებისთვის. Semantic Kernel-თან ერთად Microsoft Agent Framework-ის საფუძველი. |
 | [AutoResearch](https://github.com/karpathy/autoresearch) | 68K | Andrej Karpathy-ს ავტონომიური ML კვლევის სისტემა — ავტომატურად ატარებს ექსპერიმენტებს ერთ GPU-ზე, ცვლის ჰიპერპარამეტრებს და ინახავს მხოლოდ გაუმჯობესებებს. |
+| [CrewAI](https://github.com/crewaiinc/crewai) | 45.9K | AI აგენტების გუნდური ორკესტრაცია როლებით — თითოეულ აგენტს საკუთარი პასუხისმგებლობა აქვს. MCP და A2A პროტოკოლის მხარდაჭერა, 12M დღიური აგენტის ექსეკუცია. |
 | [MiroFish](https://github.com/666ghj/MiroFish) | 51K | Swarm Intelligence ძრავი — ათასობით AI აგენტის სიმულაცია რეალური მონაცემებით პროგნოზირებისთვის. აგენტებს აქვთ ინდივიდუალური პიროვნებები და გრძელვადიანი მეხსიერება. Docker-ით განლაგება. |
 | [nanobot](https://github.com/HKUDS/nanobot) | 38K | HKUDS-ის ულტრა-მსუბუქი პერსონალური AI აგენტი — მინიმალური რესურსები, მაქსიმალური შესაძლებლობები. სწრაფად იზრდება 2026 წელს. |
+| [LangGraph](https://github.com/langchain-ai/langgraph) | 28.8K | სტატუსიანი აგენტების ორკესტრაცია გრაფებით — checkpointing, branching, rollback. პროდაქშენ-დონის deploy Uber-ში, LinkedIn-ში, Klarna-ში. |
+| [Semantic Kernel](https://github.com/microsoft/semantic-kernel) | 27.6K | Microsoft-ის AI ორკესტრაციის SDK — plugin არქიტექტურა, C# და Python მხარდაჭერა. Azure AI Services-თან ღრმა ინტეგრაცია. |
 | [Hermes](https://github.com/nousresearch/hermes-agent) | 29K | Nous Research-ის თვითგანვითარებადი AI აგენტი ჩაშენებული სწავლის ციკლით. ქმნის უნარებს გამოცდილებიდან, ინახავს მეხსიერებას სესიებს შორის. მხარს უჭერს Telegram, Discord, Slack, WhatsApp და cron ავტომატიზაციას. |
 | [toon](https://github.com/toon-format/toon) | 24K | Token-Oriented Object Notation — JSON-ის ალტერნატივა LLM prompt-ებისთვის. Schema-aware, კომპაქტური ფორმატი, რომელიც ტოკენების მოხმარებას მნიშვნელოვნად ამცირებს და LLM-ისთვის უფრო წასაკითხია. |
+| [Vercel AI SDK](https://github.com/vercel/ai) | 23.3K | TypeScript AI toolkit Next.js-ის შემქმნელებისგან — streaming, tool calling, agent primitives. Full-stack AI აპლიკაციების აშენების სტანდარტი. |
 | [Mastra](https://github.com/mastra-ai/mastra) | 23K | TypeScript ფრეიმვორკი AI აპლიკაციებისა და აგენტებისთვის (Gatsby-ის გუნდისგან). ჩაშენებული workflows, RAG, evals და agent primitives — სრული toolkit თანამედროვე TypeScript stack-ში. |
+| [Pydantic AI](https://github.com/pydantic/pydantic-ai) | 16.2K | Type-safe აგენტის ფრეიმვორკი Pydantic-ის გუნდისგან — production-grade observability, აგენტის run sharing. OpenAI, Google, Anthropic SDK-ები Pydantic-ზეა აშენებული. |
 | [OpenSandbox](https://github.com/alibaba/OpenSandbox) | 10K | Alibaba-ს უსაფრთხო, სწრაფი და გაფართოებადი sandbox runtime AI აგენტების კოდის ექსეკუციისთვის. იზოლირებული გარემო — აგენტი კოდს ასრულებს თქვენი სისტემის რისკის გარეშე. |
 | [OpenSpace](https://github.com/HKUDS/OpenSpace) | 3.9K | აგენტების თვითგანვითარების ფრეიმვორკი — AUTO-FIX, AUTO-IMPROVE, AUTO-LEARN. აგენტები ერთმანეთს უზიარებენ ნასწავლ უნარებს. მუშაობს Claude Code-თან, Codex-თან, OpenClaw-თან. |
 
@@ -181,8 +193,13 @@
 
 | რეპოზიტორია | ⭐ | აღწერა |
 |---|---|---|
+| [Langflow](https://github.com/langflow-ai/langflow) | 146K | DataStax-ის ვიზუალური drag-drop პლატფორმა AI აგენტებისა და RAG-ის ასაშენებლად. 100+ ინტეგრაცია, MCP მხარდაჭერა — კოდის წერა არ სჭირდება. |
+| [Dify](https://github.com/langgenius/dify) | 136K | Full-stack აგენტური workflow პლატფორმა — ვიზუალური RAG, მოდელების მართვა, observability. GitHub-ის ერთ-ერთი ყველაზე პოპულარული AI პროექტი. |
+| [Open WebUI](https://github.com/open-webui/open-webui) | 128K | Self-hosted AI ინტერფეისი Ollama-სა და OpenAI API-სთვის — ჩაშენებული RAG, ხმოვანი/ვიდეო ზარები, აგენტების შემქმნელი. 355K+ კომუნიტი. |
+| [ComfyUI](https://github.com/comfy-org/ComfyUI) | 106K | მოდულარული node-based სურათისა და ვიდეოს AI გენერაციის პლატფორმა — 1,000+ custom node, ყოველკვირეული განახლებები ახალი მოდელების ინტეგრაციით. |
 | [OpenClaw](https://github.com/openclaw/openclaw) | 350K | პირადი AI ასისტენტი ნებისმიერ მოწყობილობაზე. 20+ არხზე პასუხობს (WhatsApp, Telegram, Slack, Discord, iMessage), აქვს ხმოვანი ინტერფეისი და ცოცხალი Canvas. Local-first დიზაინი და მულტი-აგენტ routing. |
 | [Paperclip](https://github.com/paperclipai/paperclip) | 49K | AI აგენტების პლატფორმა ბიზნესის ავტონომიურად წარმართვისთვის. აგენტების გუნდს ორკესტრირებს — org chart, ბიუჯეტი, governance და audit log ერთიან დაფაზე. |
+| [Perplexica](https://github.com/ItzCrazyKns/Perplexica) | 27K | ღია კოდის AI ძიების ძრავა — კონფიდენციალური, წყაროებით დასაბუთებული პასუხები. ლოკალური LLM-ებით (Ollama) და ღრუბლოვანი პროვაიდერებით მუშაობს. Perplexity AI-ს self-hosted ალტერნატივა. |
 
 ---
 
@@ -192,7 +209,9 @@
 
 | რეპოზიტორია | ⭐ | აღწერა |
 |---|---|---|
+| [RAGFlow](https://github.com/infiniflow/ragflow) | 70K | Enterprise-grade RAG ძრავა აგენტური შესაძლებლობებით — დოკუმენტების ჭრა, embedding tuning, ევალუაცია. წამყვანი ღია კოდის RAG პლატფორმა. |
 | [mem0](https://github.com/mem0ai/mem0) | 52K | უნივერსალური მეხსიერების ფენა AI აგენტებისთვის — აერთიანებს ვექტორულ ძიებას, გრაფ-რელაციებს და key-value საცავს ერთ სისტემაში. ერთ-ერთი ყველაზე პოპულარული standalone agent memory framework. |
+| [LlamaIndex](https://github.com/run-llama/llama_index) | 48.4K | დოკუმენტების LLM-თან დაკავშირების წამყვანი ფრეიმვორკი — ინდექსირება, ძიება, აგენტები. მრავალწყაროიანი RAG pipeline-ების სტანდარტი. |
 | [LightRAG](https://github.com/hkuds/lightrag) | 32K | მარტივი და სწრაფი RAG სისტემა ცოდნის გრაფზე დაფუძნებული ინდექსაციით. EMNLP 2025 აკადემიური პუბლიკაცია. |
 | [GitNexus](https://github.com/abhigyanpatwari/GitNexus) | 23K | კოდის ინტელექტის ძრავა ნულოვანი სერვერით — GitHub რეპო ან ZIP ფაილი ჩააგდე ბრაუზერში და მიიღე ინტერაქტიული ცოდნის გრაფი ყველა დამოკიდებულებით, გამოძახების ჯაჭვითა და ექსეკუციის ნაკადით. ჩაშენებული Graph RAG აგენტი AI ასისტენტებს კოდის სრულ კონტექსტს აწვდის. |
 | [MemPalace](https://github.com/milla-jovovich/mempalace) | 23K | AI მეხსიერების სისტემა, რომელმაც LongMemEval benchmark-ზე უმაღლესი ქულა (96.6%) მიიღო. "მეხსიერების სასახლის" ძველბერძნული კონცეფციით ინახავს ყველაფერს verbatim, არა AI-ს არჩევით — საუბრები ორგანიზებულია wings → halls → rooms სტრუქტურაში. Raw verbatim storage ChromaDB-ში, სრულად ლოკალური, უფასო და ღია კოდი. |
@@ -203,14 +222,22 @@
 
 ---
 
-## ⚙️ პროდუქტიულობა
+## ⚙️ AI ინფრასტრუქტურა და ხელსაწყოები
 
-> **Productivity & Workflow** — ყოველდღიური ოპერაციების ავტომატიზაციის ხელსაწყოები.
+> **AI Infrastructure & Tools** — მოდელების გაშვება, სერვინგი, ტრენინგი, ხმოვანი AI, ვიდეო გენერაცია და პროდუქტიულობა.
 
 | რეპოზიტორია | ⭐ | აღწერა |
 |---|---|---|
+| [Ollama](https://github.com/ollama/ollama) | 165K | ლოკალურად LLM-ების გაშვება ერთი ბრძანებით — Llama, Mistral, Gemma, DeepSeek. GPU არ არის სავალდებულო. ყველაზე მარტივი გზა ლოკალური AI-ს გასაშვებად. |
+| [vLLM](https://github.com/vllm-project/vllm) | 75K | ყველაზე პოპულარული ღია LLM serving ძრავა — PagedAttention ტექნოლოგია სწრაფი inference-ისთვის. პროდაქშენ-დონის მოდელების სერვინგის სტანდარტი. |
+| [llama.cpp](https://github.com/ggml-org/llama.cpp) | 73K | C/C++ LLM inference ძრავა — CPU-ზეც კი აშვებს დიდ მოდელებს. GGUF ფორმატის სტანდარტი, ლოკალური AI-ს ფუნდამენტი. |
+| [Unsloth](https://github.com/unslothai/unsloth) | 58K | ღია მოდელების fine-tuning სტუდია — Qwen, Gemma, DeepSeek. სწრაფი ტრენინგი ვებ ინტერფეისით, ლოკალური მოდელების პერსონალიზაციისთვის. |
+| [Coqui TTS](https://github.com/coqui-ai/TTS) | 45K | Deep learning text-to-speech — ხმის კლონირება 3-10 წამის სემპლით, XTTS-v2 17 ენის მხარდაჭერით. პროდაქშენ-დონის ხმოვანი AI. |
+| [SGLang](https://github.com/sgl-project/sglang) | 25K | მაღალი წარმადობის LLM serving — vLLM-ზე 29% სწრაფი H100-ზე. UC Berkeley-ს ლაბორატორიიდან, $400M სტარტაპად გარდაიქმნა. |
 | [Google Workspace CLI](https://github.com/googleworkspace/cli) | 24K | ერთი CLI მთელი Google Workspace-ისთვის — Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin. Google Discovery Service-იდან დინამიურად აგებს ბრძანებებს. 40+ აგენტის უნარი. |
+| [HunyuanVideo](https://github.com/Tencent-Hunyuan/HunyuanVideo) | 11.7K | Tencent-ის ვიდეო გენერაციის ფრეიმვორკი — image-to-video, აუდიოზე დაფუძნებული ანიმაცია. წამყვანი ღია კოდის ვიდეო AI მოდელი. |
 | [NotebookLM Python](https://github.com/teng-lin/notebooklm-py) | 8.9K | Google NotebookLM-ის არაოფიციალური Python API და CLI. სრული პროგრამული წვდომა ფუნქციებზე, მათ შორის ვებ ინტერფეისში მიუწვდომელ ფუნქციებზე. |
+| [RealtimeTTS](https://github.com/KoljaB/RealtimeTTS) | 3K | რეალურ დროში text-to-speech — ხმის კლონირება, დაბალი latency GPU სინთეზი. Coqui, ElevenLabs, Piper ძრავების მხარდაჭერა. სრული ხმოვანი AI pipeline. |
 
 ---
 

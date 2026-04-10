@@ -3,496 +3,460 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Awesome AI Pulse Georgia — Interactive Graph</title>
+<title>Awesome AI Pulse Georgia — Interactive Map</title>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    background: #111827;
-    color: #fafafa;
-    font-family: 'Segoe UI', 'SF Pro Display', Arial, sans-serif;
-    overflow: hidden;
-  }
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background:#0a0f1a; color:#fafafa; overflow:hidden;
+  font-family:'Segoe UI','SF Pro Display',Arial,sans-serif;
+}
 
-  /* Header */
-  #header {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 10;
-    background: rgba(17,24,39,0.92);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(0,208,255,0.15);
-    padding: 12px 24px;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  #header h1 {
-    font-size: 18px; font-weight: 700;
-    background: linear-gradient(90deg, #00D0FF, #A949DA);
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-  }
-  #header .stats { font-size: 13px; color: #888; }
-  #header .stats span { color: #00D0FF; font-weight: 700; }
+/* Header */
+#header {
+  position:fixed; top:0; left:0; right:0; z-index:10;
+  background:rgba(10,15,26,0.94); backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(0,208,255,0.12);
+  padding:10px 24px; display:flex; align-items:center; justify-content:space-between;
+}
+#header h1 { font-size:17px; font-weight:700; }
+#header h1 span {
+  background:linear-gradient(90deg,#00D0FF,#A949DA);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+}
+.header-right { display:flex; align-items:center; gap:16px; }
+#search {
+  background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1);
+  border-radius:8px; padding:5px 12px; color:#fafafa; font-size:12px; width:180px; outline:none;
+}
+#search:focus { border-color:#00D0FF; }
+#search::placeholder { color:#555; }
+.stats { font-size:12px; color:#666; }
+.stats b { color:#00D0FF; }
 
-  /* Legend */
-  #legend {
-    position: fixed; top: 56px; left: 0; right: 0; z-index: 10;
-    background: rgba(17,24,39,0.85);
-    backdrop-filter: blur(8px);
-    padding: 8px 24px;
-    display: flex; flex-wrap: wrap; gap: 8px;
-    border-bottom: 1px solid rgba(169,73,218,0.1);
-  }
-  .legend-item {
-    display: flex; align-items: center; gap: 5px;
-    font-size: 11px; color: #aaa;
-    cursor: pointer; padding: 3px 10px;
-    border-radius: 12px; border: 1px solid transparent;
-    transition: all 0.2s;
-  }
-  .legend-item:hover, .legend-item.active {
-    border-color: rgba(255,255,255,0.2);
-    background: rgba(255,255,255,0.05);
-    color: #fff;
-  }
-  .legend-dot {
-    width: 10px; height: 10px; border-radius: 50%;
-  }
+/* Tooltip */
+#tooltip {
+  position:fixed; z-index:20; pointer-events:none; opacity:0;
+  background:rgba(10,15,26,0.97); border:1px solid rgba(0,208,255,0.25);
+  border-radius:10px; padding:14px 18px; max-width:340px;
+  box-shadow:0 12px 40px rgba(0,0,0,0.6); transition:opacity 0.12s;
+}
+#tooltip.visible { opacity:1; }
+#tooltip .t-name { font-size:15px; font-weight:700; color:#00D0FF; }
+#tooltip .t-stars { font-size:12px; color:#A949DA; margin-top:3px; }
+#tooltip .t-cat { font-size:10px; color:#666; margin-top:2px; }
+#tooltip .t-desc { font-size:11px; color:#bbb; margin-top:8px; line-height:1.55; }
 
-  /* Tooltip */
-  #tooltip {
-    position: fixed; z-index: 20;
-    background: rgba(17,24,39,0.96);
-    border: 1px solid rgba(0,208,255,0.3);
-    border-radius: 10px; padding: 14px 18px;
-    max-width: 360px; pointer-events: none;
-    opacity: 0; transition: opacity 0.15s;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-  }
-  #tooltip.visible { opacity: 1; }
-  #tooltip .name { font-size: 16px; font-weight: 700; color: #00D0FF; }
-  #tooltip .stars { font-size: 13px; color: #A949DA; margin-top: 4px; }
-  #tooltip .cat { font-size: 11px; color: #888; margin-top: 2px; }
-  #tooltip .desc { font-size: 12px; color: #ccc; margin-top: 8px; line-height: 1.5; }
+/* Category labels */
+.cluster-label {
+  font-size:11px; font-weight:700; text-anchor:middle; letter-spacing:0.5px;
+  paint-order:stroke; stroke:#0a0f1a; stroke-width:3px;
+}
+.cluster-ring { fill:none; stroke-width:1; opacity:0.08; }
+.cluster-bg { opacity:0.03; }
 
-  /* Search */
-  #search {
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 8px; padding: 6px 12px;
-    color: #fafafa; font-size: 13px; width: 200px;
-    outline: none;
-  }
-  #search:focus { border-color: #00D0FF; }
-  #search::placeholder { color: #666; }
+/* Nodes */
+.node-circle { cursor:pointer; transition:opacity 0.2s; }
+.node-label { font-size:8px; fill:#667; pointer-events:none; text-anchor:middle; }
+.link-line { stroke-opacity:0.06; stroke-width:0.8; }
+.node-circle.dim { opacity:0.06; }
+.node-label.dim { opacity:0.03; }
+.link-line.dim { stroke-opacity:0.01; }
+.node-circle.hi { stroke-width:2.5; filter:url(#glow); }
 
-  /* Canvas */
-  svg { display: block; }
-  .link { stroke-opacity: 0.12; }
-  .link:hover { stroke-opacity: 0.5; }
-  .node-circle {
-    stroke-width: 1.5; cursor: pointer;
-    transition: r 0.2s;
-  }
-  .node-label {
-    font-size: 9px; fill: #aaa;
-    pointer-events: none; text-anchor: middle;
-  }
-  .node-circle.dimmed { opacity: 0.08; }
-  .node-label.dimmed { opacity: 0.05; }
-  .link.dimmed { stroke-opacity: 0.02; }
+/* Instructions */
+#hint {
+  position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+  font-size:11px; color:#444; z-index:5;
+}
 </style>
 </head>
 <body>
 
 <div id="header">
-  <h1>AI Pulse Georgia — Graph</h1>
-  <input type="text" id="search" placeholder="Search repos...">
-  <div class="stats"><span>100</span> repos &middot; <span>9</span> categories</div>
+  <h1><span>AI Pulse Georgia</span> &mdash; რეპოების რუკა</h1>
+  <div class="header-right">
+    <input type="text" id="search" placeholder="ძიება...">
+    <div class="stats"><b>100</b> რეპო &middot; <b>9</b> კატეგორია</div>
+  </div>
 </div>
 
-<div id="legend"></div>
 <div id="tooltip">
-  <div class="name"></div>
-  <div class="stars"></div>
-  <div class="cat"></div>
-  <div class="desc"></div>
+  <div class="t-name"></div>
+  <div class="t-stars"></div>
+  <div class="t-cat"></div>
+  <div class="t-desc"></div>
 </div>
 
-<svg id="graph"></svg>
+<div id="hint">Scroll = zoom &middot; Drag = move &middot; Hover = details &middot; Click category label = filter</div>
+
+<svg id="graph">
+  <defs>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+</svg>
 
 <script>
-// ─── CATEGORY DEFINITIONS ───
-const categories = {
-  "coding":      { label: "კოდინგ აგენტები",         color: "#00D0FF" },
-  "plugins":     { label: "Claude Code პლაგინები",    color: "#6EE7B7" },
-  "mcp":         { label: "MCP ინტეგრაციები",        color: "#A949DA" },
-  "scraping":    { label: "ვებ სკრეიპინგი",          color: "#F59E0B" },
-  "frameworks":  { label: "AI ფრეიმვორკები",         color: "#EF4444" },
-  "business":    { label: "მზა AI აგენტები",          color: "#EC4899" },
-  "memory":      { label: "მეხსიერება და RAG",       color: "#8B5CF6" },
-  "infra":       { label: "AI ინფრასტრუქტურა",       color: "#14B8A6" },
-  "resources":   { label: "რესურსები",               color: "#78716C" }
+// ═══════════════════════════════════════════
+//  DATA
+// ═══════════════════════════════════════════
+
+const cats = {
+  coding:     {label:"კოდინგ აგენტები",       color:"#00D0FF", icon:"🤖"},
+  plugins:    {label:"Claude Code პლაგინები",  color:"#6EE7B7", icon:"⚡"},
+  mcp:        {label:"MCP ინტეგრაციები",      color:"#A78BFA", icon:"🔌"},
+  scraping:   {label:"ვებ სკრეიპინგი",        color:"#FBBF24", icon:"🕷"},
+  frameworks: {label:"AI ფრეიმვორკები",       color:"#F87171", icon:"🧬"},
+  business:   {label:"მზა AI აგენტები",        color:"#F472B6", icon:"💼"},
+  memory:     {label:"მეხსიერება & RAG",       color:"#C084FC", icon:"🧠"},
+  infra:      {label:"ინფრასტრუქტურა",        color:"#2DD4BF", icon:"⚙"},
+  resources:  {label:"რესურსები",             color:"#A8A29E", icon:"📚"}
 };
 
-// ─── NODES: 100 repos ───
 const nodes = [
-  // Coding Agents (14)
-  {id:"claw-code",name:"Claw Code",stars:175000,cat:"coding",desc:"Claude Code-ის ღია ალტერნატივა Rust-ში. GitHub-ის ისტორიაში ყველაზე სწრაფად მზარდი რეპო."},
-  {id:"opencode",name:"opencode",stars:138000,cat:"coding",desc:"ღია კოდის კოდირების აგენტი ტერმინალში — Claude Code-ის უფასო ალტერნატივა."},
-  {id:"gemini-cli",name:"Gemini CLI",stars:89800,cat:"coding",desc:"Google-ს ოფიციალური AI აგენტი ტერმინალში, 1M ტოკენის კონტექსტით."},
-  {id:"cline",name:"Cline",stars:58000,cat:"coding",desc:"VS Code-ის AI კოდირების აგენტი, 5M+ ინსტალაციით."},
-  {id:"oh-my-openagent",name:"oh-my-openagent",stars:49000,cat:"coding",desc:"უნივერსალური ორკესტრატორი — ერთ აგენტს სრულ გუნდად აქცევს."},
-  {id:"aider",name:"Aider",stars:42000,cat:"coding",desc:"ტერმინალში AI pair programming. 4.1M ინსტალაცია."},
-  {id:"goose",name:"Goose",stars:38000,cat:"coding",desc:"Block-ის AI აგენტი — 15+ AI პროვაიდერი, 70+ MCP გაფართოება."},
-  {id:"tabby",name:"Tabby",stars:32000,cat:"coding",desc:"Self-hosted AI კოდის ასისტენტი — GitHub Copilot-ის ღია ალტერნატივა."},
-  {id:"continue",name:"Continue.dev",stars:30000,cat:"coding",desc:"ღია IDE extension — VS Code, JetBrains. ნებისმიერი მოდელით მუშაობს."},
-  {id:"taskmaster",name:"Taskmaster",stars:26000,cat:"coding",desc:"AI პროექტის მართვა — ამოცანების ავტომატური დაშლა და თვალთვალი."},
-  {id:"openclaude",name:"OpenClaude",stars:18000,cat:"coding",desc:"200+ AI მოდელი ერთ ტერმინალში — OpenAI, Gemini, DeepSeek, Ollama."},
-  {id:"kilocode",name:"Kilocode",stars:18000,cat:"coding",desc:"VS Code AI გაფართოება — #1 OpenRouter-ზე, 1.5M+ მომხმარებელი."},
-  {id:"cmux",name:"cmux",stars:13000,cat:"coding",desc:"macOS ტერმინალი AI აგენტებისთვის — პარალელური სესიების მართვა."},
-  {id:"codex-plugin",name:"Codex Plugin",stars:11000,cat:"coding",desc:"OpenAI-ს პლაგინი Claude Code-ისთვის — ორი AI ერთ გარემოში."},
+  // coding (14)
+  {id:"claw-code",n:"Claw Code",s:175000,c:"coding",d:"Claude Code-ის ღია ალტერნატივა Rust-ში. GitHub-ის ისტორიაში ყველაზე სწრაფად მზარდი რეპო."},
+  {id:"opencode",n:"opencode",s:138000,c:"coding",d:"ღია კოდის კოდირების აგენტი ტერმინალში — Claude Code-ის უფასო ალტერნატივა."},
+  {id:"gemini-cli",n:"Gemini CLI",s:89800,c:"coding",d:"Google-ს ოფიციალური AI აგენტი ტერმინალში, 1M ტოკენის კონტექსტით."},
+  {id:"cline",n:"Cline",s:58000,c:"coding",d:"VS Code-ის AI კოდირების აგენტი, 5M+ ინსტალაციით."},
+  {id:"omo",n:"oh-my-openagent",s:49000,c:"coding",d:"უნივერსალური ორკესტრატორი — ერთ აგენტს სრულ გუნდად აქცევს."},
+  {id:"aider",n:"Aider",s:42000,c:"coding",d:"ტერმინალში AI pair programming. 4.1M ინსტალაცია."},
+  {id:"goose",n:"Goose",s:38000,c:"coding",d:"Block-ის AI აგენტი — 15+ პროვაიდერი, 70+ MCP გაფართოება."},
+  {id:"tabby",n:"Tabby",s:32000,c:"coding",d:"Self-hosted AI კოდის ასისტენტი — Copilot-ის ღია ალტერნატივა."},
+  {id:"continue",n:"Continue.dev",s:30000,c:"coding",d:"ღია IDE extension — VS Code, JetBrains. ნებისმიერი მოდელი."},
+  {id:"taskmaster",n:"Taskmaster",s:26000,c:"coding",d:"AI პროექტის მართვა — ამოცანების დაშლა და თვალთვალი."},
+  {id:"openclaude",n:"OpenClaude",s:18000,c:"coding",d:"200+ AI მოდელი ერთ ტერმინალში."},
+  {id:"kilocode",n:"Kilocode",s:18000,c:"coding",d:"VS Code AI — #1 OpenRouter-ზე, 1.5M+ მომხმარებელი."},
+  {id:"cmux",n:"cmux",s:13000,c:"coding",d:"macOS ტერმინალი AI აგენტებისთვის."},
+  {id:"codex-plugin",n:"Codex Plugin",s:11000,c:"coding",d:"OpenAI-ს პლაგინი Claude Code-ისთვის."},
 
-  // Plugins (14)
-  {id:"everything-cc",name:"Everything Claude Code",stars:144000,cat:"plugins",desc:"38 აგენტი, 156 უნარი ერთ პაკეტში. ყველაზე პოპულარული Claude Code დანამატი."},
-  {id:"superpowers",name:"Superpowers",stars:134000,cat:"plugins",desc:"AI-ს ასწავლის ჯერ დაფიქრდი, მერე დაწერე მიდგომას."},
-  {id:"ui-ux-pro",name:"UI UX Pro Max",stars:60000,cat:"plugins",desc:"50 დიზაინის სტილი, 161 ფერთა პალიტრა AI კოდირებისთვის."},
-  {id:"gsd",name:"GSD",stars:47000,cat:"plugins",desc:"კონტექსტის გაუარესების პრობლემის მოგვარება სპეციფიკაციებით."},
-  {id:"claude-mem",name:"Claude Mem",stars:45000,cat:"plugins",desc:"სესიებს შორის მეხსიერების შენარჩუნება Claude Code-ისთვის."},
-  {id:"oh-my-cc",name:"Oh My ClaudeCode",stars:23000,cat:"plugins",desc:"მრავალაგენტური ორკესტრაცია — autopilot, team, ralph რეჟიმები."},
-  {id:"obsidian-skills",name:"Obsidian Skills",stars:19000,cat:"plugins",desc:"Obsidian ჩანიშვნებთან AI-ის მუშაობის უნარი."},
-  {id:"claude-plugins",name:"Claude Plugins Official",stars:16000,cat:"plugins",desc:"Anthropic-ის ოფიციალური ვერიფიცირებული პლაგინების კატალოგი."},
-  {id:"career-ops",name:"Career-Ops",stars:13000,cat:"plugins",desc:"AI სამუშაოს ძიება — ვაკანსიების შეფასება, CV-ების გენერაცია."},
-  {id:"n8n-skills",name:"n8n Skills",stars:4000,cat:"plugins",desc:"7 უნარი n8n ავტომატიზაციის workflow-ების ასაწყობად."},
-  {id:"graphify",name:"Graphify",stars:1900,cat:"plugins",desc:"კოდბეისი → ცოდნის გრაფი. 71x ნაკლები ტოკენი."},
-  {id:"claude-peers",name:"Claude Peers",stars:1700,cat:"plugins",desc:"რამდენიმე Claude Code სესიის რეალურ დროში კომუნიკაცია."},
-  {id:"cc-setup",name:"Claude Code Setup",stars:9,cat:"plugins",desc:"პროდაქშენ-დონის კონფიგურაცია. Made in Georgia 🇬🇪."},
-  {id:"geo-payments",name:"Georgian Payments",stars:2,cat:"plugins",desc:"TBC და BOG ბანკების API უნარები. Made in Georgia 🇬🇪."},
+  // plugins (14)
+  {id:"everything-cc",n:"Everything CC",s:144000,c:"plugins",d:"38 აგენტი, 156 უნარი. ყველაზე პოპულარული Claude Code დანამატი."},
+  {id:"superpowers",n:"Superpowers",s:134000,c:"plugins",d:"ჯერ დაფიქრდი, მერე დაწერე — spec-first workflow ფრეიმვორკი."},
+  {id:"ui-ux-pro",n:"UI UX Pro Max",s:60000,c:"plugins",d:"50 დიზაინის სტილი, 161 ფერი AI კოდირებისთვის."},
+  {id:"gsd",n:"GSD",s:47000,c:"plugins",d:"Context rot-ის მოგვარება სპეციფიკაციებით."},
+  {id:"claude-mem",n:"Claude Mem",s:45000,c:"plugins",d:"სესიებს შორის მეხსიერება Claude Code-ისთვის."},
+  {id:"oh-my-cc",n:"Oh My ClaudeCode",s:23000,c:"plugins",d:"მრავალაგენტური ორკესტრაცია — autopilot, team, ralph."},
+  {id:"obsidian-skills",n:"Obsidian Skills",s:19000,c:"plugins",d:"Obsidian ჩანიშვნებთან AI-ის მუშაობა."},
+  {id:"claude-plugins",n:"Claude Plugins",s:16000,c:"plugins",d:"Anthropic-ის ოფიციალური პლაგინების კატალოგი."},
+  {id:"career-ops",n:"Career-Ops",s:13000,c:"plugins",d:"AI სამუშაოს ძიება — CV, შეფასება, თვალთვალი."},
+  {id:"n8n-skills",n:"n8n Skills",s:4000,c:"plugins",d:"7 უნარი n8n workflow-ების ასაწყობად."},
+  {id:"graphify",n:"Graphify",s:1900,c:"plugins",d:"კოდბეისი → ცოდნის გრაფი. 71x ნაკლები ტოკენი."},
+  {id:"claude-peers",n:"Claude Peers",s:1700,c:"plugins",d:"რამდენიმე Claude Code სესიის კომუნიკაცია."},
+  {id:"cc-setup",n:"CC Setup 🇬🇪",s:9,c:"plugins",d:"Claude Code კონფიგურაცია. Made in Georgia."},
+  {id:"geo-payments",n:"GEO Payments 🇬🇪",s:2,c:"plugins",d:"TBC/BOG ბანკების API. Made in Georgia."},
 
-  // MCP (15)
-  {id:"mcp-servers",name:"MCP Servers",stars:83000,cat:"mcp",desc:"MCP-ის ოფიციალური სერვერების კოლექცია — ეკოსისტემის ფუნდამენტი."},
-  {id:"context7",name:"Context7",stars:52000,cat:"mcp",desc:"განახლებული დოკუმენტაცია AI-სთვის — აღარ გირჩევს მოძველებულ API-ებს."},
-  {id:"github-mcp",name:"GitHub MCP",stars:29000,cat:"mcp",desc:"GitHub-ის ოფიციალური MCP — Issue, PR, CI/CD ავტომატიზაცია."},
-  {id:"figma-mcp",name:"Figma Context MCP",stars:14000,cat:"mcp",desc:"Figma დიზაინის მონაცემები AI-სთვის — ზუსტი კოდი პირველივე მცდელობით."},
-  {id:"notion-mcp",name:"Notion MCP",stars:4200,cat:"mcp",desc:"Notion-ის გვერდების წაკითხვა/რედაქტირება AI-დან."},
-  {id:"supabase-mcp",name:"Supabase MCP",stars:2600,cat:"mcp",desc:"Supabase მონაცემთა ბაზასთან AI-ის დაკავშირება."},
-  {id:"drawio-mcp",name:"Draw.io MCP",stars:2300,cat:"mcp",desc:"დიაგრამების ავტომატური შექმნა AI-ით."},
-  {id:"exa-mcp",name:"Exa MCP",stars:4100,cat:"mcp",desc:"ვებ ძიება AI ასისტენტებისთვის."},
-  {id:"perplexity-mcp",name:"Perplexity MCP",stars:2100,cat:"mcp",desc:"Perplexity AI-ს ვებ ძიება და ღრმა კვლევა."},
-  {id:"tavily-mcp",name:"Tavily MCP",stars:1600,cat:"mcp",desc:"ძიება, crawling, extract, map — 4 ინსტრუმენტი ერთ სერვერში."},
-  {id:"n8n-mcp",name:"n8n-MCP",stars:17000,cat:"mcp",desc:"n8n ავტომატიზაციის ექსპერტიზა — 1,396 კომპონენტი, 2,709 შაბლონი."},
-  {id:"markdownify",name:"Markdownify MCP",stars:2500,cat:"mcp",desc:"PDF, სურათი, აუდიო, Word → Markdown. უნივერსალური კონვერტორი."},
-  {id:"linkedin-mcp",name:"LinkedIn MCP",stars:1300,cat:"mcp",desc:"LinkedIn პროფილების, ვაკანსიების ძიება AI-დან."},
-  {id:"apify-mcp",name:"Apify MCP",stars:1000,cat:"mcp",desc:"1,000+ მზა სკრეიპერი — Instagram, TikTok, Amazon, Google Maps."},
-  {id:"metricool-mcp",name:"Metricool MCP",stars:33,cat:"mcp",desc:"სოციალური მედიის ანალიტიკა და პოსტების დაგეგმვა."},
+  // mcp (15)
+  {id:"mcp-servers",n:"MCP Servers",s:83000,c:"mcp",d:"ოფიციალური MCP სერვერების კოლექცია — ეკოსისტემის ფუნდამენტი."},
+  {id:"context7",n:"Context7",s:52000,c:"mcp",d:"განახლებული დოკუმენტაცია AI-სთვის."},
+  {id:"github-mcp",n:"GitHub MCP",s:29000,c:"mcp",d:"GitHub-ის ოფიციალური MCP — Issue, PR ავტომატიზაცია."},
+  {id:"n8n-mcp",n:"n8n-MCP",s:17000,c:"mcp",d:"n8n ექსპერტიზა — 1,396 კომპონენტი, 2,709 შაბლონი."},
+  {id:"figma-mcp",n:"Figma MCP",s:14000,c:"mcp",d:"Figma დიზაინი → ზუსტი კოდი პირველივე მცდელობით."},
+  {id:"exa-mcp",n:"Exa MCP",s:4100,c:"mcp",d:"ვებ ძიება AI ასისტენტებისთვის."},
+  {id:"notion-mcp",n:"Notion MCP",s:4200,c:"mcp",d:"Notion გვერდების წაკითხვა/რედაქტირება AI-დან."},
+  {id:"supabase-mcp",n:"Supabase MCP",s:2600,c:"mcp",d:"Supabase მონაცემთა ბაზა AI-სთვის."},
+  {id:"markdownify",n:"Markdownify",s:2500,c:"mcp",d:"PDF, Word, აუდიო → Markdown."},
+  {id:"drawio-mcp",n:"Draw.io MCP",s:2300,c:"mcp",d:"დიაგრამების ავტომატური შექმნა."},
+  {id:"perplexity-mcp",n:"Perplexity MCP",s:2100,c:"mcp",d:"Perplexity ვებ ძიება და ღრმა კვლევა."},
+  {id:"tavily-mcp",n:"Tavily MCP",s:1600,c:"mcp",d:"ძიება, crawl, extract, map — 4 ინსტრუმენტი."},
+  {id:"linkedin-mcp",n:"LinkedIn MCP",s:1300,c:"mcp",d:"LinkedIn პროფილები/ვაკანსიები AI-დან."},
+  {id:"apify-mcp",n:"Apify MCP",s:1000,c:"mcp",d:"1,000+ მზა სკრეიპერი."},
+  {id:"metricool-mcp",n:"Metricool MCP",s:33,c:"mcp",d:"სოციალური მედიის ანალიტიკა."},
 
-  // Scraping (10)
-  {id:"browser-use",name:"Browser Use",stars:86000,cat:"scraping",desc:"AI აგენტს ბრაუზერში მუშაობის უნარი — კლიკი, ტექსტი, ნავიგაცია."},
-  {id:"playwright-mcp",name:"Playwright MCP",stars:30000,cat:"scraping",desc:"Microsoft-ის ბრაუზერის ავტომატიზაცია AI-სთვის."},
-  {id:"agent-browser",name:"Agent Browser",stars:28000,cat:"scraping",desc:"Vercel-ის ბრაუზერის CLI — 93% ტოკენის დაზოგვა."},
-  {id:"lightpanda",name:"Lightpanda",stars:23000,cat:"scraping",desc:"Zig-ში აგებული ბრაუზერი — Chrome-ზე 11x სწრაფი."},
-  {id:"agent-reach",name:"Agent-Reach",stars:16000,cat:"scraping",desc:"Twitter, Reddit, YouTube — 10+ პლატფორმის კითხვა ერთ CLI-ში."},
-  {id:"opencli",name:"opencli",stars:14000,cat:"scraping",desc:"ნებისმიერი პროგრამა → ტერმინალის ბრძანება AI-სთვის."},
-  {id:"playwright-cli",name:"Playwright CLI",stars:6900,cat:"scraping",desc:"ბრაუზერის მოქმედებების ჩაწერა, კოდის გენერაცია."},
-  {id:"firecrawl-mcp",name:"Firecrawl MCP",stars:5900,cat:"scraping",desc:"ვებ სკრეიპინგი, crawling, ძიება — 12+ ინსტრუმენტი."},
-  {id:"cloudflare-mcp",name:"Cloudflare MCP",stars:3600,cat:"scraping",desc:"Cloudflare-ის 13+ სერვისის მართვა AI-დან."},
-  {id:"brightdata-mcp",name:"Bright Data MCP",stars:2300,cat:"scraping",desc:"ვებ სკრეიპინგი anti-bot გვერდის ავლით."},
+  // scraping (10)
+  {id:"browser-use",n:"Browser Use",s:86000,c:"scraping",d:"AI აგენტს ბრაუზერში მუშაობის უნარი."},
+  {id:"playwright-mcp",n:"Playwright MCP",s:30000,c:"scraping",d:"Microsoft ბრაუზერის ავტომატიზაცია AI-სთვის."},
+  {id:"agent-browser",n:"Agent Browser",s:28000,c:"scraping",d:"Vercel ბრაუზერი — 93% ტოკენის დაზოგვა."},
+  {id:"lightpanda",n:"Lightpanda",s:23000,c:"scraping",d:"Zig ბრაუზერი — Chrome-ზე 11x სწრაფი."},
+  {id:"agent-reach",n:"Agent-Reach",s:16000,c:"scraping",d:"Twitter, Reddit, YouTube — 10+ პლატფორმა."},
+  {id:"opencli",n:"opencli",s:14000,c:"scraping",d:"ნებისმიერი პროგრამა → CLI AI-სთვის."},
+  {id:"playwright-cli",n:"Playwright CLI",s:6900,c:"scraping",d:"ბრაუზერის ჩაწერა, კოდის გენერაცია."},
+  {id:"firecrawl-mcp",n:"Firecrawl MCP",s:5900,c:"scraping",d:"ვებ სკრეიპინგი — 12+ ინსტრუმენტი."},
+  {id:"cloudflare-mcp",n:"Cloudflare MCP",s:3600,c:"scraping",d:"Cloudflare-ის 13+ სერვისის მართვა."},
+  {id:"brightdata-mcp",n:"Bright Data MCP",s:2300,c:"scraping",d:"ვებ სკრეიპინგი anti-bot გვერდის ავლით."},
 
-  // Frameworks (14)
-  {id:"autoresearch",name:"AutoResearch",stars:68000,cat:"frameworks",desc:"Karpathy-ს ავტონომიური ML კვლევა — AI ექსპერიმენტებს ღამით ატარებს."},
-  {id:"autogen",name:"AutoGen",stars:54700,cat:"frameworks",desc:"Microsoft-ის მრავალაგენტური ფრეიმვორკი რთული პრობლემებისთვის."},
-  {id:"mirofish",name:"MiroFish",stars:51000,cat:"frameworks",desc:"გროვის ინტელექტი — ათასობით AI აგენტის სიმულაცია პროგნოზირებისთვის."},
-  {id:"crewai",name:"CrewAI",stars:45900,cat:"frameworks",desc:"AI აგენტების გუნდური ორკესტრაცია როლებით. 12M დღიური ამოცანა."},
-  {id:"nanobot",name:"nanobot",stars:38000,cat:"frameworks",desc:"ულტრა-მსუბუქი AI აგენტი — 4,000 ხაზი კოდი, 8+ მესენჯერი."},
-  {id:"hermes",name:"Hermes",stars:29000,cat:"frameworks",desc:"თვითგანვითარებადი AI — ისწავლის გამოცდილებიდან, ქმნის ახალ უნარებს."},
-  {id:"langgraph",name:"LangGraph",stars:28800,cat:"frameworks",desc:"გრაფებით აგენტების ორკესტრაცია. Uber, LinkedIn, Klarna იყენებს."},
-  {id:"semantic-kernel",name:"Semantic Kernel",stars:27600,cat:"frameworks",desc:"Microsoft-ის AI ორკესტრაციის SDK — C#, Python, Java."},
-  {id:"toon",name:"toon",stars:24000,cat:"frameworks",desc:"JSON-ის ალტერნატივა AI-სთვის — 39% ნაკლები ტოკენი."},
-  {id:"vercel-ai",name:"Vercel AI SDK",stars:23300,cat:"frameworks",desc:"TypeScript AI toolkit — 20M+ თვიური ჩამოტვირთვა."},
-  {id:"mastra",name:"Mastra",stars:23000,cat:"frameworks",desc:"TypeScript AI ფრეიმვორკი Gatsby-ის გუნდისგან. YC $13M."},
-  {id:"pydantic-ai",name:"Pydantic AI",stars:16200,cat:"frameworks",desc:"Python ტიპ-უსაფრთხო აგენტები Pydantic-ის შემქმნელებისგან."},
-  {id:"opensandbox",name:"OpenSandbox",stars:10000,cat:"frameworks",desc:"Alibaba-ს უსაფრთხო sandbox — AI კოდს იზოლაციაში ასრულებს."},
-  {id:"openspace",name:"OpenSpace",stars:3900,cat:"frameworks",desc:"აგენტების თვითგანვითარება — AUTO-FIX, AUTO-IMPROVE, AUTO-LEARN."},
+  // frameworks (14)
+  {id:"autoresearch",n:"AutoResearch",s:68000,c:"frameworks",d:"Karpathy-ს ავტონომიური ML კვლევა."},
+  {id:"autogen",n:"AutoGen",s:54700,c:"frameworks",d:"Microsoft მრავალაგენტური ფრეიმვორკი."},
+  {id:"mirofish",n:"MiroFish",s:51000,c:"frameworks",d:"გროვის ინტელექტი — ათასობით AI აგენტის სიმულაცია."},
+  {id:"crewai",n:"CrewAI",s:45900,c:"frameworks",d:"AI აგენტების გუნდი როლებით. 12M დღიური ამოცანა."},
+  {id:"nanobot",n:"nanobot",s:38000,c:"frameworks",d:"ულტრა-მსუბუქი AI — 4,000 ხაზი, 8+ მესენჯერი."},
+  {id:"hermes",n:"Hermes",s:29000,c:"frameworks",d:"თვითგანვითარებადი AI — სწავლობს გამოცდილებიდან."},
+  {id:"langgraph",n:"LangGraph",s:28800,c:"frameworks",d:"გრაფებით ორკესტრაცია. Uber, LinkedIn იყენებს."},
+  {id:"semantic-kernel",n:"Semantic Kernel",s:27600,c:"frameworks",d:"Microsoft AI SDK — C#, Python, Java."},
+  {id:"toon",n:"toon",s:24000,c:"frameworks",d:"JSON ალტერნატივა — 39% ნაკლები ტოკენი."},
+  {id:"vercel-ai",n:"Vercel AI SDK",s:23300,c:"frameworks",d:"TypeScript AI toolkit — 20M+ ჩამოტვირთვა/თვე."},
+  {id:"mastra",n:"Mastra",s:23000,c:"frameworks",d:"TypeScript AI ფრეიმვორკი. YC $13M."},
+  {id:"pydantic-ai",n:"Pydantic AI",s:16200,c:"frameworks",d:"Python ტიპ-უსაფრთხო აგენტები."},
+  {id:"opensandbox",n:"OpenSandbox",s:10000,c:"frameworks",d:"Alibaba sandbox — AI კოდი იზოლაციაში."},
+  {id:"openspace",n:"OpenSpace",s:3900,c:"frameworks",d:"აგენტების თვითგანვითარება."},
 
-  // Business (6)
-  {id:"langflow",name:"Langflow",stars:146000,cat:"business",desc:"ვიზუალური drag-drop AI პლატფორმა — კოდის გარეშე აგენტების აწყობა."},
-  {id:"dify",name:"Dify",stars:136000,cat:"business",desc:"სრული AI აპლიკაციების პლატფორმა — ვიზუალური რედაქტორი, RAG, აგენტები."},
-  {id:"open-webui",name:"Open WebUI",stars:128000,cat:"business",desc:"ChatGPT-ის მსგავსი ინტერფეისი შენს კომპიუტერზე. 355K+ კომუნიტი."},
-  {id:"openclaw",name:"OpenClaw",stars:350000,cat:"business",desc:"პირადი AI ასისტენტი 20+ არხზე — WhatsApp, Telegram, Slack. 350K+ ⭐."},
-  {id:"paperclip",name:"Paperclip",stars:49000,cat:"business",desc:"AI აგენტების პლატფორმა ბიზნესის ავტონომიურად მართვისთვის."},
-  {id:"perplexica",name:"Perplexica",stars:27000,cat:"business",desc:"ღია AI ძიება — Perplexity AI-ს უფასო ალტერნატივა."},
+  // business (6)
+  {id:"langflow",n:"Langflow",s:146000,c:"business",d:"ვიზუალური drag-drop AI პლატფორმა. კოდის გარეშე."},
+  {id:"dify",n:"Dify",s:136000,c:"business",d:"სრული AI აპლიკაციების პლატფორმა — RAG, აგენტები."},
+  {id:"open-webui",n:"Open WebUI",s:128000,c:"business",d:"ChatGPT ინტერფეისი შენს კომპიუტერზე. 355K+ კომუნიტი."},
+  {id:"openclaw",n:"OpenClaw",s:350000,c:"business",d:"პირადი AI 20+ არხზე — WhatsApp, Telegram, Slack. 350K+ ⭐."},
+  {id:"paperclip",n:"Paperclip",s:49000,c:"business",d:"AI აგენტების პლატფორმა ბიზნესის მართვისთვის."},
+  {id:"perplexica",n:"Perplexica",s:27000,c:"business",d:"ღია AI ძიება — Perplexity-ის უფასო ალტერნატივა."},
 
-  // Memory & RAG (10)
-  {id:"ragflow",name:"RAGFlow",stars:70000,cat:"memory",desc:"Enterprise RAG ძრავა — AI-ს დოკუმენტებში ძიების უნარი."},
-  {id:"mem0",name:"mem0",stars:52000,cat:"memory",desc:"უნივერსალური მეხსიერება AI-სთვის — 80% ნაკლები რესურსი."},
-  {id:"llamaindex",name:"LlamaIndex",stars:48400,cat:"memory",desc:"დოკუმენტების AI-თან დაკავშირება — 300+ ინტეგრაცია."},
-  {id:"lightrag",name:"LightRAG",stars:32000,cat:"memory",desc:"სწრაფი RAG ცოდნის გრაფით — ცნებებს შორის კავშირებს პოულობს."},
-  {id:"gitnexus",name:"GitNexus",stars:23000,cat:"memory",desc:"კოდის რეპო → ინტერაქტიული რუკა ბრაუზერში."},
-  {id:"mempalace",name:"MemPalace",stars:23000,cat:"memory",desc:"AI მეხსიერება — LongMemEval-ზე #1 ქულა (96.6%)."},
-  {id:"rag-anything",name:"RAG-Anything",stars:15000,cat:"memory",desc:"მულტიმოდალური RAG — ტექსტი, სურათი, ცხრილი ერთ pipeline-ში."},
-  {id:"hindsight",name:"Hindsight",stars:7100,cat:"memory",desc:"AI აგენტი დროთა განმავლობაში სწავლობს და უმჯობესდება."},
-  {id:"crawl4ai-rag",name:"Crawl4AI RAG",stars:2100,cat:"memory",desc:"ვებ crawling + RAG ერთ pipeline-ში. Supabase-ზე აშენებული."},
-  {id:"prism-mcp",name:"Prism MCP",stars:108,cat:"memory",desc:"AI ტვინის არქიტექტურა — მეხსიერება, ცოდნის გრაფი, dashboard."},
+  // memory (10)
+  {id:"ragflow",n:"RAGFlow",s:70000,c:"memory",d:"Enterprise RAG — AI-ს დოკუმენტებში ძიების უნარი."},
+  {id:"mem0",n:"mem0",s:52000,c:"memory",d:"უნივერსალური მეხსიერება AI-სთვის. 80% ნაკლები რესურსი."},
+  {id:"llamaindex",n:"LlamaIndex",s:48400,c:"memory",d:"დოკუმენტების AI-თან დაკავშირება — 300+ ინტეგრაცია."},
+  {id:"lightrag",n:"LightRAG",s:32000,c:"memory",d:"სწრაფი RAG ცოდნის გრაფით."},
+  {id:"gitnexus",n:"GitNexus",s:23000,c:"memory",d:"კოდის რეპო → ინტერაქტიული რუკა ბრაუზერში."},
+  {id:"mempalace",n:"MemPalace",s:23000,c:"memory",d:"AI მეხსიერება — LongMemEval-ზე #1 (96.6%)."},
+  {id:"rag-anything",n:"RAG-Anything",s:15000,c:"memory",d:"მულტიმოდალური RAG — ტექსტი, სურათი, ცხრილი."},
+  {id:"hindsight",n:"Hindsight",s:7100,c:"memory",d:"AI სწავლობს და უმჯობესდება დროთა განმავლობაში."},
+  {id:"crawl4ai-rag",n:"Crawl4AI RAG",s:2100,c:"memory",d:"ვებ crawling + RAG ერთ pipeline-ში."},
+  {id:"prism-mcp",n:"Prism MCP",s:108,c:"memory",d:"AI ტვინის არქიტექტურა — მეხსიერება, ცოდნის გრაფი."},
 
-  // Infrastructure (11)
-  {id:"ollama",name:"Ollama",stars:165000,cat:"infra",desc:"AI მოდელის გაშვება ერთი ბრძანებით შენს კომპიუტერზე. უფასო."},
-  {id:"comfyui",name:"ComfyUI",stars:106000,cat:"infra",desc:"სურათებისა და ვიდეოების AI გენერაცია node-based ინტერფეისით."},
-  {id:"vllm",name:"vLLM",stars:75000,cat:"infra",desc:"AI მოდელების სერვინგის სტანდარტი — PagedAttention ტექნოლოგია."},
-  {id:"llama-cpp",name:"llama.cpp",stars:73000,cat:"infra",desc:"C++ AI inference — დიდი მოდელები ძველ კომპიუტერებზეც კი."},
-  {id:"unsloth",name:"Unsloth",stars:58000,cat:"infra",desc:"AI მოდელების პერსონალიზაცია — 2x სწრაფი, 70% ნაკლები რესურსი."},
-  {id:"coqui-tts",name:"Coqui TTS",stars:45000,cat:"infra",desc:"ტექსტი → ხმა. ხმის კლონირება 3 წამის ნიმუშით. 17 ენა."},
-  {id:"sglang",name:"SGLang",stars:25000,cat:"infra",desc:"ულტრა-სწრაფი LLM serving — vLLM-ზე 29% სწრაფი. $400M სტარტაპი."},
-  {id:"gworkspace-cli",name:"Google Workspace CLI",stars:24000,cat:"infra",desc:"Gmail, Drive, Calendar — Google Workspace AI-სთვის."},
-  {id:"hunyuanvideo",name:"HunyuanVideo",stars:11700,cat:"infra",desc:"Tencent-ის AI ვიდეო გენერატორი — ტექსტიდან ვიდეო."},
-  {id:"notebooklm-py",name:"NotebookLM Python",stars:8900,cat:"infra",desc:"Google NotebookLM Python API — AI პოდკასტის გენერაცია."},
-  {id:"realtimetts",name:"RealtimeTTS",stars:3000,cat:"infra",desc:"რეალურ დროში ტექსტი → ხმა, 2 წამში მზადაა."},
+  // infra (11)
+  {id:"ollama",n:"Ollama",s:165000,c:"infra",d:"AI მოდელი შენს კომპიუტერზე ერთი ბრძანებით. უფასო."},
+  {id:"comfyui",n:"ComfyUI",s:106000,c:"infra",d:"სურათი/ვიდეო AI გენერაცია node-based ინტერფეისით."},
+  {id:"vllm",n:"vLLM",s:75000,c:"infra",d:"AI მოდელების სერვინგის სტანდარტი."},
+  {id:"llama-cpp",n:"llama.cpp",s:73000,c:"infra",d:"C++ AI inference — ძველ კომპიუტერებზეც კი."},
+  {id:"unsloth",n:"Unsloth",s:58000,c:"infra",d:"AI მოდელების fine-tuning — 2x სწრაფი, 70% ნაკლები."},
+  {id:"coqui-tts",n:"Coqui TTS",s:45000,c:"infra",d:"ტექსტი → ხმა. კლონირება 3 წამის ნიმუშით. 17 ენა."},
+  {id:"sglang",n:"SGLang",s:25000,c:"infra",d:"ულტრა-სწრაფი LLM serving. $400M სტარტაპი."},
+  {id:"gworkspace",n:"GWorkspace CLI",s:24000,c:"infra",d:"Gmail, Drive, Calendar — Google Workspace AI-სთვის."},
+  {id:"hunyuanvideo",n:"HunyuanVideo",s:11700,c:"infra",d:"Tencent AI ვიდეო გენერატორი."},
+  {id:"notebooklm-py",n:"NotebookLM Py",s:8900,c:"infra",d:"Google NotebookLM Python API."},
+  {id:"realtimetts",n:"RealtimeTTS",s:3000,c:"infra",d:"რეალურ დროში ტექსტი → ხმა, 2 წამში."},
 
-  // Resources (6)
-  {id:"public-apis",name:"Public APIs",stars:419000,cat:"resources",desc:"უფასო API-ების უზარმაზარი კატალოგი — ამინდი, მუსიკა, ფინანსები."},
-  {id:"awesome-cc",name:"Awesome Claude Code",stars:36000,cat:"resources",desc:"Claude Code-ის საუკეთესო რესურსების კურირებული სია."},
-  {id:"free-llm",name:"Free LLM APIs",stars:18000,cat:"resources",desc:"26+ უფასო AI API-ის სია."},
-  {id:"claude-howto",name:"Claude How-To",stars:18000,cat:"resources",desc:"ვიზუალური სახელმძღვანელო Claude Code-სთვის."},
-  {id:"awesome-design",name:"Awesome DESIGN.md",stars:17000,cat:"resources",desc:"55+ მზა დიზაინის შაბლონი AI-სთვის."},
-  {id:"llm-wiki",name:"LLM Wiki (Karpathy)",stars:5000,cat:"resources",desc:"AI ავტომატურად აშენებს პერსონალურ ცოდნის ბაზას."}
+  // resources (6)
+  {id:"public-apis",n:"Public APIs",s:419000,c:"resources",d:"უფასო API-ების უზარმაზარი კატალოგი."},
+  {id:"awesome-cc",n:"Awesome Claude Code",s:36000,c:"resources",d:"Claude Code რესურსების კურირებული სია."},
+  {id:"free-llm",n:"Free LLM APIs",s:18000,c:"resources",d:"26+ უფასო AI API."},
+  {id:"claude-howto",n:"Claude How-To",s:18000,c:"resources",d:"ვიზუალური სახელმძღვანელო Claude Code-სთვის."},
+  {id:"awesome-design",n:"Awesome DESIGN.md",s:17000,c:"resources",d:"55+ მზა დიზაინის შაბლონი AI-სთვის."},
+  {id:"llm-wiki",n:"LLM Wiki",s:5000,c:"resources",d:"Karpathy: AI აშენებს პერსონალურ ცოდნის ბაზას."}
 ];
 
-// ─── LINKS ───
 const links = [
-  // Coding agents compete/complement
-  {source:"claw-code",target:"opencode",type:"alternative"},
-  {source:"claw-code",target:"gemini-cli",type:"alternative"},
-  {source:"gemini-cli",target:"aider",type:"alternative"},
-  {source:"cline",target:"continue",type:"alternative"},
-  {source:"cline",target:"kilocode",type:"alternative"},
-  {source:"tabby",target:"continue",type:"alternative"},
-  {source:"goose",target:"claw-code",type:"alternative"},
+  // coding ↔ coding
+  {s:"claw-code",t:"opencode"},{s:"claw-code",t:"gemini-cli"},{s:"gemini-cli",t:"aider"},
+  {s:"cline",t:"continue"},{s:"cline",t:"kilocode"},{s:"tabby",t:"continue"},{s:"goose",t:"claw-code"},
+  // plugins → coding
+  {s:"superpowers",t:"claw-code"},{s:"everything-cc",t:"claw-code"},{s:"oh-my-cc",t:"claw-code"},
+  {s:"claude-mem",t:"claw-code"},{s:"gsd",t:"claw-code"},{s:"gsd",t:"gemini-cli"},
+  {s:"codex-plugin",t:"claw-code"},{s:"graphify",t:"claw-code"},{s:"graphify",t:"gemini-cli"},
+  {s:"ui-ux-pro",t:"claw-code"},{s:"cc-setup",t:"claw-code"},{s:"career-ops",t:"claw-code"},
+  {s:"obsidian-skills",t:"claw-code"},{s:"n8n-skills",t:"n8n-mcp"},
+  // mcp ecosystem
+  {s:"mcp-servers",t:"context7"},{s:"mcp-servers",t:"github-mcp"},{s:"mcp-servers",t:"figma-mcp"},
+  {s:"mcp-servers",t:"notion-mcp"},{s:"mcp-servers",t:"supabase-mcp"},{s:"mcp-servers",t:"drawio-mcp"},
+  {s:"exa-mcp",t:"perplexity-mcp"},{s:"exa-mcp",t:"tavily-mcp"},{s:"perplexity-mcp",t:"tavily-mcp"},
+  {s:"apify-mcp",t:"brightdata-mcp"},{s:"linkedin-mcp",t:"career-ops"},{s:"metricool-mcp",t:"linkedin-mcp"},
+  // scraping
+  {s:"browser-use",t:"playwright-mcp"},{s:"browser-use",t:"agent-browser"},
+  {s:"playwright-mcp",t:"playwright-cli"},{s:"lightpanda",t:"playwright-mcp"},
+  {s:"firecrawl-mcp",t:"brightdata-mcp"},{s:"firecrawl-mcp",t:"crawl4ai-rag"},
+  {s:"agent-reach",t:"browser-use"},{s:"opencli",t:"browser-use"},
+  // frameworks
+  {s:"autogen",t:"semantic-kernel"},{s:"crewai",t:"langgraph"},{s:"crewai",t:"autogen"},
+  {s:"langgraph",t:"llamaindex"},{s:"vercel-ai",t:"mastra"},{s:"mastra",t:"pydantic-ai"},
+  {s:"hermes",t:"nanobot"},{s:"openspace",t:"hermes"},{s:"opensandbox",t:"openspace"},
+  {s:"toon",t:"gsd"},
+  // business
+  {s:"langflow",t:"dify"},{s:"open-webui",t:"ollama"},{s:"openclaw",t:"browser-use"},
+  {s:"perplexica",t:"ollama"},{s:"paperclip",t:"crewai"},{s:"dify",t:"ragflow"},
+  // memory
+  {s:"ragflow",t:"llamaindex"},{s:"lightrag",t:"rag-anything"},{s:"lightrag",t:"gitnexus"},
+  {s:"mem0",t:"mempalace"},{s:"mem0",t:"hindsight"},{s:"mempalace",t:"claude-mem"},
+  {s:"gitnexus",t:"graphify"},{s:"prism-mcp",t:"mem0"},
+  // infra
+  {s:"ollama",t:"llama-cpp"},{s:"vllm",t:"sglang"},{s:"coqui-tts",t:"realtimetts"},
+  {s:"unsloth",t:"ollama"},{s:"comfyui",t:"hunyuanvideo"},{s:"gworkspace",t:"notebooklm-py"},
+  // resources
+  {s:"awesome-cc",t:"everything-cc"},{s:"awesome-cc",t:"superpowers"},{s:"awesome-cc",t:"oh-my-cc"},
+  {s:"free-llm",t:"ollama"},{s:"claude-howto",t:"claw-code"},{s:"awesome-design",t:"ui-ux-pro"},
+  {s:"llm-wiki",t:"mempalace"},{s:"public-apis",t:"apify-mcp"},{s:"autoresearch",t:"llm-wiki"}
+].map(l => ({source:l.s, target:l.t}));
 
-  // Plugin → Coding agent
-  {source:"superpowers",target:"claw-code",type:"works-with"},
-  {source:"everything-cc",target:"claw-code",type:"works-with"},
-  {source:"oh-my-cc",target:"claw-code",type:"works-with"},
-  {source:"claude-mem",target:"claw-code",type:"works-with"},
-  {source:"gsd",target:"claw-code",type:"works-with"},
-  {source:"gsd",target:"gemini-cli",type:"works-with"},
-  {source:"codex-plugin",target:"claw-code",type:"works-with"},
-  {source:"graphify",target:"claw-code",type:"works-with"},
-  {source:"graphify",target:"gemini-cli",type:"works-with"},
-  {source:"ui-ux-pro",target:"claw-code",type:"works-with"},
-  {source:"cc-setup",target:"claw-code",type:"works-with"},
-  {source:"n8n-skills",target:"n8n-mcp",type:"companion"},
-  {source:"career-ops",target:"claw-code",type:"works-with"},
-  {source:"obsidian-skills",target:"claw-code",type:"works-with"},
+// ═══════════════════════════════════════════
+//  CLUSTER POSITIONS (fixed zones)
+// ═══════════════════════════════════════════
+const W = window.innerWidth, H = window.innerHeight;
+const cx = W/2, cy = H/2;
+const R = Math.min(W,H) * 0.34; // ring radius
 
-  // MCP ecosystem
-  {source:"mcp-servers",target:"context7",type:"ecosystem"},
-  {source:"mcp-servers",target:"github-mcp",type:"ecosystem"},
-  {source:"mcp-servers",target:"figma-mcp",type:"ecosystem"},
-  {source:"mcp-servers",target:"notion-mcp",type:"ecosystem"},
-  {source:"mcp-servers",target:"supabase-mcp",type:"ecosystem"},
-  {source:"mcp-servers",target:"drawio-mcp",type:"ecosystem"},
-  {source:"exa-mcp",target:"perplexity-mcp",type:"alternative"},
-  {source:"exa-mcp",target:"tavily-mcp",type:"alternative"},
-  {source:"perplexity-mcp",target:"tavily-mcp",type:"alternative"},
-  {source:"apify-mcp",target:"brightdata-mcp",type:"alternative"},
-  {source:"linkedin-mcp",target:"career-ops",type:"works-with"},
-  {source:"metricool-mcp",target:"linkedin-mcp",type:"works-with"},
+// 9 categories arranged in a circle
+const catKeys = Object.keys(cats);
+const clusterPos = {};
+catKeys.forEach((k, i) => {
+  const angle = (i / catKeys.length) * Math.PI * 2 - Math.PI/2;
+  clusterPos[k] = { x: cx + R * Math.cos(angle), y: cy + R * Math.sin(angle) };
+});
 
-  // Scraping connections
-  {source:"browser-use",target:"playwright-mcp",type:"alternative"},
-  {source:"browser-use",target:"agent-browser",type:"alternative"},
-  {source:"playwright-mcp",target:"playwright-cli",type:"companion"},
-  {source:"lightpanda",target:"playwright-mcp",type:"compatible"},
-  {source:"firecrawl-mcp",target:"brightdata-mcp",type:"alternative"},
-  {source:"firecrawl-mcp",target:"crawl4ai-rag",type:"works-with"},
-  {source:"agent-reach",target:"browser-use",type:"works-with"},
-  {source:"opencli",target:"browser-use",type:"works-with"},
+// Assign initial positions near cluster center
+nodes.forEach(nd => {
+  const cp = clusterPos[nd.c];
+  nd.x = cp.x + (Math.random()-0.5) * 80;
+  nd.y = cp.y + (Math.random()-0.5) * 80;
+});
 
-  // Frameworks connections
-  {source:"autogen",target:"semantic-kernel",type:"companion"},
-  {source:"crewai",target:"langgraph",type:"alternative"},
-  {source:"crewai",target:"autogen",type:"alternative"},
-  {source:"langgraph",target:"llamaindex",type:"works-with"},
-  {source:"vercel-ai",target:"mastra",type:"ecosystem"},
-  {source:"mastra",target:"pydantic-ai",type:"alternative"},
-  {source:"hermes",target:"nanobot",type:"alternative"},
-  {source:"openspace",target:"hermes",type:"works-with"},
-  {source:"opensandbox",target:"openspace",type:"works-with"},
-  {source:"toon",target:"gsd",type:"works-with"},
-
-  // Business platform connections
-  {source:"langflow",target:"dify",type:"alternative"},
-  {source:"open-webui",target:"ollama",type:"works-with"},
-  {source:"openclaw",target:"browser-use",type:"works-with"},
-  {source:"perplexica",target:"ollama",type:"works-with"},
-  {source:"paperclip",target:"crewai",type:"works-with"},
-  {source:"dify",target:"ragflow",type:"works-with"},
-
-  // Memory / RAG connections
-  {source:"ragflow",target:"llamaindex",type:"alternative"},
-  {source:"lightrag",target:"rag-anything",type:"companion"},
-  {source:"lightrag",target:"gitnexus",type:"works-with"},
-  {source:"mem0",target:"mempalace",type:"alternative"},
-  {source:"mem0",target:"hindsight",type:"alternative"},
-  {source:"mempalace",target:"claude-mem",type:"works-with"},
-  {source:"gitnexus",target:"graphify",type:"similar"},
-  {source:"prism-mcp",target:"mem0",type:"works-with"},
-
-  // Infra connections
-  {source:"ollama",target:"llama-cpp",type:"built-on"},
-  {source:"vllm",target:"sglang",type:"alternative"},
-  {source:"coqui-tts",target:"realtimetts",type:"works-with"},
-  {source:"unsloth",target:"ollama",type:"works-with"},
-  {source:"comfyui",target:"hunyuanvideo",type:"works-with"},
-  {source:"gworkspace-cli",target:"notebooklm-py",type:"ecosystem"},
-
-  // Resources → tools
-  {source:"awesome-cc",target:"everything-cc",type:"lists"},
-  {source:"awesome-cc",target:"superpowers",type:"lists"},
-  {source:"awesome-cc",target:"oh-my-cc",type:"lists"},
-  {source:"free-llm",target:"ollama",type:"lists"},
-  {source:"claude-howto",target:"claw-code",type:"teaches"},
-  {source:"awesome-design",target:"ui-ux-pro",type:"works-with"},
-  {source:"llm-wiki",target:"mempalace",type:"concept"},
-  {source:"public-apis",target:"apify-mcp",type:"works-with"},
-  {source:"autoresearch",target:"llm-wiki",type:"concept"},
-];
-
-// ─── D3 SETUP ───
-const width = window.innerWidth;
-const height = window.innerHeight;
-const svg = d3.select("#graph").attr("width", width).attr("height", height);
+// ═══════════════════════════════════════════
+//  D3 RENDERING
+// ═══════════════════════════════════════════
+const svg = d3.select("#graph").attr("width",W).attr("height",H);
 const g = svg.append("g");
 
-// Zoom
-svg.call(d3.zoom().scaleExtent([0.2, 5]).on("zoom", (e) => g.attr("transform", e.transform)));
+svg.call(d3.zoom().scaleExtent([0.3,4]).on("zoom", e => g.attr("transform",e.transform)));
 
-// Scale: node radius by stars
-const rScale = d3.scaleSqrt()
-  .domain([0, d3.max(nodes, d => d.stars)])
-  .range([5, 42]);
+const rScale = d3.scaleSqrt().domain([0,d3.max(nodes,d=>d.s)]).range([3,36]);
 
-// Simulation
-const simulation = d3.forceSimulation(nodes)
-  .force("link", d3.forceLink(links).id(d => d.id).distance(100).strength(0.3))
-  .force("charge", d3.forceManyBody().strength(-200))
-  .force("center", d3.forceCenter(width / 2, height / 2))
-  .force("collision", d3.forceCollide().radius(d => rScale(d.stars) + 4));
+// Cluster backgrounds
+const clusterG = g.append("g");
+catKeys.forEach(k => {
+  const cp = clusterPos[k];
+  const cat = cats[k];
+  // Background circle
+  clusterG.append("circle")
+    .attr("class","cluster-bg").attr("cx",cp.x).attr("cy",cp.y)
+    .attr("r", 120).attr("fill",cat.color);
+  // Ring
+  clusterG.append("circle")
+    .attr("class","cluster-ring").attr("cx",cp.x).attr("cy",cp.y)
+    .attr("r", 120).attr("stroke",cat.color);
+  // Label
+  clusterG.append("text")
+    .attr("class","cluster-label").attr("x",cp.x).attr("y",cp.y - 130)
+    .attr("fill",cat.color)
+    .text(cat.icon + " " + cat.label);
+});
 
 // Links
-const link = g.append("g").selectAll("line")
-  .data(links).join("line")
-  .attr("class", "link")
+const linkG = g.append("g").selectAll("line").data(links).join("line")
+  .attr("class","link-line")
   .attr("stroke", d => {
-    const sc = categories[nodes.find(n=>n.id===d.source.id||n.id===d.source)?.cat]?.color || "#444";
-    return sc;
-  })
-  .attr("stroke-width", 1);
+    const sn = nodes.find(n=>n.id===d.source);
+    return sn ? cats[sn.c].color : "#333";
+  });
 
 // Nodes
-const node = g.append("g").selectAll("g")
-  .data(nodes).join("g")
+const nodeG = g.append("g").selectAll("g").data(nodes).join("g")
   .call(d3.drag()
-    .on("start", (e,d) => { if(!e.active) simulation.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; })
-    .on("drag", (e,d) => { d.fx=e.x; d.fy=e.y; })
-    .on("end", (e,d) => { if(!e.active) simulation.alphaTarget(0); d.fx=null; d.fy=null; })
+    .on("start",(e,d)=>{if(!e.active)sim.alphaTarget(0.15).restart();d.fx=d.x;d.fy=d.y;})
+    .on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y;})
+    .on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;})
   );
 
-node.append("circle")
-  .attr("class", "node-circle")
-  .attr("r", d => rScale(d.stars))
-  .attr("fill", d => categories[d.cat].color)
-  .attr("fill-opacity", 0.7)
-  .attr("stroke", d => categories[d.cat].color);
+nodeG.append("circle").attr("class","node-circle")
+  .attr("r", d=>rScale(d.s))
+  .attr("fill", d=>cats[d.c].color).attr("fill-opacity",0.75)
+  .attr("stroke", d=>cats[d.c].color).attr("stroke-opacity",0.4);
 
-node.append("text")
-  .attr("class", "node-label")
-  .attr("dy", d => rScale(d.stars) + 12)
-  .text(d => d.name);
+nodeG.append("text").attr("class","node-label")
+  .attr("dy", d=>rScale(d.s)+10).text(d=>d.n);
 
-// Tooltip
+// ═══════════════════════════════════════════
+//  SIMULATION with cluster gravity
+// ═══════════════════════════════════════════
+function clusterForce(alpha) {
+  nodes.forEach(d => {
+    const cp = clusterPos[d.c];
+    d.vx += (cp.x - d.x) * alpha * 0.12;
+    d.vy += (cp.y - d.y) * alpha * 0.12;
+  });
+}
+
+const sim = d3.forceSimulation(nodes)
+  .force("link", d3.forceLink(links).id(d=>d.id).distance(50).strength(0.15))
+  .force("charge", d3.forceManyBody().strength(-60))
+  .force("collision", d3.forceCollide().radius(d=>rScale(d.s)+3))
+  .force("cluster", clusterForce)
+  .on("tick", () => {
+    linkG.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y)
+         .attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);
+    nodeG.attr("transform",d=>`translate(${d.x},${d.y})`);
+  });
+
+// ═══════════════════════════════════════════
+//  INTERACTIONS
+// ═══════════════════════════════════════════
 const tooltip = d3.select("#tooltip");
-node.on("mouseenter", (e, d) => {
-  tooltip.select(".name").text(d.name);
-  tooltip.select(".stars").text(`⭐ ${d.stars >= 1000 ? (d.stars/1000).toFixed(d.stars>=10000?0:1)+"K" : d.stars}`);
-  tooltip.select(".cat").text(categories[d.cat].label);
-  tooltip.select(".desc").text(d.desc);
-  tooltip.classed("visible", true);
+
+function formatStars(s) {
+  if(s>=1000) return (s/1000).toFixed(s>=10000?0:1)+"K";
+  return s;
+}
+
+nodeG.on("mouseenter",(e,d)=>{
+  tooltip.select(".t-name").text(d.n);
+  tooltip.select(".t-stars").text("⭐ "+formatStars(d.s));
+  tooltip.select(".t-cat").text(cats[d.c].icon+" "+cats[d.c].label);
+  tooltip.select(".t-desc").text(d.d);
+  tooltip.classed("visible",true);
 
   // Highlight connected
-  const connected = new Set();
-  connected.add(d.id);
-  links.forEach(l => {
-    const sid = typeof l.source === "object" ? l.source.id : l.source;
-    const tid = typeof l.target === "object" ? l.target.id : l.target;
-    if(sid === d.id) connected.add(tid);
-    if(tid === d.id) connected.add(sid);
+  const conn = new Set([d.id]);
+  links.forEach(l=>{
+    const si=typeof l.source==="object"?l.source.id:l.source;
+    const ti=typeof l.target==="object"?l.target.id:l.target;
+    if(si===d.id)conn.add(ti); if(ti===d.id)conn.add(si);
   });
-  d3.selectAll(".node-circle").classed("dimmed", n => !connected.has(n.id));
-  d3.selectAll(".node-label").classed("dimmed", n => !connected.has(n.id));
-  link.classed("dimmed", l => {
-    const sid = typeof l.source === "object" ? l.source.id : l.source;
-    const tid = typeof l.target === "object" ? l.target.id : l.target;
-    return sid !== d.id && tid !== d.id;
-  });
-}).on("mousemove", (e) => {
-  tooltip.style("left", (e.clientX + 16) + "px").style("top", (e.clientY - 10) + "px");
-}).on("mouseleave", () => {
-  tooltip.classed("visible", false);
-  d3.selectAll(".node-circle").classed("dimmed", false);
-  d3.selectAll(".node-label").classed("dimmed", false);
-  link.classed("dimmed", false);
+  d3.selectAll(".node-circle").classed("dim",n=>!conn.has(n.id)).classed("hi",n=>n.id===d.id);
+  d3.selectAll(".node-label").classed("dim",n=>!conn.has(n.id));
+  linkG.classed("dim",l=>{
+    const si=typeof l.source==="object"?l.source.id:l.source;
+    const ti=typeof l.target==="object"?l.target.id:l.target;
+    return si!==d.id&&ti!==d.id;
+  }).filter(l=>{
+    const si=typeof l.source==="object"?l.source.id:l.source;
+    const ti=typeof l.target==="object"?l.target.id:l.target;
+    return si===d.id||ti===d.id;
+  }).attr("stroke-opacity",0.4);
+}).on("mousemove",(e)=>{
+  let x=e.clientX+16, y=e.clientY-10;
+  if(x+350>W) x=e.clientX-360;
+  if(y+200>H) y=e.clientY-200;
+  tooltip.style("left",x+"px").style("top",y+"px");
+}).on("mouseleave",()=>{
+  tooltip.classed("visible",false);
+  d3.selectAll(".node-circle").classed("dim",false).classed("hi",false);
+  d3.selectAll(".node-label").classed("dim",false);
+  linkG.classed("dim",false).attr("stroke-opacity",0.06);
 });
 
-// Click → open GitHub
-node.on("click", (e, d) => {
-  // Find URL from README data (simplified)
-});
-
-// Tick
-simulation.on("tick", () => {
-  link.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y)
-      .attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);
-  node.attr("transform", d => `translate(${d.x},${d.y})`);
-});
-
-// ─── LEGEND ───
-const legend = d3.select("#legend");
-Object.entries(categories).forEach(([key, val]) => {
-  const item = legend.append("div").attr("class","legend-item").attr("data-cat", key);
-  item.append("div").attr("class","legend-dot").style("background", val.color);
-  item.append("span").text(val.label);
-  item.on("click", function() {
-    const active = d3.select(this).classed("active");
-    d3.selectAll(".legend-item").classed("active", false);
-    if (!active) {
-      d3.select(this).classed("active", true);
-      d3.selectAll(".node-circle").classed("dimmed", n => n.cat !== key);
-      d3.selectAll(".node-label").classed("dimmed", n => n.cat !== key);
-      link.classed("dimmed", true);
-    } else {
-      d3.selectAll(".node-circle").classed("dimmed", false);
-      d3.selectAll(".node-label").classed("dimmed", false);
-      link.classed("dimmed", false);
-    }
-  });
-});
-
-// ─── SEARCH ───
-d3.select("#search").on("input", function() {
-  const q = this.value.toLowerCase();
-  if (!q) {
-    d3.selectAll(".node-circle").classed("dimmed", false);
-    d3.selectAll(".node-label").classed("dimmed", false);
-    link.classed("dimmed", false);
-    return;
+// Category label click → filter
+d3.selectAll(".cluster-label").style("cursor","pointer").on("click", function(){
+  const txt = d3.select(this).text();
+  const key = catKeys.find(k => txt.includes(cats[k].label));
+  if(!key) return;
+  const isActive = d3.select(this).classed("active-label");
+  d3.selectAll(".cluster-label").classed("active-label",false);
+  if(isActive){
+    d3.selectAll(".node-circle").classed("dim",false);
+    d3.selectAll(".node-label").classed("dim",false);
+    linkG.classed("dim",false);
+  } else {
+    d3.select(this).classed("active-label",true);
+    d3.selectAll(".node-circle").classed("dim",n=>n.c!==key);
+    d3.selectAll(".node-label").classed("dim",n=>n.c!==key);
+    linkG.classed("dim",true);
   }
-  d3.selectAll(".node-circle").classed("dimmed", n => !n.name.toLowerCase().includes(q));
-  d3.selectAll(".node-label").classed("dimmed", n => !n.name.toLowerCase().includes(q));
-  link.classed("dimmed", true);
+});
+
+// Search
+d3.select("#search").on("input",function(){
+  const q=this.value.toLowerCase();
+  if(!q){
+    d3.selectAll(".node-circle").classed("dim",false);
+    d3.selectAll(".node-label").classed("dim",false);
+    linkG.classed("dim",false); return;
+  }
+  d3.selectAll(".node-circle").classed("dim",n=>!n.n.toLowerCase().includes(q)&&!n.d.toLowerCase().includes(q));
+  d3.selectAll(".node-label").classed("dim",n=>!n.n.toLowerCase().includes(q)&&!n.d.toLowerCase().includes(q));
+  linkG.classed("dim",true);
 });
 
 // Resize
-window.addEventListener("resize", () => {
-  const w = window.innerWidth, h = window.innerHeight;
-  svg.attr("width", w).attr("height", h);
-  simulation.force("center", d3.forceCenter(w/2, h/2)).alpha(0.3).restart();
+window.addEventListener("resize",()=>{
+  const w=window.innerWidth, h=window.innerHeight;
+  svg.attr("width",w).attr("height",h);
 });
 </script>
 </body>

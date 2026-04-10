@@ -170,14 +170,14 @@
 
 | რეპოზიტორია | ⭐ | აღწერა |
 |---|---|---|
-| [AutoGen](https://github.com/microsoft/autogen) | 54.7K | Microsoft Research-ის მულტი-აგენტ ფრეიმვორკი რთული workflow-ებისთვის. Semantic Kernel-თან ერთად Microsoft Agent Framework-ის საფუძველი. |
 | [AutoResearch](https://github.com/karpathy/autoresearch) | 68K | Andrej Karpathy-ს ავტონომიური ML კვლევის სისტემა — ავტომატურად ატარებს ექსპერიმენტებს ერთ GPU-ზე, ცვლის ჰიპერპარამეტრებს და ინახავს მხოლოდ გაუმჯობესებებს. |
-| [CrewAI](https://github.com/crewaiinc/crewai) | 45.9K | AI აგენტების გუნდური ორკესტრაცია როლებით — თითოეულ აგენტს საკუთარი პასუხისმგებლობა აქვს. MCP და A2A პროტოკოლის მხარდაჭერა, 12M დღიური აგენტის ექსეკუცია. |
+| [AutoGen](https://github.com/microsoft/autogen) | 54.7K | Microsoft Research-ის მულტი-აგენტ ფრეიმვორკი რთული workflow-ებისთვის. Semantic Kernel-თან ერთად Microsoft Agent Framework-ის საფუძველი. |
 | [MiroFish](https://github.com/666ghj/MiroFish) | 51K | Swarm Intelligence ძრავი — ათასობით AI აგენტის სიმულაცია რეალური მონაცემებით პროგნოზირებისთვის. აგენტებს აქვთ ინდივიდუალური პიროვნებები და გრძელვადიანი მეხსიერება. Docker-ით განლაგება. |
+| [CrewAI](https://github.com/crewaiinc/crewai) | 45.9K | AI აგენტების გუნდური ორკესტრაცია როლებით — თითოეულ აგენტს საკუთარი პასუხისმგებლობა აქვს. MCP და A2A პროტოკოლის მხარდაჭერა, 12M დღიური აგენტის ექსეკუცია. |
 | [nanobot](https://github.com/HKUDS/nanobot) | 38K | HKUDS-ის ულტრა-მსუბუქი პერსონალური AI აგენტი — მინიმალური რესურსები, მაქსიმალური შესაძლებლობები. სწრაფად იზრდება 2026 წელს. |
+| [Hermes](https://github.com/nousresearch/hermes-agent) | 29K | Nous Research-ის თვითგანვითარებადი AI აგენტი ჩაშენებული სწავლის ციკლით. ქმნის უნარებს გამოცდილებიდან, ინახავს მეხსიერებას სესიებს შორის. მხარს უჭერს Telegram, Discord, Slack, WhatsApp და cron ავტომატიზაციას. |
 | [LangGraph](https://github.com/langchain-ai/langgraph) | 28.8K | სტატუსიანი აგენტების ორკესტრაცია გრაფებით — checkpointing, branching, rollback. პროდაქშენ-დონის deploy Uber-ში, LinkedIn-ში, Klarna-ში. |
 | [Semantic Kernel](https://github.com/microsoft/semantic-kernel) | 27.6K | Microsoft-ის AI ორკესტრაციის SDK — plugin არქიტექტურა, C# და Python მხარდაჭერა. Azure AI Services-თან ღრმა ინტეგრაცია. |
-| [Hermes](https://github.com/nousresearch/hermes-agent) | 29K | Nous Research-ის თვითგანვითარებადი AI აგენტი ჩაშენებული სწავლის ციკლით. ქმნის უნარებს გამოცდილებიდან, ინახავს მეხსიერებას სესიებს შორის. მხარს უჭერს Telegram, Discord, Slack, WhatsApp და cron ავტომატიზაციას. |
 | [toon](https://github.com/toon-format/toon) | 24K | Token-Oriented Object Notation — JSON-ის ალტერნატივა LLM prompt-ებისთვის. Schema-aware, კომპაქტური ფორმატი, რომელიც ტოკენების მოხმარებას მნიშვნელოვნად ამცირებს და LLM-ისთვის უფრო წასაკითხია. |
 | [Vercel AI SDK](https://github.com/vercel/ai) | 23.3K | TypeScript AI toolkit Next.js-ის შემქმნელებისგან — streaming, tool calling, agent primitives. Full-stack AI აპლიკაციების აშენების სტანდარტი. |
 | [Mastra](https://github.com/mastra-ai/mastra) | 23K | TypeScript ფრეიმვორკი AI აპლიკაციებისა და აგენტებისთვის (Gatsby-ის გუნდისგან). ჩაშენებული workflows, RAG, evals და agent primitives — სრული toolkit თანამედროვე TypeScript stack-ში. |
@@ -196,7 +196,6 @@
 | [Langflow](https://github.com/langflow-ai/langflow) | 146K | DataStax-ის ვიზუალური drag-drop პლატფორმა AI აგენტებისა და RAG-ის ასაშენებლად. 100+ ინტეგრაცია, MCP მხარდაჭერა — კოდის წერა არ სჭირდება. |
 | [Dify](https://github.com/langgenius/dify) | 136K | Full-stack აგენტური workflow პლატფორმა — ვიზუალური RAG, მოდელების მართვა, observability. GitHub-ის ერთ-ერთი ყველაზე პოპულარული AI პროექტი. |
 | [Open WebUI](https://github.com/open-webui/open-webui) | 128K | Self-hosted AI ინტერფეისი Ollama-სა და OpenAI API-სთვის — ჩაშენებული RAG, ხმოვანი/ვიდეო ზარები, აგენტების შემქმნელი. 355K+ კომუნიტი. |
-| [ComfyUI](https://github.com/comfy-org/ComfyUI) | 106K | მოდულარული node-based სურათისა და ვიდეოს AI გენერაციის პლატფორმა — 1,000+ custom node, ყოველკვირეული განახლებები ახალი მოდელების ინტეგრაციით. |
 | [OpenClaw](https://github.com/openclaw/openclaw) | 350K | პირადი AI ასისტენტი ნებისმიერ მოწყობილობაზე. 20+ არხზე პასუხობს (WhatsApp, Telegram, Slack, Discord, iMessage), აქვს ხმოვანი ინტერფეისი და ცოცხალი Canvas. Local-first დიზაინი და მულტი-აგენტ routing. |
 | [Paperclip](https://github.com/paperclipai/paperclip) | 49K | AI აგენტების პლატფორმა ბიზნესის ავტონომიურად წარმართვისთვის. აგენტების გუნდს ორკესტრირებს — org chart, ბიუჯეტი, governance და audit log ერთიან დაფაზე. |
 | [Perplexica](https://github.com/ItzCrazyKns/Perplexica) | 27K | ღია კოდის AI ძიების ძრავა — კონფიდენციალური, წყაროებით დასაბუთებული პასუხები. ლოკალური LLM-ებით (Ollama) და ღრუბლოვანი პროვაიდერებით მუშაობს. Perplexity AI-ს self-hosted ალტერნატივა. |
@@ -229,6 +228,7 @@
 | რეპოზიტორია | ⭐ | აღწერა |
 |---|---|---|
 | [Ollama](https://github.com/ollama/ollama) | 165K | ლოკალურად LLM-ების გაშვება ერთი ბრძანებით — Llama, Mistral, Gemma, DeepSeek. GPU არ არის სავალდებულო. ყველაზე მარტივი გზა ლოკალური AI-ს გასაშვებად. |
+| [ComfyUI](https://github.com/comfy-org/ComfyUI) | 106K | მოდულარული node-based სურათისა და ვიდეოს AI გენერაციის პლატფორმა — 1,000+ custom node, ყოველკვირეული განახლებები ახალი მოდელების ინტეგრაციით. |
 | [vLLM](https://github.com/vllm-project/vllm) | 75K | ყველაზე პოპულარული ღია LLM serving ძრავა — PagedAttention ტექნოლოგია სწრაფი inference-ისთვის. პროდაქშენ-დონის მოდელების სერვინგის სტანდარტი. |
 | [llama.cpp](https://github.com/ggml-org/llama.cpp) | 73K | C/C++ LLM inference ძრავა — CPU-ზეც კი აშვებს დიდ მოდელებს. GGUF ფორმატის სტანდარტი, ლოკალური AI-ს ფუნდამენტი. |
 | [Unsloth](https://github.com/unslothai/unsloth) | 58K | ღია მოდელების fine-tuning სტუდია — Qwen, Gemma, DeepSeek. სწრაფი ტრენინგი ვებ ინტერფეისით, ლოკალური მოდელების პერსონალიზაციისთვის. |

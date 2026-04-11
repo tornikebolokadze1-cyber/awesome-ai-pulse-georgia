@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-100-00D0FF?style=flat-square&labelColor=111827&v=2" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-102-00D0FF?style=flat-square&labelColor=111827&v=3" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -61,6 +61,7 @@
 | [Career-Ops](https://github.com/santifer/career-ops) | 13K | AI-ზე დაფუძნებული სამუშაოს ძიების სისტემა — ავტომატურად პოულობს ვაკანსიებს, აფასებს A-F სკალით, წერს CV-ს თითო პოზიციაზე მორგებულად და ადევნებს თვალს განაცხადებს. 740+ ვაკანსია შეფასდა მისი ბეტა ტესტირების დროს. |
 | [n8n Skills](https://github.com/czlonkowski/n8n-skills) | 4K | 7 ურთიერთშემავსებელი უნარი, რომელიც AI ასისტენტს ასწავლის n8n-ში (ავტომატიზაციის პლატფორმა) სამუშაო ნაკადების აწყობას. 525+ n8n მოდელის ცოდნა და 2,653 კონფიგურაციის მაგალითი. თანმხლები: [n8n-MCP](https://github.com/czlonkowski/n8n-mcp). |
 | [Claude Peers MCP](https://github.com/louislva/claude-peers-mcp) | 1.7K | რამდენიმე Claude Code სესია ერთმანეთს აღმოაჩენს და რეალურ დროში ინფორმაციას ცვლის — თუ სხვადასხვა პროექტზე პარალელურად მუშაობ, აგენტები ერთმანეთს დაეხმარებიან. |
+| [Headroom](https://github.com/chopratejas/headroom) | 1.3K | AI აგენტის კონტექსტის კომპრესიის ფენა — იმ მონაცემებს, რომელსაც AI კითხულობს (ფაილები, ლოგები, RAG შედეგები), 70-95%-ით ამცირებს პასუხის ხარისხის დაკარგვის გარეშე. შეუქცევადი კომპრესიის ტექნოლოგიით AI-ს შეუძლია ორიგინალის დაბრუნება საჭიროების შემთხვევაში. ერთი ბრძანებით ეშვება Claude Code-ში, Codex-ში და Aider-ში — ბევრად ხანგრძლივი საუბრები და უფრო დიდი მონაცემთა ბაზების დამუშავება, AI ხარჯების მცირე ნაწილით. |
 | [Claude Code Setup](https://github.com/tornikebolokadze1-cyber/claude-code-setup) | 9 | Claude Code-ის პროდაქშენ-დონის კონფიგურაცია — უსაფრთხოების წესები, ავტომატური ფორმატირება, საიდუმლოებების დაცვა და /setup ბრძანება ახალი პროექტებისთვის. საქართველოში შექმნილი 🇬🇪. |
 | [Graphify](https://github.com/safishamsi/graphify) | 1.9K | კოდის პროექტს ინტერაქტიულ ცოდნის რუკად აქცევს — AI 71-ჯერ ნაკლებ რესურსს ხარჯავს, ვიდრე ფაილების პირდაპირ კითხვისას. მუშაობს კოდთან, PDF-ებთან, სურათებთან და დიაგრამებთან. თავსებადია Claude Code-თან, Cursor-თან და Gemini CLI-თან. |
 | [Georgian Payments Skills](https://github.com/erekle1/georgian-payments-skills) | 2 | ქართული ბანკების API-ების ცოდნა AI ასისტენტებისთვის — TBC Bank (Checkout, TPay) და Bank of Georgia (iPay, Installments, Open Banking). თუ ქართულ საგადახდო სისტემას აშენებ, ეს უნარი AI-ს ექსპერტ-დონის ცოდნას აძლევს. საქართველოში შექმნილი 🇬🇪. |
@@ -84,6 +85,7 @@
 |---|---|---|
 | [GitHub MCP](https://github.com/github/github-mcp-server) | 29K | GitHub-ის ოფიციალური MCP სერვერი — AI ასისტენტს შეუძლია შენს რეპოზიტორიებზე იმუშაოს: Issue-ების შექმნა, Pull Request-ების მიმოხილვა, CI/CD-ის მონიტორინგი და კოდის ანალიზი. ბუნებრივი ენით ეუბნები რა გინდა და GitHub-ზე თავად ასრულებს. |
 | [Figma Context MCP](https://github.com/GLips/Figma-Context-MCP) | 14K | Figma-ს დიზაინის ფაილებს AI კოდირების ასისტენტებს აწვდის — ნაცვლად სქრინშოტის გაგზავნისა, AI ხედავს ზუსტ დიზაინის მონაცემებს (ფერები, ზომები, ინტერვალები) და პირველივე მცდელობით ზუსტ კოდს წერს. |
+| [Code Review Graph](https://github.com/tirth8205/code-review-graph) | 7.9K | კოდის პროექტის სტრუქტურულ რუკას აშენებს და ცვლილებების გავლენას ახდენს ყოველი ამოცანის დროს — AI აგენტი აღარ კითხულობს მთელ რეპოზიტორიას, მხოლოდ იმ ფაილებს, რომლებზეც რეალურად მოქმედებს ცვლილება. საშუალოდ 8.2x ნაკლები ტოკენი, ხოლო მონორეპოებში 49x-მდე. 19 პროგრამირების ენა, 22 MCP ხელსაწყო, მუშაობს Claude Code-თან, Cursor-თან, Windsurf-თან და Continue-თან. |
 | [Notion MCP](https://github.com/makenotion/notion-mcp-server) | 4.2K | Notion-ის ოფიციალური MCP სერვერი — AI ასისტენტს შეუძლია შენს Notion-ის გვერდებს წაიკითხოს, შეცვალოს და ახალი შექმნას. თუ Notion-ში ინახავ ჩანიშვნებს ან დოკუმენტაციას, AI-ს პირდაპირი წვდომა ექნება. |
 | [Supabase MCP](https://github.com/supabase-community/supabase-mcp) | 2.6K | Supabase-ის (პოპულარული მონაცემთა ბაზის პლატფორმა) MCP სერვერი — AI ასისტენტს შეუძლია შენს ბაზაში ცხრილების შექმნა, მონაცემების კითხვა და კონფიგურაციის მართვა. მუშაობს Cursor-თან, Claude Code-თან და Windsurf-თან. |
 | [Draw.io MCP](https://github.com/jgraph/drawio-mcp) | 2.3K | draw.io-ს ოფიციალური სერვერი — AI ასისტენტს შეუძლია დიაგრამების (ქსელის სქემა, UML, flowchart) ავტომატურად შექმნა და draw.io რედაქტორში გახსნა. 4 სხვადასხვა ინტეგრაციის მეთოდი. |

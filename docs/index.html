@@ -66,7 +66,7 @@ svg{display:block}
   <div class="hdr-title">AI Pulse Georgia</div>
   <div class="hdr-right">
     <input id="search" placeholder="ძიება...">
-    <div class="hdr-stats"><b>100</b> repos · <b>9</b> categories</div>
+    <div class="hdr-stats"><b>102</b> repos · <b>9</b> categories</div>
   </div>
 </div>
 
@@ -134,6 +134,7 @@ const nodes = [
   {id:"n8n-skills",n:"n8n Skills",s:4e3,c:"plugins",d:"n8n workflow-ების ასაწყობი უნარები."},
   {id:"graphify",n:"Graphify",s:1.9e3,c:"plugins",d:"კოდი → ცოდნის გრაფი. 71x ნაკლები ტოკენი."},
   {id:"claude-peers",n:"Claude Peers",s:1.7e3,c:"plugins",d:"Claude Code სესიების კომუნიკაცია."},
+  {id:"headroom",n:"Headroom",s:1.3e3,c:"plugins",d:"AI კონტექსტის კომპრესია — 70-95% ნაკლები ტოკენი. Claude Code, Codex, Aider."},
   {id:"cc-setup",n:"CC Setup 🇬🇪",s:9,c:"plugins",d:"Claude Code კონფიგურაცია. Made in Georgia."},
   {id:"geo-payments",n:"GEO Pay 🇬🇪",s:2,c:"plugins",d:"TBC/BOG API უნარები. Made in Georgia."},
   // mcp 15
@@ -142,6 +143,7 @@ const nodes = [
   {id:"github-mcp",n:"GitHub MCP",s:29e3,c:"mcp",d:"GitHub ოფიციალური MCP — Issue, PR ავტომატიზაცია."},
   {id:"n8n-mcp",n:"n8n-MCP",s:17e3,c:"mcp",d:"n8n ექსპერტიზა — 2,709 შაბლონი."},
   {id:"figma-mcp",n:"Figma MCP",s:14e3,c:"mcp",d:"Figma დიზაინი → ზუსტი კოდი."},
+  {id:"code-review-graph",n:"Code Review Graph",s:7.9e3,c:"mcp",d:"კოდბეისის სტრუქტურული რუკა 22 MCP tool-ით. 8.2x ნაკლები ტოკენი."},
   {id:"notion-mcp",n:"Notion MCP",s:4.2e3,c:"mcp",d:"Notion გვერდები AI-დან."},
   {id:"exa-mcp",n:"Exa MCP",s:4.1e3,c:"mcp",d:"ვებ ძიება AI ასისტენტებისთვის."},
   {id:"supabase-mcp",n:"Supabase MCP",s:2.6e3,c:"mcp",d:"Supabase ბაზა AI-სთვის."},
@@ -240,7 +242,9 @@ const links = [
   {s:"unsloth",t:"ollama"},{s:"comfyui",t:"hunyuanvideo"},
   {s:"awesome-cc",t:"everything-cc"},{s:"awesome-cc",t:"superpowers"},
   {s:"free-llm",t:"ollama"},{s:"claude-howto",t:"claw-code"},
-  {s:"awesome-design",t:"ui-ux-pro"},{s:"llm-wiki",t:"mempalace"}
+  {s:"awesome-design",t:"ui-ux-pro"},{s:"llm-wiki",t:"mempalace"},
+  {s:"code-review-graph",t:"graphify"},{s:"code-review-graph",t:"gitnexus"},
+  {s:"headroom",t:"claw-code"},{s:"headroom",t:"graphify"}
 ].map(l=>({source:l.s,target:l.t}));
 
 // ═══════════════════════════════════════

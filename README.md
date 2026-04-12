@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-103-00D0FF?style=flat-square&labelColor=111827&v=4" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-104-00D0FF?style=flat-square&labelColor=111827&v=5" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -55,6 +55,7 @@
 | [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 60K | AI კოდირების აგენტს ლამაზი ვებსაიტებისა და აპლიკაციების დიზაინის ცოდნას აძლევს — 50 დიზაინის სტილი, 161 ფერთა პალიტრა და 25 ტიპის დიაგრამა. მხარს უჭერს React, Vue, Flutter, SwiftUI-ს და სხვა ტექნოლოგიებს. |
 | [GSD (Get Shit Done)](https://github.com/gsd-build/get-shit-done) | 47K | აგვარებს AI-ის ხშირ პრობლემას — რაც უფრო მეტს ესაუბრები, მით უფრო „იღლება" და ხარისხი ეცემა. GSD ამ პრობლემას აღმოფხვრის სპეციალური სპეციფიკაციების ფაილებით. მუშაობს Claude Code-თან, Codex-თან, Cursor-თან და Gemini CLI-თან. |
 | [Claude Mem](https://github.com/thedotmack/claude-mem) | 45K | Claude Code-ის მეხსიერების პლაგინი — ავტომატურად იმახსოვრებს რას აკეთებდით წინა სესიებში და მომავალში შესაბამის კონტექსტს აბრუნებს. ანუ აღარ გიწევს ყოველ ჯერზე ხელახლა აუხსნა რაზე მუშაობ. |
+| [Caveman](https://github.com/JuliusBrussee/caveman) | 21.4K | AI-ს „გამოქვაბულის ადამიანივით" მოკლედ ლაპარაკს ასწავლის — გამოტოვებს ზედმეტ სიტყვებს და 65-75%-ით ნაკლებ ტოკენს ხარჯავს, ხარისხის დაკარგვის გარეშე. რამდენიმე ინტენსივობის დონე აქვს (Lite, Full, Ultra). მუშაობს Claude Code-თან, Codex-თან, Gemini CLI-თან, Cursor-თან და 40+ სხვა აგენტთან. |
 | [Oh My ClaudeCode](https://github.com/yeachan-heo/oh-my-claudecode) | 23K | Claude Code-ს მრავალაგენტურ ორკესტრატორად აქცევს — autopilot რეჟიმში 5 ფაზით ავტონომიურად მუშაობს, team რეჟიმში რამდენიმე აგენტი პარალელურად ასრულებს ამოცანებს. 19 სპეციალიზებული აგენტი და 36 უნარი ერთ პლაგინში. |
 | [Obsidian Skills](https://github.com/kepano/obsidian-skills) | 19K | Obsidian-ის (პოპულარული ჩანიშვნების აპი) შემქმნელის მიერ გაკეთებული — AI ასისტენტს შენს Obsidian ჩანიშვნებთან მუშაობის უნარს აძლევს. შეუძლია ფაილების წაკითხვა, შექმნა, ძიება და რედაქტირება შენს ცოდნის ბაზაში. |
 | [Claude Plugins Official](https://github.com/anthropics/claude-plugins-official) | 16K | Anthropic-ის (Claude-ის შემქმნელი კომპანია) ოფიციალური პლაგინების კატალოგი. აქ მხოლოდ შემოწმებული და ხარისხიანი პლაგინებია — საიმედო წყარო Claude Code-ის გასაფართოებლად. |

@@ -119,7 +119,7 @@
   <g font-family="'Segoe UI', Arial, sans-serif" font-size="13">
     <!-- Repos -->
     <text x="80" y="296" text-anchor="middle">
-      <tspan fill="#00D0FF" font-weight="700" font-size="20">102</tspan>
+      <tspan fill="#00D0FF" font-weight="700" font-size="20">103</tspan>
       <tspan dx="6" fill="#B3B3B3">რეპო</tspan>
     </text>
     <!-- Categories -->

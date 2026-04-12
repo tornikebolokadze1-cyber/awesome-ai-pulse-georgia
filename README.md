@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-102-00D0FF?style=flat-square&labelColor=111827&v=3" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-103-00D0FF?style=flat-square&labelColor=111827&v=4" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -180,6 +180,7 @@
 | [GitNexus](https://github.com/abhigyanpatwari/GitNexus) | 23K | კოდის პროექტს ინტერაქტიულ რუკად აქცევს — GitHub-ის რეპო ან ZIP ფაილი ჩააგდე ბრაუზერში და დაინახავ ყველა ფაილს, ფუნქციას და მათ კავშირებს. ჩაშენებული AI აგენტი ამ რუკას იყენებს კოდის სრულად გასაგებად. სერვერი არ სჭირდება — მთლიანად ბრაუზერში მუშაობს. |
 | [MemPalace](https://github.com/milla-jovovich/mempalace) | 23K | AI მეხსიერების სისტემა „მეხსიერების სასახლის" ძველბერძნული კონცეფციით — ინახავს ყველაფერს სიტყვასიტყვით, არა AI-ს არჩევით. LongMemEval-ზე უმაღლესი ქულა (96.6%) მიიღო უფასო ხელსაწყოებს შორის. საუბრები ორგანიზებულია wings → halls → rooms სტრუქტურით. სრულად ლოკალური და უფასოა. |
 | [RAG-Anything](https://github.com/HKUDS/RAG-Anything) | 15K | მულტიმოდალური RAG — ტექსტი, სურათები, ცხრილები, დიაგრამები ერთიან pipeline-ში. ანუ AI-ს შეუძლია არა მხოლოდ ტექსტის, არამედ სურათებისა და ცხრილების გაგებაც. LightRAG-ის გუნდისგან, აკადემიური ნაშრომით გამყარებული. |
+| [gbrain](https://github.com/garrytan/gbrain) | 6.1K | Y Combinator-ის CEO Garry Tan-ის პროექტი — AI აგენტის პერსონალური „ტვინი", სადაც ელ-ფოსტა, კალენდარი, შეხვედრები, ტვიტები და იდეები ერთ ადგილზე ინახება. ჰიბრიდული ძიება (ვექტორული + keyword), MCP სერვერი Claude-სთვის, ავტონომიური „dream cycle" მეხსიერების კონსოლიდაციისთვის. ლოკალურად ეშვება PGLite-ით ან ღრუბელში Supabase-ით. |
 | [Hindsight](https://github.com/vectorize-io/hindsight) | 7.1K | AI აგენტის მეხსიერება, რომელიც უბრალო დამახსოვრებას სცილდება — აგენტი დროთა განმავლობაში სწავლობს, ამოიცნობს შაბლონებს და თავად უმჯობესდება. ყოველი ორი კვირის შემდეგ უფრო ჭკვიანი ხდება. აკადემიურად დასაბუთებული (arXiv). |
 | [Crawl4AI RAG](https://github.com/coleam00/mcp-crawl4ai-rag) | 2.1K | ვებ crawling და RAG ერთ pipeline-ში — AI ინტერნეტიდან ინფორმაციას აგროვებს, ბაზაში ინახავს და შემდეგ ამ ინფორმაციაზე დაყრდნობით პასუხობს შენს კითხვებს. Supabase-ის მონაცემთა ბაზაზე აშენებული. |
 | [Prism MCP](https://github.com/dcostenco/prism-mcp) | 108 | AI აგენტის „ტვინის" არქიტექტურა — მდგრადი მეხსიერება, თვითორგანიზებადი ცოდნის გრაფი და მრავალი აგენტის სინქრონიზაცია. ვიზუალური dashboard-ით ხედავ, რას იმახსოვრებს და როგორ ფიქრობს შენი AI. |

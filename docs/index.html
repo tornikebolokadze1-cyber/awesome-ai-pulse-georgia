@@ -66,7 +66,7 @@ svg{display:block}
   <div class="hdr-title">AI Pulse Georgia</div>
   <div class="hdr-right">
     <input id="search" placeholder="ძიება...">
-    <div class="hdr-stats"><b>104</b> repos · <b>9</b> categories</div>
+    <div class="hdr-stats"><b>106</b> repos · <b>9</b> categories</div>
   </div>
 </div>
 
@@ -201,6 +201,7 @@ const nodes = [
   {id:"crawl4ai-rag",n:"Crawl4AI RAG",s:2.1e3,c:"memory",d:"ვებ crawling + RAG."},
   {id:"prism-mcp",n:"Prism MCP",s:108,c:"memory",d:"AI ტვინის არქიტექტურა."},
   // infra 11
+  {id:"stable-diffusion",n:"Stable Diffusion",s:72.9e3,c:"infra",d:"ტექსტიდან სურათის გენერაცია — AI ხელოვნების ფუნდამენტი."},
   {id:"ollama",n:"Ollama",s:165e3,c:"infra",d:"AI მოდელი შენს კომპიუტერზე. უფასო."},
   {id:"comfyui",n:"ComfyUI",s:106e3,c:"infra",d:"სურათი/ვიდეო AI გენერაცია."},
   {id:"vllm",n:"vLLM",s:75e3,c:"infra",d:"AI სერვინგის სტანდარტი."},
@@ -211,6 +212,7 @@ const nodes = [
   {id:"gworkspace",n:"GWorkspace CLI",s:24e3,c:"infra",d:"Gmail, Drive AI-სთვის."},
   {id:"hunyuanvideo",n:"HunyuanVideo",s:11.7e3,c:"infra",d:"AI ვიდეო გენერატორი."},
   {id:"notebooklm-py",n:"NotebookLM Py",s:8.9e3,c:"infra",d:"NotebookLM Python API."},
+  {id:"lm-studio",n:"LM Studio",s:4.6e3,c:"infra",d:"AI მოდელების ლოკალური მართვა GUI-ით. Ollama-ს ალტერნატივა."},
   {id:"realtimetts",n:"RealtimeTTS",s:3e3,c:"infra",d:"რეალურ დროში ტექსტი → ხმა."},
   // resources 6
   {id:"public-apis",n:"Public APIs",s:419e3,c:"resources",d:"უფასო API-ების კატალოგი."},
@@ -248,7 +250,9 @@ const links = [
   {s:"code-review-graph",t:"graphify"},{s:"code-review-graph",t:"gitnexus"},
   {s:"headroom",t:"claw-code"},{s:"headroom",t:"graphify"},
   {s:"gbrain",t:"mem0"},{s:"gbrain",t:"mempalace"},{s:"gbrain",t:"ollama"},
-  {s:"caveman",t:"gsd"},{s:"caveman",t:"headroom"},{s:"caveman",t:"claw-code"}
+  {s:"caveman",t:"gsd"},{s:"caveman",t:"headroom"},{s:"caveman",t:"claw-code"},
+  {s:"stable-diffusion",t:"comfyui"},{s:"stable-diffusion",t:"hunyuanvideo"},
+  {s:"lm-studio",t:"ollama"},{s:"lm-studio",t:"llama-cpp"}
 ].map(l=>({source:l.s,target:l.t}));
 
 // ═══════════════════════════════════════

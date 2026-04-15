@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-104-00D0FF?style=flat-square&labelColor=111827&v=5" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-106-00D0FF?style=flat-square&labelColor=111827&v=6" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -184,6 +184,7 @@
 | [gbrain](https://github.com/garrytan/gbrain) | 6.1K | Y Combinator-ის CEO Garry Tan-ის პროექტი — AI აგენტის პერსონალური „ტვინი", სადაც ელ-ფოსტა, კალენდარი, შეხვედრები, ტვიტები და იდეები ერთ ადგილზე ინახება. ჰიბრიდული ძიება (ვექტორული + keyword), MCP სერვერი Claude-სთვის, ავტონომიური „dream cycle" მეხსიერების კონსოლიდაციისთვის. ლოკალურად ეშვება PGLite-ით ან ღრუბელში Supabase-ით. |
 | [Hindsight](https://github.com/vectorize-io/hindsight) | 7.1K | AI აგენტის მეხსიერება, რომელიც უბრალო დამახსოვრებას სცილდება — აგენტი დროთა განმავლობაში სწავლობს, ამოიცნობს შაბლონებს და თავად უმჯობესდება. ყოველი ორი კვირის შემდეგ უფრო ჭკვიანი ხდება. აკადემიურად დასაბუთებული (arXiv). |
 | [Crawl4AI RAG](https://github.com/coleam00/mcp-crawl4ai-rag) | 2.1K | ვებ crawling და RAG ერთ pipeline-ში — AI ინტერნეტიდან ინფორმაციას აგროვებს, ბაზაში ინახავს და შემდეგ ამ ინფორმაციაზე დაყრდნობით პასუხობს შენს კითხვებს. Supabase-ის მონაცემთა ბაზაზე აშენებული. |
+| [LLM-Maintained Wiki (Karpathy)](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) | Gist | Andrej Karpathy-ის (OpenAI-ის ყოფილი ხელმძღვანელი) კონცეფცია — AI ავტომატურად აშენებს და ანახლებს შენს პერსონალურ ცოდნის ბაზას Markdown wiki-ს სახით. ახალ ინფორმაციას კითხულობს, ძველ გვერდებს აახლებს, ჯვარედინ მითითებებს ქმნის. „LLM არ იღლება" — Karpathy. RAG-ის ალტერნატიული მიდგომა ცოდნის მართვისთვის. |
 | [Prism MCP](https://github.com/dcostenco/prism-mcp) | 108 | AI აგენტის „ტვინის" არქიტექტურა — მდგრადი მეხსიერება, თვითორგანიზებადი ცოდნის გრაფი და მრავალი აგენტის სინქრონიზაცია. ვიზუალური dashboard-ით ხედავ, რას იმახსოვრებს და როგორ ფიქრობს შენი AI. |
 
 ---
@@ -194,6 +195,7 @@
 
 | რეპოზიტორია | ⭐ | აღწერა |
 |---|---|---|
+| [Stable Diffusion](https://github.com/CompVis/stable-diffusion) | 72.9K | ტექსტიდან სურათის გენერაციის რევოლუციური AI მოდელი — აღწერე რა გინდა და AI შექმნის სურათს. CompVis-ის, Stability AI-ისა და Runway-ის ერთობლივი პროექტი. 10GB+ GPU-ზე ეშვება, Hugging Face-თან ინტეგრირებულია. ღია კოდის AI ხელოვნების ფუნდამენტი. |
 | [Ollama](https://github.com/ollama/ollama) | 165K | ყველაზე მარტივი გზა AI მოდელის შენს კომპიუტერზე გასაშვებად — ერთი ბრძანებით (ollama run llama3) და მზადაა. Llama, Mistral, Gemma, DeepSeek და ასობით სხვა მოდელი. GPU არ არის სავალდებულო, სრულიად უფასოა და შენი მონაცემები შენს კომპიუტერზე რჩება. |
 | [ComfyUI](https://github.com/comfy-org/ComfyUI) | 106K | სურათებისა და ვიდეოების AI-ით გენერაციის პლატფორმა — ბლოკებს (node-ებს) ერთმანეთზე მიაბამ და AI ქმნის გამოსახულებებს. 1,000+ დამატება, ყოველ კვირას ახალი მოდელების ინტეგრაცია. AI ხელოვნების და მედია კონტენტის შექმნისთვის. |
 | [vLLM](https://github.com/vllm-project/vllm) | 75K | ყველაზე პოპულარული AI მოდელების სერვინგის ძრავა — თუ AI-ს ბევრმა ადამიანმა ერთდროულად უნდა გამოიყენოს, vLLM მას 10-ჯერ სწრაფს ხდის სპეციალური PagedAttention ტექნოლოგიით. დიდი ვებსაიტებისა და კომპანიების სტანდარტი. |
@@ -204,6 +206,7 @@
 | [Google Workspace CLI](https://github.com/googleworkspace/cli) | 24K | ერთი ტერმინალის ბრძანება მთელი Google Workspace-ისთვის — Gmail, Drive, Calendar, Sheets, Docs, Chat. AI აგენტს შეუძლია ელ-ფოსტის გაგზავნა, ფაილების მართვა და კალენდრის ორგანიზება ავტომატურად. 40+ აგენტის უნარი. |
 | [HunyuanVideo](https://github.com/Tencent-Hunyuan/HunyuanVideo) | 11.7K | Tencent-ის AI ვიდეო გენერატორი — ტექსტიდან, სურათიდან ან აუდიოდან ვიდეოს ქმნის. თუ გინდა „მოკლე ვიდეო AI-ით შექმნა" — ეს ყველაზე ძლიერი ღია კოდის ვარიანტია. |
 | [NotebookLM Python](https://github.com/teng-lin/notebooklm-py) | 8.9K | Google NotebookLM-ის Python ინტერფეისი — შენი დოკუმენტებიდან AI პოდკასტის გენერაცია, კვლევა და ანალიზი პროგრამულად. ვებ ინტერფეისში მიუწვდომელ ფუნქციებსაც იძლევა. |
+| [LM Studio](https://github.com/lmstudio-ai/lms) | 4.6K | AI მოდელების ლოკალურად მართვის პოპულარული აპლიკაციის CLI ინტერფეისი — სერვერის გაშვება/გაჩერება, მოდელების ჩატვირთვა GPU აქსელერაციით, პროცესების მონიტორინგი. Ollama-ს ალტერნატივა გრაფიკული ინტერფეისით — თუ ტერმინალი არ გიყვარს, LM Studio უფრო მოსახერხებელია. |
 | [RealtimeTTS](https://github.com/KoljaB/RealtimeTTS) | 3K | რეალურ დროში ტექსტის ხმად გარდაქმნა — AI-ს ხმა 2 წამში მზადაა. ხმის კლონირებაც შეუძლია. რამდენიმე ხმის ძრავი ერთად (Coqui, ElevenLabs, Piper) — სრული ხმოვანი AI სისტემის ასაწყობად. |
 
 ---
@@ -219,7 +222,6 @@
 | [Free LLM API Resources](https://github.com/cheahjs/free-llm-api-resources) | 18K | 26+ უფასო AI API-ის სია — OpenRouter, Google AI Studio, NVIDIA NIM, Mistral, Groq, Cerebras და სხვა. თუ არ გინდა ChatGPT-ში ან Claude-ში ფულის გადახდა, აქ იპოვი უფასო ალტერნატივებს. |
 | [Claude How-To](https://github.com/luongnv89/claude-howto) | 18K | ვიზუალური სახელმძღვანელო Claude Code-სთვის — დამწყებიდან მოწინავე დონემდე, copy-paste შაბლონებით. ნაბიჯ-ნაბიჯ ხსნის ყველა ფუნქციას, მაგალითებით. |
 | [Awesome DESIGN.md](https://github.com/VoltAgent/awesome-design-md) | 17K | 55+ მზა დიზაინის შაბლონი (Stripe, Google, Apple სტილში) — ჩააგდე შენს პროექტში და უთხარი AI-ს „ააგე ასეთი UI". შედეგი ლამაზი, პროფესიონალური ვებსაიტია კოდის ხელით წერის გარეშე. Google Stitch-ის კონცეფცია Markdown ფორმატში. |
-| [LLM-Maintained Wiki (Karpathy)](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) | Gist | Andrej Karpathy-ის (OpenAI-ის ყოფილი ხელმძღვანელი) კონცეფცია — AI ავტომატურად აშენებს და ანახლებს შენს პერსონალურ ცოდნის ბაზას. ახალ ინფორმაციას კითხულობს, ძველ გვერდებს აახლებს, ჯვარედინ მითითებებს ქმნის. „LLM არ იღლება" — Karpathy. ცოდნის მართვის ახალი პარადიგმა. |
 
 ---
 

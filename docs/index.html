@@ -66,7 +66,7 @@ svg{display:block}
   <div class="hdr-title">AI Pulse Georgia</div>
   <div class="hdr-right">
     <input id="search" placeholder="ძიება...">
-    <div class="hdr-stats"><b>107</b> repos · <b>9</b> categories</div>
+    <div class="hdr-stats"><b>117</b> repos · <b>9</b> categories</div>
   </div>
 </div>
 
@@ -117,6 +117,7 @@ const nodes = [
   {id:"tabby",n:"Tabby",s:32e3,c:"coding",d:"Self-hosted AI Copilot ალტერნატივა."},
   {id:"continue",n:"Continue.dev",s:30e3,c:"coding",d:"ღია IDE extension — ნებისმიერი მოდელი."},
   {id:"taskmaster",n:"Taskmaster",s:26e3,c:"coding",d:"AI პროექტის მართვა — ამოცანების დაშლა."},
+  {id:"qwen-code",n:"Qwen Code",s:23.4e3,c:"coding",d:"Alibaba-ს ღია ტერმინალის AI აგენტი — Claude Code-ის კონკურენტი."},
   {id:"openclaude",n:"OpenClaude",s:18e3,c:"coding",d:"200+ მოდელი ერთ ტერმინალში."},
   {id:"kilocode",n:"Kilocode",s:18e3,c:"coding",d:"VS Code AI — #1 OpenRouter-ზე."},
   {id:"cmux",n:"cmux",s:13e3,c:"coding",d:"macOS ტერმინალი AI აგენტებისთვის."},
@@ -124,12 +125,14 @@ const nodes = [
   // plugins 14
   {id:"everything-cc",n:"Everything CC",s:144e3,c:"plugins",d:"38 აგენტი, 156 უნარი — ყველაზე პოპულარული CC დანამატი."},
   {id:"superpowers",n:"Superpowers",s:134e3,c:"plugins",d:"spec-first workflow ფრეიმვორკი AI აგენტებისთვის."},
+  {id:"karpathy-skills",n:"Karpathy Skills",s:49e3,c:"plugins",d:"Karpathy-ს ფილოსოფიიდან Claude Code კონფიგურაცია — 9K ⭐ ერთ დღეში."},
   {id:"ui-ux-pro",n:"UI UX Pro Max",s:60e3,c:"plugins",d:"50 დიზაინის სტილი, 161 ფერი AI-სთვის."},
   {id:"gsd",n:"GSD",s:47e3,c:"plugins",d:"Context rot-ის მოგვარება სპეციფიკაციებით."},
   {id:"claude-mem",n:"Claude Mem",s:45e3,c:"plugins",d:"სესიებს შორის მეხსიერება."},
   {id:"caveman",n:"Caveman",s:21.4e3,c:"plugins",d:"AI-ს მოკლედ ლაპარაკს ასწავლის — 65-75% ნაკლები ტოკენი."},
   {id:"oh-my-cc",n:"Oh My CC",s:23e3,c:"plugins",d:"მრავალაგენტური ორკესტრაცია — autopilot, team."},
   {id:"obsidian-skills",n:"Obsidian Skills",s:19e3,c:"plugins",d:"Obsidian ჩანიშვნებთან AI მუშაობა."},
+  {id:"agent-skills",n:"Agent Skills",s:16.4e3,c:"plugins",d:"Addy Osmani (Google) — 20 საინჟინრო სკილი AI აგენტებისთვის."},
   {id:"claude-plugins",n:"Claude Plugins",s:16e3,c:"plugins",d:"Anthropic-ის ოფიციალური პლაგინები."},
   {id:"career-ops",n:"Career-Ops",s:13e3,c:"plugins",d:"AI სამუშაოს ძიება, CV გენერაცია."},
   {id:"n8n-skills",n:"n8n Skills",s:4e3,c:"plugins",d:"n8n workflow-ების ასაწყობი უნარები."},
@@ -169,6 +172,7 @@ const nodes = [
   {id:"brightdata-mcp",n:"Bright Data",s:2.3e3,c:"scraping",d:"სკრეიპინგი anti-bot გვერდის ავლით."},
   // frameworks 14
   {id:"autoresearch",n:"AutoResearch",s:68e3,c:"frameworks",d:"Karpathy-ს ავტონომიური ML კვლევა."},
+  {id:"ai-hedge-fund",n:"AI Hedge Fund",s:55.6e3,c:"frameworks",d:"Buffett, Munger, Burry სტილის AI აგენტები აქციებს აანალიზებენ."},
   {id:"autogen",n:"AutoGen",s:54.7e3,c:"frameworks",d:"Microsoft მრავალაგენტური ფრეიმვორკი."},
   {id:"mirofish",n:"MiroFish",s:51e3,c:"frameworks",d:"გროვის ინტელექტი — ათასობით აგენტი."},
   {id:"crewai",n:"CrewAI",s:45.9e3,c:"frameworks",d:"AI აგენტების გუნდი როლებით."},
@@ -179,6 +183,8 @@ const nodes = [
   {id:"toon",n:"toon",s:24e3,c:"frameworks",d:"JSON ალტერნატივა — 39% ნაკლები ტოკენი."},
   {id:"vercel-ai",n:"Vercel AI SDK",s:23.3e3,c:"frameworks",d:"TypeScript AI toolkit."},
   {id:"mastra",n:"Mastra",s:23e3,c:"frameworks",d:"TypeScript AI ფრეიმვორკი."},
+  {id:"kronos",n:"Kronos",s:18.7e3,c:"frameworks",d:"ფინანსური ბაზრების სპეციალიზებული AI — K-line პატერნებზე ტრენინგი."},
+  {id:"archon",n:"Archon",s:18.4e3,c:"frameworks",d:"AI კოდირების ორკესტრაცია YAML workflow-ებით — Dockerfile AI-ისთვის."},
   {id:"pydantic-ai",n:"Pydantic AI",s:16.2e3,c:"frameworks",d:"Python ტიპ-უსაფრთხო აგენტები."},
   {id:"opensandbox",n:"OpenSandbox",s:10e3,c:"frameworks",d:"Alibaba sandbox — კოდი იზოლაციაში."},
   {id:"openspace",n:"OpenSpace",s:3.9e3,c:"frameworks",d:"აგენტების თვითგანვითარება."},
@@ -189,6 +195,9 @@ const nodes = [
   {id:"openclaw",n:"OpenClaw",s:350e3,c:"business",d:"პირადი AI 20+ არხზე. 350K+ ⭐."},
   {id:"paperclip",n:"Paperclip",s:49e3,c:"business",d:"AI აგენტები ბიზნესის მართვისთვის."},
   {id:"perplexica",n:"Perplexica",s:27e3,c:"business",d:"ღია AI ძიება — Perplexity ალტერნატივა."},
+  {id:"deeptutor",n:"DeepTutor",s:18.7e3,c:"business",d:"აგენტ-native სასწავლო ასისტენტი — 5 რეჟიმი, TutorBot-ები."},
+  {id:"multica",n:"Multica",s:14.5e3,c:"business",d:"ღია managed agents პლატფორმა — AI-ს გუნდად აქცევს."},
+  {id:"rowboat",n:"Rowboat",s:12.5e3,c:"business",d:"ღია AI თანამშრომელი მდგრადი მეხსიერებით — ლოკალური, privacy-first."},
   // memory 10
   {id:"ragflow",n:"RAGFlow",s:70e3,c:"memory",d:"Enterprise RAG ძრავა."},
   {id:"mem0",n:"mem0",s:52e3,c:"memory",d:"უნივერსალური მეხსიერება AI-სთვის."},
@@ -211,6 +220,7 @@ const nodes = [
   {id:"coqui-tts",n:"Coqui TTS",s:45e3,c:"infra",d:"ტექსტი → ხმა. 17 ენა."},
   {id:"sglang",n:"SGLang",s:25e3,c:"infra",d:"ულტრა-სწრაფი LLM serving."},
   {id:"gworkspace",n:"GWorkspace CLI",s:24e3,c:"infra",d:"Gmail, Drive AI-სთვის."},
+  {id:"voxcpm",n:"VoxCPM",s:13.7e3,c:"infra",d:"30 ენიანი ღია TTS — 3 წამში ხმის კლონირება. ElevenLabs-ის ალტერნატივა."},
   {id:"hunyuanvideo",n:"HunyuanVideo",s:11.7e3,c:"infra",d:"AI ვიდეო გენერატორი."},
   {id:"notebooklm-py",n:"NotebookLM Py",s:8.9e3,c:"infra",d:"NotebookLM Python API."},
   {id:"lm-studio",n:"LM Studio",s:4.6e3,c:"infra",d:"AI მოდელების ლოკალური მართვა GUI-ით. Ollama-ს ალტერნატივა."},
@@ -254,7 +264,15 @@ const links = [
   {s:"caveman",t:"gsd"},{s:"caveman",t:"headroom"},{s:"caveman",t:"claw-code"},
   {s:"stable-diffusion",t:"comfyui"},{s:"stable-diffusion",t:"hunyuanvideo"},
   {s:"lm-studio",t:"ollama"},{s:"lm-studio",t:"llama-cpp"},
-  {s:"powerbi-mcp",t:"mcp-servers"},{s:"powerbi-mcp",t:"github-mcp"}
+  {s:"powerbi-mcp",t:"mcp-servers"},{s:"powerbi-mcp",t:"github-mcp"},
+  {s:"qwen-code",t:"claw-code"},{s:"qwen-code",t:"gemini-cli"},{s:"qwen-code",t:"aider"},
+  {s:"karpathy-skills",t:"superpowers"},{s:"karpathy-skills",t:"claw-code"},{s:"karpathy-skills",t:"gsd"},
+  {s:"agent-skills",t:"superpowers"},{s:"agent-skills",t:"karpathy-skills"},
+  {s:"ai-hedge-fund",t:"langgraph"},{s:"ai-hedge-fund",t:"crewai"},
+  {s:"kronos",t:"ai-hedge-fund"},{s:"archon",t:"superpowers"},{s:"archon",t:"crewai"},
+  {s:"deeptutor",t:"ragflow"},{s:"multica",t:"crewai"},{s:"multica",t:"paperclip"},
+  {s:"rowboat",t:"mem0"},{s:"rowboat",t:"gbrain"},
+  {s:"voxcpm",t:"coqui-tts"},{s:"voxcpm",t:"realtimetts"}
 ].map(l=>({source:l.s,target:l.t}));
 
 // ═══════════════════════════════════════

@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-106-00D0FF?style=flat-square&labelColor=111827&v=6" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-107-00D0FF?style=flat-square&labelColor=111827&v=7" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -107,6 +107,7 @@
 | [Markdownify MCP](https://github.com/zcaceres/markdownify-mcp) | 2.5K | ნებისმიერი ტიპის ფაილს — PDF, სურათები, აუდიო, Word, Excel, PowerPoint, YouTube ვიდეო, ვებ გვერდი — Markdown ტექსტად გარდაქმნის, რომ AI ასისტენტმა წაიკითხოს. უნივერსალური კონვერტორი AI-სთვის. |
 | [LinkedIn MCP](https://github.com/stickerdaniel/linkedin-mcp-server) | 1.3K | LinkedIn-თან AI ასისტენტის დაკავშირება — პროფილების, კომპანიების, ვაკანსიების დათვალიერება და შეტყობინებების მართვა პირდაპირ AI-დან. სამუშაოს მაძიებლებისა და რეკრუტერებისთვის გამოსადეგი. |
 | [Apify MCP](https://github.com/apify/apify-mcp-server) | 1K | 1,000+ მზა ვებ სკრეიპერი AI ასისტენტისთვის — Instagram-ის, TikTok-ის, Amazon-ის, Google Maps-ის და ნებისმიერი ვებსაიტის მონაცემები. Apify Store-ის სრული კატალოგი შენი AI-სთვის ხელმისაწვდომია. |
+| [Power BI Modeling MCP](https://github.com/microsoft/powerbi-modeling-mcp) | 642 | Microsoft-ის ოფიციალური MCP სერვერი Power BI-თვის — AI აგენტს შეუძლია სემანტიკური მონაცემთა მოდელების შექმნა, რედაქტირება და მართვა ბუნებრივი ენით. DAX შეკითხვების შესრულება, bulk ოპერაციები ასობით ობიექტზე, row-level security და მრავალენოვანი თარგმანი. მუშაობს Power BI Desktop-თან, Fabric workspace-თან და Power BI Project ფაილებთან. |
 | [Metricool MCP](https://github.com/metricool/mcp-metricool) | 33 | Metricool-ის ოფიციალური სერვერი — AI ასისტენტს შეუძლია შენი სოციალური მედიის სტატისტიკა გაანალიზოს და პოსტები დაგეგმოს. Instagram, Facebook, Twitter/X, TikTok, LinkedIn — ყველა ერთ ადგილზე. |
 
 ---

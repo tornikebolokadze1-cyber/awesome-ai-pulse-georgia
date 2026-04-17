@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-117-00D0FF?style=flat-square&labelColor=111827&v=8" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-118-00D0FF?style=flat-square&labelColor=111827&v=9" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -63,6 +63,7 @@
 | [Agent Skills](https://github.com/addyosmani/agent-skills) | 16.4K | Google-ის Addy Osmani-ს (ცნობილი ვებ დეველოპერი) AI აგენტების საინჟინრო უნარების პაკეტი — 20 მრავალჯერადი სკილი (spec-driven-dev, TDD, code review, shipping), რომლებიც AI აგენტებს senior-ივით ამუშავებენ. თითოეული სკილი Markdown workflow-ია, რომელსაც აგენტი როგორც playbook-ს ისე მიყვება. |
 | [Claude Plugins Official](https://github.com/anthropics/claude-plugins-official) | 16K | Anthropic-ის (Claude-ის შემქმნელი კომპანია) ოფიციალური პლაგინების კატალოგი. აქ მხოლოდ შემოწმებული და ხარისხიანი პლაგინებია — საიმედო წყარო Claude Code-ის გასაფართოებლად. |
 | [Career-Ops](https://github.com/santifer/career-ops) | 13K | AI-ზე დაფუძნებული სამუშაოს ძიების სისტემა — ავტომატურად პოულობს ვაკანსიებს, აფასებს A-F სკალით, წერს CV-ს თითო პოზიციაზე მორგებულად და ადევნებს თვალს განაცხადებს. 740+ ვაკანსია შეფასდა მისი ბეტა ტესტირების დროს. |
+| [Architecture Diagram Generator](https://github.com/Cocoon-AI/architecture-diagram-generator) | 3.3K | Claude AI-ის სკილი, რომელიც ტექსტური აღწერიდან პროფესიონალურ არქიტექტურის დიაგრამებს ქმნის — HTML/SVG ფაილებად, ლამაზი dark თემით. ფერი ლოგიკით: cyan (frontend), emerald (backend), violet (databases), amber (cloud), rose (security). დიზაინის ცოდნა არ გჭირდება — უბრალოდ აღწერე სისტემა ბუნებრივი ენით. |
 | [n8n Skills](https://github.com/czlonkowski/n8n-skills) | 4K | 7 ურთიერთშემავსებელი უნარი, რომელიც AI ასისტენტს ასწავლის n8n-ში (ავტომატიზაციის პლატფორმა) სამუშაო ნაკადების აწყობას. 525+ n8n მოდელის ცოდნა და 2,653 კონფიგურაციის მაგალითი. თანმხლები: [n8n-MCP](https://github.com/czlonkowski/n8n-mcp). |
 | [Claude Peers MCP](https://github.com/louislva/claude-peers-mcp) | 1.7K | რამდენიმე Claude Code სესია ერთმანეთს აღმოაჩენს და რეალურ დროში ინფორმაციას ცვლის — თუ სხვადასხვა პროექტზე პარალელურად მუშაობ, აგენტები ერთმანეთს დაეხმარებიან. |
 | [Headroom](https://github.com/chopratejas/headroom) | 1.3K | AI აგენტის კონტექსტის კომპრესიის ფენა — იმ მონაცემებს, რომელსაც AI კითხულობს (ფაილები, ლოგები, RAG შედეგები), 70-95%-ით ამცირებს პასუხის ხარისხის დაკარგვის გარეშე. შეუქცევადი კომპრესიის ტექნოლოგიით AI-ს შეუძლია ორიგინალის დაბრუნება საჭიროების შემთხვევაში. ერთი ბრძანებით ეშვება Claude Code-ში, Codex-ში და Aider-ში — ბევრად ხანგრძლივი საუბრები და უფრო დიდი მონაცემთა ბაზების დამუშავება, AI ხარჯების მცირე ნაწილით. |

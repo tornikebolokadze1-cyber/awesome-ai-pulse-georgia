@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-121-00D0FF?style=flat-square&labelColor=111827&v=12" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-123-00D0FF?style=flat-square&labelColor=111827&v=13" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -160,7 +160,9 @@
 | [Archon](https://github.com/coleam00/Archon) | 18.4K | AI კოდირების ორკესტრაციის ფრეიმვორკი — YAML workflow-ებით AI-ს აქცევს determinისტულს და გამეორებადს. „Dockerfile AI-ისთვის" — განსაზღვრავ ფაზებს (planning → implementation → validation → review → PR), სადაც AI მხოლოდ იქ მუშაობს, სადაც რეალურ ღირებულებას მატებს. CI/CD-სთან ინტეგრაციისთვის იდეალურია. |
 | [Pydantic AI](https://github.com/pydantic/pydantic-ai) | 16.2K | Python-ის ტიპ-უსაფრთხო აგენტების ფრეიმვორკი Pydantic-ის გუნდისგან (OpenAI, Google, Anthropic SDK-ები Pydantic-ზეა აშენებული). მონიტორინგი და აგენტის სესიის გაზიარება ჩაშენებულია. |
 | [OpenSandbox](https://github.com/alibaba/OpenSandbox) | 10K | Alibaba-ს უსაფრთხო „ქვიშის ყუთი" — AI აგენტი კოდს ასრულებს იზოლირებულ გარემოში, ისე რომ შენს კომპიუტერს ვერაფერს აზიანებს. Python, Java, JavaScript, C# — ნებისმიერ ენაზე მუშაობს. |
+| [Feynman](https://github.com/getcompanion-ai/feynman) | 5.4K | ღია კოდის AI კვლევის აგენტი აკადემიური ინვესტიგაციისთვის — 4 სპეციალიზებული აგენტი (Researcher, Reviewer, Writer, Verifier) პარალელურად მუშაობს. სლეში-ბრძანებები: `/deepresearch`, `/lit`, `/audit`, `/replicate`, `/compare`. ყოველი დასკვნა პირდაპირ მიუთითებს წყაროზე — ნაშრომზე, დოკზე ან რეპოზე (ჰალუცინაცია გამორიცხულია). AlphaXiv ინტეგრაცია, ლოკალური მოდელები (LM Studio, Ollama, vLLM), Modal/RunPod GPU-ებზე ექსპერიმენტების რეპროდუცირება. დამოუკიდებელი ინსტალერი macOS/Linux/Windows-ისთვის. |
 | [OpenSpace](https://github.com/HKUDS/OpenSpace) | 3.9K | AI აგენტების თვითგანვითარების ფრეიმვორკი — აგენტები ავტომატურად იხვეწებიან (AUTO-FIX, AUTO-IMPROVE, AUTO-LEARN) და ერთმანეთს უზიარებენ ნასწავლ უნარებს. 4.2-ჯერ უკეთესი შედეგი და 46%-ით ნაკლები ხარჯი. |
+| [Fincept Terminal](https://github.com/Fincept-Corporation/FinceptTerminal) | 3.4K | Bloomberg Terminal-ის ღია კოდის ალტერნატივა — მშობლიური დესკტოპ ფინანსური პლატფორმა C++20/Qt6-ში, ერთი ფაილიდან ეშვება. 20+ AI ინვესტორ-პერსონა მრავალი LLM პროვაიდერით (OpenAI, Anthropic, Gemini, Groq, Ollama), 100+ მონაცემთა კონექტორი (Yahoo Finance, FRED, IMF, World Bank, Polygon), CFA-დონის ანალიტიკა — DCF მოდელები, პორტფელის ოპტიმიზაცია, VaR/Sharpe მეტრიკა, QuantLib-ზე დაფუძნებული 18 მოდული. კრიპტო WebSocket, ქაღალდის ვაჭრობის ძრავი, ალგო-ტრეიდინგი — ინსტიტუციური ინსტრუმენტები უფასოდ. |
 
 ---
 

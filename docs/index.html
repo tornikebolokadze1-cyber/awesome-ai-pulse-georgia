@@ -66,7 +66,7 @@ svg{display:block}
   <div class="hdr-title">AI Pulse Georgia</div>
   <div class="hdr-right">
     <input id="search" placeholder="ძიება...">
-    <div class="hdr-stats"><b>120</b> repos · <b>9</b> categories</div>
+    <div class="hdr-stats"><b>121</b> repos · <b>9</b> categories</div>
   </div>
 </div>
 
@@ -137,6 +137,7 @@ const nodes = [
   {id:"claude-plugins",n:"Claude Plugins",s:16e3,c:"plugins",d:"Anthropic-ის ოფიციალური პლაგინები."},
   {id:"career-ops",n:"Career-Ops",s:13e3,c:"plugins",d:"AI სამუშაოს ძიება, CV გენერაცია."},
   {id:"arch-diagram",n:"Arch Diagram Gen",s:3.3e3,c:"plugins",d:"Claude AI სკილი — ტექსტიდან HTML/SVG არქიტექტურის დიაგრამა."},
+  {id:"remotion-skills",n:"Remotion Skills",s:2.8e3,c:"plugins",d:"Remotion-ის ოფიციალური სკილები — React-ში ვიდეოების შექმნა AI-ით."},
   {id:"n8n-skills",n:"n8n Skills",s:4e3,c:"plugins",d:"n8n workflow-ების ასაწყობი უნარები."},
   {id:"graphify",n:"Graphify",s:1.9e3,c:"plugins",d:"კოდი → ცოდნის გრაფი. 71x ნაკლები ტოკენი."},
   {id:"claude-peers",n:"Claude Peers",s:1.7e3,c:"plugins",d:"Claude Code სესიების კომუნიკაცია."},
@@ -278,7 +279,8 @@ const links = [
   {s:"voxcpm",t:"coqui-tts"},{s:"voxcpm",t:"realtimetts"},
   {s:"arch-diagram",t:"drawio-mcp"},{s:"arch-diagram",t:"ui-ux-pro"},
   {s:"rdrr",t:"markdownify"},{s:"rdrr",t:"firecrawl-mcp"},
-  {s:"agentskills-spec",t:"agent-skills"},{s:"agentskills-spec",t:"claude-plugins"},{s:"agentskills-spec",t:"superpowers"}
+  {s:"agentskills-spec",t:"agent-skills"},{s:"agentskills-spec",t:"claude-plugins"},{s:"agentskills-spec",t:"superpowers"},
+  {s:"remotion-skills",t:"agentskills-spec"},{s:"remotion-skills",t:"hunyuanvideo"}
 ].map(l=>({source:l.s,target:l.t}));
 
 // ═══════════════════════════════════════

@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-120-00D0FF?style=flat-square&labelColor=111827&v=11" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-121-00D0FF?style=flat-square&labelColor=111827&v=12" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -64,6 +64,7 @@
 | [Agent Skills Spec](https://github.com/agentskills/agentskills) | 16.5K | Anthropic-ის ოფიციალური ღია სტანდარტი AI აგენტებისთვის უნარების მისაცემად — write-once, use-everywhere პრინციპით. ქაღალდი სრული სპეციფიკაციით, რეფერენს SDK-ით და მაგალითი სკილებით. თუ საკუთარ სკილებს ქმნი AI აგენტებისთვის, ეს არის ფუნდამენტი — სტანდარტი, რომელსაც Claude Code, Codex და სხვა პლატფორმები იყენებენ. |
 | [Claude Plugins Official](https://github.com/anthropics/claude-plugins-official) | 16K | Anthropic-ის (Claude-ის შემქმნელი კომპანია) ოფიციალური პლაგინების კატალოგი. აქ მხოლოდ შემოწმებული და ხარისხიანი პლაგინებია — საიმედო წყარო Claude Code-ის გასაფართოებლად. |
 | [Career-Ops](https://github.com/santifer/career-ops) | 13K | AI-ზე დაფუძნებული სამუშაოს ძიების სისტემა — ავტომატურად პოულობს ვაკანსიებს, აფასებს A-F სკალით, წერს CV-ს თითო პოზიციაზე მორგებულად და ადევნებს თვალს განაცხადებს. 740+ ვაკანსია შეფასდა მისი ბეტა ტესტირების დროს. |
+| [Remotion Skills](https://github.com/remotion-dev/skills) | 2.8K | Remotion-ის (React-ში ვიდეოების შექმნის ფრეიმვორკი) ოფიციალური Agent Skills — AI ასისტენტებს Remotion-ით ვიდეოების აწყობის ექსპერტიზას აძლევს. თუ პროგრამულად ქმნი ვიდეოებს React კომპონენტებიდან (reels, ანიმაციები, data visualizations), AI უკვე იცის ყველა ნიუანსი: კომპოზიცია, რენდერინგი, ტაიმინგი. |
 | [Architecture Diagram Generator](https://github.com/Cocoon-AI/architecture-diagram-generator) | 3.3K | Claude AI-ის სკილი, რომელიც ტექსტური აღწერიდან პროფესიონალურ არქიტექტურის დიაგრამებს ქმნის — HTML/SVG ფაილებად, ლამაზი dark თემით. ფერი ლოგიკით: cyan (frontend), emerald (backend), violet (databases), amber (cloud), rose (security). დიზაინის ცოდნა არ გჭირდება — უბრალოდ აღწერე სისტემა ბუნებრივი ენით. |
 | [n8n Skills](https://github.com/czlonkowski/n8n-skills) | 4K | 7 ურთიერთშემავსებელი უნარი, რომელიც AI ასისტენტს ასწავლის n8n-ში (ავტომატიზაციის პლატფორმა) სამუშაო ნაკადების აწყობას. 525+ n8n მოდელის ცოდნა და 2,653 კონფიგურაციის მაგალითი. თანმხლები: [n8n-MCP](https://github.com/czlonkowski/n8n-mcp). |
 | [Claude Peers MCP](https://github.com/louislva/claude-peers-mcp) | 1.7K | რამდენიმე Claude Code სესია ერთმანეთს აღმოაჩენს და რეალურ დროში ინფორმაციას ცვლის — თუ სხვადასხვა პროექტზე პარალელურად მუშაობ, აგენტები ერთმანეთს დაეხმარებიან. |

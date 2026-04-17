@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-118-00D0FF?style=flat-square&labelColor=111827&v=9" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-119-00D0FF?style=flat-square&labelColor=111827&v=10" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -131,6 +131,7 @@
 | [Playwright CLI](https://github.com/microsoft/playwright-cli) | 6.9K | Microsoft Playwright-ის მსუბუქი ტერმინალის ინტერფეისი — ბრაუზერის მოქმედებების ჩაწერა, კოდის ავტომატური გენერაცია. MCP სერვერის ოვერჰედის გარეშე მუშაობს, რაც 4-ჯერ ნაკლებ რესურსს ხარჯავს. |
 | [Firecrawl MCP](https://github.com/firecrawl/firecrawl-mcp-server) | 5.9K | Firecrawl-ის ოფიციალური MCP სერვერი — ვებსაიტების სკრეიპინგი, crawling, ძიება და AI-ით ღრმა კვლევა. 12+ ინსტრუმენტი ერთ სერვერში, ავტომატური retry და სიჩქარის კონტროლი. |
 | [Cloudflare MCP](https://github.com/cloudflare/mcp-server-cloudflare) | 3.6K | Cloudflare-ის 13+ MCP სერვერი — Workers, KV, R2, D1, Browser Rendering, DNS ანალიტიკა. AI ასისტენტს შეუძლია Cloudflare-ის მთელი პლატფორმის მართვა ტერმინალიდან. |
+| [rdrr](https://github.com/fkonovalov/rdrr) | 99 | URL → Markdown კონვერტორი, სპეციალურად AI აგენტებისთვის ოპტიმიზებული. ვებ გვერდები, YouTube ვიდეოები, GitHub issues/PR-ები, PDF-ები და X/Twitter პროფილები — ყველა Markdown-ად სუფთა ფორმატში. 20+ საიტ-სპეციფიკური extractor, headless browser არ სჭირდება, სწრაფი მუშაობა. CLI და ბიბლიოთეკის API-ებიც. |
 | [Bright Data MCP](https://github.com/brightdata/brightdata-mcp) | 2.3K | ვებ სკრეიპინგი anti-bot დაცვის გვერდის ავლით — ნებისმიერი ვებსაიტიდან მონაცემების ამოღება ბლოკირების გარეშე. proxy ქსელი და სტრუქტურირებული მონაცემების ექსპორტი ჩაშენებულია. |
 
 ---

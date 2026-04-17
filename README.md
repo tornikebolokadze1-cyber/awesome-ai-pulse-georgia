@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-123-00D0FF?style=flat-square&labelColor=111827&v=13" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-129-00D0FF?style=flat-square&labelColor=111827&v=13" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -115,6 +115,17 @@
 | [Apify MCP](https://github.com/apify/apify-mcp-server) | 1K | 1,000+ მზა ვებ სკრეიპერი AI ასისტენტისთვის — Instagram-ის, TikTok-ის, Amazon-ის, Google Maps-ის და ნებისმიერი ვებსაიტის მონაცემები. Apify Store-ის სრული კატალოგი შენი AI-სთვის ხელმისაწვდომია. |
 | [Power BI Modeling MCP](https://github.com/microsoft/powerbi-modeling-mcp) | 642 | Microsoft-ის ოფიციალური MCP სერვერი Power BI-თვის — AI აგენტს შეუძლია სემანტიკური მონაცემთა მოდელების შექმნა, რედაქტირება და მართვა ბუნებრივი ენით. DAX შეკითხვების შესრულება, bulk ოპერაციები ასობით ობიექტზე, row-level security და მრავალენოვანი თარგმანი. მუშაობს Power BI Desktop-თან, Fabric workspace-თან და Power BI Project ფაილებთან. |
 | [Metricool MCP](https://github.com/metricool/mcp-metricool) | 33 | Metricool-ის ოფიციალური სერვერი — AI ასისტენტს შეუძლია შენი სოციალური მედიის სტატისტიკა გაანალიზოს და პოსტები დაგეგმოს. Instagram, Facebook, Twitter/X, TikTok, LinkedIn — ყველა ერთ ადგილზე. |
+
+### 💳 ბიზნესი და დეველოპერ ინფრასტრუქტურა
+
+| რეპოზიტორია | ⭐ | აღწერა |
+|---|---|---|
+| [Stripe MCP](https://github.com/stripe/agent-toolkit) | 2.7K | Stripe-ის ოფიციალური MCP სერვერი — AI აგენტს შეუძლია მომხმარებლების ძიება, გადახდების შექმნა, subscription-ების მართვა და dispute-ების მონიტორინგი. თუ შენი ბიზნესი Stripe-ით მუშაობს, AI ფინანსური ოპერაციების სრულ ავტომატიზაციას გააკეთებს. |
+| [Sentry MCP](https://github.com/getsentry/sentry-mcp) | 1.8K | Sentry-ის ოფიციალური სერვერი — AI აგენტი იღებს error tracking, stack trace-ებს, frequency ტრენდებს და შეცდომების ანალიზს. როცა აპლიკაცია იტეხება, AI ავტომატურად ხედავს პრობლემას და აგიხსნის. |
+| [Linear MCP](https://linear.app/docs/mcp) | 2.4K | Linear-ის ოფიციალური MCP — Issue-ების შექმნა, სტატუსის განახლება, cycle-ების მოთხოვნა და გუნდის ამოცანების მართვა AI-დან. თუ Linear-ს იყენებ პროექტების მართვისთვის, AI შენს პროექტ-მენეჯერად იქცევა. |
+| [Vercel MCP](https://vercel.com/docs/mcp) | 1.5K | Vercel-ის ოფიციალური MCP სერვერი — AI ასისტენტს შეუძლია პროექტების მართვა, დეპლოიმენტების მონიტორინგი, ლოგების წაკითხვა და environment variable-ების კონფიგურაცია. Next.js-ის დეველოპერებისთვის აუცილებელი. |
+| [Slack MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/slack) | 3.5K | Slack-ის ოფიციალური MCP სერვერი — AI-ს შეუძლია არხებთან წვდომა, შეტყობინებების გაგზავნა, ისტორიის წაკითხვა, რეაქციების დამატება და thread-ების კონტექსტის გაგება. გუნდში AI ბოტის ასაშენებლად იდეალური. |
+| [E2B MCP](https://github.com/e2b-dev/mcp-server) | 1.2K | E2B-ის ოფიციალური სერვერი — AI აგენტებს უსაფრთხო ღრუბლოვან sandbox-ში კოდის გაშვების საშუალებას აძლევს. Python, JavaScript, Bash — ნებისმიერი კოდი იზოლირებულ გარემოში იშვება. AutoGen-ისა და LangChain-ის აგენტებისთვის აუცილებელი. |
 
 ---
 

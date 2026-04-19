@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-129-00D0FF?style=flat-square&labelColor=111827&v=13" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-130-00D0FF?style=flat-square&labelColor=111827&v=13" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -40,6 +40,7 @@
 | [Qwen Code](https://github.com/QwenLM/qwen-code) | 23.4K | Alibaba-ს ღია კოდის ტერმინალის AI აგენტი — Claude Code-ისა და Cursor-ის კონკურენტი ჩინეთიდან. მუშაობს OpenAI, Anthropic და Gemini API-ებთან, გესმის დიდ კოდბეისებში ნავიგაცია და ავტომატიზაცია. Qwen3.6-Plus მოდელით 2026 აპრილში სერიოზული ზრდა დაიწყო. |
 | [OpenClaude](https://github.com/Gitlawb/openclaude) | 18K | ტერმინალის AI კოდირების აგენტი, რომელიც 200+ AI მოდელს ერთ ადგილას აერთიანებს — OpenAI, Gemini, DeepSeek, Ollama, GitHub Models. გინდა რომელი მოდელით მუშაობ — ყველა ერთი ინტერფეისიდან. აქვს VS Code გაფართოებაც. (არ აერიოს OpenClaw-ში — სრულიად სხვა პროექტია). |
 | [Kilocode](https://github.com/kilo-org/kilocode) | 18K | VS Code-ის AI გაფართოება, რომელიც OpenRouter-ზე #1 კოდირების აგენტია. 1.5 მილიონზე მეტმა დეველოპერმა გამოიყენა, 500+ AI მოდელს უჭერს მხარს (Gemini, Claude, GPT). ბუნებრივი ენით ეუბნები რა გინდა, ის კოდს წერს, ტესტავს და თავადვე ამოწმებს. |
+| [Open Agents](https://github.com/vercel-labs/open-agents) | 3.8K | Vercel Labs-ის ღრუბლოვანი coding agents-ის რეფერენსი — AI აგენტი VM sandbox-ში ეშვება და კოდზე ფონურად მუშაობს (ხანგრძლივად, შენი ლოკალური რესურსის გარეშე). ჩაშენებული ვებ ინტერფეისი, workflow runtime, GitHub ინტეგრაცია, ავტომატური commit და PR-ების შექმნა. „Claude Code ღრუბელში" — Vercel-ზე ადვილად დეპლოისებადი. |
 | [cmux](https://github.com/manaflow-ai/cmux) | 13K | macOS ტერმინალი, რომელიც სპეციალურად AI კოდირების აგენტებისთვის შეიქმნა. ვერტიკალური ტაბები, ნოტიფიკაციები და პარალელური სესიების მარტივი მართვა — თუ რამდენიმე AI აგენტს ერთდროულად ამუშავებ, ეს ტერმინალი გამოგადგება. |
 | [Codex Plugin](https://github.com/openai/codex-plugin-cc) | 11K | OpenAI-ს ოფიციალური პლაგინი Claude Code-ისთვის — Codex აგენტს პირდაპირ Claude Code-ის შიგნიდან იძახებ კოდის შემოწმებისა და ამოცანების გადანაწილებისთვის. ორი მძლავრი AI ერთ გარემოში. |
 

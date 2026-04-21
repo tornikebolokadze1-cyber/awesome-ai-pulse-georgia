@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-130-00D0FF?style=flat-square&labelColor=111827&v=13" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-131-00D0FF?style=flat-square&labelColor=111827&v=13" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -165,6 +165,7 @@
 | [Hermes](https://github.com/nousresearch/hermes-agent) | 29K | Nous Research-ის თვითგანვითარებადი AI აგენტი — ისწავლის გამოცდილებიდან, ქმნის ახალ უნარებს და სესიებს შორის ინახავს მეხსიერებას. მუშაობს Telegram-ში, Discord-ში, Slack-ში, WhatsApp-ში და ავტომატურ განრიგზეც. |
 | [LangGraph](https://github.com/langchain-ai/langgraph) | 28.8K | LangChain-ის გუნდის ფრეიმვორკი აგენტების ორკესტრაციისთვის გრაფების საშუალებით — შესაძლებელია რთული სცენარები, სადაც აგენტი ბრუნდება უკან, ტოტავდება ან შუალედურ მდგომარეობას ინახავს. Uber-ი, LinkedIn-ი, Klarna იყენებს პროდაქშენში. |
 | [Semantic Kernel](https://github.com/microsoft/semantic-kernel) | 27.6K | Microsoft-ის AI ორკესტრაციის SDK — plugin-ების არქიტექტურით AI ფუნქციების ჯაჭვურ გამოძახებას უზრუნველყოფს. C#, Python და Java-ს უჭერს მხარს, Azure AI-თან ღრმა ინტეგრაცია აქვს. |
+| [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | 24.3K | OpenAI-ის ოფიციალური Python ფრეიმვორკი multi-agent workflows-ისთვის — agents, handoffs, guardrails, sandbox მოდი ხანგრძლივი ამოცანებისთვის, built-in human-in-the-loop, ხმოვანი აგენტები. 100+ LLM-ის მხარდაჭერა, არა მხოლოდ OpenAI. v0.14.3 გამოვიდა 2026 აპრილის 20-ში. CrewAI-ისა და AutoGen-ის ოფიციალური კონკურენტი პირდაპირ OpenAI-ისგან. |
 | [toon](https://github.com/toon-format/toon) | 24K | JSON-ის ალტერნატივა AI მოდელებისთვის — 39%-ით ნაკლებ ტოკენს მოიხმარს, რაც AI-ს იაფს და სწრაფს ხდის. თუ AI-სთან დიდი მოცულობის მონაცემებს ცვლი, ეს ფორმატი ხარჯებს შეამცირებს. |
 | [Vercel AI SDK](https://github.com/vercel/ai) | 23.3K | Next.js-ისა და Vercel-ის შემქმნელების TypeScript AI toolkit — თვეში 20+ მილიონი ჩამოტვირთვა. streaming, tool calling და აგენტების ასაშენებელი ბლოკები ერთ პაკეტში. Full-stack AI აპლიკაციების სტანდარტი. |
 | [Mastra](https://github.com/mastra-ai/mastra) | 23K | TypeScript-ის AI ფრეიმვორკი Gatsby-ის გუნდისგან — აგენტები, სამუშაო ნაკადები, RAG და ევალუაცია ერთ toolkit-ში. 15 თვეში 23K ვარსკვლავი მოაგროვა, YC W25-ის დაფინანსებით ($13M). |

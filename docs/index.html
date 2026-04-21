@@ -66,7 +66,7 @@ svg{display:block}
   <div class="hdr-title">AI Pulse Georgia</div>
   <div class="hdr-right">
     <input id="search" placeholder="ძიება...">
-    <div class="hdr-stats"><b>130</b> repos · <b>9</b> categories</div>
+    <div class="hdr-stats"><b>131</b> repos · <b>9</b> categories</div>
   </div>
 </div>
 
@@ -191,6 +191,7 @@ const nodes = [
   {id:"hermes",n:"Hermes",s:29e3,c:"frameworks",d:"თვითგანვითარებადი AI აგენტი."},
   {id:"langgraph",n:"LangGraph",s:28.8e3,c:"frameworks",d:"გრაფებით ორკესტრაცია."},
   {id:"semantic-kernel",n:"Semantic Kernel",s:27.6e3,c:"frameworks",d:"Microsoft AI SDK."},
+  {id:"openai-agents",n:"OpenAI Agents SDK",s:24.3e3,c:"frameworks",d:"OpenAI-ის ოფიციალური multi-agent ფრეიმვორკი — handoffs, guardrails, sandbox."},
   {id:"toon",n:"toon",s:24e3,c:"frameworks",d:"JSON ალტერნატივა — 39% ნაკლები ტოკენი."},
   {id:"vercel-ai",n:"Vercel AI SDK",s:23.3e3,c:"frameworks",d:"TypeScript AI toolkit."},
   {id:"mastra",n:"Mastra",s:23e3,c:"frameworks",d:"TypeScript AI ფრეიმვორკი."},
@@ -294,7 +295,8 @@ const links = [
   {s:"vercel-mcp",t:"vercel-ai"},{s:"vercel-mcp",t:"agent-browser"},
   {s:"slack-mcp",t:"mcp-servers"},{s:"slack-mcp",t:"openclaw"},
   {s:"e2b-mcp",t:"opensandbox"},{s:"e2b-mcp",t:"autogen"},
-  {s:"open-agents",t:"claw-code"},{s:"open-agents",t:"vercel-ai"},{s:"open-agents",t:"e2b-mcp"}
+  {s:"open-agents",t:"claw-code"},{s:"open-agents",t:"vercel-ai"},{s:"open-agents",t:"e2b-mcp"},
+  {s:"openai-agents",t:"autogen"},{s:"openai-agents",t:"crewai"},{s:"openai-agents",t:"langgraph"},{s:"openai-agents",t:"codex-plugin"}
 ].map(l=>({source:l.s,target:l.t}));
 
 // ═══════════════════════════════════════

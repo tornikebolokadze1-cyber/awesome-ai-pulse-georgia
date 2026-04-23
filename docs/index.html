@@ -66,7 +66,7 @@ svg{display:block}
   <div class="hdr-title">AI Pulse Georgia</div>
   <div class="hdr-right">
     <input id="search" placeholder="ძიება...">
-    <div class="hdr-stats"><b>134</b> repos · <b>9</b> categories</div>
+    <div class="hdr-stats"><b>135</b> repos · <b>9</b> categories</div>
   </div>
 </div>
 
@@ -213,11 +213,12 @@ const nodes = [
   {id:"deeptutor",n:"DeepTutor",s:18.7e3,c:"business",d:"აგენტ-native სასწავლო ასისტენტი — 5 რეჟიმი, TutorBot-ები."},
   {id:"multica",n:"Multica",s:14.5e3,c:"business",d:"ღია managed agents პლატფორმა — AI-ს გუნდად აქცევს."},
   {id:"rowboat",n:"Rowboat",s:12.5e3,c:"business",d:"ღია AI თანამშრომელი მდგრადი მეხსიერებით — ლოკალური, privacy-first."},
-  // memory 10
+  // memory 12
   {id:"ragflow",n:"RAGFlow",s:70e3,c:"memory",d:"Enterprise RAG ძრავა."},
   {id:"mem0",n:"mem0",s:52e3,c:"memory",d:"უნივერსალური მეხსიერება AI-სთვის."},
   {id:"llamaindex",n:"LlamaIndex",s:48.4e3,c:"memory",d:"დოკუმენტების AI-თან დაკავშირება."},
   {id:"lightrag",n:"LightRAG",s:32e3,c:"memory",d:"სწრაფი RAG ცოდნის გრაფით."},
+  {id:"graphiti",n:"Graphiti",s:25.3e3,c:"memory",d:"Zep AI-ს temporal ცოდნის გრაფი — იცის როდის შეიცვალა ფაქტი. Bi-temporal მოდელი, Neo4j backend. MCP-ით Claude Desktop, Cursor."},
   {id:"gitnexus",n:"GitNexus",s:23e3,c:"memory",d:"კოდის რეპო → რუკა ბრაუზერში."},
   {id:"mempalace",n:"MemPalace",s:23e3,c:"memory",d:"AI მეხსიერება — #1 LongMemEval-ზე."},
   {id:"rag-anything",n:"RAG-Anything",s:15e3,c:"memory",d:"მულტიმოდალური RAG."},
@@ -271,6 +272,7 @@ const links = [
   {s:"langflow",t:"dify"},{s:"open-webui",t:"ollama"},{s:"openclaw",t:"browser-use"},
   {s:"perplexica",t:"ollama"},{s:"paperclip",t:"crewai"},{s:"dify",t:"ragflow"},
   {s:"ragflow",t:"llamaindex"},{s:"lightrag",t:"rag-anything"},{s:"mem0",t:"mempalace"},
+  {s:"graphiti",t:"mem0"},{s:"graphiti",t:"lightrag"},
   {s:"mem0",t:"hindsight"},{s:"mempalace",t:"claude-mem"},{s:"gitnexus",t:"graphify"},
   {s:"ollama",t:"llama-cpp"},{s:"vllm",t:"sglang"},{s:"coqui-tts",t:"realtimetts"},
   {s:"unsloth",t:"ollama"},{s:"comfyui",t:"hunyuanvideo"},

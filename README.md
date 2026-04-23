@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-134-00D0FF?style=flat-square&labelColor=111827&v=14" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-135-00D0FF?style=flat-square&labelColor=111827&v=15" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -208,6 +208,7 @@
 | [mem0](https://github.com/mem0ai/mem0) | 52K | უნივერსალური მეხსიერება AI აგენტებისთვის — AI იმახსოვრებს ვინ ხარ, რას აკეთებდი და რა გჭირდება. 80%-ით ნაკლებ რესურსს ხარჯავს, რადგან ყოველ ჯერზე ყველაფერს თავიდან არ კითხულობს, არამედ დამახსოვრებულს იყენებს. |
 | [LlamaIndex](https://github.com/run-llama/llama_index) | 48.4K | AI-ს ნებისმიერი შენი დოკუმენტის (ფაილები, მონაცემთა ბაზები, API-ები) გაგების საშუალებას აძლევს. 300+ ინტეგრაცია და ყველაზე პოპულარული RAG ფრეიმვორკი — თუ გინდა AI-მ შენს მონაცემებზე იმუშაოს, ამით იწყებ. |
 | [LightRAG](https://github.com/hkuds/lightrag) | 32K | სწრაფი და ჭკვიანი RAG სისტემა — ჩვეულებრივი ძიებისგან განსხვავებით, პოულობს არა მხოლოდ სიტყვებს, არამედ ცნებებს შორის კავშირებსაც. ეს AI-ს ბევრად უფრო ზუსტ პასუხებს აძლევს. აკადემიური ნაშრომით დამტკიცებული (EMNLP 2025). |
+| [Graphiti](https://github.com/getzep/graphiti) | 25.3K | Zep AI-ს (YC W24) დროში მცვლელი ცოდნის გრაფი AI აგენტებისთვის — განსხვავებით ჩვეულებრივი RAG-ისგან, რომელიც სტატიკური ვექტორებით მუშაობს, Graphiti იცის **როდის** შეიცვალა ფაქტი (მაგ. „იუზერი იყო manager → გახდა CTO" 2025 მარტში). Bi-temporal მოდელი — ცალ-ცალკე ინახავს event time-სა და ingestion time-ს. LLM ავტომატურად იღებს entity-ებსა და მიმართებებს ტექსტიდან. Neo4j ან FalkorDB backend-ით ეშვება. Zep-ის კომერციული memory პლატფორმის ღია ბირთვია — native MCP integration-ით გამოიყენება Claude Desktop-ში, Cursor-ში, Cline-ში. |
 | [GitNexus](https://github.com/abhigyanpatwari/GitNexus) | 23K | კოდის პროექტს ინტერაქტიულ რუკად აქცევს — GitHub-ის რეპო ან ZIP ფაილი ჩააგდე ბრაუზერში და დაინახავ ყველა ფაილს, ფუნქციას და მათ კავშირებს. ჩაშენებული AI აგენტი ამ რუკას იყენებს კოდის სრულად გასაგებად. სერვერი არ სჭირდება — მთლიანად ბრაუზერში მუშაობს. |
 | [MemPalace](https://github.com/milla-jovovich/mempalace) | 23K | AI მეხსიერების სისტემა „მეხსიერების სასახლის" ძველბერძნული კონცეფციით — ინახავს ყველაფერს სიტყვასიტყვით, არა AI-ს არჩევით. LongMemEval-ზე უმაღლესი ქულა (96.6%) მიიღო უფასო ხელსაწყოებს შორის. საუბრები ორგანიზებულია wings → halls → rooms სტრუქტურით. სრულად ლოკალური და უფასოა. |
 | [RAG-Anything](https://github.com/HKUDS/RAG-Anything) | 15K | მულტიმოდალური RAG — ტექსტი, სურათები, ცხრილები, დიაგრამები ერთიან pipeline-ში. ანუ AI-ს შეუძლია არა მხოლოდ ტექსტის, არამედ სურათებისა და ცხრილების გაგებაც. LightRAG-ის გუნდისგან, აკადემიური ნაშრომით გამყარებული. |

@@ -66,7 +66,7 @@ svg{display:block}
   <div class="hdr-title">AI Pulse Georgia</div>
   <div class="hdr-right">
     <input id="search" placeholder="ძიება...">
-    <div class="hdr-stats"><b>150</b> repos · <b>9</b> categories</div>
+    <div class="hdr-stats"><b>161</b> repos · <b>9</b> categories</div>
   </div>
 </div>
 
@@ -125,7 +125,9 @@ const nodes = [
   {id:"open-agents",n:"Open Agents",s:3.8e3,c:"coding",d:"Vercel-ის ღრუბლოვანი coding agents — ფონური AI კოდირება VM sandbox-ში."},
   {id:"cmux",n:"cmux",s:13e3,c:"coding",d:"macOS ტერმინალი AI აგენტებისთვის."},
   {id:"codex-plugin",n:"Codex Plugin",s:11e3,c:"coding",d:"OpenAI პლაგინი Claude Code-ისთვის."},
-  // plugins 21
+  // plugins 23
+  {id:"spec-kit",n:"Spec Kit",s:90.5e3,c:"plugins",d:"GitHub-ის ოფიციალური Spec-Driven Development toolkit. /specify, /plan, /tasks, /implement slash commands."},
+  {id:"claude-flow",n:"Claude Flow",s:33e3,c:"plugins",d:"#1 Claude Code multi-agent ორკესტრატორი — distributed swarm intelligence, RAG, enterprise architecture."},
   {id:"everything-cc",n:"Everything CC",s:144e3,c:"plugins",d:"38 აგენტი, 156 უნარი — ყველაზე პოპულარული CC დანამატი."},
   {id:"superpowers",n:"Superpowers",s:134e3,c:"plugins",d:"spec-first workflow ფრეიმვორკი AI აგენტებისთვის."},
   {id:"karpathy-skills",n:"Karpathy Skills",s:49e3,c:"plugins",d:"Karpathy-ს ფილოსოფიიდან Claude Code კონფიგურაცია — 9K ⭐ ერთ დღეში."},
@@ -147,11 +149,13 @@ const nodes = [
   {id:"headroom",n:"Headroom",s:1.3e3,c:"plugins",d:"AI კონტექსტის კომპრესია — 70-95% ნაკლები ტოკენი. Claude Code, Codex, Aider."},
   {id:"cc-setup",n:"CC Setup 🇬🇪",s:9,c:"plugins",d:"Claude Code კონფიგურაცია. Made in Georgia."},
   {id:"geo-payments",n:"GEO Pay 🇬🇪",s:2,c:"plugins",d:"TBC/BOG API უნარები. Made in Georgia."},
-  // mcp 23
+  // mcp 25
   {id:"mcp-servers",n:"MCP Servers",s:83e3,c:"mcp",d:"ოფიციალური MCP სერვერები — ეკოსისტემის ფუნდამენტი."},
   {id:"context7",n:"Context7",s:52e3,c:"mcp",d:"განახლებული დოკუმენტაცია AI-სთვის."},
   {id:"github-mcp",n:"GitHub MCP",s:29e3,c:"mcp",d:"GitHub ოფიციალური MCP — Issue, PR ავტომატიზაცია."},
   {id:"n8n-mcp",n:"n8n-MCP",s:17e3,c:"mcp",d:"n8n ექსპერტიზა — 2,709 შაბლონი."},
+  {id:"fastmcp",n:"FastMCP",s:25e3,c:"mcp",d:"#1 Python MCP server ფრეიმვორკი — FastAPI for MCP. Anthropic-ის MCP Python SDK-ის საფუძველი."},
+  {id:"serena",n:"Serena",s:23.3e3,c:"mcp",d:"Semantic code editing MCP — LSP-ით. IDE for your agent. Cursor-ის ალტერნატივა ყველა coding agent-ისთვის."},
   {id:"figma-mcp",n:"Figma MCP",s:14e3,c:"mcp",d:"Figma დიზაინი → ზუსტი კოდი."},
   {id:"code-review-graph",n:"Code Review Graph",s:7.9e3,c:"mcp",d:"კოდბეისის სტრუქტურული რუკა 22 MCP tool-ით. 8.2x ნაკლები ტოკენი."},
   {id:"notion-mcp",n:"Notion MCP",s:4.2e3,c:"mcp",d:"Notion გვერდები AI-დან."},
@@ -171,10 +175,11 @@ const nodes = [
   {id:"vercel-mcp",n:"Vercel MCP",s:1.5e3,c:"mcp",d:"Vercel deployments, logs, env vars AI-დან."},
   {id:"slack-mcp",n:"Slack MCP",s:3.5e3,c:"mcp",d:"Slack არხები, შეტყობინებები, thread კონტექსტი."},
   {id:"e2b-mcp",n:"E2B MCP",s:1.2e3,c:"mcp",d:"AI აგენტებისთვის უსაფრთხო ღრუბლოვანი sandbox."},
-  // scraping 14
+  // scraping 15
   {id:"firecrawl",n:"Firecrawl",s:112e3,c:"scraping",d:"AI-ფოკუსით web scraping API — URL → Markdown/JSON LLM-ებისთვის. scrape, crawl, search, extract. Mendable AI (YC S23)."},
   {id:"browser-use",n:"Browser Use",s:86e3,c:"scraping",d:"AI-ს ბრაუზერში მუშაობის უნარი."},
   {id:"crawl4ai",n:"Crawl4AI",s:64.5e3,c:"scraping",d:"AI-ოპტიმიზებული ღია web crawler — clean Markdown output LLM-ებისთვის. Firecrawl-ის ლოკალური ალტერნატივა."},
+  {id:"stagehand",n:"Stagehand",s:22.3e3,c:"scraping",d:"The SDK For Browser Agents — natural language + code hybrid. Browserbase (YC W24). TS + Python."},
   {id:"playwright-mcp",n:"Playwright MCP",s:30e3,c:"scraping",d:"Microsoft ბრაუზერის ავტომატიზაცია."},
   {id:"agent-browser",n:"Agent Browser",s:28e3,c:"scraping",d:"Vercel ბრაუზერი — 93% ტოკენის დაზოგვა."},
   {id:"lightpanda",n:"Lightpanda",s:23e3,c:"scraping",d:"Zig ბრაუზერი — 11x სწრაფი."},
@@ -186,10 +191,11 @@ const nodes = [
   {id:"cloudflare-mcp",n:"Cloudflare MCP",s:3.6e3,c:"scraping",d:"Cloudflare 13+ სერვისი."},
   {id:"rdrr",n:"rdrr",s:99,c:"scraping",d:"URL → Markdown AI-სთვის. ვები, YouTube, GitHub, PDF, Twitter."},
   {id:"brightdata-mcp",n:"Bright Data",s:2.3e3,c:"scraping",d:"სკრეიპინგი anti-bot გვერდის ავლით."},
-  // frameworks 22
+  // frameworks 23
   {id:"langchain",n:"LangChain",s:135e3,c:"frameworks",d:"LLM აპლიკაციების ფუნდამენტური ფრეიმვორკი — chains, prompts, tools, agents, memory. 700+ ინტეგრაცია. Python + TS."},
   {id:"autoresearch",n:"AutoResearch",s:68e3,c:"frameworks",d:"Karpathy-ს ავტონომიური ML კვლევა."},
   {id:"metagpt",n:"MetaGPT",s:67e3,c:"frameworks",d:"პირველი AI Software Company — PM, Architect, Engineer, QA AI აგენტები ქმნიან სრულ კოდბაზას ერთი prompt-იდან."},
+  {id:"dspy",n:"DSPy",s:34e3,c:"frameworks",d:"Stanford NLP — programming not prompting. Declarative multi-LM pipelines, ავტომატური prompt ოპტიმიზაცია."},
   {id:"ai-hedge-fund",n:"AI Hedge Fund",s:55.6e3,c:"frameworks",d:"Buffett, Munger, Burry სტილის AI აგენტები აქციებს აანალიზებენ."},
   {id:"autogen",n:"AutoGen",s:54.7e3,c:"frameworks",d:"Microsoft მრავალაგენტური ფრეიმვორკი."},
   {id:"mirofish",n:"MiroFish",s:51e3,c:"frameworks",d:"გროვის ინტელექტი — ათასობით აგენტი."},
@@ -224,12 +230,14 @@ const nodes = [
   {id:"deeptutor",n:"DeepTutor",s:18.7e3,c:"business",d:"აგენტ-native სასწავლო ასისტენტი — 5 რეჟიმი, TutorBot-ები."},
   {id:"multica",n:"Multica",s:14.5e3,c:"business",d:"ღია managed agents პლატფორმა — AI-ს გუნდად აქცევს."},
   {id:"rowboat",n:"Rowboat",s:12.5e3,c:"business",d:"ღია AI თანამშრომელი მდგრადი მეხსიერებით — ლოკალური, privacy-first."},
-  // memory 12
+  // memory 14
   {id:"ragflow",n:"RAGFlow",s:70e3,c:"memory",d:"Enterprise RAG ძრავა."},
   {id:"mem0",n:"mem0",s:52e3,c:"memory",d:"უნივერსალური მეხსიერება AI-სთვის."},
   {id:"llamaindex",n:"LlamaIndex",s:48.4e3,c:"memory",d:"დოკუმენტების AI-თან დაკავშირება."},
   {id:"lightrag",n:"LightRAG",s:32e3,c:"memory",d:"სწრაფი RAG ცოდნის გრაფით."},
   {id:"graphiti",n:"Graphiti",s:25.3e3,c:"memory",d:"Zep AI-ს temporal ცოდნის გრაფი — იცის როდის შეიცვალა ფაქტი. Bi-temporal მოდელი, Neo4j backend. MCP-ით Claude Desktop, Cursor."},
+  {id:"chroma",n:"Chroma",s:27.6e3,c:"memory",d:"ვექტორული DB #1 Python-ში — LangChain-ის default. Embedded/standalone/cloud. 5 ხაზით RAG."},
+  {id:"letta",n:"Letta",s:22.2e3,c:"memory",d:"Stateful agents (ყოფილი MemGPT) — hierarchical memory: working + archival. UC Berkeley → startup."},
   {id:"gitnexus",n:"GitNexus",s:23e3,c:"memory",d:"კოდის რეპო → რუკა ბრაუზერში."},
   {id:"mempalace",n:"MemPalace",s:23e3,c:"memory",d:"AI მეხსიერება — #1 LongMemEval-ზე."},
   {id:"rag-anything",n:"RAG-Anything",s:15e3,c:"memory",d:"მულტიმოდალური RAG."},
@@ -237,7 +245,7 @@ const nodes = [
   {id:"hindsight",n:"Hindsight",s:7.1e3,c:"memory",d:"AI სწავლობს დროთა განმავლობაში."},
   {id:"crawl4ai-rag",n:"Crawl4AI RAG",s:2.1e3,c:"memory",d:"ვებ crawling + RAG."},
   {id:"prism-mcp",n:"Prism MCP",s:108,c:"memory",d:"AI ტვინის არქიტექტურა."},
-  // infra 17
+  // infra 19
   {id:"stable-diffusion",n:"Stable Diffusion",s:72.9e3,c:"infra",d:"ტექსტიდან სურათის გენერაცია — AI ხელოვნების ფუნდამენტი."},
   {id:"ollama",n:"Ollama",s:165e3,c:"infra",d:"AI მოდელი შენს კომპიუტერზე. უფასო."},
   {id:"transformers",n:"Transformers",s:160e3,c:"infra",d:"🤗 მთელი AI-ს ფუნდამენტი Hugging Face-ისგან — Llama, Mistral, Qwen, ყველა ღია LLM აქ ცხოვრობს. PyTorch/TF/JAX."},
@@ -246,6 +254,8 @@ const nodes = [
   {id:"llama-cpp",n:"llama.cpp",s:73e3,c:"infra",d:"C++ AI — ძველ კომპიუტერებზეც."},
   {id:"unsloth",n:"Unsloth",s:58e3,c:"infra",d:"AI fine-tuning — 2x სწრაფი."},
   {id:"coqui-tts",n:"Coqui TTS",s:45e3,c:"infra",d:"ტექსტი → ხმა. 17 ენა."},
+  {id:"whisper-cpp",n:"whisper.cpp",s:49e3,c:"infra",d:"OpenAI Whisper-ის C++ port — audio → text 100+ ენაზე (ქართული). GPU არ სჭირდება. Georgi Gerganov."},
+  {id:"localai",n:"LocalAI",s:45.7e3,c:"infra",d:"OpenAI-compatible API ღია მოდელებისთვის — LLM/vision/voice/image ერთ სერვერში, ლოკალურად."},
   {id:"sglang",n:"SGLang",s:25e3,c:"infra",d:"ულტრა-სწრაფი LLM serving."},
   {id:"gworkspace",n:"GWorkspace CLI",s:24e3,c:"infra",d:"Gmail, Drive AI-სთვის."},
   {id:"voxcpm",n:"VoxCPM",s:13.7e3,c:"infra",d:"30 ენიანი ღია TTS — 3 წამში ხმის კლონირება. ElevenLabs-ის ალტერნატივა."},
@@ -255,12 +265,13 @@ const nodes = [
   {id:"lm-studio",n:"LM Studio",s:4.6e3,c:"infra",d:"AI მოდელების ლოკალური მართვა GUI-ით. Ollama-ს ალტერნატივა."},
   {id:"video-use",n:"video-use",s:3.7e3,c:"infra",d:"Browser Use გუნდის ვიდეოს მონტაჟი AI კოდირების აგენტებით — ბუნებრივი ენით. Descript-ის ღია ალტერნატივა."},
   {id:"realtimetts",n:"RealtimeTTS",s:3e3,c:"infra",d:"რეალურ დროში ტექსტი → ხმა."},
-  // resources 9
+  // resources 10
   {id:"build-your-own-x",n:"Build Your Own X",s:494e3,c:"resources",d:"GitHub #2 ყველაზე ვარსკვლავიანი რეპო საერთოდ. ააშენე Git, Docker, LLM, OS, DB ნულიდან."},
   {id:"public-apis",n:"Public APIs",s:419e3,c:"resources",d:"უფასო API-ების კატალოგი."},
   {id:"system-prompts",n:"System Prompts",s:136e3,c:"resources",d:"25+ AI ხელსაწყოს leaked system prompts — Claude Code, Cursor, Devin, v0, Windsurf. Prompt engineering Rosetta Stone."},
   {id:"llms-from-scratch",n:"LLMs from Scratch",s:91e3,c:"resources",d:"Sebastian Raschka — ააშენე ChatGPT-ს მსგავსი LLM PyTorch-ში, ნულიდან. #1 DL წიგნი."},
   {id:"awesome-cc",n:"Awesome CC",s:36e3,c:"resources",d:"Claude Code რესურსების სია."},
+  {id:"anthropic-cookbook",n:"Anthropic Cookbook",s:41e3,c:"resources",d:"Anthropic-ის ოფიციალური Claude recipes — tool use, caching, agentic workflows, computer use."},
   {id:"free-llm",n:"Free LLM APIs",s:18e3,c:"resources",d:"26+ უფასო AI API."},
   {id:"claude-howto",n:"Claude How-To",s:18e3,c:"resources",d:"Claude Code სახელმძღვანელო."},
   {id:"awesome-design",n:"Awesome DESIGN",s:17e3,c:"resources",d:"55+ დიზაინის შაბლონი."},

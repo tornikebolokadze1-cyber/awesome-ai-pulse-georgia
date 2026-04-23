@@ -66,7 +66,7 @@ svg{display:block}
   <div class="hdr-title">AI Pulse Georgia</div>
   <div class="hdr-right">
     <input id="search" placeholder="ძიება...">
-    <div class="hdr-stats"><b>131</b> repos · <b>9</b> categories</div>
+    <div class="hdr-stats"><b>134</b> repos · <b>9</b> categories</div>
   </div>
 </div>
 
@@ -169,7 +169,7 @@ const nodes = [
   {id:"vercel-mcp",n:"Vercel MCP",s:1.5e3,c:"mcp",d:"Vercel deployments, logs, env vars AI-დან."},
   {id:"slack-mcp",n:"Slack MCP",s:3.5e3,c:"mcp",d:"Slack არხები, შეტყობინებები, thread კონტექსტი."},
   {id:"e2b-mcp",n:"E2B MCP",s:1.2e3,c:"mcp",d:"AI აგენტებისთვის უსაფრთხო ღრუბლოვანი sandbox."},
-  // scraping 10
+  // scraping 12
   {id:"browser-use",n:"Browser Use",s:86e3,c:"scraping",d:"AI-ს ბრაუზერში მუშაობის უნარი."},
   {id:"playwright-mcp",n:"Playwright MCP",s:30e3,c:"scraping",d:"Microsoft ბრაუზერის ავტომატიზაცია."},
   {id:"agent-browser",n:"Agent Browser",s:28e3,c:"scraping",d:"Vercel ბრაუზერი — 93% ტოკენის დაზოგვა."},
@@ -178,6 +178,7 @@ const nodes = [
   {id:"opencli",n:"opencli",s:14e3,c:"scraping",d:"ნებისმიერი პროგრამა → CLI."},
   {id:"playwright-cli",n:"Playwright CLI",s:6.9e3,c:"scraping",d:"ბრაუზერის ჩაწერა, კოდის გენერაცია."},
   {id:"firecrawl-mcp",n:"Firecrawl MCP",s:5.9e3,c:"scraping",d:"ვებ სკრეიპინგი — 12+ ინსტრუმენტი."},
+  {id:"browser-harness",n:"Browser Harness",s:5.8e3,c:"scraping",d:"Browser Use — self-healing ფრეიმვორკი. AI აგენტი სელექტორების ცვლილებისას ავტომატურად ადაპტირდება."},
   {id:"cloudflare-mcp",n:"Cloudflare MCP",s:3.6e3,c:"scraping",d:"Cloudflare 13+ სერვისი."},
   {id:"rdrr",n:"rdrr",s:99,c:"scraping",d:"URL → Markdown AI-სთვის. ვები, YouTube, GitHub, PDF, Twitter."},
   {id:"brightdata-mcp",n:"Bright Data",s:2.3e3,c:"scraping",d:"სკრეიპინგი anti-bot გვერდის ავლით."},
@@ -224,7 +225,7 @@ const nodes = [
   {id:"hindsight",n:"Hindsight",s:7.1e3,c:"memory",d:"AI სწავლობს დროთა განმავლობაში."},
   {id:"crawl4ai-rag",n:"Crawl4AI RAG",s:2.1e3,c:"memory",d:"ვებ crawling + RAG."},
   {id:"prism-mcp",n:"Prism MCP",s:108,c:"memory",d:"AI ტვინის არქიტექტურა."},
-  // infra 11
+  // infra 16
   {id:"stable-diffusion",n:"Stable Diffusion",s:72.9e3,c:"infra",d:"ტექსტიდან სურათის გენერაცია — AI ხელოვნების ფუნდამენტი."},
   {id:"ollama",n:"Ollama",s:165e3,c:"infra",d:"AI მოდელი შენს კომპიუტერზე. უფასო."},
   {id:"comfyui",n:"ComfyUI",s:106e3,c:"infra",d:"სურათი/ვიდეო AI გენერაცია."},
@@ -236,8 +237,10 @@ const nodes = [
   {id:"gworkspace",n:"GWorkspace CLI",s:24e3,c:"infra",d:"Gmail, Drive AI-სთვის."},
   {id:"voxcpm",n:"VoxCPM",s:13.7e3,c:"infra",d:"30 ენიანი ღია TTS — 3 წამში ხმის კლონირება. ElevenLabs-ის ალტერნატივა."},
   {id:"hunyuanvideo",n:"HunyuanVideo",s:11.7e3,c:"infra",d:"AI ვიდეო გენერატორი."},
+  {id:"hyperframes",n:"Hyperframes",s:9.9e3,c:"infra",d:"HeyGen-ის ფრეიმვორკი — წერ HTML-ს, რენდერავს ვიდეოდ. AI აგენტებისთვის. Remotion-ის კონკურენტი."},
   {id:"notebooklm-py",n:"NotebookLM Py",s:8.9e3,c:"infra",d:"NotebookLM Python API."},
   {id:"lm-studio",n:"LM Studio",s:4.6e3,c:"infra",d:"AI მოდელების ლოკალური მართვა GUI-ით. Ollama-ს ალტერნატივა."},
+  {id:"video-use",n:"video-use",s:3.7e3,c:"infra",d:"Browser Use გუნდის ვიდეოს მონტაჟი AI კოდირების აგენტებით — ბუნებრივი ენით. Descript-ის ღია ალტერნატივა."},
   {id:"realtimetts",n:"RealtimeTTS",s:3e3,c:"infra",d:"რეალურ დროში ტექსტი → ხმა."},
   // resources 6
   {id:"public-apis",n:"Public APIs",s:419e3,c:"resources",d:"უფასო API-ების კატალოგი."},
@@ -260,6 +263,8 @@ const links = [
   {s:"browser-use",t:"playwright-mcp"},{s:"browser-use",t:"agent-browser"},
   {s:"playwright-mcp",t:"playwright-cli"},{s:"lightpanda",t:"playwright-mcp"},
   {s:"firecrawl-mcp",t:"crawl4ai-rag"},{s:"agent-reach",t:"browser-use"},
+  {s:"browser-harness",t:"browser-use"},{s:"video-use",t:"browser-use"},
+  {s:"hyperframes",t:"hunyuanvideo"},{s:"hyperframes",t:"comfyui"},
   {s:"autogen",t:"semantic-kernel"},{s:"crewai",t:"langgraph"},{s:"crewai",t:"autogen"},
   {s:"langgraph",t:"llamaindex"},{s:"vercel-ai",t:"mastra"},{s:"hermes",t:"nanobot"},
   {s:"openspace",t:"hermes"},{s:"opensandbox",t:"openspace"},

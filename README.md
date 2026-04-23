@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-131-00D0FF?style=flat-square&labelColor=111827&v=13" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-134-00D0FF?style=flat-square&labelColor=111827&v=14" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -144,6 +144,7 @@
 | [opencli](https://github.com/jackwener/opencli) | 14K | ნებისმიერ ვებსაიტს ან გრაფიკულ პროგრამას ტერმინალის ბრძანებად აქცევს AI აგენტებისთვის. 70+ ხელსაწყო უკვე მხარდაჭერილია. ანუ AI-ს შეუძლია ნებისმიერი პროგრამით მუშაობა, თუნდაც მას ტერმინალის ვერსია არ ჰქონდეს. |
 | [Playwright CLI](https://github.com/microsoft/playwright-cli) | 6.9K | Microsoft Playwright-ის მსუბუქი ტერმინალის ინტერფეისი — ბრაუზერის მოქმედებების ჩაწერა, კოდის ავტომატური გენერაცია. MCP სერვერის ოვერჰედის გარეშე მუშაობს, რაც 4-ჯერ ნაკლებ რესურსს ხარჯავს. |
 | [Firecrawl MCP](https://github.com/firecrawl/firecrawl-mcp-server) | 5.9K | Firecrawl-ის ოფიციალური MCP სერვერი — ვებსაიტების სკრეიპინგი, crawling, ძიება და AI-ით ღრმა კვლევა. 12+ ინსტრუმენტი ერთ სერვერში, ავტომატური retry და სიჩქარის კონტროლი. |
+| [Browser Harness](https://github.com/browser-use/browser-harness) | 5.8K | Browser Use გუნდის „თვით-მგენერირებადი" (self-healing) ფრეიმვორკი — როცა ვებსაიტის სელექტორი ან სტრუქტურა იცვლება, AI აგენტი ავტომატურად ადაპტირდება და ტესტი არ იშლება. LLM-ს ნებისმიერი ამოცანის შესრულება შეუძლია ბრაუზერში, შეცდომებისგან თვით-განკურნების მექანიზმით. Python-ში დაწერილი. |
 | [Cloudflare MCP](https://github.com/cloudflare/mcp-server-cloudflare) | 3.6K | Cloudflare-ის 13+ MCP სერვერი — Workers, KV, R2, D1, Browser Rendering, DNS ანალიტიკა. AI ასისტენტს შეუძლია Cloudflare-ის მთელი პლატფორმის მართვა ტერმინალიდან. |
 | [rdrr](https://github.com/fkonovalov/rdrr) | 99 | URL → Markdown კონვერტორი, სპეციალურად AI აგენტებისთვის ოპტიმიზებული. ვებ გვერდები, YouTube ვიდეოები, GitHub issues/PR-ები, PDF-ები და X/Twitter პროფილები — ყველა Markdown-ად სუფთა ფორმატში. 20+ საიტ-სპეციფიკური extractor, headless browser არ სჭირდება, სწრაფი მუშაობა. CLI და ბიბლიოთეკის API-ებიც. |
 | [Bright Data MCP](https://github.com/brightdata/brightdata-mcp) | 2.3K | ვებ სკრეიპინგი anti-bot დაცვის გვერდის ავლით — ნებისმიერი ვებსაიტიდან მონაცემების ამოღება ბლოკირების გარეშე. proxy ქსელი და სტრუქტურირებული მონაცემების ექსპორტი ჩაშენებულია. |
@@ -235,8 +236,10 @@
 | [Google Workspace CLI](https://github.com/googleworkspace/cli) | 24K | ერთი ტერმინალის ბრძანება მთელი Google Workspace-ისთვის — Gmail, Drive, Calendar, Sheets, Docs, Chat. AI აგენტს შეუძლია ელ-ფოსტის გაგზავნა, ფაილების მართვა და კალენდრის ორგანიზება ავტომატურად. 40+ აგენტის უნარი. |
 | [VoxCPM](https://github.com/OpenBMB/VoxCPM) | 13.7K | 30 ენიანი ღია კოდის text-to-speech — 3 წამში ხმის კლონირება, 48kHz სტუდიური ხარისხი, 8GB VRAM-ზე ეშვება. ElevenLabs-ის ღია ალტერნატივა — 2B პარამეტრი, Apache 2.0 ლიცენზია. ენის ტეგის გარეშე გესმის 30 ენა, Minimax ბენჩმარკზე 85.4% ხმის მსგავსება. |
 | [HunyuanVideo](https://github.com/Tencent-Hunyuan/HunyuanVideo) | 11.7K | Tencent-ის AI ვიდეო გენერატორი — ტექსტიდან, სურათიდან ან აუდიოდან ვიდეოს ქმნის. თუ გინდა „მოკლე ვიდეო AI-ით შექმნა" — ეს ყველაზე ძლიერი ღია კოდის ვარიანტია. |
+| [Hyperframes](https://github.com/heygen-com/hyperframes) | 9.9K | HeyGen-ის (AI ავატარების ერთ-ერთი წამყვანი კომპანია) ფრეიმვორკი ვიდეოების პროგრამული გენერაციისთვის — წერ HTML-ს, Hyperframes რენდერავს ვიდეოდ. სპეციალურად AI აგენტებისთვის არის დიზაინერებული, რომ დეკლარაციულად შექმნან მოძრავი გრაფიკა, პრეზენტაციები და სოციალური ქსელებისთვის მზა კლიპები. Remotion-ის კონკურენტი HeyGen-ისგან, TypeScript-ში დაწერილი. |
 | [NotebookLM Python](https://github.com/teng-lin/notebooklm-py) | 8.9K | Google NotebookLM-ის Python ინტერფეისი — შენი დოკუმენტებიდან AI პოდკასტის გენერაცია, კვლევა და ანალიზი პროგრამულად. ვებ ინტერფეისში მიუწვდომელ ფუნქციებსაც იძლევა. |
 | [LM Studio](https://github.com/lmstudio-ai/lms) | 4.6K | AI მოდელების ლოკალურად მართვის პოპულარული აპლიკაციის CLI ინტერფეისი — სერვერის გაშვება/გაჩერება, მოდელების ჩატვირთვა GPU აქსელერაციით, პროცესების მონიტორინგი. Ollama-ს ალტერნატივა გრაფიკული ინტერფეისით — თუ ტერმინალი არ გიყვარს, LM Studio უფრო მოსახერხებელია. |
+| [video-use](https://github.com/browser-use/video-use) | 3.7K | Browser Use გუნდის ვიდეოს მონტაჟი AI კოდირების აგენტებით — ბუნებრივი ენით უთხარი რა გინდა (ფრაგმენტების შეერთება, ტიტრის დამატება, აუდიოს ჩანაცვლება) და AI FFmpeg-ის ქვეშ თავად დაწერს სკრიპტს და შეასრულებს. Descript-ის მსგავსი, მაგრამ ღია კოდის და პროგრამული, Python-ში. |
 | [RealtimeTTS](https://github.com/KoljaB/RealtimeTTS) | 3K | რეალურ დროში ტექსტის ხმად გარდაქმნა — AI-ს ხმა 2 წამში მზადაა. ხმის კლონირებაც შეუძლია. რამდენიმე ხმის ძრავი ერთად (Coqui, ElevenLabs, Piper) — სრული ხმოვანი AI სისტემის ასაწყობად. |
 
 ---

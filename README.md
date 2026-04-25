@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-177-00D0FF?style=flat-square&labelColor=111827&v=20" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-178-00D0FF?style=flat-square&labelColor=111827&v=21" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -47,6 +47,7 @@
 | [Kilocode](https://github.com/kilo-org/kilocode) | 18K | Kilocode VS Code-ის AI coding agent-ია, kilo.ai-ის agentic engineering platform-ის ღია კოდის გული. 500+ AI მოდელს უჭერს მხარს, ბუნებრივი ენის ბრძანებებით კოდს წერს, ტესტავს და deploy-ს. TypeScript, 1.5 მილიონზე მეტი ინსტალაცია. OpenRouter-ის coding agent-ების სიაში წამყვანი — Roo Code-ისა და Cline-ის პირდაპირი კონკურენტი. |
 | [Codex Plugin](https://github.com/openai/codex-plugin-cc) | 15K | Codex Plugin არის OpenAI-ის ოფიციალური Claude Code plugin — Codex CLI-ის agent-ს Claude Code-ის შიგნიდან გამოძახების საშუალებას გაძლევს. კოდის review-ისა და ამოცანების დელეგირებისთვის — OpenAI-ს Codex-ი და Anthropic-ს Claude Code ერთ workflow-ში. JavaScript, 2026 წლის მარტიდან ხელმისაწვდომია. ცალკე რეპოა openai/codex CLI-სგან (რომელიც terminal agent-ია — ეს კი Claude Code-ის plugin-ია). |
 | [cmux](https://github.com/manaflow-ai/cmux) | 15K | cmux Ghostty-ს საფუძველზე აშენებული macOS terminal emulator-ია, სპეციალურად AI coding agent-ებისთვის ოპტიმიზებული. ვერტიკალური tabs, push notifications და პარალელური სესიების მარტივი მართვა — თუ ერთდროულად რამდენიმე AI agent-ს ამუშავებ (Claude Code + Codex + opencode), ეს terminal-ი სამართავს გამარტივებს. Swift-ში დაწერილია, macOS-only. |
+| [free-claude-code](https://github.com/Alishahryar1/free-claude-code) | 11K | free-claude-code ღია კოდის ხელსაწყოა Claude Code-ის უფასოდ გამოყენების სამი არხით — ტერმინალში, VS Code გაფართოებად ან Discord bot-ით. სამი ინტერფეისი ერთ პაკეტში: ლოკალურად კოდის წერისას CLI/IDE, გუნდურ მუშაობაზე Discord-ით. Python-ში დაწერილია, MIT ლიცენზია, 2026 წლის იანვრიდან 11,000+ ვარსკვლავი დააგროვა. |
 | [ml-intern](https://github.com/huggingface/ml-intern) | 4.2K | ml-intern არის **Hugging Face-ის ოფიციალური** ღია კოდის AI-ML ინჟინერი — ავტონომიური აგენტი, რომელიც კვლევის ნაშრომებს კითხულობს (arXiv), ML მოდელებს ტრენინგს უწევს და ship-ს აკეთებს Hugging Face Hub-ზე. Python-ში, OpenAI/Anthropic API ან ლოკალური მოდელებით მუშაობს. **2026 წლის 24 აპრილის GitHub Trending #1** — +720 ვარსკვლავი ერთ დღეში. ML research-ის ავტომატიზაციით დაინტერესებულ მკვლევართათვის — პერპეტუალური ML intern. |
 | [Open Agents](https://github.com/vercel-labs/open-agents) | 4.1K | Open Agents არის Vercel Labs-ის ღია კოდის reference template ღრუბლოვანი AI agent-ების ასაშენებლად. agent VM sandbox-ში ეშვება, GitHub-ს ინტეგრაცია, workflow runtime და ჩაშენებული ვებ-ინტერფეისი შედის. TypeScript-ში, Vercel-ზე ადვილად დეპლოისებადი. ლოკალური კომპიუტერის გარეშე ფონური coding agent-ებისთვის — reference implementation, არა production-ready პლატფორმა. |
 

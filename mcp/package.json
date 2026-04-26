@@ -1,0 +1,50 @@
+{
+  "name": "@aipulsegeorgia/mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for the AI Pulse Georgia awesome list — query 179+ curated AI repos from inside Claude Code, Cursor, and other MCP-compatible clients.",
+  "type": "module",
+  "bin": {
+    "aipulsegeorgia-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "data",
+    "README.md"
+  ],
+  "scripts": {
+    "build:data": "tsx scripts/build-data.ts",
+    "build": "npm run build:data && tsup src/index.ts --format esm --target node20 --clean --shims",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "claude",
+    "awesome-list",
+    "ai-pulse-georgia"
+  ],
+  "author": "AI Pulse Georgia <hello@aipulsegeorgia.ge>",
+  "license": "MIT",
+  "homepage": "https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia/tree/main/mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia.git",
+    "directory": "mcp"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsup": "^8.3.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

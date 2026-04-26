@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-26T18:19:07.239Z",
+  "generated": "2026-04-26T20:48:44.446Z",
   "totalRepos": 179,
   "categories": [
     {
@@ -75,7 +75,8 @@
       "starsNumeric": 187000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex."
     },
     {
       "name": "opencode",
@@ -85,7 +86,8 @@
       "starsNumeric": 148000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "The open source coding agent."
     },
     {
       "name": "Gemini CLI",
@@ -95,7 +97,8 @@
       "starsNumeric": 102000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "An open-source AI agent that brings the power of Gemini directly into your terminal."
     },
     {
       "name": "Codex CLI",
@@ -105,7 +108,8 @@
       "starsNumeric": 77000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "Lightweight coding agent that runs in your terminal"
     },
     {
       "name": "OpenHands",
@@ -115,7 +119,8 @@
       "starsNumeric": 71000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "🙌 OpenHands: AI-Driven Development"
     },
     {
       "name": "Cline",
@@ -125,7 +130,8 @@
       "starsNumeric": 60000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "Autonomous coding agent right in your IDE, capable of creating/editing files, executing commands, using the browser, and more with your permission every step of the way."
     },
     {
       "name": "omo (ex-oh-my-openagent)",
@@ -135,7 +141,8 @@
       "starsNumeric": 53000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "omo; the best agent harness - previously oh-my-opencode"
     },
     {
       "name": "Aider",
@@ -145,7 +152,8 @@
       "starsNumeric": 43000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "aider is AI pair programming in your terminal"
     },
     {
       "name": "Goose",
@@ -155,7 +163,8 @@
       "starsNumeric": 43000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM"
     },
     {
       "name": "Tabby",
@@ -165,7 +174,8 @@
       "starsNumeric": 33000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "Self-hosted AI coding assistant"
     },
     {
       "name": "Continue.dev",
@@ -175,7 +185,8 @@
       "starsNumeric": 32000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "⏩ Source-controlled AI checks, enforceable in CI. Powered by the open-source Continue CLI"
     },
     {
       "name": "Void",
@@ -185,7 +196,8 @@
       "starsNumeric": 28000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": null
     },
     {
       "name": "GitNexus",
@@ -195,7 +207,8 @@
       "starsNumeric": 28000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration"
     },
     {
       "name": "Taskmaster",
@@ -205,7 +218,8 @@
       "starsNumeric": 26000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others."
     },
     {
       "name": "OpenClaude",
@@ -215,7 +229,8 @@
       "starsNumeric": 23000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models, and 200+ models via OpenAI-compatible APIs."
     },
     {
       "name": "Qwen Code",
@@ -225,7 +240,8 @@
       "starsNumeric": 23000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "An open-source AI agent that lives in your terminal."
     },
     {
       "name": "Roo Code",
@@ -235,7 +251,8 @@
       "starsNumeric": 23000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "Roo Code gives you a whole dev team of AI agents in your code editor."
     },
     {
       "name": "Kilocode",
@@ -245,7 +262,8 @@
       "starsNumeric": 18000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent."
     },
     {
       "name": "Codex Plugin",
@@ -255,7 +273,8 @@
       "starsNumeric": 15000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "Use Codex from Claude Code to review code or delegate tasks."
     },
     {
       "name": "cmux",
@@ -265,7 +284,8 @@
       "starsNumeric": 15000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents"
     },
     {
       "name": "free-claude-code",
@@ -275,7 +295,8 @@
       "starsNumeric": 11000,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "Use claude-code for free in the terminal, VSCode extension or via discord like openclaw"
     },
     {
       "name": "ml-intern",
@@ -285,7 +306,8 @@
       "starsNumeric": 4200,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "🤗 ml-intern: an open-source ML engineer that reads papers, trains models, and ships ML models"
     },
     {
       "name": "Open Agents",
@@ -295,7 +317,8 @@
       "starsNumeric": 4100,
       "categorySlug": "coding",
       "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები"
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "An open source template for building cloud agents."
     },
     {
       "name": "Superpowers",
@@ -305,7 +328,8 @@
       "starsNumeric": 165000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "An agentic skills framework & software development methodology that works."
     },
     {
       "name": "Everything Claude Code",
@@ -315,7 +339,8 @@
       "starsNumeric": 165000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
     },
     {
       "name": "Spec Kit",
@@ -325,7 +350,8 @@
       "starsNumeric": 90000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "💫 Toolkit to help you get started with Spec-Driven Development"
     },
     {
       "name": "Karpathy Skills",
@@ -335,7 +361,8 @@
       "starsNumeric": 80000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls."
     },
     {
       "name": "UI UX Pro Max",
@@ -345,7 +372,8 @@
       "starsNumeric": 69000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms"
     },
     {
       "name": "Claude Mem",
@@ -355,7 +383,8 @@
       "starsNumeric": 66000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future sessions."
     },
     {
       "name": "GSD (Get Shit Done)",
@@ -365,7 +394,8 @@
       "starsNumeric": 56000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES."
     },
     {
       "name": "Caveman",
@@ -375,7 +405,8 @@
       "starsNumeric": 44000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman"
     },
     {
       "name": "Career-Ops",
@@ -385,7 +416,8 @@
       "starsNumeric": 38000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing."
     },
     {
       "name": "Graphify",
@@ -395,7 +427,8 @@
       "starsNumeric": 33000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, GitHub Copilot CLI, OpenClaw, Factory Droid, Trae, Google Antigravity). Turn any folder of code, docs, papers, images, or videos into a queryable knowledge graph"
     },
     {
       "name": "RuFlo (ex-Claude Flow)",
@@ -405,7 +438,8 @@
       "starsNumeric": 33000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features    enterprise-grade architecture, distributed swarm intelligence, RAG integration, and native Claude Code / Codex Integration"
     },
     {
       "name": "Oh My ClaudeCode",
@@ -415,7 +449,8 @@
       "starsNumeric": 30000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Teams-first Multi-agent orchestration for Claude Code"
     },
     {
       "name": "Obsidian Skills",
@@ -425,7 +460,8 @@
       "starsNumeric": 26000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Agent skills for Obsidian. Teach your agent to use Markdown, Bases, JSON Canvas, and use the CLI."
     },
     {
       "name": "last30days-skill",
@@ -435,7 +471,8 @@
       "starsNumeric": 23800,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary"
     },
     {
       "name": "Agent Skills",
@@ -445,7 +482,8 @@
       "starsNumeric": 21000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Production-grade engineering skills for AI coding agents."
     },
     {
       "name": "Claude Plugins Official",
@@ -455,7 +493,8 @@
       "starsNumeric": 17000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Official, Anthropic-managed directory of high quality Claude Code Plugins."
     },
     {
       "name": "Agent Skills Spec",
@@ -465,7 +504,8 @@
       "starsNumeric": 16000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Specification and documentation for Agent Skills"
     },
     {
       "name": "Claude Code Game Studios",
@@ -475,7 +515,8 @@
       "starsNumeric": 16000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy."
     },
     {
       "name": "n8n Skills",
@@ -485,7 +526,8 @@
       "starsNumeric": 4600,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "n8n skillset for Claude Code to build flawless n8n workflows"
     },
     {
       "name": "Architecture Diagram Generator",
@@ -495,7 +537,8 @@
       "starsNumeric": 4300,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Generate beautiful dark-themed system architecture diagrams as standalone HTML/SVG files. Works as a Claude AI skill."
     },
     {
       "name": "Remotion Skills",
@@ -505,7 +548,8 @@
       "starsNumeric": 2900,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Agent Skills"
     },
     {
       "name": "Headroom",
@@ -515,7 +559,8 @@
       "starsNumeric": 1500,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "The Context Optimization Layer for LLM Applications"
     },
     {
       "name": "Claude Code Setup",
@@ -525,7 +570,8 @@
       "starsNumeric": 9,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Production-grade Claude Code setup: 17 rules, 7 hooks, 7 templates, /setup command. One install — security, testing, CI/CD, and safety guardrails from day one."
     },
     {
       "name": "Georgian Payments Skills",
@@ -535,7 +581,8 @@
       "starsNumeric": 7,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები"
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": null
     },
     {
       "name": "MCP Servers",
@@ -545,7 +592,8 @@
       "starsNumeric": 84000,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "Model Context Protocol Servers"
     },
     {
       "name": "Context7",
@@ -555,7 +603,8 @@
       "starsNumeric": 53000,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors"
     },
     {
       "name": "GitHub MCP",
@@ -565,7 +614,8 @@
       "starsNumeric": 29000,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "GitHub's official MCP Server"
     },
     {
       "name": "FastMCP",
@@ -575,7 +625,8 @@
       "starsNumeric": 24000,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "🚀 The fast, Pythonic way to build MCP servers and clients."
     },
     {
       "name": "Serena",
@@ -585,7 +636,8 @@
       "starsNumeric": 23000,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent"
     },
     {
       "name": "n8n-MCP",
@@ -595,7 +647,8 @@
       "starsNumeric": 18000,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you "
     },
     {
       "name": "Figma Context MCP",
@@ -605,7 +658,8 @@
       "starsNumeric": 14000,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "MCP server to provide Figma layout information to AI coding agents like Cursor"
     },
     {
       "name": "Code Review Graph",
@@ -615,7 +669,8 @@
       "starsNumeric": 12000,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8× fewer tokens on reviews and up to 49× on daily coding tasks."
     },
     {
       "name": "Exa MCP",
@@ -625,7 +680,8 @@
       "starsNumeric": 4300,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "Exa MCP for web search and web crawling!"
     },
     {
       "name": "Notion MCP",
@@ -635,7 +691,8 @@
       "starsNumeric": 4300,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "Official Notion MCP Server"
     },
     {
       "name": "Draw.io MCP",
@@ -645,7 +702,8 @@
       "starsNumeric": 3200,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": null
     },
     {
       "name": "Supabase MCP",
@@ -655,7 +713,8 @@
       "starsNumeric": 2600,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "Connect Supabase to your AI assistants"
     },
     {
       "name": "Markdownify MCP",
@@ -665,7 +724,8 @@
       "starsNumeric": 2600,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "A Model Context Protocol server for converting almost anything to Markdown"
     },
     {
       "name": "Perplexity MCP",
@@ -675,7 +735,8 @@
       "starsNumeric": 2100,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "The official MCP server implementation for the Perplexity API Platform"
     },
     {
       "name": "Claude Peers MCP",
@@ -685,7 +746,8 @@
       "starsNumeric": 1900,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "Allow all your Claude Codes to message each other ad-hoc!"
     },
     {
       "name": "Tavily MCP",
@@ -695,7 +757,8 @@
       "starsNumeric": 1800,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "Production ready MCP server with real-time search, extract, map & crawl."
     },
     {
       "name": "LinkedIn MCP",
@@ -705,7 +768,8 @@
       "starsNumeric": 1700,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "Open-source MCP server for LinkedIn. Give Claude and any MCP-compatible AI assistant access to profiles, companies, jobs, and messages."
     },
     {
       "name": "Stripe MCP",
@@ -715,7 +779,8 @@
       "starsNumeric": 1500,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "One-stop shop for building AI-powered products and businesses with Stripe."
     },
     {
       "name": "Apify MCP",
@@ -725,7 +790,8 @@
       "starsNumeric": 1100,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, or any other website using thousands of ready-made scrapers, crawlers, and automation tools available on the Apify Store."
     },
     {
       "name": "Power BI Modeling MCP",
@@ -735,7 +801,8 @@
       "starsNumeric": 677,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "The Power BI Modeling MCP Server, brings Power BI semantic modeling capabilities to your AI agents."
     },
     {
       "name": "Sentry MCP",
@@ -745,7 +812,8 @@
       "starsNumeric": 666,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "An MCP server for interacting with Sentry via LLMs."
     },
     {
       "name": "E2B MCP",
@@ -755,7 +823,8 @@
       "starsNumeric": 393,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "Giving Claude ability to run code with E2B via MCP (Model Context Protocol)"
     },
     {
       "name": "Metricool MCP",
@@ -765,7 +834,8 @@
       "starsNumeric": 36,
       "categorySlug": "mcp",
       "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები"
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "This is a Multi-Agent Collaboration Protocol (MCP) server for interacting with the Metricool API. It allows AI agents to access and analyze social media metrics and campaign data from your Metricool account."
     },
     {
       "name": "Firecrawl",
@@ -775,7 +845,8 @@
       "starsNumeric": 111000,
       "categorySlug": "scraping",
       "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი"
+      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
+      "descriptionEn": "🔥 The API to search, scrape, and interact with the web for AI"
     },
     {
       "name": "Browser Use",
@@ -785,7 +856,8 @@
       "starsNumeric": 89000,
       "categorySlug": "scraping",
       "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი"
+      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
+      "descriptionEn": "🌐 Make websites accessible for AI agents. Automate tasks online with ease."
     },
     {
       "name": "Crawl4AI",
@@ -795,7 +867,8 @@
       "starsNumeric": 64000,
       "categorySlug": "scraping",
       "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი"
+      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
+      "descriptionEn": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN"
     },
     {
       "name": "Playwright MCP",
@@ -805,7 +878,8 @@
       "starsNumeric": 31000,
       "categorySlug": "scraping",
       "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი"
+      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
+      "descriptionEn": "Playwright MCP server"
     },
     {
       "name": "Agent Browser",
@@ -815,7 +889,8 @@
       "starsNumeric": 30000,
       "categorySlug": "scraping",
       "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი"
+      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
+      "descriptionEn": "Browser automation CLI for AI agents"
     },
     {
       "name": "Lightpanda",
@@ -825,7 +900,8 @@
       "starsNumeric": 29000,
       "categorySlug": "scraping",
       "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი"
+      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
+      "descriptionEn": "Lightpanda: the headless browser designed for AI and automation"
     },
     {
       "name": "Stagehand",
@@ -835,7 +911,8 @@
       "starsNumeric": 22000,
       "categorySlug": "scraping",
       "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი"
+      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
+      "descriptionEn": "The SDK For Browser Agents"
     },
     {
       "name": "Agent-Reach",
@@ -845,7 +922,8 @@
       "starsNumeric": 18000,
       "categorySlug": "scraping",
       "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი"
+      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
+      "descriptionEn": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees."
     },
     {
       "name": "opencli",
@@ -855,7 +933,8 @@
       "starsNumeric": 17000,
       "categorySlug": "scraping",
       "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი"
+      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
+      "descriptionEn": "Make Any Website & Tool Your CLI. A universal CLI Hub and AI-native runtime. Transform any website, Electron app, or local binary into a standardized command-line interface. Built for AI Agents to discover, learn, and execute tools seamlessly via a unified AGENT.md integration."
     },
     {
       "name": "Playwright CLI",
@@ -865,7 +944,8 @@
       "starsNumeric": 9200,
       "categorySlug": "scraping",
       "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი"
+      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
+      "descriptionEn": "CLI for common Playwright actions. Record and generate Playwright code, inspect selectors and take screenshots."
     },
     {
       "name": "Firecrawl MCP Server",
@@ -875,7 +955,8 @@
       "starsNumeric": 6100,
       "categorySlug": "scraping",
       "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი"
+      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
+      "descriptionEn": "🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients."
     },
     {
       "name": "Browser Harness",
@@ -885,7 +966,8 @@
       "starsNumeric": 5900,
       "categorySlug": "scraping",
       "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი"
+      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
+      "descriptionEn": "Browser Harness | Self-healing harness that enables LLMs to complete any task."
     },
     {
       "name": "Cloudflare MCP",
@@ -895,7 +977,8 @@
       "starsNumeric": 3700,
       "categorySlug": "scraping",
       "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი"
+      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
+      "descriptionEn": null
     },
     {
       "name": "Bright Data MCP",
@@ -905,7 +988,8 @@
       "starsNumeric": 2300,
       "categorySlug": "scraping",
       "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი"
+      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
+      "descriptionEn": "A powerful Model Context Protocol (MCP) server that provides an all-in-one solution for public web access."
     },
     {
       "name": "rdrr",
@@ -915,7 +999,8 @@
       "starsNumeric": 138,
       "categorySlug": "scraping",
       "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი"
+      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
+      "descriptionEn": "Convert any URL to clean markdown for AI agents."
     },
     {
       "name": "LangChain",
@@ -925,7 +1010,8 @@
       "starsNumeric": 134000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "The agent engineering platform"
     },
     {
       "name": "Hermes-agent",
@@ -935,7 +1021,8 @@
       "starsNumeric": 113000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "The agent that grows with you"
     },
     {
       "name": "MetaGPT",
@@ -945,7 +1032,8 @@
       "starsNumeric": 67000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming"
     },
     {
       "name": "AutoGen",
@@ -955,7 +1043,8 @@
       "starsNumeric": 57000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "A programming framework for agentic AI"
     },
     {
       "name": "AI Hedge Fund",
@@ -965,7 +1054,8 @@
       "starsNumeric": 57000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "An AI Hedge Fund Team"
     },
     {
       "name": "CrewAI",
@@ -975,7 +1065,8 @@
       "starsNumeric": 49000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks."
     },
     {
       "name": "nanobot",
@@ -985,7 +1076,8 @@
       "starsNumeric": 40000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "\"🐈 nanobot: The Ultra-Lightweight Personal AI Agent\""
     },
     {
       "name": "agno",
@@ -995,7 +1087,8 @@
       "starsNumeric": 39000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "Build, run, manage agentic software at scale."
     },
     {
       "name": "DSPy",
@@ -1005,7 +1098,8 @@
       "starsNumeric": 34000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "DSPy: The framework for programming—not prompting—language models"
     },
     {
       "name": "LangGraph",
@@ -1015,7 +1109,8 @@
       "starsNumeric": 30000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "Build resilient language agents as graphs."
     },
     {
       "name": "Semantic Kernel",
@@ -1025,7 +1120,8 @@
       "starsNumeric": 27000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "Integrate cutting-edge LLM technology quickly and easily into your apps"
     },
     {
       "name": "smolagents",
@@ -1035,7 +1131,8 @@
       "starsNumeric": 26000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "🤗 smolagents: a barebones library for agents that think in code."
     },
     {
       "name": "OpenAI Agents SDK",
@@ -1045,7 +1142,8 @@
       "starsNumeric": 24000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "A lightweight, powerful framework for multi-agent workflows"
     },
     {
       "name": "Vercel AI SDK",
@@ -1055,7 +1153,8 @@
       "starsNumeric": 23000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents "
     },
     {
       "name": "Mastra",
@@ -1065,7 +1164,8 @@
       "starsNumeric": 23000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "From the team behind Gatsby, Mastra is a framework for building AI-powered applications and agents with a modern TypeScript stack."
     },
     {
       "name": "Swarm",
@@ -1075,7 +1175,8 @@
       "starsNumeric": 21000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "Educational framework exploring ergonomic, lightweight multi-agent orchestration. Managed by OpenAI Solution team."
     },
     {
       "name": "Archon",
@@ -1085,7 +1186,8 @@
       "starsNumeric": 19000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable."
     },
     {
       "name": "Pydantic AI",
@@ -1095,7 +1197,8 @@
       "starsNumeric": 16000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "AI Agent Framework, the Pydantic way"
     },
     {
       "name": "OpenSandbox",
@@ -1105,7 +1208,8 @@
       "starsNumeric": 10000,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "Secure, Fast, and Extensible Sandbox runtime for AI agents."
     },
     {
       "name": "OpenSpace",
@@ -1115,7 +1219,8 @@
       "starsNumeric": 5700,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები"
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "\"OpenSpace: Make Your Agents: Smarter, Low-Cost, Self-Evolving\" -- Community: https://open-space.cloud/"
     },
     {
       "name": "OpenClaw",
@@ -1125,7 +1230,8 @@
       "starsNumeric": 362000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 "
     },
     {
       "name": "n8n",
@@ -1135,7 +1241,8 @@
       "starsNumeric": 185000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
     },
     {
       "name": "Langflow",
@@ -1145,7 +1252,8 @@
       "starsNumeric": 147000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows."
     },
     {
       "name": "Dify",
@@ -1155,7 +1263,8 @@
       "starsNumeric": 138000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "Production-ready platform for agentic workflow development."
     },
     {
       "name": "Open WebUI",
@@ -1165,7 +1274,8 @@
       "starsNumeric": 133000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)"
     },
     {
       "name": "gpt4all",
@@ -1175,7 +1285,8 @@
       "starsNumeric": 77000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "GPT4All: Run Local LLMs on Any Device. Open-source and available for commercial use."
     },
     {
       "name": "LobeChat",
@@ -1185,7 +1296,8 @@
       "starsNumeric": 75000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you. We are taking agent harness to the next level — enabling multi-agent collaboration, effortless agent team design, and introducing agents as the unit of work interaction."
     },
     {
       "name": "AnythingLLM",
@@ -1195,7 +1307,8 @@
       "starsNumeric": 58000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "The all-in-one AI productivity accelerator. On device and privacy first with no annoying setup or configuration."
     },
     {
       "name": "Paperclip",
@@ -1205,7 +1318,8 @@
       "starsNumeric": 58000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "Open-source orchestration for zero-human companies"
     },
     {
       "name": "MiroFish",
@@ -1215,7 +1329,8 @@
       "starsNumeric": 57000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物"
     },
     {
       "name": "Flowise",
@@ -1225,7 +1340,8 @@
       "starsNumeric": 52000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "Build AI Agents, Visually"
     },
     {
       "name": "Jan",
@@ -1235,7 +1351,8 @@
       "starsNumeric": 42000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer."
     },
     {
       "name": "LibreChat",
@@ -1245,7 +1362,8 @@
       "starsNumeric": 35000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "Enhanced ChatGPT Clone: Features Agents, MCP, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active."
     },
     {
       "name": "Khoj",
@@ -1255,7 +1373,8 @@
       "starsNumeric": 34000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free."
     },
     {
       "name": "Vane (ex-Perplexica)",
@@ -1265,7 +1384,8 @@
       "starsNumeric": 33000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "Vane is an AI-powered answering engine."
     },
     {
       "name": "Activepieces",
@@ -1275,7 +1395,8 @@
       "starsNumeric": 21000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents"
     },
     {
       "name": "DeepTutor",
@@ -1285,7 +1406,8 @@
       "starsNumeric": 21000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "\"DeepTutor: Agent-Native Personalized Learning Assistant\""
     },
     {
       "name": "Multica",
@@ -1295,7 +1417,8 @@
       "starsNumeric": 20000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills."
     },
     {
       "name": "Fincept Terminal",
@@ -1305,7 +1428,8 @@
       "starsNumeric": 13000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment."
     },
     {
       "name": "Rowboat",
@@ -1315,7 +1439,8 @@
       "starsNumeric": 13000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "Open-source AI coworker, with memory"
     },
     {
       "name": "Feynman",
@@ -1325,7 +1450,8 @@
       "starsNumeric": 5800,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": null
     },
     {
       "name": "agentic-inbox",
@@ -1335,7 +1461,8 @@
       "starsNumeric": 1300,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის"
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "A self-hosted email client with an AI agent, running entirely on Cloudflare Workers"
     },
     {
       "name": "RAGFlow",
@@ -1345,7 +1472,8 @@
       "starsNumeric": 78000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG"
+      "categoryGeorgian": "მეხსიერება და RAG",
+      "descriptionEn": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs"
     },
     {
       "name": "mem0",
@@ -1355,7 +1483,8 @@
       "starsNumeric": 53000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG"
+      "categoryGeorgian": "მეხსიერება და RAG",
+      "descriptionEn": "Universal memory layer for AI Agents"
     },
     {
       "name": "MemPalace",
@@ -1365,7 +1494,8 @@
       "starsNumeric": 49000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG"
+      "categoryGeorgian": "მეხსიერება და RAG",
+      "descriptionEn": "The best-benchmarked open-source AI memory system. And it's free."
     },
     {
       "name": "LlamaIndex",
@@ -1375,7 +1505,8 @@
       "starsNumeric": 48000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG"
+      "categoryGeorgian": "მეხსიერება და RAG",
+      "descriptionEn": "LlamaIndex is the leading document agent and OCR platform"
     },
     {
       "name": "Milvus",
@@ -1385,7 +1516,8 @@
       "starsNumeric": 43000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG"
+      "categoryGeorgian": "მეხსიერება და RAG",
+      "descriptionEn": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search"
     },
     {
       "name": "LightRAG",
@@ -1395,7 +1527,8 @@
       "starsNumeric": 34000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG"
+      "categoryGeorgian": "მეხსიერება და RAG",
+      "descriptionEn": "[EMNLP2025] \"LightRAG: Simple and Fast Retrieval-Augmented Generation\""
     },
     {
       "name": "Qdrant",
@@ -1405,7 +1538,8 @@
       "starsNumeric": 30000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG"
+      "categoryGeorgian": "მეხსიერება და RAG",
+      "descriptionEn": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/"
     },
     {
       "name": "Chroma",
@@ -1415,7 +1549,8 @@
       "starsNumeric": 27000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG"
+      "categoryGeorgian": "მეხსიერება და RAG",
+      "descriptionEn": "Data infrastructure for AI"
     },
     {
       "name": "Graphiti",
@@ -1425,7 +1560,8 @@
       "starsNumeric": 25000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG"
+      "categoryGeorgian": "მეხსიერება და RAG",
+      "descriptionEn": "Build Real-Time Knowledge Graphs for AI Agents"
     },
     {
       "name": "Letta",
@@ -1435,7 +1571,8 @@
       "starsNumeric": 22000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG"
+      "categoryGeorgian": "მეხსიერება და RAG",
+      "descriptionEn": "Letta is the platform for building stateful agents: AI with advanced memory that can learn and self-improve over time."
     },
     {
       "name": "RAG-Anything",
@@ -1445,7 +1582,8 @@
       "starsNumeric": 18000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG"
+      "categoryGeorgian": "მეხსიერება და RAG",
+      "descriptionEn": "\"RAG-Anything: All-in-One RAG Framework\""
     },
     {
       "name": "gbrain",
@@ -1455,7 +1593,8 @@
       "starsNumeric": 10000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG"
+      "categoryGeorgian": "მეხსიერება და RAG",
+      "descriptionEn": "Garry's Opinionated OpenClaw/Hermes Agent Brain"
     },
     {
       "name": "Hindsight",
@@ -1465,7 +1604,8 @@
       "starsNumeric": 10000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG"
+      "categoryGeorgian": "მეხსიერება და RAG",
+      "descriptionEn": "Hindsight: Agent Memory That  Learns"
     },
     {
       "name": "Crawl4AI RAG",
@@ -1475,7 +1615,8 @@
       "starsNumeric": 2100,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG"
+      "categoryGeorgian": "მეხსიერება და RAG",
+      "descriptionEn": "Web Crawling and RAG Capabilities for AI Agents and AI Coding Assistants"
     },
     {
       "name": "Prism MCP",
@@ -1485,7 +1626,8 @@
       "starsNumeric": 129,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG"
+      "categoryGeorgian": "მეხსიერება და RAG",
+      "descriptionEn": "The Mind Palace for AI Agents - HIPAA-hardened Cognitive Architecture with on-device LLM (prism-coder:7b), Hebbian learning, ACT-R spreading activation, adversarial evaluation, persistent memory, multi-agent Hivemind and visual dashboard. Zero API keys required."
     },
     {
       "name": "Ollama",
@@ -1495,7 +1637,8 @@
       "starsNumeric": 169000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
     },
     {
       "name": "Transformers",
@@ -1505,7 +1648,8 @@
       "starsNumeric": 159000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. "
     },
     {
       "name": "ComfyUI",
@@ -1515,7 +1659,8 @@
       "starsNumeric": 109000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface."
     },
     {
       "name": "llama.cpp",
@@ -1525,7 +1670,8 @@
       "starsNumeric": 106000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "LLM inference in C/C++"
     },
     {
       "name": "vLLM",
@@ -1535,7 +1681,8 @@
       "starsNumeric": 77000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "A high-throughput and memory-efficient inference and serving engine for LLMs"
     },
     {
       "name": "Stable Diffusion",
@@ -1545,7 +1692,8 @@
       "starsNumeric": 72000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "A latent text-to-image diffusion model"
     },
     {
       "name": "Unsloth",
@@ -1555,7 +1703,8 @@
       "starsNumeric": 62000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "Web UI for training and running open models like Gemma 4, Qwen3.5, DeepSeek, gpt-oss locally."
     },
     {
       "name": "whisper.cpp",
@@ -1565,7 +1714,8 @@
       "starsNumeric": 48000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "Port of OpenAI's Whisper model in C/C++"
     },
     {
       "name": "LocalAI",
@@ -1575,7 +1725,8 @@
       "starsNumeric": 45000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required."
     },
     {
       "name": "Coqui TTS",
@@ -1585,7 +1736,8 @@
       "starsNumeric": 45000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and production"
     },
     {
       "name": "Bark",
@@ -1595,7 +1747,8 @@
       "starsNumeric": 39000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "🔊 Text-Prompted Generative Audio Model"
     },
     {
       "name": "Diffusers",
@@ -1605,7 +1758,8 @@
       "starsNumeric": 33000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch."
     },
     {
       "name": "SGLang",
@@ -1615,7 +1769,8 @@
       "starsNumeric": 26000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "SGLang is a high-performance serving framework for large language models and multimodal models."
     },
     {
       "name": "FLUX",
@@ -1625,7 +1780,8 @@
       "starsNumeric": 25000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "Official inference repo for FLUX.1 models"
     },
     {
       "name": "Google Workspace CLI",
@@ -1635,7 +1791,8 @@
       "starsNumeric": 25000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills."
     },
     {
       "name": "toon",
@@ -1645,7 +1802,8 @@
       "starsNumeric": 23000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "🎒 Token-Oriented Object Notation (TOON) – Compact, human-readable, schema-aware JSON for LLM prompts. Spec, benchmarks, TypeScript SDK."
     },
     {
       "name": "Kronos",
@@ -1655,7 +1813,8 @@
       "starsNumeric": 20000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "Kronos: A Foundation Model for the Language of Financial Markets"
     },
     {
       "name": "VoxCPM",
@@ -1665,7 +1824,8 @@
       "starsNumeric": 15000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning"
     },
     {
       "name": "HunyuanVideo",
@@ -1675,7 +1835,8 @@
       "starsNumeric": 12000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "HunyuanVideo: A Systematic Framework For Large Video Generation Model"
     },
     {
       "name": "NotebookLM Python",
@@ -1685,7 +1846,8 @@
       "starsNumeric": 11000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "Unofficial Python API and agentic skill for Google NotebookLM. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw."
     },
     {
       "name": "Hyperframes",
@@ -1695,7 +1857,8 @@
       "starsNumeric": 11000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "Write HTML. Render video. Built for agents."
     },
     {
       "name": "LM Studio",
@@ -1705,7 +1868,8 @@
       "starsNumeric": 4700,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "LM Studio CLI"
     },
     {
       "name": "RealtimeTTS",
@@ -1715,7 +1879,8 @@
       "starsNumeric": 3900,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "Converts text to speech in realtime"
     },
     {
       "name": "video-use",
@@ -1725,7 +1890,8 @@
       "starsNumeric": 3800,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები"
+      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "descriptionEn": "Edit videos with coding agents"
     },
     {
       "name": "Build Your Own X",
@@ -1735,7 +1901,8 @@
       "starsNumeric": 493000,
       "categorySlug": "resources",
       "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები"
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "Master programming by recreating your favorite technologies from scratch."
     },
     {
       "name": "Public APIs",
@@ -1745,7 +1912,8 @@
       "starsNumeric": 426000,
       "categorySlug": "resources",
       "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები"
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "A collective list of free APIs"
     },
     {
       "name": "System Prompts Collection",
@@ -1755,7 +1923,8 @@
       "starsNumeric": 135000,
       "categorySlug": "resources",
       "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები"
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models"
     },
     {
       "name": "LLMs from Scratch",
@@ -1765,7 +1934,8 @@
       "starsNumeric": 91000,
       "categorySlug": "resources",
       "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები"
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step"
     },
     {
       "name": "AutoResearch",
@@ -1775,7 +1945,8 @@
       "starsNumeric": 76000,
       "categorySlug": "resources",
       "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები"
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "AI agents running research on single-GPU nanochat training automatically"
     },
     {
       "name": "DESIGN.md",
@@ -1785,7 +1956,8 @@
       "starsNumeric": 6300,
       "categorySlug": "resources",
       "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები"
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system."
     },
     {
       "name": "Awesome DESIGN.md",
@@ -1795,7 +1967,8 @@
       "starsNumeric": 64000,
       "categorySlug": "resources",
       "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები"
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "A collection of DESIGN.md files inspired by popular brand design systems. Drop one into your project and let coding agents generate a matching UI."
     },
     {
       "name": "Anthropic Cookbook",
@@ -1805,7 +1978,8 @@
       "starsNumeric": 41000,
       "categorySlug": "resources",
       "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები"
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude."
     },
     {
       "name": "Awesome Claude Code",
@@ -1815,7 +1989,8 @@
       "starsNumeric": 40000,
       "categorySlug": "resources",
       "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები"
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "A curated list of awesome skills, hooks, slash-commands, agent orchestrators, applications, and plugins for Claude Code by Anthropic"
     },
     {
       "name": "Claude × HyperFrames Guide",
@@ -1825,7 +2000,8 @@
       "starsNumeric": null,
       "categorySlug": "resources",
       "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები"
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "Write HTML. Render video. Built for agents."
     },
     {
       "name": "LLM-Maintained Wiki (Karpathy)",
@@ -1835,7 +2011,8 @@
       "starsNumeric": null,
       "categorySlug": "resources",
       "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები"
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": null
     },
     {
       "name": "Claude How-To",
@@ -1845,7 +2022,8 @@
       "starsNumeric": 28000,
       "categorySlug": "resources",
       "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები"
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value."
     },
     {
       "name": "Free LLM API Resources",
@@ -1855,7 +2033,8 @@
       "starsNumeric": 19000,
       "categorySlug": "resources",
       "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები"
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "A list of free LLM inference resources accessible via API."
     }
   ]
 }

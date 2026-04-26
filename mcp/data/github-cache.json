@@ -1,0 +1,710 @@
+{
+  "ultraworkers/claw-code": {
+    "description": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
+    "fetchedAt": "2026-04-26T20:46:49.516Z"
+  },
+  "anomalyco/opencode": {
+    "description": "The open source coding agent.",
+    "fetchedAt": "2026-04-26T20:46:50.008Z"
+  },
+  "google-gemini/gemini-cli": {
+    "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+    "fetchedAt": "2026-04-26T20:46:50.471Z"
+  },
+  "openai/codex": {
+    "description": "Lightweight coding agent that runs in your terminal",
+    "fetchedAt": "2026-04-26T20:46:50.925Z"
+  },
+  "All-Hands-AI/OpenHands": {
+    "description": "🙌 OpenHands: AI-Driven Development",
+    "fetchedAt": "2026-04-26T20:46:51.790Z"
+  },
+  "cline/cline": {
+    "description": "Autonomous coding agent right in your IDE, capable of creating/editing files, executing commands, using the browser, and more with your permission every step of the way.",
+    "fetchedAt": "2026-04-26T20:46:52.433Z"
+  },
+  "code-yeongyu/oh-my-openagent": {
+    "description": "omo; the best agent harness - previously oh-my-opencode",
+    "fetchedAt": "2026-04-26T20:46:52.801Z"
+  },
+  "Aider-AI/aider": {
+    "description": "aider is AI pair programming in your terminal",
+    "fetchedAt": "2026-04-26T20:46:53.279Z"
+  },
+  "aaif-goose/goose": {
+    "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+    "fetchedAt": "2026-04-26T20:46:53.735Z"
+  },
+  "TabbyML/tabby": {
+    "description": "Self-hosted AI coding assistant",
+    "fetchedAt": "2026-04-26T20:46:54.184Z"
+  },
+  "continuedev/continue": {
+    "description": "⏩ Source-controlled AI checks, enforceable in CI. Powered by the open-source Continue CLI",
+    "fetchedAt": "2026-04-26T20:46:54.844Z"
+  },
+  "voideditor/void": {
+    "description": null,
+    "fetchedAt": "2026-04-26T20:46:55.307Z"
+  },
+  "abhigyanpatwari/GitNexus": {
+    "description": "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration",
+    "fetchedAt": "2026-04-26T20:46:55.700Z"
+  },
+  "eyaltoledano/claude-task-master": {
+    "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
+    "fetchedAt": "2026-04-26T20:46:56.284Z"
+  },
+  "Gitlawb/openclaude": {
+    "description": "Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models, and 200+ models via OpenAI-compatible APIs.",
+    "fetchedAt": "2026-04-26T20:46:56.736Z"
+  },
+  "QwenLM/qwen-code": {
+    "description": "An open-source AI agent that lives in your terminal.",
+    "fetchedAt": "2026-04-26T20:46:57.162Z"
+  },
+  "RooCodeInc/Roo-Code": {
+    "description": "Roo Code gives you a whole dev team of AI agents in your code editor.",
+    "fetchedAt": "2026-04-26T20:46:57.625Z"
+  },
+  "kilo-org/kilocode": {
+    "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+    "fetchedAt": "2026-04-26T20:46:58.102Z"
+  },
+  "openai/codex-plugin-cc": {
+    "description": "Use Codex from Claude Code to review code or delegate tasks.",
+    "fetchedAt": "2026-04-26T20:46:58.751Z"
+  },
+  "manaflow-ai/cmux": {
+    "description": "Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents",
+    "fetchedAt": "2026-04-26T20:46:59.272Z"
+  },
+  "Alishahryar1/free-claude-code": {
+    "description": "Use claude-code for free in the terminal, VSCode extension or via discord like openclaw",
+    "fetchedAt": "2026-04-26T20:46:59.690Z"
+  },
+  "huggingface/ml-intern": {
+    "description": "🤗 ml-intern: an open-source ML engineer that reads papers, trains models, and ships ML models",
+    "fetchedAt": "2026-04-26T20:47:00.159Z"
+  },
+  "vercel-labs/open-agents": {
+    "description": "An open source template for building cloud agents.",
+    "fetchedAt": "2026-04-26T20:47:00.667Z"
+  },
+  "obra/superpowers": {
+    "description": "An agentic skills framework & software development methodology that works.",
+    "fetchedAt": "2026-04-26T20:47:01.072Z"
+  },
+  "affaan-m/everything-claude-code": {
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "fetchedAt": "2026-04-26T20:47:01.475Z"
+  },
+  "github/spec-kit": {
+    "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+    "fetchedAt": "2026-04-26T20:47:01.955Z"
+  },
+  "forrestchang/andrej-karpathy-skills": {
+    "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+    "fetchedAt": "2026-04-26T20:47:02.407Z"
+  },
+  "nextlevelbuilder/ui-ux-pro-max-skill": {
+    "description": "An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms",
+    "fetchedAt": "2026-04-26T20:47:02.825Z"
+  },
+  "thedotmack/claude-mem": {
+    "description": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future sessions.",
+    "fetchedAt": "2026-04-26T20:47:03.222Z"
+  },
+  "gsd-build/get-shit-done": {
+    "description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
+    "fetchedAt": "2026-04-26T20:47:03.684Z"
+  },
+  "JuliusBrussee/caveman": {
+    "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+    "fetchedAt": "2026-04-26T20:47:04.067Z"
+  },
+  "santifer/career-ops": {
+    "description": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
+    "fetchedAt": "2026-04-26T20:47:04.476Z"
+  },
+  "safishamsi/graphify": {
+    "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, GitHub Copilot CLI, OpenClaw, Factory Droid, Trae, Google Antigravity). Turn any folder of code, docs, papers, images, or videos into a queryable knowledge graph",
+    "fetchedAt": "2026-04-26T20:47:04.876Z"
+  },
+  "ruvnet/claude-flow": {
+    "description": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features    enterprise-grade architecture, distributed swarm intelligence, RAG integration, and native Claude Code / Codex Integration",
+    "fetchedAt": "2026-04-26T20:47:07.326Z"
+  },
+  "yeachan-heo/oh-my-claudecode": {
+    "description": "Teams-first Multi-agent orchestration for Claude Code",
+    "fetchedAt": "2026-04-26T20:47:07.710Z"
+  },
+  "kepano/obsidian-skills": {
+    "description": "Agent skills for Obsidian. Teach your agent to use Markdown, Bases, JSON Canvas, and use the CLI.",
+    "fetchedAt": "2026-04-26T20:47:08.094Z"
+  },
+  "mvanhorn/last30days-skill": {
+    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+    "fetchedAt": "2026-04-26T20:47:08.487Z"
+  },
+  "addyosmani/agent-skills": {
+    "description": "Production-grade engineering skills for AI coding agents.",
+    "fetchedAt": "2026-04-26T20:47:08.875Z"
+  },
+  "anthropics/claude-plugins-official": {
+    "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+    "fetchedAt": "2026-04-26T20:47:09.559Z"
+  },
+  "agentskills/agentskills": {
+    "description": "Specification and documentation for Agent Skills",
+    "fetchedAt": "2026-04-26T20:47:09.990Z"
+  },
+  "Donchitos/Claude-Code-Game-Studios": {
+    "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+    "fetchedAt": "2026-04-26T20:47:10.423Z"
+  },
+  "czlonkowski/n8n-skills": {
+    "description": "n8n skillset for Claude Code to build flawless n8n workflows",
+    "fetchedAt": "2026-04-26T20:47:10.822Z"
+  },
+  "Cocoon-AI/architecture-diagram-generator": {
+    "description": "Generate beautiful dark-themed system architecture diagrams as standalone HTML/SVG files. Works as a Claude AI skill.",
+    "fetchedAt": "2026-04-26T20:47:11.260Z"
+  },
+  "remotion-dev/skills": {
+    "description": "Agent Skills",
+    "fetchedAt": "2026-04-26T20:47:11.723Z"
+  },
+  "chopratejas/headroom": {
+    "description": "The Context Optimization Layer for LLM Applications",
+    "fetchedAt": "2026-04-26T20:47:12.122Z"
+  },
+  "tornikebolokadze1-cyber/claude-code-setup": {
+    "description": "Production-grade Claude Code setup: 17 rules, 7 hooks, 7 templates, /setup command. One install — security, testing, CI/CD, and safety guardrails from day one.",
+    "fetchedAt": "2026-04-26T20:47:12.510Z"
+  },
+  "erekle1/georgian-payments-skills": {
+    "description": null,
+    "fetchedAt": "2026-04-26T20:47:12.897Z"
+  },
+  "modelcontextprotocol/servers": {
+    "description": "Model Context Protocol Servers",
+    "fetchedAt": "2026-04-26T20:47:13.352Z"
+  },
+  "upstash/context7": {
+    "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+    "fetchedAt": "2026-04-26T20:47:13.812Z"
+  },
+  "github/github-mcp-server": {
+    "description": "GitHub's official MCP Server",
+    "fetchedAt": "2026-04-26T20:47:14.294Z"
+  },
+  "jlowin/fastmcp": {
+    "description": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+    "fetchedAt": "2026-04-26T20:47:15.139Z"
+  },
+  "oraios/serena": {
+    "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+    "fetchedAt": "2026-04-26T20:47:15.553Z"
+  },
+  "czlonkowski/n8n-mcp": {
+    "description": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you ",
+    "fetchedAt": "2026-04-26T20:47:15.988Z"
+  },
+  "GLips/Figma-Context-MCP": {
+    "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
+    "fetchedAt": "2026-04-26T20:47:16.369Z"
+  },
+  "tirth8205/code-review-graph": {
+    "description": "Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8× fewer tokens on reviews and up to 49× on daily coding tasks.",
+    "fetchedAt": "2026-04-26T20:47:16.761Z"
+  },
+  "exa-labs/exa-mcp-server": {
+    "description": "Exa MCP for web search and web crawling!",
+    "fetchedAt": "2026-04-26T20:47:17.225Z"
+  },
+  "makenotion/notion-mcp-server": {
+    "description": "Official Notion MCP Server",
+    "fetchedAt": "2026-04-26T20:47:17.680Z"
+  },
+  "jgraph/drawio-mcp": {
+    "description": null,
+    "fetchedAt": "2026-04-26T20:47:18.093Z"
+  },
+  "supabase-community/supabase-mcp": {
+    "description": "Connect Supabase to your AI assistants",
+    "fetchedAt": "2026-04-26T20:47:18.543Z"
+  },
+  "zcaceres/markdownify-mcp": {
+    "description": "A Model Context Protocol server for converting almost anything to Markdown",
+    "fetchedAt": "2026-04-26T20:47:18.941Z"
+  },
+  "perplexityai/modelcontextprotocol": {
+    "description": "The official MCP server implementation for the Perplexity API Platform",
+    "fetchedAt": "2026-04-26T20:47:19.415Z"
+  },
+  "louislva/claude-peers-mcp": {
+    "description": "Allow all your Claude Codes to message each other ad-hoc!",
+    "fetchedAt": "2026-04-26T20:47:19.808Z"
+  },
+  "tavily-ai/tavily-mcp": {
+    "description": "Production ready MCP server with real-time search, extract, map & crawl.",
+    "fetchedAt": "2026-04-26T20:47:20.276Z"
+  },
+  "stickerdaniel/linkedin-mcp-server": {
+    "description": "Open-source MCP server for LinkedIn. Give Claude and any MCP-compatible AI assistant access to profiles, companies, jobs, and messages.",
+    "fetchedAt": "2026-04-26T20:47:20.754Z"
+  },
+  "stripe/agent-toolkit": {
+    "description": "One-stop shop for building AI-powered products and businesses with Stripe.",
+    "fetchedAt": "2026-04-26T20:47:21.650Z"
+  },
+  "apify/apify-mcp-server": {
+    "description": "The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, or any other website using thousands of ready-made scrapers, crawlers, and automation tools available on the Apify Store.",
+    "fetchedAt": "2026-04-26T20:47:22.139Z"
+  },
+  "microsoft/powerbi-modeling-mcp": {
+    "description": "The Power BI Modeling MCP Server, brings Power BI semantic modeling capabilities to your AI agents.",
+    "fetchedAt": "2026-04-26T20:47:22.673Z"
+  },
+  "getsentry/sentry-mcp": {
+    "description": "An MCP server for interacting with Sentry via LLMs.",
+    "fetchedAt": "2026-04-26T20:47:23.193Z"
+  },
+  "e2b-dev/mcp-server": {
+    "description": "Giving Claude ability to run code with E2B via MCP (Model Context Protocol)",
+    "fetchedAt": "2026-04-26T20:47:23.665Z"
+  },
+  "metricool/mcp-metricool": {
+    "description": "This is a Multi-Agent Collaboration Protocol (MCP) server for interacting with the Metricool API. It allows AI agents to access and analyze social media metrics and campaign data from your Metricool account.",
+    "fetchedAt": "2026-04-26T20:47:24.113Z"
+  },
+  "mendableai/firecrawl": {
+    "description": "🔥 The API to search, scrape, and interact with the web for AI",
+    "fetchedAt": "2026-04-26T20:47:24.811Z"
+  },
+  "browser-use/browser-use": {
+    "description": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
+    "fetchedAt": "2026-04-26T20:47:25.262Z"
+  },
+  "unclecode/crawl4ai": {
+    "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN",
+    "fetchedAt": "2026-04-26T20:47:25.648Z"
+  },
+  "microsoft/playwright-mcp": {
+    "description": "Playwright MCP server",
+    "fetchedAt": "2026-04-26T20:47:26.163Z"
+  },
+  "vercel-labs/agent-browser": {
+    "description": "Browser automation CLI for AI agents",
+    "fetchedAt": "2026-04-26T20:47:26.677Z"
+  },
+  "lightpanda-io/browser": {
+    "description": "Lightpanda: the headless browser designed for AI and automation",
+    "fetchedAt": "2026-04-26T20:47:27.094Z"
+  },
+  "browserbase/stagehand": {
+    "description": "The SDK For Browser Agents",
+    "fetchedAt": "2026-04-26T20:47:27.575Z"
+  },
+  "Panniantong/Agent-Reach": {
+    "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+    "fetchedAt": "2026-04-26T20:47:27.947Z"
+  },
+  "jackwener/opencli": {
+    "description": "Make Any Website & Tool Your CLI. A universal CLI Hub and AI-native runtime. Transform any website, Electron app, or local binary into a standardized command-line interface. Built for AI Agents to discover, learn, and execute tools seamlessly via a unified AGENT.md integration.",
+    "fetchedAt": "2026-04-26T20:47:28.341Z"
+  },
+  "microsoft/playwright-cli": {
+    "description": "CLI for common Playwright actions. Record and generate Playwright code, inspect selectors and take screenshots.",
+    "fetchedAt": "2026-04-26T20:47:28.838Z"
+  },
+  "firecrawl/firecrawl-mcp-server": {
+    "description": "🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients.",
+    "fetchedAt": "2026-04-26T20:47:29.266Z"
+  },
+  "browser-use/browser-harness": {
+    "description": "Browser Harness | Self-healing harness that enables LLMs to complete any task.",
+    "fetchedAt": "2026-04-26T20:47:29.749Z"
+  },
+  "cloudflare/mcp-server-cloudflare": {
+    "description": null,
+    "fetchedAt": "2026-04-26T20:47:30.187Z"
+  },
+  "brightdata/brightdata-mcp": {
+    "description": "A powerful Model Context Protocol (MCP) server that provides an all-in-one solution for public web access.",
+    "fetchedAt": "2026-04-26T20:47:30.647Z"
+  },
+  "fkonovalov/rdrr": {
+    "description": "Convert any URL to clean markdown for AI agents.",
+    "fetchedAt": "2026-04-26T20:47:31.050Z"
+  },
+  "langchain-ai/langchain": {
+    "description": "The agent engineering platform",
+    "fetchedAt": "2026-04-26T20:47:31.588Z"
+  },
+  "nousresearch/hermes-agent": {
+    "description": "The agent that grows with you",
+    "fetchedAt": "2026-04-26T20:47:32.024Z"
+  },
+  "geekan/MetaGPT": {
+    "description": "🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming",
+    "fetchedAt": "2026-04-26T20:47:32.831Z"
+  },
+  "microsoft/autogen": {
+    "description": "A programming framework for agentic AI",
+    "fetchedAt": "2026-04-26T20:47:33.342Z"
+  },
+  "virattt/ai-hedge-fund": {
+    "description": "An AI Hedge Fund Team",
+    "fetchedAt": "2026-04-26T20:47:33.926Z"
+  },
+  "crewaiinc/crewai": {
+    "description": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
+    "fetchedAt": "2026-04-26T20:47:34.401Z"
+  },
+  "HKUDS/nanobot": {
+    "description": "\"🐈 nanobot: The Ultra-Lightweight Personal AI Agent\"",
+    "fetchedAt": "2026-04-26T20:47:35.017Z"
+  },
+  "agno-agi/agno": {
+    "description": "Build, run, manage agentic software at scale.",
+    "fetchedAt": "2026-04-26T20:47:35.670Z"
+  },
+  "stanfordnlp/dspy": {
+    "description": "DSPy: The framework for programming—not prompting—language models",
+    "fetchedAt": "2026-04-26T20:47:36.111Z"
+  },
+  "langchain-ai/langgraph": {
+    "description": "Build resilient language agents as graphs.",
+    "fetchedAt": "2026-04-26T20:47:36.565Z"
+  },
+  "microsoft/semantic-kernel": {
+    "description": "Integrate cutting-edge LLM technology quickly and easily into your apps",
+    "fetchedAt": "2026-04-26T20:47:37.073Z"
+  },
+  "huggingface/smolagents": {
+    "description": "🤗 smolagents: a barebones library for agents that think in code.",
+    "fetchedAt": "2026-04-26T20:47:37.554Z"
+  },
+  "openai/openai-agents-python": {
+    "description": "A lightweight, powerful framework for multi-agent workflows",
+    "fetchedAt": "2026-04-26T20:47:38.020Z"
+  },
+  "vercel/ai": {
+    "description": "The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents ",
+    "fetchedAt": "2026-04-26T20:47:38.500Z"
+  },
+  "mastra-ai/mastra": {
+    "description": "From the team behind Gatsby, Mastra is a framework for building AI-powered applications and agents with a modern TypeScript stack.",
+    "fetchedAt": "2026-04-26T20:47:38.937Z"
+  },
+  "openai/swarm": {
+    "description": "Educational framework exploring ergonomic, lightweight multi-agent orchestration. Managed by OpenAI Solution team.",
+    "fetchedAt": "2026-04-26T20:47:39.411Z"
+  },
+  "coleam00/Archon": {
+    "description": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.",
+    "fetchedAt": "2026-04-26T20:47:39.807Z"
+  },
+  "pydantic/pydantic-ai": {
+    "description": "AI Agent Framework, the Pydantic way",
+    "fetchedAt": "2026-04-26T20:47:40.499Z"
+  },
+  "alibaba/OpenSandbox": {
+    "description": "Secure, Fast, and Extensible Sandbox runtime for AI agents.",
+    "fetchedAt": "2026-04-26T20:47:40.957Z"
+  },
+  "HKUDS/OpenSpace": {
+    "description": "\"OpenSpace: Make Your Agents: Smarter, Low-Cost, Self-Evolving\" -- Community: https://open-space.cloud/",
+    "fetchedAt": "2026-04-26T20:47:41.390Z"
+  },
+  "openclaw/openclaw": {
+    "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+    "fetchedAt": "2026-04-26T20:47:41.827Z"
+  },
+  "n8n-io/n8n": {
+    "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+    "fetchedAt": "2026-04-26T20:47:42.481Z"
+  },
+  "langflow-ai/langflow": {
+    "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+    "fetchedAt": "2026-04-26T20:47:42.928Z"
+  },
+  "langgenius/dify": {
+    "description": "Production-ready platform for agentic workflow development.",
+    "fetchedAt": "2026-04-26T20:47:43.386Z"
+  },
+  "open-webui/open-webui": {
+    "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+    "fetchedAt": "2026-04-26T20:47:43.834Z"
+  },
+  "nomic-ai/gpt4all": {
+    "description": "GPT4All: Run Local LLMs on Any Device. Open-source and available for commercial use.",
+    "fetchedAt": "2026-04-26T20:47:44.302Z"
+  },
+  "lobehub/lobe-chat": {
+    "description": "The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you. We are taking agent harness to the next level — enabling multi-agent collaboration, effortless agent team design, and introducing agents as the unit of work interaction.",
+    "fetchedAt": "2026-04-26T20:47:45.122Z"
+  },
+  "Mintplex-Labs/anything-llm": {
+    "description": "The all-in-one AI productivity accelerator. On device and privacy first with no annoying setup or configuration.",
+    "fetchedAt": "2026-04-26T20:47:45.530Z"
+  },
+  "paperclipai/paperclip": {
+    "description": "Open-source orchestration for zero-human companies",
+    "fetchedAt": "2026-04-26T20:47:45.947Z"
+  },
+  "666ghj/MiroFish": {
+    "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
+    "fetchedAt": "2026-04-26T20:47:46.333Z"
+  },
+  "FlowiseAI/Flowise": {
+    "description": "Build AI Agents, Visually",
+    "fetchedAt": "2026-04-26T20:47:46.818Z"
+  },
+  "janhq/jan": {
+    "description": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
+    "fetchedAt": "2026-04-26T20:47:47.293Z"
+  },
+  "danny-avila/LibreChat": {
+    "description": "Enhanced ChatGPT Clone: Features Agents, MCP, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active.",
+    "fetchedAt": "2026-04-26T20:47:47.684Z"
+  },
+  "khoj-ai/khoj": {
+    "description": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.",
+    "fetchedAt": "2026-04-26T20:47:48.157Z"
+  },
+  "ItzCrazyKns/Perplexica": {
+    "description": "Vane is an AI-powered answering engine.",
+    "fetchedAt": "2026-04-26T20:47:48.810Z"
+  },
+  "activepieces/activepieces": {
+    "description": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+    "fetchedAt": "2026-04-26T20:47:49.246Z"
+  },
+  "HKUDS/DeepTutor": {
+    "description": "\"DeepTutor: Agent-Native Personalized Learning Assistant\"",
+    "fetchedAt": "2026-04-26T20:47:49.698Z"
+  },
+  "multica-ai/multica": {
+    "description": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
+    "fetchedAt": "2026-04-26T20:47:50.327Z"
+  },
+  "Fincept-Corporation/FinceptTerminal": {
+    "description": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment.",
+    "fetchedAt": "2026-04-26T20:47:50.777Z"
+  },
+  "rowboatlabs/rowboat": {
+    "description": "Open-source AI coworker, with memory",
+    "fetchedAt": "2026-04-26T20:47:51.237Z"
+  },
+  "getcompanion-ai/feynman": {
+    "description": null,
+    "fetchedAt": "2026-04-26T20:47:51.882Z"
+  },
+  "cloudflare/agentic-inbox": {
+    "description": "A self-hosted email client with an AI agent, running entirely on Cloudflare Workers",
+    "fetchedAt": "2026-04-26T20:47:52.363Z"
+  },
+  "infiniflow/ragflow": {
+    "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+    "fetchedAt": "2026-04-26T20:47:52.798Z"
+  },
+  "mem0ai/mem0": {
+    "description": "Universal memory layer for AI Agents",
+    "fetchedAt": "2026-04-26T20:47:53.252Z"
+  },
+  "milla-jovovich/mempalace": {
+    "description": "The best-benchmarked open-source AI memory system. And it's free.",
+    "fetchedAt": "2026-04-26T20:47:54.043Z"
+  },
+  "run-llama/llama_index": {
+    "description": "LlamaIndex is the leading document agent and OCR platform",
+    "fetchedAt": "2026-04-26T20:47:54.670Z"
+  },
+  "milvus-io/milvus": {
+    "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
+    "fetchedAt": "2026-04-26T20:47:55.119Z"
+  },
+  "hkuds/lightrag": {
+    "description": "[EMNLP2025] \"LightRAG: Simple and Fast Retrieval-Augmented Generation\"",
+    "fetchedAt": "2026-04-26T20:47:55.557Z"
+  },
+  "qdrant/qdrant": {
+    "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/",
+    "fetchedAt": "2026-04-26T20:47:56.040Z"
+  },
+  "chroma-core/chroma": {
+    "description": "Data infrastructure for AI",
+    "fetchedAt": "2026-04-26T20:47:56.525Z"
+  },
+  "getzep/graphiti": {
+    "description": "Build Real-Time Knowledge Graphs for AI Agents",
+    "fetchedAt": "2026-04-26T20:47:57.081Z"
+  },
+  "letta-ai/letta": {
+    "description": "Letta is the platform for building stateful agents: AI with advanced memory that can learn and self-improve over time.",
+    "fetchedAt": "2026-04-26T20:47:57.508Z"
+  },
+  "HKUDS/RAG-Anything": {
+    "description": "\"RAG-Anything: All-in-One RAG Framework\"",
+    "fetchedAt": "2026-04-26T20:47:58.182Z"
+  },
+  "garrytan/gbrain": {
+    "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain",
+    "fetchedAt": "2026-04-26T20:47:58.573Z"
+  },
+  "vectorize-io/hindsight": {
+    "description": "Hindsight: Agent Memory That  Learns",
+    "fetchedAt": "2026-04-26T20:47:59.056Z"
+  },
+  "coleam00/mcp-crawl4ai-rag": {
+    "description": "Web Crawling and RAG Capabilities for AI Agents and AI Coding Assistants",
+    "fetchedAt": "2026-04-26T20:47:59.451Z"
+  },
+  "dcostenco/prism-mcp": {
+    "description": "The Mind Palace for AI Agents - HIPAA-hardened Cognitive Architecture with on-device LLM (prism-coder:7b), Hebbian learning, ACT-R spreading activation, adversarial evaluation, persistent memory, multi-agent Hivemind and visual dashboard. Zero API keys required.",
+    "fetchedAt": "2026-04-26T20:47:59.861Z"
+  },
+  "ollama/ollama": {
+    "description": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+    "fetchedAt": "2026-04-26T20:48:00.319Z"
+  },
+  "huggingface/transformers": {
+    "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+    "fetchedAt": "2026-04-26T20:48:00.814Z"
+  },
+  "comfy-org/ComfyUI": {
+    "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+    "fetchedAt": "2026-04-26T20:48:01.288Z"
+  },
+  "ggml-org/llama.cpp": {
+    "description": "LLM inference in C/C++",
+    "fetchedAt": "2026-04-26T20:48:01.725Z"
+  },
+  "vllm-project/vllm": {
+    "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+    "fetchedAt": "2026-04-26T20:48:02.197Z"
+  },
+  "CompVis/stable-diffusion": {
+    "description": "A latent text-to-image diffusion model",
+    "fetchedAt": "2026-04-26T20:48:02.836Z"
+  },
+  "unslothai/unsloth": {
+    "description": "Web UI for training and running open models like Gemma 4, Qwen3.5, DeepSeek, gpt-oss locally.",
+    "fetchedAt": "2026-04-26T20:48:03.308Z"
+  },
+  "ggerganov/whisper.cpp": {
+    "description": "Port of OpenAI's Whisper model in C/C++",
+    "fetchedAt": "2026-04-26T20:48:04.135Z"
+  },
+  "mudler/LocalAI": {
+    "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+    "fetchedAt": "2026-04-26T20:48:04.724Z"
+  },
+  "coqui-ai/TTS": {
+    "description": "🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and production",
+    "fetchedAt": "2026-04-26T20:48:05.372Z"
+  },
+  "suno-ai/bark": {
+    "description": "🔊 Text-Prompted Generative Audio Model",
+    "fetchedAt": "2026-04-26T20:48:05.851Z"
+  },
+  "huggingface/diffusers": {
+    "description": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch.",
+    "fetchedAt": "2026-04-26T20:48:06.344Z"
+  },
+  "sgl-project/sglang": {
+    "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
+    "fetchedAt": "2026-04-26T20:48:06.789Z"
+  },
+  "black-forest-labs/flux": {
+    "description": "Official inference repo for FLUX.1 models",
+    "fetchedAt": "2026-04-26T20:48:07.414Z"
+  },
+  "googleworkspace/cli": {
+    "description": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
+    "fetchedAt": "2026-04-26T20:48:07.889Z"
+  },
+  "toon-format/toon": {
+    "description": "🎒 Token-Oriented Object Notation (TOON) – Compact, human-readable, schema-aware JSON for LLM prompts. Spec, benchmarks, TypeScript SDK.",
+    "fetchedAt": "2026-04-26T20:48:08.323Z"
+  },
+  "shiyu-coder/Kronos": {
+    "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+    "fetchedAt": "2026-04-26T20:48:08.711Z"
+  },
+  "OpenBMB/VoxCPM": {
+    "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
+    "fetchedAt": "2026-04-26T20:48:09.152Z"
+  },
+  "Tencent-Hunyuan/HunyuanVideo": {
+    "description": "HunyuanVideo: A Systematic Framework For Large Video Generation Model",
+    "fetchedAt": "2026-04-26T20:48:09.628Z"
+  },
+  "teng-lin/notebooklm-py": {
+    "description": "Unofficial Python API and agentic skill for Google NotebookLM. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.",
+    "fetchedAt": "2026-04-26T20:48:10.017Z"
+  },
+  "heygen-com/hyperframes": {
+    "description": "Write HTML. Render video. Built for agents.",
+    "fetchedAt": "2026-04-26T20:48:10.474Z"
+  },
+  "lmstudio-ai/lms": {
+    "description": "LM Studio CLI",
+    "fetchedAt": "2026-04-26T20:48:10.918Z"
+  },
+  "KoljaB/RealtimeTTS": {
+    "description": "Converts text to speech in realtime",
+    "fetchedAt": "2026-04-26T20:48:11.313Z"
+  },
+  "browser-use/video-use": {
+    "description": "Edit videos with coding agents",
+    "fetchedAt": "2026-04-26T20:48:11.783Z"
+  },
+  "codecrafters-io/build-your-own-x": {
+    "description": "Master programming by recreating your favorite technologies from scratch.",
+    "fetchedAt": "2026-04-26T20:48:12.253Z"
+  },
+  "public-apis/public-apis": {
+    "description": "A collective list of free APIs",
+    "fetchedAt": "2026-04-26T20:48:12.734Z"
+  },
+  "x1xhlol/system-prompts-and-models-of-ai-tools": {
+    "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+    "fetchedAt": "2026-04-26T20:48:13.138Z"
+  },
+  "rasbt/LLMs-from-scratch": {
+    "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+    "fetchedAt": "2026-04-26T20:48:13.551Z"
+  },
+  "karpathy/autoresearch": {
+    "description": "AI agents running research on single-GPU nanochat training automatically",
+    "fetchedAt": "2026-04-26T20:48:13.954Z"
+  },
+  "google-labs-code/design.md": {
+    "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
+    "fetchedAt": "2026-04-26T20:48:14.432Z"
+  },
+  "VoltAgent/awesome-design-md": {
+    "description": "A collection of DESIGN.md files inspired by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
+    "fetchedAt": "2026-04-26T20:48:14.861Z"
+  },
+  "anthropics/anthropic-cookbook": {
+    "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
+    "fetchedAt": "2026-04-26T20:48:15.771Z"
+  },
+  "hesreallyhim/awesome-claude-code": {
+    "description": "A curated list of awesome skills, hooks, slash-commands, agent orchestrators, applications, and plugins for Claude Code by Anthropic",
+    "fetchedAt": "2026-04-26T20:48:16.160Z"
+  },
+  "luongnv89/claude-howto": {
+    "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+    "fetchedAt": "2026-04-26T20:48:16.521Z"
+  },
+  "cheahjs/free-llm-api-resources": {
+    "description": "A list of free LLM inference resources accessible via API.",
+    "fetchedAt": "2026-04-26T20:48:16.913Z"
+  }
+}

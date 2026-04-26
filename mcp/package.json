@@ -9,14 +9,23 @@
   "files": [
     "dist",
     "data",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build:data": "tsx scripts/build-data.ts",
     "build": "npm run build:data && tsup src/index.ts --format esm --target node20 --clean --shims",
     "dev": "tsx src/index.ts",
     "start": "node dist/index.js",
-    "prepublishOnly": "npm run build"
+    "smoke": "tsx scripts/smoke-test.ts",
+    "prepublishOnly": "npm run build && npm run smoke"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "bugs": {
+    "url": "https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia/issues"
   },
   "engines": {
     "node": ">=20"

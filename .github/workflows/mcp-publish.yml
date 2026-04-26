@@ -1,0 +1,77 @@
+name: MCP npm publish
+
+# Publish @aipulsegeorgia/mcp-server to npm whenever mcp/package.json is
+# updated on main. Idempotent — checks if the version already exists on
+# npm and skips re-publish when matched. Requires repository secret NPM_TOKEN.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'mcp/package.json'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+          cache: 'npm'
+          cache-dependency-path: 'mcp/package-lock.json'
+
+      - name: Install
+        working-directory: mcp
+        run: npm ci
+
+      - name: Build
+        working-directory: mcp
+        run: npm run build
+
+      - name: Smoke test
+        working-directory: mcp
+        run: npm run smoke
+
+      - name: Read version
+        id: pkg
+        working-directory: mcp
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          NAME=$(node -p "require('./package.json').name")
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "name=$NAME" >> "$GITHUB_OUTPUT"
+
+      - name: Check if already published
+        id: check
+        run: |
+          if npm view "${{ steps.pkg.outputs.name }}@${{ steps.pkg.outputs.version }}" version >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "${{ steps.pkg.outputs.name }}@${{ steps.pkg.outputs.version }} already on npm — skip."
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish
+        if: steps.check.outputs.exists == 'false'
+        working-directory: mcp
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Summary
+        run: |
+          echo "## MCP publish run" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Package: \`${{ steps.pkg.outputs.name }}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Version: \`${{ steps.pkg.outputs.version }}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Already published: \`${{ steps.check.outputs.exists }}\`" >> "$GITHUB_STEP_SUMMARY"

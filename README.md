@@ -21,6 +21,27 @@
 
 ---
 
+## ⚡ გამოიყენე Claude Code-ში / Cursor-ში — MCP Server-ით
+
+ეს მთელი კოლექცია ხელმისაწვდომია **MCP server-ად** — Claude Code-ის, Cursor-ის, Codex-ის ან ნებისმიერი MCP-თავსებადი client-ის შიგნიდან 179 რეპოს ეძებ ერთი ბრძანებით. ნაცვლად იმისა, რომ GitHub-ი გახსნა და README-ი დააქოქო, AI ასისტენტს ჰკითხე *"აი Pulse-ის კოლექციაში რა არის საუკეთესო RAG-ისთვის?"* — სწორ რეპოს ქართული აღწერით დაგიბრუნებს.
+
+**Install** — `~/.claude/claude_desktop_config.json` ან Cursor MCP settings-ში:
+
+```json
+{
+  "mcpServers": {
+    "aipulsegeorgia": {
+      "command": "npx",
+      "args": ["-y", "@aipulsegeorgia/mcp-server"]
+    }
+  }
+}
+```
+
+> *Available as an MCP server — query 179 curated AI repos directly from Claude Code, Cursor, or any MCP client.* Full docs: [`mcp/README.md`](./mcp/README.md) · Source: [`mcp/`](./mcp/)
+
+---
+
 ## 🤖 კოდინგ აგენტები
 
 > **Coding Agents & CLI IDEs** — დამოუკიდებელი AI კოდის წერის ხელსაწყოები ტერმინალში და რედაქტორში. თუ პროგრამისტი ხარ და გინდა AI-მ დაგეხმაროს კოდის წერაში, ტესტირებაში ან გამართვაში — ეს სექცია შენთვისაა.

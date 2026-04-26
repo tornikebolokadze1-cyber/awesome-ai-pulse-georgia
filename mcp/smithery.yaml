@@ -1,0 +1,35 @@
+# Smithery.ai registry configuration
+# https://smithery.ai/docs/config
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required: []
+    properties: {}
+    additionalProperties: false
+  commandFunction: |-
+    (config) => ({
+      command: "npx",
+      args: ["-y", "@aipulsegeorgia/mcp-server"]
+    })
+
+# Display metadata for the Smithery marketplace listing
+displayName: "AI Pulse Georgia"
+description: "Query 179+ curated AI repos (Claude Code plugins, agents, MCP integrations, RAG, frameworks) from inside Claude Code, Cursor, or any MCP client. Maintained by AI Pulse Georgia 🇬🇪."
+icon: "https://raw.githubusercontent.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia/main/assets/banner.svg"
+homepage: "https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia"
+license: "MIT"
+tags:
+  - awesome-list
+  - ai-tools
+  - claude
+  - cursor
+  - directory
+  - search
+
+exampleQuestions:
+  - "What's a good free Claude Code alternative?"
+  - "Show me the top 5 RAG repos in this collection."
+  - "Find browser automation tools."
+  - "List all MCP servers in the AI Pulse Georgia catalog."

@@ -1,0 +1,68 @@
+name: MCP data sync
+
+# Auto-rebuild mcp/data/repos.json whenever README.md or the parser changes.
+# If the parsed data differs from the committed snapshot, bump the patch
+# version and commit both back to main. The version bump triggers
+# mcp-publish.yml which publishes to npm.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - 'mcp/scripts/build-data.ts'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: 'mcp/package-lock.json'
+
+      - name: Install
+        working-directory: mcp
+        run: npm ci
+
+      - name: Rebuild data snapshot
+        working-directory: mcp
+        run: npm run build:data
+
+      - name: Detect changes
+        id: detect
+        run: |
+          if git diff --quiet -- mcp/data/repos.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No data changes — nothing to publish."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Data changed — will bump patch version and commit."
+          fi
+
+      - name: Bump patch version
+        if: steps.detect.outputs.changed == 'true'
+        working-directory: mcp
+        run: npm version patch --no-git-tag-version
+
+      - name: Commit and push
+        if: steps.detect.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add mcp/data/repos.json mcp/package.json mcp/package-lock.json
+          git commit -m "chore(mcp): sync data + bump patch version [skip ci]"
+          git push

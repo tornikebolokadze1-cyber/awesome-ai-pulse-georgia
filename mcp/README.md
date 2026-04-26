@@ -8,7 +8,7 @@ Instead of opening GitHub and scrolling through a README, ask your AI assistant:
 > "Show me the top 5 RAG repos in this collection."
 > "Find browser automation tools written in TypeScript."
 
-The MCP server returns curated results from AI Pulse Georgia's hand-maintained list — every repo is vetted, categorized, and described in Georgian + English.
+The MCP server returns curated results from AI Pulse Georgia's hand-maintained list — every repo is vetted, categorized, and described in **both English and Georgian**. Pass `lang: "en"` (default), `"ka"`, or `"both"` to any tool.
 
 ---
 
@@ -67,10 +67,12 @@ Then point your client at the absolute path of `dist/index.js` instead of `npx`.
 | Tool | Purpose | Example call |
 |------|---------|--------------|
 | `list_categories` | Show all 9 categories with repo counts | — |
-| `list_repos` | Browse by category, sort by stars or name, paginate | `{"category":"coding","limit":10}` |
-| `search_repos` | Full-text search across name + description | `{"query":"browser automation"}` |
-| `get_repo` | Fetch full details for a single repo | `{"name":"free-claude-code"}` |
-| `stats` | Total count + top 10 by stars | — |
+| `list_repos` | Browse by category, sort by stars or name, paginate | `{"category":"coding","limit":10,"lang":"en"}` |
+| `search_repos` | Full-text search across name + descriptions (EN+KA) | `{"query":"browser automation","lang":"both"}` |
+| `get_repo` | Fetch full details for a single repo | `{"name":"free-claude-code","lang":"en"}` |
+| `stats` | Total count, top 10 by stars, English-coverage rate | — |
+
+All tools accept `lang: "en" | "ka" | "both"` (default `"en"`). English descriptions come from each repo's GitHub `description` field; Georgian descriptions are AI Pulse Georgia's editorial reviews from the awesome-list README.
 
 ### Categories
 

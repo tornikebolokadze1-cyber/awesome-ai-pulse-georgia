@@ -14,7 +14,10 @@ export type Repo = {
   url: string;
   stars: string;
   starsNumeric: number | null;
+  /** Editorial Georgian description (rich, 3-5 sentences) — always present. */
   description: string;
+  /** Short English description from GitHub repo metadata. May be null for non-github URLs. */
+  descriptionEn: string | null;
   categorySlug: string;
   categoryEmoji: string;
   categoryGeorgian: string;

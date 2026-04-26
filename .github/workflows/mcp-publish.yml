@@ -37,6 +37,8 @@ jobs:
 
       - name: Build
         working-directory: mcp
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run build
 
       - name: Smoke test

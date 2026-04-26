@@ -2,9 +2,12 @@
  * Parses the root README.md and emits data/repos.json — the canonical
  * data source for the MCP server. Run on every README change.
  *
+ * Now also enriches each repo with `descriptionEn` from the GitHub repo's
+ * own metadata (cached in data/github-cache.json so we don't re-fetch).
+ *
  * Output: { generated, totalRepos, categories, repos }
  */
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -13,6 +16,7 @@ const __dirname = dirname(__filename);
 const ROOT = resolve(__dirname, "..", "..");
 const README = resolve(ROOT, "README.md");
 const OUT = resolve(__dirname, "..", "data", "repos.json");
+const GH_CACHE = resolve(__dirname, "..", "data", "github-cache.json");
 
 type Category = {
   slug: string;
@@ -39,12 +43,19 @@ type Repo = {
   stars: string;
   starsNumeric: number | null;
   description: string;
+  descriptionEn: string | null;
   categorySlug: string;
   categoryEmoji: string;
   categoryGeorgian: string;
 };
 
-/** "11K" → 11000, "187K" → 187000, "1.5M" → 1500000, "Guide" → null */
+type GhCacheEntry = {
+  description: string | null;
+  fetchedAt: string;
+};
+type GhCache = Record<string, GhCacheEntry>;
+
+/** "11K" → 11000, "187K" → 187000, "Guide" → null */
 function parseStars(raw: string): number | null {
   const trimmed = raw.trim();
   const m = trimmed.match(/^(\d+(?:\.\d+)?)\s*([KMkm])?$/);
@@ -56,7 +67,6 @@ function parseStars(raw: string): number | null {
   return Math.round(num);
 }
 
-/** Extract Georgian section heading: "## 🤖 კოდინგ აგენტები" → category */
 function parseHeading(line: string): Category | null {
   const m = line.match(/^##\s+(\p{Emoji_Presentation}|\p{Extended_Pictographic})\s*️?\s+(.+?)\s*$/u);
   if (!m) return null;
@@ -66,7 +76,6 @@ function parseHeading(line: string): Category | null {
   return { ...meta, georgian };
 }
 
-/** Extract repo from a markdown table row: | [name](url) | stars | description | */
 function parseRow(line: string): Pick<Repo, "name" | "url" | "stars" | "description"> | null {
   if (!line.startsWith("| [")) return null;
   const cells = line.split(" | ").map((c, i, arr) => {
@@ -85,10 +94,59 @@ function parseRow(line: string): Pick<Repo, "name" | "url" | "stars" | "descript
   };
 }
 
-function parse(): { repos: Repo[]; categories: Category[] } {
+/** Extract `owner/repo` from a github.com URL. Returns null for non-repo URLs. */
+function parseGithubRepo(url: string): string | null {
+  const m = url.match(/^https?:\/\/github\.com\/([^/]+)\/([^/?#]+)/i);
+  if (!m) return null;
+  const owner = m[1]!;
+  const repo = m[2]!.replace(/\.git$/, "");
+  // Skip non-repo URLs like /blob/, /tree/, /search, /sponsors etc.
+  if (owner === "" || repo === "" || ["search", "marketplace", "topics"].includes(owner.toLowerCase())) return null;
+  return `${owner}/${repo}`;
+}
+
+/** Fetch GitHub repo description via the public API. Uses GITHUB_TOKEN if set for higher rate limits. */
+async function fetchGhDescription(slug: string): Promise<string | null> {
+  const url = `https://api.github.com/repos/${slug}`;
+  const headers: Record<string, string> = {
+    Accept: "application/vnd.github+json",
+    "User-Agent": "aipulsegeorgia-mcp-build",
+  };
+  const token = process.env["GITHUB_TOKEN"];
+  if (token) headers.Authorization = `Bearer ${token}`;
+
+  try {
+    const res = await fetch(url, { headers });
+    if (!res.ok) {
+      console.warn(`  ! ${slug}: HTTP ${res.status}`);
+      return null;
+    }
+    const data = (await res.json()) as { description?: string | null };
+    return data.description ?? null;
+  } catch (err) {
+    console.warn(`  ! ${slug}: ${(err as Error).message}`);
+    return null;
+  }
+}
+
+function loadGhCache(): GhCache {
+  if (!existsSync(GH_CACHE)) return {};
+  try {
+    return JSON.parse(readFileSync(GH_CACHE, "utf-8")) as GhCache;
+  } catch {
+    return {};
+  }
+}
+
+function saveGhCache(cache: GhCache): void {
+  mkdirSync(dirname(GH_CACHE), { recursive: true });
+  writeFileSync(GH_CACHE, JSON.stringify(cache, null, 2) + "\n", "utf-8");
+}
+
+function parseReadme(): { repos: Omit<Repo, "descriptionEn">[]; categories: Category[] } {
   const text = readFileSync(README, "utf-8");
   const lines = text.split("\n");
-  const repos: Repo[] = [];
+  const repos: Omit<Repo, "descriptionEn">[] = [];
   const categories: Category[] = [];
   const seen = new Set<string>();
   let current: Category | null = null;
@@ -118,8 +176,45 @@ function parse(): { repos: Repo[]; categories: Category[] } {
   return { repos, categories };
 }
 
-function main(): void {
-  const { repos, categories } = parse();
+async function enrichWithEnglish(repos: Omit<Repo, "descriptionEn">[]): Promise<Repo[]> {
+  const cache = loadGhCache();
+  const skipFetch = process.env["SKIP_GH_FETCH"] === "1";
+  let fetched = 0;
+  let cached = 0;
+  let nonGithub = 0;
+
+  const enriched: Repo[] = [];
+  for (const repo of repos) {
+    const slug = parseGithubRepo(repo.url);
+
+    let descriptionEn: string | null = null;
+    if (!slug) {
+      nonGithub += 1;
+    } else if (cache[slug]) {
+      descriptionEn = cache[slug]!.description;
+      cached += 1;
+    } else if (skipFetch) {
+      descriptionEn = null;
+    } else {
+      descriptionEn = await fetchGhDescription(slug);
+      cache[slug] = { description: descriptionEn, fetchedAt: new Date().toISOString() };
+      fetched += 1;
+      // Be polite to the API
+      await new Promise((r) => setTimeout(r, 100));
+    }
+
+    enriched.push({ ...repo, descriptionEn });
+  }
+
+  if (fetched > 0) saveGhCache(cache);
+  // eslint-disable-next-line no-console
+  console.log(`  fetched=${fetched}, cached=${cached}, non-github=${nonGithub}`);
+  return enriched;
+}
+
+async function main(): Promise<void> {
+  const { repos: parsed, categories } = parseReadme();
+  const repos = await enrichWithEnglish(parsed);
   const output = {
     generated: new Date().toISOString(),
     totalRepos: repos.length,
@@ -131,8 +226,15 @@ function main(): void {
   };
   mkdirSync(dirname(OUT), { recursive: true });
   writeFileSync(OUT, JSON.stringify(output, null, 2) + "\n", "utf-8");
+  const withEn = repos.filter((r) => r.descriptionEn !== null).length;
   // eslint-disable-next-line no-console
-  console.log(`Wrote ${repos.length} repos across ${categories.length} categories → ${OUT}`);
+  console.log(
+    `Wrote ${repos.length} repos across ${categories.length} categories → ${OUT}\n` +
+      `  ${withEn}/${repos.length} have English descriptions (${Math.round((withEn / repos.length) * 100)}%)`,
+  );
 }
 
-main();
+main().catch((err: unknown) => {
+  console.error(err);
+  process.exit(1);
+});

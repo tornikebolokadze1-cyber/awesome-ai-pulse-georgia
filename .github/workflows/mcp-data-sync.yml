@@ -40,6 +40,8 @@ jobs:
 
       - name: Rebuild data snapshot
         working-directory: mcp
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run build:data
 
       - name: Detect changes

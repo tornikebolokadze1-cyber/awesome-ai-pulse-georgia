@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-27T13:40:13.497Z",
+  "generated": "2026-04-27T13:46:23.120Z",
   "totalRepos": 181,
   "categories": [
     {
@@ -7,7 +7,7 @@
       "emoji": "🤖",
       "english": "Coding Agents",
       "georgian": "კოდინგ აგენტები",
-      "count": 24
+      "count": 23
     },
     {
       "slug": "plugins",
@@ -35,14 +35,14 @@
       "emoji": "🧬",
       "english": "AI Agent Frameworks",
       "georgian": "AI აგენტების ფრეიმვორკები",
-      "count": 20
+      "count": 19
     },
     {
       "slug": "business",
       "emoji": "💼",
       "english": "Ready-Made AI Agents for Business",
       "georgian": "მზა AI აგენტები ბიზნესისთვის",
-      "count": 23
+      "count": 25
     },
     {
       "slug": "memory",
@@ -253,17 +253,6 @@
       "categoryEmoji": "🤖",
       "categoryGeorgian": "კოდინგ აგენტები",
       "descriptionEn": "Roo Code gives you a whole dev team of AI agents in your code editor."
-    },
-    {
-      "name": "NemoClaw",
-      "url": "https://github.com/NVIDIA/NemoClaw",
-      "stars": "20K",
-      "description": "NemoClaw — **NVIDIA-ის ოფიციალური** ღია კოდის ხელსაწყო, რომელიც OpenClaw-ს უფრო უსაფრთხოდ უშვებს NVIDIA OpenShell-ის გარემოში managed inference-ით. ანუ კორპორატიული პოლისი, audit log-ი, sandbox-ი და GPU-ის მართული წვდომა — ყველა OpenClaw-ის capability-ს, მაგრამ enterprise-დონის უსაფრთხოებით. TypeScript-ში, Apache 2.0 ლიცენზია, 2026 წლის მარტში გამოიცა. ორგანიზაციებისთვის, რომლებიც OpenClaw-ის ღირებულებას სურვილობენ თანამშრომლების მანქანებზე ჩაშვების გარეშე — datacenter-ში, IT-ის სრული კონტროლის ქვეშ.",
-      "starsNumeric": 20000,
-      "categorySlug": "coding",
-      "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები",
-      "descriptionEn": "Run OpenClaw more securely inside NVIDIA OpenShell with managed inference"
     },
     {
       "name": "Kilocode",
@@ -1025,17 +1014,6 @@
       "descriptionEn": "The agent engineering platform"
     },
     {
-      "name": "Hermes-agent",
-      "url": "https://github.com/nousresearch/hermes-agent",
-      "stars": "119K",
-      "description": "Hermes Agent არის Nous Research-ის Python AI აგენტი, რომელიც გამოცდილებიდან სწავლობს და სესიებს შორის მეხსიერებას ინახავს — „იზრდება\" მომხმარებელთან ერთად. Telegram-ში, Discord-ში, Slack-ში, WhatsApp-ში და ავტომატურ განრიგზე მუშაობს. 119K+ ვარსკვლავით ამ კოლექციის ერთ-ერთი ყველაზე სწრაფად მზარდი პროექტია. Nous Research ცნობილია მაღალხარისხიანი ღია LLM მოდელებით (Hermes სერია); ეს აგენტი იმავე ფილოსოფიას ახორციელებს — ძლიერი, ღია, სასაქონლო. (კატეგორია: ფრეიმვორკი — ის, რასაც დეველოპერი იყენებს თავისი აგენტის ასაშენებლად, არა მზა პროდუქტი როგორც OpenClaw/NemoClaw.)",
-      "starsNumeric": 119000,
-      "categorySlug": "frameworks",
-      "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
-      "descriptionEn": "The agent that grows with you"
-    },
-    {
       "name": "MetaGPT",
       "url": "https://github.com/geekan/MetaGPT",
       "stars": "67K",
@@ -1289,6 +1267,17 @@
       "descriptionEn": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)"
     },
     {
+      "name": "Hermes-agent",
+      "url": "https://github.com/nousresearch/hermes-agent",
+      "stars": "119K",
+      "description": "Hermes Agent არის Nous Research-ის Python AI აგენტი, რომელიც გამოცდილებიდან სწავლობს და სესიებს შორის მეხსიერებას ინახავს — „იზრდება\" მომხმარებელთან ერთად. Telegram-ში, Discord-ში, Slack-ში, WhatsApp-ში და ავტომატურ განრიგზე მუშაობს. 119K+ ვარსკვლავით ამ კოლექციის ერთ-ერთი ყველაზე სწრაფად მზარდი პროექტია. Nous Research ცნობილია მაღალხარისხიანი ღია LLM მოდელებით (Hermes სერია); ეს აგენტი იმავე ფილოსოფიას ახორციელებს — ძლიერი, ღია, multi-channel მზა აგენტი OpenClaw-ის ოჯახიდან.",
+      "starsNumeric": 119000,
+      "categorySlug": "business",
+      "categoryEmoji": "💼",
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "The agent that grows with you"
+    },
+    {
       "name": "gpt4all",
       "url": "https://github.com/nomic-ai/gpt4all",
       "stars": "77K",
@@ -1430,6 +1419,17 @@
       "categoryEmoji": "💼",
       "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
       "descriptionEn": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills."
+    },
+    {
+      "name": "NemoClaw",
+      "url": "https://github.com/NVIDIA/NemoClaw",
+      "stars": "20K",
+      "description": "NemoClaw — **NVIDIA-ის ოფიციალური** ღია კოდის ხელსაწყო, რომელიც OpenClaw-ს უფრო უსაფრთხოდ უშვებს NVIDIA OpenShell-ის გარემოში managed inference-ით. ანუ კორპორატიული პოლისი, audit log-ი, sandbox-ი და GPU-ის მართული წვდომა — ყველა OpenClaw-ის capability, მაგრამ enterprise-დონის უსაფრთხოებით. TypeScript-ში, Apache 2.0 ლიცენზია, 2026 წლის მარტში გამოიცა. ორგანიზაციებისთვის, რომლებიც OpenClaw-ის ღირებულებას სურვილობენ თანამშრომლების მანქანებზე ჩაშვების გარეშე — datacenter-ში, IT-ის სრული კონტროლის ქვეშ.",
+      "starsNumeric": 20000,
+      "categorySlug": "business",
+      "categoryEmoji": "💼",
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "Run OpenClaw more securely inside NVIDIA OpenShell with managed inference"
     },
     {
       "name": "Fincept Terminal",

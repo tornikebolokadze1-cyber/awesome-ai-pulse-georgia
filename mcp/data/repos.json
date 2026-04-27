@@ -1,13 +1,13 @@
 {
-  "generated": "2026-04-26T20:50:54.595Z",
-  "totalRepos": 179,
+  "generated": "2026-04-27T13:08:21.421Z",
+  "totalRepos": 181,
   "categories": [
     {
       "slug": "coding",
       "emoji": "🤖",
       "english": "Coding Agents",
       "georgian": "კოდინგ აგენტები",
-      "count": 23
+      "count": 24
     },
     {
       "slug": "plugins",
@@ -42,7 +42,7 @@
       "emoji": "💼",
       "english": "Ready-Made AI Agents for Business",
       "georgian": "მზა AI აგენტები ბიზნესისთვის",
-      "count": 22
+      "count": 23
     },
     {
       "slug": "memory",
@@ -253,6 +253,17 @@
       "categoryEmoji": "🤖",
       "categoryGeorgian": "კოდინგ აგენტები",
       "descriptionEn": "Roo Code gives you a whole dev team of AI agents in your code editor."
+    },
+    {
+      "name": "NemoClaw",
+      "url": "https://github.com/NVIDIA/NemoClaw",
+      "stars": "20K",
+      "description": "NemoClaw — **NVIDIA-ის ოფიციალური** ღია კოდის ხელსაწყო, რომელიც OpenClaw-ს უფრო უსაფრთხოდ უშვებს NVIDIA OpenShell-ის გარემოში managed inference-ით. ანუ კორპორატიული პოლისი, audit log-ი, sandbox-ი და GPU-ის მართული წვდომა — ყველა OpenClaw-ის capability-ს, მაგრამ enterprise-დონის უსაფრთხოებით. TypeScript-ში, Apache 2.0 ლიცენზია, 2026 წლის მარტში გამოიცა. ორგანიზაციებისთვის, რომლებიც OpenClaw-ის ღირებულებას სურვილობენ თანამშრომლების მანქანებზე ჩაშვების გარეშე — datacenter-ში, IT-ის სრული კონტროლის ქვეშ.",
+      "starsNumeric": 20000,
+      "categorySlug": "coding",
+      "categoryEmoji": "🤖",
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "Run OpenClaw more securely inside NVIDIA OpenShell with managed inference"
     },
     {
       "name": "Kilocode",
@@ -1452,6 +1463,17 @@
       "categoryEmoji": "💼",
       "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
       "descriptionEn": null
+    },
+    {
+      "name": "Mercury Agent",
+      "url": "https://github.com/cosmicstack-labs/mercury-agent",
+      "stars": "1.5K",
+      "description": "Mercury Agent — TypeScript-ის ღია კოდის პერსონალური AI აგენტი, რომელიც 24/7 ეშვება და CLI-ის ან Telegram-ის გავლით მუშაობს. „Soul-driven\" დიზაინით — აქვს დახვეწილი permission-hardened ხელსაწყოების სისტემა და ტოკენების budget-ი (ანუ ხარჯი არ გაგექცევა). რამდენიმე არხიდან ერთდროულად მისაწვდომი (CLI + Telegram bot ერთ instance-ზე). MIT ლიცენზია, 2026 წლის 20 აპრილს გამოიცა და სწრაფად გაიზარდა. იმათთვის, ვინც პერსონალურ AI თანაშემწეს ეძებს, რომელიც ნაცვლად იმისა რომ მუდმივად ბრაუზერში გადახვიდე, თავად მოგმართოს Telegram-ში მნიშვნელოვან მოვლენებზე.",
+      "starsNumeric": 1500,
+      "categorySlug": "business",
+      "categoryEmoji": "💼",
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI or Telegram."
     },
     {
       "name": "agentic-inbox",

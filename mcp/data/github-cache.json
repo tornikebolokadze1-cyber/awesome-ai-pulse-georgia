@@ -706,5 +706,13 @@
   "cheahjs/free-llm-api-resources": {
     "description": "A list of free LLM inference resources accessible via API.",
     "fetchedAt": "2026-04-26T20:48:16.913Z"
+  },
+  "NVIDIA/NemoClaw": {
+    "description": "Run OpenClaw more securely inside NVIDIA OpenShell with managed inference",
+    "fetchedAt": "2026-04-27T13:08:20.950Z"
+  },
+  "cosmicstack-labs/mercury-agent": {
+    "description": "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI or Telegram.",
+    "fetchedAt": "2026-04-27T13:08:21.319Z"
   }
 }

@@ -714,5 +714,13 @@
   "cosmicstack-labs/mercury-agent": {
     "description": "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI or Telegram.",
     "fetchedAt": "2026-04-27T13:08:21.319Z"
+  },
+  "AstrBotDevs/AstrBot": {
+    "description": "AI Agent Assistant that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨",
+    "fetchedAt": "2026-04-27T13:54:14.183Z"
+  },
+  "agentscope-ai/QwenPaw": {
+    "description": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities.",
+    "fetchedAt": "2026-04-27T13:54:14.499Z"
   }
 }

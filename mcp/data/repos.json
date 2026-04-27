@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-27T13:46:23.120Z",
-  "totalRepos": 181,
+  "generated": "2026-04-27T13:54:14.601Z",
+  "totalRepos": 183,
   "categories": [
     {
       "slug": "coding",
@@ -42,7 +42,7 @@
       "emoji": "💼",
       "english": "Ready-Made AI Agents for Business",
       "georgian": "მზა AI აგენტები ბიზნესისთვის",
-      "count": 25
+      "count": 27
     },
     {
       "slug": "memory",
@@ -1388,6 +1388,17 @@
       "descriptionEn": "Vane is an AI-powered answering engine."
     },
     {
+      "name": "AstrBot",
+      "url": "https://github.com/AstrBotDevs/AstrBot",
+      "stars": "30K",
+      "description": "AstrBot — Python-ის AI Agent Assistant, რომელიც თვითონ პოზიციონირდება როგორც **OpenClaw-ის ღია ალტერნატივა**. მრავალი IM პლატფორმის ნატივიური ინტეგრაცია (Telegram, Discord, QQ, WeChat, Lark, Slack), პლაგინების სისტემა, ფართო LLM provider მხარდაჭერა — ერთი instance-ით მთელი კომუნიკაციის ლანდშაფტი ერთიანდება. AGPL-3.0 ლიცენზია, 2022 წლიდან აქტიური, 30K+ ვარსკვლავი. ჩინური მსოფლიოს AI agent-ების ეკოსისტემიდან გადმოვიდა და ამჟამად ერთ-ერთი ყველაზე feature-complete OpenClaw-სტილის ხელსაწყოა.",
+      "starsNumeric": 30000,
+      "categorySlug": "business",
+      "categoryEmoji": "💼",
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "AI Agent Assistant that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
+    },
+    {
       "name": "Activepieces",
       "url": "https://github.com/activepieces/activepieces",
       "stars": "21K",
@@ -1430,6 +1441,17 @@
       "categoryEmoji": "💼",
       "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
       "descriptionEn": "Run OpenClaw more securely inside NVIDIA OpenShell with managed inference"
+    },
+    {
+      "name": "QwenPaw",
+      "url": "https://github.com/agentscope-ai/QwenPaw",
+      "stars": "16K",
+      "description": "QwenPaw — Alibaba-ს AgentScope გუნდის Python-ის პერსონალური AI ასისტენტი, რომელიც ლოკალურად ან ღრუბელში მსუბუქად დაყენდება და მრავალი chat აპლიკაციით ხელმისაწვდომი ხდება. easily extensible capabilities — plugin-ების ფართო ეკოსისტემა და Qwen მოდელებთან შერწყმა. Apache 2.0 ლიცენზია, 2026 წლის თებერვალში გამოიცა და უკვე 16K ვარსკვლავი. ჩინური ეკოსისტემის OpenClaw-ის პასუხი, განსაკუთრებით ვინც Qwen მოდელებით მუშაობს.",
+      "starsNumeric": 16000,
+      "categorySlug": "business",
+      "categoryEmoji": "💼",
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities."
     },
     {
       "name": "Fincept Terminal",

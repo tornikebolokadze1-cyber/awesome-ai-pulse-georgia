@@ -68,7 +68,12 @@ jobs:
           git add mcp/data/repos.json mcp/package.json mcp/package-lock.json mcp/data/github-cache.json
           git commit -m "chore(mcp): sync data + bump patch version"
           git push
-        # Note: no [skip ci] — we WANT mcp-publish.yml to trigger on the
-        # mcp/package.json change. The data-sync workflow itself won't loop
-        # because its paths filter (README.md, scripts/build-data.ts) doesn't
-        # match this commit's changes.
+
+      # GitHub Actions has a security guard: commits made via the default
+      # GITHUB_TOKEN do NOT trigger other workflows (anti-loop). So we have
+      # to explicitly dispatch the publish workflow ourselves.
+      - name: Dispatch publish workflow
+        if: steps.detect.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run mcp-publish.yml --repo ${{ github.repository }}

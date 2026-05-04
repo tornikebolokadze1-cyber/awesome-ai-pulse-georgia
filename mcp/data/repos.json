@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-27T13:54:14.601Z",
-  "totalRepos": 183,
+  "generated": "2026-05-04T07:41:21.260Z",
+  "totalRepos": 186,
   "categories": [
     {
       "slug": "coding",
@@ -14,14 +14,14 @@
       "emoji": "⚡",
       "english": "Claude Code Plugins & Skills",
       "georgian": "Claude Code პლაგინები და უნარები",
-      "count": 24
+      "count": 26
     },
     {
       "slug": "mcp",
       "emoji": "🔌",
       "english": "MCP Integrations",
       "georgian": "MCP ინტეგრაციები",
-      "count": 23
+      "count": 24
     },
     {
       "slug": "scraping",
@@ -398,6 +398,17 @@
       "descriptionEn": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES."
     },
     {
+      "name": "Matt Pocock Skills",
+      "url": "https://github.com/mattpocock/skills",
+      "stars": "55K",
+      "description": "Matt Pocock-ის (Total TypeScript-ის ავტორი, ერთ-ერთი ყველაზე ცნობილი TypeScript ინსტრუქტორი მსოფლიოში) პირადი `.claude/skills/` დირექტორიის გაზიარებული ვერსიაა — სლოგანი: *\"Skills for Real Engineers. Straight from my .claude directory\"*. Shell-ში, MIT ლიცენზია, 2026 წლის თებერვალში გამოქვეყნდა და უკვე 54,800+ ვარსკვლავი დააგროვა. Pocock-ის ყოველდღიური workflow-ის რეალური ანარეკლი — TypeScript-ის, React-ის და modern web development-ის სპეციფიკური skills, რომლებსაც ის თვითონ იყენებს professional კონტექსტში. ვინც TypeScript-ში ან React-ში სერიოზულად მუშაობს Claude Code-ით, ეს კოლექცია უპირველესად განსახილველია.",
+      "starsNumeric": 55000,
+      "categorySlug": "plugins",
+      "categoryEmoji": "⚡",
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Skills for Real Engineers. Straight from my .claude directory."
+    },
+    {
       "name": "Caveman",
       "url": "https://github.com/JuliusBrussee/caveman",
       "stars": "44K",
@@ -517,6 +528,17 @@
       "categoryEmoji": "⚡",
       "categoryGeorgian": "Claude Code პლაგინები და უნარები",
       "descriptionEn": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy."
+    },
+    {
+      "name": "Huashu Design",
+      "url": "https://github.com/alchaincyf/huashu-design",
+      "stars": "11.7K",
+      "description": "Huashu Design (画术 Design) HTML-native დიზაინის skill-ია Claude Code-ისთვის — high-fidelity prototypes, პრეზენტაციები/slides, ანიმაციები და MP4 export ერთ skill-ში. **20 design philosophy** და **5-dimensional design review** სისტემით agent-ს professional UI/UX დონეზე ფიქრის უნარს ასძენს. Agent-agnostic — Claude Code-სთან, Codex-სთან და სხვა MCP-თავსებად client-ებთან მუშაობს. HTML-ში, 2026 წლის აპრილში გამოქვეყნდა და უკვე 11,700+ ვარსკვლავი დააგროვა — ჩინური AI ეკოსისტემიდან გამოსული ერთ-ერთი ყველაზე ციტირებადი design skill. ვინც AI-ით ლამაზ visual artifacts-ს (პრეზენტაციებს, prototype-ებს, demo videos-ებს) აკეთებს, UI UX Pro Max-ის და Architecture Diagram Generator-ის ბუნებრივი დამატებაა.",
+      "starsNumeric": 11700,
+      "categorySlug": "plugins",
+      "categoryEmoji": "⚡",
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic"
     },
     {
       "name": "n8n Skills",
@@ -671,6 +693,17 @@
       "categoryEmoji": "🔌",
       "categoryGeorgian": "MCP ინტეგრაციები",
       "descriptionEn": "Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8× fewer tokens on reviews and up to 49× on daily coding tasks."
+    },
+    {
+      "name": "Claude Context",
+      "url": "https://github.com/zilliztech/claude-context",
+      "stars": "10.4K",
+      "description": "Claude Context Zilliz-ის MCP plugin-ია, რომელიც Claude Code-სა და სხვა coding agent-ებს მთელ codebase-ზე semantic code search-ს აძლევს. ფაილების სრულად ჩატვირთვის ნაცვლად კოდს embeddings-ად ინახავს vector database-ში (Milvus/Zilliz Cloud) და მოთხოვნისას მხოლოდ რელევანტურ ფრაგმენტებს აბრუნებს კონტექსტში — დიდ monorepo-ებზე token ხარჯს და discovery rounds-ს ამცირებს. TypeScript-ში, MIT ლიცენზია, `@zilliz/claude-context-mcp` npm პაკეტით ინსტალირდება. მუშაობისთვის OpenAI API key და Milvus/Zilliz Cloud endpoint/token სჭირდება. 10,400+ ვარსკვლავი.",
+      "starsNumeric": 10400,
+      "categorySlug": "mcp",
+      "categoryEmoji": "🔌",
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent."
     },
     {
       "name": "Exa MCP",

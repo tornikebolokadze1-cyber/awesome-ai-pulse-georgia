@@ -722,5 +722,17 @@
   "agentscope-ai/QwenPaw": {
     "description": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities.",
     "fetchedAt": "2026-04-27T13:54:14.499Z"
+  },
+  "mattpocock/skills": {
+    "description": "Skills for Real Engineers. Straight from my .claude directory.",
+    "fetchedAt": "2026-05-02T22:00:16.553Z"
+  },
+  "zilliztech/claude-context": {
+    "description": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent.",
+    "fetchedAt": "2026-05-02T22:00:16.916Z"
+  },
+  "alchaincyf/huashu-design": {
+    "description": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic",
+    "fetchedAt": "2026-05-04T07:41:21.151Z"
   }
 }

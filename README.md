@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-187-00D0FF?style=flat-square&labelColor=111827&v=28" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-188-00D0FF?style=flat-square&labelColor=111827&v=29" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -23,7 +23,7 @@
 
 ## ⚡ გამოიყენე Claude Code-ში / Cursor-ში — MCP Server-ით
 
-ეს მთელი კოლექცია ხელმისაწვდომია **MCP server-ად** — Claude Code-ის, Cursor-ის, Codex-ის ან ნებისმიერი MCP-თავსებადი client-ის შიგნიდან 187 რეპოს ეძებ ერთი ბრძანებით. ნაცვლად იმისა, რომ GitHub-ი გახსნა და README-ი დააქოქო, AI ასისტენტს ჰკითხე *"აი Pulse-ის კოლექციაში რა არის საუკეთესო RAG-ისთვის?"* — სწორ რეპოს ქართული აღწერით დაგიბრუნებს.
+ეს მთელი კოლექცია ხელმისაწვდომია **MCP server-ად** — Claude Code-ის, Cursor-ის, Codex-ის ან ნებისმიერი MCP-თავსებადი client-ის შიგნიდან 188 რეპოს ეძებ ერთი ბრძანებით. ნაცვლად იმისა, რომ GitHub-ი გახსნა და README-ი დააქოქო, AI ასისტენტს ჰკითხე *"აი Pulse-ის კოლექციაში რა არის საუკეთესო RAG-ისთვის?"* — სწორ რეპოს ქართული აღწერით დაგიბრუნებს.
 
 **Install** — `~/.claude/claude_desktop_config.json` ან Cursor MCP settings-ში:
 
@@ -38,7 +38,7 @@
 }
 ```
 
-> *Available as an MCP server — query 187 curated AI repos directly from Claude Code, Cursor, or any MCP client.* Full docs: [`mcp/README.md`](./mcp/README.md) · Source: [`mcp/`](./mcp/)
+> *Available as an MCP server — query 188 curated AI repos directly from Claude Code, Cursor, or any MCP client.* Full docs: [`mcp/README.md`](./mcp/README.md) · Source: [`mcp/`](./mcp/)
 
 ---
 
@@ -221,6 +221,7 @@
 | [DeepTutor](https://github.com/HKUDS/DeepTutor) | 21K | DeepTutor არის HKUDS-ის Python-ის AI სასწავლო ასისტენტი, სპეციალურად სტუდენტებისა და მკვლევარებისთვის. Chat, Deep Solve, Quiz Generation, Deep Research და Math Animator — 5 სარეჟიმო ერთ პლატფორმაზე. RAG (საკუთარი სასწავლო მასალების ჩართვა), ვებ ძიება, სამეცნიერო ნაშრომების ძიება, კოდის ექსეკუცია ჩაშენებულია. TutorBot-ების შექმნა მდგრადი მეხსიერებითა და „პიროვნებით" — ყოველ სტუდენტზე მორგებული სასწავლო გამოცდილება. HKUDS ეკოსისტემის (nanobot, OpenSpace) ნაწილია. |
 | [Multica](https://github.com/multica-ai/multica) | 20K | Multica არის TypeScript-ის ღია კოდის managed agents პლატფორმა, რომელიც AI კოდირების აგენტებს (coding agents) რეალური გუნდის წევრებად აქცევს. ამოცანების მინიჭება, პროგრესის მონიტორინგი, გამოცდილების დაგროვება (compounding skills) — ყოველი ციკლით AI უფრო კარგად ასრულებს ამ გუნდის სპეციფიკურ ამოცანებს. 2026 წლის იანვარში გამოშვებული, სწრაფად 20K ვარსკვლავამდე გაიზარდა. ტექნიკური გუნდებისთვის, ვინც Claude Code-ის, Codex-ის ან სხვა coding agent-ების სამართავ ინსტრუმენტს ეძებს. |
 | [NemoClaw](https://github.com/NVIDIA/NemoClaw) | 20K | NemoClaw — **NVIDIA-ის ოფიციალური** ღია კოდის ხელსაწყო, რომელიც OpenClaw-ს უფრო უსაფრთხოდ უშვებს NVIDIA OpenShell-ის გარემოში managed inference-ით. ანუ კორპორატიული პოლისი, audit log-ი, sandbox-ი და GPU-ის მართული წვდომა — ყველა OpenClaw-ის capability, მაგრამ enterprise-დონის უსაფრთხოებით. TypeScript-ში, Apache 2.0 ლიცენზია, 2026 წლის მარტში გამოიცა. ორგანიზაციებისთვის, რომლებიც OpenClaw-ის ღირებულებას სურვილობენ თანამშრომლების მანქანებზე ჩაშვების გარეშე — datacenter-ში, IT-ის სრული კონტროლის ქვეშ. |
+| [Claude for Financial Services](https://github.com/anthropics/financial-services) | 18.6K | Claude for Financial Services — **Anthropic-ის ოფიციალური** reference repo ფინანსური სერვისების workflow-ებისთვის: investment banking, equity research, private equity, wealth management. შიგნით ready-made Claude agent-ები, skill-ები, slash commands და MCP data connector-ები — ყველაფერი self-contained Claude plugin-ების სახით, რომლებიც **Claude Cowork**-ით ან **Claude Managed Agents API**-ით deploy-დება. პრაქტიკული გამოყენების სცენარები: pitch deck-ების მომზადება, valuation model-ები, earnings review-ები, compliance task-ები — ყველა output ადამიანის გადახედვისთვის staged (human-in-the-loop by design). Python-ში, Apache 2.0 ლიცენზია, 2026 წლის თებერვალში გამოვიდა და უკვე 18,600+ ვარსკვლავი დააგროვა. ფინანსური ინდუსტრიის IT ადმინისტრატორებისა და ანალიტიკოსებისთვის — ერთ-ერთი პირველი ოფიციალური Anthropic vertical-specific repo. **Fincept Terminal**-თან (ასევე ამ კოლექციაში — ღია კოდის Bloomberg ალტერნატივა) ერთად — სრული ფინანსური AI workflow stack-ი. |
 | [QwenPaw](https://github.com/agentscope-ai/QwenPaw) | 16K | QwenPaw — Alibaba-ს AgentScope გუნდის Python-ის პერსონალური AI ასისტენტი, რომელიც ლოკალურად ან ღრუბელში მსუბუქად დაყენდება და მრავალი chat აპლიკაციით ხელმისაწვდომი ხდება. easily extensible capabilities — plugin-ების ფართო ეკოსისტემა და Qwen მოდელებთან შერწყმა. Apache 2.0 ლიცენზია, 2026 წლის თებერვალში გამოიცა და უკვე 16K ვარსკვლავი. ჩინური ეკოსისტემის OpenClaw-ის პასუხი, განსაკუთრებით ვინც Qwen მოდელებით მუშაობს. |
 | [Fincept Terminal](https://github.com/Fincept-Corporation/FinceptTerminal) | 13K | Fincept Terminal არის Python-ში დაწერილი ღია კოდის ფინანსური ტერმინალი, Bloomberg-ის ალტერნატივა. 100+ მონაცემთა კონექტორი (Yahoo Finance, FRED, IMF, World Bank, Polygon) და 20+ AI ინვესტორ-პერსონა მრავალ LLM პროვაიდერთან (OpenAI, Anthropic, Gemini, Groq, Ollama) ერთიანდება. DCF მოდელები, პორტფელის ოპტიმიზაცია, VaR/Sharpe მეტრიკა, კრიპტო WebSocket, ალგო-ტრეიდინგი ჩაშენებულია. Python-ში (README-ში ცდომილებით C++20/Qt6 იყო მითითებული). ინდივიდუალური ინვესტორებისა და მცირე ინვესტიციური გუნდებისთვის, ვისაც ინსტიტუციური ინსტრუმენტები სჭირდება ინსტიტუციური ფასის გარეშე. |
 | [Rowboat](https://github.com/rowboatlabs/rowboat) | 13K | Rowboat არის TypeScript-ის ღია კოდის AI „კოლეგა" მდგრადი მეხსიერებით — AI, რომელიც სამუშაო კონტექსტს ინახავს სესიებს შორის. OpenAI API-ზე დაშენებული, self-hosted, ღრუბელი სურვილისამებრ. 2025 წლის იანვრიდან 13K ვარსკვლავი; ამ კატეგორიის ახალი შემოსვლა. მცირე გუნდებისთვის, ვინც გრძელვადიანი AI ასისტენტი სჭირდება, რომელიც მათ სამუშაო კონტექსტს, გადაწყვეტილებებსა და ამოცანებს ახსოვს. |

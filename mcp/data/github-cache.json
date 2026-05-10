@@ -738,5 +738,9 @@
   "excalidraw/excalidraw": {
     "description": "Virtual whiteboard for sketching hand-drawn like diagrams",
     "fetchedAt": "2026-05-10T20:35:49.095Z"
+  },
+  "anthropics/financial-services": {
+    "description": null,
+    "fetchedAt": "2026-05-10T20:46:46.844Z"
   }
 }

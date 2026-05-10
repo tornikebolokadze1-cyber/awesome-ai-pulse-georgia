@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-10T20:38:12.294Z",
-  "totalRepos": 187,
+  "generated": "2026-05-10T20:48:21.203Z",
+  "totalRepos": 188,
   "categories": [
     {
       "slug": "coding",
@@ -42,7 +42,7 @@
       "emoji": "💼",
       "english": "Ready-Made AI Agents for Business",
       "georgian": "მზა AI აგენტები ბიზნესისთვის",
-      "count": 27
+      "count": 28
     },
     {
       "slug": "memory",
@@ -1474,6 +1474,17 @@
       "categoryEmoji": "💼",
       "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
       "descriptionEn": "Run OpenClaw more securely inside NVIDIA OpenShell with managed inference"
+    },
+    {
+      "name": "Claude for Financial Services",
+      "url": "https://github.com/anthropics/financial-services",
+      "stars": "18.6K",
+      "description": "Claude for Financial Services — **Anthropic-ის ოფიციალური** reference repo ფინანსური სერვისების workflow-ებისთვის: investment banking, equity research, private equity, wealth management. შიგნით ready-made Claude agent-ები, skill-ები, slash commands და MCP data connector-ები — ყველაფერი self-contained Claude plugin-ების სახით, რომლებიც **Claude Cowork**-ით ან **Claude Managed Agents API**-ით deploy-დება. პრაქტიკული გამოყენების სცენარები: pitch deck-ების მომზადება, valuation model-ები, earnings review-ები, compliance task-ები — ყველა output ადამიანის გადახედვისთვის staged (human-in-the-loop by design). Python-ში, Apache 2.0 ლიცენზია, 2026 წლის თებერვალში გამოვიდა და უკვე 18,600+ ვარსკვლავი დააგროვა. ფინანსური ინდუსტრიის IT ადმინისტრატორებისა და ანალიტიკოსებისთვის — ერთ-ერთი პირველი ოფიციალური Anthropic vertical-specific repo. **Fincept Terminal**-თან (ასევე ამ კოლექციაში — ღია კოდის Bloomberg ალტერნატივა) ერთად — სრული ფინანსური AI workflow stack-ი.",
+      "starsNumeric": 18600,
+      "categorySlug": "business",
+      "categoryEmoji": "💼",
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": null
     },
     {
       "name": "QwenPaw",

@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-186-00D0FF?style=flat-square&labelColor=111827&v=27" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-187-00D0FF?style=flat-square&labelColor=111827&v=28" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-9-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -23,7 +23,7 @@
 
 ## ⚡ გამოიყენე Claude Code-ში / Cursor-ში — MCP Server-ით
 
-ეს მთელი კოლექცია ხელმისაწვდომია **MCP server-ად** — Claude Code-ის, Cursor-ის, Codex-ის ან ნებისმიერი MCP-თავსებადი client-ის შიგნიდან 186 რეპოს ეძებ ერთი ბრძანებით. ნაცვლად იმისა, რომ GitHub-ი გახსნა და README-ი დააქოქო, AI ასისტენტს ჰკითხე *"აი Pulse-ის კოლექციაში რა არის საუკეთესო RAG-ისთვის?"* — სწორ რეპოს ქართული აღწერით დაგიბრუნებს.
+ეს მთელი კოლექცია ხელმისაწვდომია **MCP server-ად** — Claude Code-ის, Cursor-ის, Codex-ის ან ნებისმიერი MCP-თავსებადი client-ის შიგნიდან 187 რეპოს ეძებ ერთი ბრძანებით. ნაცვლად იმისა, რომ GitHub-ი გახსნა და README-ი დააქოქო, AI ასისტენტს ჰკითხე *"აი Pulse-ის კოლექციაში რა არის საუკეთესო RAG-ისთვის?"* — სწორ რეპოს ქართული აღწერით დაგიბრუნებს.
 
 **Install** — `~/.claude/claude_desktop_config.json` ან Cursor MCP settings-ში:
 
@@ -38,7 +38,7 @@
 }
 ```
 
-> *Available as an MCP server — query 186 curated AI repos directly from Claude Code, Cursor, or any MCP client.* Full docs: [`mcp/README.md`](./mcp/README.md) · Source: [`mcp/`](./mcp/)
+> *Available as an MCP server — query 187 curated AI repos directly from Claude Code, Cursor, or any MCP client.* Full docs: [`mcp/README.md`](./mcp/README.md) · Source: [`mcp/`](./mcp/)
 
 ---
 
@@ -296,6 +296,7 @@
 | [Build Your Own X](https://github.com/codecrafters-io/build-your-own-x) | 493K | Build Your Own X — GitHub-ის ყველაზე ვარსკვლავიანი სასწავლო რეპოზიტორიებს შორის, CodeCrafters-ის მიერ: tutorial-ების კატალოგი, სადაც ტექნოლოგიებს ნულიდან ადგენ. Git, Docker, database, operating system, programming language, LLM, neural network, web browser, game engine — ათასობით ნაბიჯ-ნაბიჯ სახელმძღვანელო კატეგორიებით. Markdown-ში, ენა-ნეიტრალური. CodeCrafters-ის ინტერაქტიული platforma-ს კომპანიური სია. პროგრამირების სიღრმის გაგებისთვის — system-level ცოდნის შეძენის საუკეთესო რესურსი. |
 | [Public APIs](https://github.com/public-apis/public-apis) | 426K | Public APIs — GitHub-ის ერთ-ერთი ყველაზე ვარსკვლავიანი რეპოზიტორია, ასობით კატეგორიზებული უფასო API-ს კოლექტიური სია. ამინდი, მუსიკა, ფინანსები, რუკები, სპორტი, სახელმწიფო მონაცემები, AI სერვისები — authentication-ის, CORS-ის და ლიცენზიის ინფორმაციით. Python-ში დაწერილი ვალიდაციის სკრიპტებით, community-maintained. AI აგენტის workflow-ების ასაწყობისას — პირველი გაჩერება, სანამ API-ის ძებნას შეუდგები. |
 | [System Prompts Collection](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) | 135K | System Prompts Collection — 25-ზე მეტი AI ხელსაწყოს leaked და public system prompt-ების კოლექცია: Claude Code, Cursor, Devin AI, v0, Lovable, Replit, Windsurf, Manus, Perplexity, Kiro, Warp, Xcode და სხვა. prompt engineering-ის შეუცვლელი სასწავლო მასალა — ფრონტიერ კომპანიები სისტემურ prompt-ებს რა სტრუქტურით, ენით და ლოგიკით წერენ. AI Agent-ების ასაწყობად, product prompt engineering-ისთვის, ან კონკურენტული ანალიზისთვის. Community-ის მიერ განახლდება. |
+| [Excalidraw](https://github.com/excalidraw/excalidraw) | 122K | Excalidraw — virtual whiteboard hand-drawn სტილის diagrams-ისთვის, TypeScript-ში, MIT ლიცენზიით. AI engineers-ისთვის **de facto სტანდარტი** გახდა agent architectures-ის, system designs-ის, RAG pipeline-ების და LLM workflow-ების ვიზუალიზაციისთვის — Anthropic-ის, OpenAI-ის და სხვა AI კომპანიების engineering blog-ებსა და ტექნიკურ დოკუმენტაციაში მუდმივად ჩანს. Excalidraw+ commercial ვერსიაში ჩაშენებულია text-to-diagram AI ფიჩერი (OpenAI integration) რომელიც ბუნებრივი ენიდან diagram-ს ქმნის, plus mermaid-ის ნატივიური მხარდაჭერა — ანუ Claude/GPT-ით mermaid syntax გენერაცია და Excalidraw-ში refine ერთიანი workflow-ია. AI არქიტექტურის დოკუმენტაციისთვის, presentation-ისთვის ან Claude Code-ის output-ის ვიზუალიზაციისთვის — ერთ-ერთი მთავარი ხელსაწყო engineering-ის ეკოსისტემაში. |
 | [LLMs from Scratch](https://github.com/rasbt/LLMs-from-scratch) | 91K | LLMs from Scratch — Sebastian Raschka-ს (Lightning AI-ის მკვლევარი) წიგნის "Build a Large Language Model (From Scratch)" Jupyter Notebook კოლექცია. ChatGPT-ის მსგავსი LLM PyTorch-ში ნულიდან: attention mechanism, tokenization, pre-training, fine-tuning, RLHF — ყველა ეტაპი კოდით. Manning Publications-ის ბესტსელერი, ღია Jupyter notebooks-ით. AI-ის შიდა მექანიზმის გასაგებად ყველაზე სრული, პრაქტიკული სასწავლო კურსი — კვლევისა და საინჟინრო გაგებისთვის. |
 | [AutoResearch](https://github.com/karpathy/autoresearch) | 76K | AutoResearch არის Andrej Karpathy-ს (OpenAI-ის ყოფილი კვლევის ხელმძღვანელი, Tesla AI-ის ყოფილი ხელმძღვანელი) ექსპერიმენტული Python პროექტი, სადაც AI აგენტები nanochat-ის ერთ-GPU-ზე ტრენინგს ავტომატურად წარმართავენ. პროექტი ავლენს „automated ML research" ცნებას — აგენტები ექსპერიმენტებს ჩაატარებენ, შედეგებს შეაფასებენ და ციკლს ადამიანის ჩარევის გარეშე გაიმეორებენ. Karpathy-ს ავტორიტეტის გამო სწრაფად დაიგროვა 76K ვარსკვლავი, თუმცა ეს კვლევითი/სადემონსტრაციო პროექტია, არა production-ready ფრეიმვორკი. ML კვლევის ავტომატიზაციით დაინტერესებულთათვის საყურადღებო მიმართულებაა. |
 | [DESIGN.md](https://github.com/google-labs-code/design.md) | 6.3K | DESIGN.md — Google Labs-ის ოფიციალური ფორმატის სპეციფიკაცია, რომლითაც ბრენდის ვიზუალური იდენტობა (ფერები, ტიპოგრაფია, სპეისინგი, კომპონენტების ქცევა, ინტერაქციების შაბლონები) სტრუქტურირებულად აღუწერ AI coding agent-ებს. DESIGN.md ფაილი პროექტის root-ში ჩასვი და Claude Code-ს, Cursor-ს ან Codex-ს უკვე მუდმივი, თანმიმდევრული გაგება აქვს შენი design system-ის — UI ყოველ ახალ ფიჩერზე ერთ სტილში გენერირდება, stylistic drift-ისა და ჰალუცინაციების გარეშე. TypeScript-ში, Apache 2.0 ლიცენზიით. 2026 წლის 10 აპრილს გამოიცა და 14 დღეში 6,300+ ვარსკვლავი დააგროვა (დღეში ~450 ⭐) — ვირუსული ზრდა Anthropic-ის Agent Skills Spec-ის ანალოგი, მაგრამ design systems-ის დომენში. კომპანიონი `awesome-design-md` (რომელიც ასევე გვაქვს) ამ სპეციფიკაციით შექმნილ 55+ მაგალითს გვაწვდის — ეს მათი ფუნდამენტი სტანდარტია. |

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-04T07:50:17.366Z",
-  "totalRepos": 186,
+  "generated": "2026-05-10T20:37:20.134Z",
+  "totalRepos": 187,
   "categories": [
     {
       "slug": "coding",
@@ -63,7 +63,7 @@
       "emoji": "📚",
       "english": "Resources & Learning",
       "georgian": "რესურსები და სასწავლო მასალები",
-      "count": 13
+      "count": 14
     }
   ],
   "repos": [
@@ -2002,6 +2002,17 @@
       "categoryEmoji": "📚",
       "categoryGeorgian": "რესურსები და სასწავლო მასალები",
       "descriptionEn": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models"
+    },
+    {
+      "name": "Excalidraw",
+      "url": "https://github.com/excalidraw/excalidraw",
+      "stars": "122K",
+      "description": "Excalidraw — virtual whiteboard hand-drawn სტილის diagrams-ისთვის, TypeScript-ში, MIT ლიცენზიით. AI engineers-ისთვის **de facto სტანდარტი** გახდა agent architectures-ის, system designs-ის, RAG pipeline-ების და LLM workflow-ების ვიზუალიზაციისთვის — Anthropic-ის, OpenAI-ის და სხვა AI კომპანიების engineering blog-ებსა და ტექნიკურ დოკუმენტაციაში მუდმივად ჩანს. Excalidraw+ commercial ვერსიაში ჩაშენებულია text-to-diagram AI ფიჩერი (OpenAI integration) რომელიც ბუნებრივი ენიდან diagram-ს ქმნის, plus mermaid-ის ნატივიური მხარდაჭერა — ანუ Claude/GPT-ით mermaid syntax გენერაცია და Excalidraw-ში refine ერთიანი workflow-ია. AI არქიტექტურის დოკუმენტაციისთვის, presentation-ისთვის ან Claude Code-ის output-ის ვიზუალიზაციისთვის — ერთ-ერთი მთავარი ხელსაწყო engineering-ის ეკოსისტემაში.",
+      "starsNumeric": 122000,
+      "categorySlug": "resources",
+      "categoryEmoji": "📚",
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "Virtual whiteboard for sketching hand-drawn like diagrams"
     },
     {
       "name": "LLMs from Scratch",

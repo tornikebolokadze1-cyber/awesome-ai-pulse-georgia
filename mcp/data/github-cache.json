@@ -734,5 +734,9 @@
   "alchaincyf/huashu-design": {
     "description": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic",
     "fetchedAt": "2026-05-04T07:41:21.151Z"
+  },
+  "excalidraw/excalidraw": {
+    "description": "Virtual whiteboard for sketching hand-drawn like diagrams",
+    "fetchedAt": "2026-05-10T20:35:49.095Z"
   }
 }

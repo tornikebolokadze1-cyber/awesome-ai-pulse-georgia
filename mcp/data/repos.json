@@ -1,20 +1,20 @@
 {
-  "generated": "2026-05-10T20:48:50.901Z",
-  "totalRepos": 188,
+  "generated": "2026-05-29T22:35:51.828Z",
+  "totalRepos": 195,
   "categories": [
     {
       "slug": "coding",
       "emoji": "🤖",
       "english": "Coding Agents",
       "georgian": "კოდინგ აგენტები",
-      "count": 23
+      "count": 24
     },
     {
       "slug": "plugins",
       "emoji": "⚡",
       "english": "Claude Code Plugins & Skills",
       "georgian": "Claude Code პლაგინები და უნარები",
-      "count": 26
+      "count": 29
     },
     {
       "slug": "mcp",
@@ -42,7 +42,7 @@
       "emoji": "💼",
       "english": "Ready-Made AI Agents for Business",
       "georgian": "მზა AI აგენტები ბიზნესისთვის",
-      "count": 28
+      "count": 29
     },
     {
       "slug": "memory",
@@ -63,7 +63,7 @@
       "emoji": "📚",
       "english": "Resources & Learning",
       "georgian": "რესურსები და სასწავლო მასალები",
-      "count": 14
+      "count": 16
     }
   ],
   "repos": [
@@ -220,6 +220,17 @@
       "categoryEmoji": "🤖",
       "categoryGeorgian": "კოდინგ აგენტები",
       "descriptionEn": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others."
+    },
+    {
+      "name": "DeepSeek-TUI",
+      "url": "https://github.com/Hmbown/DeepSeek-TUI",
+      "stars": "25K",
+      "description": "DeepSeek-TUI არის DeepSeek მოდელებზე სპეციალიზებული, ღია კოდის coding agent ტერმინალში — Rust-ში დაწერილია სიჩქარისთვის, TUI ინტერფეისით. DeepSeek-ის V3, R1 და Coder მოდელები პირდაპირ command line-ში, OpenAI-სა და Anthropic-ის ფასიანი მოდელების მნიშვნელოვნად იაფი ალტერნატივა — DeepSeek-ის ღია წონების მოდელები ლოკალურადაც გაუშვება და DeepSeek API-ითაც მუშაობს. MIT ლიცენზია, deepseek-tui.com. 2026 წლის იანვარში გამოჩნდა და 25,000+ ვარსკვლავი დააგროვა — DeepSeek-სპეციფიკურ ეკოსისტემაში ერთ-ერთი წამყვანი terminal agent-ი Aider-ის და Codex CLI-ის DeepSeek-ფოკუსირებული ალტერნატივა.",
+      "starsNumeric": 25000,
+      "categorySlug": "coding",
+      "categoryEmoji": "🤖",
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "Coding agent for DeepSeek models that runs in your terminal"
     },
     {
       "name": "OpenClaude",
@@ -431,6 +442,17 @@
       "descriptionEn": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing."
     },
     {
+      "name": "Open Design",
+      "url": "https://github.com/nexu-io/open-design",
+      "stars": "36K",
+      "description": "Open Design — Anthropic-ის ფასიანი **Claude Design**-ის სრულად ღია წყაროს ალტერნატივა, რომელიც 2026 წლის 28 აპრილს გამოვიდა და სულ 2 კვირაში 36,000+ ვარსკვლავი (4,000+ fork — organic signal) დააგროვა. შიგნით **19 skill** და **71 brand-grade design system**: prompt-დან HTML/CSS prototype-ი, slides, infographic-ი, კარუსელი, ანიმაცია და MP4 export. **BYOK მოდელი** — საკუთარი Claude/GPT/Gemini/Kimi/GLM/Ollama key-ით ეშვება, lock-in-ის გარეშე. Sandbox-ში preview, HTML/PDF/PPTX/MP4 export. TypeScript-ში, Apache 2.0. Claude Code-ში, Codex-ში, Cursor-ში, OpenCode-ში, Qwen Code-ში, Hermes-სა და Kimi CLI-ში მუშაობს — agent-agnostic. **Huashu Design**-ის და **UI UX Pro Max**-ის ბუნებრივი დამატება — 2026-ის design-skill სტეკის ერთ-ერთი მთავარი ბურჯი, კოლექციის ერთ-ერთი ყველაზე სწრაფად მზარდი ჩანაწერი.",
+      "starsNumeric": 36000,
+      "categorySlug": "plugins",
+      "categoryEmoji": "⚡",
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "🎨 Local-first, open-source alternative to Anthropic's Claude Design. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI."
+    },
+    {
       "name": "Graphify",
       "url": "https://github.com/safishamsi/graphify",
       "stars": "33K",
@@ -464,6 +486,17 @@
       "descriptionEn": "Teams-first Multi-agent orchestration for Claude Code"
     },
     {
+      "name": "Impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "stars": "27.6K",
+      "description": "Impeccable **Paul Bakaus**-ის (ex-Google DevRel, Disney Interactive, jQuery UI core contributor — ერთ-ერთი ყველაზე ცნობილი front-end ინჟინერი 2010-იანების ვებზე) design-language skill-ია AI coding agent-ებისთვის — სლოგანი: *„The design language that makes your AI harness better at design\"*. Claude Code-ში, Codex-ში, Cursor-ში, OpenCode-ში და სხვა MCP-თავსებად client-ებში მუშაობს. JavaScript-ში, **Apache 2.0** ლიცენზიით, impeccable.style. 2025 წლის ნოემბერში გამოვიდა და 27,600+ ვარსკვლავი (1,500+ fork — organic signal) დააგროვა. **Open Design**-ის, **UI UX Pro Max**-ის და **Huashu Design**-ის ბუნებრივი მონათესავე — სამივესთან ერთად stacked design-skill კონფიგურაცია AI-ის visual output-ის ხარისხს professional დონეზე აყვანს.",
+      "starsNumeric": 27600,
+      "categorySlug": "plugins",
+      "categoryEmoji": "⚡",
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "The design language that makes your AI harness better at design."
+    },
+    {
       "name": "Obsidian Skills",
       "url": "https://github.com/kepano/obsidian-skills",
       "stars": "26K",
@@ -495,6 +528,17 @@
       "categoryEmoji": "⚡",
       "categoryGeorgian": "Claude Code პლაგინები და უნარები",
       "descriptionEn": "Production-grade engineering skills for AI coding agents."
+    },
+    {
+      "name": "Taste-Skill",
+      "url": "https://github.com/leonxlnx/taste-skill",
+      "stars": "17.3K",
+      "description": "Taste-Skill leonxlnx-ის skill-ია, რომელიც AI coding agent-ებს **„გემოვნებას\" აძლევს** — სლოგანი: *„stops the AI from generating boring, generic slop\"*. AI-ის default-ად ერთფეროვან, sterile, „generic AI slop\" output-ს ებრძვის წინასწარ აღწერილი taste curation rules-ით — როდის უნდა გადაუხვიოს AI-მ default ფორმულირებებიდან და როდის უნდა შესთავაზოს ნამდვილად საინტერესო კონცეფცია. Shell-ში, **MIT** ლიცენზიით, tasteskill.dev. 2026 წლის თებერვალში გამოვიდა და უკვე 17,200+ ვარსკვლავი დააგროვა — AI output-ის ხარისხის ერთ-ერთი ყველაზე ციტირებადი skill. **Karpathy Skills**-ის (AI coding pitfalls-ის წინააღმდეგ) და **Caveman**-ის (verbosity reduction) ბუნებრივი დამატება — სამივე ერთად AI-ის output-ის ფუნდამენტურ ნაკლს ასწორებს. UI UX Pro Max-ისგან განსხვავება: ეს content/copy/idea-taste-ზე ფოკუსირებულია, ის კი visual design-ზე.",
+      "starsNumeric": 17300,
+      "categorySlug": "plugins",
+      "categoryEmoji": "⚡",
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop"
     },
     {
       "name": "Claude Plugins Official",
@@ -1432,6 +1476,17 @@
       "descriptionEn": "AI Agent Assistant that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
     },
     {
+      "name": "openhuman",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "stars": "24.4K",
+      "description": "openhuman — tinyhumans.ai-ის Rust-ში დაწერილი პერსონალური AI „super intelligence\", რომელიც სრულიად ლოკალურად მუშაობს — სლოგანი: *„Your Personal AI super intelligence. Private, Simple and extremely powerful.\"* Rust-ის low-level კონტროლი მაქსიმალურ სიჩქარეს და მინიმალურ რესურს-მოხმარებას უზრუნველყოფს — სხვა local-AI ხელსაწყოებთან შედარებით (gpt4all, Jan, AnythingLLM, LobeChat ყველა JS/TS/Python-ში) ეს განსხვავება შესამჩნევია desktop class მოწყობილობებზე. **GPL-3.0** ლიცენზია, tinyhumans.ai/openhuman, 2026 წლის თებერვალში გამოვიდა და სულ 3 თვეში 24,000+ ვარსკვლავი დააგროვა — ლოკალური personal-AI კატეგორიის ერთ-ერთი ყველაზე სწრაფად მზარდი ახალი მონაწილე. Jan-ის, gpt4all-ის და AnythingLLM-ის ბუნებრივი ალტერნატივა იმათთვის, ვისთვისაც Rust-ის სიჩქარე და GPL-ის ღია სიმყარე უპირატესია JavaScript-სტეკის მოხერხებულობაზე.",
+      "starsNumeric": 24400,
+      "categorySlug": "business",
+      "categoryEmoji": "💼",
+      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "descriptionEn": null
+    },
+    {
       "name": "Activepieces",
       "url": "https://github.com/activepieces/activepieces",
       "stars": "21K",
@@ -2024,6 +2079,28 @@
       "categoryEmoji": "📚",
       "categoryGeorgian": "რესურსები და სასწავლო მასალები",
       "descriptionEn": "Virtual whiteboard for sketching hand-drawn like diagrams"
+    },
+    {
+      "name": "Mermaid",
+      "url": "https://github.com/mermaid-js/mermaid",
+      "stars": "88K",
+      "description": "Mermaid — text-to-diagram-ის ღია წყაროს უპირობო სტანდარტი. მარკდაუნ-სტილის სინტაქსიდან flowchart-ი, sequence diagram, ER, gantt, state machine, class diagram, mindmap, C4 architecture და სხვა — ერთიანი ენით. TypeScript-ში, MIT ლიცენზია, 87,900+ ვარსკვლავი. **AI workflow-ში de-facto ფორმატი** — Claude, ChatGPT, Cursor, Codex და თითქმის ყველა LLM native-ად ცნობს Mermaid სინტაქსს და დიაგრამას პირდაპირ markdown პასუხში გასცემს. GitHub, GitLab, Notion, Obsidian, Confluence Mermaid-ს ნატივიურად რენდერავს — pull request-ში code review-ის დროს დიაგრამა იქვე ჩანს, version control-ში არის და diff-ისთვის ხელმისაწვდომი. ARCHITECTURE.md-ის, RFC-ის და technical documentation-ის სავალდებულო ნაწილია modern engineering team-ებში. **Excalidraw**-ის (ვიზუალური) და **D2**-ის (კოდით — წინასწარ შემოწმე ცალკე, ჯერ კოლექციაში არ არის) ერთობლივ stack-ში — დიაგრამინგ workflow-ის ბერკეტი.",
+      "starsNumeric": 88000,
+      "categorySlug": "resources",
+      "categoryEmoji": "📚",
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown"
+    },
+    {
+      "name": "tldraw",
+      "url": "https://github.com/tldraw/tldraw",
+      "stars": "47K",
+      "description": "tldraw — მოდერნული infinite canvas SDK და whiteboard აპლიკაცია, TypeScript-ში, real-time collaboration-ით. **Excalidraw-ის ყველაზე სერიოზული მეტოქე**: Excalidraw hand-drawn aesthetic-ით ცნობილია, tldraw უფრო ნათელი, კონტრასტული, professional ვიზუალით. ჩაშენებადი React კომპონენტი — საკუთარ აპლიკაციაში ერთი `<Tldraw />` import-ით ჩასვამ, ნულიდან whiteboard აპლიკაცია არ გჭირდება. **AI-ფიჩერი** [tldraw/make-real](https://github.com/tldraw/make-real)-ის სახით ცალკე ცოცხლობს: სკეტჩი → მუშა HTML/React component-ი ერთი ღილაკით (OpenAI/Claude backend-ით). Lightspeed Venture Partners-ის მიერ დაფინანსებული, 46,900+ ვარსკვლავი. ვინც app-შიგნით whiteboard ფუნქცია სჭირდება (Figma-ის, Miro-ს ალტერნატივა) ან Excalidraw-ის უფრო strict ვიზუალურ ალტერნატივას ეძებს — tldraw პირველი არჩევანია.",
+      "starsNumeric": 47000,
+      "categorySlug": "resources",
+      "categoryEmoji": "📚",
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "very good whiteboard infinite canvas SDK"
     },
     {
       "name": "LLMs from Scratch",

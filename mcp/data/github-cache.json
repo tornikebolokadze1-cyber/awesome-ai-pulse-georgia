@@ -742,5 +742,29 @@
   "anthropics/financial-services": {
     "description": null,
     "fetchedAt": "2026-05-10T20:46:46.844Z"
+  },
+  "nexu-io/open-design": {
+    "description": "🎨 Local-first, open-source alternative to Anthropic's Claude Design. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI.",
+    "fetchedAt": "2026-05-10T22:16:55.883Z"
+  },
+  "mermaid-js/mermaid": {
+    "description": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown",
+    "fetchedAt": "2026-05-10T22:16:56.256Z"
+  },
+  "tldraw/tldraw": {
+    "description": "very good whiteboard infinite canvas SDK",
+    "fetchedAt": "2026-05-10T22:16:56.597Z"
+  },
+  "Hmbown/DeepSeek-TUI": {
+    "description": "Coding agent for DeepSeek models that runs in your terminal",
+    "fetchedAt": "2026-05-11T22:11:14.763Z"
+  },
+  "pbakaus/impeccable": {
+    "description": "The design language that makes your AI harness better at design.",
+    "fetchedAt": "2026-05-14T09:04:55.000Z"
+  },
+  "leonxlnx/taste-skill": {
+    "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+    "fetchedAt": "2026-05-14T09:06:05.000Z"
   }
 }

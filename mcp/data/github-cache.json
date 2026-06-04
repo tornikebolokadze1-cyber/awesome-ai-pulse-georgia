@@ -742,5 +742,81 @@
   "anthropics/financial-services": {
     "description": null,
     "fetchedAt": "2026-05-10T20:46:46.844Z"
+  },
+  "nexu-io/open-design": {
+    "description": "🎨 Local-first, open-source alternative to Anthropic's Claude Design. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI.",
+    "fetchedAt": "2026-05-10T22:16:55.883Z"
+  },
+  "mermaid-js/mermaid": {
+    "description": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown",
+    "fetchedAt": "2026-05-10T22:16:56.256Z"
+  },
+  "tldraw/tldraw": {
+    "description": "very good whiteboard infinite canvas SDK",
+    "fetchedAt": "2026-05-10T22:16:56.597Z"
+  },
+  "Hmbown/DeepSeek-TUI": {
+    "description": "Coding agent for DeepSeek models that runs in your terminal",
+    "fetchedAt": "2026-05-11T22:11:14.763Z"
+  },
+  "pbakaus/impeccable": {
+    "description": "The design language that makes your AI harness better at design.",
+    "fetchedAt": "2026-05-14T09:04:55.000Z"
+  },
+  "leonxlnx/taste-skill": {
+    "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+    "fetchedAt": "2026-05-14T09:06:05.000Z"
+  },
+  "badlogic/pi-mono": {
+    "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods",
+    "fetchedAt": "2026-05-29T22:47:41.990Z"
+  },
+  "colbymchenry/codegraph": {
+    "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+    "fetchedAt": "2026-05-29T22:47:42.331Z"
+  },
+  "Imbad0202/academic-research-skills": {
+    "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+    "fetchedAt": "2026-05-29T22:47:42.671Z"
+  },
+  "alirezarezvani/claude-skills": {
+    "description": "337 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
+    "fetchedAt": "2026-05-29T22:47:43.018Z"
+  },
+  "CloakHQ/CloakBrowser": {
+    "description": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
+    "fetchedAt": "2026-05-29T22:47:43.368Z"
+  },
+  "microsoft/agent-framework": {
+    "description": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.",
+    "fetchedAt": "2026-05-29T22:47:43.720Z"
+  },
+  "tinyhumansai/openhuman": {
+    "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
+    "fetchedAt": "2026-05-29T22:47:44.099Z"
+  },
+  "TauricResearch/TradingAgents": {
+    "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+    "fetchedAt": "2026-05-29T22:47:44.451Z"
+  },
+  "rohitg00/agentmemory": {
+    "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
+    "fetchedAt": "2026-05-29T22:47:44.793Z"
+  },
+  "HKUDS/ViMax": {
+    "description": "\"ViMax: Agentic Video Generation (Director, Screenwriter, Producer, and Video Generator All-in-One)\"",
+    "fetchedAt": "2026-05-29T22:47:45.148Z"
+  },
+  "supertone-inc/supertonic": {
+    "description": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.",
+    "fetchedAt": "2026-05-29T22:47:45.505Z"
+  },
+  "AIDC-AI/Pixelle-Video": {
+    "description": "🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine",
+    "fetchedAt": "2026-05-29T22:47:45.862Z"
+  },
+  "humanlayer/12-factor-agents": {
+    "description": "What are the principles we can use to build LLM-powered software that is actually good enough to put in the hands of production customers?",
+    "fetchedAt": "2026-05-29T22:47:46.217Z"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-04T21:46:56.825Z",
-  "totalRepos": 207,
+  "generated": "2026-06-12T08:00:03.263Z",
+  "totalRepos": 213,
   "categories": [
     {
       "slug": "coding",
@@ -14,7 +14,7 @@
       "emoji": "⚡",
       "english": "Claude Code Plugins & Skills",
       "georgian": "Claude Code პლაგინები და უნარები",
-      "count": 32
+      "count": 37
     },
     {
       "slug": "mcp",
@@ -49,7 +49,7 @@
       "emoji": "🧠",
       "english": "Memory & RAG",
       "georgian": "მეხსიერება და RAG",
-      "count": 16
+      "count": 17
     },
     {
       "slug": "infra",
@@ -365,6 +365,17 @@
       "descriptionEn": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
     },
     {
+      "name": "Anthropic Skills",
+      "url": "https://github.com/anthropics/skills",
+      "stars": "150K",
+      "description": "Anthropic Skills — **Anthropic-ის ოფიციალური** Agent Skills რეპოზიტორია და მთელი skills ეკოსისტემის ფუნდამენტი. შიგნით 17 example skill — მათ შორის **frontend-design** (generic „AI slop\" დიზაინისგან თავის დასაღწევი წესები), mcp-builder, webapp-testing, canvas-design, brand-guidelines და skill-creator — პლუს ის 4 production document skill (docx, pdf, pptx, xlsx), რომლებიც Claude-ში ფაილების რეალურ შექმნას უზრუნველყოფს და აქ source-available სახითაა გამოქვეყნებული. აქვეა Agent Skills სპეციფიკაცია (agentskills.io) და skill template. ერთი ბრძანებით ეყენება: `/plugin marketplace add anthropics/skills`. Python-ში; 2025 წლის სექტემბრიდან **149,800+ ვარსკვლავი** — GitHub-ის ისტორიის ერთ-ერთი ყველაზე სწრაფად მზარდი რეპო. Skills ეკოსისტემისთვის იგივეა, რაც modelcontextprotocol/servers MCP-სთვის — **Agent Skills Spec**-ის (ასევე ამ კოლექციაში) reference implementation.",
+      "starsNumeric": 150000,
+      "categorySlug": "plugins",
+      "categoryEmoji": "⚡",
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Public repository for Agent Skills"
+    },
+    {
       "name": "Spec Kit",
       "url": "https://github.com/github/spec-kit",
       "stars": "90K",
@@ -497,6 +508,17 @@
       "descriptionEn": "Teams-first Multi-agent orchestration for Claude Code"
     },
     {
+      "name": "Vercel Agent Skills",
+      "url": "https://github.com/vercel-labs/agent-skills",
+      "stars": "27.8K",
+      "description": "Vercel Agent Skills — **Vercel-ის ოფიციალური** skill კოლექცია AI coding agent-ებისთვის: 8 skill, რომლებიც Vercel Engineering-ის შიდა handbook-ებს აგენტებისთვის გასაგებ ფორმატად აქცევს. **web-design-guidelines** UI კოდს 100+ წესით ამოწმებს (accessibility, focus states, forms, animation, typography, dark mode, i18n) — Vercel-ის ცნობილი Web Interface Guidelines-ის packaged ვერსია; **react-best-practices** 40+ React/Next.js performance წესს მოიცავს; **vercel-deploy-claimable** კი აპს პირდაპირ claude.ai საუბრიდან deploy-ს უკეთებს live preview URL-ით. `npx skills add vercel-labs/agent-skills`-ით ეყენება. JavaScript, MIT, skills.sh რეესტრის canonical მაგალითი. 2025 წლის დეკემბრიდან 27,800+ ვარსკვლავი. ვიზუალურ design skill-ებისგან (UI UX Pro Max, Open Design) განსხვავებით აქცენტი engineering correctness-ზეა — accessibility და performance, არა მხოლოდ ესთეტიკა.",
+      "starsNumeric": 27800,
+      "categorySlug": "plugins",
+      "categoryEmoji": "⚡",
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Vercel's official collection of agent skills"
+    },
+    {
       "name": "Impeccable",
       "url": "https://github.com/pbakaus/impeccable",
       "stars": "27.6K",
@@ -596,6 +618,17 @@
       "descriptionEn": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic"
     },
     {
+      "name": "Interface Design",
+      "url": "https://github.com/Dammyjay93/interface-design",
+      "stars": "5K",
+      "description": "Interface Design — design engineering skill Claude Code-ისა და Codex-ისთვის, სპეციალურად **product UI-სთვის** (dashboard, admin panel, SaaS ინსტრუმენტები) — marketing საიტები შეგნებულად სკოუპს მიღმაა. მთავარი იდეა **persistent design memory-ია**: მიღებული გადაწყვეტილებები (spacing grid, ფერის ტოკენები, surface elevation, კომპონენტების ზომები) `.interface-design/system.md` ფაილში ინახება და მომდევნო სესიებში ავტომატურად იტვირთება — სტილური დრიფტი სესიებს შორის ნულდება. 5 ბრძანება (init, status, audit, extract, critique), 6 ჩაშენებული design direction. ავტორი Oyindamola Akinleye (Zalando). Shell, MIT, interface-design.dev. 2026 წლის იანვრიდან 5,000+ ვარსკვლავი (repo-ს ადრე claude-design-skill ერქვა — ძველი ლინკები redirect-დება). UI UX Pro Max-ისგან განსხვავება: ის სტილების ფართო კატალოგია, ეს კი ერთი თანმიმდევრული დიზაინ-სისტემის cross-session enforcement-ი.",
+      "starsNumeric": 5000,
+      "categorySlug": "plugins",
+      "categoryEmoji": "⚡",
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Design engineering for Claude Code. Craft, memory, and enforcement for consistent UI."
+    },
+    {
       "name": "n8n Skills",
       "url": "https://github.com/czlonkowski/n8n-skills",
       "stars": "4.6K",
@@ -629,6 +662,17 @@
       "descriptionEn": "Agent Skills"
     },
     {
+      "name": "Emil Kowalski Skill",
+      "url": "https://github.com/emilkowalski/skill",
+      "stars": "2.3K",
+      "description": "Emil Kowalski Skill — design engineering-ის ერთ-ერთი ყველაზე ცნობილი სახელის (**Sonner** toast-ისა და **Vaul** drawer-ის ავტორი, ex-Vercel/Linear, animations.dev კურსის შემქმნელი) პირადი „გემოვნება\" installable skill-ად. მთელი რეპო ერთი ~680-ხაზიანი SKILL.md-ია მისი სტატიებიდან გამოხდილი ცოდნით: 4-ნაბიჯიანი animation decision framework (ხშირად გამოყენებულ ქმედებებს ანიმაცია საერთოდ არ სჭირდება), კონკრეტული რიცხვითი წესები (UI ანიმაცია 300ms-ზე ნაკლები, tooltip 125-200ms, ease-in არასდროს), spring physics, @starting-style და clip-path ტექნიკები, prefers-reduced-motion accessibility. UI code review-ზე სავალდებულო Before/After/Why ცხრილის ფორმატს ითხოვს. 2026 წლის მარტიდან 2,300+ ვარსკვლავი, emilkowal.ski/skill. **Taste-Skill**-ის (ასევე ამ კოლექციაში) მონათესავე ჟანრი — „taste as a skill\" ტრენდის ერთ-ერთი საუკეთესო ნიმუში. (⚠ ლიცენზია მითითებული არ აქვს.)",
+      "starsNumeric": 2300,
+      "categorySlug": "plugins",
+      "categoryEmoji": "⚡",
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "A skill file based on the articles written on my personal site. Designed for designers and engineers to help them build better user interfaces."
+    },
+    {
       "name": "Headroom",
       "url": "https://github.com/chopratejas/headroom",
       "stars": "1.5K",
@@ -638,6 +682,17 @@
       "categoryEmoji": "⚡",
       "categoryGeorgian": "Claude Code პლაგინები და უნარები",
       "descriptionEn": "The Context Optimization Layer for LLM Applications"
+    },
+    {
+      "name": "Designer Skills",
+      "url": "https://github.com/Owl-Listener/designer-skills",
+      "stars": "1.5K",
+      "description": "Designer Skills — ყველაზე ყოვლისმომცველი დიზაინერული skill pack Claude Code-ისთვის: **91 skill და 28 ბრძანება 9 plugin-ში** — user research, design systems, UX strategy, UI design, interaction design, prototyping/testing, design ops, designer's toolkit და visual critique. ხუთრეპოიანი ოჯახის (ჯამში 239 skill და 33 plugin) მთავარი კარიბჭე. არქიტექტურა: skill-ები „არსებითი სახელებია\" (როგორ დაიწეროს persona, როგორ განისაზღვროს design token-ები), ბრძანებები კი „ზმნები\" — `/design-research:discover` ერთ workflow-ში რამდენიმე skill-ს აჯაჭვებს. ავტორი Marie-Claire Dean (MC Dean), ფილოსოფია: „taste, made legible\" — დიზაინერული განსჯა წერილობით ფორმაში, რომ აგენტმა გამოცნობა აღარ სცადოს. Claude Code-შიც და Gemini CLI-შიც მუშაობს, non-coder-ებზეც გათვლილია. Shell, MIT. 2026 წლის მარტიდან 1.5K+ ვარსკვლავი.",
+      "starsNumeric": 1500,
+      "categorySlug": "plugins",
+      "categoryEmoji": "⚡",
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Designer Skills Collection: agentic skills, commands, and plugins for design — from research to systems, UI, interaction, and delivery."
     },
     {
       "name": "Claude Code Setup",
@@ -1760,6 +1815,17 @@
       "categoryEmoji": "🧠",
       "categoryGeorgian": "მეხსიერება და RAG",
       "descriptionEn": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/"
+    },
+    {
+      "name": "Open Notebook",
+      "url": "https://github.com/lfnovo/open-notebook",
+      "stars": "29K",
+      "description": "Open Notebook — Google NotebookLM-ის **ღია კოდის, self-hosted ალტერნატივა** სრული data sovereignty-ით. წყაროებად PDF, ვიდეო, აუდიო, ვებ-გვერდები და Office დოკუმენტები შეგაქვს, notebook-ებად აწყობ და მასალას ესაუბრები — full-text + vector ძიება, წყაროების ციტირება, AI ჩანაწერები და **multi-speaker podcast გენერაცია** (1-4 ხმა, კონფიგურირებადი Episode Profiles — NotebookLM-ის ფიქსირებულ 2-სპიკერიან ფორმატზე ბევრად მოქნილი). 18+ AI პროვაიდერი (OpenAI, Anthropic, Google, Ollama, LM Studio, DeepSeek...) — სრულად ლოკალურადაც მუშაობს. Docker Compose-ით 2 წუთში ეშვება (SurrealDB + Next.js), აქვს REST API — რაც NotebookLM-ს საერთოდ არ აქვს. ავტორი Luis Novo (lfnovo), MIT, open-notebook.ai. 2024 წლის ოქტომბრიდან **29,000+ ვარსკვლავი** — წამყვანი ღია NotebookLM-ალტერნატივა.",
+      "starsNumeric": 29000,
+      "categorySlug": "memory",
+      "categoryEmoji": "🧠",
+      "categoryGeorgian": "მეხსიერება და RAG",
+      "descriptionEn": "An Open Source implementation of Notebook LM with more flexibility and features"
     },
     {
       "name": "Chroma",

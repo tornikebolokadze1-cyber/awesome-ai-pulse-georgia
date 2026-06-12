@@ -818,5 +818,29 @@
   "humanlayer/12-factor-agents": {
     "description": "What are the principles we can use to build LLM-powered software that is actually good enough to put in the hands of production customers?",
     "fetchedAt": "2026-05-29T22:47:46.217Z"
+  },
+  "anthropics/skills": {
+    "description": "Public repository for Agent Skills",
+    "fetchedAt": "2026-06-12T08:00:01.226Z"
+  },
+  "vercel-labs/agent-skills": {
+    "description": "Vercel's official collection of agent skills",
+    "fetchedAt": "2026-06-12T08:00:01.719Z"
+  },
+  "Dammyjay93/interface-design": {
+    "description": "Design engineering for Claude Code. Craft, memory, and enforcement for consistent UI.",
+    "fetchedAt": "2026-06-12T08:00:02.083Z"
+  },
+  "emilkowalski/skill": {
+    "description": "A skill file based on the articles written on my personal site. Designed for designers and engineers to help them build better user interfaces.",
+    "fetchedAt": "2026-06-12T08:00:02.430Z"
+  },
+  "Owl-Listener/designer-skills": {
+    "description": "Designer Skills Collection: agentic skills, commands, and plugins for design — from research to systems, UI, interaction, and delivery.",
+    "fetchedAt": "2026-06-12T08:00:02.795Z"
+  },
+  "lfnovo/open-notebook": {
+    "description": "An Open Source implementation of Notebook LM with more flexibility and features",
+    "fetchedAt": "2026-06-12T08:00:03.150Z"
   }
 }

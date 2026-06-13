@@ -28,12 +28,15 @@ type Category = {
 const CATEGORY_MAP: Record<string, Omit<Category, "georgian">> = {
   "კოდინგ აგენტები": { slug: "coding", emoji: "🤖", english: "Coding Agents" },
   "Claude Code პლაგინები და უნარები": { slug: "plugins", emoji: "⚡", english: "Claude Code Plugins & Skills" },
+  "დიზაინი და UI": { slug: "design", emoji: "🎨", english: "Design & UI" },
   "MCP ინტეგრაციები": { slug: "mcp", emoji: "🔌", english: "MCP Integrations" },
   "ვებ სკრეიპინგი და ბრაუზერი": { slug: "scraping", emoji: "🕷️", english: "Web Scraping & Browser" },
-  "AI აგენტების ფრეიმვორკები": { slug: "frameworks", emoji: "🧬", english: "AI Agent Frameworks" },
-  "მზა AI აგენტები ბიზნესისთვის": { slug: "business", emoji: "💼", english: "Ready-Made AI Agents for Business" },
-  "მეხსიერება და RAG": { slug: "memory", emoji: "🧠", english: "Memory & RAG" },
-  "AI ინფრასტრუქტურა და ხელსაწყოები": { slug: "infra", emoji: "⚙️", english: "AI Infrastructure & Tools" },
+  "AI აგენტების ფრეიმვორკები": { slug: "frameworks", emoji: "🧬", english: "AI Agent Frameworks & Orchestration" },
+  "Workflow და No-Code ბილდერები": { slug: "workflow", emoji: "🔁", english: "No-Code & Workflow Builders" },
+  "AI ასისტენტები და ბიზნეს-აგენტები": { slug: "business", emoji: "💼", english: "AI Assistants & Business Agents" },
+  "მეხსიერება, RAG და კოდის კონტექსტი": { slug: "memory", emoji: "🧠", english: "Memory, RAG & Code Context" },
+  "ინფერენსი და LLM ხელსაწყოები": { slug: "infra", emoji: "⚙️", english: "Model Inference & LLM Tooling" },
+  "მედია-გენერაცია": { slug: "media", emoji: "🎬", english: "Media Generation" },
   "რესურსები და სასწავლო მასალები": { slug: "resources", emoji: "📚", english: "Resources & Learning" },
 };
 

@@ -1,6 +1,6 @@
 # AI Pulse Georgia — MCP Server
 
-Query the [awesome-ai-pulse-georgia](https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia) curated collection (213+ AI repos across 9 categories) directly from inside Claude Code, Cursor, Codex, Claude.ai, or any other [Model Context Protocol](https://modelcontextprotocol.io)–compatible client.
+Query the [awesome-ai-pulse-georgia](https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia) curated collection (250+ AI repos across 14 categories) directly from inside Claude Code, Cursor, Codex, Claude.ai, or any other [Model Context Protocol](https://modelcontextprotocol.io)–compatible client — or straight from your terminal with the bundled `aipulse` **CLI**.
 
 Instead of opening GitHub and scrolling through a README, ask your AI assistant:
 
@@ -66,7 +66,7 @@ Then point your client at the absolute path of `dist/index.js` instead of `npx`.
 
 | Tool | Purpose | Example call |
 |------|---------|--------------|
-| `list_categories` | Show all 9 categories with repo counts | — |
+| `list_categories` | Show all categories with repo counts | — |
 | `list_repos` | Browse by category, sort by stars or name, paginate | `{"category":"coding","limit":10,"lang":"en"}` |
 | `search_repos` | Full-text search across name + descriptions (EN+KA) | `{"query":"browser automation","lang":"both"}` |
 | `get_repo` | Fetch full details for a single repo | `{"name":"free-claude-code","lang":"en"}` |
@@ -76,7 +76,30 @@ All tools accept `lang: "en" | "ka" | "both"` (default `"en"`). English descript
 
 ### Categories
 
-`coding` (🤖) · `plugins` (⚡) · `mcp` (🔌) · `scraping` (🕷️) · `frameworks` (🧬) · `business` (💼) · `memory` (🧠) · `infra` (⚙️) · `resources` (📚)
+`coding` (🤖) · `plugins` (⚡) · `design` (🎨) · `mcp` (🔌) · `scraping` (🕷️) · `frameworks` (🧬) · `workflow` (🔁) · `business` (💼) · `finance` (💰) · `memory` (🧠) · `codeintel` (🔍) · `infra` (⚙️) · `media` (🎬) · `resources` (📚)
+
+---
+
+## CLI (terminal access)
+
+The same collection is queryable straight from your terminal — zero MCP client needed. The package ships a second binary, `aipulse`:
+
+```bash
+# via npx (no install)
+npx -p @aipulsegeorgia/mcp-server aipulse search "rag memory"
+
+# or after a global install / local build
+aipulse categories
+aipulse list --category coding --limit 10
+aipulse search "browser automation" --lang both
+aipulse get aider
+aipulse stats
+```
+
+Commands: `categories`, `list`, `search <query>`, `get <name>`, `stats`.
+Options: `-c/--category <slug>`, `-n/--limit <N>`, `--offset <N>`, `-s/--sort stars|name`, `-l/--lang en|ka|both`, `--json` (machine-readable output).
+
+The CLI shares its query logic (`src/query.ts`) with the MCP server, so results are identical across both surfaces.
 
 ---
 
@@ -95,9 +118,10 @@ When the README is updated (new repo added, stars refreshed), running `npm run b
 | Command | Effect |
 |---------|--------|
 | `npm run build:data` | Re-parse README → `data/repos.json` |
-| `npm run build` | Build data + compile bundle to `dist/` |
-| `npm run dev` | Run from source via `tsx` (no build step) |
-| `npm start` | Run the compiled bundle |
+| `npm run build` | Build data + compile MCP + CLI bundles to `dist/` |
+| `npm run dev` | Run the MCP server from source via `tsx` |
+| `npm run cli` | Run the CLI from source, e.g. `npm run cli -- search rag` |
+| `npm start` | Run the compiled MCP bundle |
 
 ---
 

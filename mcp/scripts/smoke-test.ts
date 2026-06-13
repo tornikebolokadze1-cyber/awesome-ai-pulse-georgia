@@ -123,6 +123,27 @@ async function run(): Promise<void> {
   const searchParsed = searchContent ? (JSON.parse(searchContent) as { matched: number }) : null;
   expect(searchParsed !== null && searchParsed.matched > 0, `search 'claude' returns matches (got ${searchParsed?.matched})`);
 
+  // --- CLI check (same data, terminal surface) ---
+  const cliBundle = resolve(__dirname, "..", "dist", "cli.js");
+  let cliOut = "";
+  if (existsSync(cliBundle)) {
+    const cli = spawn("node", [cliBundle, "stats", "--json"], { stdio: ["ignore", "pipe", "pipe"] });
+    cli.stdout.on("data", (chunk: Buffer) => {
+      cliOut += chunk.toString("utf-8");
+    });
+    await new Promise((r) => cli.once("exit", r));
+  }
+  let cliStats: { totalRepos?: number } | null = null;
+  try {
+    cliStats = JSON.parse(cliOut) as { totalRepos?: number };
+  } catch {
+    cliStats = null;
+  }
+  expect(
+    cliStats !== null && (cliStats.totalRepos ?? 0) > 0,
+    `CLI 'stats --json' returns totalRepos > 0 (got ${cliStats?.totalRepos})`,
+  );
+
   if (process.exitCode === 1) {
     console.error("\n✗ Smoke test FAILED");
     process.exit(1);

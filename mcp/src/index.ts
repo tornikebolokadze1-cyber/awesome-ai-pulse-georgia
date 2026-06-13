@@ -2,8 +2,8 @@
 /**
  * AI Pulse Georgia MCP Server
  *
- * Exposes the curated awesome-ai-pulse-georgia repo collection (207+ repos
- * across 9 categories) as MCP tools. Designed for stdio transport — usable
+ * Exposes the curated awesome-ai-pulse-georgia repo collection (250+ repos
+ * across 14 categories) as MCP tools. Designed for stdio transport — usable
  * from Claude Code, Cursor, Codex, and any other MCP-compatible client.
  *
  * v0.2 — bilingual: every result includes editorial Georgian + GitHub-sourced
@@ -63,7 +63,7 @@ function textResult(text: string): { content: Array<{ type: "text"; text: string
 
 server.tool(
   "list_categories",
-  "List all 9 categories with repo counts. Use this first to understand the collection's structure.",
+  "List all categories with repo counts. Use this first to understand the collection's structure.",
   {},
   async () => jsonResult({
     totalRepos: collection.totalRepos,

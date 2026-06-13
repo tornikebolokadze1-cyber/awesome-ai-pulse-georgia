@@ -1,13 +1,13 @@
 {
-  "generated": "2026-06-13T18:58:40.016Z",
-  "totalRepos": 244,
+  "generated": "2026-06-13T15:59:38.913Z",
+  "totalRepos": 250,
   "categories": [
     {
       "slug": "coding",
       "emoji": "🤖",
       "english": "Coding Agents",
       "georgian": "კოდინგ აგენტები",
-      "count": 24
+      "count": 25
     },
     {
       "slug": "plugins",
@@ -42,7 +42,7 @@
       "emoji": "🧬",
       "english": "AI Agent Frameworks & Orchestration",
       "georgian": "AI აგენტების ფრეიმვორკები",
-      "count": 24
+      "count": 27
     },
     {
       "slug": "workflow",
@@ -56,7 +56,7 @@
       "emoji": "💼",
       "english": "AI Assistants & Business Agents",
       "georgian": "AI ასისტენტები და ბიზნეს-აგენტები",
-      "count": 27
+      "count": 28
     },
     {
       "slug": "finance",
@@ -84,7 +84,7 @@
       "emoji": "⚙️",
       "english": "Model Inference & LLM Tooling",
       "georgian": "ინფერენსი და LLM ხელსაწყოები",
-      "count": 20
+      "count": 21
     },
     {
       "slug": "media",
@@ -189,6 +189,17 @@
       "categoryEmoji": "🤖",
       "categoryGeorgian": "კოდინგ აგენტები",
       "descriptionEn": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods"
+    },
+    {
+      "name": "gpt-engineer",
+      "url": "https://github.com/AntonOsika/gpt-engineer",
+      "stars": "55K",
+      "description": "gpt-engineer — CLI პლატფორმა codegen-ის ექსპერიმენტებისთვის: აღწერ რა გინდა და AI ნულიდან წერს მთელ კოდბაზას, საჭიროებისას დამაზუსტებელ კითხვებს სვამს. Lovable-ის წინამორბედი, prompt-to-app მიდგომის ერთ-ერთი პიონერი. Python, 55k+ ⭐.",
+      "starsNumeric": 55000,
+      "categorySlug": "coding",
+      "categoryEmoji": "🤖",
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "CLI platform to experiment with codegen — describe what you want and it builds a codebase. Precursor to Lovable."
     },
     {
       "name": "omo (ex-oh-my-openagent)",
@@ -1225,6 +1236,17 @@
       "descriptionEn": "Convert any URL to clean markdown for AI agents."
     },
     {
+      "name": "AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "stars": "185K",
+      "description": "AutoGPT — ავტონომიური AI აგენტების ფუძემდებლური, ერთ-ერთი ყველაზე ცნობილი პლატფორმა (185k+ ⭐): GPT-ზე დაშენებული აგენტი, რომელიც მიზანს თავად ანაწილებს ქვე-ამოცანებად და ასრულებს ადამიანის ჩარევის მინიმუმით. ახლა low-code agent builder-ად განვითარდა (frontend + server). 2023-ის autonomous-agent ბუმის დამწყები. Python.",
+      "starsNumeric": 185000,
+      "categorySlug": "frameworks",
+      "categoryEmoji": "🧬",
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "AutoGPT is the vision of accessible AI for everyone — a platform to build, deploy and run autonomous AI agents."
+    },
+    {
       "name": "LangChain",
       "url": "https://github.com/langchain-ai/langchain",
       "stars": "134K",
@@ -1291,6 +1313,17 @@
       "descriptionEn": "Build, run, manage agentic software at scale."
     },
     {
+      "name": "AgentGPT",
+      "url": "https://github.com/reworkd/AgentGPT",
+      "stars": "36K",
+      "description": "AgentGPT — ბრაუზერში ავტონომიური AI აგენტების აწყობა, კონფიგურაცია და გაშვება: მისცე მიზანი და აგენტი თავად დაგეგმავს და შეასრულებს ნაბიჯებს, კოდის გარეშე, პირდაპირ ვებ-ინტერფეისიდან. TypeScript, 36k+ ⭐ — autonomous-agent-ების ხელმისაწვდომი შესავალი.",
+      "starsNumeric": 36000,
+      "categorySlug": "frameworks",
+      "categoryEmoji": "🧬",
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "Assemble, configure and deploy autonomous AI agents directly in your browser — no code required."
+    },
+    {
       "name": "CopilotKit",
       "url": "https://github.com/CopilotKit/CopilotKit",
       "stars": "35K",
@@ -1311,6 +1344,17 @@
       "categoryEmoji": "🧬",
       "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
       "descriptionEn": "DSPy: The framework for programming—not prompting—language models"
+    },
+    {
+      "name": "ChatDev",
+      "url": "https://github.com/OpenBMB/ChatDev",
+      "stars": "33K",
+      "description": "ChatDev — ვირტუალური სოფტვერ-კომპანია multi-agent თანამშრომლობით: CEO, CTO, პროგრამისტი, ტესტერი, დიზაინერი — სპეციალიზებული LLM-აგენტები ერთად ქმნიან სრულ პროგრამას ბუნებრივი ენის დავალებიდან. OpenBMB-ის კვლევითი პროექტი (ChatDev 2.0). Python, 33k+ ⭐. MetaGPT-ის მონათესავე.",
+      "starsNumeric": 33000,
+      "categorySlug": "frameworks",
+      "categoryEmoji": "🧬",
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "A virtual software company driven by LLM-powered multi-agent collaboration (ChatDev 2.0) — CEO, CTO, programmer, tester roles build software from a prompt."
     },
     {
       "name": "RuFlo (ex-Claude Flow)",
@@ -1707,6 +1751,17 @@
       "categoryEmoji": "💼",
       "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Vane is an AI-powered answering engine."
+    },
+    {
+      "name": "Onyx (ex-Danswer)",
+      "url": "https://github.com/onyx-dot-app/onyx",
+      "stars": "30K",
+      "description": "Onyx (ყოფილი Danswer) — ღია კოდის enterprise AI პლატფორმა: ჩატი ნებისმიერ LLM-თან, რომელიც კომპანიის დოკუმენტებსა და აპებში (Slack, Drive, Confluence — 40+ კონექტორი) ეძებს და პასუხს წყაროებზე გრაუნდდება. self-hosted, privacy-first. Python, 30k+ ⭐ — AnythingLLM-ისა და Khoj-ის enterprise-მასშტაბის ალტერნატივა.",
+      "starsNumeric": 30000,
+      "categorySlug": "business",
+      "categoryEmoji": "💼",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
+      "descriptionEn": "Open-source enterprise AI platform — chat with any LLM grounded in your company's docs and apps (40+ connectors). Self-hostable. Formerly Danswer."
     },
     {
       "name": "AstrBot",
@@ -2246,6 +2301,17 @@
       "categoryEmoji": "⚙️",
       "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
       "descriptionEn": "A Gradio web UI for running local large language models — multiple backends, chat, fine-tuning and extensions."
+    },
+    {
+      "name": "exo",
+      "url": "https://github.com/exo-explore/exo",
+      "stars": "45K",
+      "description": "exo — frontier AI მოდელების ლოკალურად გაშვება შენი მოწყობილობების კლასტერზე: ტელეფონი, ლეპტოპი, Mac, GPU — exo აერთიანებს მათ ერთ inference-კლასტერად, ისე რომ დიდი მოდელებიც გაუშვა გარე API-ს გარეშე. Python, 45k+ ⭐ — distributed local inference-ის ლიდერი.",
+      "starsNumeric": 45000,
+      "categorySlug": "infra",
+      "categoryEmoji": "⚙️",
+      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
+      "descriptionEn": "Run frontier AI models locally across a cluster of your everyday devices (phones, laptops, GPUs) — distributed inference, no external API."
     },
     {
       "name": "LocalAI",

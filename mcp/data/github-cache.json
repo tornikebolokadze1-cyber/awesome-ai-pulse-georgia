@@ -970,5 +970,29 @@
   "hexgrad/kokoro": {
     "description": "A small, high-quality open TTS model (82M params, Apache 2.0) — fast local speech synthesis with minimal resources.",
     "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "Significant-Gravitas/AutoGPT": {
+    "description": "AutoGPT is the vision of accessible AI for everyone — a platform to build, deploy and run autonomous AI agents.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "AntonOsika/gpt-engineer": {
+    "description": "CLI platform to experiment with codegen — describe what you want and it builds a codebase. Precursor to Lovable.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "exo-explore/exo": {
+    "description": "Run frontier AI models locally across a cluster of your everyday devices (phones, laptops, GPUs) — distributed inference, no external API.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "reworkd/AgentGPT": {
+    "description": "Assemble, configure and deploy autonomous AI agents directly in your browser — no code required.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "OpenBMB/ChatDev": {
+    "description": "A virtual software company driven by LLM-powered multi-agent collaboration (ChatDev 2.0) — CEO, CTO, programmer, tester roles build software from a prompt.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "onyx-dot-app/onyx": {
+    "description": "Open-source enterprise AI platform — chat with any LLM grounded in your company's docs and apps (40+ connectors). Self-hostable. Formerly Danswer.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
   }
 }

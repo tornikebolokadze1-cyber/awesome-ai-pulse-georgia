@@ -21,11 +21,11 @@
 
 ---
 
-## ⚡ გამოიყენე Claude Code-ში / Cursor-ში — MCP Server-ით
+## ⚡ გამოიყენე Claude Code-ში / Cursor-ში — MCP Server-ით ან CLI-ით
 
-ეს მთელი კოლექცია ხელმისაწვდომია **MCP server-ად** — Claude Code-ის, Cursor-ის, Codex-ის ან ნებისმიერი MCP-თავსებადი client-ის შიგნიდან 213 რეპოს ეძებ ერთი ბრძანებით. ნაცვლად იმისა, რომ GitHub-ი გახსნა და README-ი დააქოქო, AI ასისტენტს ჰკითხე *"აი Pulse-ის კოლექციაში რა არის საუკეთესო RAG-ისთვის?"* — სწორ რეპოს ქართული აღწერით დაგიბრუნებს.
+ეს მთელი კოლექცია ხელმისაწვდომია **MCP server-ად** — Claude Code-ის, Cursor-ის, Codex-ის ან ნებისმიერი MCP-თავსებადი client-ის შიგნიდან 250 რეპოს ეძებ ბუნებრივი ენით. ნაცვლად იმისა, რომ GitHub-ი გახსნა და README-ი დააქოქო, AI ასისტენტს ჰკითხე *"აი Pulse-ის კოლექციაში რა არის საუკეთესო RAG-ისთვის?"* — სწორ რეპოს ქართული აღწერით დაგიბრუნებს.
 
-**Install** — `~/.claude/claude_desktop_config.json` ან Cursor MCP settings-ში:
+**MCP Install** — `~/.claude/claude_desktop_config.json` ან Cursor MCP settings-ში:
 
 ```json
 {
@@ -38,7 +38,17 @@
 }
 ```
 
-> *Available as an MCP server — query 213 curated AI repos directly from Claude Code, Cursor, or any MCP client.* Full docs: [`mcp/README.md`](./mcp/README.md) · Source: [`mcp/`](./mcp/)
+**ან პირდაპირ ტერმინალში — `aipulse` CLI-ით** (MCP-კლიენტის გარეშე):
+
+```bash
+npx -p @aipulsegeorgia/mcp-server aipulse search "rag memory"
+npx -p @aipulsegeorgia/mcp-server aipulse list --category coding
+npx -p @aipulsegeorgia/mcp-server aipulse stats
+```
+
+ბრძანებები: `categories` · `list` · `search` · `get` · `stats` — ფლაგებით `-c/--category`, `-n/--limit`, `-l/--lang en|ka|both`, `--json`.
+
+> *Available as an MCP server **and an `aipulse` CLI** — query 250 curated AI repos from Claude Code, Cursor, any MCP client, or straight from your terminal.* Full docs: [`mcp/README.md`](./mcp/README.md) · Source: [`mcp/`](./mcp/)
 
 ---
 

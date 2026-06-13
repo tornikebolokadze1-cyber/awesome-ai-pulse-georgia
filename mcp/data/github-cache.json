@@ -44,7 +44,7 @@
     "fetchedAt": "2026-04-26T20:46:54.844Z"
   },
   "voideditor/void": {
-    "description": null,
+    "description": "Open-source VS Code fork that puts AI at the heart of the IDE — an open alternative to Cursor with tab completion, agent mode and inline edit, plus support for self-hosted LLMs (Ollama, vLLM) so your data stays local. Note: the team paused active IDE development in 2026 to explore new coding ideas, so the repo is alive but Issues/PRs are not actively reviewed. TypeScript, MIT.",
     "fetchedAt": "2026-04-26T20:46:55.307Z"
   },
   "abhigyanpatwari/GitNexus": {
@@ -184,7 +184,7 @@
     "fetchedAt": "2026-04-26T20:47:12.510Z"
   },
   "erekle1/georgian-payments-skills": {
-    "description": null,
+    "description": "Teaches AI assistants the Georgian banking APIs — TBC Bank (Checkout, TPay) and Bank of Georgia (iPay, Installments, Open Banking) integrations. Written in Python, built in Georgia. Expert-level local knowledge for developers working with Georgian payment systems that does not exist elsewhere.",
     "fetchedAt": "2026-04-26T20:47:12.897Z"
   },
   "modelcontextprotocol/servers": {
@@ -228,7 +228,7 @@
     "fetchedAt": "2026-04-26T20:47:17.680Z"
   },
   "jgraph/drawio-mcp": {
-    "description": null,
+    "description": "Official MCP server for draw.io (JGraph Ltd) — lets an AI assistant automatically create network diagrams, UML, flowcharts and other diagrams in diagrams.net from natural language. JavaScript, four integration methods, 3,000+ stars.",
     "fetchedAt": "2026-04-26T20:47:18.093Z"
   },
   "supabase-community/supabase-mcp": {
@@ -328,7 +328,7 @@
     "fetchedAt": "2026-04-26T20:47:29.749Z"
   },
   "cloudflare/mcp-server-cloudflare": {
-    "description": null,
+    "description": "Cloudflare official collection of MCP servers giving AI assistants full control of the Cloudflare platform — Workers, KV, R2, D1, Browser Rendering, DNS analytics and more across 13+ servers in one repo. TypeScript. Manage your Cloudflare infrastructure straight from a conversation with Claude or Cursor, no CLI needed.",
     "fetchedAt": "2026-04-26T20:47:30.187Z"
   },
   "brightdata/brightdata-mcp": {
@@ -500,7 +500,7 @@
     "fetchedAt": "2026-04-26T20:47:51.237Z"
   },
   "getcompanion-ai/feynman": {
-    "description": null,
+    "description": "Open-source AI research agent where four specialized sub-agents (Researcher, Reviewer, Writer, Verifier) work in parallel through a scientific investigation. Slash commands /deepresearch, /lit, /audit, /replicate and /compare cover each workflow, and every conclusion cites its source — paper, doc or repo — to minimize hallucination. TypeScript, runs on local models (Ollama, LM Studio) or cloud.",
     "fetchedAt": "2026-04-26T20:47:51.882Z"
   },
   "cloudflare/agentic-inbox": {
@@ -740,7 +740,7 @@
     "fetchedAt": "2026-05-10T20:35:49.095Z"
   },
   "anthropics/financial-services": {
-    "description": null,
+    "description": "Anthropic official reference repo for financial-services workflows — investment banking, equity research, private equity and wealth management. Ships ready-made Claude agents, skills, slash commands and MCP data connectors as self-contained plugins deployable via Claude Cowork or the Managed Agents API, with all output staged for human review (human-in-the-loop by design). Python, Apache 2.0.",
     "fetchedAt": "2026-05-10T20:46:46.844Z"
   },
   "nexu-io/open-design": {
@@ -842,5 +842,9 @@
   "lfnovo/open-notebook": {
     "description": "An Open Source implementation of Notebook LM with more flexibility and features",
     "fetchedAt": "2026-06-12T08:00:03.150Z"
+  },
+  "karpathy/gist-442a6bf5": {
+    "description": "A conceptual gist from Andrej Karpathy (former AI lead at OpenAI and Tesla): an AI automatically builds and maintains a personal Markdown wiki as new information arrives. An alternative to RAG — instead of a vector DB, the LLM rewrites, updates and cross-links the wiki pages itself. Not code but a vision piece that sparked wide discussion of LLM-maintained knowledge bases.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
   }
 }

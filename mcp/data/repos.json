@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-13T12:39:50.687Z",
+  "generated": "2026-06-13T13:05:32.678Z",
   "totalRepos": 213,
   "categories": [
     {
@@ -7,21 +7,28 @@
       "emoji": "🤖",
       "english": "Coding Agents",
       "georgian": "კოდინგ აგენტები",
-      "count": 25
+      "count": 22
     },
     {
       "slug": "plugins",
       "emoji": "⚡",
       "english": "Claude Code Plugins & Skills",
       "georgian": "Claude Code პლაგინები და უნარები",
-      "count": 37
+      "count": 20
+    },
+    {
+      "slug": "design",
+      "emoji": "🎨",
+      "english": "Design & UI",
+      "georgian": "დიზაინი და UI",
+      "count": 18
     },
     {
       "slug": "mcp",
       "emoji": "🔌",
       "english": "MCP Integrations",
       "georgian": "MCP ინტეგრაციები",
-      "count": 24
+      "count": 20
     },
     {
       "slug": "scraping",
@@ -33,37 +40,51 @@
     {
       "slug": "frameworks",
       "emoji": "🧬",
-      "english": "AI Agent Frameworks",
+      "english": "AI Agent Frameworks & Orchestration",
       "georgian": "AI აგენტების ფრეიმვორკები",
-      "count": 20
+      "count": 21
+    },
+    {
+      "slug": "workflow",
+      "emoji": "🔁",
+      "english": "No-Code & Workflow Builders",
+      "georgian": "Workflow და No-Code ბილდერები",
+      "count": 5
     },
     {
       "slug": "business",
       "emoji": "💼",
-      "english": "Ready-Made AI Agents for Business",
-      "georgian": "მზა AI აგენტები ბიზნესისთვის",
-      "count": 30
+      "english": "AI Assistants & Business Agents",
+      "georgian": "AI ასისტენტები და ბიზნეს-აგენტები",
+      "count": 28
     },
     {
       "slug": "memory",
       "emoji": "🧠",
-      "english": "Memory & RAG",
-      "georgian": "მეხსიერება და RAG",
-      "count": 17
+      "english": "Memory, RAG & Code Context",
+      "georgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "count": 22
     },
     {
       "slug": "infra",
       "emoji": "⚙️",
-      "english": "AI Infrastructure & Tools",
-      "georgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
-      "count": 27
+      "english": "Model Inference & LLM Tooling",
+      "georgian": "ინფერენსი და LLM ხელსაწყოები",
+      "count": 13
+    },
+    {
+      "slug": "media",
+      "emoji": "🎬",
+      "english": "Media Generation",
+      "georgian": "მედია-გენერაცია",
+      "count": 15
     },
     {
       "slug": "resources",
       "emoji": "📚",
       "english": "Resources & Learning",
       "georgian": "რესურსები და სასწავლო მასალები",
-      "count": 17
+      "count": 13
     }
   ],
   "repos": [
@@ -134,6 +155,17 @@
       "descriptionEn": "Autonomous coding agent right in your IDE, capable of creating/editing files, executing commands, using the browser, and more with your permission every step of the way."
     },
     {
+      "name": "Pi (pi-mono)",
+      "url": "https://github.com/badlogic/pi-mono",
+      "stars": "57K",
+      "description": "Pi coding agent-ის სრული toolkit-ია ერთ monorepo-ში — interactive CLI agent, unified LLM API (Anthropic, OpenAI, Google, Groq ერთ ინტერფეისში), agent runtime და TUI/web UI ბიბლიოთეკები, Slack bot-ისა და vLLM deployment-ის ჩათვლით. interchangeable კომპონენტების არქიტექტურა საშუალებას გაძლევს საკუთარი coding agent ააწყო მზა ნაწილებისგან. TypeScript (93.5%), MIT, v0.77.0 (2026 წლის 28 მაისი), 57,000+ ვარსკვლავი. **opencode**-ისა და **Cline**-ის უფრო „ლეგოსებრივი\", toolkit-ზე ორიენტირებული ალტერნატივა — badlogic-ის (Mario Zechner) სწრაფად მზარდი პროექტი.",
+      "starsNumeric": 57000,
+      "categorySlug": "coding",
+      "categoryEmoji": "🤖",
+      "categoryGeorgian": "კოდინგ აგენტები",
+      "descriptionEn": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods"
+    },
+    {
       "name": "omo (ex-oh-my-openagent)",
       "url": "https://github.com/code-yeongyu/oh-my-openagent",
       "stars": "53K",
@@ -198,17 +230,6 @@
       "categoryEmoji": "🤖",
       "categoryGeorgian": "კოდინგ აგენტები",
       "descriptionEn": "Open-source VS Code fork that puts AI at the heart of the IDE — an open alternative to Cursor with tab completion, agent mode and inline edit, plus support for self-hosted LLMs (Ollama, vLLM) so your data stays local. Note: the team paused active IDE development in 2026 to explore new coding ideas, so the repo is alive but Issues/PRs are not actively reviewed. TypeScript, MIT."
-    },
-    {
-      "name": "GitNexus",
-      "url": "https://github.com/abhigyanpatwari/GitNexus",
-      "stars": "28K",
-      "description": "GitNexus — ბრაუზერში სრულად მომუშავე კოდის ინტელიჯენსის ხელსაწყო, სერვერის გარეშე. GitHub-ის repo ან ZIP ჩააგდე და ნახავ ყველა ფაილს, ფუნქციასა და მათ ურთიერთდამოკიდებლობას ინტერაქტიული knowledge graph-ის სახით. ჩაშენებული Graph RAG Agent ამ graph-ს იყენებს, რომ კოდზე ბუნებრივ ენაზე დასმულ კითხვებს უპასუხოს. TypeScript-ში დაწერილი, სრულად client-side, backend deploy-ი არ სჭირდება. კოდის კომპლექსური ბაზის სწრაფი გასაგებად გამოსადეგია.",
-      "starsNumeric": 28000,
-      "categorySlug": "coding",
-      "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები",
-      "descriptionEn": "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration"
     },
     {
       "name": "Taskmaster",
@@ -277,17 +298,6 @@
       "descriptionEn": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent."
     },
     {
-      "name": "Codex Plugin",
-      "url": "https://github.com/openai/codex-plugin-cc",
-      "stars": "15K",
-      "description": "Codex Plugin არის OpenAI-ის ოფიციალური Claude Code plugin — Codex CLI-ის agent-ს Claude Code-ის შიგნიდან გამოძახების საშუალებას გაძლევს. კოდის review-ისა და ამოცანების დელეგირებისთვის — OpenAI-ს Codex-ი და Anthropic-ს Claude Code ერთ workflow-ში. JavaScript, 2026 წლის მარტიდან ხელმისაწვდომია. ცალკე რეპოა openai/codex CLI-სგან (რომელიც terminal agent-ია — ეს კი Claude Code-ის plugin-ია).",
-      "starsNumeric": 15000,
-      "categorySlug": "coding",
-      "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები",
-      "descriptionEn": "Use Codex from Claude Code to review code or delegate tasks."
-    },
-    {
       "name": "cmux",
       "url": "https://github.com/manaflow-ai/cmux",
       "stars": "15K",
@@ -321,28 +331,6 @@
       "descriptionEn": "🤗 ml-intern: an open-source ML engineer that reads papers, trains models, and ships ML models"
     },
     {
-      "name": "Open Agents",
-      "url": "https://github.com/vercel-labs/open-agents",
-      "stars": "4.1K",
-      "description": "Open Agents არის Vercel Labs-ის ღია კოდის reference template ღრუბლოვანი AI agent-ების ასაშენებლად. agent VM sandbox-ში ეშვება, GitHub-ს ინტეგრაცია, workflow runtime და ჩაშენებული ვებ-ინტერფეისი შედის. TypeScript-ში, Vercel-ზე ადვილად დეპლოისებადი. ლოკალური კომპიუტერის გარეშე ფონური coding agent-ებისთვის — reference implementation, არა production-ready პლატფორმა.",
-      "starsNumeric": 4100,
-      "categorySlug": "coding",
-      "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები",
-      "descriptionEn": "An open source template for building cloud agents."
-    },
-    {
-      "name": "Pi (pi-mono)",
-      "url": "https://github.com/badlogic/pi-mono",
-      "stars": "57K",
-      "description": "Pi coding agent-ის სრული toolkit-ია ერთ monorepo-ში — interactive CLI agent, unified LLM API (Anthropic, OpenAI, Google, Groq ერთ ინტერფეისში), agent runtime და TUI/web UI ბიბლიოთეკები, Slack bot-ისა და vLLM deployment-ის ჩათვლით. interchangeable კომპონენტების არქიტექტურა საშუალებას გაძლევს საკუთარი coding agent ააწყო მზა ნაწილებისგან. TypeScript (93.5%), MIT, v0.77.0 (2026 წლის 28 მაისი), 57,000+ ვარსკვლავი. **opencode**-ისა და **Cline**-ის უფრო „ლეგოსებრივი\", toolkit-ზე ორიენტირებული ალტერნატივა — badlogic-ის (Mario Zechner) სწრაფად მზარდი პროექტი.",
-      "starsNumeric": 57000,
-      "categorySlug": "coding",
-      "categoryEmoji": "🤖",
-      "categoryGeorgian": "კოდინგ აგენტები",
-      "descriptionEn": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods"
-    },
-    {
       "name": "Superpowers",
       "url": "https://github.com/obra/superpowers",
       "stars": "165K",
@@ -365,17 +353,6 @@
       "descriptionEn": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
     },
     {
-      "name": "Anthropic Skills",
-      "url": "https://github.com/anthropics/skills",
-      "stars": "150K",
-      "description": "Anthropic Skills — **Anthropic-ის ოფიციალური** Agent Skills რეპოზიტორია და მთელი skills ეკოსისტემის ფუნდამენტი. შიგნით 17 example skill — მათ შორის **frontend-design** (generic „AI slop\" დიზაინისგან თავის დასაღწევი წესები), mcp-builder, webapp-testing, canvas-design, brand-guidelines და skill-creator — პლუს ის 4 production document skill (docx, pdf, pptx, xlsx), რომლებიც Claude-ში ფაილების რეალურ შექმნას უზრუნველყოფს და აქ source-available სახითაა გამოქვეყნებული. აქვეა Agent Skills სპეციფიკაცია (agentskills.io) და skill template. ერთი ბრძანებით ეყენება: `/plugin marketplace add anthropics/skills`. Python-ში; 2025 წლის სექტემბრიდან **149,800+ ვარსკვლავი** — GitHub-ის ისტორიის ერთ-ერთი ყველაზე სწრაფად მზარდი რეპო. Skills ეკოსისტემისთვის იგივეა, რაც modelcontextprotocol/servers MCP-სთვის — **Agent Skills Spec**-ის (ასევე ამ კოლექციაში) reference implementation.",
-      "starsNumeric": 150000,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "Public repository for Agent Skills"
-    },
-    {
       "name": "Spec Kit",
       "url": "https://github.com/github/spec-kit",
       "stars": "90K",
@@ -396,17 +373,6 @@
       "categoryEmoji": "⚡",
       "categoryGeorgian": "Claude Code პლაგინები და უნარები",
       "descriptionEn": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls."
-    },
-    {
-      "name": "UI UX Pro Max",
-      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": "69K",
-      "description": "UI UX Pro Max AI coding agent-ებს professional UI/UX დიზაინის ინტელიგენციას სძენს — 50 დიზაინ სტილი, 161 ფერთა პალიტრა და 25 დიაგრამის ტიპი ერთ skill-ში. React-ს, Vue-ს, Flutter-ს, SwiftUI-ს და სხვა ფრეიმვორკებს უჭერს მხარს. Python-ში, 69,000+ ვარსკვლავი — Claude Code-ის, Cursor-ის და სხვა agent-ების visual output-ს მნიშვნელოვნად აუმჯობესებს. დიზაინერის გარეშე ლამაზი UI-ის ასაშენებლად.",
-      "starsNumeric": 69000,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms"
     },
     {
       "name": "Claude Mem",
@@ -453,50 +419,6 @@
       "descriptionEn": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman"
     },
     {
-      "name": "Career-Ops",
-      "url": "https://github.com/santifer/career-ops",
-      "stars": "38K",
-      "description": "Career-Ops Claude Code-ზე აგებული AI-ს სამუშაოს ძიების სისტემაა — 14 skill mode, Go-ში დაწერილი dashboard, PDF CV გენერაცია და batch processing ვაკანსიების ავტომატური შეფასებისთვის. ვაკანსიების პოვნა, A-F სკალით შეფასება, CV-ს პოზიციაზე მორგება. JavaScript, career-ops.org. 38,000+ ვარსკვლავი — AI-ს job search-ზე გამოყენების ერთ-ერთი ყველაზე სრული open-source implementation.",
-      "starsNumeric": 38000,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing."
-    },
-    {
-      "name": "Open Design",
-      "url": "https://github.com/nexu-io/open-design",
-      "stars": "36K",
-      "description": "Open Design — Anthropic-ის ფასიანი **Claude Design**-ის სრულად ღია წყაროს ალტერნატივა, რომელიც 2026 წლის 28 აპრილს გამოვიდა და სულ 2 კვირაში 36,000+ ვარსკვლავი (4,000+ fork — organic signal) დააგროვა. შიგნით **19 skill** და **71 brand-grade design system**: prompt-დან HTML/CSS prototype-ი, slides, infographic-ი, კარუსელი, ანიმაცია და MP4 export. **BYOK მოდელი** — საკუთარი Claude/GPT/Gemini/Kimi/GLM/Ollama key-ით ეშვება, lock-in-ის გარეშე. Sandbox-ში preview, HTML/PDF/PPTX/MP4 export. TypeScript-ში, Apache 2.0. Claude Code-ში, Codex-ში, Cursor-ში, OpenCode-ში, Qwen Code-ში, Hermes-სა და Kimi CLI-ში მუშაობს — agent-agnostic. **Huashu Design**-ის და **UI UX Pro Max**-ის ბუნებრივი დამატება — 2026-ის design-skill სტეკის ერთ-ერთი მთავარი ბურჯი, კოლექციის ერთ-ერთი ყველაზე სწრაფად მზარდი ჩანაწერი.",
-      "starsNumeric": 36000,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "🎨 Local-first, open-source alternative to Anthropic's Claude Design. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI."
-    },
-    {
-      "name": "Graphify",
-      "url": "https://github.com/safishamsi/graphify",
-      "stars": "33K",
-      "description": "Graphify კოდის, დოკუმენტაციის, PDF-ების, სურათების და ვიდეოების queryable knowledge graph-ად გარდაქმნის AI coding agent-ებისთვის. Claude Code-ს, Codex-ს, opencode-ს, Cursor-ს, Gemini CLI-ს და სხვებს უჭერს მხარს. Python-ში, graphifylabs.ai. Graph-ზე დაფუძნებული კითხვების მეთოდი AI-ის ტოკენებს 71-ჯერ ამცირებს ფაილების პირდაპირ კითხვასთან შედარებით. 33,000+ ვარსკვლავი — 2026 წლის აპრილში სწრაფად გაიზარდა.",
-      "starsNumeric": 33000,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, GitHub Copilot CLI, OpenClaw, Factory Droid, Trae, Google Antigravity). Turn any folder of code, docs, papers, images, or videos into a queryable knowledge graph"
-    },
-    {
-      "name": "RuFlo (ex-Claude Flow)",
-      "url": "https://github.com/ruvnet/claude-flow",
-      "stars": "33K",
-      "description": "RuFlo v3.5 (ყოფილი **Claude Flow**; repo URL ჯერ ძველ სახელს ინახავს) Enterprise AI Orchestration Platform-ია — „distributed swarm intelligence\" მიდგომით რამდენიმე AI agent პარალელურად ასრულებს ერთ workflow-ს. RAG ინტეგრაცია, native Claude Code + Codex მხარდაჭერა, enterprise-დონის არქიტექტურა. TypeScript-ში, `ruvnet` (ruv.io) platform-ის ნაწილი. 33,000+ ვარსკვლავი — ერთ-ერთი ყველაზე ფუნქციონალური multi-agent orchestration ხელსაწყო Claude Code ეკოსისტემაში.",
-      "starsNumeric": 33000,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features    enterprise-grade architecture, distributed swarm intelligence, RAG integration, and native Claude Code / Codex Integration"
-    },
-    {
       "name": "Oh My ClaudeCode",
       "url": "https://github.com/yeachan-heo/oh-my-claudecode",
       "stars": "30K",
@@ -508,28 +430,6 @@
       "descriptionEn": "Teams-first Multi-agent orchestration for Claude Code"
     },
     {
-      "name": "Vercel Agent Skills",
-      "url": "https://github.com/vercel-labs/agent-skills",
-      "stars": "27.8K",
-      "description": "Vercel Agent Skills — **Vercel-ის ოფიციალური** skill კოლექცია AI coding agent-ებისთვის: 8 skill, რომლებიც Vercel Engineering-ის შიდა handbook-ებს აგენტებისთვის გასაგებ ფორმატად აქცევს. **web-design-guidelines** UI კოდს 100+ წესით ამოწმებს (accessibility, focus states, forms, animation, typography, dark mode, i18n) — Vercel-ის ცნობილი Web Interface Guidelines-ის packaged ვერსია; **react-best-practices** 40+ React/Next.js performance წესს მოიცავს; **vercel-deploy-claimable** კი აპს პირდაპირ claude.ai საუბრიდან deploy-ს უკეთებს live preview URL-ით. `npx skills add vercel-labs/agent-skills`-ით ეყენება. JavaScript, MIT, skills.sh რეესტრის canonical მაგალითი. 2025 წლის დეკემბრიდან 27,800+ ვარსკვლავი. ვიზუალურ design skill-ებისგან (UI UX Pro Max, Open Design) განსხვავებით აქცენტი engineering correctness-ზეა — accessibility და performance, არა მხოლოდ ესთეტიკა.",
-      "starsNumeric": 27800,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "Vercel's official collection of agent skills"
-    },
-    {
-      "name": "Impeccable",
-      "url": "https://github.com/pbakaus/impeccable",
-      "stars": "27.6K",
-      "description": "Impeccable **Paul Bakaus**-ის (ex-Google DevRel, Disney Interactive, jQuery UI core contributor — ერთ-ერთი ყველაზე ცნობილი front-end ინჟინერი 2010-იანების ვებზე) design-language skill-ია AI coding agent-ებისთვის — სლოგანი: *„The design language that makes your AI harness better at design\"*. Claude Code-ში, Codex-ში, Cursor-ში, OpenCode-ში და სხვა MCP-თავსებად client-ებში მუშაობს. JavaScript-ში, **Apache 2.0** ლიცენზიით, impeccable.style. 2025 წლის ნოემბერში გამოვიდა და 27,600+ ვარსკვლავი (1,500+ fork — organic signal) დააგროვა. **Open Design**-ის, **UI UX Pro Max**-ის და **Huashu Design**-ის ბუნებრივი მონათესავე — სამივესთან ერთად stacked design-skill კონფიგურაცია AI-ის visual output-ის ხარისხს professional დონეზე აყვანს.",
-      "starsNumeric": 27600,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "The design language that makes your AI harness better at design."
-    },
-    {
       "name": "Obsidian Skills",
       "url": "https://github.com/kepano/obsidian-skills",
       "stars": "26K",
@@ -539,6 +439,17 @@
       "categoryEmoji": "⚡",
       "categoryGeorgian": "Claude Code პლაგინები და უნარები",
       "descriptionEn": "Agent skills for Obsidian. Teach your agent to use Markdown, Bases, JSON Canvas, and use the CLI."
+    },
+    {
+      "name": "Academic Research Skills",
+      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "stars": "24K",
+      "description": "Academic Research Skills Claude Code skill suite-ია, რომელიც სამეცნიერო ნაშრომის სრულ ციკლს ფარავს — literature search, paper writing, peer review და revision. ოთხი ურთიერთჩაწნული skill, 10-საფეხურიანი pipeline, 13+ agent literature exploration-ისთვის და 12 agent წერისთვის; ჩაშენებული anti-hallucination და citation-fabrication detection gates ციტატების ფაბრიკაციას ამოიცნობს. Python, CC BY-NC 4.0 (არა-კომერციული ლიცენზია — გასათვალისწინებელია), v3.9.2 (2026 წლის 18 მაისი), export Markdown/DOCX/APA-7 LaTeX-ში. 2026 წლის GitHub Trending #3, 23,800+ ვარსკვლავი — აკადემიური და კვლევითი workflow-ის პირველი სპეციალიზებული skill კოლექციაში.",
+      "starsNumeric": 24000,
+      "categorySlug": "plugins",
+      "categoryEmoji": "⚡",
+      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
+      "descriptionEn": "Academic Research Skills for Claude Code: research → write → review → revise → finalize"
     },
     {
       "name": "last30days-skill",
@@ -563,17 +474,6 @@
       "descriptionEn": "Production-grade engineering skills for AI coding agents."
     },
     {
-      "name": "Taste-Skill",
-      "url": "https://github.com/leonxlnx/taste-skill",
-      "stars": "17.3K",
-      "description": "Taste-Skill leonxlnx-ის skill-ია, რომელიც AI coding agent-ებს **„გემოვნებას\" აძლევს** — სლოგანი: *„stops the AI from generating boring, generic slop\"*. AI-ის default-ად ერთფეროვან, sterile, „generic AI slop\" output-ს ებრძვის წინასწარ აღწერილი taste curation rules-ით — როდის უნდა გადაუხვიოს AI-მ default ფორმულირებებიდან და როდის უნდა შესთავაზოს ნამდვილად საინტერესო კონცეფცია. Shell-ში, **MIT** ლიცენზიით, tasteskill.dev. 2026 წლის თებერვალში გამოვიდა და უკვე 17,200+ ვარსკვლავი დააგროვა — AI output-ის ხარისხის ერთ-ერთი ყველაზე ციტირებადი skill. **Karpathy Skills**-ის (AI coding pitfalls-ის წინააღმდეგ) და **Caveman**-ის (verbosity reduction) ბუნებრივი დამატება — სამივე ერთად AI-ის output-ის ფუნდამენტურ ნაკლს ასწორებს. UI UX Pro Max-ისგან განსხვავება: ეს content/copy/idea-taste-ზე ფოკუსირებულია, ის კი visual design-ზე.",
-      "starsNumeric": 17300,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop"
-    },
-    {
       "name": "Claude Plugins Official",
       "url": "https://github.com/anthropics/claude-plugins-official",
       "stars": "17K",
@@ -585,15 +485,15 @@
       "descriptionEn": "Official, Anthropic-managed directory of high quality Claude Code Plugins."
     },
     {
-      "name": "Agent Skills Spec",
-      "url": "https://github.com/agentskills/agentskills",
-      "stars": "16K",
-      "description": "Agent Skills Spec AI agent-ებისთვის skills-ის მიცემის ღია სტანდარტისა და სპეციფიკაციის კოლექციაა — write-once, use-everywhere პრინციპით. სრული სპეციფიკაციის დოკუმენტი, reference SDK და მაგალითი skill-ები. Python-ში, agentskills.io — დამოუკიდებელი, community-driven პროექტი. Claude Code, Codex და სხვა platform-ები ამ სტანდარტს მიჰყვებიან, თუმცა ეს Anthropic-ის ოფიციალური სტანდარტი არ არის.",
-      "starsNumeric": 16000,
+      "name": "Claude Skills (alirezarezvani)",
+      "url": "https://github.com/alirezarezvani/claude-skills",
+      "stars": "17K",
+      "description": "Claude Skills 338 production-ready Claude Code skill-ისა და plugin-ის ბიბლიოთეკაა 13 AI coding ხელსაწყოსთვის (Claude Code, Codex, Gemini CLI, Cursor, Aider და სხვა). ინჟინერიის მიღმა ფარავს marketing-ს, product-ს, compliance-ს, finance-ს და C-level advisory-ს — 533 dependency-free Python CLI tool, 25 „POWERFUL-tier\" skill, persona-ები (მაგ. Startup CTO) და security auditor skill-ების შესამოწმებლად. Python, MIT, v2.9.0 (2026 წლის 28 მაისი), 16,500+ ვარსკვლავი. **Matt Pocock Skills**-ისა და **Agent Skills**-ისგან განსხვავება — ეს ბიზნეს- და მრავალდომენიან breadth-ზეა ფოკუსირებული, არა მხოლოდ engineering-ზე.",
+      "starsNumeric": 17000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
       "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "Specification and documentation for Agent Skills"
+      "descriptionEn": "337 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills."
     },
     {
       "name": "Claude Code Game Studios",
@@ -607,26 +507,15 @@
       "descriptionEn": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy."
     },
     {
-      "name": "Huashu Design",
-      "url": "https://github.com/alchaincyf/huashu-design",
-      "stars": "11.7K",
-      "description": "Huashu Design (画术 Design) HTML-native დიზაინის skill-ია Claude Code-ისთვის — high-fidelity prototypes, პრეზენტაციები/slides, ანიმაციები და MP4 export ერთ skill-ში. **20 design philosophy** და **5-dimensional design review** სისტემით agent-ს professional UI/UX დონეზე ფიქრის უნარს ასძენს. Agent-agnostic — Claude Code-სთან, Codex-სთან და სხვა MCP-თავსებად client-ებთან მუშაობს. HTML-ში, 2026 წლის აპრილში გამოქვეყნდა და უკვე 11,700+ ვარსკვლავი დააგროვა — ჩინური AI ეკოსისტემიდან გამოსული ერთ-ერთი ყველაზე ციტირებადი design skill. ვინც AI-ით ლამაზ visual artifacts-ს (პრეზენტაციებს, prototype-ებს, demo videos-ებს) აკეთებს, UI UX Pro Max-ის და Architecture Diagram Generator-ის ბუნებრივი დამატებაა.",
-      "starsNumeric": 11700,
+      "name": "Codex Plugin",
+      "url": "https://github.com/openai/codex-plugin-cc",
+      "stars": "15K",
+      "description": "Codex Plugin არის OpenAI-ის ოფიციალური Claude Code plugin — Codex CLI-ის agent-ს Claude Code-ის შიგნიდან გამოძახების საშუალებას გაძლევს. კოდის review-ისა და ამოცანების დელეგირებისთვის — OpenAI-ს Codex-ი და Anthropic-ს Claude Code ერთ workflow-ში. JavaScript, 2026 წლის მარტიდან ხელმისაწვდომია. ცალკე რეპოა openai/codex CLI-სგან (რომელიც terminal agent-ია — ეს კი Claude Code-ის plugin-ია).",
+      "starsNumeric": 15000,
       "categorySlug": "plugins",
       "categoryEmoji": "⚡",
       "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic"
-    },
-    {
-      "name": "Interface Design",
-      "url": "https://github.com/Dammyjay93/interface-design",
-      "stars": "5K",
-      "description": "Interface Design — design engineering skill Claude Code-ისა და Codex-ისთვის, სპეციალურად **product UI-სთვის** (dashboard, admin panel, SaaS ინსტრუმენტები) — marketing საიტები შეგნებულად სკოუპს მიღმაა. მთავარი იდეა **persistent design memory-ია**: მიღებული გადაწყვეტილებები (spacing grid, ფერის ტოკენები, surface elevation, კომპონენტების ზომები) `.interface-design/system.md` ფაილში ინახება და მომდევნო სესიებში ავტომატურად იტვირთება — სტილური დრიფტი სესიებს შორის ნულდება. 5 ბრძანება (init, status, audit, extract, critique), 6 ჩაშენებული design direction. ავტორი Oyindamola Akinleye (Zalando). Shell, MIT, interface-design.dev. 2026 წლის იანვრიდან 5,000+ ვარსკვლავი (repo-ს ადრე claude-design-skill ერქვა — ძველი ლინკები redirect-დება). UI UX Pro Max-ისგან განსხვავება: ის სტილების ფართო კატალოგია, ეს კი ერთი თანმიმდევრული დიზაინ-სისტემის cross-session enforcement-ი.",
-      "starsNumeric": 5000,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "Design engineering for Claude Code. Craft, memory, and enforcement for consistent UI."
+      "descriptionEn": "Use Codex from Claude Code to review code or delegate tasks."
     },
     {
       "name": "n8n Skills",
@@ -638,61 +527,6 @@
       "categoryEmoji": "⚡",
       "categoryGeorgian": "Claude Code პლაგინები და უნარები",
       "descriptionEn": "n8n skillset for Claude Code to build flawless n8n workflows"
-    },
-    {
-      "name": "Architecture Diagram Generator",
-      "url": "https://github.com/Cocoon-AI/architecture-diagram-generator",
-      "stars": "4.3K",
-      "description": "Architecture Diagram Generator Claude AI-ის skill-ია, რომელიც ტექსტური სისტემის აღწერიდან standalone HTML/SVG დიაგრამებს ქმნის — dark theme-ით, ფერების სემანტიკური კოდირებით (cyan: frontend, emerald: backend, violet: databases, amber: cloud, rose: security). HTML-ში, Cocoon-AI-ის მიერ. დიზაინის ცოდნა არ სჭირდება — სისტემის ბუნებრივ ენაში აღწერა საკმარისია. 4,000+ ვარსკვლავი.",
-      "starsNumeric": 4300,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "Generate beautiful dark-themed system architecture diagrams as standalone HTML/SVG files. Works as a Claude AI skill."
-    },
-    {
-      "name": "Remotion Skills",
-      "url": "https://github.com/remotion-dev/skills",
-      "stars": "2.9K",
-      "description": "Remotion Skills Remotion-ის (React-ში ვიდეოების პროგრამული შექმნის ფრეიმვორკი) ოფიციალური agent skills-ია. AI coding agent-ებს Remotion-ის ექსპერტიზას სძენს — კომპოზიცია, რენდერინგი, ტაიმინგი, animation. TypeScript-ში. თუ data visualizations-ს, reels-ს ან ანიმაციებს React კომპონენტებიდან ქმნი, ეს skill-ი AI-ს ყველა ნიუანსს ასწავლის — Remotion-ის ოფიციალური გუნდის მიერ.",
-      "starsNumeric": 2900,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "Agent Skills"
-    },
-    {
-      "name": "Emil Kowalski Skill",
-      "url": "https://github.com/emilkowalski/skill",
-      "stars": "2.3K",
-      "description": "Emil Kowalski Skill — design engineering-ის ერთ-ერთი ყველაზე ცნობილი სახელის (**Sonner** toast-ისა და **Vaul** drawer-ის ავტორი, ex-Vercel/Linear, animations.dev კურსის შემქმნელი) პირადი „გემოვნება\" installable skill-ად. მთელი რეპო ერთი ~680-ხაზიანი SKILL.md-ია მისი სტატიებიდან გამოხდილი ცოდნით: 4-ნაბიჯიანი animation decision framework (ხშირად გამოყენებულ ქმედებებს ანიმაცია საერთოდ არ სჭირდება), კონკრეტული რიცხვითი წესები (UI ანიმაცია 300ms-ზე ნაკლები, tooltip 125-200ms, ease-in არასდროს), spring physics, @starting-style და clip-path ტექნიკები, prefers-reduced-motion accessibility. UI code review-ზე სავალდებულო Before/After/Why ცხრილის ფორმატს ითხოვს. 2026 წლის მარტიდან 2,300+ ვარსკვლავი, emilkowal.ski/skill. **Taste-Skill**-ის (ასევე ამ კოლექციაში) მონათესავე ჟანრი — „taste as a skill\" ტრენდის ერთ-ერთი საუკეთესო ნიმუში. (⚠ ლიცენზია მითითებული არ აქვს.)",
-      "starsNumeric": 2300,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "A skill file based on the articles written on my personal site. Designed for designers and engineers to help them build better user interfaces."
-    },
-    {
-      "name": "Headroom",
-      "url": "https://github.com/chopratejas/headroom",
-      "stars": "1.5K",
-      "description": "Headroom LLM აპლიკაციებისთვის context optimization layer-ია — AI-ს გადასაცემ მონაცემებს (ფაილები, ლოგები, RAG შედეგები) 70-95%-ით ამცირებს პასუხის ხარისხის დაკარგვის გარეშე. Python-ში, headroom-docs.vercel.app. Claude Code-ში, Codex-ში და Aider-ში ერთი ბრძანებით ეშვება. AI ხარჯების მნიშვნელოვნად შემცირებისა და უფრო გრძელი სამუშაო სესიების შესაძლებლობისთვის — 1,500+ ვარსკვლავი.",
-      "starsNumeric": 1500,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "The Context Optimization Layer for LLM Applications"
-    },
-    {
-      "name": "Designer Skills",
-      "url": "https://github.com/Owl-Listener/designer-skills",
-      "stars": "1.5K",
-      "description": "Designer Skills — ყველაზე ყოვლისმომცველი დიზაინერული skill pack Claude Code-ისთვის: **91 skill და 28 ბრძანება 9 plugin-ში** — user research, design systems, UX strategy, UI design, interaction design, prototyping/testing, design ops, designer's toolkit და visual critique. ხუთრეპოიანი ოჯახის (ჯამში 239 skill და 33 plugin) მთავარი კარიბჭე. არქიტექტურა: skill-ები „არსებითი სახელებია\" (როგორ დაიწეროს persona, როგორ განისაზღვროს design token-ები), ბრძანებები კი „ზმნები\" — `/design-research:discover` ერთ workflow-ში რამდენიმე skill-ს აჯაჭვებს. ავტორი Marie-Claire Dean (MC Dean), ფილოსოფია: „taste, made legible\" — დიზაინერული განსჯა წერილობით ფორმაში, რომ აგენტმა გამოცნობა აღარ სცადოს. Claude Code-შიც და Gemini CLI-შიც მუშაობს, non-coder-ებზეც გათვლილია. Shell, MIT. 2026 წლის მარტიდან 1.5K+ ვარსკვლავი.",
-      "starsNumeric": 1500,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "Designer Skills Collection: agentic skills, commands, and plugins for design — from research to systems, UI, interaction, and delivery."
     },
     {
       "name": "Claude Code Setup",
@@ -717,37 +551,202 @@
       "descriptionEn": "Teaches AI assistants the Georgian banking APIs — TBC Bank (Checkout, TPay) and Bank of Georgia (iPay, Installments, Open Banking) integrations. Written in Python, built in Georgia. Expert-level local knowledge for developers working with Georgian payment systems that does not exist elsewhere."
     },
     {
-      "name": "CodeGraph",
-      "url": "https://github.com/colbymchenry/codegraph",
-      "stars": "33K",
-      "description": "CodeGraph კოდბაზის წინასწარ-ინდექსირებულ semantic knowledge graph-ს აშენებს AI coding agent-ებისთვის — ფუნქციები, კლასები, import-ები და call-ურთიერთობები ლოკალურ SQLite ბაზაში, 20+ ენისთვის. იმის ნაცვლად, რომ Claude Code-მა ან Cursor-მა ყოველ მოთხოვნაზე ფაილები თავიდან წაიკითხოს, პირდაპირ ამ ინდექსს ეკითხება — შედეგად ~22% იაფი და ~50%-ით ნაკლები tool call. TypeScript, MIT, v0.9.7 (2026 წლის 28 მაისი), სრულად ლოკალური, გარე API-ს გარეშე. 2026 წლის 21 მაისის GitHub Trending #1, 33,000+ ვარსკვლავი — **Graphify**-ისა და **GitNexus**-ის ბუნებრივი მონათესავე code-intelligence მიმართულებაში.",
-      "starsNumeric": 33000,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "Pre-indexed code knowledge graph for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local"
+      "name": "Anthropic Skills",
+      "url": "https://github.com/anthropics/skills",
+      "stars": "150K",
+      "description": "Anthropic Skills — **Anthropic-ის ოფიციალური** Agent Skills რეპოზიტორია და მთელი skills ეკოსისტემის ფუნდამენტი. შიგნით 17 example skill — მათ შორის **frontend-design** (generic „AI slop\" დიზაინისგან თავის დასაღწევი წესები), mcp-builder, webapp-testing, canvas-design, brand-guidelines და skill-creator — პლუს ის 4 production document skill (docx, pdf, pptx, xlsx), რომლებიც Claude-ში ფაილების რეალურ შექმნას უზრუნველყოფს და აქ source-available სახითაა გამოქვეყნებული. აქვეა Agent Skills სპეციფიკაცია (agentskills.io) და skill template. ერთი ბრძანებით ეყენება: `/plugin marketplace add anthropics/skills`. Python-ში; 2025 წლის სექტემბრიდან **149,800+ ვარსკვლავი** — GitHub-ის ისტორიის ერთ-ერთი ყველაზე სწრაფად მზარდი რეპო. Skills ეკოსისტემისთვის იგივეა, რაც modelcontextprotocol/servers MCP-სთვის — **Agent Skills Spec**-ის (ასევე ამ კოლექციაში) reference implementation.",
+      "starsNumeric": 150000,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "Public repository for Agent Skills"
     },
     {
-      "name": "Academic Research Skills",
-      "url": "https://github.com/Imbad0202/academic-research-skills",
-      "stars": "24K",
-      "description": "Academic Research Skills Claude Code skill suite-ია, რომელიც სამეცნიერო ნაშრომის სრულ ციკლს ფარავს — literature search, paper writing, peer review და revision. ოთხი ურთიერთჩაწნული skill, 10-საფეხურიანი pipeline, 13+ agent literature exploration-ისთვის და 12 agent წერისთვის; ჩაშენებული anti-hallucination და citation-fabrication detection gates ციტატების ფაბრიკაციას ამოიცნობს. Python, CC BY-NC 4.0 (არა-კომერციული ლიცენზია — გასათვალისწინებელია), v3.9.2 (2026 წლის 18 მაისი), export Markdown/DOCX/APA-7 LaTeX-ში. 2026 წლის GitHub Trending #3, 23,800+ ვარსკვლავი — აკადემიური და კვლევითი workflow-ის პირველი სპეციალიზებული skill კოლექციაში.",
-      "starsNumeric": 24000,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "Academic Research Skills for Claude Code: research → write → review → revise → finalize"
+      "name": "Excalidraw",
+      "url": "https://github.com/excalidraw/excalidraw",
+      "stars": "122K",
+      "description": "Excalidraw — virtual whiteboard hand-drawn სტილის diagrams-ისთვის, TypeScript-ში, MIT ლიცენზიით. AI engineers-ისთვის **de facto სტანდარტი** გახდა agent architectures-ის, system designs-ის, RAG pipeline-ების და LLM workflow-ების ვიზუალიზაციისთვის — Anthropic-ის, OpenAI-ის და სხვა AI კომპანიების engineering blog-ებსა და ტექნიკურ დოკუმენტაციაში მუდმივად ჩანს. Excalidraw+ commercial ვერსიაში ჩაშენებულია text-to-diagram AI ფიჩერი (OpenAI integration) რომელიც ბუნებრივი ენიდან diagram-ს ქმნის, plus mermaid-ის ნატივიური მხარდაჭერა — ანუ Claude/GPT-ით mermaid syntax გენერაცია და Excalidraw-ში refine ერთიანი workflow-ია. AI არქიტექტურის დოკუმენტაციისთვის, presentation-ისთვის ან Claude Code-ის output-ის ვიზუალიზაციისთვის — ერთ-ერთი მთავარი ხელსაწყო engineering-ის ეკოსისტემაში.",
+      "starsNumeric": 122000,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "Virtual whiteboard for sketching hand-drawn like diagrams"
     },
     {
-      "name": "Claude Skills (alirezarezvani)",
-      "url": "https://github.com/alirezarezvani/claude-skills",
-      "stars": "17K",
-      "description": "Claude Skills 338 production-ready Claude Code skill-ისა და plugin-ის ბიბლიოთეკაა 13 AI coding ხელსაწყოსთვის (Claude Code, Codex, Gemini CLI, Cursor, Aider და სხვა). ინჟინერიის მიღმა ფარავს marketing-ს, product-ს, compliance-ს, finance-ს და C-level advisory-ს — 533 dependency-free Python CLI tool, 25 „POWERFUL-tier\" skill, persona-ები (მაგ. Startup CTO) და security auditor skill-ების შესამოწმებლად. Python, MIT, v2.9.0 (2026 წლის 28 მაისი), 16,500+ ვარსკვლავი. **Matt Pocock Skills**-ისა და **Agent Skills**-ისგან განსხვავება — ეს ბიზნეს- და მრავალდომენიან breadth-ზეა ფოკუსირებული, არა მხოლოდ engineering-ზე.",
-      "starsNumeric": 17000,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "337 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills."
+      "name": "Mermaid",
+      "url": "https://github.com/mermaid-js/mermaid",
+      "stars": "88K",
+      "description": "Mermaid — text-to-diagram-ის ღია წყაროს უპირობო სტანდარტი. მარკდაუნ-სტილის სინტაქსიდან flowchart-ი, sequence diagram, ER, gantt, state machine, class diagram, mindmap, C4 architecture და სხვა — ერთიანი ენით. TypeScript-ში, MIT ლიცენზია, 87,900+ ვარსკვლავი. **AI workflow-ში de-facto ფორმატი** — Claude, ChatGPT, Cursor, Codex და თითქმის ყველა LLM native-ად ცნობს Mermaid სინტაქსს და დიაგრამას პირდაპირ markdown პასუხში გასცემს. GitHub, GitLab, Notion, Obsidian, Confluence Mermaid-ს ნატივიურად რენდერავს — pull request-ში code review-ის დროს დიაგრამა იქვე ჩანს, version control-ში არის და diff-ისთვის ხელმისაწვდომი. ARCHITECTURE.md-ის, RFC-ის და technical documentation-ის სავალდებულო ნაწილია modern engineering team-ებში. **Excalidraw**-ის (ვიზუალური) და **D2**-ის (კოდით — წინასწარ შემოწმე ცალკე, ჯერ კოლექციაში არ არის) ერთობლივ stack-ში — დიაგრამინგ workflow-ის ბერკეტი.",
+      "starsNumeric": 88000,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown"
+    },
+    {
+      "name": "UI UX Pro Max",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": "69K",
+      "description": "UI UX Pro Max AI coding agent-ებს professional UI/UX დიზაინის ინტელიგენციას სძენს — 50 დიზაინ სტილი, 161 ფერთა პალიტრა და 25 დიაგრამის ტიპი ერთ skill-ში. React-ს, Vue-ს, Flutter-ს, SwiftUI-ს და სხვა ფრეიმვორკებს უჭერს მხარს. Python-ში, 69,000+ ვარსკვლავი — Claude Code-ის, Cursor-ის და სხვა agent-ების visual output-ს მნიშვნელოვნად აუმჯობესებს. დიზაინერის გარეშე ლამაზი UI-ის ასაშენებლად.",
+      "starsNumeric": 69000,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms"
+    },
+    {
+      "name": "Awesome DESIGN.md",
+      "url": "https://github.com/VoltAgent/awesome-design-md",
+      "stars": "64K",
+      "description": "Awesome DESIGN.md — 55-ზე მეტი Markdown ფაილის კოლექცია, პოპულარური brand design systems-ის (Stripe, Google, Apple, Linear) სტილის მიხედვით შექმნილი. DESIGN.md ფაილი პროექტში ჩასვი და Claude Code-ს, Cursor-ს ან სხვა coding agent-ს უთხარი — UI ავტომატურად შენი brand-ის სტილში გენერირდება. VoltAgent-ის მიერ, 2026 წლის მარტიდან. ვიზუალური კოდ-გენერაციის სამუშაო პროცესებში — ყველაზე სწრაფი გზა brand-consistent UI-სკენ კოდის ხელით წერის გარეშე.",
+      "starsNumeric": 64000,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "A collection of DESIGN.md files inspired by popular brand design systems. Drop one into your project and let coding agents generate a matching UI."
+    },
+    {
+      "name": "tldraw",
+      "url": "https://github.com/tldraw/tldraw",
+      "stars": "47K",
+      "description": "tldraw — მოდერნული infinite canvas SDK და whiteboard აპლიკაცია, TypeScript-ში, real-time collaboration-ით. **Excalidraw-ის ყველაზე სერიოზული მეტოქე**: Excalidraw hand-drawn aesthetic-ით ცნობილია, tldraw უფრო ნათელი, კონტრასტული, professional ვიზუალით. ჩაშენებადი React კომპონენტი — საკუთარ აპლიკაციაში ერთი `<Tldraw />` import-ით ჩასვამ, ნულიდან whiteboard აპლიკაცია არ გჭირდება. **AI-ფიჩერი** [tldraw/make-real](https://github.com/tldraw/make-real)-ის სახით ცალკე ცოცხლობს: სკეტჩი → მუშა HTML/React component-ი ერთი ღილაკით (OpenAI/Claude backend-ით). Lightspeed Venture Partners-ის მიერ დაფინანსებული, 46,900+ ვარსკვლავი. ვინც app-შიგნით whiteboard ფუნქცია სჭირდება (Figma-ის, Miro-ს ალტერნატივა) ან Excalidraw-ის უფრო strict ვიზუალურ ალტერნატივას ეძებს — tldraw პირველი არჩევანია.",
+      "starsNumeric": 47000,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "very good whiteboard infinite canvas SDK"
+    },
+    {
+      "name": "Open Design",
+      "url": "https://github.com/nexu-io/open-design",
+      "stars": "36K",
+      "description": "Open Design — Anthropic-ის ფასიანი **Claude Design**-ის სრულად ღია წყაროს ალტერნატივა, რომელიც 2026 წლის 28 აპრილს გამოვიდა და სულ 2 კვირაში 36,000+ ვარსკვლავი (4,000+ fork — organic signal) დააგროვა. შიგნით **19 skill** და **71 brand-grade design system**: prompt-დან HTML/CSS prototype-ი, slides, infographic-ი, კარუსელი, ანიმაცია და MP4 export. **BYOK მოდელი** — საკუთარი Claude/GPT/Gemini/Kimi/GLM/Ollama key-ით ეშვება, lock-in-ის გარეშე. Sandbox-ში preview, HTML/PDF/PPTX/MP4 export. TypeScript-ში, Apache 2.0. Claude Code-ში, Codex-ში, Cursor-ში, OpenCode-ში, Qwen Code-ში, Hermes-სა და Kimi CLI-ში მუშაობს — agent-agnostic. **Huashu Design**-ის და **UI UX Pro Max**-ის ბუნებრივი დამატება — 2026-ის design-skill სტეკის ერთ-ერთი მთავარი ბურჯი, კოლექციის ერთ-ერთი ყველაზე სწრაფად მზარდი ჩანაწერი.",
+      "starsNumeric": 36000,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "🎨 Local-first, open-source alternative to Anthropic's Claude Design. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI."
+    },
+    {
+      "name": "Vercel Agent Skills",
+      "url": "https://github.com/vercel-labs/agent-skills",
+      "stars": "27.8K",
+      "description": "Vercel Agent Skills — **Vercel-ის ოფიციალური** skill კოლექცია AI coding agent-ებისთვის: 8 skill, რომლებიც Vercel Engineering-ის შიდა handbook-ებს აგენტებისთვის გასაგებ ფორმატად აქცევს. **web-design-guidelines** UI კოდს 100+ წესით ამოწმებს (accessibility, focus states, forms, animation, typography, dark mode, i18n) — Vercel-ის ცნობილი Web Interface Guidelines-ის packaged ვერსია; **react-best-practices** 40+ React/Next.js performance წესს მოიცავს; **vercel-deploy-claimable** კი აპს პირდაპირ claude.ai საუბრიდან deploy-ს უკეთებს live preview URL-ით. `npx skills add vercel-labs/agent-skills`-ით ეყენება. JavaScript, MIT, skills.sh რეესტრის canonical მაგალითი. 2025 წლის დეკემბრიდან 27,800+ ვარსკვლავი. ვიზუალურ design skill-ებისგან (UI UX Pro Max, Open Design) განსხვავებით აქცენტი engineering correctness-ზეა — accessibility და performance, არა მხოლოდ ესთეტიკა.",
+      "starsNumeric": 27800,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "Vercel's official collection of agent skills"
+    },
+    {
+      "name": "Impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "stars": "27.6K",
+      "description": "Impeccable **Paul Bakaus**-ის (ex-Google DevRel, Disney Interactive, jQuery UI core contributor — ერთ-ერთი ყველაზე ცნობილი front-end ინჟინერი 2010-იანების ვებზე) design-language skill-ია AI coding agent-ებისთვის — სლოგანი: *„The design language that makes your AI harness better at design\"*. Claude Code-ში, Codex-ში, Cursor-ში, OpenCode-ში და სხვა MCP-თავსებად client-ებში მუშაობს. JavaScript-ში, **Apache 2.0** ლიცენზიით, impeccable.style. 2025 წლის ნოემბერში გამოვიდა და 27,600+ ვარსკვლავი (1,500+ fork — organic signal) დააგროვა. **Open Design**-ის, **UI UX Pro Max**-ის და **Huashu Design**-ის ბუნებრივი მონათესავე — სამივესთან ერთად stacked design-skill კონფიგურაცია AI-ის visual output-ის ხარისხს professional დონეზე აყვანს.",
+      "starsNumeric": 27600,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "The design language that makes your AI harness better at design."
+    },
+    {
+      "name": "Taste-Skill",
+      "url": "https://github.com/leonxlnx/taste-skill",
+      "stars": "17.3K",
+      "description": "Taste-Skill leonxlnx-ის skill-ია, რომელიც AI coding agent-ებს **„გემოვნებას\" აძლევს** — სლოგანი: *„stops the AI from generating boring, generic slop\"*. AI-ის default-ად ერთფეროვან, sterile, „generic AI slop\" output-ს ებრძვის წინასწარ აღწერილი taste curation rules-ით — როდის უნდა გადაუხვიოს AI-მ default ფორმულირებებიდან და როდის უნდა შესთავაზოს ნამდვილად საინტერესო კონცეფცია. Shell-ში, **MIT** ლიცენზიით, tasteskill.dev. 2026 წლის თებერვალში გამოვიდა და უკვე 17,200+ ვარსკვლავი დააგროვა — AI output-ის ხარისხის ერთ-ერთი ყველაზე ციტირებადი skill. **Karpathy Skills**-ის (AI coding pitfalls-ის წინააღმდეგ) და **Caveman**-ის (verbosity reduction) ბუნებრივი დამატება — სამივე ერთად AI-ის output-ის ფუნდამენტურ ნაკლს ასწორებს. UI UX Pro Max-ისგან განსხვავება: ეს content/copy/idea-taste-ზე ფოკუსირებულია, ის კი visual design-ზე.",
+      "starsNumeric": 17300,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop"
+    },
+    {
+      "name": "Figma Context MCP",
+      "url": "https://github.com/GLips/Figma-Context-MCP",
+      "stars": "14K",
+      "description": "Figma Context MCP AI coding agent-ებს Figma-ს დიზაინ ფაილების ზუსტ მონაცემებს აწვდის — ფერები, ზომები, spacing, component hierarchy — screenshot-ის ნაცვლად სტრუქტურირებული მონაცემებით. TypeScript-ში, Framelink.ai-ის მიერ. Cursor-ში, Claude Code-ში ან სხვა MCP client-ში: Figma-ს დიზაინი → pixel-perfect კოდი პირველივე მცდელობით. 14,000+ ვარსკვლავი.",
+      "starsNumeric": 14000,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "MCP server to provide Figma layout information to AI coding agents like Cursor"
+    },
+    {
+      "name": "Huashu Design",
+      "url": "https://github.com/alchaincyf/huashu-design",
+      "stars": "11.7K",
+      "description": "Huashu Design (画术 Design) HTML-native დიზაინის skill-ია Claude Code-ისთვის — high-fidelity prototypes, პრეზენტაციები/slides, ანიმაციები და MP4 export ერთ skill-ში. **20 design philosophy** და **5-dimensional design review** სისტემით agent-ს professional UI/UX დონეზე ფიქრის უნარს ასძენს. Agent-agnostic — Claude Code-სთან, Codex-სთან და სხვა MCP-თავსებად client-ებთან მუშაობს. HTML-ში, 2026 წლის აპრილში გამოქვეყნდა და უკვე 11,700+ ვარსკვლავი დააგროვა — ჩინური AI ეკოსისტემიდან გამოსული ერთ-ერთი ყველაზე ციტირებადი design skill. ვინც AI-ით ლამაზ visual artifacts-ს (პრეზენტაციებს, prototype-ებს, demo videos-ებს) აკეთებს, UI UX Pro Max-ის და Architecture Diagram Generator-ის ბუნებრივი დამატებაა.",
+      "starsNumeric": 11700,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic"
+    },
+    {
+      "name": "DESIGN.md",
+      "url": "https://github.com/google-labs-code/design.md",
+      "stars": "6.3K",
+      "description": "DESIGN.md — Google Labs-ის ოფიციალური ფორმატის სპეციფიკაცია, რომლითაც ბრენდის ვიზუალური იდენტობა (ფერები, ტიპოგრაფია, სპეისინგი, კომპონენტების ქცევა, ინტერაქციების შაბლონები) სტრუქტურირებულად აღუწერ AI coding agent-ებს. DESIGN.md ფაილი პროექტის root-ში ჩასვი და Claude Code-ს, Cursor-ს ან Codex-ს უკვე მუდმივი, თანმიმდევრული გაგება აქვს შენი design system-ის — UI ყოველ ახალ ფიჩერზე ერთ სტილში გენერირდება, stylistic drift-ისა და ჰალუცინაციების გარეშე. TypeScript-ში, Apache 2.0 ლიცენზიით. 2026 წლის 10 აპრილს გამოიცა და 14 დღეში 6,300+ ვარსკვლავი დააგროვა (დღეში ~450 ⭐) — ვირუსული ზრდა Anthropic-ის Agent Skills Spec-ის ანალოგი, მაგრამ design systems-ის დომენში. კომპანიონი `awesome-design-md` (რომელიც ასევე გვაქვს) ამ სპეციფიკაციით შექმნილ 55+ მაგალითს გვაწვდის — ეს მათი ფუნდამენტი სტანდარტია.",
+      "starsNumeric": 6300,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system."
+    },
+    {
+      "name": "Interface Design",
+      "url": "https://github.com/Dammyjay93/interface-design",
+      "stars": "5K",
+      "description": "Interface Design — design engineering skill Claude Code-ისა და Codex-ისთვის, სპეციალურად **product UI-სთვის** (dashboard, admin panel, SaaS ინსტრუმენტები) — marketing საიტები შეგნებულად სკოუპს მიღმაა. მთავარი იდეა **persistent design memory-ია**: მიღებული გადაწყვეტილებები (spacing grid, ფერის ტოკენები, surface elevation, კომპონენტების ზომები) `.interface-design/system.md` ფაილში ინახება და მომდევნო სესიებში ავტომატურად იტვირთება — სტილური დრიფტი სესიებს შორის ნულდება. 5 ბრძანება (init, status, audit, extract, critique), 6 ჩაშენებული design direction. ავტორი Oyindamola Akinleye (Zalando). Shell, MIT, interface-design.dev. 2026 წლის იანვრიდან 5,000+ ვარსკვლავი (repo-ს ადრე claude-design-skill ერქვა — ძველი ლინკები redirect-დება). UI UX Pro Max-ისგან განსხვავება: ის სტილების ფართო კატალოგია, ეს კი ერთი თანმიმდევრული დიზაინ-სისტემის cross-session enforcement-ი.",
+      "starsNumeric": 5000,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "Design engineering for Claude Code. Craft, memory, and enforcement for consistent UI."
+    },
+    {
+      "name": "Architecture Diagram Generator",
+      "url": "https://github.com/Cocoon-AI/architecture-diagram-generator",
+      "stars": "4.3K",
+      "description": "Architecture Diagram Generator Claude AI-ის skill-ია, რომელიც ტექსტური სისტემის აღწერიდან standalone HTML/SVG დიაგრამებს ქმნის — dark theme-ით, ფერების სემანტიკური კოდირებით (cyan: frontend, emerald: backend, violet: databases, amber: cloud, rose: security). HTML-ში, Cocoon-AI-ის მიერ. დიზაინის ცოდნა არ სჭირდება — სისტემის ბუნებრივ ენაში აღწერა საკმარისია. 4,000+ ვარსკვლავი.",
+      "starsNumeric": 4300,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "Generate beautiful dark-themed system architecture diagrams as standalone HTML/SVG files. Works as a Claude AI skill."
+    },
+    {
+      "name": "Draw.io MCP",
+      "url": "https://github.com/jgraph/drawio-mcp",
+      "stars": "3.2K",
+      "description": "Draw.io MCP draw.io-ს (JGraph Ltd) ოფიციალური MCP სერვერია — AI ასისტენტს diagrams.net-ში ქსელის სქემების, UML-ის, flowchart-ების და სხვა დიაგრამების ავტომატური შექმნის საშუალება ეძლევა. JavaScript-ში. ბუნებრივი ენით სისტემის არქიტექტურა — draw.io ფაილი → browser-ში გახსნა. 4 ინტეგრაციის მეთოდი, 3,000+ ვარსკვლავი.",
+      "starsNumeric": 3200,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "Official MCP server for draw.io (JGraph Ltd) — lets an AI assistant automatically create network diagrams, UML, flowcharts and other diagrams in diagrams.net from natural language. JavaScript, four integration methods, 3,000+ stars."
+    },
+    {
+      "name": "Emil Kowalski Skill",
+      "url": "https://github.com/emilkowalski/skill",
+      "stars": "2.3K",
+      "description": "Emil Kowalski Skill — design engineering-ის ერთ-ერთი ყველაზე ცნობილი სახელის (**Sonner** toast-ისა და **Vaul** drawer-ის ავტორი, ex-Vercel/Linear, animations.dev კურსის შემქმნელი) პირადი „გემოვნება\" installable skill-ად. მთელი რეპო ერთი ~680-ხაზიანი SKILL.md-ია მისი სტატიებიდან გამოხდილი ცოდნით: 4-ნაბიჯიანი animation decision framework (ხშირად გამოყენებულ ქმედებებს ანიმაცია საერთოდ არ სჭირდება), კონკრეტული რიცხვითი წესები (UI ანიმაცია 300ms-ზე ნაკლები, tooltip 125-200ms, ease-in არასდროს), spring physics, @starting-style და clip-path ტექნიკები, prefers-reduced-motion accessibility. UI code review-ზე სავალდებულო Before/After/Why ცხრილის ფორმატს ითხოვს. 2026 წლის მარტიდან 2,300+ ვარსკვლავი, emilkowal.ski/skill. **Taste-Skill**-ის (ასევე ამ კოლექციაში) მონათესავე ჟანრი — „taste as a skill\" ტრენდის ერთ-ერთი საუკეთესო ნიმუში. (⚠ ლიცენზია მითითებული არ აქვს.)",
+      "starsNumeric": 2300,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "A skill file based on the articles written on my personal site. Designed for designers and engineers to help them build better user interfaces."
+    },
+    {
+      "name": "Designer Skills",
+      "url": "https://github.com/Owl-Listener/designer-skills",
+      "stars": "1.5K",
+      "description": "Designer Skills — ყველაზე ყოვლისმომცველი დიზაინერული skill pack Claude Code-ისთვის: **91 skill და 28 ბრძანება 9 plugin-ში** — user research, design systems, UX strategy, UI design, interaction design, prototyping/testing, design ops, designer's toolkit და visual critique. ხუთრეპოიანი ოჯახის (ჯამში 239 skill და 33 plugin) მთავარი კარიბჭე. არქიტექტურა: skill-ები „არსებითი სახელებია\" (როგორ დაიწეროს persona, როგორ განისაზღვროს design token-ები), ბრძანებები კი „ზმნები\" — `/design-research:discover` ერთ workflow-ში რამდენიმე skill-ს აჯაჭვებს. ავტორი Marie-Claire Dean (MC Dean), ფილოსოფია: „taste, made legible\" — დიზაინერული განსჯა წერილობით ფორმაში, რომ აგენტმა გამოცნობა აღარ სცადოს. Claude Code-შიც და Gemini CLI-შიც მუშაობს, non-coder-ებზეც გათვლილია. Shell, MIT. 2026 წლის მარტიდან 1.5K+ ვარსკვლავი.",
+      "starsNumeric": 1500,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "Designer Skills Collection: agentic skills, commands, and plugins for design — from research to systems, UI, interaction, and delivery."
     },
     {
       "name": "MCP Servers",
@@ -816,39 +815,6 @@
       "descriptionEn": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you "
     },
     {
-      "name": "Figma Context MCP",
-      "url": "https://github.com/GLips/Figma-Context-MCP",
-      "stars": "14K",
-      "description": "Figma Context MCP AI coding agent-ებს Figma-ს დიზაინ ფაილების ზუსტ მონაცემებს აწვდის — ფერები, ზომები, spacing, component hierarchy — screenshot-ის ნაცვლად სტრუქტურირებული მონაცემებით. TypeScript-ში, Framelink.ai-ის მიერ. Cursor-ში, Claude Code-ში ან სხვა MCP client-ში: Figma-ს დიზაინი → pixel-perfect კოდი პირველივე მცდელობით. 14,000+ ვარსკვლავი.",
-      "starsNumeric": 14000,
-      "categorySlug": "mcp",
-      "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები",
-      "descriptionEn": "MCP server to provide Figma layout information to AI coding agents like Cursor"
-    },
-    {
-      "name": "Code Review Graph",
-      "url": "https://github.com/tirth8205/code-review-graph",
-      "stars": "12K",
-      "description": "Code Review Graph კოდბაზის persistent knowledge graph-ს ქმნის Claude Code-ისთვის — AI მხოლოდ ცვლილებასთან დაკავშირებულ ფაილებს კითხულობს, მთელ repo-ს კი არა. Code review-ზე 6.8-ჯერ ნაკლები ტოკენი, დღიურ coding task-ებზე 49-ჯერამდე — ეს ხარჯებსა და სიჩქარეს მნიშვნელოვნად ცვლის. Python-ში, 22 MCP tool, 19 პროგრამირების ენა. Claude Code-თან, Cursor-თან, Windsurf-თან და Continue-თან.",
-      "starsNumeric": 12000,
-      "categorySlug": "mcp",
-      "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები",
-      "descriptionEn": "Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8× fewer tokens on reviews and up to 49× on daily coding tasks."
-    },
-    {
-      "name": "Claude Context",
-      "url": "https://github.com/zilliztech/claude-context",
-      "stars": "10.4K",
-      "description": "Claude Context Zilliz-ის MCP plugin-ია, რომელიც Claude Code-სა და სხვა coding agent-ებს მთელ codebase-ზე semantic code search-ს აძლევს. ფაილების სრულად ჩატვირთვის ნაცვლად კოდს embeddings-ად ინახავს vector database-ში (Milvus/Zilliz Cloud) და მოთხოვნისას მხოლოდ რელევანტურ ფრაგმენტებს აბრუნებს კონტექსტში — დიდ monorepo-ებზე token ხარჯს და discovery rounds-ს ამცირებს. TypeScript-ში, MIT ლიცენზია, `@zilliz/claude-context-mcp` npm პაკეტით ინსტალირდება. მუშაობისთვის OpenAI API key და Milvus/Zilliz Cloud endpoint/token სჭირდება. 10,400+ ვარსკვლავი.",
-      "starsNumeric": 10400,
-      "categorySlug": "mcp",
-      "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები",
-      "descriptionEn": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent."
-    },
-    {
       "name": "Exa MCP",
       "url": "https://github.com/exa-labs/exa-mcp-server",
       "stars": "4.3K",
@@ -869,17 +835,6 @@
       "categoryEmoji": "🔌",
       "categoryGeorgian": "MCP ინტეგრაციები",
       "descriptionEn": "Official Notion MCP Server"
-    },
-    {
-      "name": "Draw.io MCP",
-      "url": "https://github.com/jgraph/drawio-mcp",
-      "stars": "3.2K",
-      "description": "Draw.io MCP draw.io-ს (JGraph Ltd) ოფიციალური MCP სერვერია — AI ასისტენტს diagrams.net-ში ქსელის სქემების, UML-ის, flowchart-ების და სხვა დიაგრამების ავტომატური შექმნის საშუალება ეძლევა. JavaScript-ში. ბუნებრივი ენით სისტემის არქიტექტურა — draw.io ფაილი → browser-ში გახსნა. 4 ინტეგრაციის მეთოდი, 3,000+ ვარსკვლავი.",
-      "starsNumeric": 3200,
-      "categorySlug": "mcp",
-      "categoryEmoji": "🔌",
-      "categoryGeorgian": "MCP ინტეგრაციები",
-      "descriptionEn": "Official MCP server for draw.io (JGraph Ltd) — lets an AI assistant automatically create network diagrams, UML, flowcharts and other diagrams in diagrams.net from natural language. JavaScript, four integration methods, 3,000+ stars."
     },
     {
       "name": "Supabase MCP",
@@ -1091,6 +1046,17 @@
       "descriptionEn": "The SDK For Browser Agents"
     },
     {
+      "name": "CloakBrowser",
+      "url": "https://github.com/CloakHQ/CloakBrowser",
+      "stars": "22K",
+      "description": "CloakBrowser stealth Chromium-ია, რომელიც **Playwright-ის drop-in replacement-ად** მუშაობს — fingerprint-ებს C++ source დონეზე ცვლის compile-მდე (58 patch: canvas, WebGL, audio, GPU, automation signals), JS-patch-ების ნაცვლად. reCAPTCHA v3, Cloudflare Turnstile, FingerprintJS და 30+ detection service-ს გადის; residential proxy, timezone/locale auto-detection და human-like interaction მხარდაჭერით. Python/JS, MIT (wrapper), latest 2026 წლის 21 მაისი, 22,400+ ვარსკვლავი, GitHub Trending #7. **dual-use ხელსაწყო** — README ავტორიზებული ავტომატიზაციისა და AI agent integration-ისთვისაა გათვალისწინებული; **stagehand**-ისა და **browser-use**-ის ბუნებრივი დამატება anti-bot კონტექსტში.",
+      "starsNumeric": 22000,
+      "categorySlug": "scraping",
+      "categoryEmoji": "🕷️",
+      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
+      "descriptionEn": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed."
+    },
+    {
       "name": "Agent-Reach",
       "url": "https://github.com/Panniantong/Agent-Reach",
       "stars": "18K",
@@ -1179,17 +1145,6 @@
       "descriptionEn": "Convert any URL to clean markdown for AI agents."
     },
     {
-      "name": "CloakBrowser",
-      "url": "https://github.com/CloakHQ/CloakBrowser",
-      "stars": "22K",
-      "description": "CloakBrowser stealth Chromium-ია, რომელიც **Playwright-ის drop-in replacement-ად** მუშაობს — fingerprint-ებს C++ source დონეზე ცვლის compile-მდე (58 patch: canvas, WebGL, audio, GPU, automation signals), JS-patch-ების ნაცვლად. reCAPTCHA v3, Cloudflare Turnstile, FingerprintJS და 30+ detection service-ს გადის; residential proxy, timezone/locale auto-detection და human-like interaction მხარდაჭერით. Python/JS, MIT (wrapper), latest 2026 წლის 21 მაისი, 22,400+ ვარსკვლავი, GitHub Trending #7. **dual-use ხელსაწყო** — README ავტორიზებული ავტომატიზაციისა და AI agent integration-ისთვისაა გათვალისწინებული; **stagehand**-ისა და **browser-use**-ის ბუნებრივი დამატება anti-bot კონტექსტში.",
-      "starsNumeric": 22000,
-      "categorySlug": "scraping",
-      "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
-      "descriptionEn": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed."
-    },
-    {
       "name": "LangChain",
       "url": "https://github.com/langchain-ai/langchain",
       "stars": "134K",
@@ -1221,17 +1176,6 @@
       "categoryEmoji": "🧬",
       "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
       "descriptionEn": "A programming framework for agentic AI"
-    },
-    {
-      "name": "AI Hedge Fund",
-      "url": "https://github.com/virattt/ai-hedge-fund",
-      "stars": "57K",
-      "description": "AI Hedge Fund არის Python-ის სიმულაციური პროექტი, სადაც AI აგენტები Warren Buffett-ის, Charlie Munger-ისა და Michael Burry-ს ინვესტიციური სტილების მიბაძვით ერთობლივად აანალიზებენ საფონდო ბირჟის მონაცემებს. LangGraph-ის multi-agent ორქესტრაციაზეა დაშენებული — სხვადასხვა „ანალიტიკოსი\" (fundamental, technical, sentiment, risk) პარალელურად ამუშავებს მონაცემებს და შედეგებს აერთებს. ეს არ არის რეალური სავაჭრო სისტემა — გამოყენება მხოლოდ საგანმანათლებლო მიზნებისთვისაა. LangGraph-ის production-ready გამოყენების ერთ-ერთი საუკეთესო real-world მაგალითია.",
-      "starsNumeric": 57000,
-      "categorySlug": "frameworks",
-      "categoryEmoji": "🧬",
-      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
-      "descriptionEn": "An AI Hedge Fund Team"
     },
     {
       "name": "CrewAI",
@@ -1276,6 +1220,17 @@
       "categoryEmoji": "🧬",
       "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
       "descriptionEn": "DSPy: The framework for programming—not prompting—language models"
+    },
+    {
+      "name": "RuFlo (ex-Claude Flow)",
+      "url": "https://github.com/ruvnet/claude-flow",
+      "stars": "33K",
+      "description": "RuFlo v3.5 (ყოფილი **Claude Flow**; repo URL ჯერ ძველ სახელს ინახავს) Enterprise AI Orchestration Platform-ია — „distributed swarm intelligence\" მიდგომით რამდენიმე AI agent პარალელურად ასრულებს ერთ workflow-ს. RAG ინტეგრაცია, native Claude Code + Codex მხარდაჭერა, enterprise-დონის არქიტექტურა. TypeScript-ში, `ruvnet` (ruv.io) platform-ის ნაწილი. 33,000+ ვარსკვლავი — ერთ-ერთი ყველაზე ფუნქციონალური multi-agent orchestration ხელსაწყო Claude Code ეკოსისტემაში.",
+      "starsNumeric": 33000,
+      "categorySlug": "frameworks",
+      "categoryEmoji": "🧬",
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features    enterprise-grade architecture, distributed swarm intelligence, RAG integration, and native Claude Code / Codex Integration"
     },
     {
       "name": "LangGraph",
@@ -1377,6 +1332,17 @@
       "descriptionEn": "AI Agent Framework, the Pydantic way"
     },
     {
+      "name": "Microsoft Agent Framework",
+      "url": "https://github.com/microsoft/agent-framework",
+      "stars": "11K",
+      "description": "Microsoft Agent Framework Microsoft-ის ოფიციალური multi-language framework-ია production-grade AI აგენტებისა და multi-agent workflow-ებისთვის — **AutoGen**-ისა და **Semantic Kernel**-ის (ორივე ამ კოლექციაშია) გაერთიანებული მემკვიდრე. Python + .NET/C#, MIT, python-1.7.0 (2026 წლის 28 მაისი). sequential/concurrent/handoff/group orchestration patterns, ჩაშენებული OpenTelemetry observability, YAML-declarative აგენტები, middleware და interactive DevUI. 10,900+ ვარსკვლავი — ვინც AutoGen-ს ან Semantic Kernel-ს იყენებდა, მიგრაციის ოფიციალური სამიზნე ეს enterprise multi-agent სტეკია.",
+      "starsNumeric": 11000,
+      "categorySlug": "frameworks",
+      "categoryEmoji": "🧬",
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET."
+    },
+    {
       "name": "OpenSandbox",
       "url": "https://github.com/alibaba/OpenSandbox",
       "stars": "10K",
@@ -1399,15 +1365,70 @@
       "descriptionEn": "\"OpenSpace: Make Your Agents: Smarter, Low-Cost, Self-Evolving\" -- Community: https://open-space.cloud/"
     },
     {
-      "name": "Microsoft Agent Framework",
-      "url": "https://github.com/microsoft/agent-framework",
-      "stars": "11K",
-      "description": "Microsoft Agent Framework Microsoft-ის ოფიციალური multi-language framework-ია production-grade AI აგენტებისა და multi-agent workflow-ებისთვის — **AutoGen**-ისა და **Semantic Kernel**-ის (ორივე ამ კოლექციაშია) გაერთიანებული მემკვიდრე. Python + .NET/C#, MIT, python-1.7.0 (2026 წლის 28 მაისი). sequential/concurrent/handoff/group orchestration patterns, ჩაშენებული OpenTelemetry observability, YAML-declarative აგენტები, middleware და interactive DevUI. 10,900+ ვარსკვლავი — ვინც AutoGen-ს ან Semantic Kernel-ს იყენებდა, მიგრაციის ოფიციალური სამიზნე ეს enterprise multi-agent სტეკია.",
-      "starsNumeric": 11000,
+      "name": "Open Agents",
+      "url": "https://github.com/vercel-labs/open-agents",
+      "stars": "4.1K",
+      "description": "Open Agents არის Vercel Labs-ის ღია კოდის reference template ღრუბლოვანი AI agent-ების ასაშენებლად. agent VM sandbox-ში ეშვება, GitHub-ს ინტეგრაცია, workflow runtime და ჩაშენებული ვებ-ინტერფეისი შედის. TypeScript-ში, Vercel-ზე ადვილად დეპლოისებადი. ლოკალური კომპიუტერის გარეშე ფონური coding agent-ებისთვის — reference implementation, არა production-ready პლატფორმა.",
+      "starsNumeric": 4100,
       "categorySlug": "frameworks",
       "categoryEmoji": "🧬",
       "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
-      "descriptionEn": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET."
+      "descriptionEn": "An open source template for building cloud agents."
+    },
+    {
+      "name": "n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "stars": "185K",
+      "description": "n8n არის TypeScript-ში დაწერილი fair-code ავტომატიზაციის პლატფორმა 400+ ინტეგრაციით, სადაც ვიზუალური no-code builder custom JavaScript/Python კოდთან ერთად მუშაობს. Gmail, Slack, Airtable, ყველა მთავარი ღრუბელი სერვისი და AI provider-ი node-ების სახით ხელმისაწვდომია. self-hosted ან cloud deployment — fair-code ლიცენზია კომერციულ გამოყენებას self-hosted სახით ნებას რთავს. 185K ვარსკვლავით Zapier-ის ყველაზე პოპულარული ღია ალტერნატივაა; AI Pulse Georgia-ს ინფრასტრუქტურის ნაწილია (aipulsegeorgia2025.app.n8n.cloud).",
+      "starsNumeric": 185000,
+      "categorySlug": "workflow",
+      "categoryEmoji": "🔁",
+      "categoryGeorgian": "Workflow და No-Code ბილდერები",
+      "descriptionEn": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
+    },
+    {
+      "name": "Langflow",
+      "url": "https://github.com/langflow-ai/langflow",
+      "stars": "147K",
+      "description": "Langflow არის Python-ის ვიზუალური პლატფორმა AI აგენტებისა და workflow-ების drag-and-drop ინტერფეისით ასაშენებლად — კოდის გარეშე. LangChain-ის კომპონენტები გრაფიკული ბლოკების სახით ხდება ხელმისაწვდომი: LLM-ები, vector stores, agents, tools ერთმანეთს მიებმება. MCP მხარდაჭერა, 100+ ინტეგრაცია. DataStax-ის მიერ შეძენილია. Python-ის backend, 20,000+ ორგანიზაცია production-ში იყენებს. ვინც Python-ის სტეკს ამჯობინებს და ვიზუალური AI builder სჭირდება, Langflow ოპტიმალური არჩევანია.",
+      "starsNumeric": 147000,
+      "categorySlug": "workflow",
+      "categoryEmoji": "🔁",
+      "categoryGeorgian": "Workflow და No-Code ბილდერები",
+      "descriptionEn": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows."
+    },
+    {
+      "name": "Dify",
+      "url": "https://github.com/langgenius/dify",
+      "stars": "138K",
+      "description": "Dify არის production-ready პლატფორმა AI აგენტების, chatbot-ებისა და RAG-ზე დაფუძნებული სისტემების ასაშენებლად ვიზუალური ინტერფეისით. ჩატბოტები, ვორქფლოუები, knowledge bases, text generators — ოთხი ძირითადი application ტიპი GUI-დან კონფიგურირდება. 138K ვარსკვლავით GitHub-ის ერთ-ერთი ყველაზე ვარსკვლავიანი AI პროექტია. Google Search, DALL-E, 100+ ინსტრუმენტი ჩაშენებულია; self-hosted ან Dify Cloud. კომპანიებისთვის, ვინც AI produkts-ს კოდის სერიოზული ინვესტიციის გარეშე production-ში ქონს, ეს ძლიერი გადაწყვეტაა.",
+      "starsNumeric": 138000,
+      "categorySlug": "workflow",
+      "categoryEmoji": "🔁",
+      "categoryGeorgian": "Workflow და No-Code ბილდერები",
+      "descriptionEn": "Production-ready platform for agentic workflow development."
+    },
+    {
+      "name": "Flowise",
+      "url": "https://github.com/FlowiseAI/Flowise",
+      "stars": "52K",
+      "description": "Flowise არის TypeScript-ის drag-and-drop ვიზუალური AI builder, სადაც LLM-ების, agents-ების, vector stores-ისა და tools-ის კავშირები გრაფიკულ ბლოკებად ერთმანეთზე მიებმება. LangChain.js-ის კომპონენტებზეა დაშენებული — JavaScript/Node.js სტეკი. Langflow-ის (Python) პარალელი, 100+ ინტეგრაციით. self-hosted ან Flowise Cloud. non-technical მომხმარებლებიც შეძლებენ AI სამუშაო ნაკადების ვიზუალურ კომპოზიციას; Node.js-ს უპირატესობა მქონე გუნდებისთვის Langflow-ის ანალოგია.",
+      "starsNumeric": 52000,
+      "categorySlug": "workflow",
+      "categoryEmoji": "🔁",
+      "categoryGeorgian": "Workflow და No-Code ბილდერები",
+      "descriptionEn": "Build AI Agents, Visually"
+    },
+    {
+      "name": "Activepieces",
+      "url": "https://github.com/activepieces/activepieces",
+      "stars": "21K",
+      "description": "Activepieces არის TypeScript-ის AI-first workflow automation პლატფორმა — n8n-ის ღია ალტერნატივა, 400+ MCP სერვერის native მხარდაჭერით. AI agents, MCP integrations, visual workflow builder ერთ პაკეტში ერთიანდება. self-hosted ან cloud, MIT ლიცენზია. n8n-ისგან განსხვავდება MCP-first მიდგომით — თუ AI agents-ის MCP-ის ეკოსისტემა გსურს ვიზუალური ავტომატიზაციასთან, Activepieces ამ კომბინაციის სპეციფიკური გამოსავალია.",
+      "starsNumeric": 21000,
+      "categorySlug": "workflow",
+      "categoryEmoji": "🔁",
+      "categoryGeorgian": "Workflow და No-Code ბილდერები",
+      "descriptionEn": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents"
     },
     {
       "name": "OpenClaw",
@@ -1417,41 +1438,8 @@
       "starsNumeric": 362000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 "
-    },
-    {
-      "name": "n8n",
-      "url": "https://github.com/n8n-io/n8n",
-      "stars": "185K",
-      "description": "n8n არის TypeScript-ში დაწერილი fair-code ავტომატიზაციის პლატფორმა 400+ ინტეგრაციით, სადაც ვიზუალური no-code builder custom JavaScript/Python კოდთან ერთად მუშაობს. Gmail, Slack, Airtable, ყველა მთავარი ღრუბელი სერვისი და AI provider-ი node-ების სახით ხელმისაწვდომია. self-hosted ან cloud deployment — fair-code ლიცენზია კომერციულ გამოყენებას self-hosted სახით ნებას რთავს. 185K ვარსკვლავით Zapier-ის ყველაზე პოპულარული ღია ალტერნატივაა; AI Pulse Georgia-ს ინფრასტრუქტურის ნაწილია (aipulsegeorgia2025.app.n8n.cloud).",
-      "starsNumeric": 185000,
-      "categorySlug": "business",
-      "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
-      "descriptionEn": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
-    },
-    {
-      "name": "Langflow",
-      "url": "https://github.com/langflow-ai/langflow",
-      "stars": "147K",
-      "description": "Langflow არის Python-ის ვიზუალური პლატფორმა AI აგენტებისა და workflow-ების drag-and-drop ინტერფეისით ასაშენებლად — კოდის გარეშე. LangChain-ის კომპონენტები გრაფიკული ბლოკების სახით ხდება ხელმისაწვდომი: LLM-ები, vector stores, agents, tools ერთმანეთს მიებმება. MCP მხარდაჭერა, 100+ ინტეგრაცია. DataStax-ის მიერ შეძენილია. Python-ის backend, 20,000+ ორგანიზაცია production-ში იყენებს. ვინც Python-ის სტეკს ამჯობინებს და ვიზუალური AI builder სჭირდება, Langflow ოპტიმალური არჩევანია.",
-      "starsNumeric": 147000,
-      "categorySlug": "business",
-      "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
-      "descriptionEn": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows."
-    },
-    {
-      "name": "Dify",
-      "url": "https://github.com/langgenius/dify",
-      "stars": "138K",
-      "description": "Dify არის production-ready პლატფორმა AI აგენტების, chatbot-ებისა და RAG-ზე დაფუძნებული სისტემების ასაშენებლად ვიზუალური ინტერფეისით. ჩატბოტები, ვორქფლოუები, knowledge bases, text generators — ოთხი ძირითადი application ტიპი GUI-დან კონფიგურირდება. 138K ვარსკვლავით GitHub-ის ერთ-ერთი ყველაზე ვარსკვლავიანი AI პროექტია. Google Search, DALL-E, 100+ ინსტრუმენტი ჩაშენებულია; self-hosted ან Dify Cloud. კომპანიებისთვის, ვინც AI produkts-ს კოდის სერიოზული ინვესტიციის გარეშე production-ში ქონს, ეს ძლიერი გადაწყვეტაა.",
-      "starsNumeric": 138000,
-      "categorySlug": "business",
-      "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
-      "descriptionEn": "Production-ready platform for agentic workflow development."
     },
     {
       "name": "Open WebUI",
@@ -1461,7 +1449,7 @@
       "starsNumeric": 133000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)"
     },
     {
@@ -1472,8 +1460,19 @@
       "starsNumeric": 119000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "The agent that grows with you"
+    },
+    {
+      "name": "TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "stars": "81K",
+      "description": "TradingAgents multi-agent სავაჭრო framework-ია, რომელიც რეალური სავაჭრო ფირმის სტრუქტურას ბაძავს — fundamental ანალიტიკოსი, sentiment ექსპერტი, technical ანალიტიკოსი, trader და risk manager აგენტები ერთად განიხილავენ ბაზრის მდგომარეობას და იღებენ გადაწყვეტილებებს. მრავალ LLM provider-ს (OpenAI, Google, Anthropic, DeepSeek) უჭერს მხარს, აქვს interactive CLI, backtesting, paper trading, Docker და checkpoint recovery. Python, Apache-2.0, v0.2.5 (2026 წლის 11 მაისი), 80,000+ ვარსკვლავი — TauricResearch-ის arXiv ნაშრომზე დაფუძნებული (კვლევითი ხელსაწყო, არა საინვესტიციო რჩევა). **ai-hedge-fund**-ისა და **FinceptTerminal**-ის მონათესავე, ოღონდ ფინანსური AI აგენტების ღია სამყაროს ყველაზე დიდი პროექტი.",
+      "starsNumeric": 81000,
+      "categorySlug": "business",
+      "categoryEmoji": "💼",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
+      "descriptionEn": "TradingAgents: Multi-Agents LLM Financial Trading Framework"
     },
     {
       "name": "gpt4all",
@@ -1483,7 +1482,7 @@
       "starsNumeric": 77000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "GPT4All: Run Local LLMs on Any Device. Open-source and available for commercial use."
     },
     {
@@ -1494,7 +1493,7 @@
       "starsNumeric": 75000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you. We are taking agent harness to the next level — enabling multi-agent collaboration, effortless agent team design, and introducing agents as the unit of work interaction."
     },
     {
@@ -1505,7 +1504,7 @@
       "starsNumeric": 58000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "The all-in-one AI productivity accelerator. On device and privacy first with no annoying setup or configuration."
     },
     {
@@ -1516,8 +1515,19 @@
       "starsNumeric": 58000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Open-source orchestration for zero-human companies"
+    },
+    {
+      "name": "AI Hedge Fund",
+      "url": "https://github.com/virattt/ai-hedge-fund",
+      "stars": "57K",
+      "description": "AI Hedge Fund არის Python-ის სიმულაციური პროექტი, სადაც AI აგენტები Warren Buffett-ის, Charlie Munger-ისა და Michael Burry-ს ინვესტიციური სტილების მიბაძვით ერთობლივად აანალიზებენ საფონდო ბირჟის მონაცემებს. LangGraph-ის multi-agent ორქესტრაციაზეა დაშენებული — სხვადასხვა „ანალიტიკოსი\" (fundamental, technical, sentiment, risk) პარალელურად ამუშავებს მონაცემებს და შედეგებს აერთებს. ეს არ არის რეალური სავაჭრო სისტემა — გამოყენება მხოლოდ საგანმანათლებლო მიზნებისთვისაა. LangGraph-ის production-ready გამოყენების ერთ-ერთი საუკეთესო real-world მაგალითია.",
+      "starsNumeric": 57000,
+      "categorySlug": "business",
+      "categoryEmoji": "💼",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
+      "descriptionEn": "An AI Hedge Fund Team"
     },
     {
       "name": "MiroFish",
@@ -1527,19 +1537,8 @@
       "starsNumeric": 57000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物"
-    },
-    {
-      "name": "Flowise",
-      "url": "https://github.com/FlowiseAI/Flowise",
-      "stars": "52K",
-      "description": "Flowise არის TypeScript-ის drag-and-drop ვიზუალური AI builder, სადაც LLM-ების, agents-ების, vector stores-ისა და tools-ის კავშირები გრაფიკულ ბლოკებად ერთმანეთზე მიებმება. LangChain.js-ის კომპონენტებზეა დაშენებული — JavaScript/Node.js სტეკი. Langflow-ის (Python) პარალელი, 100+ ინტეგრაციით. self-hosted ან Flowise Cloud. non-technical მომხმარებლებიც შეძლებენ AI სამუშაო ნაკადების ვიზუალურ კომპოზიციას; Node.js-ს უპირატესობა მქონე გუნდებისთვის Langflow-ის ანალოგია.",
-      "starsNumeric": 52000,
-      "categorySlug": "business",
-      "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
-      "descriptionEn": "Build AI Agents, Visually"
     },
     {
       "name": "Jan",
@@ -1549,8 +1548,19 @@
       "starsNumeric": 42000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer."
+    },
+    {
+      "name": "Career-Ops",
+      "url": "https://github.com/santifer/career-ops",
+      "stars": "38K",
+      "description": "Career-Ops Claude Code-ზე აგებული AI-ს სამუშაოს ძიების სისტემაა — 14 skill mode, Go-ში დაწერილი dashboard, PDF CV გენერაცია და batch processing ვაკანსიების ავტომატური შეფასებისთვის. ვაკანსიების პოვნა, A-F სკალით შეფასება, CV-ს პოზიციაზე მორგება. JavaScript, career-ops.org. 38,000+ ვარსკვლავი — AI-ს job search-ზე გამოყენების ერთ-ერთი ყველაზე სრული open-source implementation.",
+      "starsNumeric": 38000,
+      "categorySlug": "business",
+      "categoryEmoji": "💼",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
+      "descriptionEn": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing."
     },
     {
       "name": "LibreChat",
@@ -1560,7 +1570,7 @@
       "starsNumeric": 35000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Enhanced ChatGPT Clone: Features Agents, MCP, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active."
     },
     {
@@ -1571,7 +1581,7 @@
       "starsNumeric": 34000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free."
     },
     {
@@ -1582,7 +1592,7 @@
       "starsNumeric": 33000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Vane is an AI-powered answering engine."
     },
     {
@@ -1593,7 +1603,7 @@
       "starsNumeric": 30000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "AI Agent Assistant that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
     },
     {
@@ -1604,19 +1614,8 @@
       "starsNumeric": 24400,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Your Personal AI super intelligence. Private, Simple and extremely powerful."
-    },
-    {
-      "name": "Activepieces",
-      "url": "https://github.com/activepieces/activepieces",
-      "stars": "21K",
-      "description": "Activepieces არის TypeScript-ის AI-first workflow automation პლატფორმა — n8n-ის ღია ალტერნატივა, 400+ MCP სერვერის native მხარდაჭერით. AI agents, MCP integrations, visual workflow builder ერთ პაკეტში ერთიანდება. self-hosted ან cloud, MIT ლიცენზია. n8n-ისგან განსხვავდება MCP-first მიდგომით — თუ AI agents-ის MCP-ის ეკოსისტემა გსურს ვიზუალური ავტომატიზაციასთან, Activepieces ამ კომბინაციის სპეციფიკური გამოსავალია.",
-      "starsNumeric": 21000,
-      "categorySlug": "business",
-      "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
-      "descriptionEn": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents"
     },
     {
       "name": "DeepTutor",
@@ -1626,7 +1625,7 @@
       "starsNumeric": 21000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "\"DeepTutor: Agent-Native Personalized Learning Assistant\""
     },
     {
@@ -1637,7 +1636,7 @@
       "starsNumeric": 20000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills."
     },
     {
@@ -1648,8 +1647,19 @@
       "starsNumeric": 20000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Run OpenClaw more securely inside NVIDIA OpenShell with managed inference"
+    },
+    {
+      "name": "Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "stars": "20K",
+      "description": "Kronos არის Python-ის pre-trained foundation model, რომელიც სპეციალურად ფინანსური ბაზრების „ენაზე\" — K-line (კანდლსტიქ) სერიებზე, ფინანსურ ინდიკატორებზე — ნატრენინგია, ჩვეულებრივ ტექსტური corpus-ის ნაცვლად. AAAI 2026-ის კონფერენციაზე მიღებული აკადემიური ნაშრომი მას მხარს უჭერს. ეს არ არის agent framework — ეს დომენ-სპეციფიკური LLM-ის კვლევის ნიმუშია. ფინანსური ML-ის მკვლევარებისთვის და ტრეიდინგ სისტემების ბექ-ენდის ასაშენებლად.",
+      "starsNumeric": 20000,
+      "categorySlug": "business",
+      "categoryEmoji": "💼",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
+      "descriptionEn": "Kronos: A Foundation Model for the Language of Financial Markets"
     },
     {
       "name": "Claude for Financial Services",
@@ -1659,7 +1669,7 @@
       "starsNumeric": 18600,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Anthropic official reference repo for financial-services workflows — investment banking, equity research, private equity and wealth management. Ships ready-made Claude agents, skills, slash commands and MCP data connectors as self-contained plugins deployable via Claude Cowork or the Managed Agents API, with all output staged for human review (human-in-the-loop by design). Python, Apache 2.0."
     },
     {
@@ -1670,7 +1680,7 @@
       "starsNumeric": 16000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities."
     },
     {
@@ -1681,7 +1691,7 @@
       "starsNumeric": 13000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment."
     },
     {
@@ -1692,7 +1702,7 @@
       "starsNumeric": 13000,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Open-source AI coworker, with memory"
     },
     {
@@ -1703,7 +1713,7 @@
       "starsNumeric": 5800,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Open-source AI research agent where four specialized sub-agents (Researcher, Reviewer, Writer, Verifier) work in parallel through a scientific investigation. Slash commands /deepresearch, /lit, /audit, /replicate and /compare cover each workflow, and every conclusion cites its source — paper, doc or repo — to minimize hallucination. TypeScript, runs on local models (Ollama, LM Studio) or cloud."
     },
     {
@@ -1714,7 +1724,7 @@
       "starsNumeric": 1500,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI or Telegram."
     },
     {
@@ -1725,19 +1735,8 @@
       "starsNumeric": 1300,
       "categorySlug": "business",
       "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "A self-hosted email client with an AI agent, running entirely on Cloudflare Workers"
-    },
-    {
-      "name": "TradingAgents",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "stars": "81K",
-      "description": "TradingAgents multi-agent სავაჭრო framework-ია, რომელიც რეალური სავაჭრო ფირმის სტრუქტურას ბაძავს — fundamental ანალიტიკოსი, sentiment ექსპერტი, technical ანალიტიკოსი, trader და risk manager აგენტები ერთად განიხილავენ ბაზრის მდგომარეობას და იღებენ გადაწყვეტილებებს. მრავალ LLM provider-ს (OpenAI, Google, Anthropic, DeepSeek) უჭერს მხარს, აქვს interactive CLI, backtesting, paper trading, Docker და checkpoint recovery. Python, Apache-2.0, v0.2.5 (2026 წლის 11 მაისი), 80,000+ ვარსკვლავი — TauricResearch-ის arXiv ნაშრომზე დაფუძნებული (კვლევითი ხელსაწყო, არა საინვესტიციო რჩევა). **ai-hedge-fund**-ისა და **FinceptTerminal**-ის მონათესავე, ოღონდ ფინანსური AI აგენტების ღია სამყაროს ყველაზე დიდი პროექტი.",
-      "starsNumeric": 81000,
-      "categorySlug": "business",
-      "categoryEmoji": "💼",
-      "categoryGeorgian": "მზა AI აგენტები ბიზნესისთვის",
-      "descriptionEn": "TradingAgents: Multi-Agents LLM Financial Trading Framework"
     },
     {
       "name": "RAGFlow",
@@ -1747,7 +1746,7 @@
       "starsNumeric": 78000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
       "descriptionEn": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs"
     },
     {
@@ -1758,7 +1757,7 @@
       "starsNumeric": 53000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
       "descriptionEn": "Universal memory layer for AI Agents"
     },
     {
@@ -1769,7 +1768,7 @@
       "starsNumeric": 49000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
       "descriptionEn": "The best-benchmarked open-source AI memory system. And it's free."
     },
     {
@@ -1780,7 +1779,7 @@
       "starsNumeric": 48000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
       "descriptionEn": "LlamaIndex is the leading document agent and OCR platform"
     },
     {
@@ -1791,7 +1790,7 @@
       "starsNumeric": 43000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
       "descriptionEn": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search"
     },
     {
@@ -1802,8 +1801,30 @@
       "starsNumeric": 34000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
       "descriptionEn": "[EMNLP2025] \"LightRAG: Simple and Fast Retrieval-Augmented Generation\""
+    },
+    {
+      "name": "Graphify",
+      "url": "https://github.com/safishamsi/graphify",
+      "stars": "33K",
+      "description": "Graphify კოდის, დოკუმენტაციის, PDF-ების, სურათების და ვიდეოების queryable knowledge graph-ად გარდაქმნის AI coding agent-ებისთვის. Claude Code-ს, Codex-ს, opencode-ს, Cursor-ს, Gemini CLI-ს და სხვებს უჭერს მხარს. Python-ში, graphifylabs.ai. Graph-ზე დაფუძნებული კითხვების მეთოდი AI-ის ტოკენებს 71-ჯერ ამცირებს ფაილების პირდაპირ კითხვასთან შედარებით. 33,000+ ვარსკვლავი — 2026 წლის აპრილში სწრაფად გაიზარდა.",
+      "starsNumeric": 33000,
+      "categorySlug": "memory",
+      "categoryEmoji": "🧠",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "descriptionEn": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, GitHub Copilot CLI, OpenClaw, Factory Droid, Trae, Google Antigravity). Turn any folder of code, docs, papers, images, or videos into a queryable knowledge graph"
+    },
+    {
+      "name": "CodeGraph",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "stars": "33K",
+      "description": "CodeGraph კოდბაზის წინასწარ-ინდექსირებულ semantic knowledge graph-ს აშენებს AI coding agent-ებისთვის — ფუნქციები, კლასები, import-ები და call-ურთიერთობები ლოკალურ SQLite ბაზაში, 20+ ენისთვის. იმის ნაცვლად, რომ Claude Code-მა ან Cursor-მა ყოველ მოთხოვნაზე ფაილები თავიდან წაიკითხოს, პირდაპირ ამ ინდექსს ეკითხება — შედეგად ~22% იაფი და ~50%-ით ნაკლები tool call. TypeScript, MIT, v0.9.7 (2026 წლის 28 მაისი), სრულად ლოკალური, გარე API-ს გარეშე. 2026 წლის 21 მაისის GitHub Trending #1, 33,000+ ვარსკვლავი — **Graphify**-ისა და **GitNexus**-ის ბუნებრივი მონათესავე code-intelligence მიმართულებაში.",
+      "starsNumeric": 33000,
+      "categorySlug": "memory",
+      "categoryEmoji": "🧠",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "descriptionEn": "Pre-indexed code knowledge graph for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local"
     },
     {
       "name": "Qdrant",
@@ -1813,7 +1834,7 @@
       "starsNumeric": 30000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
       "descriptionEn": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/"
     },
     {
@@ -1824,8 +1845,19 @@
       "starsNumeric": 29000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
       "descriptionEn": "An Open Source implementation of Notebook LM with more flexibility and features"
+    },
+    {
+      "name": "GitNexus",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "stars": "28K",
+      "description": "GitNexus — ბრაუზერში სრულად მომუშავე კოდის ინტელიჯენსის ხელსაწყო, სერვერის გარეშე. GitHub-ის repo ან ZIP ჩააგდე და ნახავ ყველა ფაილს, ფუნქციასა და მათ ურთიერთდამოკიდებლობას ინტერაქტიული knowledge graph-ის სახით. ჩაშენებული Graph RAG Agent ამ graph-ს იყენებს, რომ კოდზე ბუნებრივ ენაზე დასმულ კითხვებს უპასუხოს. TypeScript-ში დაწერილი, სრულად client-side, backend deploy-ი არ სჭირდება. კოდის კომპლექსური ბაზის სწრაფი გასაგებად გამოსადეგია.",
+      "starsNumeric": 28000,
+      "categorySlug": "memory",
+      "categoryEmoji": "🧠",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "descriptionEn": "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration"
     },
     {
       "name": "Chroma",
@@ -1835,7 +1867,7 @@
       "starsNumeric": 27000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
       "descriptionEn": "Data infrastructure for AI"
     },
     {
@@ -1846,7 +1878,7 @@
       "starsNumeric": 25000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
       "descriptionEn": "Build Real-Time Knowledge Graphs for AI Agents"
     },
     {
@@ -1857,8 +1889,19 @@
       "starsNumeric": 22000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
       "descriptionEn": "Letta is the platform for building stateful agents: AI with advanced memory that can learn and self-improve over time."
+    },
+    {
+      "name": "agentmemory",
+      "url": "https://github.com/rohitg00/agentmemory",
+      "stars": "20K",
+      "description": "agentmemory AI coding agent-ებს persistent მეხსიერებას აძლევს — lifecycle hooks-ით ჩუმად იწერს რას აკეთებს agent-ი 12+ ხელსაწყოში (Claude Code, Copilot CLI, Cursor, Gemini CLI), დაკვირვებებს searchable structured memory-ად კუმშავს (keyword + vector + knowledge graph hybrid, 95.2% retrieval accuracy R@5) და ახალ session-ში რელევანტურ კონტექსტს უბრუნებს. SQLite-ზე მუშაობს გარე ბაზის გარეშე და 53-tool MCP server-ად ეშვება — ~92%-ით ამცირებს ტოკენებს. TypeScript, Apache-2.0, v0.9.24 (2026 წლის 29 მაისი), 19,600+ ვარსკვლავი, GitHub Trending #5 — **Claude Mem**-ისა და **mem0**-ის MCP-native კონკურენტი.",
+      "starsNumeric": 20000,
+      "categorySlug": "memory",
+      "categoryEmoji": "🧠",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "descriptionEn": "#1 Persistent memory for AI coding agents based on real-world benchmarks"
     },
     {
       "name": "RAG-Anything",
@@ -1868,8 +1911,30 @@
       "starsNumeric": 18000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
       "descriptionEn": "\"RAG-Anything: All-in-One RAG Framework\""
+    },
+    {
+      "name": "Code Review Graph",
+      "url": "https://github.com/tirth8205/code-review-graph",
+      "stars": "12K",
+      "description": "Code Review Graph კოდბაზის persistent knowledge graph-ს ქმნის Claude Code-ისთვის — AI მხოლოდ ცვლილებასთან დაკავშირებულ ფაილებს კითხულობს, მთელ repo-ს კი არა. Code review-ზე 6.8-ჯერ ნაკლები ტოკენი, დღიურ coding task-ებზე 49-ჯერამდე — ეს ხარჯებსა და სიჩქარეს მნიშვნელოვნად ცვლის. Python-ში, 22 MCP tool, 19 პროგრამირების ენა. Claude Code-თან, Cursor-თან, Windsurf-თან და Continue-თან.",
+      "starsNumeric": 12000,
+      "categorySlug": "memory",
+      "categoryEmoji": "🧠",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "descriptionEn": "Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8× fewer tokens on reviews and up to 49× on daily coding tasks."
+    },
+    {
+      "name": "Claude Context",
+      "url": "https://github.com/zilliztech/claude-context",
+      "stars": "10.4K",
+      "description": "Claude Context Zilliz-ის MCP plugin-ია, რომელიც Claude Code-სა და სხვა coding agent-ებს მთელ codebase-ზე semantic code search-ს აძლევს. ფაილების სრულად ჩატვირთვის ნაცვლად კოდს embeddings-ად ინახავს vector database-ში (Milvus/Zilliz Cloud) და მოთხოვნისას მხოლოდ რელევანტურ ფრაგმენტებს აბრუნებს კონტექსტში — დიდ monorepo-ებზე token ხარჯს და discovery rounds-ს ამცირებს. TypeScript-ში, MIT ლიცენზია, `@zilliz/claude-context-mcp` npm პაკეტით ინსტალირდება. მუშაობისთვის OpenAI API key და Milvus/Zilliz Cloud endpoint/token სჭირდება. 10,400+ ვარსკვლავი.",
+      "starsNumeric": 10400,
+      "categorySlug": "memory",
+      "categoryEmoji": "🧠",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "descriptionEn": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent."
     },
     {
       "name": "gbrain",
@@ -1879,7 +1944,7 @@
       "starsNumeric": 10000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
       "descriptionEn": "Garry's Opinionated OpenClaw/Hermes Agent Brain"
     },
     {
@@ -1890,7 +1955,7 @@
       "starsNumeric": 10000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
       "descriptionEn": "Hindsight: Agent Memory That  Learns"
     },
     {
@@ -1901,7 +1966,7 @@
       "starsNumeric": 2100,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
       "descriptionEn": "Web Crawling and RAG Capabilities for AI Agents and AI Coding Assistants"
     },
     {
@@ -1912,19 +1977,8 @@
       "starsNumeric": 129,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
+      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
       "descriptionEn": "The Mind Palace for AI Agents - HIPAA-hardened Cognitive Architecture with on-device LLM (prism-coder:7b), Hebbian learning, ACT-R spreading activation, adversarial evaluation, persistent memory, multi-agent Hivemind and visual dashboard. Zero API keys required."
-    },
-    {
-      "name": "agentmemory",
-      "url": "https://github.com/rohitg00/agentmemory",
-      "stars": "20K",
-      "description": "agentmemory AI coding agent-ებს persistent მეხსიერებას აძლევს — lifecycle hooks-ით ჩუმად იწერს რას აკეთებს agent-ი 12+ ხელსაწყოში (Claude Code, Copilot CLI, Cursor, Gemini CLI), დაკვირვებებს searchable structured memory-ად კუმშავს (keyword + vector + knowledge graph hybrid, 95.2% retrieval accuracy R@5) და ახალ session-ში რელევანტურ კონტექსტს უბრუნებს. SQLite-ზე მუშაობს გარე ბაზის გარეშე და 53-tool MCP server-ად ეშვება — ~92%-ით ამცირებს ტოკენებს. TypeScript, Apache-2.0, v0.9.24 (2026 წლის 29 მაისი), 19,600+ ვარსკვლავი, GitHub Trending #5 — **Claude Mem**-ისა და **mem0**-ის MCP-native კონკურენტი.",
-      "starsNumeric": 20000,
-      "categorySlug": "memory",
-      "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება და RAG",
-      "descriptionEn": "#1 Persistent memory for AI coding agents based on real-world benchmarks"
     },
     {
       "name": "Ollama",
@@ -1934,7 +1988,7 @@
       "starsNumeric": 169000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
       "descriptionEn": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
     },
     {
@@ -1945,19 +1999,8 @@
       "starsNumeric": 159000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
       "descriptionEn": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. "
-    },
-    {
-      "name": "ComfyUI",
-      "url": "https://github.com/comfy-org/ComfyUI",
-      "stars": "109K",
-      "description": "ComfyUI — diffusion model-ებით სურათებისა და ვიდეოების გენერაციის ყველაზე მოქნილი პლატფორმა, node-based ვიზუალური ინტერფეისით. პროცესებს ბლოკ-სქემის სახით ვხატავთ — ყოველი node ერთ ოპერაციას ასრულებს (sampling, upscaling, LoRA გამოყენება, inpainting). Python-ში დაწერილი, REST API ჩაშენებული, 1 000-ზე მეტი community extension ხელმისაწვდომია. Stable Diffusion, FLUX, SDXL, Wan, CogVideoX და სხვა მოდელები მხარდაჭერილია. AI ხელოვნებისა და ვიდეო კონტენტის პროფესიონალებს შორის ინდუსტრიული სტანდარტია.",
-      "starsNumeric": 109000,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
-      "descriptionEn": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface."
     },
     {
       "name": "llama.cpp",
@@ -1967,7 +2010,7 @@
       "starsNumeric": 106000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
       "descriptionEn": "LLM inference in C/C++"
     },
     {
@@ -1978,19 +2021,8 @@
       "starsNumeric": 77000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
       "descriptionEn": "A high-throughput and memory-efficient inference and serving engine for LLMs"
-    },
-    {
-      "name": "Stable Diffusion",
-      "url": "https://github.com/CompVis/stable-diffusion",
-      "stars": "72K",
-      "description": "Stable Diffusion — latent diffusion model, რომელმაც 2022 წელს ტექსტიდან სურათის გენერაცია ყველასთვის ხელმისაწვდომი გახადა. CompVis (LMU Munich), Stability AI-ისა და Runway-ის ერთობლივი კვლევის შედეგია. ეს არის original reference implementation — ComfyUI, AUTOMATIC1111 და სხვა UI-ები სწორედ ამ მოდელის ირგვლივ აიგო. Jupyter Notebook-ებში, Python-ში დაწერილი, GPU-ს ესაჭიროება. შენიშვნა: ახალი სურათების გენერაციისთვის დღეს ComfyUI ან FLUX-ს იყენებენ — ეს repo ძირითადად ისტორიული მნიშვნელობისაა.",
-      "starsNumeric": 72000,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
-      "descriptionEn": "A latent text-to-image diffusion model"
     },
     {
       "name": "Unsloth",
@@ -2000,7 +2032,7 @@
       "starsNumeric": 62000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
       "descriptionEn": "Web UI for training and running open models like Gemma 4, Qwen3.5, DeepSeek, gpt-oss locally."
     },
     {
@@ -2011,7 +2043,7 @@
       "starsNumeric": 48000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
       "descriptionEn": "Port of OpenAI's Whisper model in C/C++"
     },
     {
@@ -2022,41 +2054,8 @@
       "starsNumeric": 45000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
       "descriptionEn": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required."
-    },
-    {
-      "name": "Coqui TTS",
-      "url": "https://github.com/coqui-ai/TTS",
-      "stars": "45K",
-      "description": "Coqui TTS — ღია კოდის deep learning toolkit text-to-speech-ისთვის, Python-ში, კვლევასა და production-ში გამოცდილი. ხმის კლონირება 3-10 წამიანი ნიმუშიდანაა შესაძლებელი. 17-ზე მეტ ენაზე მუშაობს, მრავალი სხვადასხვა TTS არქიტექტურა ჩაშენებულია (VITS, YourTTS, Bark). შენიშვნა: Coqui AI კომპანია 2024 წელს დაიხურა — repo-ს community ინარჩუნებს, მაგრამ აქტიური კომერციული development შეჩერებულია. RealtimeTTS და Bark — აქტიური ალტერნატივები.",
-      "starsNumeric": 45000,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
-      "descriptionEn": "🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and production"
-    },
-    {
-      "name": "Bark",
-      "url": "https://github.com/suno-ai/bark",
-      "stars": "39K",
-      "description": "Bark — Suno AI-ის text-prompted generative audio model. ჩვეულებრივი TTS-ისგან განსხვავებით, Bark ქმნის არა მხოლოდ speech-ს, არამედ სიმღერებს, ხმოვან ეფექტებს, სიცილს, ტირილს, ოხვრასა და სხვა non-verbal ხმებს. 100-ზე მეტ ენაზე მუშაობს. Python/Jupyter-ში, Hugging Face-ზე ხელმისაწვდომი. შენიშვნა: Bark-ის განახლებები შეჩერდა, Suno AI ახლა მუსიკის გენერაციის კომერციულ პლატფორმაზეა ფოკუსირებული — repo community mode-შია. Coqui TTS-ის ალტერნატივა, რომელსაც მეტი expressive range აქვს.",
-      "starsNumeric": 39000,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
-      "descriptionEn": "🔊 Text-Prompted Generative Audio Model"
-    },
-    {
-      "name": "Diffusers",
-      "url": "https://github.com/huggingface/diffusers",
-      "stars": "33K",
-      "description": "Hugging Face Diffusers — state-of-the-art diffusion model-ების Python ბიბლიოთეკა სურათების, ვიდეოების და აუდიოს გენერაციისთვის. Stable Diffusion, FLUX, SDXL, CogVideoX, Wan — ყველა ძირითადი generative model ამ ბიბლიოთეკის მეშვეობით ეშვება. LoRA, ControlNet, IP-Adapter — პოპულარული fine-tuning ტექნიკები ჩაშენებულია. Transformers-ის „diffusion counterpart\" Hugging Face-ისგან, ერთი unified API-ით ყველა გენერაციული მოდელისთვის. AI ხელოვნებაში Python pipeline-ების სტანდარტი.",
-      "starsNumeric": 33000,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
-      "descriptionEn": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch."
     },
     {
       "name": "SGLang",
@@ -2066,19 +2065,8 @@
       "starsNumeric": 26000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
       "descriptionEn": "SGLang is a high-performance serving framework for large language models and multimodal models."
-    },
-    {
-      "name": "FLUX",
-      "url": "https://github.com/black-forest-labs/flux",
-      "stars": "25K",
-      "description": "FLUX — Black Forest Labs-ის FLUX.1 image generation მოდელების official inference repo. Black Forest Labs-ი Stable Diffusion-ის ორიგინალი შემქმნელების მიერ 2024 წელს დაარსდა. **ლიცენზიები**: FLUX.1 [schnell] — Apache 2.0 (სრულად ღია), FLUX.1 [dev] — არაკომერციული ლიცენზიით (research/personal). ასევე სპეციალიზებული ვარიანტები: Fill, Canny, Depth, Redux, Kontext, Krea. flow matching ტექნიკა ჩვეულებრივი diffusion-ის ნაცვლად — უფრო სწრაფი sampling. ComfyUI-სა და Diffusers-ზე მშობლიურად ინტეგრირებული, Replicate-ზე ხელმისაწვდომი. ერთ-ერთი ყველაზე ფართოდ გავრცელებული ღია image generation მოდელი.",
-      "starsNumeric": 25000,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
-      "descriptionEn": "Official inference repo for FLUX.1 models"
     },
     {
       "name": "Google Workspace CLI",
@@ -2088,7 +2076,7 @@
       "starsNumeric": 25000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
       "descriptionEn": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills."
     },
     {
@@ -2099,41 +2087,8 @@
       "starsNumeric": 23000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
       "descriptionEn": "🎒 Token-Oriented Object Notation (TOON) – Compact, human-readable, schema-aware JSON for LLM prompts. Spec, benchmarks, TypeScript SDK."
-    },
-    {
-      "name": "Kronos",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "stars": "20K",
-      "description": "Kronos არის Python-ის pre-trained foundation model, რომელიც სპეციალურად ფინანსური ბაზრების „ენაზე\" — K-line (კანდლსტიქ) სერიებზე, ფინანსურ ინდიკატორებზე — ნატრენინგია, ჩვეულებრივ ტექსტური corpus-ის ნაცვლად. AAAI 2026-ის კონფერენციაზე მიღებული აკადემიური ნაშრომი მას მხარს უჭერს. ეს არ არის agent framework — ეს დომენ-სპეციფიკური LLM-ის კვლევის ნიმუშია. ფინანსური ML-ის მკვლევარებისთვის და ტრეიდინგ სისტემების ბექ-ენდის ასაშენებლად.",
-      "starsNumeric": 20000,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
-      "descriptionEn": "Kronos: A Foundation Model for the Language of Financial Markets"
-    },
-    {
-      "name": "VoxCPM",
-      "url": "https://github.com/OpenBMB/VoxCPM",
-      "stars": "15K",
-      "description": "VoxCPM2 — tokenizer-free multilingual text-to-speech სისტემა OpenBMB-ისგან (Tsinghua University-ის კვლევითი ჯგუფი). 30 ენაზე მუშაობს language tag-ის გარეშე, 3 წამიანი ნიმუშიდან ხმის კლონირება, 48kHz სტუდიური ხარისხი. 2 მილიარდი პარამეტრი, 8GB VRAM-ზე ეშვება, Apache 2.0 ლიცენზია. Minimax benchmark-ზე 85.4% ხმის მსგავსება. ElevenLabs-ის ღია ალტერნატივა — კომერციული სერვისის გარეშე სტუდიური ხარისხის TTS.",
-      "starsNumeric": 15000,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
-      "descriptionEn": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning"
-    },
-    {
-      "name": "HunyuanVideo",
-      "url": "https://github.com/Tencent-Hunyuan/HunyuanVideo",
-      "stars": "12K",
-      "description": "HunyuanVideo — Tencent-ის large-scale video generation framework. ტექსტიდან, სურათიდან ან audio prompt-ისგან ვიდეოს გენერაცია. Python-ში დაწერილი, Hugging Face-ზე ხელმისაწვდომი. 13 მილიარდი პარამეტრი, Wan-ის მსგავსი სხვა ღია video gen მოდელებთან კონკურენტული. ლოკალური გაშვება მძლავრ GPU-ს მოითხოვს (80GB VRAM რეკომენდირებულია). ფართო ვიდეო გენერაციული research-ისა და ComfyUI-ს workflow-ებისთვის.",
-      "starsNumeric": 12000,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
-      "descriptionEn": "HunyuanVideo: A Systematic Framework For Large Video Generation Model"
     },
     {
       "name": "NotebookLM Python",
@@ -2143,19 +2098,8 @@
       "starsNumeric": 11000,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
       "descriptionEn": "Unofficial Python API and agentic skill for Google NotebookLM. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw."
-    },
-    {
-      "name": "Hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes",
-      "stars": "11K",
-      "description": "Hyperframes — HeyGen-ის (AI avatar video-ს წამყვანი კომპანია) TypeScript framework, რომელიც HTML/CSS-ს ვიდეოდ გარდაქმნის. სპეციალურად AI აგენტებისთვის შექმნილი: აგენტი HTML-ს წერს, Hyperframes ვიდეოდ render-ავს — კოდირების ვიდეო pipeline. რეპოში არის [Claude-სპეციფიკური design guide](https://github.com/heygen-com/hyperframes/blob/main/docs/guides/claude-design-hyperframes.md) — Claude.ai-ში ვიდეო template-ის პირველ draft-ს ქმნი, ZIP-ით ჩამოგაქვს, შემდეგ Claude Code-ი ფინიშავს ანიმაციებს. Remotion-ის კონკურენტი declarative agent-first მიდგომით — Plain HTML + GSAP, React-ის გარეშე. 2026 მარტში გამოვიდა, Apache 2.0.",
-      "starsNumeric": 11000,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
-      "descriptionEn": "Write HTML. Render video. Built for agents."
     },
     {
       "name": "LM Studio",
@@ -2165,8 +2109,151 @@
       "starsNumeric": 4700,
       "categorySlug": "infra",
       "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
       "descriptionEn": "LM Studio CLI"
+    },
+    {
+      "name": "Headroom",
+      "url": "https://github.com/chopratejas/headroom",
+      "stars": "1.5K",
+      "description": "Headroom LLM აპლიკაციებისთვის context optimization layer-ია — AI-ს გადასაცემ მონაცემებს (ფაილები, ლოგები, RAG შედეგები) 70-95%-ით ამცირებს პასუხის ხარისხის დაკარგვის გარეშე. Python-ში, headroom-docs.vercel.app. Claude Code-ში, Codex-ში და Aider-ში ერთი ბრძანებით ეშვება. AI ხარჯების მნიშვნელოვნად შემცირებისა და უფრო გრძელი სამუშაო სესიების შესაძლებლობისთვის — 1,500+ ვარსკვლავი.",
+      "starsNumeric": 1500,
+      "categorySlug": "infra",
+      "categoryEmoji": "⚙️",
+      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
+      "descriptionEn": "The Context Optimization Layer for LLM Applications"
+    },
+    {
+      "name": "ComfyUI",
+      "url": "https://github.com/comfy-org/ComfyUI",
+      "stars": "109K",
+      "description": "ComfyUI — diffusion model-ებით სურათებისა და ვიდეოების გენერაციის ყველაზე მოქნილი პლატფორმა, node-based ვიზუალური ინტერფეისით. პროცესებს ბლოკ-სქემის სახით ვხატავთ — ყოველი node ერთ ოპერაციას ასრულებს (sampling, upscaling, LoRA გამოყენება, inpainting). Python-ში დაწერილი, REST API ჩაშენებული, 1 000-ზე მეტი community extension ხელმისაწვდომია. Stable Diffusion, FLUX, SDXL, Wan, CogVideoX და სხვა მოდელები მხარდაჭერილია. AI ხელოვნებისა და ვიდეო კონტენტის პროფესიონალებს შორის ინდუსტრიული სტანდარტია.",
+      "starsNumeric": 109000,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface."
+    },
+    {
+      "name": "Stable Diffusion",
+      "url": "https://github.com/CompVis/stable-diffusion",
+      "stars": "72K",
+      "description": "Stable Diffusion — latent diffusion model, რომელმაც 2022 წელს ტექსტიდან სურათის გენერაცია ყველასთვის ხელმისაწვდომი გახადა. CompVis (LMU Munich), Stability AI-ისა და Runway-ის ერთობლივი კვლევის შედეგია. ეს არის original reference implementation — ComfyUI, AUTOMATIC1111 და სხვა UI-ები სწორედ ამ მოდელის ირგვლივ აიგო. Jupyter Notebook-ებში, Python-ში დაწერილი, GPU-ს ესაჭიროება. შენიშვნა: ახალი სურათების გენერაციისთვის დღეს ComfyUI ან FLUX-ს იყენებენ — ეს repo ძირითადად ისტორიული მნიშვნელობისაა.",
+      "starsNumeric": 72000,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "A latent text-to-image diffusion model"
+    },
+    {
+      "name": "Coqui TTS",
+      "url": "https://github.com/coqui-ai/TTS",
+      "stars": "45K",
+      "description": "Coqui TTS — ღია კოდის deep learning toolkit text-to-speech-ისთვის, Python-ში, კვლევასა და production-ში გამოცდილი. ხმის კლონირება 3-10 წამიანი ნიმუშიდანაა შესაძლებელი. 17-ზე მეტ ენაზე მუშაობს, მრავალი სხვადასხვა TTS არქიტექტურა ჩაშენებულია (VITS, YourTTS, Bark). შენიშვნა: Coqui AI კომპანია 2024 წელს დაიხურა — repo-ს community ინარჩუნებს, მაგრამ აქტიური კომერციული development შეჩერებულია. RealtimeTTS და Bark — აქტიური ალტერნატივები.",
+      "starsNumeric": 45000,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and production"
+    },
+    {
+      "name": "Bark",
+      "url": "https://github.com/suno-ai/bark",
+      "stars": "39K",
+      "description": "Bark — Suno AI-ის text-prompted generative audio model. ჩვეულებრივი TTS-ისგან განსხვავებით, Bark ქმნის არა მხოლოდ speech-ს, არამედ სიმღერებს, ხმოვან ეფექტებს, სიცილს, ტირილს, ოხვრასა და სხვა non-verbal ხმებს. 100-ზე მეტ ენაზე მუშაობს. Python/Jupyter-ში, Hugging Face-ზე ხელმისაწვდომი. შენიშვნა: Bark-ის განახლებები შეჩერდა, Suno AI ახლა მუსიკის გენერაციის კომერციულ პლატფორმაზეა ფოკუსირებული — repo community mode-შია. Coqui TTS-ის ალტერნატივა, რომელსაც მეტი expressive range აქვს.",
+      "starsNumeric": 39000,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "🔊 Text-Prompted Generative Audio Model"
+    },
+    {
+      "name": "Diffusers",
+      "url": "https://github.com/huggingface/diffusers",
+      "stars": "33K",
+      "description": "Hugging Face Diffusers — state-of-the-art diffusion model-ების Python ბიბლიოთეკა სურათების, ვიდეოების და აუდიოს გენერაციისთვის. Stable Diffusion, FLUX, SDXL, CogVideoX, Wan — ყველა ძირითადი generative model ამ ბიბლიოთეკის მეშვეობით ეშვება. LoRA, ControlNet, IP-Adapter — პოპულარული fine-tuning ტექნიკები ჩაშენებულია. Transformers-ის „diffusion counterpart\" Hugging Face-ისგან, ერთი unified API-ით ყველა გენერაციული მოდელისთვის. AI ხელოვნებაში Python pipeline-ების სტანდარტი.",
+      "starsNumeric": 33000,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch."
+    },
+    {
+      "name": "FLUX",
+      "url": "https://github.com/black-forest-labs/flux",
+      "stars": "25K",
+      "description": "FLUX — Black Forest Labs-ის FLUX.1 image generation მოდელების official inference repo. Black Forest Labs-ი Stable Diffusion-ის ორიგინალი შემქმნელების მიერ 2024 წელს დაარსდა. **ლიცენზიები**: FLUX.1 [schnell] — Apache 2.0 (სრულად ღია), FLUX.1 [dev] — არაკომერციული ლიცენზიით (research/personal). ასევე სპეციალიზებული ვარიანტები: Fill, Canny, Depth, Redux, Kontext, Krea. flow matching ტექნიკა ჩვეულებრივი diffusion-ის ნაცვლად — უფრო სწრაფი sampling. ComfyUI-სა და Diffusers-ზე მშობლიურად ინტეგრირებული, Replicate-ზე ხელმისაწვდომი. ერთ-ერთი ყველაზე ფართოდ გავრცელებული ღია image generation მოდელი.",
+      "starsNumeric": 25000,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "Official inference repo for FLUX.1 models"
+    },
+    {
+      "name": "Pixelle-Video",
+      "url": "https://github.com/AIDC-AI/Pixelle-Video",
+      "stars": "21K",
+      "description": "Pixelle-Video Alibaba-ს AIDC-AI გუნდის სრულად ავტომატური short-video ძრავაა — თემას აძლევ და სისტემა ბოლომდე აწყობს ვიდეოს: სცენარს წერს LLM-ით (GPT, Qwen, DeepSeek), image/video-ს აგენერირებს ComfyUI ინტეგრაციით, voiceover-ს ასინთეზებს (voice cloning-ით), მუსიკას ამატებს და საბოლოო ვიდეოდ აკომპონებს. digital human narration და motion transfer ჩაშენებულია, web UI კონფიგურაციისთვის. Python, Apache-2.0, 20,500+ ვარსკვლავი — **HunyuanVideo**-სა და **ViMax**-ის გვერდით end-to-end short-video pipeline-ის ჩინური ეკოსისტემიდან გამოსული ლიდერი.",
+      "starsNumeric": 21000,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine"
+    },
+    {
+      "name": "VoxCPM",
+      "url": "https://github.com/OpenBMB/VoxCPM",
+      "stars": "15K",
+      "description": "VoxCPM2 — tokenizer-free multilingual text-to-speech სისტემა OpenBMB-ისგან (Tsinghua University-ის კვლევითი ჯგუფი). 30 ენაზე მუშაობს language tag-ის გარეშე, 3 წამიანი ნიმუშიდან ხმის კლონირება, 48kHz სტუდიური ხარისხი. 2 მილიარდი პარამეტრი, 8GB VRAM-ზე ეშვება, Apache 2.0 ლიცენზია. Minimax benchmark-ზე 85.4% ხმის მსგავსება. ElevenLabs-ის ღია ალტერნატივა — კომერციული სერვისის გარეშე სტუდიური ხარისხის TTS.",
+      "starsNumeric": 15000,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning"
+    },
+    {
+      "name": "HunyuanVideo",
+      "url": "https://github.com/Tencent-Hunyuan/HunyuanVideo",
+      "stars": "12K",
+      "description": "HunyuanVideo — Tencent-ის large-scale video generation framework. ტექსტიდან, სურათიდან ან audio prompt-ისგან ვიდეოს გენერაცია. Python-ში დაწერილი, Hugging Face-ზე ხელმისაწვდომი. 13 მილიარდი პარამეტრი, Wan-ის მსგავსი სხვა ღია video gen მოდელებთან კონკურენტული. ლოკალური გაშვება მძლავრ GPU-ს მოითხოვს (80GB VRAM რეკომენდირებულია). ფართო ვიდეო გენერაციული research-ისა და ComfyUI-ს workflow-ებისთვის.",
+      "starsNumeric": 12000,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "HunyuanVideo: A Systematic Framework For Large Video Generation Model"
+    },
+    {
+      "name": "Hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "stars": "11K",
+      "description": "Hyperframes — HeyGen-ის (AI avatar video-ს წამყვანი კომპანია) TypeScript framework, რომელიც HTML/CSS-ს ვიდეოდ გარდაქმნის. სპეციალურად AI აგენტებისთვის შექმნილი: აგენტი HTML-ს წერს, Hyperframes ვიდეოდ render-ავს — კოდირების ვიდეო pipeline. რეპოში არის [Claude-სპეციფიკური design guide](https://github.com/heygen-com/hyperframes/blob/main/docs/guides/claude-design-hyperframes.md) — Claude.ai-ში ვიდეო template-ის პირველ draft-ს ქმნი, ZIP-ით ჩამოგაქვს, შემდეგ Claude Code-ი ფინიშავს ანიმაციებს. Remotion-ის კონკურენტი declarative agent-first მიდგომით — Plain HTML + GSAP, React-ის გარეშე. 2026 მარტში გამოვიდა, Apache 2.0.",
+      "starsNumeric": 11000,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "Write HTML. Render video. Built for agents."
+    },
+    {
+      "name": "Supertonic",
+      "url": "https://github.com/supertone-inc/supertonic",
+      "stars": "11K",
+      "description": "Supertonic ულტრა-სწრაფი, on-device multilingual TTS-ია ONNX-ით — კომპაქტური 99M-პარამეტრიანი მოდელი, 31 ენა, 44.1kHz აუდიო, ღრუბლის გარეშე desktop/mobile/browser/edge-ზე. 10 expression tag ბუნებრივი ინტონაციისთვის და ready-to-use იმპლემენტაცია 11 ენაში (Python, Node, Java, C++, Swift, Rust, Flutter…). MIT (კოდი) + OpenRAIL-M (მოდელი), 11,000+ ვარსკვლავი, 2026 წლის 21 მაისის GitHub Trending #6 — **VoxCPM**-ის, **RealtimeTTS**-ისა და **bark**-ის გვერდით on-device TTS-ის ერთ-ერთი ყველაზე მსუბუქი ვარიანტი.",
+      "starsNumeric": 11000,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX."
+    },
+    {
+      "name": "ViMax",
+      "url": "https://github.com/HKUDS/ViMax",
+      "stars": "8.3K",
+      "description": "ViMax HKUDS-ის (იმავე ლაბორატორიის, რომელმაც LightRAG, RAG-Anything, nanobot, DeepTutor და OpenSpace შექმნა — ყველა ამ კოლექციაშია) agentic video generation framework-ია. სპეციალიზებული აგენტები Director, Screenwriter, Producer და Video Generator როლებში იდეას, სცენარს ან მთელ რომანსაც კი სრულ ვიდეოდ აქცევს — Idea2Video, Script2Video, Novel2Video და AutoCameo (მომხმარებლის ფოტო პერსონაჟად). script generation, storyboard, shot planning, reference image selection და consistency validation ავტომატიზებულია. Python, MIT, 8,300+ ვარსკვლავი, GitHub Trending #8 — **HunyuanVideo**-ს გვერდით agentic, role-based მიდგომით განსხვავდება.",
+      "starsNumeric": 8300,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "\"ViMax: Agentic Video Generation (Director, Screenwriter, Producer, and Video Generator All-in-One)\""
     },
     {
       "name": "RealtimeTTS",
@@ -2174,9 +2261,9 @@
       "stars": "3.9K",
       "description": "RealtimeTTS — Python ბიბლიოთეკა, რომელიც ტექსტს ხმად real-time-ში გარდაქმნის, streaming input-ისთვის ოპტიმიზებული. LLM-ის output-ს stream-ად ღებულობს და პირველ სიტყვებს 2 წამში წარმოაჩენს — სრული response-ის დასრულების გარეშე. Coqui, ElevenLabs, Azure, Piper, Kokoro — მრავალი TTS backend მხარდაჭერილია ერთი API-ით. ხმის კლონირება Coqui backend-ით. Kolja Beigel-ის (KoljaB) independent project, MIT ლიცენზია. სრული voice AI pipeline-ების ასაწყობად.",
       "starsNumeric": 3900,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
       "descriptionEn": "Converts text to speech in realtime"
     },
     {
@@ -2185,43 +2272,21 @@
       "stars": "3.8K",
       "description": "video-use — Browser Use გუნდის ხელსაწყო ვიდეო მონტაჟისთვის AI კოდინგ აგენტების მეშვეობით. ბუნებრივ ენაზე გაიცი ინსტრუქცია (ფრაგმენტების შეერთება, subtitle-ების დამატება, audio-ს ჩანაცვლება, speed-ის შეცვლა) და AI FFmpeg-ის სკრიპტს ავტომატურად წერს და ახორციელებს. Python-ში, 2026 წლის აპრილში გამოჩნდა. agentic media processing-ის ახალი მიმართულების ადრეული demo — NLE (non-linear editor) UI-ის გარეშე, პროგრამული ვიდეო workflow-ებისთვის.",
       "starsNumeric": 3800,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
       "descriptionEn": "Edit videos with coding agents"
     },
     {
-      "name": "ViMax",
-      "url": "https://github.com/HKUDS/ViMax",
-      "stars": "8.3K",
-      "description": "ViMax HKUDS-ის (იმავე ლაბორატორიის, რომელმაც LightRAG, RAG-Anything, nanobot, DeepTutor და OpenSpace შექმნა — ყველა ამ კოლექციაშია) agentic video generation framework-ია. სპეციალიზებული აგენტები Director, Screenwriter, Producer და Video Generator როლებში იდეას, სცენარს ან მთელ რომანსაც კი სრულ ვიდეოდ აქცევს — Idea2Video, Script2Video, Novel2Video და AutoCameo (მომხმარებლის ფოტო პერსონაჟად). script generation, storyboard, shot planning, reference image selection და consistency validation ავტომატიზებულია. Python, MIT, 8,300+ ვარსკვლავი, GitHub Trending #8 — **HunyuanVideo**-ს გვერდით agentic, role-based მიდგომით განსხვავდება.",
-      "starsNumeric": 8300,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
-      "descriptionEn": "\"ViMax: Agentic Video Generation (Director, Screenwriter, Producer, and Video Generator All-in-One)\""
-    },
-    {
-      "name": "Supertonic",
-      "url": "https://github.com/supertone-inc/supertonic",
-      "stars": "11K",
-      "description": "Supertonic ულტრა-სწრაფი, on-device multilingual TTS-ია ONNX-ით — კომპაქტური 99M-პარამეტრიანი მოდელი, 31 ენა, 44.1kHz აუდიო, ღრუბლის გარეშე desktop/mobile/browser/edge-ზე. 10 expression tag ბუნებრივი ინტონაციისთვის და ready-to-use იმპლემენტაცია 11 ენაში (Python, Node, Java, C++, Swift, Rust, Flutter…). MIT (კოდი) + OpenRAIL-M (მოდელი), 11,000+ ვარსკვლავი, 2026 წლის 21 მაისის GitHub Trending #6 — **VoxCPM**-ის, **RealtimeTTS**-ისა და **bark**-ის გვერდით on-device TTS-ის ერთ-ერთი ყველაზე მსუბუქი ვარიანტი.",
-      "starsNumeric": 11000,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
-      "descriptionEn": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX."
-    },
-    {
-      "name": "Pixelle-Video",
-      "url": "https://github.com/AIDC-AI/Pixelle-Video",
-      "stars": "21K",
-      "description": "Pixelle-Video Alibaba-ს AIDC-AI გუნდის სრულად ავტომატური short-video ძრავაა — თემას აძლევ და სისტემა ბოლომდე აწყობს ვიდეოს: სცენარს წერს LLM-ით (GPT, Qwen, DeepSeek), image/video-ს აგენერირებს ComfyUI ინტეგრაციით, voiceover-ს ასინთეზებს (voice cloning-ით), მუსიკას ამატებს და საბოლოო ვიდეოდ აკომპონებს. digital human narration და motion transfer ჩაშენებულია, web UI კონფიგურაციისთვის. Python, Apache-2.0, 20,500+ ვარსკვლავი — **HunyuanVideo**-სა და **ViMax**-ის გვერდით end-to-end short-video pipeline-ის ჩინური ეკოსისტემიდან გამოსული ლიდერი.",
-      "starsNumeric": 21000,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "AI ინფრასტრუქტურა და ხელსაწყოები",
-      "descriptionEn": "🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine"
+      "name": "Remotion Skills",
+      "url": "https://github.com/remotion-dev/skills",
+      "stars": "2.9K",
+      "description": "Remotion Skills Remotion-ის (React-ში ვიდეოების პროგრამული შექმნის ფრეიმვორკი) ოფიციალური agent skills-ია. AI coding agent-ებს Remotion-ის ექსპერტიზას სძენს — კომპოზიცია, რენდერინგი, ტაიმინგი, animation. TypeScript-ში. თუ data visualizations-ს, reels-ს ან ანიმაციებს React კომპონენტებიდან ქმნი, ეს skill-ი AI-ს ყველა ნიუანსს ასწავლის — Remotion-ის ოფიციალური გუნდის მიერ.",
+      "starsNumeric": 2900,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "Agent Skills"
     },
     {
       "name": "Build Your Own X",
@@ -2257,39 +2322,6 @@
       "descriptionEn": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models"
     },
     {
-      "name": "Excalidraw",
-      "url": "https://github.com/excalidraw/excalidraw",
-      "stars": "122K",
-      "description": "Excalidraw — virtual whiteboard hand-drawn სტილის diagrams-ისთვის, TypeScript-ში, MIT ლიცენზიით. AI engineers-ისთვის **de facto სტანდარტი** გახდა agent architectures-ის, system designs-ის, RAG pipeline-ების და LLM workflow-ების ვიზუალიზაციისთვის — Anthropic-ის, OpenAI-ის და სხვა AI კომპანიების engineering blog-ებსა და ტექნიკურ დოკუმენტაციაში მუდმივად ჩანს. Excalidraw+ commercial ვერსიაში ჩაშენებულია text-to-diagram AI ფიჩერი (OpenAI integration) რომელიც ბუნებრივი ენიდან diagram-ს ქმნის, plus mermaid-ის ნატივიური მხარდაჭერა — ანუ Claude/GPT-ით mermaid syntax გენერაცია და Excalidraw-ში refine ერთიანი workflow-ია. AI არქიტექტურის დოკუმენტაციისთვის, presentation-ისთვის ან Claude Code-ის output-ის ვიზუალიზაციისთვის — ერთ-ერთი მთავარი ხელსაწყო engineering-ის ეკოსისტემაში.",
-      "starsNumeric": 122000,
-      "categorySlug": "resources",
-      "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
-      "descriptionEn": "Virtual whiteboard for sketching hand-drawn like diagrams"
-    },
-    {
-      "name": "Mermaid",
-      "url": "https://github.com/mermaid-js/mermaid",
-      "stars": "88K",
-      "description": "Mermaid — text-to-diagram-ის ღია წყაროს უპირობო სტანდარტი. მარკდაუნ-სტილის სინტაქსიდან flowchart-ი, sequence diagram, ER, gantt, state machine, class diagram, mindmap, C4 architecture და სხვა — ერთიანი ენით. TypeScript-ში, MIT ლიცენზია, 87,900+ ვარსკვლავი. **AI workflow-ში de-facto ფორმატი** — Claude, ChatGPT, Cursor, Codex და თითქმის ყველა LLM native-ად ცნობს Mermaid სინტაქსს და დიაგრამას პირდაპირ markdown პასუხში გასცემს. GitHub, GitLab, Notion, Obsidian, Confluence Mermaid-ს ნატივიურად რენდერავს — pull request-ში code review-ის დროს დიაგრამა იქვე ჩანს, version control-ში არის და diff-ისთვის ხელმისაწვდომი. ARCHITECTURE.md-ის, RFC-ის და technical documentation-ის სავალდებულო ნაწილია modern engineering team-ებში. **Excalidraw**-ის (ვიზუალური) და **D2**-ის (კოდით — წინასწარ შემოწმე ცალკე, ჯერ კოლექციაში არ არის) ერთობლივ stack-ში — დიაგრამინგ workflow-ის ბერკეტი.",
-      "starsNumeric": 88000,
-      "categorySlug": "resources",
-      "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
-      "descriptionEn": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown"
-    },
-    {
-      "name": "tldraw",
-      "url": "https://github.com/tldraw/tldraw",
-      "stars": "47K",
-      "description": "tldraw — მოდერნული infinite canvas SDK და whiteboard აპლიკაცია, TypeScript-ში, real-time collaboration-ით. **Excalidraw-ის ყველაზე სერიოზული მეტოქე**: Excalidraw hand-drawn aesthetic-ით ცნობილია, tldraw უფრო ნათელი, კონტრასტული, professional ვიზუალით. ჩაშენებადი React კომპონენტი — საკუთარ აპლიკაციაში ერთი `<Tldraw />` import-ით ჩასვამ, ნულიდან whiteboard აპლიკაცია არ გჭირდება. **AI-ფიჩერი** [tldraw/make-real](https://github.com/tldraw/make-real)-ის სახით ცალკე ცოცხლობს: სკეტჩი → მუშა HTML/React component-ი ერთი ღილაკით (OpenAI/Claude backend-ით). Lightspeed Venture Partners-ის მიერ დაფინანსებული, 46,900+ ვარსკვლავი. ვინც app-შიგნით whiteboard ფუნქცია სჭირდება (Figma-ის, Miro-ს ალტერნატივა) ან Excalidraw-ის უფრო strict ვიზუალურ ალტერნატივას ეძებს — tldraw პირველი არჩევანია.",
-      "starsNumeric": 47000,
-      "categorySlug": "resources",
-      "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
-      "descriptionEn": "very good whiteboard infinite canvas SDK"
-    },
-    {
       "name": "LLMs from Scratch",
       "url": "https://github.com/rasbt/LLMs-from-scratch",
       "stars": "91K",
@@ -2310,28 +2342,6 @@
       "categoryEmoji": "📚",
       "categoryGeorgian": "რესურსები და სასწავლო მასალები",
       "descriptionEn": "AI agents running research on single-GPU nanochat training automatically"
-    },
-    {
-      "name": "DESIGN.md",
-      "url": "https://github.com/google-labs-code/design.md",
-      "stars": "6.3K",
-      "description": "DESIGN.md — Google Labs-ის ოფიციალური ფორმატის სპეციფიკაცია, რომლითაც ბრენდის ვიზუალური იდენტობა (ფერები, ტიპოგრაფია, სპეისინგი, კომპონენტების ქცევა, ინტერაქციების შაბლონები) სტრუქტურირებულად აღუწერ AI coding agent-ებს. DESIGN.md ფაილი პროექტის root-ში ჩასვი და Claude Code-ს, Cursor-ს ან Codex-ს უკვე მუდმივი, თანმიმდევრული გაგება აქვს შენი design system-ის — UI ყოველ ახალ ფიჩერზე ერთ სტილში გენერირდება, stylistic drift-ისა და ჰალუცინაციების გარეშე. TypeScript-ში, Apache 2.0 ლიცენზიით. 2026 წლის 10 აპრილს გამოიცა და 14 დღეში 6,300+ ვარსკვლავი დააგროვა (დღეში ~450 ⭐) — ვირუსული ზრდა Anthropic-ის Agent Skills Spec-ის ანალოგი, მაგრამ design systems-ის დომენში. კომპანიონი `awesome-design-md` (რომელიც ასევე გვაქვს) ამ სპეციფიკაციით შექმნილ 55+ მაგალითს გვაწვდის — ეს მათი ფუნდამენტი სტანდარტია.",
-      "starsNumeric": 6300,
-      "categorySlug": "resources",
-      "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
-      "descriptionEn": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system."
-    },
-    {
-      "name": "Awesome DESIGN.md",
-      "url": "https://github.com/VoltAgent/awesome-design-md",
-      "stars": "64K",
-      "description": "Awesome DESIGN.md — 55-ზე მეტი Markdown ფაილის კოლექცია, პოპულარური brand design systems-ის (Stripe, Google, Apple, Linear) სტილის მიხედვით შექმნილი. DESIGN.md ფაილი პროექტში ჩასვი და Claude Code-ს, Cursor-ს ან სხვა coding agent-ს უთხარი — UI ავტომატურად შენი brand-ის სტილში გენერირდება. VoltAgent-ის მიერ, 2026 წლის მარტიდან. ვიზუალური კოდ-გენერაციის სამუშაო პროცესებში — ყველაზე სწრაფი გზა brand-consistent UI-სკენ კოდის ხელით წერის გარეშე.",
-      "starsNumeric": 64000,
-      "categorySlug": "resources",
-      "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
-      "descriptionEn": "A collection of DESIGN.md files inspired by popular brand design systems. Drop one into your project and let coding agents generate a matching UI."
     },
     {
       "name": "Anthropic Cookbook",
@@ -2356,6 +2366,50 @@
       "descriptionEn": "A curated list of awesome skills, hooks, slash-commands, agent orchestrators, applications, and plugins for Claude Code by Anthropic"
     },
     {
+      "name": "Claude How-To",
+      "url": "https://github.com/luongnv89/claude-howto",
+      "stars": "28K",
+      "description": "Claude How-To — ვიზუალური, მაგალითებზე დაფუძნებული სახელმძღვანელო Claude Code-ისთვის: ძირითადი კონცეფტებიდან advanced agent-ების მშენებლობამდე, copy-paste შაბლონებით. Python-ში, 2025 წელს შექმნილი. Anthropic Cookbook-ისგან განსხვავებით, ნაკლებ ოფიციალური და უფრო community-style — მაგრამ მეტი ready-to-use template-ებით. Claude Code-ის ახალი მომხმარებლებისთვის, ვისაც სწრაფი, პრაქტიკული სახელმძღვანელო სჭირდება.",
+      "starsNumeric": 28000,
+      "categorySlug": "resources",
+      "categoryEmoji": "📚",
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value."
+    },
+    {
+      "name": "12-Factor Agents",
+      "url": "https://github.com/humanlayer/12-factor-agents",
+      "stars": "23K",
+      "description": "12-Factor Agents humanlayer-ის 12 საინჟინრო პრინციპია production-grade LLM სოფტვერის ასაშენებლად — „12 Factor Apps\" მეთოდოლოგიის AI ანალოგი. ამტკიცებს, რომ საუკეთესო გზა framework-ზე სრული დამოკიდებულება კი არა, არამედ მცირე, მოდულური აგენტური კონცეფციების არსებულ პროდუქტში ჩაშენებაა — prompt ownership, context window management, tool design, state unification, human coordination. Apache-2.0 (კოდი) + CC BY-SA 4.0 (კონტენტი), 22,800+ ვარსკვლავი, GitHub Trending #9 — **awesome-claude-code**-ისა და **Anthropic Cookbook**-ის გვერდით ფუძემდებლური სასწავლო რესურსი.",
+      "starsNumeric": 23000,
+      "categorySlug": "resources",
+      "categoryEmoji": "📚",
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "What are the principles we can use to build LLM-powered software that is actually good enough to put in the hands of production customers?"
+    },
+    {
+      "name": "Free LLM API Resources",
+      "url": "https://github.com/cheahjs/free-llm-api-resources",
+      "stars": "19K",
+      "description": "Free LLM API Resources — 26-ზე მეტი უფასო LLM inference სერვისის კურირებული სია API-ზე წვდომით: OpenRouter, Google AI Studio, NVIDIA NIM, Mistral, Groq, Cerebras, Together AI და სხვა. ყოველი სერვისისთვის — ხელმისაწვდომი მოდელები, rate limits, registration requirements. Python-ში, cheahjs-ის მიერ, community-ის განახლებებით. prototype-ებისა და სასწავლო პროექტებისთვის, სადაც გადასახადი არ გსურს — ყველაზე სრული სია.",
+      "starsNumeric": 19000,
+      "categorySlug": "resources",
+      "categoryEmoji": "📚",
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "A list of free LLM inference resources accessible via API."
+    },
+    {
+      "name": "Agent Skills Spec",
+      "url": "https://github.com/agentskills/agentskills",
+      "stars": "16K",
+      "description": "Agent Skills Spec AI agent-ებისთვის skills-ის მიცემის ღია სტანდარტისა და სპეციფიკაციის კოლექციაა — write-once, use-everywhere პრინციპით. სრული სპეციფიკაციის დოკუმენტი, reference SDK და მაგალითი skill-ები. Python-ში, agentskills.io — დამოუკიდებელი, community-driven პროექტი. Claude Code, Codex და სხვა platform-ები ამ სტანდარტს მიჰყვებიან, თუმცა ეს Anthropic-ის ოფიციალური სტანდარტი არ არის.",
+      "starsNumeric": 16000,
+      "categorySlug": "resources",
+      "categoryEmoji": "📚",
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "Specification and documentation for Agent Skills"
+    },
+    {
       "name": "Claude × HyperFrames Guide",
       "url": "https://github.com/heygen-com/hyperframes/blob/main/docs/guides/claude-design-hyperframes.md",
       "stars": "Guide",
@@ -2376,39 +2430,6 @@
       "categoryEmoji": "📚",
       "categoryGeorgian": "რესურსები და სასწავლო მასალები",
       "descriptionEn": "A conceptual gist from Andrej Karpathy (former AI lead at OpenAI and Tesla): an AI automatically builds and maintains a personal Markdown wiki as new information arrives. An alternative to RAG — instead of a vector DB, the LLM rewrites, updates and cross-links the wiki pages itself. Not code but a vision piece that sparked wide discussion of LLM-maintained knowledge bases."
-    },
-    {
-      "name": "Claude How-To",
-      "url": "https://github.com/luongnv89/claude-howto",
-      "stars": "28K",
-      "description": "Claude How-To — ვიზუალური, მაგალითებზე დაფუძნებული სახელმძღვანელო Claude Code-ისთვის: ძირითადი კონცეფტებიდან advanced agent-ების მშენებლობამდე, copy-paste შაბლონებით. Python-ში, 2025 წელს შექმნილი. Anthropic Cookbook-ისგან განსხვავებით, ნაკლებ ოფიციალური და უფრო community-style — მაგრამ მეტი ready-to-use template-ებით. Claude Code-ის ახალი მომხმარებლებისთვის, ვისაც სწრაფი, პრაქტიკული სახელმძღვანელო სჭირდება.",
-      "starsNumeric": 28000,
-      "categorySlug": "resources",
-      "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
-      "descriptionEn": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value."
-    },
-    {
-      "name": "Free LLM API Resources",
-      "url": "https://github.com/cheahjs/free-llm-api-resources",
-      "stars": "19K",
-      "description": "Free LLM API Resources — 26-ზე მეტი უფასო LLM inference სერვისის კურირებული სია API-ზე წვდომით: OpenRouter, Google AI Studio, NVIDIA NIM, Mistral, Groq, Cerebras, Together AI და სხვა. ყოველი სერვისისთვის — ხელმისაწვდომი მოდელები, rate limits, registration requirements. Python-ში, cheahjs-ის მიერ, community-ის განახლებებით. prototype-ებისა და სასწავლო პროექტებისთვის, სადაც გადასახადი არ გსურს — ყველაზე სრული სია.",
-      "starsNumeric": 19000,
-      "categorySlug": "resources",
-      "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
-      "descriptionEn": "A list of free LLM inference resources accessible via API."
-    },
-    {
-      "name": "12-Factor Agents",
-      "url": "https://github.com/humanlayer/12-factor-agents",
-      "stars": "23K",
-      "description": "12-Factor Agents humanlayer-ის 12 საინჟინრო პრინციპია production-grade LLM სოფტვერის ასაშენებლად — „12 Factor Apps\" მეთოდოლოგიის AI ანალოგი. ამტკიცებს, რომ საუკეთესო გზა framework-ზე სრული დამოკიდებულება კი არა, არამედ მცირე, მოდულური აგენტური კონცეფციების არსებულ პროდუქტში ჩაშენებაა — prompt ownership, context window management, tool design, state unification, human coordination. Apache-2.0 (კოდი) + CC BY-SA 4.0 (კონტენტი), 22,800+ ვარსკვლავი, GitHub Trending #9 — **awesome-claude-code**-ისა და **Anthropic Cookbook**-ის გვერდით ფუძემდებლური სასწავლო რესურსი.",
-      "starsNumeric": 23000,
-      "categorySlug": "resources",
-      "categoryEmoji": "📚",
-      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
-      "descriptionEn": "What are the principles we can use to build LLM-powered software that is actually good enough to put in the hands of production customers?"
     }
   ]
 }

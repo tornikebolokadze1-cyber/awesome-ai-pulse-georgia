@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-13T18:16:08.140Z",
-  "totalRepos": 241,
+  "generated": "2026-06-13T14:54:46.674Z",
+  "totalRepos": 244,
   "categories": [
     {
       "slug": "coding",
@@ -28,21 +28,21 @@
       "emoji": "🔌",
       "english": "MCP Integrations",
       "georgian": "MCP ინტეგრაციები",
-      "count": 21
+      "count": 22
     },
     {
       "slug": "scraping",
       "emoji": "🕷️",
       "english": "Web Scraping & Browser",
       "georgian": "ვებ სკრეიპინგი და ბრაუზერი",
-      "count": 17
+      "count": 16
     },
     {
       "slug": "frameworks",
       "emoji": "🧬",
       "english": "AI Agent Frameworks & Orchestration",
       "georgian": "AI აგენტების ფრეიმვორკები",
-      "count": 23
+      "count": 24
     },
     {
       "slug": "workflow",
@@ -56,28 +56,42 @@
       "emoji": "💼",
       "english": "AI Assistants & Business Agents",
       "georgian": "AI ასისტენტები და ბიზნეს-აგენტები",
-      "count": 32
+      "count": 27
+    },
+    {
+      "slug": "finance",
+      "emoji": "💰",
+      "english": "Finance AI",
+      "georgian": "ფინანსური AI",
+      "count": 5
     },
     {
       "slug": "memory",
       "emoji": "🧠",
-      "english": "Memory, RAG & Code Context",
-      "georgian": "მეხსიერება, RAG და კოდის კონტექსტი",
-      "count": 25
+      "english": "Memory, RAG & Vector DBs",
+      "georgian": "მეხსიერება, RAG და Vector DB",
+      "count": 19
+    },
+    {
+      "slug": "codeintel",
+      "emoji": "🔍",
+      "english": "Code Intelligence & Context",
+      "georgian": "კოდის ინტელექტი და კონტექსტი",
+      "count": 6
     },
     {
       "slug": "infra",
       "emoji": "⚙️",
       "english": "Model Inference & LLM Tooling",
       "georgian": "ინფერენსი და LLM ხელსაწყოები",
-      "count": 21
+      "count": 20
     },
     {
       "slug": "media",
       "emoji": "🎬",
       "english": "Media Generation",
       "georgian": "მედია-გენერაცია",
-      "count": 16
+      "count": 19
     },
     {
       "slug": "resources",
@@ -892,6 +906,17 @@
       "descriptionEn": "Official Notion MCP Server"
     },
     {
+      "name": "Cloudflare MCP",
+      "url": "https://github.com/cloudflare/mcp-server-cloudflare",
+      "stars": "3.7K",
+      "description": "mcp-server-cloudflare არის Cloudflare-ის ოფიციალური MCP სერვერების კოლექცია, რომელიც AI ასისტენტებს Cloudflare-ის პლატფორმის სრული მართვის საშუალებას აძლევს. Workers, KV, R2, D1, Browser Rendering, DNS ანალიტიკა და სხვა სერვისები — 13+ MCP სერვერი ერთ რეპოზიტორიაში. TypeScript-ში დაწერილი. Cloudflare-ის ინფრასტრუქტურის მართვა Claude-ს ან Cursor-ს შეუძლია პირდაპირ კონვერსაციიდან, CLI-ის გარეშე.",
+      "starsNumeric": 3700,
+      "categorySlug": "mcp",
+      "categoryEmoji": "🔌",
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "Cloudflare official collection of MCP servers giving AI assistants full control of the Cloudflare platform — Workers, KV, R2, D1, Browser Rendering, DNS analytics and more across 13+ servers in one repo. TypeScript. Manage your Cloudflare infrastructure straight from a conversation with Claude or Cursor, no CLI needed."
+    },
+    {
       "name": "Supabase MCP",
       "url": "https://github.com/supabase-community/supabase-mcp",
       "stars": "2.6K",
@@ -1178,17 +1203,6 @@
       "descriptionEn": "Browser Harness | Self-healing harness that enables LLMs to complete any task."
     },
     {
-      "name": "Cloudflare MCP",
-      "url": "https://github.com/cloudflare/mcp-server-cloudflare",
-      "stars": "3.7K",
-      "description": "mcp-server-cloudflare არის Cloudflare-ის ოფიციალური MCP სერვერების კოლექცია, რომელიც AI ასისტენტებს Cloudflare-ის პლატფორმის სრული მართვის საშუალებას აძლევს. Workers, KV, R2, D1, Browser Rendering, DNS ანალიტიკა და სხვა სერვისები — 13+ MCP სერვერი ერთ რეპოზიტორიაში. TypeScript-ში დაწერილი. Cloudflare-ის ინფრასტრუქტურის მართვა Claude-ს ან Cursor-ს შეუძლია პირდაპირ კონვერსაციიდან, CLI-ის გარეშე.",
-      "starsNumeric": 3700,
-      "categorySlug": "scraping",
-      "categoryEmoji": "🕷️",
-      "categoryGeorgian": "ვებ სკრეიპინგი და ბრაუზერი",
-      "descriptionEn": "Cloudflare official collection of MCP servers giving AI assistants full control of the Cloudflare platform — Workers, KV, R2, D1, Browser Rendering, DNS analytics and more across 13+ servers in one repo. TypeScript. Manage your Cloudflare infrastructure straight from a conversation with Claude or Cursor, no CLI needed."
-    },
-    {
       "name": "Bright Data MCP",
       "url": "https://github.com/brightdata/brightdata-mcp",
       "stars": "2.3K",
@@ -1420,6 +1434,17 @@
       "descriptionEn": "AI Agent Framework, the Pydantic way"
     },
     {
+      "name": "Pipecat",
+      "url": "https://github.com/pipecat-ai/pipecat",
+      "stars": "13K",
+      "description": "Pipecat — production-დონის ხმის (voice) AI ფრეიმვორკი: sub-250ms latency, WebRTC, multimodal (ხმა+ხედვა+ტექსტი), real-time streaming და 70+ ენა. ხმის აგენტების (სატელეფონო, ასისტენტები) ასაშენებლად — Vapi/Retell-ის ღია ალტერნატივა.",
+      "starsNumeric": 13000,
+      "categorySlug": "frameworks",
+      "categoryEmoji": "🧬",
+      "categoryGeorgian": "AI აგენტების ფრეიმვორკები",
+      "descriptionEn": "Production-grade voice AI agent framework — sub-250ms latency, WebRTC, multimodal, real-time streaming, 70+ languages."
+    },
+    {
       "name": "Microsoft Agent Framework",
       "url": "https://github.com/microsoft/agent-framework",
       "stars": "11K",
@@ -1552,17 +1577,6 @@
       "descriptionEn": "The agent that grows with you"
     },
     {
-      "name": "TradingAgents",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "stars": "81K",
-      "description": "TradingAgents multi-agent სავაჭრო framework-ია, რომელიც რეალური სავაჭრო ფირმის სტრუქტურას ბაძავს — fundamental ანალიტიკოსი, sentiment ექსპერტი, technical ანალიტიკოსი, trader და risk manager აგენტები ერთად განიხილავენ ბაზრის მდგომარეობას და იღებენ გადაწყვეტილებებს. მრავალ LLM provider-ს (OpenAI, Google, Anthropic, DeepSeek) უჭერს მხარს, აქვს interactive CLI, backtesting, paper trading, Docker და checkpoint recovery. Python, Apache-2.0, v0.2.5 (2026 წლის 11 მაისი), 80,000+ ვარსკვლავი — TauricResearch-ის arXiv ნაშრომზე დაფუძნებული (კვლევითი ხელსაწყო, არა საინვესტიციო რჩევა). **ai-hedge-fund**-ისა და **FinceptTerminal**-ის მონათესავე, ოღონდ ფინანსური AI აგენტების ღია სამყაროს ყველაზე დიდი პროექტი.",
-      "starsNumeric": 81000,
-      "categorySlug": "business",
-      "categoryEmoji": "💼",
-      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
-      "descriptionEn": "TradingAgents: Multi-Agents LLM Financial Trading Framework"
-    },
-    {
       "name": "gpt4all",
       "url": "https://github.com/nomic-ai/gpt4all",
       "stars": "77K",
@@ -1616,17 +1630,6 @@
       "categoryEmoji": "💼",
       "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Open-source orchestration for zero-human companies"
-    },
-    {
-      "name": "AI Hedge Fund",
-      "url": "https://github.com/virattt/ai-hedge-fund",
-      "stars": "57K",
-      "description": "AI Hedge Fund არის Python-ის სიმულაციური პროექტი, სადაც AI აგენტები Warren Buffett-ის, Charlie Munger-ისა და Michael Burry-ს ინვესტიციური სტილების მიბაძვით ერთობლივად აანალიზებენ საფონდო ბირჟის მონაცემებს. LangGraph-ის multi-agent ორქესტრაციაზეა დაშენებული — სხვადასხვა „ანალიტიკოსი\" (fundamental, technical, sentiment, risk) პარალელურად ამუშავებს მონაცემებს და შედეგებს აერთებს. ეს არ არის რეალური სავაჭრო სისტემა — გამოყენება მხოლოდ საგანმანათლებლო მიზნებისთვისაა. LangGraph-ის production-ready გამოყენების ერთ-ერთი საუკეთესო real-world მაგალითია.",
-      "starsNumeric": 57000,
-      "categorySlug": "business",
-      "categoryEmoji": "💼",
-      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
-      "descriptionEn": "An AI Hedge Fund Team"
     },
     {
       "name": "MiroFish",
@@ -1772,28 +1775,6 @@
       "descriptionEn": "Run OpenClaw more securely inside NVIDIA OpenShell with managed inference"
     },
     {
-      "name": "Kronos",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "stars": "20K",
-      "description": "Kronos არის Python-ის pre-trained foundation model, რომელიც სპეციალურად ფინანსური ბაზრების „ენაზე\" — K-line (კანდლსტიქ) სერიებზე, ფინანსურ ინდიკატორებზე — ნატრენინგია, ჩვეულებრივ ტექსტური corpus-ის ნაცვლად. AAAI 2026-ის კონფერენციაზე მიღებული აკადემიური ნაშრომი მას მხარს უჭერს. ეს არ არის agent framework — ეს დომენ-სპეციფიკური LLM-ის კვლევის ნიმუშია. ფინანსური ML-ის მკვლევარებისთვის და ტრეიდინგ სისტემების ბექ-ენდის ასაშენებლად.",
-      "starsNumeric": 20000,
-      "categorySlug": "business",
-      "categoryEmoji": "💼",
-      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
-      "descriptionEn": "Kronos: A Foundation Model for the Language of Financial Markets"
-    },
-    {
-      "name": "Claude for Financial Services",
-      "url": "https://github.com/anthropics/financial-services",
-      "stars": "18.6K",
-      "description": "Claude for Financial Services — **Anthropic-ის ოფიციალური** reference repo ფინანსური სერვისების workflow-ებისთვის: investment banking, equity research, private equity, wealth management. შიგნით ready-made Claude agent-ები, skill-ები, slash commands და MCP data connector-ები — ყველაფერი self-contained Claude plugin-ების სახით, რომლებიც **Claude Cowork**-ით ან **Claude Managed Agents API**-ით deploy-დება. პრაქტიკული გამოყენების სცენარები: pitch deck-ების მომზადება, valuation model-ები, earnings review-ები, compliance task-ები — ყველა output ადამიანის გადახედვისთვის staged (human-in-the-loop by design). Python-ში, Apache 2.0 ლიცენზია, 2026 წლის თებერვალში გამოვიდა და უკვე 18,600+ ვარსკვლავი დააგროვა. ფინანსური ინდუსტრიის IT ადმინისტრატორებისა და ანალიტიკოსებისთვის — ერთ-ერთი პირველი ოფიციალური Anthropic vertical-specific repo. **Fincept Terminal**-თან (ასევე ამ კოლექციაში — ღია კოდის Bloomberg ალტერნატივა) ერთად — სრული ფინანსური AI workflow stack-ი.",
-      "starsNumeric": 18600,
-      "categorySlug": "business",
-      "categoryEmoji": "💼",
-      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
-      "descriptionEn": "Anthropic official reference repo for financial-services workflows — investment banking, equity research, private equity and wealth management. Ships ready-made Claude agents, skills, slash commands and MCP data connectors as self-contained plugins deployable via Claude Cowork or the Managed Agents API, with all output staged for human review (human-in-the-loop by design). Python, Apache 2.0."
-    },
-    {
       "name": "PM Skills",
       "url": "https://github.com/phuryn/pm-skills",
       "stars": "18K",
@@ -1814,17 +1795,6 @@
       "categoryEmoji": "💼",
       "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities."
-    },
-    {
-      "name": "Fincept Terminal",
-      "url": "https://github.com/Fincept-Corporation/FinceptTerminal",
-      "stars": "13K",
-      "description": "Fincept Terminal არის Python-ში დაწერილი ღია კოდის ფინანსური ტერმინალი, Bloomberg-ის ალტერნატივა. 100+ მონაცემთა კონექტორი (Yahoo Finance, FRED, IMF, World Bank, Polygon) და 20+ AI ინვესტორ-პერსონა მრავალ LLM პროვაიდერთან (OpenAI, Anthropic, Gemini, Groq, Ollama) ერთიანდება. DCF მოდელები, პორტფელის ოპტიმიზაცია, VaR/Sharpe მეტრიკა, კრიპტო WebSocket, ალგო-ტრეიდინგი ჩაშენებულია. Python-ში (README-ში ცდომილებით C++20/Qt6 იყო მითითებული). ინდივიდუალური ინვესტორებისა და მცირე ინვესტიციური გუნდებისთვის, ვისაც ინსტიტუციური ინსტრუმენტები სჭირდება ინსტიტუციური ფასის გარეშე.",
-      "starsNumeric": 13000,
-      "categorySlug": "business",
-      "categoryEmoji": "💼",
-      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
-      "descriptionEn": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment."
     },
     {
       "name": "Rowboat",
@@ -1871,6 +1841,61 @@
       "descriptionEn": "A self-hosted email client with an AI agent, running entirely on Cloudflare Workers"
     },
     {
+      "name": "TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "stars": "81K",
+      "description": "TradingAgents multi-agent სავაჭრო framework-ია, რომელიც რეალური სავაჭრო ფირმის სტრუქტურას ბაძავს — fundamental ანალიტიკოსი, sentiment ექსპერტი, technical ანალიტიკოსი, trader და risk manager აგენტები ერთად განიხილავენ ბაზრის მდგომარეობას და იღებენ გადაწყვეტილებებს. მრავალ LLM provider-ს (OpenAI, Google, Anthropic, DeepSeek) უჭერს მხარს, აქვს interactive CLI, backtesting, paper trading, Docker და checkpoint recovery. Python, Apache-2.0, v0.2.5 (2026 წლის 11 მაისი), 80,000+ ვარსკვლავი — TauricResearch-ის arXiv ნაშრომზე დაფუძნებული (კვლევითი ხელსაწყო, არა საინვესტიციო რჩევა). **ai-hedge-fund**-ისა და **FinceptTerminal**-ის მონათესავე, ოღონდ ფინანსური AI აგენტების ღია სამყაროს ყველაზე დიდი პროექტი.",
+      "starsNumeric": 81000,
+      "categorySlug": "finance",
+      "categoryEmoji": "💰",
+      "categoryGeorgian": "ფინანსური AI",
+      "descriptionEn": "TradingAgents: Multi-Agents LLM Financial Trading Framework"
+    },
+    {
+      "name": "AI Hedge Fund",
+      "url": "https://github.com/virattt/ai-hedge-fund",
+      "stars": "57K",
+      "description": "AI Hedge Fund არის Python-ის სიმულაციური პროექტი, სადაც AI აგენტები Warren Buffett-ის, Charlie Munger-ისა და Michael Burry-ს ინვესტიციური სტილების მიბაძვით ერთობლივად აანალიზებენ საფონდო ბირჟის მონაცემებს. LangGraph-ის multi-agent ორქესტრაციაზეა დაშენებული — სხვადასხვა „ანალიტიკოსი\" (fundamental, technical, sentiment, risk) პარალელურად ამუშავებს მონაცემებს და შედეგებს აერთებს. ეს არ არის რეალური სავაჭრო სისტემა — გამოყენება მხოლოდ საგანმანათლებლო მიზნებისთვისაა. LangGraph-ის production-ready გამოყენების ერთ-ერთი საუკეთესო real-world მაგალითია.",
+      "starsNumeric": 57000,
+      "categorySlug": "finance",
+      "categoryEmoji": "💰",
+      "categoryGeorgian": "ფინანსური AI",
+      "descriptionEn": "An AI Hedge Fund Team"
+    },
+    {
+      "name": "Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "stars": "20K",
+      "description": "Kronos არის Python-ის pre-trained foundation model, რომელიც სპეციალურად ფინანსური ბაზრების „ენაზე\" — K-line (კანდლსტიქ) სერიებზე, ფინანსურ ინდიკატორებზე — ნატრენინგია, ჩვეულებრივ ტექსტური corpus-ის ნაცვლად. AAAI 2026-ის კონფერენციაზე მიღებული აკადემიური ნაშრომი მას მხარს უჭერს. ეს არ არის agent framework — ეს დომენ-სპეციფიკური LLM-ის კვლევის ნიმუშია. ფინანსური ML-ის მკვლევარებისთვის და ტრეიდინგ სისტემების ბექ-ენდის ასაშენებლად.",
+      "starsNumeric": 20000,
+      "categorySlug": "finance",
+      "categoryEmoji": "💰",
+      "categoryGeorgian": "ფინანსური AI",
+      "descriptionEn": "Kronos: A Foundation Model for the Language of Financial Markets"
+    },
+    {
+      "name": "Claude for Financial Services",
+      "url": "https://github.com/anthropics/financial-services",
+      "stars": "18.6K",
+      "description": "Claude for Financial Services — **Anthropic-ის ოფიციალური** reference repo ფინანსური სერვისების workflow-ებისთვის: investment banking, equity research, private equity, wealth management. შიგნით ready-made Claude agent-ები, skill-ები, slash commands და MCP data connector-ები — ყველაფერი self-contained Claude plugin-ების სახით, რომლებიც **Claude Cowork**-ით ან **Claude Managed Agents API**-ით deploy-დება. პრაქტიკული გამოყენების სცენარები: pitch deck-ების მომზადება, valuation model-ები, earnings review-ები, compliance task-ები — ყველა output ადამიანის გადახედვისთვის staged (human-in-the-loop by design). Python-ში, Apache 2.0 ლიცენზია, 2026 წლის თებერვალში გამოვიდა და უკვე 18,600+ ვარსკვლავი დააგროვა. ფინანსური ინდუსტრიის IT ადმინისტრატორებისა და ანალიტიკოსებისთვის — ერთ-ერთი პირველი ოფიციალური Anthropic vertical-specific repo. **Fincept Terminal**-თან (ასევე ამ კოლექციაში — ღია კოდის Bloomberg ალტერნატივა) ერთად — სრული ფინანსური AI workflow stack-ი.",
+      "starsNumeric": 18600,
+      "categorySlug": "finance",
+      "categoryEmoji": "💰",
+      "categoryGeorgian": "ფინანსური AI",
+      "descriptionEn": "Anthropic official reference repo for financial-services workflows — investment banking, equity research, private equity and wealth management. Ships ready-made Claude agents, skills, slash commands and MCP data connectors as self-contained plugins deployable via Claude Cowork or the Managed Agents API, with all output staged for human review (human-in-the-loop by design). Python, Apache 2.0."
+    },
+    {
+      "name": "Fincept Terminal",
+      "url": "https://github.com/Fincept-Corporation/FinceptTerminal",
+      "stars": "13K",
+      "description": "Fincept Terminal არის Python-ში დაწერილი ღია კოდის ფინანსური ტერმინალი, Bloomberg-ის ალტერნატივა. 100+ მონაცემთა კონექტორი (Yahoo Finance, FRED, IMF, World Bank, Polygon) და 20+ AI ინვესტორ-პერსონა მრავალ LLM პროვაიდერთან (OpenAI, Anthropic, Gemini, Groq, Ollama) ერთიანდება. DCF მოდელები, პორტფელის ოპტიმიზაცია, VaR/Sharpe მეტრიკა, კრიპტო WebSocket, ალგო-ტრეიდინგი ჩაშენებულია. Python-ში (README-ში ცდომილებით C++20/Qt6 იყო მითითებული). ინდივიდუალური ინვესტორებისა და მცირე ინვესტიციური გუნდებისთვის, ვისაც ინსტიტუციური ინსტრუმენტები სჭირდება ინსტიტუციური ფასის გარეშე.",
+      "starsNumeric": 13000,
+      "categorySlug": "finance",
+      "categoryEmoji": "💰",
+      "categoryGeorgian": "ფინანსური AI",
+      "descriptionEn": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment."
+    },
+    {
       "name": "RAGFlow",
       "url": "https://github.com/infiniflow/ragflow",
       "stars": "78K",
@@ -1878,19 +1903,8 @@
       "starsNumeric": 78000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs"
-    },
-    {
-      "name": "Understand Anything",
-      "url": "https://github.com/Egonex-AI/Understand-Anything",
-      "stars": "58K",
-      "description": "Understand Anything — ნებისმიერ კოდს ინტერაქტიულ knowledge graph-ად აქცევს, რომელშიც ნავიგაცია, ძიება და ბუნებრივ ენაზე კითხვების დასმა შეგიძლია. კოდბაზის სწრაფი გასაგებად. TypeScript, 2026-ის ერთ-ერთი ყველაზე სწრაფად მზარდი code-intelligence რეპო.",
-      "starsNumeric": 58000,
-      "categorySlug": "memory",
-      "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
-      "descriptionEn": "Turn any codebase into an interactive knowledge graph you can explore, search and ask questions about."
     },
     {
       "name": "mem0",
@@ -1900,7 +1914,7 @@
       "starsNumeric": 53000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "Universal memory layer for AI Agents"
     },
     {
@@ -1911,7 +1925,7 @@
       "starsNumeric": 49000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "The best-benchmarked open-source AI memory system. And it's free."
     },
     {
@@ -1922,7 +1936,7 @@
       "starsNumeric": 48000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "LlamaIndex is the leading document agent and OCR platform"
     },
     {
@@ -1933,7 +1947,7 @@
       "starsNumeric": 43000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search"
     },
     {
@@ -1944,7 +1958,7 @@
       "starsNumeric": 40000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "Library for efficient similarity search and clustering of dense vectors — the foundation under many vector DBs and RAG systems."
     },
     {
@@ -1955,30 +1969,8 @@
       "starsNumeric": 34000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "[EMNLP2025] \"LightRAG: Simple and Fast Retrieval-Augmented Generation\""
-    },
-    {
-      "name": "Graphify",
-      "url": "https://github.com/safishamsi/graphify",
-      "stars": "33K",
-      "description": "Graphify კოდის, დოკუმენტაციის, PDF-ების, სურათების და ვიდეოების queryable knowledge graph-ად გარდაქმნის AI coding agent-ებისთვის. Claude Code-ს, Codex-ს, opencode-ს, Cursor-ს, Gemini CLI-ს და სხვებს უჭერს მხარს. Python-ში, graphifylabs.ai. Graph-ზე დაფუძნებული კითხვების მეთოდი AI-ის ტოკენებს 71-ჯერ ამცირებს ფაილების პირდაპირ კითხვასთან შედარებით. 33,000+ ვარსკვლავი — 2026 წლის აპრილში სწრაფად გაიზარდა.",
-      "starsNumeric": 33000,
-      "categorySlug": "memory",
-      "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
-      "descriptionEn": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, GitHub Copilot CLI, OpenClaw, Factory Droid, Trae, Google Antigravity). Turn any folder of code, docs, papers, images, or videos into a queryable knowledge graph"
-    },
-    {
-      "name": "CodeGraph",
-      "url": "https://github.com/colbymchenry/codegraph",
-      "stars": "33K",
-      "description": "CodeGraph კოდბაზის წინასწარ-ინდექსირებულ semantic knowledge graph-ს აშენებს AI coding agent-ებისთვის — ფუნქციები, კლასები, import-ები და call-ურთიერთობები ლოკალურ SQLite ბაზაში, 20+ ენისთვის. იმის ნაცვლად, რომ Claude Code-მა ან Cursor-მა ყოველ მოთხოვნაზე ფაილები თავიდან წაიკითხოს, პირდაპირ ამ ინდექსს ეკითხება — შედეგად ~22% იაფი და ~50%-ით ნაკლები tool call. TypeScript, MIT, v0.9.7 (2026 წლის 28 მაისი), სრულად ლოკალური, გარე API-ს გარეშე. 2026 წლის 21 მაისის GitHub Trending #1, 33,000+ ვარსკვლავი — **Graphify**-ისა და **GitNexus**-ის ბუნებრივი მონათესავე code-intelligence მიმართულებაში.",
-      "starsNumeric": 33000,
-      "categorySlug": "memory",
-      "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
-      "descriptionEn": "Pre-indexed code knowledge graph for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local"
     },
     {
       "name": "Qdrant",
@@ -1988,7 +1980,7 @@
       "starsNumeric": 30000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/"
     },
     {
@@ -1999,19 +1991,8 @@
       "starsNumeric": 29000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "An Open Source implementation of Notebook LM with more flexibility and features"
-    },
-    {
-      "name": "GitNexus",
-      "url": "https://github.com/abhigyanpatwari/GitNexus",
-      "stars": "28K",
-      "description": "GitNexus — ბრაუზერში სრულად მომუშავე კოდის ინტელიჯენსის ხელსაწყო, სერვერის გარეშე. GitHub-ის repo ან ZIP ჩააგდე და ნახავ ყველა ფაილს, ფუნქციასა და მათ ურთიერთდამოკიდებლობას ინტერაქტიული knowledge graph-ის სახით. ჩაშენებული Graph RAG Agent ამ graph-ს იყენებს, რომ კოდზე ბუნებრივ ენაზე დასმულ კითხვებს უპასუხოს. TypeScript-ში დაწერილი, სრულად client-side, backend deploy-ი არ სჭირდება. კოდის კომპლექსური ბაზის სწრაფი გასაგებად გამოსადეგია.",
-      "starsNumeric": 28000,
-      "categorySlug": "memory",
-      "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
-      "descriptionEn": "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration"
     },
     {
       "name": "Chroma",
@@ -2021,7 +2002,7 @@
       "starsNumeric": 27000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "Data infrastructure for AI"
     },
     {
@@ -2032,7 +2013,7 @@
       "starsNumeric": 25000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "Build Real-Time Knowledge Graphs for AI Agents"
     },
     {
@@ -2043,7 +2024,7 @@
       "starsNumeric": 22000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "Letta is the platform for building stateful agents: AI with advanced memory that can learn and self-improve over time."
     },
     {
@@ -2054,7 +2035,7 @@
       "starsNumeric": 20000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "#1 Persistent memory for AI coding agents based on real-world benchmarks"
     },
     {
@@ -2065,30 +2046,8 @@
       "starsNumeric": 18000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "\"RAG-Anything: All-in-One RAG Framework\""
-    },
-    {
-      "name": "Code Review Graph",
-      "url": "https://github.com/tirth8205/code-review-graph",
-      "stars": "12K",
-      "description": "Code Review Graph კოდბაზის persistent knowledge graph-ს ქმნის Claude Code-ისთვის — AI მხოლოდ ცვლილებასთან დაკავშირებულ ფაილებს კითხულობს, მთელ repo-ს კი არა. Code review-ზე 6.8-ჯერ ნაკლები ტოკენი, დღიურ coding task-ებზე 49-ჯერამდე — ეს ხარჯებსა და სიჩქარეს მნიშვნელოვნად ცვლის. Python-ში, 22 MCP tool, 19 პროგრამირების ენა. Claude Code-თან, Cursor-თან, Windsurf-თან და Continue-თან.",
-      "starsNumeric": 12000,
-      "categorySlug": "memory",
-      "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
-      "descriptionEn": "Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8× fewer tokens on reviews and up to 49× on daily coding tasks."
-    },
-    {
-      "name": "Claude Context",
-      "url": "https://github.com/zilliztech/claude-context",
-      "stars": "10.4K",
-      "description": "Claude Context Zilliz-ის MCP plugin-ია, რომელიც Claude Code-სა და სხვა coding agent-ებს მთელ codebase-ზე semantic code search-ს აძლევს. ფაილების სრულად ჩატვირთვის ნაცვლად კოდს embeddings-ად ინახავს vector database-ში (Milvus/Zilliz Cloud) და მოთხოვნისას მხოლოდ რელევანტურ ფრაგმენტებს აბრუნებს კონტექსტში — დიდ monorepo-ებზე token ხარჯს და discovery rounds-ს ამცირებს. TypeScript-ში, MIT ლიცენზია, `@zilliz/claude-context-mcp` npm პაკეტით ინსტალირდება. მუშაობისთვის OpenAI API key და Milvus/Zilliz Cloud endpoint/token სჭირდება. 10,400+ ვარსკვლავი.",
-      "starsNumeric": 10400,
-      "categorySlug": "memory",
-      "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
-      "descriptionEn": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent."
     },
     {
       "name": "gbrain",
@@ -2098,7 +2057,7 @@
       "starsNumeric": 10000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "Garry's Opinionated OpenClaw/Hermes Agent Brain"
     },
     {
@@ -2109,7 +2068,7 @@
       "starsNumeric": 10000,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "Hindsight: Agent Memory That  Learns"
     },
     {
@@ -2120,7 +2079,7 @@
       "starsNumeric": 5500,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "Fully local long-term memory for AI agents via a 4-tier progressive pipeline, with zero external API dependencies."
     },
     {
@@ -2131,7 +2090,7 @@
       "starsNumeric": 2100,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "Web Crawling and RAG Capabilities for AI Agents and AI Coding Assistants"
     },
     {
@@ -2142,8 +2101,74 @@
       "starsNumeric": 129,
       "categorySlug": "memory",
       "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და კოდის კონტექსტი",
+      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
       "descriptionEn": "The Mind Palace for AI Agents - HIPAA-hardened Cognitive Architecture with on-device LLM (prism-coder:7b), Hebbian learning, ACT-R spreading activation, adversarial evaluation, persistent memory, multi-agent Hivemind and visual dashboard. Zero API keys required."
+    },
+    {
+      "name": "Understand Anything",
+      "url": "https://github.com/Egonex-AI/Understand-Anything",
+      "stars": "58K",
+      "description": "Understand Anything — ნებისმიერ კოდს ინტერაქტიულ knowledge graph-ად აქცევს, რომელშიც ნავიგაცია, ძიება და ბუნებრივ ენაზე კითხვების დასმა შეგიძლია. კოდბაზის სწრაფი გასაგებად. TypeScript, 2026-ის ერთ-ერთი ყველაზე სწრაფად მზარდი code-intelligence რეპო.",
+      "starsNumeric": 58000,
+      "categorySlug": "codeintel",
+      "categoryEmoji": "🔍",
+      "categoryGeorgian": "კოდის ინტელექტი და კონტექსტი",
+      "descriptionEn": "Turn any codebase into an interactive knowledge graph you can explore, search and ask questions about."
+    },
+    {
+      "name": "Graphify",
+      "url": "https://github.com/safishamsi/graphify",
+      "stars": "33K",
+      "description": "Graphify კოდის, დოკუმენტაციის, PDF-ების, სურათების და ვიდეოების queryable knowledge graph-ად გარდაქმნის AI coding agent-ებისთვის. Claude Code-ს, Codex-ს, opencode-ს, Cursor-ს, Gemini CLI-ს და სხვებს უჭერს მხარს. Python-ში, graphifylabs.ai. Graph-ზე დაფუძნებული კითხვების მეთოდი AI-ის ტოკენებს 71-ჯერ ამცირებს ფაილების პირდაპირ კითხვასთან შედარებით. 33,000+ ვარსკვლავი — 2026 წლის აპრილში სწრაფად გაიზარდა.",
+      "starsNumeric": 33000,
+      "categorySlug": "codeintel",
+      "categoryEmoji": "🔍",
+      "categoryGeorgian": "კოდის ინტელექტი და კონტექსტი",
+      "descriptionEn": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, GitHub Copilot CLI, OpenClaw, Factory Droid, Trae, Google Antigravity). Turn any folder of code, docs, papers, images, or videos into a queryable knowledge graph"
+    },
+    {
+      "name": "CodeGraph",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "stars": "33K",
+      "description": "CodeGraph კოდბაზის წინასწარ-ინდექსირებულ semantic knowledge graph-ს აშენებს AI coding agent-ებისთვის — ფუნქციები, კლასები, import-ები და call-ურთიერთობები ლოკალურ SQLite ბაზაში, 20+ ენისთვის. იმის ნაცვლად, რომ Claude Code-მა ან Cursor-მა ყოველ მოთხოვნაზე ფაილები თავიდან წაიკითხოს, პირდაპირ ამ ინდექსს ეკითხება — შედეგად ~22% იაფი და ~50%-ით ნაკლები tool call. TypeScript, MIT, v0.9.7 (2026 წლის 28 მაისი), სრულად ლოკალური, გარე API-ს გარეშე. 2026 წლის 21 მაისის GitHub Trending #1, 33,000+ ვარსკვლავი — **Graphify**-ისა და **GitNexus**-ის ბუნებრივი მონათესავე code-intelligence მიმართულებაში.",
+      "starsNumeric": 33000,
+      "categorySlug": "codeintel",
+      "categoryEmoji": "🔍",
+      "categoryGeorgian": "კოდის ინტელექტი და კონტექსტი",
+      "descriptionEn": "Pre-indexed code knowledge graph for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local"
+    },
+    {
+      "name": "GitNexus",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "stars": "28K",
+      "description": "GitNexus — ბრაუზერში სრულად მომუშავე კოდის ინტელიჯენსის ხელსაწყო, სერვერის გარეშე. GitHub-ის repo ან ZIP ჩააგდე და ნახავ ყველა ფაილს, ფუნქციასა და მათ ურთიერთდამოკიდებლობას ინტერაქტიული knowledge graph-ის სახით. ჩაშენებული Graph RAG Agent ამ graph-ს იყენებს, რომ კოდზე ბუნებრივ ენაზე დასმულ კითხვებს უპასუხოს. TypeScript-ში დაწერილი, სრულად client-side, backend deploy-ი არ სჭირდება. კოდის კომპლექსური ბაზის სწრაფი გასაგებად გამოსადეგია.",
+      "starsNumeric": 28000,
+      "categorySlug": "codeintel",
+      "categoryEmoji": "🔍",
+      "categoryGeorgian": "კოდის ინტელექტი და კონტექსტი",
+      "descriptionEn": "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration"
+    },
+    {
+      "name": "Code Review Graph",
+      "url": "https://github.com/tirth8205/code-review-graph",
+      "stars": "12K",
+      "description": "Code Review Graph კოდბაზის persistent knowledge graph-ს ქმნის Claude Code-ისთვის — AI მხოლოდ ცვლილებასთან დაკავშირებულ ფაილებს კითხულობს, მთელ repo-ს კი არა. Code review-ზე 6.8-ჯერ ნაკლები ტოკენი, დღიურ coding task-ებზე 49-ჯერამდე — ეს ხარჯებსა და სიჩქარეს მნიშვნელოვნად ცვლის. Python-ში, 22 MCP tool, 19 პროგრამირების ენა. Claude Code-თან, Cursor-თან, Windsurf-თან და Continue-თან.",
+      "starsNumeric": 12000,
+      "categorySlug": "codeintel",
+      "categoryEmoji": "🔍",
+      "categoryGeorgian": "კოდის ინტელექტი და კონტექსტი",
+      "descriptionEn": "Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8× fewer tokens on reviews and up to 49× on daily coding tasks."
+    },
+    {
+      "name": "Claude Context",
+      "url": "https://github.com/zilliztech/claude-context",
+      "stars": "10.4K",
+      "description": "Claude Context Zilliz-ის MCP plugin-ია, რომელიც Claude Code-სა და სხვა coding agent-ებს მთელ codebase-ზე semantic code search-ს აძლევს. ფაილების სრულად ჩატვირთვის ნაცვლად კოდს embeddings-ად ინახავს vector database-ში (Milvus/Zilliz Cloud) და მოთხოვნისას მხოლოდ რელევანტურ ფრაგმენტებს აბრუნებს კონტექსტში — დიდ monorepo-ებზე token ხარჯს და discovery rounds-ს ამცირებს. TypeScript-ში, MIT ლიცენზია, `@zilliz/claude-context-mcp` npm პაკეტით ინსტალირდება. მუშაობისთვის OpenAI API key და Milvus/Zilliz Cloud endpoint/token სჭირდება. 10,400+ ვარსკვლავი.",
+      "starsNumeric": 10400,
+      "categorySlug": "codeintel",
+      "categoryEmoji": "🔍",
+      "categoryGeorgian": "კოდის ინტელექტი და კონტექსტი",
+      "descriptionEn": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent."
     },
     {
       "name": "Ollama",
@@ -2210,17 +2235,6 @@
       "categoryEmoji": "⚙️",
       "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
       "descriptionEn": "Web UI for training and running open models like Gemma 4, Qwen3.5, DeepSeek, gpt-oss locally."
-    },
-    {
-      "name": "whisper.cpp",
-      "url": "https://github.com/ggerganov/whisper.cpp",
-      "stars": "48K",
-      "description": "whisper.cpp — OpenAI-ის Whisper speech-to-text მოდელის C/C++ port, Georgi Gerganov-ის მიერ (llama.cpp-ის შემქმნელი). GPU-ს გარეშეც მუშაობს — CPU-ზე, ARM-ზე, ტელეფონებზეც. 100-ზე მეტ ენაზე transcription-ს ასრულებს, ქართულის ჩათვლით. real-time streaming, speaker diarization, word-level timestamps მხარდაჭერილია. C++ ბიბლიოთეკა Python, Node.js, Go binding-ებითაც ხელმისაწვდომია. podcast-ების, ინტერვიუების, meeting-ების ავტომატური transcription-ისთვის ინდუსტრიული ინსტრუმენტია.",
-      "starsNumeric": 48000,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
-      "descriptionEn": "Port of OpenAI's Whisper model in C/C++"
     },
     {
       "name": "Text Generation WebUI",
@@ -2410,6 +2424,28 @@
       "descriptionEn": "A latent text-to-image diffusion model"
     },
     {
+      "name": "VibeVoice",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "stars": "49K",
+      "description": "VibeVoice — **Microsoft-ის** frontier ღია ხმის მოდელების ოჯახი: real-time TTS (streaming, long-form) და unified ASR, რომელიც 60-წუთიან აუდიოს ერთ გავლაში ამუშავებს speaker/timestamp/content სტრუქტურით. ღია წონებით.",
+      "starsNumeric": 49000,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "Microsoft's open frontier voice AI models — real-time streaming TTS and unified long-form ASR (who/when/what)."
+    },
+    {
+      "name": "whisper.cpp",
+      "url": "https://github.com/ggerganov/whisper.cpp",
+      "stars": "48K",
+      "description": "whisper.cpp — OpenAI-ის Whisper speech-to-text მოდელის C/C++ port, Georgi Gerganov-ის მიერ (llama.cpp-ის შემქმნელი). GPU-ს გარეშეც მუშაობს — CPU-ზე, ARM-ზე, ტელეფონებზეც. 100-ზე მეტ ენაზე transcription-ს ასრულებს, ქართულის ჩათვლით. real-time streaming, speaker diarization, word-level timestamps მხარდაჭერილია. C++ ბიბლიოთეკა Python, Node.js, Go binding-ებითაც ხელმისაწვდომია. podcast-ების, ინტერვიუების, meeting-ების ავტომატური transcription-ისთვის ინდუსტრიული ინსტრუმენტია.",
+      "starsNumeric": 48000,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "Port of OpenAI's Whisper model in C/C++"
+    },
+    {
       "name": "Coqui TTS",
       "url": "https://github.com/coqui-ai/TTS",
       "stars": "45K",
@@ -2518,6 +2554,17 @@
       "categoryEmoji": "🎬",
       "categoryGeorgian": "მედია-გენერაცია",
       "descriptionEn": "\"ViMax: Agentic Video Generation (Director, Screenwriter, Producer, and Video Generator All-in-One)\""
+    },
+    {
+      "name": "Kokoro",
+      "url": "https://github.com/hexgrad/kokoro",
+      "stars": "7.5K",
+      "description": "Kokoro — მცირე, მაგრამ ხარისხიანი ღია TTS მოდელი (82M პარამეტრი), Apache 2.0. ლოკალურად სწრაფი მეტყველების სინთეზი მინიმალური რესურსით — ერთ-ერთი ყველაზე პოპულარული მსუბუქი TTS 2026-ში.",
+      "starsNumeric": 7500,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "A small, high-quality open TTS model (82M params, Apache 2.0) — fast local speech synthesis with minimal resources."
     },
     {
       "name": "RealtimeTTS",

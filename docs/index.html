@@ -66,7 +66,7 @@ svg{display:block}
   <div class="hdr-title">AI Pulse Georgia</div>
   <div class="hdr-right">
     <input id="search" placeholder="ძიება...">
-    <div class="hdr-stats"><b>241</b> repos · <b>12</b> categories</div>
+    <div class="hdr-stats"><b>244</b> repos · <b>14</b> categories</div>
   </div>
 </div>
 
@@ -100,7 +100,9 @@ const cats = [
   {k:"frameworks",l:"AI ფრეიმვორკები",        c:"#F87171", e:"🧬"},
   {k:"workflow",  l:"Workflow & No-Code",     c:"#22D3EE", e:"🔁"},
   {k:"business",  l:"ასისტენტები & ბიზნესი",  c:"#F472B6", e:"💼"},
+  {k:"finance",   l:"ფინანსური AI",           c:"#EAB308", e:"💰"},
   {k:"memory",    l:"მეხსიერება & RAG",       c:"#C084FC", e:"🧠"},
+  {k:"codeintel", l:"კოდის ინტელექტი",        c:"#6366F1", e:"🔍"},
   {k:"infra",     l:"ინფერენსი & ხელსაწყოები",c:"#2DD4BF", e:"⚙"},
   {k:"media",     l:"მედია-გენერაცია",        c:"#84CC16", e:"🎬"},
   {k:"resources", l:"რესურსები",              c:"#94A3B8", e:"📚"}
@@ -160,7 +162,7 @@ const nodes = [
   {id:"arch-diagram",n:"Arch Diagram Gen",s:3.3e3,c:"design",d:"Claude AI სკილი — ტექსტიდან HTML/SVG არქიტექტურის დიაგრამა."},
   {id:"remotion-skills",n:"Remotion Skills",s:2.8e3,c:"media",d:"Remotion-ის ოფიციალური სკილები — React-ში ვიდეოების შექმნა AI-ით."},
   {id:"n8n-skills",n:"n8n Skills",s:4e3,c:"plugins",d:"n8n workflow-ების ასაწყობი უნარები."},
-  {id:"graphify",n:"Graphify",s:33e3,c:"memory",d:"კოდი → ცოდნის გრაფი. 71x ნაკლები ტოკენი."},
+  {id:"graphify",n:"Graphify",s:33e3,c:"codeintel",d:"კოდი → ცოდნის გრაფი. 71x ნაკლები ტოკენი."},
   {id:"claude-peers",n:"Claude Peers",s:1925,c:"mcp",d:"Claude Code სესიების კომუნიკაცია."},
   {id:"headroom",n:"Headroom",s:1.3e3,c:"infra",d:"AI კონტექსტის კომპრესია — 70-95% ნაკლები ტოკენი. Claude Code, Codex, Aider."},
   {id:"cc-setup",n:"CC Setup 🇬🇪",s:9,c:"plugins",d:"Claude Code კონფიგურაცია. Made in Georgia."},
@@ -173,7 +175,7 @@ const nodes = [
   {id:"fastmcp",n:"FastMCP",s:25e3,c:"mcp",d:"#1 Python MCP server ფრეიმვორკი — FastAPI for MCP. Anthropic-ის MCP Python SDK-ის საფუძველი."},
   {id:"serena",n:"Serena",s:23.3e3,c:"mcp",d:"Semantic code editing MCP — LSP-ით. IDE for your agent. Cursor-ის ალტერნატივა ყველა coding agent-ისთვის."},
   {id:"figma-mcp",n:"Figma MCP",s:14e3,c:"design",d:"Figma დიზაინი → ზუსტი კოდი."},
-  {id:"code-review-graph",n:"Code Review Graph",s:12e3,c:"memory",d:"კოდბეისის სტრუქტურული რუკა 22 MCP tool-ით. 8.2x ნაკლები ტოკენი."},
+  {id:"code-review-graph",n:"Code Review Graph",s:12e3,c:"codeintel",d:"კოდბეისის სტრუქტურული რუკა 22 MCP tool-ით. 8.2x ნაკლები ტოკენი."},
   {id:"notion-mcp",n:"Notion MCP",s:4.2e3,c:"mcp",d:"Notion გვერდები AI-დან."},
   {id:"exa-mcp",n:"Exa MCP",s:4.1e3,c:"mcp",d:"ვებ ძიება AI ასისტენტებისთვის."},
   {id:"supabase-mcp",n:"Supabase MCP",s:2.6e3,c:"mcp",d:"Supabase ბაზა AI-სთვის."},
@@ -201,7 +203,7 @@ const nodes = [
   {id:"playwright-cli",n:"Playwright CLI",s:9.2e3,c:"scraping",d:"ბრაუზერის ჩაწერა, კოდის გენერაცია."},
   {id:"firecrawl-mcp",n:"Firecrawl MCP",s:5.9e3,c:"scraping",d:"ვებ სკრეიპინგი — 12+ ინსტრუმენტი."},
   {id:"browser-harness",n:"Browser Harness",s:5.8e3,c:"scraping",d:"Browser Use — self-healing ფრეიმვორკი. AI აგენტი სელექტორების ცვლილებისას ავტომატურად ადაპტირდება."},
-  {id:"cloudflare-mcp",n:"Cloudflare MCP",s:3.6e3,c:"scraping",d:"Cloudflare 13+ სერვისი."},
+  {id:"cloudflare-mcp",n:"Cloudflare MCP",s:3.6e3,c:"mcp",d:"Cloudflare 13+ სერვისი."},
   {id:"rdrr",n:"rdrr",s:138,c:"scraping",d:"URL → Markdown AI-სთვის. ვები, YouTube, GitHub, PDF, Twitter."},
   {id:"brightdata-mcp",n:"Bright Data",s:2.3e3,c:"scraping",d:"სკრეიპინგი anti-bot გვერდის ავლით."},
   // frameworks 20
@@ -209,7 +211,7 @@ const nodes = [
   {id:"autoresearch",n:"AutoResearch",s:76e3,c:"resources",d:"Karpathy-ს ავტონომიური ML კვლევა."},
   {id:"metagpt",n:"MetaGPT",s:67e3,c:"frameworks",d:"პირველი AI Software Company — PM, Architect, Engineer, QA AI აგენტები ქმნიან სრულ კოდბაზას ერთი prompt-იდან."},
   {id:"dspy",n:"DSPy",s:34e3,c:"frameworks",d:"Stanford NLP — programming not prompting. Declarative multi-LM pipelines, ავტომატური prompt ოპტიმიზაცია."},
-  {id:"ai-hedge-fund",n:"AI Hedge Fund",s:55.6e3,c:"business",d:"Buffett, Munger, Burry სტილის AI აგენტები აქციებს აანალიზებენ."},
+  {id:"ai-hedge-fund",n:"AI Hedge Fund",s:55.6e3,c:"finance",d:"Buffett, Munger, Burry სტილის AI აგენტები აქციებს აანალიზებენ."},
   {id:"agno",n:"agno",s:39.6e3,c:"frameworks",d:"Production agent framework (ყოფილი phidata) — agents, workflows, memory, monitoring. AI Hedge Fund-ის საფუძველი."},
   {id:"smolagents",n:"smolagents",s:26.8e3,c:"frameworks",d:"🤗 HuggingFace-ის barebones library — აგენტები კოდით ფიქრობენ. 2K ხაზი, 100+ მოდელი."},
   {id:"swarm",n:"Swarm",s:21.4e3,c:"frameworks",d:"OpenAI educational multi-agent — handoffs + routines. openai-agents-python-ის საფუძველი."},
@@ -224,13 +226,13 @@ const nodes = [
   {id:"toon",n:"toon",s:23e3,c:"infra",d:"JSON ალტერნატივა — 39% ნაკლები ტოკენი."},
   {id:"vercel-ai",n:"Vercel AI SDK",s:23.3e3,c:"frameworks",d:"TypeScript AI toolkit."},
   {id:"mastra",n:"Mastra",s:23e3,c:"frameworks",d:"TypeScript AI ფრეიმვორკი."},
-  {id:"kronos",n:"Kronos",s:20e3,c:"business",d:"ფინანსური ბაზრების სპეციალიზებული AI — K-line პატერნებზე ტრენინგი."},
+  {id:"kronos",n:"Kronos",s:20e3,c:"finance",d:"ფინანსური ბაზრების სპეციალიზებული AI — K-line პატერნებზე ტრენინგი."},
   {id:"archon",n:"Archon",s:18.4e3,c:"frameworks",d:"AI კოდირების ორკესტრაცია YAML workflow-ებით — Dockerfile AI-ისთვის."},
   {id:"pydantic-ai",n:"Pydantic AI",s:16.2e3,c:"frameworks",d:"Python ტიპ-უსაფრთხო აგენტები."},
   {id:"opensandbox",n:"OpenSandbox",s:10e3,c:"frameworks",d:"Alibaba sandbox — კოდი იზოლაციაში."},
   {id:"feynman",n:"Feynman",s:5.8e3,c:"business",d:"AI კვლევის აგენტი — 4 სპეციალიზებული აგენტი (Researcher, Reviewer, Writer, Verifier), AlphaXiv ინტეგრაცია, წყაროზე დაფუძნებული დასკვნები."},
   {id:"openspace",n:"OpenSpace",s:5.7e3,c:"frameworks",d:"აგენტების თვითგანვითარება."},
-  {id:"fincept-terminal",n:"Fincept Terminal",s:13e3,c:"business",d:"Bloomberg Terminal-ის ღია ალტერნატივა — 20+ AI ინვესტორ-პერსონა, 100+ მონაცემთა კონექტორი, QuantLib, DCF, VaR."},
+  {id:"fincept-terminal",n:"Fincept Terminal",s:13e3,c:"finance",d:"Bloomberg Terminal-ის ღია ალტერნატივა — 20+ AI ინვესტორ-პერსონა, 100+ მონაცემთა კონექტორი, QuantLib, DCF, VaR."},
   // business 22
   {id:"n8n",n:"n8n",s:185e3,c:"workflow",d:"THE workflow automation — 400+ ინტეგრაცია, visual no-code builder. Zapier-ის ღია ალტერნატივა. AI Pulse Georgia-ს infrastructure."},
   {id:"langflow",n:"Langflow",s:146e3,c:"workflow",d:"ვიზუალური drag-drop AI პლატფორმა."},
@@ -262,7 +264,7 @@ const nodes = [
   {id:"graphiti",n:"Graphiti",s:25.3e3,c:"memory",d:"Zep AI-ს temporal ცოდნის გრაფი — იცის როდის შეიცვალა ფაქტი. Bi-temporal მოდელი, Neo4j backend. MCP-ით Claude Desktop, Cursor."},
   {id:"chroma",n:"Chroma",s:27.6e3,c:"memory",d:"ვექტორული DB #1 Python-ში — LangChain-ის default. Embedded/standalone/cloud. 5 ხაზით RAG."},
   {id:"letta",n:"Letta",s:22.2e3,c:"memory",d:"Stateful agents (ყოფილი MemGPT) — hierarchical memory: working + archival. UC Berkeley → startup."},
-  {id:"gitnexus",n:"GitNexus",s:28e3,c:"memory",d:"კოდის რეპო → რუკა ბრაუზერში."},
+  {id:"gitnexus",n:"GitNexus",s:28e3,c:"codeintel",d:"კოდის რეპო → რუკა ბრაუზერში."},
   {id:"mempalace",n:"MemPalace",s:49e3,c:"memory",d:"AI მეხსიერება — #1 LongMemEval-ზე."},
   {id:"rag-anything",n:"RAG-Anything",s:18e3,c:"memory",d:"მულტიმოდალური RAG."},
   {id:"gbrain",n:"gbrain",s:10e3,c:"memory",d:"Garry Tan: AI აგენტის პერსონალური ტვინი — ელ-ფოსტა, კალენდარი, შეხვედრები."},
@@ -278,7 +280,7 @@ const nodes = [
   {id:"llama-cpp",n:"llama.cpp",s:106e3,c:"infra",d:"C++ AI — ძველ კომპიუტერებზეც."},
   {id:"unsloth",n:"Unsloth",s:58e3,c:"infra",d:"AI fine-tuning — 2x სწრაფი."},
   {id:"coqui-tts",n:"Coqui TTS",s:45e3,c:"media",d:"ტექსტი → ხმა. 17 ენა."},
-  {id:"whisper-cpp",n:"whisper.cpp",s:49e3,c:"infra",d:"OpenAI Whisper-ის C++ port — audio → text 100+ ენაზე (ქართული). GPU არ სჭირდება. Georgi Gerganov."},
+  {id:"whisper-cpp",n:"whisper.cpp",s:49e3,c:"media",d:"OpenAI Whisper-ის C++ port — audio → text 100+ ენაზე (ქართული). GPU არ სჭირდება. Georgi Gerganov."},
   {id:"localai",n:"LocalAI",s:45.7e3,c:"infra",d:"OpenAI-compatible API ღია მოდელებისთვის — LLM/vision/voice/image ერთ სერვერში, ლოკალურად."},
   {id:"bark",n:"Bark",s:39e3,c:"media",d:"Suno AI text → realistic multilingual audio + music + sounds. Emotions, laugh/cry/sigh effects. 100+ ენა."},
   {id:"diffusers",n:"Diffusers",s:33.4e3,c:"media",d:"🤗 Diffusion models — Stable Diffusion, FLUX, SDXL, video gen. LoRA, ControlNet, IP-Adapter."},
@@ -306,12 +308,12 @@ const nodes = [
   {id:"awesome-design",n:"Awesome DESIGN",s:64e3,c:"design",d:"55+ დიზაინის შაბლონი."},
   {id:"llm-wiki",n:"LLM Wiki",s:5e3,c:"resources",d:"Karpathy: AI ცოდნის ბაზა."},
   {id:"pi",n:"Pi",s:57e3,c:"coding",d:"coding agent toolkit — CLI, unified LLM API, TUI/web UI, vLLM. TypeScript, MIT, 57K+ ⭐. badlogic."},
-  {id:"codegraph",n:"CodeGraph",s:33e3,c:"memory",d:"კოდბაზის წინასწარ-ინდექსირებული knowledge graph AI agent-ებისთვის — ~22% იაფი, 50% ნაკლები tool call, ლოკალური. GitHub Trending #1."},
+  {id:"codegraph",n:"CodeGraph",s:33e3,c:"codeintel",d:"კოდბაზის წინასწარ-ინდექსირებული knowledge graph AI agent-ებისთვის — ~22% იაფი, 50% ნაკლები tool call, ლოკალური. GitHub Trending #1."},
   {id:"academic-research",n:"Academic Research",s:24e3,c:"plugins",d:"Claude Code skill suite აკადემიური კვლევისთვის — literature search, paper writing, peer review. Trending #3."},
   {id:"claude-skills-lib",n:"Claude Skills",s:16.5e3,c:"plugins",d:"338 production-ready Claude Code skill 13 ხელსაწყოსთვის — eng, marketing, finance, compliance."},
   {id:"cloakbrowser",n:"CloakBrowser",s:22e3,c:"scraping",d:"stealth Chromium — Playwright drop-in, source-level fingerprint patches, anti-bot bypass (ავტორიზებული გამოყენებისთვის). Trending #7."},
   {id:"ms-agent-framework",n:"MS Agent Framework",s:11e3,c:"frameworks",d:"Microsoft-ის ოფიციალური multi-agent framework — AutoGen + Semantic Kernel-ის მემკვიდრე. Python/.NET, MIT."},
-  {id:"trading-agents",n:"TradingAgents",s:81e3,c:"business",d:"multi-agent სავაჭრო framework — analyst/trader/risk manager როლები. 80K+ ⭐, Apache-2.0."},
+  {id:"trading-agents",n:"TradingAgents",s:81e3,c:"finance",d:"multi-agent სავაჭრო framework — analyst/trader/risk manager როლები. 80K+ ⭐, Apache-2.0."},
   {id:"agentmemory",n:"agentmemory",s:19.6e3,c:"memory",d:"persistent მეხსიერება coding agent-ებისთვის — 53-tool MCP, ~92% ნაკლები ტოკენი. Trending #5."},
   {id:"vimax",n:"ViMax",s:8.3e3,c:"media",d:"HKUDS-ის agentic video generation — Director/Screenwriter/Producer როლები. Idea/Script/Novel2Video."},
   {id:"supertonic",n:"Supertonic",s:11e3,c:"media",d:"ულტრა-სწრაფი on-device multilingual TTS (ONNX) — 99M params, 31 ენა, 11 ენის იმპლემენტაცია. Trending #6."},
@@ -326,8 +328,8 @@ const nodes = [
   {id:"open-design",n:"Open Design",s:36e3,c:"design",d:"Claude Design-ის სრულად ღია ალტერნატივა — 19 skill + 71 brand-grade design system, BYOK, HTML/PDF/PPTX/MP4 export. Apache 2.0."},
   {id:"matt-pocock-skills",n:"Matt Pocock Skills",s:55e3,c:"plugins",d:"Total TypeScript-ის ავტორის პირადი .claude/skills/ დირექტორია — „Skills for Real Engineers”. MIT."},
   {id:"huashu",n:"Huashu Design",s:11.7e3,c:"design",d:"HTML-native design skill — prototypes, slides, ანიმაცია, MP4 export. 20 design philosophy + 5-dimensional review."},
-  {id:"claude-context",n:"Claude Context",s:10.4e3,c:"memory",d:"Zilliz-ის semantic code search MCP — codebase embeddings-ად Milvus-ში, მხოლოდ რელევანტური ფრაგმენტები კონტექსტში. MIT."},
-  {id:"financial-services",n:"Claude Financial",s:18.6e3,c:"business",d:"Anthropic-ის ოფიციალური vertical repo ფინანსური workflow-ებისთვის — მზა agent-ები, skills, MCP connector-ები."},
+  {id:"claude-context",n:"Claude Context",s:10.4e3,c:"codeintel",d:"Zilliz-ის semantic code search MCP — codebase embeddings-ად Milvus-ში, მხოლოდ რელევანტური ფრაგმენტები კონტექსტში. MIT."},
+  {id:"financial-services",n:"Claude Financial",s:18.6e3,c:"finance",d:"Anthropic-ის ოფიციალური vertical repo ფინანსური workflow-ებისთვის — მზა agent-ები, skills, MCP connector-ები."},
   {id:"excalidraw",n:"Excalidraw",s:122e3,c:"design",d:"Virtual whiteboard hand-drawn დიაგრამებისთვის — agent architecture-ების ვიზუალიზაციის de facto სტანდარტი. MIT."},
   {id:"mermaid",n:"Mermaid",s:88e3,c:"design",d:"Text-to-diagram სტანდარტი — flowchart, sequence, ER, C4 მარკდაუნ-სტილის სინტაქსით. MIT."},
   {id:"tldraw",n:"tldraw",s:47e3,c:"design",d:"Infinite canvas SDK + whiteboard — Excalidraw-ის მთავარი მეტოქე, professional ვიზუალი, real-time collaboration."},
@@ -347,7 +349,7 @@ const nodes = [
   {id:"pal-mcp",n:"PAL (zen-mcp)",s:11597,c:"mcp",d:"მრავალმოდელიანი MCP ორკესტრატორი — Claude/Gemini/Codex+OpenAI/Grok/Ollama."},
   {id:"skyvern",n:"Skyvern",s:21895,c:"scraping",d:"AI ბრაუზერ-ავტომატიზაცია vision-LLM-ით, selector-ების გარეშე."},
   {id:"faiss",n:"FAISS",s:40279,c:"memory",d:"vector similarity search-ის ფუძემდებლური ბიბლიოთეკა. Meta."},
-  {id:"understand-anything",n:"Understand Anything",s:58444,c:"memory",d:"კოდი → ინტერაქტიული knowledge graph."},
+  {id:"understand-anything",n:"Understand Anything",s:58444,c:"codeintel",d:"კოდი → ინტერაქტიული knowledge graph."},
   {id:"tencentdb-memory",n:"TencentDB Memory",s:5475,c:"memory",d:"ლოკალური გრძელვადიანი მეხსიერება აგენტებისთვის. Tencent."},
   {id:"moneyprinter",n:"MoneyPrinterTurbo",s:87178,c:"media",d:"ერთ კლიკში AI მოკლე ვიდეოს გენერაცია."},
   {id:"openui",n:"OpenUI",s:22399,c:"design",d:"UI-ს გენერაცია ბუნებრივი ენიდან, live render. W&B."},
@@ -359,7 +361,11 @@ const nodes = [
   {id:"awesome-agents-2026",n:"Awesome AI Agents 2026",s:1077,c:"resources",d:"300+ AI აგენტის, ფრეიმვორკისა და ხელსაწყოს awesome-სია."},
   {id:"awesome-cli-agents",n:"Awesome CLI Coding Agents",s:556,c:"resources",d:"ტერმინალის coding-აგენტების კურირებული კატალოგი."},
   {id:"awesome-agent-papers",n:"Awesome Agent Papers",s:1385,c:"resources",d:"2026-ის აგენტური AI კვლევითი ნაშრომები. VoltAgent."},
-  {id:"ai-eng-scratch",n:"AI Engineering from Scratch",s:31875,c:"resources",d:"AI ინჟინერია ნულიდან — ისწავლე, ააშენე, გაუშვი."}
+  {id:"ai-eng-scratch",n:"AI Engineering from Scratch",s:31875,c:"resources",d:"AI ინჟინერია ნულიდან — ისწავლე, ააშენე, გაუშვი."},
+  // +3 voice (2026 Q2)
+  {id:"pipecat",n:"Pipecat",s:12807,c:"frameworks",d:"production ხმის AI ფრეიმვორკი — sub-250ms, WebRTC, multimodal. Vapi/Retell-ის ღია ალტერნატივა."},
+  {id:"vibevoice",n:"VibeVoice",s:49312,c:"media",d:"Microsoft-ის frontier ღია ხმის მოდელები — real-time TTS + long-form ASR."},
+  {id:"kokoro",n:"Kokoro",s:7456,c:"media",d:"მცირე, ხარისხიანი ღია TTS მოდელი (82M), Apache 2.0 — სწრაფი ლოკალური სინთეზი."}
 ];
 
 const links = [
@@ -434,14 +440,15 @@ const W = window.innerWidth, H = window.innerHeight;
 const pad = 16;
 const top0 = 56;
 const cellW = (W - pad*4) / 3;
-const cellH = (H - top0 - pad*4 - 40) / 4;
+const cellH = (H - top0 - pad*4 - 40) / 5;
 
-// Grid positions for 12 categories (3 cols x 4 rows)
+// Grid positions for 14 categories (3 cols x 5 rows)
 const gridPos = [
   {col:0,row:0},{col:1,row:0},{col:2,row:0},
   {col:0,row:1},{col:1,row:1},{col:2,row:1},
   {col:0,row:2},{col:1,row:2},{col:2,row:2},
-  {col:0,row:3},{col:1,row:3},{col:2,row:3}
+  {col:0,row:3},{col:1,row:3},{col:2,row:3},
+  {col:0,row:4},{col:1,row:4}
 ];
 const catZones = {};
 cats.forEach((cat, i) => {

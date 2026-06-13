@@ -958,5 +958,17 @@
   "rohitg00/ai-engineering-from-scratch": {
     "description": "Learn AI engineering from scratch — learn it, build it, ship it for others. Hands-on and practical.",
     "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "pipecat-ai/pipecat": {
+    "description": "Production-grade voice AI agent framework — sub-250ms latency, WebRTC, multimodal, real-time streaming, 70+ languages.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "microsoft/VibeVoice": {
+    "description": "Microsoft's open frontier voice AI models — real-time streaming TTS and unified long-form ASR (who/when/what).",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "hexgrad/kokoro": {
+    "description": "A small, high-quality open TTS model (82M params, Apache 2.0) — fast local speech synthesis with minimal resources.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
   }
 }

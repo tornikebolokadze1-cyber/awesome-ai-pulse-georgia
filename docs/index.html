@@ -66,7 +66,7 @@ svg{display:block}
   <div class="hdr-title">AI Pulse Georgia</div>
   <div class="hdr-right">
     <input id="search" placeholder="ძიება...">
-    <div class="hdr-stats"><b>213</b> repos · <b>12</b> categories</div>
+    <div class="hdr-stats"><b>241</b> repos · <b>12</b> categories</div>
   </div>
 </div>
 
@@ -330,7 +330,36 @@ const nodes = [
   {id:"financial-services",n:"Claude Financial",s:18.6e3,c:"business",d:"Anthropic-ის ოფიციალური vertical repo ფინანსური workflow-ებისთვის — მზა agent-ები, skills, MCP connector-ები."},
   {id:"excalidraw",n:"Excalidraw",s:122e3,c:"design",d:"Virtual whiteboard hand-drawn დიაგრამებისთვის — agent architecture-ების ვიზუალიზაციის de facto სტანდარტი. MIT."},
   {id:"mermaid",n:"Mermaid",s:88e3,c:"design",d:"Text-to-diagram სტანდარტი — flowchart, sequence, ER, C4 მარკდაუნ-სტილის სინტაქსით. MIT."},
-  {id:"tldraw",n:"tldraw",s:47e3,c:"design",d:"Infinite canvas SDK + whiteboard — Excalidraw-ის მთავარი მეტოქე, professional ვიზუალი, real-time collaboration."}
+  {id:"tldraw",n:"tldraw",s:47e3,c:"design",d:"Infinite canvas SDK + whiteboard — Excalidraw-ის მთავარი მეტოქე, professional ვიზუალი, real-time collaboration."},
+  // +28 trending (2026 Q2)
+  {id:"haystack",n:"Haystack",s:25560,c:"frameworks",d:"production AI ორკესტრაცია/RAG ფრეიმვორკი — LangChain-ის სანდო ალტერნატივა."},
+  {id:"copilotkit",n:"CopilotKit",s:34978,c:"frameworks",d:"frontend-სტეკი აგენტებისა და generative UI-სთვის (React, Slack, mobile)."},
+  {id:"zed",n:"Zed",s:85175,c:"coding",d:"Rust-ის მაღალწარმადი რედაქტორი — ახლა agentic/skills/MCP მხარდაჭერით."},
+  {id:"oh-my-pi",n:"oh-my-pi",s:12203,c:"coding",d:"ტერმინალის coding agent Pi-ს ბაზაზე — hash-anchored edits, subagents."},
+  {id:"langfuse",n:"Langfuse",s:29017,c:"infra",d:"LLM observability, eval, prompt management პლატფორმა."},
+  {id:"deepeval",n:"DeepEval",s:16139,c:"infra",d:"LLM eval ფრეიმვორკი pytest-ისებური — 50+ მეტრიკა."},
+  {id:"phoenix",n:"Arize Phoenix",s:10124,c:"infra",d:"AI observability OpenTelemetry-ზე — tracing, eval, datasets."},
+  {id:"markitdown",n:"MarkItDown",s:152612,c:"infra",d:"ფაილები/დოკები → Markdown LLM-ებისთვის. Microsoft."},
+  {id:"textgen-webui",n:"Text Gen WebUI",s:47300,c:"infra",d:"ლოკალური LLM-ის web UI — მრავალი backend. oobabooga."},
+  {id:"fastchat",n:"FastChat",s:39471,c:"infra",d:"LLM serving/eval — Vicuna და Chatbot Arena. LMSYS."},
+  {id:"llamafile",n:"llamafile",s:24930,c:"infra",d:"LLM ერთ შესრულებად ფაილად, ყველა OS-ზე. Mozilla."},
+  {id:"skillspector",n:"SkillSpector",s:4211,c:"infra",d:"უსაფრთხოების სკანერი agent skill-ებისთვის. NVIDIA."},
+  {id:"pal-mcp",n:"PAL (zen-mcp)",s:11597,c:"mcp",d:"მრავალმოდელიანი MCP ორკესტრატორი — Claude/Gemini/Codex+OpenAI/Grok/Ollama."},
+  {id:"skyvern",n:"Skyvern",s:21895,c:"scraping",d:"AI ბრაუზერ-ავტომატიზაცია vision-LLM-ით, selector-ების გარეშე."},
+  {id:"faiss",n:"FAISS",s:40279,c:"memory",d:"vector similarity search-ის ფუძემდებლური ბიბლიოთეკა. Meta."},
+  {id:"understand-anything",n:"Understand Anything",s:58444,c:"memory",d:"კოდი → ინტერაქტიული knowledge graph."},
+  {id:"tencentdb-memory",n:"TencentDB Memory",s:5475,c:"memory",d:"ლოკალური გრძელვადიანი მეხსიერება აგენტებისთვის. Tencent."},
+  {id:"moneyprinter",n:"MoneyPrinterTurbo",s:87178,c:"media",d:"ერთ კლიკში AI მოკლე ვიდეოს გენერაცია."},
+  {id:"openui",n:"OpenUI",s:22399,c:"design",d:"UI-ს გენერაცია ბუნებრივი ენიდან, live render. W&B."},
+  {id:"stop-slop",n:"stop-slop",s:10296,c:"design",d:"skill — ტექსტიდან „AI-ის კვალს“ აშორებს. taste-skill-ის მონათესავე."},
+  {id:"knowledge-work-plugins",n:"Knowledge Work Plugins",s:20517,c:"business",d:"Anthropic-ის ოფიც. 11 plugin knowledge worker-ებისთვის (Cowork)."},
+  {id:"pm-skills",n:"PM Skills",s:17536,c:"business",d:"პროდუქტ-მენეჯმენტის skill marketplace — 68 skill."},
+  {id:"chatbot-ui",n:"Chatbot UI",s:33265,c:"business",d:"ChatGPT-ისებური ჩატ-UI ნებისმიერი LLM-ისთვის."},
+  {id:"affine",n:"AFFiNE",s:69345,c:"business",d:"ღია workspace — Notion+Miro ალტერნატივა, ჩაშენებული AI."},
+  {id:"awesome-agents-2026",n:"Awesome AI Agents 2026",s:1077,c:"resources",d:"300+ AI აგენტის, ფრეიმვორკისა და ხელსაწყოს awesome-სია."},
+  {id:"awesome-cli-agents",n:"Awesome CLI Coding Agents",s:556,c:"resources",d:"ტერმინალის coding-აგენტების კურირებული კატალოგი."},
+  {id:"awesome-agent-papers",n:"Awesome Agent Papers",s:1385,c:"resources",d:"2026-ის აგენტური AI კვლევითი ნაშრომები. VoltAgent."},
+  {id:"ai-eng-scratch",n:"AI Engineering from Scratch",s:31875,c:"resources",d:"AI ინჟინერია ნულიდან — ისწავლე, ააშენე, გაუშვი."}
 ];
 
 const links = [

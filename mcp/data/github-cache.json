@@ -846,5 +846,117 @@
   "karpathy/gist-442a6bf5": {
     "description": "A conceptual gist from Andrej Karpathy (former AI lead at OpenAI and Tesla): an AI automatically builds and maintains a personal Markdown wiki as new information arrives. An alternative to RAG — instead of a vector DB, the LLM rewrites, updates and cross-links the wiki pages itself. Not code but a vision piece that sparked wide discussion of LLM-maintained knowledge bases.",
     "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "deepset-ai/haystack": {
+    "description": "Open-source AI orchestration framework for building production-ready, context-engineered LLM applications with modular retrieval, routing, memory and generation pipelines.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "CopilotKit/CopilotKit": {
+    "description": "The frontend stack for AI agents and generative UI — React, Angular, mobile, Slack and more from a single agent backend.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "zed-industries/zed": {
+    "description": "High-performance, multiplayer code editor in Rust from the creators of Atom — now with built-in AI agent, skills and MCP support.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "can1357/oh-my-pi": {
+    "description": "AI coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, browser and subagents, built on Pi.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "langfuse/langfuse": {
+    "description": "Open-source LLM engineering platform — observability, evals, prompt management, metrics, playground and datasets.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "confident-ai/deepeval": {
+    "description": "Open-source LLM evaluation framework — 50+ research-backed metrics, pytest-style, for RAG, chatbots and agents.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "Arize-ai/phoenix": {
+    "description": "Open-source AI observability platform built on OpenTelemetry — tracing, evaluation, datasets and prompt management.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "microsoft/markitdown": {
+    "description": "Microsoft Python tool that converts files and office documents (PDF, Word, Excel, PPT, images, audio) into Markdown for LLMs.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "oobabooga/text-generation-webui": {
+    "description": "A Gradio web UI for running local large language models — multiple backends, chat, fine-tuning and extensions.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "lm-sys/FastChat": {
+    "description": "Open platform for serving, training and evaluating LLMs — the project behind Vicuna and Chatbot Arena.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "mozilla-ai/llamafile": {
+    "description": "Distribute and run LLMs as a single self-contained executable file across operating systems — by Mozilla, built on llama.cpp.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "NVIDIA/SkillSpector": {
+    "description": "Security scanner for AI agent skills — detects prompt injection, data exfiltration and supply-chain risks before install.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "BeehiveInnovations/pal-mcp-server": {
+    "description": "MCP server that orchestrates Claude Code, Gemini CLI and Codex with many models (OpenAI, Grok, Ollama) as one unified workflow.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "Skyvern-AI/skyvern": {
+    "description": "Automate browser-based workflows with LLMs and computer vision — resistant to layout changes, no brittle selectors.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "facebookresearch/faiss": {
+    "description": "Library for efficient similarity search and clustering of dense vectors — the foundation under many vector DBs and RAG systems.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "Egonex-AI/Understand-Anything": {
+    "description": "Turn any codebase into an interactive knowledge graph you can explore, search and ask questions about.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "TencentCloud/TencentDB-Agent-Memory": {
+    "description": "Fully local long-term memory for AI agents via a 4-tier progressive pipeline, with zero external API dependencies.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "harry0703/MoneyPrinterTurbo": {
+    "description": "Generate HD short videos with one click using an AI LLM — script, footage, subtitles and music, fully automated.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "wandb/openui": {
+    "description": "Describe UI using natural language and see it rendered live — prototype and export to code. By Weights & Biases.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "hardikpandya/stop-slop": {
+    "description": "A skill file for removing AI tells from prose — makes AI-written text read more naturally and human.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "anthropics/knowledge-work-plugins": {
+    "description": "Anthropic's official open-source plugins for knowledge workers in Claude Cowork — sales, support, PM, marketing, legal, finance and more.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "phuryn/pm-skills": {
+    "description": "A marketplace of product-management skills, commands and plugins for Claude Code and Cowork — discovery to strategy.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "mckaywrigley/chatbot-ui": {
+    "description": "An open-source ChatGPT-style chat UI for any LLM — self-hosted, multi-model, clean UX.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "toeverything/AFFiNE": {
+    "description": "Open-source, local-first workspace — docs, whiteboards and databases in one, with built-in AI. A Notion + Miro alternative.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "caramaschiHG/awesome-ai-agents-2026": {
+    "description": "A comprehensive, monthly-updated list of 300+ AI agents, frameworks and tools across 20+ categories.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "bradAGI/awesome-cli-coding-agents": {
+    "description": "Curated directory of terminal-native AI coding agents and the harnesses that orchestrate them.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "VoltAgent/awesome-ai-agent-papers": {
+    "description": "A curated collection of 2026 AI agent research papers — agent engineering, memory, evaluation, workflows and autonomous systems.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "rohitg00/ai-engineering-from-scratch": {
+    "description": "Learn AI engineering from scratch — learn it, build it, ship it for others. Hands-on and practical.",
+    "fetchedAt": "2026-06-13T00:00:00.000Z"
   }
 }

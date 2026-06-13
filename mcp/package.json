@@ -1,6 +1,6 @@
 {
   "name": "@aipulsegeorgia/mcp-server",
-  "version": "0.2.17",
+  "version": "0.2.18",
   "description": "MCP server + CLI for the AI Pulse Georgia awesome list — query 250+ curated AI repos from inside Claude Code, Cursor, other MCP clients, or straight from your terminal.",
   "type": "module",
   "bin": {

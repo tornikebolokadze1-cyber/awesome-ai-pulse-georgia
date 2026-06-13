@@ -96,6 +96,10 @@ function parseRow(line: string): Pick<Repo, "name" | "url" | "stars" | "descript
 
 /** Extract `owner/repo` from a github.com URL. Returns null for non-repo URLs. */
 function parseGithubRepo(url: string): string | null {
+  // Gists are not standard repos; map to a stable slug so a curated
+  // description can be cached for them (the repos API can't fetch a gist).
+  const gist = url.match(/^https?:\/\/gist\.github\.com\/([^/]+)\/([0-9a-f]+)/i);
+  if (gist) return `${gist[1]!.toLowerCase()}/gist-${gist[2]!.slice(0, 8)}`;
   const m = url.match(/^https?:\/\/github\.com\/([^/]+)\/([^/?#]+)/i);
   if (!m) return null;
   const owner = m[1]!;

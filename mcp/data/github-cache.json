@@ -994,5 +994,85 @@
   "onyx-dot-app/onyx": {
     "description": "Open-source enterprise AI platform — chat with any LLM grounded in your company's docs and apps (40+ connectors). Self-hostable. Formerly Danswer.",
     "fetchedAt": "2026-06-13T00:00:00.000Z"
+  },
+  "OpenHands/OpenHands": {
+    "description": "🙌 OpenHands: AI-Driven Development",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "earendil-works/pi": {
+    "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "Hmbown/CodeWhale": {
+    "description": "Open-source, community-driven agent harness",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "affaan-m/ECC": {
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "multica-ai/andrej-karpathy-skills": {
+    "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "PrefectHQ/fastmcp": {
+    "description": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "supabase/mcp": {
+    "description": "Connect Supabase to your AI assistants",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "stripe/ai": {
+    "description": "One-stop shop for building AI-powered products and businesses with Stripe.",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "firecrawl/firecrawl": {
+    "description": "The API to search, scrape, and interact with the web at scale. 🔥",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "FoundationAgents/MetaGPT": {
+    "description": "🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "ruvnet/ruflo": {
+    "description": "🌊 The leading agent meta-harness for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning swarm intelligence, RAG integration, and native Claude Code / Codex Integration",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "opensandbox-group/OpenSandbox": {
+    "description": "Secure, Fast, and Extensible Sandbox runtime for AI agents.",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "lobehub/lobehub": {
+    "description": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "ItzCrazyKns/Vane": {
+    "description": "Vane is an AI-powered answering engine.",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "companion-inc/feynman": {
+    "description": null,
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "MemPalace/mempalace": {
+    "description": "The best-benchmarked open-source AI memory system. And it's free.",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "dcostenco/prism-coder": {
+    "description": "Persistent memory + local AI for coding agents. 1.7B–32B open-weight LLM fleet, cross-session Mind Palace, cognitive routing, L3 grounding verifier, multi-agent Hivemind. Works with Claude Code, Cursor, VS Code. Offline-first, HIPAA-ready. Free tier included.",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "oobabooga/textgen": {
+    "description": "Open-source desktop app for local LLMs. Text, vision, tool-calling, OpenAI/Anthropic-compatible API. 100% private.",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "ggml-org/whisper.cpp": {
+    "description": "Port of OpenAI's Whisper model in C/C++",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
+  },
+  "anthropics/claude-cookbooks": {
+    "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
+    "fetchedAt": "2026-06-16T00:00:00.000Z"
   }
 }

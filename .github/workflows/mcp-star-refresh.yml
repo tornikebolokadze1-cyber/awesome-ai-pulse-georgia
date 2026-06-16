@@ -1,0 +1,82 @@
+name: MCP star refresh
+
+# Weekly: refresh the star-count column in README.md from live GitHub data so
+# the published counts never drift far from reality. Only the numeric star cells
+# are rewritten — URLs, names, descriptions and prose are left untouched.
+# If anything changed, rebuild the data snapshot, bump the patch version and
+# commit back to main (which, like mcp-data-sync, then publishes to npm).
+
+on:
+  schedule:
+    - cron: '0 6 * * 1' # every Monday 06:00 UTC
+  workflow_dispatch: {} # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: 'mcp/package-lock.json'
+
+      - name: Install
+        working-directory: mcp
+        run: npm ci
+
+      - name: Refresh star counts in README
+        working-directory: mcp
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run refresh:stars
+
+      - name: Rebuild data snapshot
+        working-directory: mcp
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run build:data
+
+      - name: Detect changes
+        id: detect
+        run: |
+          if git diff --quiet -- README.md mcp/data/repos.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No star changes — nothing to publish."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Stars changed — will bump patch version and commit."
+          fi
+
+      - name: Bump patch version
+        if: steps.detect.outputs.changed == 'true'
+        working-directory: mcp
+        run: npm version patch --no-git-tag-version
+
+      - name: Commit and push
+        if: steps.detect.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md mcp/data/repos.json mcp/data/github-cache.json mcp/package.json mcp/package-lock.json
+          git commit -m "chore(mcp): weekly star-count refresh [skip ci]"
+          git push
+
+      # GITHUB_TOKEN commits don't trigger other workflows (anti-loop), so we
+      # dispatch the publish workflow ourselves, exactly like mcp-data-sync.
+      - name: Dispatch publish workflow
+        if: steps.detect.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run mcp-publish.yml --repo ${{ github.repository }}

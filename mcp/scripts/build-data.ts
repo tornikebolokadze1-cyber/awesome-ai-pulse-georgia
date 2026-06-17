@@ -27,19 +27,64 @@ type Category = {
 
 const CATEGORY_MAP: Record<string, Omit<Category, "georgian">> = {
   "კოდინგ აგენტები": { slug: "coding", emoji: "🤖", english: "Coding Agents" },
-  "Claude Code პლაგინები და უნარები": { slug: "plugins", emoji: "⚡", english: "Claude Code Plugins & Skills" },
+  "Claude Code პლაგინები და უნარები": {
+    slug: "plugins",
+    emoji: "⚡",
+    english: "Claude Code Plugins & Skills",
+  },
   "დიზაინი და UI": { slug: "design", emoji: "🎨", english: "Design & UI" },
   "MCP ინტეგრაციები": { slug: "mcp", emoji: "🔌", english: "MCP Integrations" },
-  "ვებ სკრეიპინგი და ბრაუზერი": { slug: "scraping", emoji: "🕷️", english: "Web Scraping & Browser" },
-  "AI აგენტების ფრეიმვორკები": { slug: "frameworks", emoji: "🧬", english: "AI Agent Frameworks & Orchestration" },
-  "Workflow და No-Code ბილდერები": { slug: "workflow", emoji: "🔁", english: "No-Code & Workflow Builders" },
-  "AI ასისტენტები და ბიზნეს-აგენტები": { slug: "business", emoji: "💼", english: "AI Assistants & Business Agents" },
+  "ვებ სკრეიპინგი და ბრაუზერი": {
+    slug: "scraping",
+    emoji: "🕷️",
+    english: "Web Scraping & Browser",
+  },
+  "AI აგენტების ფრეიმვორკები": {
+    slug: "frameworks",
+    emoji: "🧬",
+    english: "AI Agent Frameworks & Orchestration",
+  },
+  "Workflow და No-Code ბილდერები": {
+    slug: "workflow",
+    emoji: "🔁",
+    english: "No-Code & Workflow Builders",
+  },
+  "AI ასისტენტები და ბიზნეს-აგენტები": {
+    slug: "business",
+    emoji: "💼",
+    english: "AI Assistants & Business Agents",
+  },
   "ფინანსური AI": { slug: "finance", emoji: "💰", english: "Finance AI" },
-  "მეხსიერება, RAG და Vector DB": { slug: "memory", emoji: "🧠", english: "Memory, RAG & Vector DBs" },
-  "კოდის ინტელექტი და კონტექსტი": { slug: "codeintel", emoji: "🔍", english: "Code Intelligence & Context" },
-  "ინფერენსი და LLM ხელსაწყოები": { slug: "infra", emoji: "⚙️", english: "Model Inference & LLM Tooling" },
-  "მედია-გენერაცია": { slug: "media", emoji: "🎬", english: "Media Generation" },
-  "რესურსები და სასწავლო მასალები": { slug: "resources", emoji: "📚", english: "Resources & Learning" },
+  "მეხსიერება, RAG და Vector DB": {
+    slug: "memory",
+    emoji: "🧠",
+    english: "Memory, RAG & Vector DBs",
+  },
+  "კოდბაზის გრაფები და კონტექსტი": {
+    slug: "codeintel",
+    emoji: "🔍",
+    english: "Codebase Graphs & Context",
+  },
+  "ტოკენების დაზოგვა და ხარჯი": {
+    slug: "tokens",
+    emoji: "💸",
+    english: "Token & Cost Optimization",
+  },
+  "ინფერენსი და LLM ხელსაწყოები": {
+    slug: "infra",
+    emoji: "⚙️",
+    english: "Model Inference & LLM Tooling",
+  },
+  "მედია-გენერაცია": {
+    slug: "media",
+    emoji: "🎬",
+    english: "Media Generation",
+  },
+  "რესურსები და სასწავლო მასალები": {
+    slug: "resources",
+    emoji: "📚",
+    english: "Resources & Learning",
+  },
 };
 
 type Repo = {
@@ -73,7 +118,9 @@ function parseStars(raw: string): number | null {
 }
 
 function parseHeading(line: string): Category | null {
-  const m = line.match(/^##\s+(\p{Emoji_Presentation}|\p{Extended_Pictographic})\s*️?\s+(.+?)\s*$/u);
+  const m = line.match(
+    /^##\s+(\p{Emoji_Presentation}|\p{Extended_Pictographic})\s*️?\s+(.+?)\s*$/u,
+  );
   if (!m) return null;
   const georgian = m[2]!.trim();
   const meta = CATEGORY_MAP[georgian];
@@ -81,7 +128,9 @@ function parseHeading(line: string): Category | null {
   return { ...meta, georgian };
 }
 
-function parseRow(line: string): Pick<Repo, "name" | "url" | "stars" | "description"> | null {
+function parseRow(
+  line: string,
+): Pick<Repo, "name" | "url" | "stars" | "description"> | null {
   if (!line.startsWith("| [")) return null;
   const cells = line.split(" | ").map((c, i, arr) => {
     if (i === 0) return c.replace(/^\|\s*/, "");
@@ -103,14 +152,21 @@ function parseRow(line: string): Pick<Repo, "name" | "url" | "stars" | "descript
 function parseGithubRepo(url: string): string | null {
   // Gists are not standard repos; map to a stable slug so a curated
   // description can be cached for them (the repos API can't fetch a gist).
-  const gist = url.match(/^https?:\/\/gist\.github\.com\/([^/]+)\/([0-9a-f]+)/i);
+  const gist = url.match(
+    /^https?:\/\/gist\.github\.com\/([^/]+)\/([0-9a-f]+)/i,
+  );
   if (gist) return `${gist[1]!.toLowerCase()}/gist-${gist[2]!.slice(0, 8)}`;
   const m = url.match(/^https?:\/\/github\.com\/([^/]+)\/([^/?#]+)/i);
   if (!m) return null;
   const owner = m[1]!;
   const repo = m[2]!.replace(/\.git$/, "");
   // Skip non-repo URLs like /blob/, /tree/, /search, /sponsors etc.
-  if (owner === "" || repo === "" || ["search", "marketplace", "topics"].includes(owner.toLowerCase())) return null;
+  if (
+    owner === "" ||
+    repo === "" ||
+    ["search", "marketplace", "topics"].includes(owner.toLowerCase())
+  )
+    return null;
   return `${owner}/${repo}`;
 }
 
@@ -152,7 +208,10 @@ function saveGhCache(cache: GhCache): void {
   writeFileSync(GH_CACHE, JSON.stringify(cache, null, 2) + "\n", "utf-8");
 }
 
-function parseReadme(): { repos: Omit<Repo, "descriptionEn">[]; categories: Category[] } {
+function parseReadme(): {
+  repos: Omit<Repo, "descriptionEn">[];
+  categories: Category[];
+} {
   const text = readFileSync(README, "utf-8");
   const lines = text.split("\n");
   const repos: Omit<Repo, "descriptionEn">[] = [];
@@ -185,7 +244,9 @@ function parseReadme(): { repos: Omit<Repo, "descriptionEn">[]; categories: Cate
   return { repos, categories };
 }
 
-async function enrichWithEnglish(repos: Omit<Repo, "descriptionEn">[]): Promise<Repo[]> {
+async function enrichWithEnglish(
+  repos: Omit<Repo, "descriptionEn">[],
+): Promise<Repo[]> {
   const cache = loadGhCache();
   const skipFetch = process.env["SKIP_GH_FETCH"] === "1";
   let fetched = 0;
@@ -206,7 +267,10 @@ async function enrichWithEnglish(repos: Omit<Repo, "descriptionEn">[]): Promise<
       descriptionEn = null;
     } else {
       descriptionEn = await fetchGhDescription(slug);
-      cache[slug] = { description: descriptionEn, fetchedAt: new Date().toISOString() };
+      cache[slug] = {
+        description: descriptionEn,
+        fetchedAt: new Date().toISOString(),
+      };
       fetched += 1;
       // Be polite to the API
       await new Promise((r) => setTimeout(r, 100));
@@ -217,7 +281,9 @@ async function enrichWithEnglish(repos: Omit<Repo, "descriptionEn">[]): Promise<
 
   if (fetched > 0) saveGhCache(cache);
   // eslint-disable-next-line no-console
-  console.log(`  fetched=${fetched}, cached=${cached}, non-github=${nonGithub}`);
+  console.log(
+    `  fetched=${fetched}, cached=${cached}, non-github=${nonGithub}`,
+  );
   return enriched;
 }
 

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-17T14:51:36.218Z",
+  "generated": "2026-06-17T17:45:57.174Z",
   "totalRepos": 250,
   "categories": [
     {
@@ -14,7 +14,7 @@
       "emoji": "⚡",
       "english": "Claude Code Plugins & Skills",
       "georgian": "Claude Code პლაგინები და უნარები",
-      "count": 20
+      "count": 18
     },
     {
       "slug": "design",
@@ -70,21 +70,28 @@
       "emoji": "🧠",
       "english": "Memory, RAG & Vector DBs",
       "georgian": "მეხსიერება, RAG და Vector DB",
-      "count": 19
+      "count": 18
     },
     {
       "slug": "codeintel",
       "emoji": "🔍",
-      "english": "Code Intelligence & Context",
-      "georgian": "კოდის ინტელექტი და კონტექსტი",
+      "english": "Codebase Graphs & Context",
+      "georgian": "კოდბაზის გრაფები და კონტექსტი",
       "count": 6
+    },
+    {
+      "slug": "tokens",
+      "emoji": "💸",
+      "english": "Token & Cost Optimization",
+      "georgian": "ტოკენების დაზოგვა და ხარჯი",
+      "count": 5
     },
     {
       "slug": "infra",
       "emoji": "⚙️",
       "english": "Model Inference & LLM Tooling",
       "georgian": "ინფერენსი და LLM ხელსაწყოები",
-      "count": 22
+      "count": 20
     },
     {
       "slug": "media",
@@ -422,17 +429,6 @@
       "descriptionEn": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls."
     },
     {
-      "name": "Claude Mem",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "stars": "83K",
-      "description": "Claude Mem Claude Code-ის მეხსიერების plugin-ია — ავტომატურად ჩაწერს რასაც Claude coding session-ში აკეთებს, Claude-ის agent SDK-ით კომპრესსავს და შემდეგ session-ში რელევანტურ კონტექსტს უბრუნებს. TypeScript-ში, claude-mem.ai. ანუ ყოველ ჯერზე ხელახლა ახსნა აღარ სჭირდება — Claude „ახსოვს\" რაზე მუშაობდი. 82,000+ ვარსკვლავი.",
-      "starsNumeric": 83000,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future sessions."
-    },
-    {
       "name": "GSD (Get Shit Done)",
       "url": "https://github.com/gsd-build/get-shit-done",
       "stars": "64K",
@@ -453,17 +449,6 @@
       "categoryEmoji": "⚡",
       "categoryGeorgian": "Claude Code პლაგინები და უნარები",
       "descriptionEn": "Skills for Real Engineers. Straight from my .claude directory."
-    },
-    {
-      "name": "Caveman",
-      "url": "https://github.com/JuliusBrussee/caveman",
-      "stars": "74K",
-      "description": "Caveman Claude Code-ის (და სხვა agent-ების) ტოკენების მოხმარებას 65%-ით ამცირებს — AI-ს ასწავლის „გამოქვაბულის ადამიანივით\" ლაპარაკს, ზედმეტი სიტყვების გამოტოვებით. ხარისხი არ ეცემა, მხოლოდ verbosity მცირდება. Lite, Full და Ultra ინტენსივობის დონეები. Python-ში, Julius Brussee-ის მიერ. 40+ coding agent-ს უჭერს მხარს (Claude Code, Codex, Gemini CLI, Cursor). 2026 წლის აპრილში გამოჩნდა, 73,000+ ვარსკვლავი — AI ხარჯების შემამცირებელი ყველაზე პოპულარული skill.",
-      "starsNumeric": 74000,
-      "categorySlug": "plugins",
-      "categoryEmoji": "⚡",
-      "categoryGeorgian": "Claude Code პლაგინები და უნარები",
-      "descriptionEn": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman"
     },
     {
       "name": "Oh My ClaudeCode",
@@ -2072,17 +2057,6 @@
       "descriptionEn": "Letta is the platform for building stateful agents: AI with advanced memory that can learn and self-improve over time."
     },
     {
-      "name": "agentmemory",
-      "url": "https://github.com/rohitg00/agentmemory",
-      "stars": "23K",
-      "description": "agentmemory AI coding agent-ებს persistent მეხსიერებას აძლევს — lifecycle hooks-ით ჩუმად იწერს რას აკეთებს agent-ი 12+ ხელსაწყოში (Claude Code, Copilot CLI, Cursor, Gemini CLI), დაკვირვებებს searchable structured memory-ად კუმშავს (keyword + vector + knowledge graph hybrid, 95.2% retrieval accuracy R@5) და ახალ session-ში რელევანტურ კონტექსტს უბრუნებს. SQLite-ზე მუშაობს გარე ბაზის გარეშე და 53-tool MCP server-ად ეშვება — ~92%-ით ამცირებს ტოკენებს. TypeScript, Apache-2.0, v0.9.24 (2026 წლის 29 მაისი), 23,000+ ვარსკვლავი, GitHub Trending #5 — **Claude Mem**-ისა და **mem0**-ის MCP-native კონკურენტი.",
-      "starsNumeric": 23000,
-      "categorySlug": "memory",
-      "categoryEmoji": "🧠",
-      "categoryGeorgian": "მეხსიერება, RAG და Vector DB",
-      "descriptionEn": "#1 Persistent memory for AI coding agents based on real-world benchmarks"
-    },
-    {
       "name": "RAG-Anything",
       "url": "https://github.com/HKUDS/RAG-Anything",
       "stars": "21K",
@@ -2156,7 +2130,7 @@
       "starsNumeric": 62000,
       "categorySlug": "codeintel",
       "categoryEmoji": "🔍",
-      "categoryGeorgian": "კოდის ინტელექტი და კონტექსტი",
+      "categoryGeorgian": "კოდბაზის გრაფები და კონტექსტი",
       "descriptionEn": "Turn any codebase into an interactive knowledge graph you can explore, search and ask questions about."
     },
     {
@@ -2167,7 +2141,7 @@
       "starsNumeric": 69000,
       "categorySlug": "codeintel",
       "categoryEmoji": "🔍",
-      "categoryGeorgian": "კოდის ინტელექტი და კონტექსტი",
+      "categoryGeorgian": "კოდბაზის გრაფები და კონტექსტი",
       "descriptionEn": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, GitHub Copilot CLI, OpenClaw, Factory Droid, Trae, Google Antigravity). Turn any folder of code, docs, papers, images, or videos into a queryable knowledge graph"
     },
     {
@@ -2178,7 +2152,7 @@
       "starsNumeric": 51000,
       "categorySlug": "codeintel",
       "categoryEmoji": "🔍",
-      "categoryGeorgian": "კოდის ინტელექტი და კონტექსტი",
+      "categoryGeorgian": "კოდბაზის გრაფები და კონტექსტი",
       "descriptionEn": "Pre-indexed code knowledge graph for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local"
     },
     {
@@ -2189,7 +2163,7 @@
       "starsNumeric": 42000,
       "categorySlug": "codeintel",
       "categoryEmoji": "🔍",
-      "categoryGeorgian": "კოდის ინტელექტი და კონტექსტი",
+      "categoryGeorgian": "კოდბაზის გრაფები და კონტექსტი",
       "descriptionEn": "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration"
     },
     {
@@ -2200,7 +2174,7 @@
       "starsNumeric": 19000,
       "categorySlug": "codeintel",
       "categoryEmoji": "🔍",
-      "categoryGeorgian": "კოდის ინტელექტი და კონტექსტი",
+      "categoryGeorgian": "კოდბაზის გრაფები და კონტექსტი",
       "descriptionEn": "Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8× fewer tokens on reviews and up to 49× on daily coding tasks."
     },
     {
@@ -2211,8 +2185,63 @@
       "starsNumeric": 12000,
       "categorySlug": "codeintel",
       "categoryEmoji": "🔍",
-      "categoryGeorgian": "კოდის ინტელექტი და კონტექსტი",
+      "categoryGeorgian": "კოდბაზის გრაფები და კონტექსტი",
       "descriptionEn": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent."
+    },
+    {
+      "name": "Claude Mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "stars": "83K",
+      "description": "Claude Mem Claude Code-ის მეხსიერების plugin-ია — ავტომატურად ჩაწერს რასაც Claude coding session-ში აკეთებს, Claude-ის agent SDK-ით კომპრესსავს და შემდეგ session-ში რელევანტურ კონტექსტს უბრუნებს. TypeScript-ში, claude-mem.ai. ანუ ყოველ ჯერზე ხელახლა ახსნა აღარ სჭირდება — Claude „ახსოვს\" რაზე მუშაობდი. 82,000+ ვარსკვლავი.",
+      "starsNumeric": 83000,
+      "categorySlug": "tokens",
+      "categoryEmoji": "💸",
+      "categoryGeorgian": "ტოკენების დაზოგვა და ხარჯი",
+      "descriptionEn": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future sessions."
+    },
+    {
+      "name": "Caveman",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "stars": "74K",
+      "description": "Caveman Claude Code-ის (და სხვა agent-ების) ტოკენების მოხმარებას 65%-ით ამცირებს — AI-ს ასწავლის „გამოქვაბულის ადამიანივით\" ლაპარაკს, ზედმეტი სიტყვების გამოტოვებით. ხარისხი არ ეცემა, მხოლოდ verbosity მცირდება. Lite, Full და Ultra ინტენსივობის დონეები. Python-ში, Julius Brussee-ის მიერ. 40+ coding agent-ს უჭერს მხარს (Claude Code, Codex, Gemini CLI, Cursor). 2026 წლის აპრილში გამოჩნდა, 73,000+ ვარსკვლავი — AI ხარჯების შემამცირებელი ყველაზე პოპულარული skill.",
+      "starsNumeric": 74000,
+      "categorySlug": "tokens",
+      "categoryEmoji": "💸",
+      "categoryGeorgian": "ტოკენების დაზოგვა და ხარჯი",
+      "descriptionEn": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman"
+    },
+    {
+      "name": "Headroom",
+      "url": "https://github.com/chopratejas/headroom",
+      "stars": "31K",
+      "description": "Headroom LLM აპლიკაციებისთვის context optimization layer-ია — AI-ს გადასაცემ მონაცემებს (ფაილები, ლოგები, RAG შედეგები) 70-95%-ით ამცირებს პასუხის ხარისხის დაკარგვის გარეშე. Python-ში, headroom-docs.vercel.app. Claude Code-ში, Codex-ში და Aider-ში ერთი ბრძანებით ეშვება. AI ხარჯების მნიშვნელოვნად შემცირებისა და უფრო გრძელი სამუშაო სესიების შესაძლებლობისთვის — 29,000+ ვარსკვლავი.",
+      "starsNumeric": 31000,
+      "categorySlug": "tokens",
+      "categoryEmoji": "💸",
+      "categoryGeorgian": "ტოკენების დაზოგვა და ხარჯი",
+      "descriptionEn": "The Context Optimization Layer for LLM Applications"
+    },
+    {
+      "name": "toon",
+      "url": "https://github.com/toon-format/toon",
+      "stars": "25K",
+      "description": "TOON (Token-Oriented Object Notation) არის JSON-ის ალტერნატიული სერიალიზაციის ფორმატი, სპეციალურად LLM prompt-ებისთვის ოპტიმიზებული — compact, human-readable და schema-aware. benchmark-ების მიხედვით JSON-ზე 39%-ით ნაკლებ ტოკენს მოიხმარს ერთსა და იმავე მონაცემებისთვის, რაც API ხარჯებს პირდაპირ ამცირებს. სპეციფიკაცია, benchmark-ები და TypeScript SDK ღია კოდით ხელმისაწვდომია. ეს ფრეიმვორკი არ არის — ინფრასტრუქტურის კომპონენტია ვინც LLM-ებს დიდ structured data-ს გადასცემს.",
+      "starsNumeric": 25000,
+      "categorySlug": "tokens",
+      "categoryEmoji": "💸",
+      "categoryGeorgian": "ტოკენების დაზოგვა და ხარჯი",
+      "descriptionEn": "🎒 Token-Oriented Object Notation (TOON) – Compact, human-readable, schema-aware JSON for LLM prompts. Spec, benchmarks, TypeScript SDK."
+    },
+    {
+      "name": "agentmemory",
+      "url": "https://github.com/rohitg00/agentmemory",
+      "stars": "23K",
+      "description": "agentmemory AI coding agent-ებს persistent მეხსიერებას აძლევს — lifecycle hooks-ით ჩუმად იწერს რას აკეთებს agent-ი 12+ ხელსაწყოში (Claude Code, Copilot CLI, Cursor, Gemini CLI), დაკვირვებებს searchable structured memory-ად კუმშავს (keyword + vector + knowledge graph hybrid, 95.2% retrieval accuracy R@5) და ახალ session-ში რელევანტურ კონტექსტს უბრუნებს. SQLite-ზე მუშაობს გარე ბაზის გარეშე და 53-tool MCP server-ად ეშვება — ~92%-ით ამცირებს ტოკენებს. TypeScript, Apache-2.0, v0.9.24 (2026 წლის 29 მაისი), 23,000+ ვარსკვლავი, GitHub Trending #5 — **Claude Mem**-ისა და **mem0**-ის MCP-native კონკურენტი.",
+      "starsNumeric": 23000,
+      "categorySlug": "tokens",
+      "categoryEmoji": "💸",
+      "categoryGeorgian": "ტოკენების დაზოგვა და ხარჯი",
+      "descriptionEn": "#1 Persistent memory for AI coding agents based on real-world benchmarks"
     },
     {
       "name": "Ollama",
@@ -2380,17 +2409,6 @@
       "descriptionEn": "Distribute and run LLMs as a single self-contained executable file across operating systems — by Mozilla, built on llama.cpp."
     },
     {
-      "name": "toon",
-      "url": "https://github.com/toon-format/toon",
-      "stars": "25K",
-      "description": "TOON (Token-Oriented Object Notation) არის JSON-ის ალტერნატიული სერიალიზაციის ფორმატი, სპეციალურად LLM prompt-ებისთვის ოპტიმიზებული — compact, human-readable და schema-aware. benchmark-ების მიხედვით JSON-ზე 39%-ით ნაკლებ ტოკენს მოიხმარს ერთსა და იმავე მონაცემებისთვის, რაც API ხარჯებს პირდაპირ ამცირებს. სპეციფიკაცია, benchmark-ები და TypeScript SDK ღია კოდით ხელმისაწვდომია. ეს ფრეიმვორკი არ არის — ინფრასტრუქტურის კომპონენტია ვინც LLM-ებს დიდ structured data-ს გადასცემს.",
-      "starsNumeric": 25000,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
-      "descriptionEn": "🎒 Token-Oriented Object Notation (TOON) – Compact, human-readable, schema-aware JSON for LLM prompts. Spec, benchmarks, TypeScript SDK."
-    },
-    {
       "name": "DeepEval",
       "url": "https://github.com/confident-ai/deepeval",
       "stars": "16K",
@@ -2444,17 +2462,6 @@
       "categoryEmoji": "⚙️",
       "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
       "descriptionEn": "Security scanner for AI agent skills — detects prompt injection, data exfiltration and supply-chain risks before install."
-    },
-    {
-      "name": "Headroom",
-      "url": "https://github.com/chopratejas/headroom",
-      "stars": "31K",
-      "description": "Headroom LLM აპლიკაციებისთვის context optimization layer-ია — AI-ს გადასაცემ მონაცემებს (ფაილები, ლოგები, RAG შედეგები) 70-95%-ით ამცირებს პასუხის ხარისხის დაკარგვის გარეშე. Python-ში, headroom-docs.vercel.app. Claude Code-ში, Codex-ში და Aider-ში ერთი ბრძანებით ეშვება. AI ხარჯების მნიშვნელოვნად შემცირებისა და უფრო გრძელი სამუშაო სესიების შესაძლებლობისთვის — 29,000+ ვარსკვლავი.",
-      "starsNumeric": 31000,
-      "categorySlug": "infra",
-      "categoryEmoji": "⚙️",
-      "categoryGeorgian": "ინფერენსი და LLM ხელსაწყოები",
-      "descriptionEn": "The Context Optimization Layer for LLM Applications"
     },
     {
       "name": "ComfyUI",

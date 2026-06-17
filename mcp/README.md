@@ -1,6 +1,6 @@
 # AI Pulse Georgia — MCP Server
 
-Query the [awesome-ai-pulse-georgia](https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia) curated collection (249 AI repos across 14 categories) directly from inside Claude Code, Cursor, Codex, Claude.ai, or any other [Model Context Protocol](https://modelcontextprotocol.io)–compatible client — or straight from your terminal with the bundled `aipulse` **CLI**.
+Query the [awesome-ai-pulse-georgia](https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia) curated collection (250 AI repos across 14 categories) directly from inside Claude Code, Cursor, Codex, Claude.ai, or any other [Model Context Protocol](https://modelcontextprotocol.io)–compatible client — or straight from your terminal with the bundled `aipulse` **CLI**.
 
 Instead of opening GitHub and scrolling through a README, ask your AI assistant:
 

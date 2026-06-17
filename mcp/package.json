@@ -1,7 +1,7 @@
 {
   "name": "@aipulsegeorgia/mcp-server",
   "version": "0.2.18",
-  "description": "MCP server + CLI for the AI Pulse Georgia awesome list — query 249 curated AI repos from inside Claude Code, Cursor, other MCP clients, or straight from your terminal.",
+  "description": "MCP server + CLI for the AI Pulse Georgia awesome list — query 250 curated AI repos from inside Claude Code, Cursor, other MCP clients, or straight from your terminal.",
   "type": "module",
   "bin": {
     "aipulsegeorgia-mcp": "dist/index.js",
@@ -16,6 +16,7 @@
   "scripts": {
     "build:data": "tsx scripts/build-data.ts",
     "refresh:stars": "tsx scripts/refresh-stars.ts",
+    "build:site": "tsx scripts/build-site-data.ts",
     "build": "npm run build:data && tsup src/index.ts src/cli.ts --format esm --target node20 --clean --shims",
     "dev": "tsx src/index.ts",
     "cli": "tsx src/cli.ts",

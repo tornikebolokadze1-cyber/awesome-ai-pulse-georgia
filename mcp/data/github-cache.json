@@ -1278,5 +1278,21 @@
   "punkpeye/awesome-mcp-servers": {
     "description": "A collection of MCP servers.",
     "fetchedAt": "2026-07-09T22:15:44.421Z"
+  },
+  "emilkowalski/skills": {
+    "description": "Skills for Design Engineers.",
+    "fetchedAt": "2026-07-17T23:01:27.484Z"
+  },
+  "Graphify-Labs/graphify": {
+    "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+    "fetchedAt": "2026-07-17T23:01:27.858Z"
+  },
+  "headroomlabs-ai/headroom": {
+    "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+    "fetchedAt": "2026-07-17T23:01:28.233Z"
+  },
+  "ATH-MaaS/Pixelle-Video": {
+    "description": "🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine",
+    "fetchedAt": "2026-07-17T23:01:28.603Z"
   }
 }

@@ -1294,5 +1294,9 @@
   "ATH-MaaS/Pixelle-Video": {
     "description": "🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine",
     "fetchedAt": "2026-07-17T23:01:28.603Z"
+  },
+  "Orkas-AI/Orkas": {
+    "description": "Open-source multi-agent AI desktop client — build and command your AI agent team through conversation. A commander LLM dispatches sub-agents in parallel or in series; agents self-evolve via reflection and skill crystallization. Local-first, BYO LLM keys (Claude · OpenAI · Gemini · DeepSeek · Kimi · GLM · Qwen). macOS / Windows / Linux.",
+    "fetchedAt": "2026-07-28T03:01:49.733Z"
   }
 }

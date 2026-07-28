@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-27T09:53:48.849Z",
-  "totalRepos": 300,
+  "generated": "2026-07-28T03:01:49.841Z",
+  "totalRepos": 301,
   "categories": [
     {
       "slug": "coding",
@@ -56,7 +56,7 @@
       "emoji": "💼",
       "english": "AI Assistants & Business Agents",
       "georgian": "AI ასისტენტები და ბიზნეს-აგენტები",
-      "count": 34
+      "count": 35
     },
     {
       "slug": "finance",
@@ -1901,6 +1901,17 @@
       "categoryEmoji": "💼",
       "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
       "descriptionEn": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 "
+    },
+    {
+      "name": "Orkas",
+      "url": "https://github.com/Orkas-AI/Orkas",
+      "stars": "725",
+      "description": "Orkas არის MIT ლიცენზიის მქონე, ღია კოდის, local-first desktop AI workforce. Commander მომხმარებლის მიზანს გეგმად გარდაქმნის და სპეციალიზებულ აგენტებს პარალელურად ან თანმიმდევრულად ამუშავებს ერთ ჩატში. საუბრები, ფაილები, აგენტების კონფიგურაცია და მოდელის გასაღებები ლოკალურად ინახება; open-source ვერსია მუშაობს მომხმარებლის მიერ არჩეულ პროვაიდერებთან ან თავსებად local model endpoint-ებთან. TypeScript.",
+      "starsNumeric": 725,
+      "categorySlug": "business",
+      "categoryEmoji": "💼",
+      "categoryGeorgian": "AI ასისტენტები და ბიზნეს-აგენტები",
+      "descriptionEn": "Open-source multi-agent AI desktop client — build and command your AI agent team through conversation. A commander LLM dispatches sub-agents in parallel or in series; agents self-evolve via reflection and skill crystallization. Local-first, BYO LLM keys (Claude · OpenAI · Gemini · DeepSeek · Kimi · GLM · Qwen). macOS / Windows / Linux."
     },
     {
       "name": "Open WebUI",

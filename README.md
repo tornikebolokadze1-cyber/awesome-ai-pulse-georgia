@@ -504,3 +504,6 @@ npx -p @aipulsegeorgia/mcp-server aipulse stats
 ## ლიცენზია
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+
+- [Bride Cognitive API](https://tools.gracestack.se/oracle-bridge-landing.html) — Kognitiv AI som faktiskt tänker. HDC + Active Inference + anomalidetektion. 7 dagars gratis trial, inget kort. 499 kr/mån efter trial. Byggd av Gracestack AB (Sverige).

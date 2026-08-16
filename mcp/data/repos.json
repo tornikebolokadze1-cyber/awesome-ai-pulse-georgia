@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-10T07:42:23.879Z",
-  "totalRepos": 300,
+  "generated": "2026-08-16T00:10:15.694Z",
+  "totalRepos": 301,
   "categories": [
     {
       "slug": "coding",
@@ -28,7 +28,7 @@
       "emoji": "🔌",
       "english": "MCP Integrations",
       "georgian": "MCP ინტეგრაციები",
-      "count": 23
+      "count": 24
     },
     {
       "slug": "scraping",
@@ -1252,6 +1252,17 @@
       "categoryEmoji": "🔌",
       "categoryGeorgian": "MCP ინტეგრაციები",
       "descriptionEn": "An MCP server for interacting with Sentry via LLMs."
+    },
+    {
+      "name": "Agent QA",
+      "url": "https://github.com/vostride/agent-qa",
+      "stars": "768",
+      "description": "Agent QA — ღია კოდის თვითგაუმჯობესებადი QA აგენტია software გუნდებისთვის: ბუნებრივი ენით წერს და უშვებს web/mobile ტესტებს, წინა გაშვებების მეხსიერებას იყენებს და UI ცვლილებებს self-healing-ით ერგება. TypeScript-შია დაწერილი; მოჰყვება CLI, dashboard, MCP server და Agent Skills. მუშაობს OpenAI- და Anthropic-compatible endpoint-ებთან, Gemini-სთან და ლოკალურ/open-source მოდელებთან.",
+      "starsNumeric": 768,
+      "categorySlug": "mcp",
+      "categoryEmoji": "🔌",
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "Open-source self-improving QA agent for software teams. A test harness with memory. Write tests in natural language for web and mobile. agent-qa learns from every run, adapts to UI changes, and catches regressions before you ship."
     },
     {
       "name": "E2B MCP",

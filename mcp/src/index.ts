@@ -2,7 +2,7 @@
 /**
  * AI Pulse Georgia MCP Server
  *
- * Exposes the curated awesome-ai-pulse-georgia repo collection (300 repos
+ * Exposes the curated awesome-ai-pulse-georgia repo collection (301 repos
  * across 15 categories) as MCP tools. Designed for stdio transport — usable
  * from Claude Code, Cursor, Codex, and any other MCP-compatible client.
  *

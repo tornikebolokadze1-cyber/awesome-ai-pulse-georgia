@@ -1294,5 +1294,9 @@
   "ATH-MaaS/Pixelle-Video": {
     "description": "🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine",
     "fetchedAt": "2026-07-17T23:01:28.603Z"
+  },
+  "vostride/agent-qa": {
+    "description": "Open-source self-improving QA agent for software teams. A test harness with memory. Write tests in natural language for web and mobile. agent-qa learns from every run, adapts to UI changes, and catches regressions before you ship.",
+    "fetchedAt": "2026-08-16T00:09:35.822Z"
   }
 }

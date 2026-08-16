@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-300-00D0FF?style=flat-square&labelColor=111827&v=35" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-301-00D0FF?style=flat-square&labelColor=111827&v=35" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-15-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -23,7 +23,7 @@
 
 ## ⚡ გამოიყენე Claude Code-ში / Cursor-ში — MCP Server-ით ან CLI-ით
 
-ეს მთელი კოლექცია ხელმისაწვდომია **MCP server-ად** — Claude Code-ის, Cursor-ის, Codex-ის ან ნებისმიერი MCP-თავსებადი client-ის შიგნიდან 300 რეპოს ეძებ ბუნებრივი ენით. ნაცვლად იმისა, რომ GitHub-ი გახსნა და README-ი დააქოქო, AI ასისტენტს ჰკითხე *"აი Pulse-ის კოლექციაში რა არის საუკეთესო RAG-ისთვის?"* — სწორ რეპოს ქართული აღწერით დაგიბრუნებს.
+ეს მთელი კოლექცია ხელმისაწვდომია **MCP server-ად** — Claude Code-ის, Cursor-ის, Codex-ის ან ნებისმიერი MCP-თავსებადი client-ის შიგნიდან 301 რეპოს ეძებ ბუნებრივი ენით. ნაცვლად იმისა, რომ GitHub-ი გახსნა და README-ი დააქოქო, AI ასისტენტს ჰკითხე *"აი Pulse-ის კოლექციაში რა არის საუკეთესო RAG-ისთვის?"* — სწორ რეპოს ქართული აღწერით დაგიბრუნებს.
 
 **MCP Install** — `~/.claude/claude_desktop_config.json` ან Cursor MCP settings-ში:
 
@@ -48,7 +48,7 @@ npx -p @aipulsegeorgia/mcp-server aipulse stats
 
 ბრძანებები: `categories` · `list` · `search` · `get` · `stats` — ფლაგებით `-c/--category`, `-n/--limit`, `-l/--lang en|ka|both`, `--json`.
 
-> *Available as an MCP server **and an `aipulse` CLI** — query 300 curated AI repos from Claude Code, Cursor, any MCP client, or straight from your terminal.* Full docs: [`mcp/README.md`](./mcp/README.md) · Source: [`mcp/`](./mcp/)
+> *Available as an MCP server **and an `aipulse` CLI** — query 301 curated AI repos from Claude Code, Cursor, any MCP client, or straight from your terminal.* Full docs: [`mcp/README.md`](./mcp/README.md) · Source: [`mcp/`](./mcp/)
 
 ---
 
@@ -189,6 +189,7 @@ npx -p @aipulsegeorgia/mcp-server aipulse stats
 | [Apify MCP](https://github.com/apify/apify-mcp-server) | 3.1K | Apify MCP Apify-ის ოფიციალური MCP სერვერია — AI ასისტენტებს Apify Store-ის 1,000+ მზა web scraper-ი და automation tool ხელმისაწვდომი ხდება. Instagram, TikTok, Amazon, Google Maps, LinkedIn — ნებისმიერი ვებსაიტიდან სტრუქტურირებული მონაცემები. TypeScript-ში, mcp.apify.com. სოციალური მედიის monitoring-ისთვის, market research-ისთვის ან lead generation-ისთვის — 1,300+ ვარსკვლავი. |
 | [Power BI Modeling MCP](https://github.com/microsoft/powerbi-modeling-mcp) | 1.1K | Power BI Modeling MCP Microsoft-ის ოფიციალური MCP სერვერია Power BI-ის სემანტიკური მოდელირებისთვის. AI ასისტენტს შეუძლია DAX შეკითხვების გაშვება, data models-ის შექმნა და რედაქტირება, row-level security და მრავალენოვანი თარგმანი — ბუნებრივი ენით. Power BI Desktop-თან, Fabric workspace-თან და Power BI Project ფაილებთან. Microsoft-ის ოფიციალური გამოშვება, 862 ვარსკვლავი — ჯერ ახალი, მაგრამ enterprise BI-სთვის მნიშვნელოვანი. |
 | [Sentry MCP](https://github.com/getsentry/sentry-mcp) | 809 | Sentry MCP Sentry-ის ოფიციალური MCP სერვერია error tracking-ის AI-სთან ინტეგრაციისთვის. AI ასისტენტს Sentry-ის error report-ებზე, stack trace-ებზე, issue-ების სიხშირის ტრენდებსა და performance მონაცემებზე წვდომა ეძლევა. TypeScript-ში დაწერილია, mcp.sentry.dev. Production bug-ების AI-ასისტირებული დიაგნოსტიკისთვის შეუცვლელია. 770+ ვარსკვლავი. |
+| [Agent QA](https://github.com/vostride/agent-qa) | 768 | Agent QA — ღია კოდის თვითგაუმჯობესებადი QA აგენტია software გუნდებისთვის: ბუნებრივი ენით წერს და უშვებს web/mobile ტესტებს, წინა გაშვებების მეხსიერებას იყენებს და UI ცვლილებებს self-healing-ით ერგება. TypeScript-შია დაწერილი; მოჰყვება CLI, dashboard, MCP server და Agent Skills. მუშაობს OpenAI- და Anthropic-compatible endpoint-ებთან, Gemini-სთან და ლოკალურ/open-source მოდელებთან. |
 | [E2B MCP](https://github.com/e2b-dev/mcp-server) | 394 | E2B MCP E2B-ის MCP სერვერი იყო AI agent-ებისთვის cloud sandbox-ში კოდის გასაშვებად — Python, JavaScript, Bash იზოლირებულ გარემოში. JavaScript-ში. **ყურადღება: ეს repo archived (მიტოვებული) სტატუსშია 2026 წლიდან** — აქტიური მხარდაჭერა არ არის. E2B-ის ახალი MCP ინტეგრაციისთვის e2b.dev-ის ოფიციალური დოკუმენტაცია შეამოწმე. 394 ვარსკვლავი. |
 
 ---

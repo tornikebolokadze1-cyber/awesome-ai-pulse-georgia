@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-17T23:01:28.711Z",
+  "generated": "2026-08-31T20:24:31.782Z",
   "categories": [
     {
       "id": "coding",
@@ -1013,6 +1013,15 @@
       "desc": "Sentry MCP Sentry-ის ოფიციალური MCP სერვერია error tracking-ის AI-სთან ინტეგრაციისთვის. AI ასისტენტს Sentry-ის error report-ებზე, stack trace-ებზე, issue-ების სიხშირის ტრენდებსა და performance მონაცემებზე წვდომა ეძლევა. TypeScript-ში დაწერილია, mcp.sentry.dev. Production bug-ების AI-ასისტირებული დიაგნოსტიკისთვის შეუცვლელია. 770+ ვარსკვლავი.",
       "descEn": "An MCP server for interacting with Sentry via LLMs.",
       "stars": 840
+    },
+    {
+      "id": "agent-qa",
+      "label": "Agent QA",
+      "category": "mcp",
+      "url": "https://github.com/vostride/agent-qa",
+      "desc": "Agent QA — source-available (FSL-1.1-ALv2) თვითგაუმჯობესებადი QA აგენტია software გუნდებისთვის: ბუნებრივი ენით წერს და უშვებს web/mobile ტესტებს, წინა გაშვებების მეხსიერებას იყენებს და UI ცვლილებებს self-healing-ით ერგება. TypeScript-შია დაწერილი; მოჰყვება CLI, dashboard, MCP server და Agent Skills. თითოეული ვერსია ორი წლის შემდეგ Apache-2.0-ზე გადადის.",
+      "descEn": "Source-available self-improving QA agent for natural-language web and mobile testing, licensed under FSL-1.1-ALv2 with a per-version Apache-2.0 grant after two years.",
+      "stars": 896
     },
     {
       "id": "mcp-server",
@@ -2790,163 +2799,163 @@
   ],
   "links": [
     {
-      "source": "opencode",
-      "target": "claw-code",
+      "source": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "claude-code-2",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "gemini-cli",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "zed",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "codex",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "openhands",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "cline",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "pi",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "gpt-engineer",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "oh-my-openagent",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "aider",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "goose",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "claude-code-router",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "tabby",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "continue",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "gpt-pilot",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "void",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "claude-task-master",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "codewhale",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "openclaude",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "qwen-code",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "ai-website-cloner-template",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "roo-code",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "kilocode",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "cmux",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "orca",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "devika",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "avante-nvim",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "oh-my-pi",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "free-claude-code",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "herdr",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
       "source": "ml-intern",
-      "target": "claw-code",
+      "target": "opencode",
       "type": "cluster"
     },
     {
@@ -3286,6 +3295,11 @@
     },
     {
       "source": "sentry-mcp",
+      "target": "servers",
+      "type": "cluster"
+    },
+    {
+      "source": "agent-qa",
       "target": "servers",
       "type": "cluster"
     },
@@ -4576,6 +4590,11 @@
     },
     {
       "source": "claude-code",
+      "target": "agent-qa",
+      "type": "hub"
+    },
+    {
+      "source": "claude-code",
       "target": "mcp-server",
       "type": "hub"
     },
@@ -4916,6 +4935,11 @@
     },
     {
       "source": "claude-mem",
+      "target": "codebase-memory-mcp",
+      "type": "cross"
+    },
+    {
+      "source": "claude-mem",
       "target": "lightrag",
       "type": "cross"
     },
@@ -4926,17 +4950,7 @@
     },
     {
       "source": "claude-mem",
-      "target": "codebase-memory-mcp",
-      "type": "cross"
-    },
-    {
-      "source": "claude-mem",
       "target": "storm",
-      "type": "cross"
-    },
-    {
-      "source": "claude-mem",
-      "target": "chroma",
       "type": "cross"
     },
     {
@@ -4951,12 +4965,22 @@
     },
     {
       "source": "claude-mem",
+      "target": "chroma",
+      "type": "cross"
+    },
+    {
+      "source": "claude-mem",
       "target": "gbrain",
       "type": "cross"
     },
     {
       "source": "claude-mem",
       "target": "letta",
+      "type": "cross"
+    },
+    {
+      "source": "claude-mem",
+      "target": "tencentdb-agent-memory",
       "type": "cross"
     },
     {
@@ -4972,11 +4996,6 @@
     {
       "source": "claude-mem",
       "target": "hindsight",
-      "type": "cross"
-    },
-    {
-      "source": "claude-mem",
-      "target": "tencentdb-agent-memory",
       "type": "cross"
     },
     {

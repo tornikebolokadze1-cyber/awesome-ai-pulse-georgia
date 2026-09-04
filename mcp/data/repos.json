@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-31T12:54:11.125Z",
-  "totalRepos": 300,
+  "generated": "2026-08-31T20:24:48.730Z",
+  "totalRepos": 301,
   "categories": [
     {
       "slug": "coding",
@@ -28,7 +28,7 @@
       "emoji": "🔌",
       "english": "MCP Integrations",
       "georgian": "MCP ინტეგრაციები",
-      "count": 23
+      "count": 24
     },
     {
       "slug": "scraping",
@@ -1252,6 +1252,17 @@
       "categoryEmoji": "🔌",
       "categoryGeorgian": "MCP ინტეგრაციები",
       "descriptionEn": "An MCP server for interacting with Sentry via LLMs."
+    },
+    {
+      "name": "Agent QA",
+      "url": "https://github.com/vostride/agent-qa",
+      "stars": "896",
+      "description": "Agent QA — source-available (FSL-1.1-ALv2) თვითგაუმჯობესებადი QA აგენტია software გუნდებისთვის: ბუნებრივი ენით წერს და უშვებს web/mobile ტესტებს, წინა გაშვებების მეხსიერებას იყენებს და UI ცვლილებებს self-healing-ით ერგება. TypeScript-შია დაწერილი; მოჰყვება CLI, dashboard, MCP server და Agent Skills. თითოეული ვერსია ორი წლის შემდეგ Apache-2.0-ზე გადადის.",
+      "starsNumeric": 896,
+      "categorySlug": "mcp",
+      "categoryEmoji": "🔌",
+      "categoryGeorgian": "MCP ინტეგრაციები",
+      "descriptionEn": "Source-available self-improving QA agent for natural-language web and mobile testing, licensed under FSL-1.1-ALv2 with a per-version Apache-2.0 grant after two years."
     },
     {
       "name": "E2B MCP",

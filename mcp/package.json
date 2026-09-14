@@ -47,7 +47,7 @@
   "homepage": "https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia/tree/main/mcp",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia.git",
+    "url": "git+https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia.git",
     "directory": "mcp"
   },
   "dependencies": {

@@ -2,7 +2,13 @@ name: MCP npm publish
 
 # Publish @aipulsegeorgia/mcp-server to npm whenever mcp/package.json is
 # updated on main. Idempotent — checks if the version already exists on
-# npm and skips re-publish when matched. Requires repository secret NPM_TOKEN.
+# npm and skips re-publish when matched.
+#
+# Auth: npm Trusted Publishing (OIDC). No NPM_TOKEN secret is used — the
+# job's id-token is exchanged for a short-lived publish credential, which
+# also satisfies npm's 2FA-for-writes requirement and attaches provenance.
+# The package's trusted publisher on npmjs.com must point at this repo and
+# this workflow file (mcp-publish.yml). Needs npm >= 11.5.1.
 
 on:
   push:
@@ -23,13 +29,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node 20
+      - name: Setup Node 24
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           registry-url: 'https://registry.npmjs.org'
           cache: 'npm'
           cache-dependency-path: 'mcp/package-lock.json'
+
+      - name: Update npm (trusted publishing needs npm >= 11.5.1)
+        run: npm install -g npm@latest && npm --version
 
       - name: Install
         working-directory: mcp
@@ -68,8 +77,6 @@ jobs:
         if: steps.check.outputs.exists == 'false'
         working-directory: mcp
         run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Summary
         run: |

@@ -7,16 +7,17 @@
  * the repository itself. Approving a proposal only adds a label; the label
  * starts the apply workflow, which runs every check before anything merges.
  */
-import { createHash, timingSafeEqual } from "node:crypto";
-import { createServer, type IncomingMessage, type Server, type ServerResponse } from "node:http";
+import { timingSafeEqual } from "node:crypto";
+import { createServer, type IncomingMessage, type Server } from "node:http";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import { z } from "zod";
 import type { Collection } from "../../mcp/src/data.js";
 import { getRepo, getStats, listRepos, pickDescription, searchRepos, summarizeRepo } from "../../mcp/src/query.js";
 import type { RestClient } from "./github.js";
+import { bearer, digest, json, readText } from "./http.js";
 import { log } from "./log.js";
-import { createOAuth, GROK_REDIRECT } from "./oauth.js";
+import { createOAuth } from "./oauth.js";
 import { IssueStore, isTrustedAuthor, LABELS, plain, type IssueRecord } from "./proposals.js";
 
 export type GatewayConfig = {
@@ -27,7 +28,7 @@ export type GatewayConfig = {
   /** test seam; defaults to fetching mcp/data/repos.json from the branch */
   loadCollection?: () => Promise<Collection>;
   rateLimitPerMinute?: number;
-  /** where OAuth codes may be sent; grok.com's address by default */
+  /** where OAuth codes may be sent; grok.com's address when absent (oauth.ts) */
   redirectUris?: readonly string[];
   /** the gateway's public origin, when the proxy in front does not pass the Host on */
   publicUrl?: string;
@@ -51,14 +52,10 @@ const CACHE_MS = 5 * 60_000;
 /** Each suggestion opens an issue and starts a model-backed workflow, so the chat may file only a few. */
 const SUGGESTIONS_PER_HOUR = 10;
 
-function digest(s: string): Buffer {
-  return createHash("sha256").update(s).digest();
-}
-
 /** Constant-time check of the Authorization header. */
 export function authorized(header: string | undefined, token: string): boolean {
-  if (!header?.startsWith("Bearer ")) return false;
-  return timingSafeEqual(digest(header.slice(7).trim()), digest(token));
+  const given = bearer(header);
+  return given !== null && timingSafeEqual(digest(given), digest(token));
 }
 
 async function fetchCollection(url: string): Promise<Collection> {
@@ -67,20 +64,8 @@ async function fetchCollection(url: string): Promise<Collection> {
   return (await res.json()) as Collection;
 }
 
-function json(res: ServerResponse, status: number, body: unknown): void {
-  res.writeHead(status, { "content-type": "application/json" });
-  res.end(JSON.stringify(body));
-}
-
 async function readBody(req: IncomingMessage): Promise<unknown> {
-  const chunks: Buffer[] = [];
-  let size = 0;
-  for await (const chunk of req) {
-    size += (chunk as Buffer).length;
-    if (size > MAX_BODY) throw Object.assign(new Error("request body too large"), { status: 413 });
-    chunks.push(chunk as Buffer);
-  }
-  const text = Buffer.concat(chunks).toString("utf-8");
+  const text = await readText(req, MAX_BODY);
   try {
     return text ? JSON.parse(text) : undefined;
   } catch {
@@ -368,7 +353,7 @@ const FAILURE: Record<number, { code: number; message: string }> = {
 
 export function createGateway(cfg: GatewayConfig): Server {
   const store = new IssueStore(cfg.github, cfg.repo);
-  const oauth = createOAuth({ secret: cfg.token, redirectUris: cfg.redirectUris ?? [GROK_REDIRECT], publicUrl: cfg.publicUrl, now: cfg.now });
+  const oauth = createOAuth({ secret: cfg.token, redirectUris: cfg.redirectUris, publicUrl: cfg.publicUrl, now: cfg.now });
   const allowSuggestion = windowed(SUGGESTIONS_PER_HOUR, 3_600_000);
   const dataUrl = `https://raw.githubusercontent.com/${cfg.repo}/${cfg.branch}/mcp/data/repos.json`;
   let cached: { at: number; data: Collection } | null = null;
@@ -401,7 +386,13 @@ export function createGateway(cfg: GatewayConfig): Server {
 
   return createServer(async (req, res) => {
     const started = Date.now();
-    const url = new URL(req.url ?? "/", "http://localhost");
+    let url: URL;
+    try {
+      url = new URL(req.url ?? "/", "http://localhost");
+    } catch {
+      // a target such as "//" is no URL; left unanswered, the rejection would end the process
+      return json(res, 400, { error: "bad request" });
+    }
     let tool: string | undefined;
     res.on("finish", () =>
       log.info("request", { method: req.method, path: url.pathname, status: res.statusCode, ms: Date.now() - started, ...(tool ? { tool } : {}) }),
@@ -414,7 +405,7 @@ export function createGateway(cfg: GatewayConfig): Server {
       if (url.pathname !== "/mcp") return json(res, 404, { error: "not found" });
       const auth = req.headers.authorization;
       if (!authorized(auth, cfg.token) && !oauth.accepts(auth)) {
-        res.setHeader("WWW-Authenticate", oauth.challenge(req, auth !== undefined));
+        res.setHeader("WWW-Authenticate", oauth.wwwAuthenticate(req, auth !== undefined));
         return json(res, 401, { error: "unauthorized" });
       }
       if (!allow()) return json(res, 429, { error: "too many requests" });

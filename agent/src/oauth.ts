@@ -32,6 +32,8 @@ const LOCKOUT_MS = 15 * 60_000;
 const LOCAL = /^(localhost|127\.0\.0\.1)(:\d{1,5})?$/i;
 const HOST = /^[a-z0-9.-]+(:\d{1,5})?$/i;
 const VERIFIER = /^[A-Za-z0-9._~-]{43,128}$/;
+/** A client_id the consent page shows as a name; anything else is free text from whoever made the link. */
+const PLAIN_NAME = /^[A-Za-z0-9._-]{1,64}$/;
 const METADATA = new Set(["/.well-known/oauth-authorization-server", "/.well-known/oauth-protected-resource", "/.well-known/oauth-protected-resource/mcp"]);
 
 export type OAuthConfig = {
@@ -74,6 +76,8 @@ export function redirectUrisFrom(value: string | undefined): string[] {
       throw new Error(`OAUTH_REDIRECT_URIS has something that is not an address: ${uri}`);
     }
     if (!secureOrLocal(u) || u.hash || u.username || u.password) throw new Error(`OAUTH_REDIRECT_URIS takes https addresses without a fragment or a login: ${uri}`);
+    // the redirect re-parses the address, so "/a/../b" or an upper-case host would send codes somewhere the list does not say
+    if (u.href !== uri) throw new Error(`OAUTH_REDIRECT_URIS takes addresses written the way a browser writes them; this one reads as ${u.href}: ${uri}`);
   }
   return list;
 }
@@ -157,7 +161,8 @@ function authRequest(p: URLSearchParams, allowed: readonly string[]): AuthReques
   const clientId = p.get("client_id") ?? "";
   const redirectUri = p.get("redirect_uri") ?? "";
   if (!clientId || clientId.length > MAX_CLIENT_ID) return { error: `client_id is missing or longer than ${MAX_CLIENT_ID} characters` };
-  if (!allowed.includes(redirectUri)) return { error: `redirect_uri is not on this gateway's list: ${redirectUri.slice(0, 300) || "(none)"}` };
+  // the refused address is not repeated: anyone can put text there and send the owner the link
+  if (!allowed.includes(redirectUri)) return { error: "redirect_uri is not on this gateway's list" };
   if (p.get("response_type") !== "code") return { error: "response_type must be code" };
   const challenge = p.get("code_challenge") ?? "";
   if (p.get("code_challenge_method") !== "S256" || !/^[A-Za-z0-9_-]{43}$/.test(challenge)) return { error: "a PKCE code_challenge with method S256 is required" };
@@ -173,7 +178,12 @@ function originOf(req: IncomingMessage, publicUrl: string | undefined): string |
   if (publicUrl) return publicUrl;
   const host = (req.headers.host ?? "").toLowerCase();
   if (!HOST.test(host)) return null;
-  return `${LOCAL.test(host) ? "http" : "https"}://${host}`;
+  try {
+    // the pattern lets "name:99999" through, and only a parse sees that it is no address
+    return new URL(`${LOCAL.test(host) ? "http" : "https"}://${host}`).origin;
+  } catch {
+    return null;
+  }
 }
 
 /** RFC 8414: where to sign in, and how. */
@@ -219,7 +229,7 @@ function consent(ask: AuthRequest, gateway: string, problem = ""): string {
   ];
   const hidden = fields.map(([n, v]) => `<input type="hidden" name="${n}" value="${esc(v)}">`).join("");
   return `<h1>Grok-ის დაკავშირება აგენტთან</h1>
-<p><b>${esc(ask.clientId)}</b> ითხოვს წვდომას AI Pulse Georgia-ს აგენტზე (<b>${esc(gateway)}</b>). დაკავშირების შემდეგ მას იგივე უფლებები ექნება, რაც MCP_TOKEN-ს: კოლექციაში ძებნა, შეთავაზებების ნახვა, დამტკიცება და უარყოფა, შენი შეთავაზების შეტანა, სკანის გაშვება და რეპოს ფაილების კითხვა.</p>
+<p><b>${esc(PLAIN_NAME.test(ask.clientId) ? ask.clientId : "უცნობი კლიენტი")}</b> ითხოვს წვდომას AI Pulse Georgia-ს აგენტზე (<b>${esc(gateway)}</b>). დაკავშირების შემდეგ მას იგივე უფლებები ექნება, რაც MCP_TOKEN-ს: კოლექციაში ძებნა, შეთავაზებების ნახვა, დამტკიცება და უარყოფა, შენი შეთავაზების შეტანა, სკანის გაშვება და რეპოს ფაილების კითხვა.</p>
 <p>გააგრძელე მხოლოდ მაშინ, თუ Connect-ს ახლა შენ დააჭირე. თუ ეს ბმული ვინმემ გამოგიგზავნა, დახურე გვერდი. პასუხი აქ გაიგზავნება: <b>${esc(new URL(ask.redirectUri).host)}</b></p>
 ${problem ? `<p class="problem">${esc(problem)}</p>` : ""}<form method="post" action="/oauth/authorize">${hidden}
 <label for="token">MCP_TOKEN</label>
@@ -233,7 +243,7 @@ function refusal(problem: string): string {
   return `<h1>დაკავშირება ვერ მოხერხდა</h1>
 <p>მოთხოვნა არასწორია, ამიტომ კოდი არსად გაიგზავნა. მიზეზი:</p>
 <p class="problem">${esc(problem)}</p>
-<p class="note">აქ ნაჩვენები მისამართი თავად არსად ჩაწერო. თუ Grok-ის დაკავშირება ასე არ გამოდის, ამ გვერდის მისამართი იმას გაუგზავნე, ვინც კარიბჭეს უვლის.</p>`;
+<p class="note">ამ გვერდის გამო თავად არაფერი შეცვალო. თუ ის Grok-ში Connect-ზე შენი დაჭერისთანავე გამოჩნდა, ამ გვერდის მისამართი იმას გაუგზავნე, ვინც კარიბჭეს უვლის. თუ ბმულით გაიხსნა, უბრალოდ დახურე.</p>`;
 }
 
 export function createOAuth(cfg: OAuthConfig): OAuth {

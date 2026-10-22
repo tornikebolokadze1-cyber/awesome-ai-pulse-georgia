@@ -101,6 +101,7 @@ function announceBody(base: string, path: string, length: number): Promise<{ sta
     });
     // the server closes after answering; the unsent body then fails the request, which no longer matters
     req.on("error", fail);
+    req.setTimeout(5000, () => req.destroy(new Error(`no answer from ${path}`)));
     req.flushHeaders();
   });
 }
@@ -128,6 +129,9 @@ test("the metadata names this gateway's own sign-in, on the address it was reach
   const proxied = await getWithHost(gw.base, "/.well-known/oauth-authorization-server", "gateway.example");
   assert.equal((JSON.parse(proxied.body) as { token_endpoint: string }).token_endpoint, "https://gateway.example/oauth/token");
   assert.equal((await getWithHost(gw.base, "/.well-known/oauth-protected-resource", 'gateway.example"x')).status, 400);
+  // a port out of range passes the pattern; only a parse catches it, and the sign-in answers 400, not 500
+  assert.equal((await getWithHost(gw.base, "/.well-known/oauth-authorization-server", "gateway.example:99999")).status, 400);
+  assert.equal((await getWithHost(gw.base, `/oauth/authorize?${ask()}`, "gateway.example:99999")).status, 400);
   const fixed = await listen({ publicUrl: "https://agent.example" });
   try {
     assert.equal(((await (await fetch(`${fixed.base}/.well-known/oauth-authorization-server`)).json()) as { issuer: string }).issuer, "https://agent.example");
@@ -165,8 +169,10 @@ test("the consent page names who asks, this gateway and where the answer goes, e
   assert.equal(r.headers.get("x-frame-options"), "DENY");
   assert.equal(r.headers.get("cache-control"), "no-store");
   const html = await r.text();
-  assert.ok(!html.includes("<script>") && !html.includes("<b>grok</b>"), "what the client sent is shown as text");
-  assert.ok(html.includes("&#60;b&#62;grok&#60;/b&#62;"), html);
+  assert.ok(!html.includes("<script>") && !html.includes("<b>grok</b>"), "what the client sent never becomes markup");
+  assert.ok(html.includes("<b>უცნობი კლიენტი</b>"), "a client_id that is no plain name is not shown as one");
+  assert.equal(html.split("&#60;b&#62;grok&#60;/b&#62;").length - 1, 1, "it is only carried, escaped, in the hidden field that posts it back");
+  assert.ok((await (await fetch(`${gw.base}/oauth/authorize?${ask()}`)).text()).includes("<b>aipulse-grok</b>"), "a plain name is shown");
   assert.ok(html.includes(`<b>${new URL(gw.base).host}</b>`), "the page names the gateway");
   assert.ok(html.includes("<b>grok.com</b>"), "the page names where the code would go");
   assert.match(html, /<input id="token" name="token" type="password"/);
@@ -187,7 +193,8 @@ test("a code goes only to an address on the list, character for character, and t
     assert.equal(page.status, 400, uri);
     const html = await page.text();
     assert.match(html, /redirect_uri is not on this gateway/);
-    assert.match(html, /აქ ნაჩვენები მისამართი თავად არსად ჩაწერო/, "a lookalike address must not read as something to allow");
+    assert.ok(!html.includes(uri) && !html.includes("evil.example"), "the refused address is not repeated, so a crafted link cannot put words on this page");
+    assert.match(html, /ამ გვერდის გამო თავად არაფერი შეცვალო/, "the page asks for no change of its own");
     // the submitted form is checked again, so editing its hidden field does not help either
     const posted = await consent(gw.base, ask({ redirect_uri: uri }), SECRET);
     assert.equal(posted.status, 400, uri);
@@ -229,6 +236,23 @@ test("an oversized form is refused in the sign-in's own format, not as an MCP er
   assert.equal(form.status, 413);
   assert.match(form.type, /^text\/html/);
   assert.match(form.body, /larger than 16 KB/);
+  // without a declared length the body is counted as it streams; the client sees the 413 or the closed connection.
+  // The chunked header is what leaves the length out: given the whole body at once, node would declare it.
+  const streamed = await new Promise<number | string>((ok) => {
+    const headers = { "content-type": "application/x-www-form-urlencoded", "transfer-encoding": "chunked" };
+    const req = request({ host: "127.0.0.1", port: new URL(gw.base).port, path: "/oauth/token", method: "POST", headers }, (res) => {
+      res.resume();
+      ok(res.statusCode ?? 0);
+    });
+    req.setTimeout(5000, () => {
+      ok("no answer");
+      req.destroy();
+    });
+    req.on("error", () => ok("connection closed"));
+    req.end(`a=${"x".repeat(20_000)}`);
+  });
+  assert.ok(streamed === 413 || streamed === "connection closed", String(streamed));
+  assert.equal((await fetch(`${gw.base}/healthz`)).status, 200);
 });
 
 test("the right key sends a code back to the client, with its state and this gateway's name", async () => {
@@ -428,6 +452,8 @@ test("the gateway refuses to start with a sign-in address it cannot trust", () =
   assert.deepEqual(redirectUrisFrom(undefined), [GROK_REDIRECT]);
   assert.deepEqual(redirectUrisFrom(" https://a.example/cb , https://b.example/cb/ "), ["https://a.example/cb", "https://b.example/cb/"]);
   for (const bad of ["http://grok.com/cb", "grok.com/cb", "https://a.example/cb#x", "https://user:pw@a.example/cb", "javascript:alert(1)"]) assert.throws(() => redirectUrisFrom(bad), /OAUTH_REDIRECT_URIS/, bad);
+  // written so that a browser would rewrite it, such an entry would send codes elsewhere than it reads
+  for (const odd of [`${GROK_REDIRECT}../../x`, `${GROK_REDIRECT}%2e%2e/x`, "https://GROK.com/cb", "https://a.example"]) assert.throws(() => redirectUrisFrom(odd), /the way a browser writes them/, odd);
   assert.equal(publicUrlFrom(undefined), undefined);
   assert.equal(publicUrlFrom("https://agent.example/"), "https://agent.example");
   for (const bad of ["http://agent.example", "https://agent.example/mcp", "agent.example"]) assert.throws(() => publicUrlFrom(bad), /PUBLIC_URL/, bad);

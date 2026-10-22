@@ -1,5 +1,7 @@
 /**
- * Remote MCP gateway for Grok Bot: Streamable HTTP, stateless, bearer token.
+ * Remote MCP gateway for Grok: Streamable HTTP, stateless. A client that can send a header
+ * uses MCP_TOKEN as its bearer token; grok.com's connectors cannot, so they sign in with
+ * OAuth instead (oauth.ts) and present the access token they were given.
  *
  * It reads the collection and the agent's proposals from GitHub and never edits
  * the repository itself. Approving a proposal only adds a label; the label
@@ -14,6 +16,7 @@ import type { Collection } from "../../mcp/src/data.js";
 import { getRepo, getStats, listRepos, pickDescription, searchRepos, summarizeRepo } from "../../mcp/src/query.js";
 import type { RestClient } from "./github.js";
 import { log } from "./log.js";
+import { createOAuth, GROK_REDIRECT } from "./oauth.js";
 import { IssueStore, isTrustedAuthor, LABELS, plain, type IssueRecord } from "./proposals.js";
 
 export type GatewayConfig = {
@@ -24,6 +27,12 @@ export type GatewayConfig = {
   /** test seam; defaults to fetching mcp/data/repos.json from the branch */
   loadCollection?: () => Promise<Collection>;
   rateLimitPerMinute?: number;
+  /** where OAuth codes may be sent; grok.com's address by default */
+  redirectUris?: readonly string[];
+  /** the gateway's public origin, when the proxy in front does not pass the Host on */
+  publicUrl?: string;
+  /** test seam for token lifetimes, in milliseconds */
+  now?: () => number;
 };
 
 const INSTRUCTIONS = `You are connected to the AI Pulse Georgia collection agent (a curated Georgian list of AI tools on GitHub).
@@ -359,6 +368,7 @@ const FAILURE: Record<number, { code: number; message: string }> = {
 
 export function createGateway(cfg: GatewayConfig): Server {
   const store = new IssueStore(cfg.github, cfg.repo);
+  const oauth = createOAuth({ secret: cfg.token, redirectUris: cfg.redirectUris ?? [GROK_REDIRECT], publicUrl: cfg.publicUrl, now: cfg.now });
   const allowSuggestion = windowed(SUGGESTIONS_PER_HOUR, 3_600_000);
   const dataUrl = `https://raw.githubusercontent.com/${cfg.repo}/${cfg.branch}/mcp/data/repos.json`;
   let cached: { at: number; data: Collection } | null = null;
@@ -400,9 +410,11 @@ export function createGateway(cfg: GatewayConfig): Server {
       if (req.method === "GET" && (url.pathname === "/healthz" || url.pathname === "/")) {
         return json(res, 200, { ok: true, service: "aipulse-georgia-agent" });
       }
+      if (await oauth.handle(req, res, url)) return;
       if (url.pathname !== "/mcp") return json(res, 404, { error: "not found" });
-      if (!authorized(req.headers.authorization, cfg.token)) {
-        res.setHeader("WWW-Authenticate", 'Bearer realm="aipulse-agent"');
+      const auth = req.headers.authorization;
+      if (!authorized(auth, cfg.token) && !oauth.accepts(auth)) {
+        res.setHeader("WWW-Authenticate", oauth.challenge(req, auth !== undefined));
         return json(res, 401, { error: "unauthorized" });
       }
       if (!allow()) return json(res, 429, { error: "too many requests" });

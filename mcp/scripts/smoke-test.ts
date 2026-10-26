@@ -52,6 +52,12 @@ const messages: JsonRpc[] = [
     method: "tools/call",
     params: { name: "search_repos", arguments: { query: "claude", limit: 1 } },
   },
+  {
+    jsonrpc: "2.0",
+    id: 5,
+    method: "tools/call",
+    params: { name: "search_repos", arguments: { query: "text-to-video", category: "media", limit: 50 } },
+  },
 ];
 
 function expect(condition: boolean, label: string): void {
@@ -122,6 +128,14 @@ async function run(): Promise<void> {
   const searchContent = (search?.result as { content?: Array<{ text: string }> } | undefined)?.content?.[0]?.text;
   const searchParsed = searchContent ? (JSON.parse(searchContent) as { matched: number }) : null;
   expect(searchParsed !== null && searchParsed.matched > 0, `search 'claude' returns matches (got ${searchParsed?.matched})`);
+
+  const videoSearch = responses.find((r) => r.id === 5);
+  const videoContent = (videoSearch?.result as { content?: Array<{ text: string }> } | undefined)?.content?.[0]?.text;
+  const videoRepos = videoContent ? (JSON.parse(videoContent) as { repos: Array<{ url: string }> }).repos : [];
+  expect(
+    videoRepos.some((r) => r.url === "https://github.com/meituan-longcat/LongCat-Video"),
+    "search 'text-to-video' finds LongCat-Video through its curated English description",
+  );
 
   // --- CLI check (same data, terminal surface) ---
   const cliBundle = resolve(__dirname, "..", "dist", "cli.js");

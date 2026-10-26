@@ -4,6 +4,8 @@
  *
  * Now also enriches each repo with `descriptionEn` from the GitHub repo's
  * own metadata (cached in data/github-cache.json so we don't re-fetch).
+ * Curated English text in data/english-descriptions.json takes precedence
+ * without changing the GitHub metadata cache.
  *
  * Output: { generated, totalRepos, categories, repos }
  */
@@ -17,6 +19,7 @@ const ROOT = resolve(__dirname, "..", "..");
 const README = resolve(ROOT, "README.md");
 const OUT = resolve(__dirname, "..", "data", "repos.json");
 const GH_CACHE = resolve(__dirname, "..", "data", "github-cache.json");
+const CURATED_EN = resolve(__dirname, "..", "data", "english-descriptions.json");
 
 type Category = {
   slug: string;
@@ -286,6 +289,7 @@ async function enrichWithEnglish(
   repos: Omit<Repo, "descriptionEn">[],
 ): Promise<Repo[]> {
   const cache = loadGhCache();
+  const curated = JSON.parse(readFileSync(CURATED_EN, "utf-8")) as Record<string, string>;
   const skipFetch = process.env["SKIP_GH_FETCH"] === "1";
   let fetched = 0;
   let cached = 0;
@@ -314,6 +318,7 @@ async function enrichWithEnglish(
       await new Promise((r) => setTimeout(r, 100));
     }
 
+    if (slug) descriptionEn = curated[slug.toLowerCase()] ?? descriptionEn;
     enriched.push({ ...repo, descriptionEn });
   }
 

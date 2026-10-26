@@ -1846,5 +1846,53 @@
   "mnfst/awesome-free-llm-apis": {
     "description": "List of Permanent Free LLM API  (API Keys)",
     "fetchedAt": "2026-10-20T11:47:22.755Z"
+  },
+  "AgriciDaniel/claude-seo": {
+    "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+    "fetchedAt": "2026-10-25T23:58:56.695Z"
+  },
+  "garrytan/gstack": {
+    "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+    "fetchedAt": "2026-10-25T23:58:56.695Z"
+  },
+  "VoltAgent/awesome-agent-skills": {
+    "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
+    "fetchedAt": "2026-10-25T23:58:56.695Z"
+  },
+  "trailofbits/skills": {
+    "description": "Trail of Bits skills for security research, vulnerability detection, and audit workflows",
+    "fetchedAt": "2026-10-25T23:58:56.695Z"
+  },
+  "deanpeters/Product-Manager-Skills": {
+    "description": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
+    "fetchedAt": "2026-10-25T23:58:56.695Z"
+  },
+  "Crosstalk-Solutions/project-nomad": {
+    "description": "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.",
+    "fetchedAt": "2026-10-25T23:58:56.695Z"
+  },
+  "Open-Less/openless": {
+    "description": "Hold a key, speak, release — AI-polished text appears at your cursor in any app. Open-source voice input for macOS & Windows. (按住快捷键说话，松开即得润色后的文字)",
+    "fetchedAt": "2026-10-25T23:58:56.695Z"
+  },
+  "jub0t/Concat": {
+    "description": "The truly free, open-source, local-first, cross-platform CapCut replacement. Scriptable through a JSON-RPC API & MCP.",
+    "fetchedAt": "2026-10-25T23:58:56.695Z"
+  },
+  "elie222/rakazo": {
+    "description": "Open-source Grok Bot alternative. Choose your own model and sandbox.",
+    "fetchedAt": "2026-10-25T23:58:56.695Z"
+  },
+  "meituan-longcat/LongCat-Video": {
+    "description": null,
+    "fetchedAt": "2026-10-25T23:58:56.695Z"
+  },
+  "nautechsystems/nautilus_trader": {
+    "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
+    "fetchedAt": "2026-10-25T23:58:56.695Z"
+  },
+  "benjitaylor/agentation": {
+    "description": "The visual feedback tool for agents.",
+    "fetchedAt": "2026-10-25T23:58:56.695Z"
   }
 }

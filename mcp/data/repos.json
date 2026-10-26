@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-20T13:28:29.462Z",
-  "totalRepos": 404,
+  "generated": "2026-10-26T01:20:45.382Z",
+  "totalRepos": 416,
   "categories": [
     {
       "slug": "coding",
@@ -21,7 +21,7 @@
       "emoji": "⚡",
       "english": "Skills, Plugins & Methodologies",
       "georgian": "უნარები, პლაგინები და მეთოდოლოგიები",
-      "count": 38
+      "count": 39
     },
     {
       "slug": "codeintel",
@@ -77,7 +77,7 @@
       "emoji": "🛡️",
       "english": "AI Security",
       "georgian": "AI უსაფრთხოება",
-      "count": 8
+      "count": 9
     },
     {
       "slug": "infra",
@@ -98,56 +98,56 @@
       "emoji": "🦞",
       "english": "AI Assistants & Chat UIs",
       "georgian": "AI ასისტენტები და ჩატ-ინტერფეისები",
-      "count": 20
+      "count": 21
     },
     {
       "slug": "business",
       "emoji": "💼",
       "english": "Business & Work Agents",
       "georgian": "ბიზნეს და სამუშაო აგენტები",
-      "count": 19
+      "count": 21
     },
     {
       "slug": "research",
       "emoji": "🔬",
       "english": "Research & Education",
       "georgian": "კვლევა და განათლება",
-      "count": 14
+      "count": 15
     },
     {
       "slug": "finance",
       "emoji": "💰",
       "english": "Finance AI",
       "georgian": "ფინანსური AI",
-      "count": 7
+      "count": 8
     },
     {
       "slug": "design",
       "emoji": "🎨",
       "english": "Design, UI & Diagrams",
       "georgian": "დიზაინი და UI",
-      "count": 29
+      "count": 30
     },
     {
       "slug": "media",
       "emoji": "🎬",
       "english": "Media Generation",
       "georgian": "მედია-გენერაცია",
-      "count": 19
+      "count": 21
     },
     {
       "slug": "voice",
       "emoji": "🎙️",
       "english": "Voice & Speech",
       "georgian": "ხმა და მეტყველება",
-      "count": 11
+      "count": 12
     },
     {
       "slug": "resources",
       "emoji": "📚",
       "english": "Resources & Learning",
       "georgian": "რესურსები და სასწავლო მასალები",
-      "count": 27
+      "count": 28
     }
   ],
   "repos": [
@@ -722,6 +722,17 @@
       "categoryEmoji": "⚡",
       "categoryGeorgian": "უნარები, პლაგინები და მეთოდოლოგიები",
       "descriptionEn": "Skills for Real Engineers. Straight from my .claude directory."
+    },
+    {
+      "name": "gstack",
+      "url": "https://github.com/garrytan/gstack",
+      "stars": "138K",
+      "description": "gstack — Garry Tan-ის Claude Code უნარებისა და ხელსაწყოების ნაკრებია პროგრამული პროდუქტის დაგეგმვიდან გამოშვებამდე. ცალკეული ბრძანებები აგენტს პროდუქტის ხელმძღვანელის, ინჟინრის, დიზაინერის, კოდის რევიუერისა და QA სპეციალისტის როლებში ამუშავებს. ბრაუზერში ამოწმებს აპლიკაციას, განიხილავს არქიტექტურას, ეძებს ხარვეზებს და ამზადებს ცვლილებებს გამოსაშვებად. როლებზე დაფუძნებული სამუშაო პროცესი Markdown უნარებითაა აღწერილი. MIT ლიცენზია.",
+      "starsNumeric": 138000,
+      "categorySlug": "plugins",
+      "categoryEmoji": "⚡",
+      "categoryGeorgian": "უნარები, პლაგინები და მეთოდოლოგიები",
+      "descriptionEn": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA"
     },
     {
       "name": "OpenSpec",
@@ -2627,6 +2638,17 @@
       "descriptionEn": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security"
     },
     {
+      "name": "Trail of Bits Skills",
+      "url": "https://github.com/trailofbits/skills",
+      "stars": "7.8K",
+      "description": "Trail of Bits Skills — უსაფრთხოების მკვლევრებისთვის შექმნილი AI უნარებისა და პლაგინების კოლექციაა. მოიცავს კოდის აუდიტს, სმარტ-კონტრაქტების უსაფრთხოებას, მავნე პროგრამების ანალიზს, ტესტირებასა და უკუინჟინერიას. უსაფრთხოების სამუშაო პროცესები აგენტისთვის განმეორებად ინსტრუქციებადაა ჩამოყალიბებული; კატალოგი Claude Code-ში, Codex-სა და ChatGPT-ის სამუშაო სივრცის marketplace-ში ინსტალაციას უჭერს მხარს. CC BY-SA 4.0 ლიცენზია.",
+      "starsNumeric": 7800,
+      "categorySlug": "security",
+      "categoryEmoji": "🛡️",
+      "categoryGeorgian": "AI უსაფრთხოება",
+      "descriptionEn": "Trail of Bits skills for security research, vulnerability detection, and audit workflows"
+    },
+    {
       "name": "Defending Code Reference Harness",
       "url": "https://github.com/anthropics/defending-code-reference-harness",
       "stars": "7.6K",
@@ -3199,6 +3221,17 @@
       "descriptionEn": "A smarter, self-hosted AI assistant — multi-user, multi-agent."
     },
     {
+      "name": "Rakazo",
+      "url": "https://github.com/elie222/rakazo",
+      "stars": "5.8K",
+      "description": "Rakazo — საკუთარ სერვერზე გასაშვები AI ასისტენტია მუდმივი ბოტებით, რომლებსაც საუბრები, მეხსიერება, რუტინები და სამუშაო ისტორია უნარჩუნდებათ. აგენტები ბრაუზერს, ტერმინალს, ფაილებსა და გრაფიკულ სამუშაო გარემოს იყენებენ; დავალებების გადაცემა სხვა ბოტებსა და დროებით ქვეაგენტებზეც შეუძლიათ. მომხმარებელი თავად ირჩევს მოდელსა და შესრულების გარემოს, მათ შორის ლოკალურ Docker კონტეინერებს. ხელმისაწვდომია ვებში, დესკტოპსა და მობილურზე. TypeScript, Apache-2.0; ბეტა ვერსია.",
+      "starsNumeric": 5800,
+      "categorySlug": "assistants",
+      "categoryEmoji": "🦞",
+      "categoryGeorgian": "AI ასისტენტები და ჩატ-ინტერფეისები",
+      "descriptionEn": "Open-source Grok Bot alternative. Choose your own model and sandbox."
+    },
+    {
       "name": "Mercury Agent",
       "url": "https://github.com/cosmicstack-labs/mercury-agent",
       "stars": "3.4K",
@@ -3309,6 +3342,17 @@
       "descriptionEn": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime."
     },
     {
+      "name": "Claude SEO",
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "stars": "21K",
+      "description": "Claude SEO — Claude Code-ის SEO პლაგინია, რომელიც ვებსაიტის ტექნიკურ მდგომარეობას, კონტენტის ხარისხსა და საძიებო სისტემებში ხილვადობას ამოწმებს. სპეციალიზებული უნარები და აგენტები აფასებენ ინდექსაციას, Core Web Vitals-ს, Schema.org მარკირებას, ლოკალურ SEO-სა და AI ძიებაში ციტირების შესაძლებლობას. აუდიტის შედეგებს პრიორიტეტებად დალაგებულ სამოქმედო გეგმად აყალიბებს; დამატებითი ინტეგრაციებით Google-ისა და სხვა სერვისების მონაცემებსაც იყენებს. MIT ლიცენზია.",
+      "starsNumeric": 21000,
+      "categorySlug": "business",
+      "categoryEmoji": "💼",
+      "categoryGeorgian": "ბიზნეს და სამუშაო აგენტები",
+      "descriptionEn": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data."
+    },
+    {
       "name": "DB-GPT",
       "url": "https://github.com/eosphoros-ai/DB-GPT",
       "stars": "20K",
@@ -3384,6 +3428,17 @@
       "categoryEmoji": "💼",
       "categoryGeorgian": "ბიზნეს და სამუშაო აგენტები",
       "descriptionEn": "Free, open-source alternative to Microsoft Office with built-in AI agents — Word (.docx), Excel (.xlsx), PowerPoint (.pptx), PDF and Markdown editing for macOS, Windows & Linux."
+    },
+    {
+      "name": "Product Manager Skills",
+      "url": "https://github.com/deanpeters/Product-Manager-Skills",
+      "stars": "7.7K",
+      "description": "Product Manager Skills — პროდუქტის მენეჯმენტის მეთოდებს AI აგენტებისთვის სტრუქტურირებულ უნარებად აქცევს. ეხმარება მომხმარებელთა კვლევაში, პრობლემის ფორმულირებაში, პრიორიტეტების განსაზღვრაში, საგზაო რუკის დაგეგმვასა და PRD-ისა თუ user story-ების დაწერაში. თითოეული უნარი მეთოდის გამოყენების მიზეზებსა და გავრცელებულ შეცდომებსაც ხსნის; მასალის წაკითხვა Claude-ს, Codex-სა და სხვა აგენტებს შეუძლიათ. CC BY-NC-SA 4.0 ლიცენზია, არაკომერციული გამოყენების პირობით.",
+      "starsNumeric": 7700,
+      "categorySlug": "business",
+      "categoryEmoji": "💼",
+      "categoryGeorgian": "ბიზნეს და სამუშაო აგენტები",
+      "descriptionEn": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents."
     },
     {
       "name": "OpenBot",
@@ -3505,6 +3560,17 @@
       "categoryEmoji": "🔬",
       "categoryGeorgian": "კვლევა და განათლება",
       "descriptionEn": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click"
+    },
+    {
+      "name": "Project NOMAD",
+      "url": "https://github.com/Crosstalk-Solutions/project-nomad",
+      "stars": "41K",
+      "description": "Project NOMAD — საკუთარ მოწყობილობაზე გასაშვები ცოდნისა და განათლების სერვერია, რომელიც ჩამოტვირთული რესურსებით ინტერნეტის გარეშეც მუშაობს. ლოკალურ AI ჩატს Ollama-ს ან OpenAI-თავსებად სერვერს უკავშირებს; ატვირთულ დოკუმენტებში სემანტიკური ძიებისთვის Qdrant-ს იყენებს. იმავე ვებინტერფეისში აერთიანებს ოფლაინ Wikipedia-ს, წიგნებს, სასწავლო კურსებსა და რუკებს. Docker კონტეინერების მართვა ერთიანი პანელიდან ხდება; AI ფუნქციები არჩევითია. Apache-2.0 ლიცენზია.",
+      "starsNumeric": 41000,
+      "categorySlug": "research",
+      "categoryEmoji": "🔬",
+      "categoryGeorgian": "კვლევა და განათლება",
+      "descriptionEn": "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required."
     },
     {
       "name": "Open Notebook",
@@ -3637,6 +3703,17 @@
       "categoryEmoji": "💰",
       "categoryGeorgian": "ფინანსური AI",
       "descriptionEn": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment."
+    },
+    {
+      "name": "NautilusTrader",
+      "url": "https://github.com/nautechsystems/nautilus_trader",
+      "stars": "31K",
+      "description": "NautilusTrader — ალგორითმული ვაჭრობის ძრავაა, რომელიც ისტორიულ მონაცემებზე ტესტირებასა და რეალურ ბაზარზე შესრულებას ერთ მოვლენებზე დაფუძნებულ არქიტექტურაში აერთიანებს. Rust-ის ბირთვს სტრატეგიების მართვის Python ინტერფეისი აქვს; მოიცავს სხვადასხვა ბირჟისა და აქტივის ადაპტერებს. სიმულაციის ძრავა AI სავაჭრო აგენტების გაძლიერებით სწავლებასა და ევოლუციური სტრატეგიებით წვრთნასაც ემსახურება. დამოუკიდებლად სავაჭრო გადაწყვეტილებებს არ იღებს — სტრატეგიას მომხმარებელი განსაზღვრავს. LGPL-3.0 ლიცენზია.",
+      "starsNumeric": 31000,
+      "categorySlug": "finance",
+      "categoryEmoji": "💰",
+      "categoryGeorgian": "ფინანსური AI",
+      "descriptionEn": "Production-grade Rust-native trading engine with deterministic event-driven architecture"
     },
     {
       "name": "FinRL",
@@ -3958,6 +4035,17 @@
       "descriptionEn": "Open-source ThreeUI Community catalog with live interactive components and complete Community source."
     },
     {
+      "name": "Agentation",
+      "url": "https://github.com/benjitaylor/agentation",
+      "stars": "5.1K",
+      "description": "Agentation — ვებგვერდზე ვიზუალური უკუკავშირის მონიშვნის ხელსაწყოა AI კოდირების აგენტებისთვის. ელემენტზე დაჭერით კომენტარს ამატებ, ხოლო ხელსაწყო CSS სელექტორებს, პოზიციასა და კონტექსტს სტრუქტურირებულ ტექსტად აგროვებს, რათა აგენტმა შესაბამისი კოდი იპოვოს. შედეგი ბუფერში გადაიტანება ან MCP სერვერით პირდაპირ მიეწოდება აგენტს; მუშაობს React 18+-თან დესკტოპ ბრაუზერში. PolyForm Shield 1.0.0 ლიცენზია, კონკურენტული პროდუქტების გამოყენების შეზღუდვით.",
+      "starsNumeric": 5100,
+      "categorySlug": "design",
+      "categoryEmoji": "🎨",
+      "categoryGeorgian": "დიზაინი და UI",
+      "descriptionEn": "The visual feedback tool for agents."
+    },
+    {
       "name": "Canvas UI",
       "url": "https://github.com/DavidHDev/canvas-ui",
       "stars": "5.0K",
@@ -4134,6 +4222,17 @@
       "descriptionEn": "\"ViMax: Agentic Video Generation (Director, Screenwriter, Producer, and Video Generator All-in-One)\""
     },
     {
+      "name": "Concat",
+      "url": "https://github.com/jub0t/Concat",
+      "stars": "12K",
+      "description": "Concat — ლოკალური ვიდეორედაქტორია AI ფუნქციებითა და აგენტებისთვის ჩაშენებული MCP სერვერით. Whisper-ის მოდელებით სუბტიტრებს ქმნის, ტექსტს მეტყველებად გარდაქმნის, ხმას აკლონირებს და ფონს აშორებს; ჩამოტვირთული მოდელები ოფლაინ მუშაობს. მრავალტრეკიანი მონტაჟი, ანიმაცია და ექსპორტი Rust-ის ძრავზე სრულდება, ვიდეოს ღრუბელში ატვირთვის გარეშე. MCP და JSON-RPC ინტერფეისებით მონტაჟის მართვა აგენტებსა და სკრიპტებსაც შეუძლიათ. ბეტა ვერსია, AGPL-3.0 ლიცენზია.",
+      "starsNumeric": 12000,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "The truly free, open-source, local-first, cross-platform CapCut replacement. Scriptable through a JSON-RPC API & MCP."
+    },
+    {
       "name": "MiniMax-H3",
       "url": "https://github.com/MiniMax-AI/MiniMax-H3",
       "stars": "10K",
@@ -4154,6 +4253,17 @@
       "categoryEmoji": "🎬",
       "categoryGeorgian": "მედია-გენერაცია",
       "descriptionEn": "Edit videos with coding agents"
+    },
+    {
+      "name": "LongCat-Video",
+      "url": "https://github.com/meituan-longcat/LongCat-Video",
+      "stars": "9.3K",
+      "description": "LongCat-Video — Meituan-ის ვიდეოგენერაციის მოდელია, რომელიც ტექსტიდან ვიდეოს, სურათიდან ვიდეოს და არსებული ვიდეოს გაგრძელებას ერთ არქიტექტურაში აერთიანებს. რეპოზიტორია შეიცავს ინფერენსის კოდს, მოდელების წონების ბმულებსა და გაშვების ინსტრუქციებს. LongCat-Video-Avatar-ის ვარიანტი აუდიოს მიხედვით პერსონაჟის ანიმაციასა და ტუჩების სინქრონიზაციასაც ქმნის. გათვლილია GPU-ზე გაშვებაზე და PyTorch-ის გარემოს მოითხოვს. Python, MIT ლიცენზია.",
+      "starsNumeric": 9300,
+      "categorySlug": "media",
+      "categoryEmoji": "🎬",
+      "categoryGeorgian": "მედია-გენერაცია",
+      "descriptionEn": "LongCat-Video is a video generation model supporting text-to-video, image-to-video, and video continuation, with an audio-driven avatar variant."
     },
     {
       "name": "Remotion Skills",
@@ -4297,6 +4407,17 @@
       "categoryEmoji": "🎙️",
       "categoryGeorgian": "ხმა და მეტყველება",
       "descriptionEn": "Converts text to speech in realtime"
+    },
+    {
+      "name": "OpenLess",
+      "url": "https://github.com/Open-Less/openless",
+      "stars": "4.0K",
+      "description": "OpenLess — macOS-ისა და Windows-ის ხმოვანი შეყვანის აპლიკაციაა: გლობალურ კლავიშს აჭერ, საუბრობ და ტექსტი აქტიურ ველში ჩნდება. მეტყველების ტრანსკრიფციის შემდეგ AI ტექსტს არჩეული სტილის მიხედვით ასწორებს; სპეციალურ რეჟიმში თავისუფალ საუბარს სტრუქტურირებულ პრომპტადაც აყალიბებს. მხარს უჭერს პერსონალურ ლექსიკონსა და შეცვლად სტილის პაკეტებს, ხოლო ტექსტის პირდაპირ ჩასმის შეფერხებისას შედეგს ბუფერში ინახავს. AGPL-3.0 ლიცენზია.",
+      "starsNumeric": 4000,
+      "categorySlug": "voice",
+      "categoryEmoji": "🎙️",
+      "categoryGeorgian": "ხმა და მეტყველება",
+      "descriptionEn": "Hold a key, speak, release — AI-polished text appears at your cursor in any app. Open-source voice input for macOS & Windows. (按住快捷键说话，松开即得润色后的文字)"
     },
     {
       "name": "Build Your Own X",
@@ -4528,6 +4649,17 @@
       "categoryEmoji": "📚",
       "categoryGeorgian": "რესურსები და სასწავლო მასალები",
       "descriptionEn": "In-depth tutorials on LLMs, RAGs and real-world AI agent applications."
+    },
+    {
+      "name": "Awesome Agent Skills (VoltAgent)",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "stars": "36K",
+      "description": "Awesome Agent Skills — VoltAgent-ის კურირებული კატალოგია, რომელიც ოფიციალური დეველოპერული გუნდებისა და საზოგადოების მიერ შექმნილ აგენტის უნარებს აერთიანებს. დოკუმენტებთან მუშაობის, პროგრამირების, დიზაინისა და სხვა ამოცანებისთვის შესაბამისი უნარის პოვნასა და მისი წყაროს შემოწმებაში გეხმარება. კოლექცია მიუთითებს ინსტალაციის გზებსა და თავსებადობას Claude Code-თან, Codex-თან, Gemini CLI-სთან, Cursor-თან და სხვა კლიენტებთან. MIT ლიცენზია.",
+      "starsNumeric": 36000,
+      "categorySlug": "resources",
+      "categoryEmoji": "📚",
+      "categoryGeorgian": "რესურსები და სასწავლო მასალები",
+      "descriptionEn": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more."
     },
     {
       "name": "Hands-On Large Language Models",

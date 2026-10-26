@@ -11,6 +11,7 @@ on:
     paths:
       - 'README.md'
       - 'mcp/scripts/build-data.ts'
+      - 'mcp/data/english-descriptions.json'
 
 permissions:
   contents: write

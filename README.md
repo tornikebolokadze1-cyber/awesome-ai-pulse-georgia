@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-404-00D0FF?style=flat-square&labelColor=111827&v=38" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-405-00D0FF?style=flat-square&labelColor=111827&v=39" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-21-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -23,7 +23,7 @@
 
 ## ⚡ გამოიყენე Claude Code-ში / Cursor-ში — MCP Server-ით ან CLI-ით
 
-ეს მთელი კოლექცია ხელმისაწვდომია **MCP server-ად** — Claude Code-ის, Cursor-ის, Codex-ის ან ნებისმიერი MCP-თავსებადი client-ის შიგნიდან 404 რეპოს ეძებ ბუნებრივი ენით. ნაცვლად იმისა, რომ GitHub-ი გახსნა და README-ი დააქოქო, AI ასისტენტს ჰკითხე *"აი Pulse-ის კოლექციაში რა არის საუკეთესო RAG-ისთვის?"* — სწორ რეპოს ქართული აღწერით დაგიბრუნებს.
+ეს მთელი კოლექცია ხელმისაწვდომია **MCP server-ად** — Claude Code-ის, Cursor-ის, Codex-ის ან ნებისმიერი MCP-თავსებადი client-ის შიგნიდან 405 რეპოს ეძებ ბუნებრივი ენით. ნაცვლად იმისა, რომ GitHub-ი გახსნა და README-ი დააქოქო, AI ასისტენტს ჰკითხე *"აი Pulse-ის კოლექციაში რა არის საუკეთესო RAG-ისთვის?"* — სწორ რეპოს ქართული აღწერით დაგიბრუნებს.
 
 **MCP Install** — `~/.claude/claude_desktop_config.json` ან Cursor MCP settings-ში:
 
@@ -48,7 +48,7 @@ npx -p @aipulsegeorgia/mcp-server aipulse stats
 
 ბრძანებები: `categories` · `list` · `search` · `get` · `stats` — ფლაგებით `-c/--category`, `-n/--limit`, `-l/--lang en|ka|both`, `--json`.
 
-> *Available as an MCP server **and an `aipulse` CLI** — query 404 curated AI repos from Claude Code, Cursor, any MCP client, or straight from your terminal.* Full docs: [`mcp/README.md`](./mcp/README.md) · Source: [`mcp/`](./mcp/)
+> *Available as an MCP server **and an `aipulse` CLI** — query 405 curated AI repos from Claude Code, Cursor, any MCP client, or straight from your terminal.* Full docs: [`mcp/README.md`](./mcp/README.md) · Source: [`mcp/`](./mcp/)
 
 ---
 
@@ -298,6 +298,8 @@ npx -p @aipulsegeorgia/mcp-server aipulse stats
 | [Stripe MCP](https://github.com/stripe/ai) | 2.0K | Stripe Agent Toolkit Stripe-ის ოფიციალური toolkit-ია AI-powered financial products-ის ასაშენებლად — MCP სერვერი, LangChain integration, CrewAI integration და Vercel AI SDK მხარდაჭერა ერთ პაკეტში. TypeScript-ში, docs.stripe.com/agents. AI ასისტენტს შეუძლია მომხმარებლების ძიება, payments-ის შექმნა, subscriptions-ის მართვა. Stripe-ის ოფიციალური, MCP-ზე ფოკუსირებული toolkit-ია. |
 | [Power BI Modeling MCP](https://github.com/microsoft/powerbi-modeling-mcp) | 1.2K | Power BI Modeling MCP Microsoft-ის ოფიციალური MCP სერვერია Power BI-ის სემანტიკური მოდელირებისთვის. AI ასისტენტს შეუძლია DAX შეკითხვების გაშვება, data models-ის შექმნა და რედაქტირება, row-level security და მრავალენოვანი თარგმანი — ბუნებრივი ენით. Power BI Desktop-თან, Fabric workspace-თან და Power BI Project ფაილებთან. Microsoft-ის ოფიციალური გამოშვებაა — ჯერ ახალი, მაგრამ enterprise BI-სთვის მნიშვნელოვანი. |
 | [Sentry Toolkit](https://github.com/getsentry/toolkit) | 947 | Sentry Toolkit Sentry-ის ოფიციალური რეპოა აგენტებისთვის: Sentry MCP სერვერი და Sentry CLI ერთად (ადრე getsentry/sentry-mcp ერქვა). MCP სერვერი Sentry API-ის შუამავალია, coding აგენტებისთვის (Cursor, Claude Code) მორგებული: AI ასისტენტს Sentry-ის შეცდომებზე, issue-ებზე, trace-ებსა და performance მონაცემებზე წვდომა ეძლევა, Claude Code-ში კი plugin-ად დგება და `sentry-mcp` subagent-ს ამატებს. TypeScript; remote სერვისი — mcp.sentry.dev, self-hosted Sentry-სთვის — stdio რეჟიმი. Production bug-ების AI-ასისტირებული დიაგნოსტიკისთვის შეუცვლელია. |
+| [agent-qa](https://github.com/vostride/agent-qa) | 912 | agent-qa — თვითგაუმჯობესებადი QA აგენტი web, Android და iOS ტესტებისთვის: memidex-ის გაფართოებული მეხსიერება ინახავს შემოწმებად ფაქტებსა და პროცედურებს. CLI, dashboard, MCP server და ოთხი Agent Skill; TypeScript, Node.js 24+, FSL-1.1-ALv2. მოდელისა და სხვა provider-ების ხარჯები შეიძლება ცალკე დაემატოს. |
+
 
 ---
 

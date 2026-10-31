@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-26T12:24:16.716Z",
-  "totalRepos": 404,
+  "generated": "2026-10-31T10:37:49.566Z",
+  "totalRepos": 405,
   "categories": [
     {
       "slug": "coding",
@@ -49,7 +49,7 @@
       "emoji": "🔌",
       "english": "MCP, Protocols & Integrations",
       "georgian": "MCP და ინტეგრაციები",
-      "count": 13
+      "count": 14
     },
     {
       "slug": "scraping",
@@ -1866,6 +1866,17 @@
       "categoryEmoji": "🔌",
       "categoryGeorgian": "MCP და ინტეგრაციები",
       "descriptionEn": "Agentic tooling for Sentry"
+    },
+    {
+      "name": "agent-qa",
+      "url": "https://github.com/vostride/agent-qa",
+      "stars": "912",
+      "description": "agent-qa — თვითგაუმჯობესებადი QA აგენტი web, Android და iOS ტესტებისთვის: memidex-ის გაფართოებული მეხსიერება ინახავს შემოწმებად ფაქტებსა და პროცედურებს. CLI, dashboard, MCP server და ოთხი Agent Skill; TypeScript, Node.js 24+, FSL-1.1-ALv2. მოდელისა და სხვა provider-ების ხარჯები შეიძლება ცალკე დაემატოს.",
+      "starsNumeric": 912,
+      "categorySlug": "mcp",
+      "categoryEmoji": "🔌",
+      "categoryGeorgian": "MCP და ინტეგრაციები",
+      "descriptionEn": "Open-source self-improving QA agent for software teams. A test harness with memory. Write tests in natural language for web and mobile. agent-qa learns from every run, adapts to UI changes, and catches regressions before you ship."
     },
     {
       "name": "Firecrawl",

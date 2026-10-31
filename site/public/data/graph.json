@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T13:13:30.441Z",
+  "generated": "2026-10-31T10:37:49.566Z",
   "categories": [
     {
       "id": "coding",
@@ -1511,6 +1511,15 @@
       "desc": "Sentry Toolkit Sentry-ის ოფიციალური რეპოა აგენტებისთვის: Sentry MCP სერვერი და Sentry CLI ერთად (ადრე getsentry/sentry-mcp ერქვა). MCP სერვერი Sentry API-ის შუამავალია, coding აგენტებისთვის (Cursor, Claude Code) მორგებული: AI ასისტენტს Sentry-ის შეცდომებზე, issue-ებზე, trace-ებსა და performance მონაცემებზე წვდომა ეძლევა, Claude Code-ში კი plugin-ად დგება და `sentry-mcp` subagent-ს ამატებს. TypeScript; remote სერვისი — mcp.sentry.dev, self-hosted Sentry-სთვის — stdio რეჟიმი. Production bug-ების AI-ასისტირებული დიაგნოსტიკისთვის შეუცვლელია.",
       "descEn": "Agentic tooling for Sentry",
       "stars": 949
+    },
+    {
+      "id": "agent-qa",
+      "label": "agent-qa",
+      "category": "mcp",
+      "url": "https://github.com/vostride/agent-qa",
+      "desc": "agent-qa — თვითგაუმჯობესებადი QA აგენტი web, Android და iOS ტესტებისთვის: memidex-ის გაფართოებული მეხსიერება ინახავს შემოწმებად ფაქტებსა და პროცედურებს. CLI, dashboard, MCP server და ოთხი Agent Skill; TypeScript, Node.js 24+, FSL-1.1-ALv2. მოდელისა და სხვა provider-ების ხარჯები შეიძლება ცალკე დაემატოს.",
+      "descEn": "Open-source self-improving QA agent for software teams. A test harness with memory. Write tests in natural language for web and mobile. agent-qa learns from every run, adapts to UI changes, and catches regressions before you ship.",
+      "stars": 912
     },
     {
       "id": "firecrawl",
@@ -4501,6 +4510,11 @@
       "type": "cluster"
     },
     {
+      "source": "agent-qa",
+      "target": "servers",
+      "type": "cluster"
+    },
+    {
       "source": "browser-use",
       "target": "firecrawl",
       "type": "cluster"
@@ -6108,6 +6122,11 @@
     {
       "source": "claude-code",
       "target": "toolkit",
+      "type": "hub"
+    },
+    {
+      "source": "claude-code",
+      "target": "agent-qa",
       "type": "hub"
     },
     {

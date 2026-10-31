@@ -1846,5 +1846,9 @@
   "mnfst/awesome-free-llm-apis": {
     "description": "List of Permanent Free LLM API  (API Keys)",
     "fetchedAt": "2026-10-20T11:47:22.755Z"
+  },
+  "vostride/agent-qa": {
+    "description": "Open-source self-improving QA agent for software teams. A test harness with memory. Write tests in natural language for web and mobile. agent-qa learns from every run, adapts to UI changes, and catches regressions before you ship.",
+    "fetchedAt": "2026-10-25T09:09:39.820199Z"
   }
 }

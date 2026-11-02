@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { randomBytes } from "node:crypto";
 import { readFileSync } from "node:fs";
+import { request } from "node:http";
 import type { AddressInfo } from "node:net";
 import { resolve } from "node:path";
 import { after, before, test } from "node:test";
@@ -99,6 +100,22 @@ test("health is public; everything under /mcp needs the token", async () => {
   assert.match(anonymous.headers.get("www-authenticate") ?? "", /^Bearer/);
   assert.equal((await post({ authorization: "Bearer wrong" })).status, 401);
   assert.equal((await fetch(`${base}/other`)).status, 404);
+});
+
+test("a request target that is no URL gets a 400, and the gateway keeps serving", async () => {
+  // fetch normalizes "//" away, so the raw request line goes out through node:http
+  const status = await new Promise<number>((ok, fail) => {
+    const req = request({ host: "127.0.0.1", port: new URL(base).port, path: "//" }, (res) => {
+      res.resume();
+      ok(res.statusCode ?? 0);
+    });
+    // a handler that died on the target never answers; fail fast instead of hanging the run
+    req.setTimeout(5000, () => req.destroy(new Error("no answer to //")));
+    req.on("error", fail);
+    req.end();
+  });
+  assert.equal(status, 400);
+  assert.equal((await fetch(`${base}/healthz`)).status, 200);
 });
 
 test("with the token: GET is refused (stateless), bad JSON and huge bodies get JSON-RPC errors", async () => {

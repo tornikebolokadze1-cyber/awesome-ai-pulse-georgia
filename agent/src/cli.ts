@@ -11,7 +11,8 @@
  *   verify   check that the README, every count and the rebuilt data agree (exit 1 if not)
  *   report   tell the issues how apply went (--result file; --commit URL when it was pushed,
  *            --error text when it was not; neither when nothing was applied)
- *   serve    run the MCP gateway locally (MCP_TOKEN, GITHUB_TOKEN; AGENT_REPO, AGENT_BRANCH, PORT)
+ *   serve    run the MCP gateway locally (MCP_TOKEN, GITHUB_TOKEN; AGENT_REPO, AGENT_BRANCH, PORT,
+ *            OAUTH_REDIRECT_URIS, PUBLIC_URL)
  * scan, suggest, apply and report take --dry-run (nothing is written to GitHub or to files).
  * Environment: GITHUB_TOKEN, ANTHROPIC_API_KEY, AGENT_MODEL, and AGENT_LOG_LEVEL=warn for quieter logs.
  */

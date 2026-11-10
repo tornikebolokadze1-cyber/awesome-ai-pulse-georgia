@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T13:13:30.441Z",
+  "generated": "2026-11-10T22:48:37.926Z",
   "categories": [
     {
       "id": "coding",
@@ -1772,6 +1772,15 @@
       "desc": "Tavily MCP production-ready MCP სერვერია real-time ვებ ძიებისთვის, კონტენტის extraction-ისთვის, sitemap-ისა და crawling-ისთვის — ყველა ოპერაცია ერთ სერვერში. JavaScript-ში. ჰოსტირებული ვერსიაც ხელმისაწვდომია (mcp.tavily.com) ლოკალური ინსტალაციის გარეშე. AI research agent-ებისა და automated web monitoring-ისთვის.",
       "descEn": "Production ready MCP server with real-time search, extract, map & crawl.",
       "stars": 2481
+    },
+    {
+      "id": "agent-qa",
+      "label": "agent-qa",
+      "category": "scraping",
+      "url": "https://github.com/vostride/agent-qa",
+      "desc": "ბუნებრივი ენით ვების, Android-ისა და iOS-ის QA: memidex-ის მუდმივი მეხსიერება, შემოწმებული თვითგაუმჯობესება და ნაბიჯების/ეკრანის სურათების მტკიცებულებები. CLI/MCP; FSL-1.1-ALv2; მოდელისა და მოწყობილობის ხარჯები ცალკეა. https://vostride.com.",
+      "descEn": "Open-source self-improving QA agent for software teams. A test harness with memory. Write tests in natural language for web and mobile. agent-qa learns from every run, adapts to UI changes, and catches regressions before you ship.",
+      "stars": 852
     },
     {
       "id": "markitdown",
@@ -3901,253 +3910,253 @@
       "type": "cluster"
     },
     {
-      "source": "orca",
-      "target": "paperclip",
+      "source": "paperclip",
+      "target": "orca",
       "type": "cluster"
     },
     {
       "source": "ruflo",
-      "target": "paperclip",
+      "target": "orca",
       "type": "cluster"
     },
     {
       "source": "oh-my-openagent",
-      "target": "paperclip",
+      "target": "orca",
       "type": "cluster"
     },
     {
       "source": "multica",
-      "target": "paperclip",
+      "target": "orca",
       "type": "cluster"
     },
     {
       "source": "herdr",
-      "target": "paperclip",
+      "target": "orca",
       "type": "cluster"
     },
     {
       "source": "oh-my-claudecode",
-      "target": "paperclip",
+      "target": "orca",
       "type": "cluster"
     },
     {
       "source": "t3code",
-      "target": "paperclip",
+      "target": "orca",
       "type": "cluster"
     },
     {
       "source": "cmux",
-      "target": "paperclip",
+      "target": "orca",
       "type": "cluster"
     },
     {
       "source": "archon",
-      "target": "paperclip",
+      "target": "orca",
       "type": "cluster"
     },
     {
       "source": "ax",
-      "target": "paperclip",
+      "target": "orca",
       "type": "cluster"
     },
     {
       "source": "pal-mcp-server",
-      "target": "paperclip",
+      "target": "orca",
       "type": "cluster"
     },
     {
       "source": "omnigent",
-      "target": "paperclip",
+      "target": "orca",
       "type": "cluster"
     },
     {
       "source": "kirocrew",
-      "target": "paperclip",
+      "target": "orca",
+      "type": "cluster"
+    },
+    {
+      "source": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "ecc",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "skills",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "agency-agents",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "spec-kit",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "andrej-karpathy-skills",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "ponytail",
-      "target": "superpowers",
-      "type": "cluster"
-    },
-    {
-      "source": "skills-2",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "openspec",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "bmad-method",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "humanizer",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "agents",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "obsidian-skills",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "agent-skills",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "awesome-cursorrules",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "awesome-copilot",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "claude-plugins-official",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "skills-3",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "book-to-skill",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "i-have-adhd",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "agent-skills-2",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "claude-code-templates",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "claude-skills",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "claude-task-master",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "claude-code-game-studios",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "codex-plugin-cc",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "awesome-claude-code-subagents",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "distilly",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "agentskills",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "skillopt",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "stop-slop",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "no-ai-slop",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "plugins",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "loop-engineering",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "gsd-core",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "skill-recorder",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "claude-plugins-community",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
       "source": "qwen-mm-plugins",
-      "target": "superpowers",
+      "target": "skills-2",
       "type": "cluster"
     },
     {
@@ -4641,6 +4650,11 @@
       "type": "cluster"
     },
     {
+      "source": "agent-qa",
+      "target": "firecrawl",
+      "type": "cluster"
+    },
+    {
       "source": "claude-mem",
       "target": "markitdown",
       "type": "cluster"
@@ -4756,43 +4770,43 @@
       "type": "cluster"
     },
     {
-      "source": "ifixai",
-      "target": "langfuse",
+      "source": "langfuse",
+      "target": "ifixai",
       "type": "cluster"
     },
     {
       "source": "deepeval",
-      "target": "langfuse",
+      "target": "ifixai",
       "type": "cluster"
     },
     {
       "source": "openshell",
-      "target": "langfuse",
+      "target": "ifixai",
       "type": "cluster"
     },
     {
       "source": "opensandbox",
-      "target": "langfuse",
+      "target": "ifixai",
       "type": "cluster"
     },
     {
       "source": "e2b",
-      "target": "langfuse",
+      "target": "ifixai",
       "type": "cluster"
     },
     {
       "source": "phoenix",
-      "target": "langfuse",
+      "target": "ifixai",
       "type": "cluster"
     },
     {
       "source": "computer",
-      "target": "langfuse",
+      "target": "ifixai",
       "type": "cluster"
     },
     {
       "source": "agentenv",
-      "target": "langfuse",
+      "target": "ifixai",
       "type": "cluster"
     },
     {
@@ -6367,7 +6381,7 @@
     },
     {
       "source": "claude-code",
-      "target": "paperclip",
+      "target": "orca",
       "type": "hub"
     },
     {
@@ -6383,11 +6397,6 @@
     {
       "source": "claude-code",
       "target": "markitdown",
-      "type": "hub"
-    },
-    {
-      "source": "claude-code",
-      "target": "langfuse",
       "type": "hub"
     },
     {

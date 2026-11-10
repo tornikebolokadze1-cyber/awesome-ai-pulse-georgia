@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-09T15:25:30.092Z",
-  "totalRepos": 404,
+  "generated": "2026-11-10T22:48:37.926Z",
+  "totalRepos": 405,
   "categories": [
     {
       "slug": "coding",
@@ -56,7 +56,7 @@
       "emoji": "🕷️",
       "english": "Web, Browser & Computer Use",
       "georgian": "ვები, ბრაუზერი და კომპიუტერის მართვა",
-      "count": 29
+      "count": 30
     },
     {
       "slug": "memory",
@@ -2185,6 +2185,17 @@
       "categoryEmoji": "🕷️",
       "categoryGeorgian": "ვები, ბრაუზერი და კომპიუტერის მართვა",
       "descriptionEn": "Production ready MCP server with real-time search, extract, map & crawl."
+    },
+    {
+      "name": "agent-qa",
+      "url": "https://github.com/vostride/agent-qa",
+      "stars": "852",
+      "description": "ბუნებრივი ენით ვების, Android-ისა და iOS-ის QA: memidex-ის მუდმივი მეხსიერება, შემოწმებული თვითგაუმჯობესება და ნაბიჯების/ეკრანის სურათების მტკიცებულებები. CLI/MCP; FSL-1.1-ALv2; მოდელისა და მოწყობილობის ხარჯები ცალკეა. https://vostride.com.",
+      "starsNumeric": 852,
+      "categorySlug": "scraping",
+      "categoryEmoji": "🕷️",
+      "categoryGeorgian": "ვები, ბრაუზერი და კომპიუტერის მართვა",
+      "descriptionEn": "Open-source self-improving QA agent for software teams. A test harness with memory. Write tests in natural language for web and mobile. agent-qa learns from every run, adapts to UI changes, and catches regressions before you ship."
     },
     {
       "name": "MarkItDown",

@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
-  <img src="https://img.shields.io/badge/repos-404-00D0FF?style=flat-square&labelColor=111827&v=38" alt="Repos"/>
+  <img src="https://img.shields.io/badge/repos-405-00D0FF?style=flat-square&labelColor=111827&v=39" alt="Repos"/>
   <img src="https://img.shields.io/badge/categories-21-A949DA?style=flat-square&labelColor=111827" alt="Categories"/>
   <img src="https://img.shields.io/badge/made_in-Georgia_%F0%9F%87%AC%F0%9F%87%AA-00D0FF?style=flat-square&labelColor=111827" alt="Made in Georgia"/>
   <a href="https://aipulsegeorgia.ge"><img src="https://img.shields.io/badge/aipulsegeorgia.ge-website-A949DA?style=flat-square&labelColor=111827" alt="Website"/></a>
@@ -23,7 +23,7 @@
 
 ## ⚡ გამოიყენე Claude Code-ში / Cursor-ში — MCP Server-ით ან CLI-ით
 
-ეს მთელი კოლექცია ხელმისაწვდომია **MCP server-ად** — Claude Code-ის, Cursor-ის, Codex-ის ან ნებისმიერი MCP-თავსებადი client-ის შიგნიდან 404 რეპოს ეძებ ბუნებრივი ენით. ნაცვლად იმისა, რომ GitHub-ი გახსნა და README-ი დააქოქო, AI ასისტენტს ჰკითხე *"აი Pulse-ის კოლექციაში რა არის საუკეთესო RAG-ისთვის?"* — სწორ რეპოს ქართული აღწერით დაგიბრუნებს.
+ეს მთელი კოლექცია ხელმისაწვდომია **MCP server-ად** — Claude Code-ის, Cursor-ის, Codex-ის ან ნებისმიერი MCP-თავსებადი client-ის შიგნიდან 405 რეპოს ეძებ ბუნებრივი ენით. ნაცვლად იმისა, რომ GitHub-ი გახსნა და README-ი დააქოქო, AI ასისტენტს ჰკითხე *"აი Pulse-ის კოლექციაში რა არის საუკეთესო RAG-ისთვის?"* — სწორ რეპოს ქართული აღწერით დაგიბრუნებს.
 
 **MCP Install** — `~/.claude/claude_desktop_config.json` ან Cursor MCP settings-ში:
 
@@ -48,7 +48,7 @@ npx -p @aipulsegeorgia/mcp-server aipulse stats
 
 ბრძანებები: `categories` · `list` · `search` · `get` · `stats` — ფლაგებით `-c/--category`, `-n/--limit`, `-l/--lang en|ka|both`, `--json`.
 
-> *Available as an MCP server **and an `aipulse` CLI** — query 404 curated AI repos from Claude Code, Cursor, any MCP client, or straight from your terminal.* Full docs: [`mcp/README.md`](./mcp/README.md) · Source: [`mcp/`](./mcp/)
+> *Available as an MCP server **and an `aipulse` CLI** — query 405 curated AI repos from Claude Code, Cursor, any MCP client, or straight from your terminal.* Full docs: [`mcp/README.md`](./mcp/README.md) · Source: [`mcp/`](./mcp/)
 
 ---
 
@@ -336,6 +336,7 @@ npx -p @aipulsegeorgia/mcp-server aipulse stats
 | [Bright Data MCP](https://github.com/brightdata/brightdata-mcp) | 2.7K | Bright Data MCP არის Bright Data-ს ოფიციალური MCP სერვერი, რომელიც AI ასისტენტებს ვებ-სკრეიპინგის საშუალებას აძლევს anti-bot დაცვის გვერდის ავლით. მის უკან Bright Data-ს კომერციული proxy ქსელი დგას — მილიონობით IP-ით — რაც ბლოკირებულ ვებ გვერდებზე წვდომას შესაძლებელს ხდის. JavaScript-ში დაწერილია და Bright Data-ს API გასაღები სჭირდება (ფასიანი სერვისი); იქ, სადაც ვებ-მონაცემები კომერციულად მნიშვნელოვანია და ჩვეულებრივი scraper-ები იბლოკება, ეს პრემიუმ გამოსავალია. |
 | [Perplexity MCP](https://github.com/perplexityai/modelcontextprotocol) | 2.6K | Perplexity MCP Perplexity AI-ის ოფიციალური MCP სერვერია — AI ასისტენტებს real-time ვებ ძიების, ღრმა კვლევისა და მსჯელობის შესაძლებლობა ეძლევა. TypeScript/Node-ში. **3 ინსტრუმენტი**: `sonar-pro` (ზოგადი search+chat), `sonar-deep-research` (კომპრეჰენსიული კვლევა), `sonar-reasoning-pro` (რთული ანალიზი). Cursor, VS Code, Kiro-ში ერთი კლიკით ინსტალაცია. Perplexity-ის citations-ზე დაფუძნებული პასუხები ჰალუცინაციებს ამცირებს. |
 | [Tavily MCP](https://github.com/tavily-ai/tavily-mcp) | 2.5K | Tavily MCP production-ready MCP სერვერია real-time ვებ ძიებისთვის, კონტენტის extraction-ისთვის, sitemap-ისა და crawling-ისთვის — ყველა ოპერაცია ერთ სერვერში. JavaScript-ში. ჰოსტირებული ვერსიაც ხელმისაწვდომია (mcp.tavily.com) ლოკალური ინსტალაციის გარეშე. AI research agent-ებისა და automated web monitoring-ისთვის. |
+| [agent-qa](https://github.com/vostride/agent-qa) | 852 | ბუნებრივი ენით ვების, Android-ისა და iOS-ის QA: memidex-ის მუდმივი მეხსიერება, შემოწმებული თვითგაუმჯობესება და ნაბიჯების/ეკრანის სურათების მტკიცებულებები. CLI/MCP; FSL-1.1-ALv2; მოდელისა და მოწყობილობის ხარჯები ცალკეა. https://vostride.com. |
 
 ---
 

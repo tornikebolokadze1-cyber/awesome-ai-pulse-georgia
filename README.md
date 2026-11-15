@@ -301,6 +301,8 @@ npx -p @aipulsegeorgia/mcp-server aipulse stats
 
 ---
 
+| [No Stairs Please MCP](https://nostairsplease.com/mcp) | — | Remote MCP server for [No Stairs Please](https://nostairsplease.com/), a directory of small live-music venues across all 50 US states, DC, and BC with capacities and booking contacts. |
+
 ## 🕷️ ვები, ბრაუზერი და კომპიუტერის მართვა
 
 > **Web, Browser & Computer Use** — ვების ძიება და სკრეიპინგი, ბრაუზერის ავტომატიზაცია და computer use: აგენტები, რომლებიც ვებგვერდებს კითხულობენ, ღილაკებს აჭერენ და desktop-ისა თუ ტელეფონის აპებს ადამიანივით მართავენ.

@@ -142,6 +142,8 @@ npx -p @aipulsegeorgia/mcp-server aipulse stats
 | [Omnigent](https://github.com/omnigent-ai/omnigent) | 11K | Omnigent ღია კოდის „მეტა-harness"-ია — საერთო ორკესტრაციის ფენა Claude Code-ის, Codex-ის, Cursor-ის, OpenCode-ის, Hermes-ის, Pi-სა და შენივე დაწერილი აგენტების ზემოდან: მათ ცვლი ან აერთიანებ ისე, რომ სამუშაო პროცესი არ იცვლება. macOS დესკტოპ აპიც აქვს. იდეა ის არის, რომ აგენტების „ომში" მხარე არ აირჩიო — ერთი ინტერფეისიდან ყველას მართავ. Apache-2.0, 2026 წლის ივნისიდან, ძალიან აქტიური issue tracker-ით. |
 | [Kiro Crew](https://github.com/kirodotdev/KiroCrew) | 4.9K | Kiro Crew Kiro-ს (AWS-ის AI IDE) ღია კოდის სამუშაო სივრცეა, რომელიც ლოკალურად ან შენს სერვერზე ეშვება და სესიების მიღმა „ცოცხლობს": მუდმივია, თვითსწავლადი და თვითგანვითარებადი. მრავალნაბიჯიანი ამოცანები უყურადღებოდ სრულდება, განმეორებადი სამუშაოები განრიგით ეშვება, heartbeat-ები სისტემებს აკვირდება, სანამ ჩარევა არ დასჭირდება. დესკტოპ აპით, ვებ დაფით და CLI-ით მართავ, ან Slack-იდან და Discord-იდან აგრძელებ იმავე სამუშაოს. Python, Apache-2.0, 2026 წლის ივლისიდან. |
 
+| [Alook](https://github.com/alookai/alook) | 1.5K | Open-source group chat where people and local coding agents, including Claude Code and Codex, work together. Site: https://alook.ai |
+
 ---
 
 ## ⚡ უნარები, პლაგინები და მეთოდოლოგიები
